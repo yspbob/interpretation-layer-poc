@@ -1,0 +1,17 @@
+query($cursor: String) {
+  search(query: "repo:netbox-community/netbox is:issue label:\"type: bug\" state:closed closed:>=2024-08-01 sort:created-desc", type: ISSUE, first: 25, after: $cursor) {
+    issueCount
+    pageInfo { hasNextPage endCursor }
+    nodes {
+      ... on Issue {
+        number title closedAt stateReason
+        closedByPullRequestsReferences(first: 5, includeClosedPrs: true) {
+          totalCount
+          nodes { number title merged mergedAt baseRefName mergeCommit { oid }
+            files(first: 100) { totalCount nodes { path } }
+          }
+        }
+      }
+    }
+  }
+}
