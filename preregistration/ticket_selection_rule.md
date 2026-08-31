@@ -1,6 +1,6 @@
-# Ticket-selection rule — v1.1 (v1.0 fixed 31 Aug 2026; amendment v1.1 same day, before any screen execution)
+# Ticket-selection rule — v1.2 (v1.0 fixed 31 Aug 2026; v1.1 pre-screen-execution; v1.2 post-audit, pre-T0: PARTIAL grades also exclude, sample = all fully-matching qualifiers, N = 25)
 
-Parameters fixed at ratification: file cap = 20; size floor = 5 files total with a pre-registered fallback to 4 on pool exhaustion (amendment v1.1, 31 Aug 2026 — added before any screen execution); recency window = 24 months (fixing PR merged on or after 1 Sep 2024); N = 20. The rule executes without discretion; anything requiring judgment during execution is a rule defect and forces a published amendment before proceeding.
+Parameters fixed at ratification: file cap = 20; size floor = 5 files total with a pre-registered fallback to 4 on pool exhaustion (amendment v1.1, 31 Aug 2026 — added before any screen execution); recency window = 24 months (fixing PR merged on or after 1 Sep 2024); N = 20 at v1.0-v1.1, superseded by amendment v1.2: the sample is every fully-matching qualifier (N = 25 at selection). The rule executes without discretion; anything requiring judgment during execution is a rule defect and forces a published amendment before proceeding.
 
 ## The rule
 
@@ -15,7 +15,7 @@ Parameters fixed at ratification: file cap = 20; size floor = 5 files total with
    e. fixing PR merged before 1 Sep 2024.
 5. **Screens, executed in order on the survivors, each result recorded per ticket:**
    a. **Fail-then-pass:** the fixing PR's tests must fail at the PR's parent commit and pass at the merge commit, both in the containerised suite (GitHub Actions on the fork, NetBox's own CI recipe). Tickets failing the screen are excluded with run logs kept.
-   b. **Symptom-test audit:** graded check that the test exercises the symptom the issue text describes; mismatches excluded before T0 is set.
+   b. **Symptom-test audit:** graded check that the test exercises the symptom the issue text describes (MATCH / PARTIAL / MISMATCH); mismatches excluded before T0 is set. **Amendment v1.2 (owner, 31 Aug 2026 — made after the audit grades were produced, before T0 froze and before the pre-registration closes; grades are blind to any experiment outcome): PARTIAL grades are excluded alongside MISMATCH, and the sample is every fully-matching qualifier rather than the newest 20 — N = 25 at selection, no spares remaining. The timing of this amendment is disclosed in the write-up.**
 6. **Selection.** Walk the ordered, screened list from newest; select until N=20 qualify. If the universe exhausts below 20, the actual N is reported and recorded before proceeding — shrinking N silently is not permitted.
 7. **T0.** The parent commit of the earliest-merged fixing PR among the selected tickets. The fact graph and knowledge corpus are built at T0 and never see anything later.
 8. **Blindness.** The corpus-drafting stage never sees the ticket list; corpus coverage is uniform over every subsystem the fact graph identifies.
