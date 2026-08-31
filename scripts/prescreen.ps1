@@ -1,5 +1,6 @@
-# Applies the pre-registered selection rule's mechanical pre-screens (items 1-4) to the fetched universe.
+# Applies the pre-registered selection rule's mechanical pre-screens (items 1-4, incl. amendment v1.1 size floor).
 # Input: data/ticket_universe_raw.json. Outputs: data/prescreen_log.csv, data/prescreen_survivors.json
+# Survivors carry floorTier: 'primary' (>=5 files) or 'fallback' (exactly 4 files, used only on pool exhaustion below N=20).
 # Screens 5a (fail-then-pass) and 5b (symptom-test audit) run separately; this script never selects, only screens.
 $ErrorActionPreference = "Stop"
 $raw = Get-Content data\ticket_universe_raw.json -Raw | ConvertFrom-Json
@@ -23,13 +24,16 @@ foreach ($i in ($raw | Sort-Object { [datetime]$_.closedAt } -Descending)) {
     elseif ($pr.title -match '^\s*(Revert|Release v)') { $fate = 'EXCLUDED'; $clause = '4b revert or release merge' }
     elseif ($testFiles.Count -eq 0) { $fate = 'EXCLUDED'; $clause = '2a no test file in diff' }
     elseif ($srcPy.Count -eq 0) { $fate = 'EXCLUDED'; $clause = '2b/4c no non-test non-migration python source in diff' }
+    elseif ($pr.files.totalCount -lt 4) { $fate = 'EXCLUDED'; $clause = "2c below size floor ($($pr.files.totalCount) files)" }
     else {
-      $fate = 'SURVIVOR'
+      $tier = if ($pr.files.totalCount -ge 5) { 'primary' } else { 'fallback' }
+      $fate = "SURVIVOR-$($tier.ToUpper())"
       [void]$survivors.Add([pscustomobject]@{
         issue = $i.number; issueTitle = $i.title; closedAt = $i.closedAt
         pr = $pr.number; prTitle = $pr.title; mergedAt = $pr.mergedAt
         mergeCommit = $pr.mergeCommit.oid; baseRef = $pr.baseRefName
         fileCount = $pr.files.totalCount; testFiles = $testFiles.Count; srcPyFiles = $srcPy.Count
+        floorTier = $tier
       })
     }
   }
@@ -38,5 +42,7 @@ foreach ($i in ($raw | Sort-Object { [datetime]$_.closedAt } -Descending)) {
 
 $rows | Export-Csv -Path data\prescreen_log.csv -NoTypeInformation -Encoding UTF8
 $survivors | ConvertTo-Json -Depth 5 | Set-Content -Path data\prescreen_survivors.json -Encoding UTF8
-Write-Output ("Universe: {0}. Survivors of mechanical pre-screens: {1}." -f $rows.Count, $survivors.Count)
+$p = @($survivors | Where-Object { $_.floorTier -eq 'primary' }).Count
+$f = @($survivors | Where-Object { $_.floorTier -eq 'fallback' }).Count
+Write-Output ("Universe: {0}. Primary survivors (>=5 files): {1}. Fallback tier (=4 files): {2}." -f $rows.Count, $p, $f)
 $rows | Group-Object clause | Sort-Object Count -Descending | ForEach-Object { Write-Output ("{0,5}  {1}" -f $_.Count, ($_.Name -replace '^$','(survivor)')) }

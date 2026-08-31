@@ -1,11 +1,11 @@
-# Ticket-selection rule — v1.0, fixed 31 Aug 2026, before execution
+# Ticket-selection rule — v1.1 (v1.0 fixed 31 Aug 2026; amendment v1.1 same day, before any screen execution)
 
-Parameters fixed at ratification: file cap = 20; recency window = 24 months (fixing PR merged on or after 1 Sep 2024); N = 20. The rule executes without discretion; anything requiring judgment during execution is a rule defect and forces a published amendment before proceeding.
+Parameters fixed at ratification: file cap = 20; size floor = 5 files total with a pre-registered fallback to 4 on pool exhaustion (amendment v1.1, 31 Aug 2026 — added before any screen execution); recency window = 24 months (fixing PR merged on or after 1 Sep 2024); N = 20. The rule executes without discretion; anything requiring judgment during execution is a rule defect and forces a published amendment before proceeding.
 
 ## The rule
 
 1. **Universe.** Closed issues in netbox-community/netbox carrying the label `type: bug`, closed as completed, whose closing reference is a single merged PR in the same repository.
-2. **Test-carrying requirement.** The fixing PR's diff must (a) add or modify at least one file under a `tests/` path, and (b) modify at least one non-test Python source file. Both checked mechanically from the diff file list.
+2. **Test-carrying requirement.** The fixing PR's diff must (a) add or modify at least one file under a `tests/` path, and (b) modify at least one non-test Python source file. Both checked mechanically from the diff file list. (c) **Size floor (amendment v1.1, pre-execution):** the PR must touch at least 5 files in total, test files included; if the screens exhaust the qualifying pool below N = 20, the floor relaxes to 4 for the remainder, newest-first — a pre-registered fallback, not a discretionary choice. Grounds recorded: the unfloored survivor distribution (median 2 files, 64% single-source-file) would let most of the sample contribute near-zero conformance signal.
 3. **Ordering.** Candidates ordered by issue closed date, newest first (recency preferred; the training-data contamination note is pre-answered in the plan: contamination is identical in both arms, the paired delta survives it).
 4. **Mechanical exclusions**, applied in order, each recorded with the excluding clause:
    a. fixing PR touches more than 20 files (harness bound);
