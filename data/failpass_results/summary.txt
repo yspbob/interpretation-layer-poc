@@ -1,0 +1,32 @@
+﻿SCREEN_FAIL issue=21542 pr=21834 pre_exit=1 post_exit=1 modules= dcim.tests.test_api dcim.tests.test_filtersets dcim.tests.test_views
+SCREEN_FAIL issue=22768 pr=22780 pre_exit=1 post_exit=1 modules= dcim.tests.test_cablepaths dcim.tests.test_signals
+SCREEN_FAIL issue=22982 pr=22984 pre_exit=1 post_exit=1 modules= dcim.tests.test_api
+SCREEN_PASS issue=18900 pr=19943 pre_exit=1 post_exit=0 modules= netbox.tests.test_api
+SCREEN_PASS issue=19633 pr=19885 pre_exit=1 post_exit=0 modules= extras.tests.test_conditions
+SCREEN_PASS issue=19806 pr=19807 pre_exit=1 post_exit=0 modules= netbox.tests.test_jobs
+SCREEN_PASS issue=20389 pr=20672 pre_exit=1 post_exit=0 modules= dcim.tests.test_views
+SCREEN_PASS issue=20474 pr=21740 pre_exit=1 post_exit=0 modules= dcim.tests.test_models
+SCREEN_PASS issue=20497 pr=20514 pre_exit=1 post_exit=0 modules= ipam.tests.test_filtersets ipam.tests.test_lookups
+SCREEN_PASS issue=20670 pr=20717 pre_exit=1 post_exit=0 modules= dcim.tests.test_views
+SCREEN_PASS issue=20759 pr=20931 pre_exit=1 post_exit=0 modules= utilities.tests.test_forms
+SCREEN_PASS issue=21129 pr=21309 pre_exit=1 post_exit=0 modules= core.tests.test_models
+SCREEN_PASS issue=21498 pr=21815 pre_exit=1 post_exit=0 modules= dcim.tests.test_models extras.tests.test_event_rules
+SCREEN_PASS issue=21763 pr=21778 pre_exit=1 post_exit=0 modules= dcim.tests.test_forms
+SCREEN_PASS issue=22228 pr=22244 pre_exit=1 post_exit=0 modules= ipam.tests.test_models netbox.tests.test_api utilities.tests.test_data
+SCREEN_PASS issue=22237 pr=22385 pre_exit=1 post_exit=0 modules= extras.tests.test_forms extras.tests.test_models extras.tests.test_views
+SCREEN_PASS issue=22273 pr=22401 pre_exit=1 post_exit=0 modules= ipam.tests.test_models
+SCREEN_PASS issue=22301 pr=22323 pre_exit=1 post_exit=0 modules= extras.tests.test_tags
+SCREEN_PASS issue=22324 pr=22366 pre_exit=1 post_exit=0 modules= extras.tests.test_api extras.tests.test_lookups utilities.tests.test_serialization
+SCREEN_PASS issue=22429 pr=22424 pre_exit=1 post_exit=0 modules= users.tests.test_api users.tests.test_views
+SCREEN_PASS issue=22531 pr=22542 pre_exit=1 post_exit=0 modules= utilities.tests.test_templatetags
+SCREEN_PASS issue=22578 pr=22606 pre_exit=1 post_exit=0 modules= extras.tests.test_api
+SCREEN_PASS issue=22588 pr=22684 pre_exit=1 post_exit=0 modules= ipam.tests.test_filtersets ipam.tests.test_forms
+SCREEN_PASS issue=22644 pr=22645 pre_exit=1 post_exit=0 modules= dcim.tests.test_port_mappings
+SCREEN_PASS issue=22682 pr=22693 pre_exit=1 post_exit=0 modules= ipam.tests.test_models virtualization.tests.test_models wireless.tests.test_models
+SCREEN_PASS issue=22745 pr=22777 pre_exit=1 post_exit=0 modules= extras.tests.test_api extras.tests.test_api_routers
+SCREEN_PASS issue=22812 pr=22867 pre_exit=1 post_exit=0 modules= extras.tests.test_scripts_deletion
+SCREEN_PASS issue=22852 pr=22870 pre_exit=1 post_exit=0 modules= extras.tests.test_event_rules extras.tests.test_management_commands
+SCREEN_PASS issue=22922 pr=22928 pre_exit=1 post_exit=0 modules= dcim.tests.test_models dcim.tests.test_signals ipam.tests.test_signals virtualization.tests.test_signals
+SCREEN_PASS issue=22985 pr=22986 pre_exit=1 post_exit=0 modules= core.tests.test_views dcim.tests.test_views extras.tests.test_views virtualization.tests.test_views
+SCREEN_PASS issue=22990 pr=23002 pre_exit=1 post_exit=0 modules= dcim.tests.test_views netbox.tests.test_base_classes
+SCREEN_PASS issue=23043 pr=23055 pre_exit=1 post_exit=0 modules= dcim.tests.test_forms dcim.tests.test_views

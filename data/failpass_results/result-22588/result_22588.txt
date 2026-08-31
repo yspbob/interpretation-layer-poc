@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22588 pr=22684 pre_exit=1 post_exit=0 modules= ipam.tests.test_filtersets ipam.tests.test_forms

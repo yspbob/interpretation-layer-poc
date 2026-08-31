@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22985 pr=22986 pre_exit=1 post_exit=0 modules= core.tests.test_views dcim.tests.test_views extras.tests.test_views virtualization.tests.test_views

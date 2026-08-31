@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22812 pr=22867 pre_exit=1 post_exit=0 modules= extras.tests.test_scripts_deletion

@@ -1,0 +1,1 @@
+SCREEN_PASS issue=20474 pr=21740 pre_exit=1 post_exit=0 modules= dcim.tests.test_models

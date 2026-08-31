@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22301 pr=22323 pre_exit=1 post_exit=0 modules= extras.tests.test_tags

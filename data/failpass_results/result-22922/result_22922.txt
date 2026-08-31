@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22922 pr=22928 pre_exit=1 post_exit=0 modules= dcim.tests.test_models dcim.tests.test_signals ipam.tests.test_signals virtualization.tests.test_signals

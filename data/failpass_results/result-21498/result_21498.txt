@@ -1,0 +1,1 @@
+SCREEN_PASS issue=21498 pr=21815 pre_exit=1 post_exit=0 modules= dcim.tests.test_models extras.tests.test_event_rules

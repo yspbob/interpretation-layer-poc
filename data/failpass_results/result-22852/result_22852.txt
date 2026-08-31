@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22852 pr=22870 pre_exit=1 post_exit=0 modules= extras.tests.test_event_rules extras.tests.test_management_commands

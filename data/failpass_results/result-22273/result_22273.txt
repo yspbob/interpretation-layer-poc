@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22273 pr=22401 pre_exit=1 post_exit=0 modules= ipam.tests.test_models

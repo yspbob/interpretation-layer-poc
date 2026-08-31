@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22228 pr=22244 pre_exit=1 post_exit=0 modules= ipam.tests.test_models netbox.tests.test_api utilities.tests.test_data

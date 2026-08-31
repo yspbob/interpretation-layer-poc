@@ -1,0 +1,1 @@
+SCREEN_PASS issue=21763 pr=21778 pre_exit=1 post_exit=0 modules= dcim.tests.test_forms

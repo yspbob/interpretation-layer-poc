@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22990 pr=23002 pre_exit=1 post_exit=0 modules= dcim.tests.test_views netbox.tests.test_base_classes

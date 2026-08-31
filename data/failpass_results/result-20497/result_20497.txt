@@ -1,0 +1,1 @@
+SCREEN_PASS issue=20497 pr=20514 pre_exit=1 post_exit=0 modules= ipam.tests.test_filtersets ipam.tests.test_lookups

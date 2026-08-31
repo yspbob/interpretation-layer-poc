@@ -1,0 +1,1 @@
+SCREEN_PASS issue=19806 pr=19807 pre_exit=1 post_exit=0 modules= netbox.tests.test_jobs

@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22531 pr=22542 pre_exit=1 post_exit=0 modules= utilities.tests.test_templatetags

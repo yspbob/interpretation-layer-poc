@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22429 pr=22424 pre_exit=1 post_exit=0 modules= users.tests.test_api users.tests.test_views

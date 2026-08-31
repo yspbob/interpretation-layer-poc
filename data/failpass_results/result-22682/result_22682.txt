@@ -1,0 +1,1 @@
+SCREEN_PASS issue=22682 pr=22693 pre_exit=1 post_exit=0 modules= ipam.tests.test_models virtualization.tests.test_models wireless.tests.test_models

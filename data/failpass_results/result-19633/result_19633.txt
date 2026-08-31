@@ -1,0 +1,1 @@
+SCREEN_PASS issue=19633 pr=19885 pre_exit=1 post_exit=0 modules= extras.tests.test_conditions
