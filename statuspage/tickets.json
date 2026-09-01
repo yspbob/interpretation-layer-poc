@@ -1,0 +1,649 @@
+[
+ {
+  "seq": 1,
+  "issue": 23043,
+  "pr": 23055,
+  "closed": "2026-08-27",
+  "merged": "2026-08-27",
+  "files": 5,
+  "audit": "MATCH",
+  "commit": "f657bcb78a9862c0e20196e696dcadb77114d71f",
+  "title": "Error when creating front ports with a range of numbers",
+  "merge_title": "Fixes #23043: Correct Front Port position validation for bulk creation (#23055)",
+  "files_list": [
+   "docs/models/dcim/frontport.md",
+   "netbox/dcim/forms/mixins.py",
+   "netbox/dcim/forms/object_create.py",
+   "netbox/dcim/tests/test_forms.py",
+   "netbox/dcim/tests/test_views.py"
+  ],
+  "subsystems": [
+   "dcim"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/23043",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/23055",
+  "overview": "Creating front ports in bulk with a ranged name (Port [25-36]) failed validation: the form compared the total front port positions against the selected rear positions incorrectly for ranged creation, rejecting a valid mapping."
+ },
+ {
+  "seq": 2,
+  "issue": 22990,
+  "pr": 23002,
+  "closed": "2026-08-25",
+  "merged": "2026-08-25",
+  "files": 7,
+  "audit": "MATCH",
+  "commit": "1077ff4a3321f350082d12abfc9bcab58bc9e345",
+  "title": "Inconsistent bulk edit form declarations prevent fields from being edited or cleared",
+  "merge_title": "fix(forms): Correct nullable_fields in bulk edit forms",
+  "files_list": [
+   "netbox/core/forms/bulk_edit.py",
+   "netbox/dcim/forms/bulk_edit.py",
+   "netbox/dcim/tests/test_views.py",
+   "netbox/extras/forms/bulk_edit.py",
+   "netbox/netbox/forms/bulk_edit.py",
+   "netbox/netbox/tests/test_base_classes.py",
+   "netbox/tenancy/forms/bulk_edit.py"
+  ],
+  "subsystems": [
+   "core",
+   "dcim",
+   "extras",
+   "netbox",
+   "tenancy"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22990",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/23002",
+  "overview": "Bulk edit forms were declared inconsistently across models: module bay template Position was missing from the bulk editor entirely, and nullable fields such as data source ignore rules offered no Set Null control, so values could be neither edited nor cleared in bulk."
+ },
+ {
+  "seq": 3,
+  "issue": 22985,
+  "pr": 22986,
+  "closed": "2026-08-20",
+  "merged": "2026-08-20",
+  "files": 7,
+  "audit": "MATCH",
+  "commit": "e49e6afbbe092f69dbfac0a8bdeebc4182d03795",
+  "title": "Data file contents should be exempt from browser cache",
+  "merge_title": "Fixes #22985: Exempt data file content from cache (#22986)",
+  "files_list": [
+   "netbox/core/tests/test_views.py",
+   "netbox/core/views.py",
+   "netbox/dcim/tests/test_views.py",
+   "netbox/extras/tests/test_views.py",
+   "netbox/extras/views.py",
+   "netbox/utilities/testing/base.py",
+   "netbox/virtualization/tests/test_views.py"
+  ],
+  "subsystems": [
+   "core",
+   "dcim",
+   "extras",
+   "utilities",
+   "virtualization"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22985",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22986",
+  "overview": "Synced data file contents were served without cache exemption, so sensitive file content rendered in the browser could persist in the browser cache after the user navigated away."
+ },
+ {
+  "seq": 4,
+  "issue": 22922,
+  "pr": 22928,
+  "closed": "2026-08-18",
+  "merged": "2026-08-18",
+  "files": 13,
+  "audit": "MATCH",
+  "commit": "c2d39b12d8b675c1442204a136b4abc448bbe08f",
+  "title": "`handle_location_site_change()` does not honor current database connection",
+  "merge_title": "Fixes #22922:  Honor the saving database connection in scope propagation signals (#22928)",
+  "files_list": [
+   "netbox/dcim/models/device_components.py",
+   "netbox/dcim/models/devices.py",
+   "netbox/dcim/models/modules.py",
+   "netbox/dcim/signals.py",
+   "netbox/dcim/tests/test_models.py",
+   "netbox/dcim/tests/test_signals.py",
+   "netbox/ipam/models/ip.py",
+   "netbox/ipam/signals.py",
+   "netbox/ipam/tests/test_signals.py",
+   "netbox/netbox/denormalized.py",
+   "netbox/utilities/testing/utils.py",
+   "netbox/virtualization/signals.py",
+   "netbox/virtualization/tests/test_signals.py"
+  ],
+  "subsystems": [
+   "dcim",
+   "ipam",
+   "netbox",
+   "utilities",
+   "virtualization"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22922",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22928",
+  "overview": "The handle_location_site_change() signal handler wrote through the default database connection instead of the active one, breaking installations where a router (such as netbox-branching) directs writes to a branch schema."
+ },
+ {
+  "seq": 5,
+  "issue": 22812,
+  "pr": 22867,
+  "closed": "2026-08-11",
+  "merged": "2026-08-11",
+  "files": 7,
+  "audit": "MATCH",
+  "commit": "a08d9f13fceeab9fc5bf8f998ddc0997e867eab8",
+  "title": "Deleting scripts that contain lots of depencies causes high memory usage, which can cause memory exhaustion",
+  "merge_title": "Merge pull request #22867 from netbox-community/22812-script-delete-memory-exhaustion",
+  "files_list": [],
+  "subsystems": [],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22812",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22867",
+  "overview": "Deleting a script with thousands of dependent job and history records loaded the full dependency set into memory, spiking usage to multiple gigabytes and in some cases crashing the instance."
+ },
+ {
+  "seq": 6,
+  "issue": 22745,
+  "pr": 22777,
+  "closed": "2026-08-11",
+  "merged": "2026-08-11",
+  "files": 6,
+  "audit": "MATCH",
+  "commit": "a94878aa08cf425866f56850e5d35996bf292cc3",
+  "title": "ScriptViewSet REST API allows unauthorized DELETE/PUT/PATCH",
+  "merge_title": "22745 - Enforce object permissions on Script REST API write operations (#22777)",
+  "files_list": [
+   "netbox/extras/api/routers.py",
+   "netbox/extras/api/urls.py",
+   "netbox/extras/api/views.py",
+   "netbox/extras/tests/test_api.py",
+   "netbox/extras/tests/test_api_routers.py",
+   "netbox/netbox/api/viewsets/__init__.py"
+  ],
+  "subsystems": [
+   "extras",
+   "netbox"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22745",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22777",
+  "overview": "The scripts REST endpoint allowed DELETE, PUT and PATCH for users holding only the view permission and for read-only API tokens: an authorisation gap between the declared permission model and the viewset."
+ },
+ {
+  "seq": 7,
+  "issue": 22852,
+  "pr": 22870,
+  "closed": "2026-08-10",
+  "merged": "2026-08-10",
+  "files": 5,
+  "audit": "MATCH",
+  "commit": "ae8fa4c0746a8646d86993f22825be03abd3d82f",
+  "title": "Scripts run from Event Rules ignore notifications_default setting",
+  "merge_title": "Merge pull request #22870 from netbox-community/22852-scripts-run-from-event-rules-ignore-notifications_default",
+  "files_list": [],
+  "subsystems": [],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22852",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22870",
+  "overview": "Scripts executed via event rules ignored the script's notifications_default setting, so notification behaviour differed depending on whether a script was run manually or by a rule."
+ },
+ {
+  "seq": 8,
+  "issue": 22588,
+  "pr": 22684,
+  "closed": "2026-07-22",
+  "merged": "2026-07-22",
+  "files": 5,
+  "audit": "MATCH",
+  "commit": "3e3d36cc2dcc0d4c558d3868ab39b09eca303944",
+  "title": "Any vlan can be assigned to prefix if Scope Site Group is Selected for prefix",
+  "merge_title": "Fixes #22588: Filter VLANs by Site Group scope when assigning to a prefix (#22684)",
+  "files_list": [
+   "netbox/ipam/filtersets.py",
+   "netbox/ipam/forms/model_forms.py",
+   "netbox/ipam/querysets.py",
+   "netbox/ipam/tests/test_filtersets.py",
+   "netbox/ipam/tests/test_forms.py"
+  ],
+  "subsystems": [
+   "ipam"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22588",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22684",
+  "overview": "With a prefix scoped to a site group, the form accepted any VLAN rather than restricting choices to VLAN groups whose scope matched the site group, so out-of-scope VLANs could be assigned."
+ },
+ {
+  "seq": 9,
+  "issue": 22682,
+  "pr": 22693,
+  "closed": "2026-07-18",
+  "merged": "2026-07-18",
+  "files": 8,
+  "audit": "MATCH",
+  "commit": "0eb1fcc09c1df3ccee3f10026a1e0763b819b814",
+  "title": "Deleting a SiteGroup cascade-deletes prefixes scoped to member sites",
+  "merge_title": "Closes #22682: Fix CachedScopeMixin cache fields cascading on ancestor deletion (#22693)",
+  "files_list": [
+   "netbox/dcim/models/mixins.py",
+   "netbox/dcim/models/sites.py",
+   "netbox/ipam/migrations/0093_alter_prefix__region_alter_prefix__site_group.py",
+   "netbox/ipam/tests/test_models.py",
+   "netbox/virtualization/migrations/0057_alter_cluster__region_alter_cluster__site_group.py",
+   "netbox/virtualization/tests/test_models.py",
+   "netbox/wireless/migrations/0020_alter_wirelesslan__region_and_more.py",
+   "netbox/wireless/tests/test_models.py"
+  ],
+  "subsystems": [
+   "dcim",
+   "ipam",
+   "virtualization",
+   "wireless"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22682",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22693",
+  "overview": "Deleting a site group cascade-deleted prefixes scoped to the group's member sites: silent data loss triggered by removing what the user understood to be only a grouping object."
+ },
+ {
+  "seq": 10,
+  "issue": 22644,
+  "pr": 22645,
+  "closed": "2026-07-14",
+  "merged": "2026-07-14",
+  "files": 8,
+  "audit": "MATCH",
+  "commit": "c1d8ff1216758a599786f96f752b46ca1aaf6e15",
+  "title": "Front/rear port mappings are not recorded in the changelog",
+  "merge_title": "#22644 Add ObjectChange to PortMapping (#22645)",
+  "files_list": [
+   "netbox/dcim/api/serializers_/base.py",
+   "netbox/dcim/forms/mixins.py",
+   "netbox/dcim/migrations/0239_add_portmapping_objectchange.py",
+   "netbox/dcim/models/base.py",
+   "netbox/dcim/models/device_component_templates.py",
+   "netbox/dcim/models/device_components.py",
+   "netbox/dcim/tests/test_port_mappings.py",
+   "netbox/dcim/utils.py"
+  ],
+  "subsystems": [
+   "dcim"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22644",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22645",
+  "overview": "Mapping a front port to a rear port left no trace in the changelog: the object change records carried no port mapping data and no separate change entry was created."
+ },
+ {
+  "seq": 11,
+  "issue": 22578,
+  "pr": 22606,
+  "closed": "2026-07-03",
+  "merged": "2026-07-03",
+  "files": 7,
+  "audit": "MATCH",
+  "commit": "6edb5ec8b7da022794b2bf95daf9177250a6c7cf",
+  "title": "REST API does not honor the shared/owner visibility that the UI enforces for SavedFilter and TableConfig",
+  "merge_title": "Fixes #22578: Ensure shared objects are treated consistently across the UI and APIs (#22606)",
+  "files_list": [
+   "netbox/extras/api/mixins.py",
+   "netbox/extras/api/views.py",
+   "netbox/extras/graphql/types.py",
+   "netbox/extras/models/models.py",
+   "netbox/extras/querysets.py",
+   "netbox/extras/tests/test_api.py",
+   "netbox/extras/utils.py"
+  ],
+  "subsystems": [
+   "extras"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22578",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22606",
+  "overview": "The REST API returned other users' private saved filters and table configurations, including their stored parameters, even though the UI enforces shared/owner visibility: the restriction lived in the UI layer only."
+ },
+ {
+  "seq": 12,
+  "issue": 22429,
+  "pr": 22424,
+  "closed": "2026-06-11",
+  "merged": "2026-06-11",
+  "files": 6,
+  "audit": "MATCH",
+  "commit": "d1919627cefc93ba5104f327df0f2959396d129f",
+  "title": "Constrained grant_token ObjectPermissions are silently bypassed in the REST API",
+  "merge_title": "Closes #22429: Enforce ObjectPermission constraints on grant_token (#22424)",
+  "files_list": [
+   "netbox/users/api/serializers_/tokens.py",
+   "netbox/users/forms/model_forms.py",
+   "netbox/users/tests/test_api.py",
+   "netbox/users/tests/test_views.py",
+   "netbox/users/utils.py",
+   "netbox/users/views.py"
+  ],
+  "subsystems": [
+   "users"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22429",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22424",
+  "overview": "Object permissions granting token creation under a constraint (for example, only for non-superusers) were silently bypassed in the REST API: a permitted user could create a token for any account, including superusers."
+ },
+ {
+  "seq": 13,
+  "issue": 22273,
+  "pr": 22401,
+  "closed": "2026-06-10",
+  "merged": "2026-06-10",
+  "files": 5,
+  "audit": "MATCH",
+  "commit": "b4116f2532b1d1308668f05e7c03e62a3dfe2b11",
+  "title": "Application Service: OperationalError when adding a new service with more than approx. 2000 ports",
+  "merge_title": "Fixes #22273: Fix migration failure when a service has thousands of ports defined",
+  "files_list": [
+   "netbox/ipam/graphql/types.py",
+   "netbox/ipam/migrations/0089_default_ordering_indexes.py",
+   "netbox/ipam/migrations/0091_alter_service_index_and_ordering.py",
+   "netbox/ipam/models/services.py",
+   "netbox/ipam/tests/test_models.py"
+  ],
+  "subsystems": [
+   "ipam"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22273",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22401",
+  "overview": "Creating an application service with a large port range (roughly 2,000 ports and up) failed with a database OperationalError instead of either succeeding or returning a proper validation message."
+ },
+ {
+  "seq": 14,
+  "issue": 22237,
+  "pr": 22385,
+  "closed": "2026-06-04",
+  "merged": "2026-06-04",
+  "files": 8,
+  "audit": "MATCH",
+  "commit": "86ea67d6400aa1300d00b047090c8b7d54bb2dac",
+  "title": "Server error when opening the standalone \"Add Table Configuration\" page",
+  "merge_title": "fix(extras): Prevent direct access to TableConfig create view",
+  "files_list": [
+   "netbox/extras/forms/bulk_edit.py",
+   "netbox/extras/forms/model_forms.py",
+   "netbox/extras/models/models.py",
+   "netbox/extras/tests/test_forms.py",
+   "netbox/extras/tests/test_models.py",
+   "netbox/extras/tests/test_views.py",
+   "netbox/extras/views.py",
+   "netbox/templates/extras/tableconfig_edit.html"
+  ],
+  "subsystems": [
+   "extras",
+   "templates"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22237",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22385",
+  "overview": "Opening the standalone Add Table Configuration page directly, without arriving through a table's save button, produced a server error because the form assumed table context that was absent."
+ },
+ {
+  "seq": 15,
+  "issue": 22324,
+  "pr": 22366,
+  "closed": "2026-06-03",
+  "merged": "2026-06-03",
+  "files": 11,
+  "audit": "MATCH",
+  "commit": "2e50fc3d97e81f6bac394547415853c00a7950f7",
+  "title": "`CustomFieldChoiceSet.extra_choices` GraphQL filter uses a flat array lookup for a nested array field",
+  "merge_title": "fix(extras): Add choice_value lookup for ChoiceSetField (#22366)",
+  "files_list": [
+   "netbox/extras/fields.py",
+   "netbox/extras/graphql/filter_lookups.py",
+   "netbox/extras/graphql/filters.py",
+   "netbox/extras/lookups.py",
+   "netbox/extras/migrations/0139_alter_customfieldchoiceset_extra_choices.py",
+   "netbox/extras/models/customfields.py",
+   "netbox/extras/tests/test_api.py",
+   "netbox/extras/tests/test_lookups.py",
+   "netbox/utilities/serializers/json.py",
+   "netbox/utilities/testing/base.py",
+   "netbox/utilities/tests/test_serialization.py"
+  ],
+  "subsystems": [
+   "extras",
+   "utilities"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22324",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22366",
+  "overview": "The GraphQL filter for a choice set's extra_choices used a flat array lookup against what is a nested array field, so the filter shape the API advertised produced errors when used."
+ },
+ {
+  "seq": 16,
+  "issue": 22301,
+  "pr": 22323,
+  "closed": "2026-05-28",
+  "merged": "2026-05-28",
+  "files": 5,
+  "audit": "MATCH",
+  "commit": "4eb0e727b9bb35e78e91102c0b8a1c2b988dd842",
+  "title": "Name conflict when multiple plugins introduce taggable models of the same name",
+  "merge_title": "Fixes #22301: Avoid reverse relation name collision among tagged models (#22323)",
+  "files_list": [
+   "netbox/extras/managers.py",
+   "netbox/extras/tests/test_tags.py",
+   "netbox/netbox/models/features.py",
+   "netbox/utilities/testing/base.py",
+   "netbox/utilities/testing/filtersets.py"
+  ],
+  "subsystems": [
+   "extras",
+   "netbox",
+   "utilities"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22301",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22323",
+  "overview": "Two plugins defining models with the same name, both taggable, collided on the Tag model's reverse manager names at startup: the namespacing that Django app separation should provide did not apply."
+ },
+ {
+  "seq": 17,
+  "issue": 22228,
+  "pr": 22244,
+  "closed": "2026-05-21",
+  "merged": "2026-05-21",
+  "files": 9,
+  "audit": "MATCH",
+  "commit": "e15b7bd8ac43ed531c1fc1b30d1477250de807d5",
+  "title": "VLANGroup.save() doesn't validate vid_ranges bounds metadata \u2014 bounds='[]' callers get silent miscounts and a hard 500 on singleton ranges",
+  "merge_title": "Merge pull request #22244 from netbox-community/22228-vlangroupsave-doesnt-validate-vid_ranges-bounds-metadata",
+  "files_list": [],
+  "subsystems": [],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/22228",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/22244",
+  "overview": "VLANGroup.save() computed VLAN ID totals with a formula valid only for canonical half-open ranges: legitimate bounds variants miscounted silently and singleton ranges produced a hard server error."
+ },
+ {
+  "seq": 18,
+  "issue": 21498,
+  "pr": 21815,
+  "closed": "2026-04-02",
+  "merged": "2026-04-02",
+  "files": 5,
+  "audit": "MATCH",
+  "commit": "b4ee2cf447a351bbacb5b19cf9182fb25a2e83ac",
+  "title": "Eventrules in v4.5.2 and v4.5.3 result in server error",
+  "merge_title": "fix(dcim): Refresh stale CablePath references during serialization (#21815)",
+  "files_list": [
+   "netbox/dcim/api/serializers_/base.py",
+   "netbox/dcim/models/device_components.py",
+   "netbox/dcim/tests/test_models.py",
+   "netbox/extras/events.py",
+   "netbox/extras/tests/test_event_rules.py"
+  ],
+  "subsystems": [
+   "dcim",
+   "extras"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/21498",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/21815",
+  "overview": "A regression made event rules on interfaces fail with server errors when a cable's termination was edited, breaking event-driven automation on cabling changes."
+ },
+ {
+  "seq": 19,
+  "issue": 20474,
+  "pr": 21740,
+  "closed": "2026-04-01",
+  "merged": "2026-04-01",
+  "files": 5,
+  "audit": "MATCH",
+  "commit": "c7bbfb24c5f6ad1891d7e261a05a72f97c5e320c",
+  "title": "Cannot install module with placeholder values in a module bay tree 2 in tree but 1 placeholders given.",
+  "merge_title": "Fix single {module} token rejection at nested module bay depth (#21740)",
+  "files_list": [
+   "netbox/dcim/api/serializers_/devices.py",
+   "netbox/dcim/forms/common.py",
+   "netbox/dcim/models/device_component_templates.py",
+   "netbox/dcim/tests/test_models.py",
+   "netbox/dcim/utils.py"
+  ],
+  "subsystems": [
+   "dcim"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/20474",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/21740",
+  "overview": "Installing a module using placeholder values failed in nested module bay trees: the placeholder resolution counted positions across the tree incorrectly, so valid nested installs were rejected."
+ },
+ {
+  "seq": 20,
+  "issue": 21763,
+  "pr": 21778,
+  "closed": "2026-03-30",
+  "merged": "2026-03-30",
+  "files": 6,
+  "audit": "MATCH",
+  "commit": "e54ed878632309cb988bb44bb761f5c671d9af08",
+  "title": "Site edit page fails to load with a very large number of ASNs assigned",
+  "merge_title": "Merge pull request #21778 from netbox-community/21763-m2m-form-fields",
+  "files_list": [],
+  "subsystems": [],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/21763",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/21778",
+  "overview": "The site edit page failed to load when a site had a very large number of ASNs assigned (about 10,000), because the form rendered the full relation instead of constraining the widget."
+ },
+ {
+  "seq": 21,
+  "issue": 21129,
+  "pr": 21309,
+  "closed": "2026-01-29",
+  "merged": "2026-01-29",
+  "files": 8,
+  "audit": "MATCH",
+  "commit": "c44e8606f7b240fe0b6955208056ae21f001d346",
+  "title": "RQ Jobs in non-model/default queues are kept when Jobs are deleted in DB and reinsert themselves",
+  "merge_title": "21129 Store queue_name in Job so correctly deleted in RQ (#21309)",
+  "files_list": [
+   "netbox/core/api/serializers_/jobs.py",
+   "netbox/core/filtersets.py",
+   "netbox/core/forms/filtersets.py",
+   "netbox/core/migrations/0021_job_queue_name.py",
+   "netbox/core/models/jobs.py",
+   "netbox/core/tables/jobs.py",
+   "netbox/core/tests/test_models.py",
+   "netbox/templates/core/job.html"
+  ],
+  "subsystems": [
+   "core",
+   "templates"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/21129",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/21309",
+  "overview": "RQ jobs enqueued to non-default queues survived deletion of their database Job record and re-inserted themselves, so cancelling or re-scheduling a job did not reliably remove the queued work."
+ },
+ {
+  "seq": 22,
+  "issue": 20670,
+  "pr": 20717,
+  "closed": "2025-11-06",
+  "merged": "2025-11-06",
+  "files": 17,
+  "audit": "MATCH",
+  "commit": "730d73042d5ee34b31f16e2c978cb65718eb794e",
+  "title": "Device (Type) Import is missing component data type validation",
+  "merge_title": "Merge pull request #20717 from m-hau/bugfix/related-object-validation",
+  "files_list": [
+   "netbox/dcim/tests/test_views.py",
+   "netbox/translations/en/LC_MESSAGES/django.po"
+  ],
+  "subsystems": [
+   "dcim",
+   "translations"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/20670",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/20717",
+  "overview": "Device type bulk import skipped data type validation on component definitions, accepting a scalar where a list was required without a proper validation error, and importing malformed component data."
+ },
+ {
+  "seq": 23,
+  "issue": 20389,
+  "pr": 20672,
+  "closed": "2025-10-27",
+  "merged": "2025-10-27",
+  "files": 12,
+  "audit": "MATCH",
+  "commit": "aa4571b61f7482ae7a521738c6e0030d75336a69",
+  "title": "Bulk rename \"Select all XX matching query\" only operates on current page",
+  "merge_title": "Merge pull request #20672 from pheus/20389-allow-all-bulk-rename",
+  "files_list": [],
+  "subsystems": [],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/20389",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/20672",
+  "overview": "Bulk rename honoured the current page only: with 'select all objects matching query' checked, objects beyond the visible page were left untouched despite the selection claiming the full query."
+ },
+ {
+  "seq": 24,
+  "issue": 18900,
+  "pr": 19943,
+  "closed": "2025-07-29",
+  "merged": "2025-07-29",
+  "files": 8,
+  "audit": "MATCH",
+  "commit": "c736ce3179a8bb7bbcbf29324a08a62efa8747b6",
+  "title": "The REST API paginator should raise an exception if attempting to paginate an unordered queryset",
+  "merge_title": "Fixes #18900: raise QuerySetNotOrdered exception when trying to paginate unordered API querysets (#19943)",
+  "files_list": [
+   "netbox/extras/api/views.py",
+   "netbox/extras/models/tags.py",
+   "netbox/netbox/api/exceptions.py",
+   "netbox/netbox/api/pagination.py",
+   "netbox/netbox/tests/test_api.py",
+   "netbox/users/migrations/0010_add_token_meta_ordering.py",
+   "netbox/users/models/tokens.py",
+   "netbox/utilities/query.py"
+  ],
+  "subsystems": [
+   "extras",
+   "netbox",
+   "users",
+   "utilities"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/18900",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/19943",
+  "overview": "The REST API paginator accepted unordered querysets, whose pagination is nondeterministic (objects can repeat or vanish across pages); the fix makes the paginator raise on unordered input."
+ },
+ {
+  "seq": 25,
+  "issue": 19806,
+  "pr": 19807,
+  "closed": "2025-07-02",
+  "merged": "2025-07-02",
+  "files": 6,
+  "audit": "MATCH",
+  "commit": "3b8841ee3b0210b286dd62ca0b4810d0d6b72365",
+  "title": "No entry point exists to mark a background job as failed",
+  "merge_title": "Fixes #19806: Introduce JobFailed exception to allow marking background jobs as failed (#19807)",
+  "files_list": [
+   "docs/features/background-jobs.md",
+   "docs/plugins/development/background-jobs.md",
+   "netbox/core/exceptions.py",
+   "netbox/core/models/jobs.py",
+   "netbox/netbox/jobs.py",
+   "netbox/netbox/tests/test_jobs.py"
+  ],
+  "subsystems": [
+   "core",
+   "netbox"
+  ],
+  "issue_url": "https://github.com/netbox-community/netbox/issues/19806",
+  "pr_url": "https://github.com/netbox-community/netbox/pull/19807",
+  "overview": "JobRunner offered no supported way for a job's run() method to mark the job as failed: whatever status the job set was overwritten with completed, so failure states could not be recorded."
+ }
+]
