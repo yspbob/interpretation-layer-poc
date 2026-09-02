@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """M-013 Phase 1: slice API over the fact graph. Read-only, deterministic.
 The Phase 2 drafting pipeline and the Phase 4 MCP server consume ONLY these calls."""
-import sqlite3, json
+import sqlite3, json, os
 
-DB = "/home/claude/poc/factgraph/factgraph.db"
+DB = os.environ.get("FG_DB", "/home/claude/poc/factgraph/factgraph.db")
 
 def _db():
     c = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
@@ -53,6 +53,22 @@ def churn_top(n=20):
     return [dict(r) for r in _db().execute(
         "SELECT * FROM churn ORDER BY commits DESC LIMIT ?", (n,))]
 
+def model_refs(module=None, cross_app_only=False):
+    """v2: Django string-reference edges (FK/M2M/O2O/GenericRelation targets, apps.get_model)."""
+    q = "SELECT * FROM model_refs"; conds = []; args = []
+    if module: conds.append("module=?"); args.append(module)
+    if cross_app_only: conds.append("cross_app=1")
+    if conds: q += " WHERE " + " AND ".join(conds)
+    return [dict(r) for r in _db().execute(q + " ORDER BY module, lineno", args)]
+
+def cross_app_model_edges(app=None):
+    """v2: app-to-app coupling via string references, aggregated (from_app, to_app, count)."""
+    q = ("SELECT substr(module,1,instr(module,'.')-1) AS from_app, ref_app AS to_app, COUNT(*) AS c "
+         "FROM model_refs WHERE cross_app=1")
+    args = ()
+    if app: q += " AND (substr(module,1,instr(module,'.')-1)=? OR ref_app=?)"; args = (app, app)
+    return [dict(r) for r in _db().execute(q + " GROUP BY 1,2 ORDER BY c DESC", args)]
+
 def entrypoints(kind=None):
     q = "SELECT * FROM entrypoints"
     args = ()
@@ -64,3 +80,4 @@ if __name__ == "__main__":
     print(json.dumps(subsystem_summary()[:3], indent=1))
     print(json.dumps(module_page("dcim.models")["module"], indent=1))
     print("dcim.models imported_by count:", len(module_page("dcim.models")["imported_by"]))
+    print("cross-app model edges (top 5):", json.dumps(cross_app_model_edges()[:5]))

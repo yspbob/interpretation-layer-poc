@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """M-013 Phase 1: deterministic fact-graph extraction over NetBox at T0.
 
+v2 (plan v1.2, item F11): adds the model_refs table (Django string-reference
+coupling: ForeignKey/ManyToManyField/OneToOneField/GenericRelation targets given
+as 'app.Model' strings, and apps.get_model(...) lookups). All v1 tables are
+produced by the unchanged v1 code below and are row-for-row identical to the
+v1 store (verified by factgraph/rowhash.py); meta gains two rows.
+
 No LLM anywhere. Inputs: the working tree at T0 (ea4c205) and git history
 (ancestors of T0 only, guaranteed by the detached checkout). Output: SQLite
 fact graph (factgraph.db) with provenance on every row.
@@ -14,13 +20,17 @@ Facts extracted:
   tests        : test modules, their test-class/method counts, and which internal
                  modules they import (test topology)
   entrypoints  : management commands, urls modules, api modules, signal receivers
+  model_refs   : (v2) string model references: field declarations whose target is
+                 an 'app.Model' string (or a bare 'Model' resolved to the declaring
+                 app), and apps.get_model() calls; cross_app=1 when the referenced
+                 app differs from the declaring module's app
 """
 import ast, os, sqlite3, subprocess, sys, hashlib, json
 
-REPO = "/home/claude/poc_netbox"
+REPO = os.environ.get("FG_REPO", "/home/claude/poc_netbox")
 PKG_ROOT = os.path.join(REPO, "netbox")   # the Django project package dir
-DB = "/home/claude/poc/factgraph/factgraph.db"
-T0 = "ea4c205a37baa3e58e6e481158c15c6154cceeff"
+DB = os.environ.get("FG_DB", "/home/claude/poc/factgraph/factgraph.db")
+T0 = os.environ.get("FG_T0", "ea4c205a37baa3e58e6e481158c15c6154cceeff")   # per-ticket builds pass the checkout commit
 
 def sh(args, cwd=REPO):
     return subprocess.run(args, cwd=cwd, capture_output=True, text=True).stdout
@@ -33,6 +43,7 @@ assert head == T0, f"HEAD {head} is not T0"
 mods = {}        # relpath -> dict
 sym_rows = []
 imp_raw = []     # (src_mod, imported_module_string, lineno)
+modelref_rows = []  # v2: (module, class, field, kind, raw, ref_app, ref_model, cross_app, lineno, path)
 
 def mod_name(relpath):
     p = relpath[:-3] if relpath.endswith(".py") else relpath
@@ -76,6 +87,50 @@ for rel in py_files:
             else:
                 target = node.module or ""
             imp_raw.append((name, target, node.lineno, rel))
+    # ---- v2: string model references (deterministic, ast only) ----
+    app = name.split(".")[0]
+    FIELD_KINDS = ("ForeignKey", "ManyToManyField", "OneToOneField", "GenericRelation")
+    def _callee(n):
+        f = n.func
+        return f.attr if isinstance(f, ast.Attribute) else (f.id if isinstance(f, ast.Name) else "")
+    def _str_arg(n, kw):
+        for k in n.keywords:
+            if k.arg == kw and isinstance(k.value, ast.Constant) and isinstance(k.value.value, str):
+                return k.value.value
+        if n.args and isinstance(n.args[0], ast.Constant) and isinstance(n.args[0].value, str):
+            return n.args[0].value
+        return None
+    for cls in [n for n in ast.walk(tree) if isinstance(n, ast.ClassDef)]:
+        for stmt in cls.body:
+            if isinstance(stmt, (ast.Assign, ast.AnnAssign)) and isinstance(stmt.value, ast.Call):
+                call = stmt.value; kind = _callee(call)
+                if kind not in FIELD_KINDS:
+                    continue
+                target = _str_arg(call, "to")
+                if target is None:
+                    continue
+                tgt = stmt.targets[0] if isinstance(stmt, ast.Assign) else stmt.target
+                field = tgt.id if isinstance(tgt, ast.Name) else ast.unparse(tgt)
+                if "." in target:
+                    ref_app, ref_model = target.split(".", 1)
+                elif target == "self":
+                    ref_app, ref_model = app, cls.name
+                else:
+                    ref_app, ref_model = app, target
+                modelref_rows.append((name, cls.name, field, kind, target, ref_app, ref_model,
+                                      1 if ref_app != app else 0, stmt.lineno, rel))
+    for call in [n for n in ast.walk(tree) if isinstance(n, ast.Call)]:
+        if _callee(call) != "get_model":
+            continue
+        args = [a.value for a in call.args if isinstance(a, ast.Constant) and isinstance(a.value, str)]
+        if len(args) == 2:
+            ref_app, ref_model, raw = args[0], args[1], args[0] + "." + args[1]
+        elif len(args) == 1 and "." in args[0]:
+            ref_app, ref_model = args[0].split(".", 1); raw = args[0]
+        else:
+            continue
+        modelref_rows.append((name, "", "", "get_model", raw, ref_app, ref_model,
+                              1 if ref_app != app else 0, call.lineno, rel))
 
 internal_prefixes = tuple(sorted({m["module"].split(".")[0] for m in mods.values()}))
 mod_by_name = {m["module"]: rel for rel, m in mods.items()}
@@ -125,6 +180,8 @@ CREATE TABLE churn(path TEXT PRIMARY KEY, module TEXT, commits INT, authors INT,
                    first_commit TEXT, last_commit TEXT);
 CREATE TABLE subsystems(subsystem TEXT PRIMARY KEY, modules INT, loc_code INT, loc_data INT, test_modules INT);
 CREATE TABLE entrypoints(kind TEXT, module TEXT, detail TEXT, path TEXT);
+CREATE TABLE model_refs(module TEXT, class TEXT, field TEXT, kind TEXT, raw TEXT,
+                        ref_app TEXT, ref_model TEXT, cross_app INT, lineno INT, path TEXT);
 """)
 
 def subsystem_of(name):
@@ -172,6 +229,10 @@ db.execute("INSERT INTO meta VALUES('t0', ?)", (T0,))
 db.execute("INSERT INTO meta VALUES('repo', 'yspbob/netbox (fork of netbox-community/netbox)')")
 db.execute("INSERT INTO meta VALUES('extractor', 'ast+gitlog deterministic v1, no LLM')")
 db.execute("INSERT INTO meta VALUES('python', sys.version)" if False else "INSERT INTO meta VALUES('python', ?)", (sys.version.split()[0],))
+# v2 additions (new table + two meta rows; every v1 table is unchanged)
+db.executemany("INSERT INTO model_refs VALUES(?,?,?,?,?,?,?,?,?,?)", sorted(set(modelref_rows)))
+db.execute("INSERT INTO meta VALUES('model_refs_extractor', 'ast string-reference pass v2 (plan v1.2 F11), no LLM')")
+db.execute("INSERT INTO meta VALUES('schema', 'v2: v1 tables unchanged + model_refs')")
 db.commit()
 
 # summary
@@ -186,5 +247,7 @@ print("subsystems:", db.execute("SELECT COUNT(*) FROM subsystems").fetchone()[0]
 for row in db.execute("SELECT subsystem, modules, loc_code, loc_data, test_modules FROM subsystems ORDER BY loc_code DESC LIMIT 12"):
     print("  ", row)
 print("data modules:", db.execute("SELECT COUNT(*) FROM modules WHERE is_data=1").fetchone()[0])
+print("model_refs:", db.execute("SELECT COUNT(*) FROM model_refs").fetchone()[0],
+      " cross-app:", db.execute("SELECT COUNT(*) FROM model_refs WHERE cross_app=1").fetchone()[0])
 h = hashlib.sha256(open(DB, "rb").read()).hexdigest()
 print("db sha256:", h[:16])
