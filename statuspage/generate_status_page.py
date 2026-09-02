@@ -83,13 +83,13 @@ edge_table = sorted(((s1, s2, c) for (s1, s2), c in sub_edges.items()), key=lamb
 
 # ---------------- pipeline SVG ----------------
 phases = [
-    ("0", "Repo selection", "Gate 1", "the target codebase is ratified", "done", "PASSED: NetBox, R-247"),
-    ("1", "Fact graph", "Gate 2", "a hand audit of a fact sample passes", "active", "AWAITING OWNER: 32-fact sample filed"),
-    ("2", "Draft corpus", "Gate 3", "the owner samples the evidence-linked drafts", "pending", ""),
-    ("3", "Certify", "Gate 4", "evidence audit + cross-vendor verifier pinned", "pending", ""),
-    ("4", "Serve + enforce", "Gate 5", "dry run of the full harness on 2 tickets", "pending", ""),
-    ("5", "Evaluation", "Gate 6", "150 pre-registered scored runs, analysed", "pending", ""),
-    ("6", "Write-up", "Publish", "field-note write-up, labelled lab conditions", "pending", ""),
+    ("0", "Pick the codebase", "Gate 1", "choose the project to test on", "done", "PASSED: NetBox, R-247"),
+    ("1", "Map the codebase", "Gate 2", "build the map by script, hand-check a sample", "active", "AWAITING OWNER: 32-fact sample filed"),
+    ("2", "Draft the knowledge", "Gate 3", "AI drafts the pages, every claim cites the map", "pending", ""),
+    ("3", "Check the knowledge", "Gate 4", "second AI from another vendor checks every claim", "pending", ""),
+    ("4", "Plug it in", "Gate 5", "connect the knowledge base to the agent, dry run", "pending", ""),
+    ("5", "Run the test", "Gate 6", "150 runs: same tickets, with and without", "pending", ""),
+    ("6", "Publish", "Publish", "results published whichever way they land", "pending", ""),
 ]
 PW, PH = 1180, 240
 seg = PW / len(phases)
@@ -114,14 +114,14 @@ pipe_svg = f'<svg viewBox="0 0 {PW} 240" role="img" aria-label="POC pipeline: ph
 
 # ---------------- honesty RAG ----------------
 rag = [
-    ("green", "Temporal freeze", "Tickets were selected first; T0 sits before the earliest fixing PR; the fact graph is built from T0-ancestor history only and the clone at T0 contains no future."),
-    ("green", "Mechanical ticket selection", "Rule v1.2 executed as pre-registered; every amendment (size floor, all-match sample) was made before T0 froze, with timing disclosed."),
-    ("green", "Fact-graph integrity", "Deterministic extraction, no LLM; store hash recorded; an extractor defect (churn undercount on renames) was found and replaced before the audit sample was drawn, on record."),
-    ("green", "No-upstream-PR fence", "The evaluation never touches the upstream project; one opt-in docs issue at Phase 3 is the only planned contact."),
-    ("amber", "Pre-registration completeness", "Ticket set, rule and T0 are committed; the verifier model pin, usage protocol text and power calculation are still owed before any scored run."),
-    ("amber", "Gate 2 audit", "The 32-fact hand-audit sample is filed and awaiting the owner; facts are unverified by a human until it passes."),
-    ("grey", "Identical-prompt arms", "Defined in the plan; not yet exercised. Becomes checkable at the Gate 5 dry run."),
-    ("grey", "Judge pinning", "Cross-vendor verifier ID, prompt and threshold are pinned at Gate 4, before results exist to shop against."),
+    ("green", "No knowledge from the future", "The knowledge base is built from the codebase as it stood in June 2025, before the earliest of the 25 test tickets was fixed. The agent cannot be helped by information that did not exist at the time."),
+    ("green", "Tickets picked by rule, not by hand", "The 25 tickets were selected by a written rule, published before the selection ran, so none could be cherry-picked to flatter the result. Both amendments to the rule were made before the freeze, with their timing on record."),
+    ("green", "The map contains no AI guesses", "The codebase map is extracted by plain scripts, parsers and git history, with no AI involved: it can be incomplete, but it cannot invent. One extraction bug (renamed files undercounted) was found and fixed before the audit sample was drawn, on record."),
+    ("green", "The real NetBox project stays untouched", "Everything runs on a frozen private copy. The only planned contact with the live project is a single documentation offer to its maintainers, and only if they want it."),
+    ("amber", "Everything locked before results exist", "The tickets, the selection rule and the freeze point are committed. Three things are still to lock before any scored run: the judge model, the exact instructions both agents receive, and the statistics plan."),
+    ("amber", "A human checks the map", "32 facts were drawn at random from the map, each with the exact command that verifies it against the code. Until that hand check passes, the map counts as machine-built and unaudited."),
+    ("grey", "Both agents get identical instructions", "The two test runs differ in exactly one thing: whether the knowledge base is plugged in. The instructions are word-for-word the same. Checkable at the stage 4 dry run."),
+    ("grey", "The judge is chosen before the verdict", "The second-opinion model that checks the drafted knowledge comes from a different vendor and is named, with its instructions and threshold, before any result exists that it could be picked to favour."),
 ]
 rag_html = "".join(
     f'<div class="rag {c}"><span class="dot"></span><b>{html.escape(t)}</b>'
@@ -176,7 +176,7 @@ drill_json = json.dumps(drill)
 # ---------------- page ----------------
 page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interpretation Layer POC — status and evidence</title>
+<title>Interpretation Layer POC: status and evidence</title>
 <style>
 body{{margin:0;background:{BG};color:{INK};font:15px/1.55 -apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}}
 a{{color:{NAVY};}}
@@ -236,40 +236,42 @@ footer{{margin-top:44px;padding-top:14px;border-top:1px solid {LINE};font-size:1
 code{{background:#f0f1f3;border-radius:3px;padding:0 4px;font-size:12px}}
 </style></head><body>
 <header><div class="wrap">
-<h1>Interpretation Layer POC — status and evidence</h1>
-<div class="byline">Verifying §4 of the <a href="https://yspbob.github.io/AI-Playbook/AI_Engineering_Playbook.html">AI Engineering Operating Model Playbook</a> on a public codebase &middot; <a href="https://www.linkedin.com/in/yaroslavpavolotsky">Yaroslav Pavolotskyi</a> &middot; pre-registered experiment, <a href="https://github.com/yspbob/interpretation-layer-poc">all artifacts public</a></div>
+<h1>Interpretation Layer POC: status and evidence</h1>
+<div class="byline">A live test of the interpretation layer proposed in <a href="https://yspbob.github.io/AI-Playbook/AI_Engineering_Playbook.html">the AI Engineering Playbook</a> (section 4), run on a real public codebase &middot; <a href="https://www.linkedin.com/in/yaroslavpavolotsky">Yaroslav Pavolotskyi</a> &middot; pre-registered experiment, <a href="https://github.com/yspbob/interpretation-layer-poc">all artifacts public</a></div>
 </div></header><div class="wrap">
 
+<div class="card"><p><b>What this is.</b> The playbook argues that before an AI coding agent touches a large codebase, it should be handed a curated, human-checked knowledge base about that codebase: what the parts are, how they depend on each other, and which decisions are already settled. The playbook calls this the interpretation layer, and it is the one part of the book not yet proven anywhere. This experiment builds that layer for NetBox, a real open-source project, then measures the same AI agent fixing 25 real tickets from NetBox's history two ways: with the knowledge base plugged in, and without it. Every rule, ticket and threshold is published before the results exist, so the outcome cannot be steered after the fact. The results ship whichever way they land.</p></div>
+
 <div class="statebar">
-<div class="state"><b>Current state</b>Phase 1 complete: the fact graph is built at T0 and its audit sample is filed. Phases 2 to 6 are pending their gates.</div>
-<div class="state"><b>Awaiting the owner</b>Gate 2: hand audit of the 32-fact sample. Nothing else is blocked on a decision.</div>
-<div class="state green"><b>Hypothesis under test</b>Serving certified estate knowledge to a coding agent measurably improves architectural conformance on real tickets, versus the same agent without it.</div>
+<div class="state"><b>Current state</b>Two of the seven stages are done: the codebase is chosen and its map is built. A 32-fact sample of the map is filed for checking. Nothing further has started.</div>
+<div class="state"><b>Awaiting the owner</b>One decision is due, and it is mine: hand-checking the 32 sampled facts against the actual code (Gate 2). Nothing else waits on anyone.</div>
+<div class="state green"><b>Hypothesis under test</b>An AI agent handed a verified knowledge base about the codebase will produce changes that fit the existing architecture measurably better than the same agent working from the raw code alone.</div>
 </div>
 
-<h2>Experiment honesty</h2>
-<p class="small">Each control that keeps the experiment honest, and whether it currently holds. Grey items cannot be tested yet by design.</p>
+<h2>What keeps this honest</h2>
+<p class="small">An experiment like this is easy to rig by accident, and easier on purpose. Each card names one way it could be rigged, and the control that prevents it. Green means the control holds today, amber means work is still owed, grey means it cannot be tested until a later stage.</p>
 <div class="raggrid">{rag_html}</div>
 
-<h2>Pipeline</h2>
+<h2>The seven stages</h2>
 <div class="card">{pipe_svg}</div>
 
-<h2>Why NetBox: repo selection (Gate 1)</h2>
+<h2>Why NetBox: choosing the codebase (Gate 1)</h2>
 <div class="card">
-<p class="small">Eight candidates researched against the plan's seven criteria; five eliminated (saleor: size; zulip and Ghost: rich architecture docs leave the drafting stage nothing to add; redash: inactive; directus: licence ambiguity and unverifiable size). Shortlist scored 0-5 per criterion:</p>
+<p class="small">Eight open-source projects were assessed against the seven criteria in the plan. Five fell out early: saleor was too large, redash is no longer active, directus has licence ambiguity and an unverifiable size, and zulip and Ghost are so well documented already that a generated knowledge base would have little to add. The three finalists were scored 0 to 5 on each criterion:</p>
 <table><tr><th>Criterion</th><th>NetBox</th><th>Paperless-ngx</th><th>Wagtail</th></tr>{sel_rows}{sel_totals}</table>
-<p class="small">Decisive grounds: the experiment is about dependency topology, and NetBox's twelve domain apps carry the best one; its triaged-and-assigned PR policy gives a near one-to-one issue-to-fix mapping for mechanical ticket selection; it is the only candidate with a verified mid-band size (328k LOC); single-language Python matches the pinned toolchain. Ratified at Gate 1 (R-247, 31 Aug 2026).</p>
+<p class="small">NetBox won on the grounds that matter here. The experiment is about dependency structure, and NetBox has the clearest one, with twelve domain apps importing from a shared core. Its maintainers link nearly every fix back to its issue, which is what makes rule-based ticket selection workable. And it is the only finalist whose size could be verified inside the target band, at 328k lines of Python. Ratified at Gate 1 (R-247, 31 Aug 2026).</p>
 </div>
 
-<h2>The repo at T0</h2>
+<h2>The frozen copy</h2>
 <div class="card">
-<p class="small">Fork of <a href="https://github.com/netbox-community/netbox">netbox-community/netbox</a>, frozen at T0 = <code>{T0}</code> (27 Jun 2025), the parent of the earliest selected fixing PR. Everything below is extracted deterministically from the T0 tree and its ancestor history: 965 modules, 4,303 top-level symbols, 3,155 internal import edges, 17 subsystems. In-repo agent-instruction files are stripped for both experiment arms.</p>
+<p class="small">The experiment runs on a fork of <a href="https://github.com/netbox-community/netbox">netbox-community/netbox</a>, frozen at commit <code>{T0}</code> of 27 June 2025. That commit, called T0 throughout, is the parent of the earliest of the 25 fixes, so nothing in the frozen copy knows about any of them. Counted by script from that snapshot: 965 modules, 4,303 top-level classes and functions, 3,155 import statements between modules, 17 subsystems. Files that carry instructions for AI coding tools are stripped from the copy, so neither test arm gets hidden help.</p>
 {bars}
-<p class="small">Code lines per subsystem (migrations and static data excluded; extras additionally carries 121k lines of static reference data, flagged in the store so the drafting stage cannot misread it as logic).</p>
+<p class="small">Code lines per subsystem, with migrations and static data excluded. One subsystem, extras, additionally carries 121k lines of static reference data; the map flags it as data so the drafting stage cannot mistake it for logic.</p>
 </div>
 
-<h2>Fact graph: subsystem dependencies</h2>
+<h2>The map: how the subsystems depend on each other</h2>
 <div class="card">
-<p class="small">Node size = code volume; edge weight = number of import statements crossing the pair (edges with fewer than 3 crossings omitted). Click a subsystem for its detail.</p>
+<p class="small">Each circle is one subsystem, and the bigger the circle, the more code it holds. A line means one subsystem imports from another, and the thicker the line, the more import statements cross between them (pairs with fewer than three are left out to reduce noise). Click a circle to see its busiest modules and what it depends on.</p>
 {dep_svg}
 <details><summary class="small">Table view: top 15 cross-subsystem dependencies</summary>
 <table><tr><th>From</th><th>To</th><th>Import statements</th></tr>
@@ -278,10 +280,10 @@ code{{background:#f0f1f3;border-radius:3px;padding:0 4px;font-size:12px}}
 </div>
 
 <h2>The 25 evaluation tickets</h2>
-<p class="small">Selected mechanically before T0 was set (rule v1.2, pre-registered): closed issues whose fixing PR carried tests, touched at least 5 files, passed the fail-then-pass execution screen, and fully matched the reported symptom in audit. Every summary below is written by an LLM from the upstream issue text and is not part of the fact graph.</p>
+<p class="small">These are 25 real changes from NetBox's history, each a closed issue that the maintainers fixed with tests. In the evaluation, the agent gets each ticket exactly as it stood before the fix existed, and has to produce its own. They were picked by the pre-registered rule, not by hand: the fixing PR had to carry tests, touch at least five files, demonstrably fail those tests before the fix and pass them after, and match the reported symptom under a per-ticket audit. The one-line summaries below are AI-written from the issue text and labelled as such; they are not part of the map.</p>
 {tickets_html}
 
-<footer>Generated {GENERATED} by <code>generate_status_page.py</code> from committed artifacts: <code>factgraph.db</code> (sha256 {FG_SHA}…), <code>preregistration/selected_tickets.md</code>, the Gate 1 report. This page is presentation only: no pipeline stage reads it, and the Phase 2 drafting stage never sees the ticket list. Experiment plan and rulings live in the project record; the write-up will label everything here as one codebase under lab conditions.</footer>
+<footer>Generated {GENERATED} by <code>generate_status_page.py</code> from committed artifacts: <code>factgraph.db</code> (sha256 {FG_SHA}…), the pre-registered ticket list, and the Gate 1 report. This page is presentation only. No pipeline stage reads it, and the stage that drafts the knowledge base never sees the ticket list above. The full plan and every ruling live in the project record, and the final write-up will label everything here as one codebase under lab conditions, not production evidence.</footer>
 </div>
 <div id="drill"><span class="close" onclick="this.parentNode.style.display='none'">&times;</span><div id="drillbody"></div></div>
 <script>
@@ -289,7 +291,7 @@ var DRILL = {drill_json};
 document.querySelectorAll('.node').forEach(function(n){{
   n.addEventListener('click', function(){{
     var s = n.getAttribute('data-sub'); var d = DRILL[s]; if(!d) return;
-    var h = '<h3>' + s + ' — ' + d.stats.loc_code.toLocaleString() + ' code lines, ' + d.stats.modules + ' modules, ' + d.stats.test_modules + ' test modules</h3>';
+    var h = '<h3>' + s + ': ' + d.stats.loc_code.toLocaleString() + ' code lines, ' + d.stats.modules + ' modules, ' + d.stats.test_modules + ' test modules</h3>';
     h += '<p class="small">Depends on: ' + (d.imports_out.map(function(o){{return o.sub + ' (' + o.c + ')';}}).join(', ') || 'nothing internal') + ' &middot; Depended on by: ' + (d.imported_in.map(function(o){{return o.sub + ' (' + o.c + ')';}}).join(', ') || 'nothing internal') + '</p>';
     h += '<table><tr><th>Module (top by fan-in)</th><th>LOC</th><th>Fan-in</th><th>Fan-out</th><th>Commits</th><th>Authors</th></tr>';
     d.top_modules.forEach(function(m){{ h += '<tr><td><code>' + m.module + '</code></td><td>' + m.loc + '</td><td>' + m.fan_in + '</td><td>' + m.fan_out + '</td><td>' + m.commits + '</td><td>' + m.authors + '</td></tr>'; }});

@@ -443,7 +443,7 @@
   "files": 9,
   "audit": "MATCH",
   "commit": "e15b7bd8ac43ed531c1fc1b30d1477250de807d5",
-  "title": "VLANGroup.save() doesn't validate vid_ranges bounds metadata \u2014 bounds='[]' callers get silent miscounts and a hard 500 on singleton ranges",
+  "title": "VLANGroup.save() doesn't validate vid_ranges bounds metadata: bounds='[]' callers get silent miscounts and a hard 500 on singleton ranges",
   "merge_title": "Merge pull request #22244 from netbox-community/22228-vlangroupsave-doesnt-validate-vid_ranges-bounds-metadata",
   "files_list": [],
   "subsystems": [],
