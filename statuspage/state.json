@@ -1,0 +1,254 @@
+{
+  "_comment": "Every hand-stated fact on the status page lives here (plan v1.2, section 6). The generator reads this file and the committed artifacts; nothing on the page is typed into the generator. Each entry names the artifact or ruling it derives from.",
+  "wip_banner": "This experiment is underway and no results exist yet. Everything on this page can still change through the plan's gated amendment process, and every change is dated in the public repository. The page states what is true at the moment it was generated, never completeness.",
+  "plan": {
+    "version": "v1.2",
+    "ratified": "2026-09-03",
+    "source_commit": "yspbob/AI-Playbook-src@c06a3c9",
+    "public_copy": "preregistration/plan/poc_interpretation_layer_plan.md"
+  },
+  "current_state": "Two of the seven stages are done in substance: the codebase is chosen (Gate 1 passed) and its map is built at the freeze point, now extended with a second kind of dependency edge. The map's hand check (Gate 2) is still owed by the owner. The pre-Phase-2 work ordered by plan v1.2 (published pre-registration, staleness and name-coupling tables, strip list, analysis plan) is committed; drafting has not started.",
+  "awaiting_owner": "Gate 2: hand-check the 32-fact sample and the 8-fact supplement for the new edge table. Ratify the items marked PROPOSED in the pre-registration files (budget cap and ladder thresholds, equivalence margin, served AGENTS.md section choice, operational prompt text). Confirm the symptom-audit grader design. Nothing else waits on anyone.",
+  "hypothesis": "An AI agent handed an evidence-verified knowledge base about the codebase will produce changes that fit the existing architecture measurably better than the same agent working from the raw code alone. Tested as a 2x2: with and without the knowledge base, with and without the maintainers' own hand-written agent guide.",
+  "phases": [
+    {
+      "num": "0",
+      "name": "Pick the codebase",
+      "gate": "Gate 1",
+      "meaning": "choose the project to test on",
+      "status": "done",
+      "note": "PASSED: NetBox, R-247"
+    },
+    {
+      "num": "1",
+      "name": "Map the codebase",
+      "gate": "Gate 2",
+      "meaning": "build the map by script, hand-check a sample",
+      "status": "active",
+      "note": "AWAITING OWNER: 32 + 8 facts filed"
+    },
+    {
+      "num": "2",
+      "name": "Draft the knowledge",
+      "gate": "Gate 3",
+      "meaning": "AI drafts the pages, every claim cites the map",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "num": "3",
+      "name": "Check the knowledge",
+      "gate": "Gate 4",
+      "meaning": "second AI from another vendor checks every claim",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "num": "4",
+      "name": "Plug it in",
+      "gate": "Gate 5",
+      "meaning": "rules derived, knowledge base connected, dry run",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "num": "5",
+      "name": "Run the test",
+      "gate": "Gate 6",
+      "meaning": "300 runs: 4 arms, same 25 tickets",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "num": "6",
+      "name": "Publish",
+      "gate": "Publish",
+      "meaning": "results published whichever way they land",
+      "status": "pending",
+      "note": ""
+    }
+  ],
+  "gate1": {
+    "ruling": "R-247, 31 Aug 2026",
+    "criteria": [
+      "Size 50-500k LOC",
+      "Activity",
+      "Layered architecture",
+      "Containerised tests",
+      "Test-carrying fixes",
+      "Thin architecture docs",
+      "Language tooling"
+    ],
+    "scores": {
+      "NetBox": [
+        5,
+        5,
+        5,
+        3,
+        5,
+        4,
+        5
+      ],
+      "Paperless-ngx": [
+        5,
+        5,
+        3,
+        5,
+        4,
+        5,
+        4
+      ],
+      "Wagtail": [
+        5,
+        5,
+        4,
+        3,
+        3,
+        3,
+        5
+      ]
+    },
+    "narrative": "Eight open-source projects were assessed against the seven criteria in the plan. Five fell out early: saleor was too large, redash is no longer active, directus has licence ambiguity and an unverifiable size, and zulip and Ghost are so well documented already that a generated knowledge base would have little to add. The three finalists were scored 0 to 5 on each criterion.",
+    "why": "NetBox won on the grounds that matter here. The experiment is about dependency structure, and NetBox has the clearest one, with twelve domain apps importing from a shared core. Its maintainers link nearly every fix back to its issue, which is what makes rule-based ticket selection workable. Its size is inside the target band by the map's own count (see the frozen copy below)."
+  },
+  "loc_rule": "Counted by the map's extractor over every .py file under netbox/ at T0: total lines including blank and comment lines. 'Code' excludes migrations and two static-data modules the map flags as data; the Gate 1 report's figure of 328k came from a different counter (cloc over the whole repository) and is superseded here by the map's count so that the page and the store agree.",
+  "honesty_cards": [
+    {
+      "state": "green",
+      "title": "No knowledge from the future",
+      "text": "The knowledge base is built from the codebase as it stood on 27 June 2025, before the earliest of the 25 test tickets was fixed. The agent cannot be helped by information that did not exist at the time. The flip side, that the knowledge base is up to 14 months older than the newest tickets, is measured and shown below.",
+      "source": "preregistration/selected_tickets.md (T0); factgraph/factgraph.db meta"
+    },
+    {
+      "state": "green",
+      "title": "Tickets picked by rule, not by hand",
+      "text": "The 25 tickets were selected by a written rule committed two minutes before it was first run. The rule was then amended twice in response to what the candidate pool looked like (a size floor; excluding partially tested tickets), both times before any outcome existed and both times dated on record. It is now frozen: no further amendment except the pre-registered infrastructure exclusions.",
+      "source": "preregistration/ticket_selection_rule.md v1.3; git history 1c791d6, 77e5b89, 9706b65"
+    },
+    {
+      "state": "green",
+      "title": "The map contains no AI guesses",
+      "text": "The codebase map is extracted by plain scripts, parsers and git history, with no AI involved: it can be incomplete, but it cannot invent. It was rebuilt independently from the public NetBox history and matched byte for byte (sha256 f760d315...). A second edge kind (Django string references such as ForeignKey('ipam.VLAN')) was added on 3 Sep 2026 as a new table, leaving every existing table identical.",
+      "source": "factgraph/build_factgraph.py; factgraph/rowhash.py; round-1 and round-3 reviews"
+    },
+    {
+      "state": "green",
+      "title": "The real NetBox project stays untouched",
+      "text": "Everything runs on a frozen private copy. The only planned contact with the live project is a single documentation offer to its maintainers, and only if they want it.",
+      "source": "plan v1.2, Phase 3"
+    },
+    {
+      "state": "green",
+      "title": "The universe was capped, and says so",
+      "text": "GitHub search returns at most 1,000 results. The ticket universe is therefore the 1,000 most recently created closed bug issues, not every issue in the nominal two-year window. The selection rule now states the universe as executed; the truncated tail is probed once and any ticket found there is disclosed, never added, because adding one would move the freeze point.",
+      "source": "preregistration/ticket_selection_rule.md v1.3 item 1; data/universe_fetch_log.md"
+    },
+    {
+      "state": "green",
+      "title": "Hidden helpers are stripped",
+      "text": "NetBox added its own instruction files for AI coding agents in 2026 (CLAUDE.md, AGENTS.md). Twenty of the 25 pre-fix checkouts contain them. The harness removes them at every checkout in every arm and logs what it removed, so no arm gets hidden help. The maintainers' guide is then handed back, trimmed of operational help, to the two arms designed to receive it.",
+      "source": "preregistration/strip_list.md; preregistration/served/AGENTS.md"
+    },
+    {
+      "state": "amber",
+      "title": "Everything locked before results exist",
+      "text": "The tickets, the selection rule, the freeze point, the strip list, the analysis plan and the tier-split procedure are committed. Still to lock before any scored run: the verifier model and its calibration (before Phase 3), the verbatim shared prompt, the rule set (derived only after the knowledge base is frozen, so it cannot be written to fit), and the power statement.",
+      "source": "plan v1.2, Phase 5 pre-registration list"
+    },
+    {
+      "state": "amber",
+      "title": "A human checks the map",
+      "text": "32 facts were drawn at random from the map, each with the exact command that verifies it against the code, plus 8 more for the new edge table. Until that hand check passes, the map counts as machine-built and unaudited.",
+      "source": "factgraph/audit_sample_model_refs.md; 32-fact sample (see preregistration/gate_reports)"
+    },
+    {
+      "state": "amber",
+      "title": "The model may have seen the fixes",
+      "text": "All 25 fixes are public and may be in the model's training data. That does not cancel out between arms: an agent replaying a memorised fix scores well, while an agent reasoning from the knowledge base may deviate, so memorisation shrinks the measured difference. Handling: the agent sees only the issue title and body, never the discussion thread; results are split by the model's training cutoff; a 25-call memorisation probe runs before scoring.",
+      "source": "plan v1.2, Contamination; preregistration/analysis_plan.md covariates"
+    },
+    {
+      "state": "amber",
+      "title": "The knowledge base is stale for the newest tickets",
+      "text": "For tickets fixed in 2026 the frozen map is missing about a quarter of the modules and import edges that exist at the checkout, and six tickets touch a module the map has never seen. The staleness of every ticket is measured and published; a mechanically generated 'changed since this map was drawn' note is served beside the knowledge base, which is what a nightly rebuild would provide.",
+      "source": "data/staleness.md; plan v1.2, Staleness handling"
+    },
+    {
+      "state": "amber",
+      "title": "Half the hidden tests demand the maintainers' exact names",
+      "text": "In 13 of 25 tickets the reference fix's tests import a class or function the fix invented. A correct fix under a different name fails those tests at import time. So 'passes the tests' is a strict, symmetric secondary measure, never the headline; such failures are counted as fails and their share is reported per arm.",
+      "source": "data/name_coupling.md; preregistration/analysis_plan.md"
+    },
+    {
+      "state": "grey",
+      "title": "Both agents get identical instructions",
+      "text": "The four arms differ only in what is present in the working tree: nothing, the maintainers' guide, the knowledge base, or both. The instructions are word for word the same, and the operational help (how to run tests) is in the shared instructions so no arm gains a capability from a served file. Checkable at the stage 4 dry run.",
+      "source": "preregistration/shared_prompt_operational.md"
+    },
+    {
+      "state": "grey",
+      "title": "The judge is chosen before it can be shopped",
+      "text": "The second-opinion model that checks the drafted knowledge comes from a different vendor and is named, with its instructions and threshold, before it is first used in stage 3, and it is calibrated first on claims deliberately corrupted by script. The models that score the softer conventions are two different families, calibrated the same way, with a blind human sample as the anchor.",
+      "source": "plan v1.2, Phase 3 and Tier 3"
+    },
+    {
+      "state": "grey",
+      "title": "The rules cannot be written to fit",
+      "text": "The rules that score the primary result are derived only after the knowledge base is frozen, from what it actually claims, by a fixed procedure with a committed random seed; whole rule families are held out and never shown to any arm. The procedure, seed and minimums are committed now; the rules themselves do not exist yet.",
+      "source": "preregistration/tier_split_procedure.md"
+    }
+  ],
+  "ticket_selection_text": "These are 25 real changes from NetBox's history, each a closed issue that the maintainers fixed with tests. In the evaluation, the agent gets each ticket exactly as it stood before the fix existed, and has to produce its own. They were picked by the pre-registered rule, not by hand: the fixing PR had to carry tests, touch at least five files, demonstrably fail those tests before the fix and pass them after, and match the reported symptom under a per-ticket audit. Each card also shows two things a sceptic asks about: how stale the frozen map is for that ticket, and whether the hidden tests demand the maintainers' exact names.",
+  "repo": "yspbob/interpretation-layer-poc",
+  "decisions_intro": "Everything the owner has to decide is listed here, in plain words, with the file it comes from. A static page cannot write into the repository, so each item opens a pre-filled GitHub issue in the artifacts repository: edit it if you like, submit it, and it becomes the dated record of the decision. The executor reads the issue, makes the change, and regenerates this page; the issue number is then cited as the ruling.",
+  "decisions": [
+    {
+      "id": "gate2",
+      "title": "Gate 2: does the map extract what it claims?",
+      "what": "Check the audit rows in the section below and submit your verdicts. If every row passes, Gate 2 passes and drafting (stage 2) may start. If any row fails, the extractor has a bug and is fixed before drafting.",
+      "options": "PASS all / FAIL (list the failing rows)",
+      "default": "",
+      "file": "factgraph/audit_sample_model_refs.md; preregistration/gate_reports/audit_sample_32.md"
+    },
+    {
+      "id": "budget",
+      "title": "Budget cap for scored runs",
+      "what": "The plan cuts the design in a fixed order if runs turn out too expensive. The cut order is fixed; the money figure that drives it is yours. The ladder file proposes USD 600 for scored runs (separate from verification, about USD 60 for calibration and probes).",
+      "options": "Ratify USD 600 / set a different figure",
+      "default": "PROPOSED: USD 600",
+      "file": "preregistration/degradation_ladder.md"
+    },
+    {
+      "id": "tost",
+      "title": "Equivalence margin (when do we call two arms 'as good as each other')",
+      "what": "To claim the generated knowledge base is 'not detectably worse' than the maintainers' hand-written guide, a margin must be fixed in advance. Proposed: half of the bare arm's observed violation rate, never below 0.02 or above 0.10 in absolute terms.",
+      "options": "Ratify the formula / set another",
+      "default": "PROPOSED: m = 0.5 x arm-A rate, floor 0.02, cap 0.10",
+      "file": "preregistration/analysis_plan.md"
+    },
+    {
+      "id": "agents_sections",
+      "title": "Which parts of the maintainers' guide arms B and D receive",
+      "what": "The maintainers' AGENTS.md mixes architecture with operational help (how to run tests). Operational help was moved into the shared instructions for all arms. Proposed to keep: Repository Overview, Tech Stack, Repository Map, Architecture, Common Tasks, Conventions and Patterns, Gotchas. Dropped: Commands, Development Setup, Testing, CI/CD, Branch and PR conventions, PR submission, Troubleshooting, References.",
+      "options": "Ratify / change the section list",
+      "default": "PROPOSED as listed",
+      "file": "preregistration/served/AGENTS.md"
+    },
+    {
+      "id": "ops_text",
+      "title": "The operational text every arm receives",
+      "what": "A short 'working in this repository' section (where manage.py lives, how to run one test, the test settings variable, lint rules). Same words in all four arms.",
+      "options": "Ratify the wording / use upstream's wording verbatim",
+      "default": "PROPOSED text",
+      "file": "preregistration/shared_prompt_operational.md"
+    },
+    {
+      "id": "grader",
+      "title": "How the symptom audit was graded",
+      "what": "The audit file says 'three parallel model graders, one grade per ticket'. It is not recorded whether each ticket got three grades with a majority, or one grade from one of three graders. Until you confirm, the page describes it as single-grade per ticket, the weaker reading.",
+      "options": "Majority of three / one grader per ticket / unknown",
+      "default": "recorded as: not confirmed",
+      "file": "preregistration/ticket_selection_rule.md item 5b note; data/symptom_audit.md"
+    }
+  ]
+}
