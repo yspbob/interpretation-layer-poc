@@ -1,0 +1,57 @@
+{
+ "issue": 19806,
+ "pr": 19807,
+ "merge": "3b8841ee3b0210b286dd62ca0b4810d0d6b72365",
+ "parent": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+ "parent_date": "2025-07-02",
+ "t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+ "months_after_t0": 0.2,
+ "modules": {
+  "t0": 965,
+  "at_checkout": 965,
+  "survived": 965,
+  "removed": 0,
+  "added": 0,
+  "survival": 1.0
+ },
+ "modules_removed": [],
+ "modules_added": [],
+ "symbols": {
+  "t0": 4303,
+  "at_checkout": 4303,
+  "survived": 4303,
+  "removed": 0,
+  "added": 0,
+  "survival": 1.0
+ },
+ "symbols_removed": [],
+ "symbols_added": [],
+ "edges": {
+  "t0": 3130,
+  "at_checkout": 3130,
+  "survived": 3130,
+  "removed": 0,
+  "added": 0,
+  "survival": 1.0
+ },
+ "edges_removed": [],
+ "edges_added": [],
+ "model_refs": {
+  "t0": 382,
+  "at_checkout": 382,
+  "survived": 382,
+  "removed": 0,
+  "added": 0,
+  "survival": 1.0
+ },
+ "model_refs_removed": [],
+ "model_refs_added": [],
+ "touched_modules": [
+  "core.exceptions",
+  "core.models.jobs",
+  "netbox.jobs"
+ ],
+ "touched_absent_from_t0": [],
+ "touched_edge_survival": 1.0,
+ "touched_symbol_survival": 1.0
+}

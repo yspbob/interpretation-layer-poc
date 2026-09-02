@@ -1,0 +1,119 @@
+{
+ "issue": 18900,
+ "pr": 19943,
+ "merge": "c736ce3179a8bb7bbcbf29324a08a62efa8747b6",
+ "parent": "111fefdf9c5fd64d75da47547fce2c2c3c26f705",
+ "parent_date": "2025-07-29",
+ "t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+ "months_after_t0": 1.1,
+ "modules": {
+  "t0": 965,
+  "at_checkout": 966,
+  "survived": 965,
+  "removed": 0,
+  "added": 1,
+  "survival": 1.0
+ },
+ "modules_removed": [],
+ "modules_added": [
+  "dcim.migrations.0208_devicerole_uniqueness"
+ ],
+ "symbols": {
+  "t0": 4303,
+  "at_checkout": 4309,
+  "survived": 4303,
+  "removed": 0,
+  "added": 6,
+  "survival": 1.0
+ },
+ "symbols_removed": [],
+ "symbols_added": [
+  [
+   "core.exceptions",
+   "class",
+   "JobFailed"
+  ],
+  [
+   "core.signals",
+   "function",
+   "clear_signal_history"
+  ],
+  [
+   "dcim.migrations.0208_devicerole_uniqueness",
+   "class",
+   "Migration"
+  ],
+  [
+   "dcim.svg.racks",
+   "function",
+   "truncate_text"
+  ],
+  [
+   "extras.conditions",
+   "class",
+   "InvalidCondition"
+  ],
+  [
+   "extras.lookups",
+   "class",
+   "NetHost"
+  ]
+ ],
+ "edges": {
+  "t0": 3130,
+  "at_checkout": 3132,
+  "survived": 3128,
+  "removed": 2,
+  "added": 4,
+  "survival": 0.9994
+ },
+ "edges_removed": [
+  [
+   "core.api.views",
+   "core.choices"
+  ],
+  [
+   "core.views",
+   "core.choices"
+  ]
+ ],
+ "edges_added": [
+  [
+   "dcim.graphql.types",
+   "vpn.graphql.types"
+  ],
+  [
+   "netbox.jobs",
+   "core.exceptions"
+  ],
+  [
+   "netbox.tests.test_jobs",
+   "core.exceptions"
+  ],
+  [
+   "netbox.tests.test_jobs",
+   "utilities.testing"
+  ]
+ ],
+ "model_refs": {
+  "t0": 382,
+  "at_checkout": 382,
+  "survived": 382,
+  "removed": 0,
+  "added": 0,
+  "survival": 1.0
+ },
+ "model_refs_removed": [],
+ "model_refs_added": [],
+ "touched_modules": [
+  "extras.api.views",
+  "extras.models.tags",
+  "netbox.api.exceptions",
+  "netbox.api.pagination",
+  "users.models.tokens",
+  "utilities.query"
+ ],
+ "touched_absent_from_t0": [],
+ "touched_edge_survival": 1.0,
+ "touched_symbol_survival": 1.0
+}
