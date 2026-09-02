@@ -1,0 +1,439 @@
+[
+ {
+  "issue": 23043,
+  "pr": 23055,
+  "merge": "f657bcb78a9862c0e20196e696dcadb77114d71f",
+  "test_files": [
+   "netbox/dcim/tests/test_forms.py",
+   "netbox/dcim/tests/test_views.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_forms.FrontPortTestCase.test_front_port_invalid_label_range",
+   "dcim.tests.test_forms.FrontPortTestCase.test_front_port_invalid_positions",
+   "dcim.tests.test_forms.FrontPortTestCase.test_front_port_missing_rear_ports",
+   "dcim.tests.test_forms.FrontPortTestCase.test_front_port_position_count_mismatch",
+   "dcim.tests.test_forms.FrontPortTestCase.test_front_port_position_count_valid",
+   "dcim.tests.test_forms.FrontPortTestCase.test_front_port_template_missing_rear_ports",
+   "dcim.tests.test_forms.FrontPortTestCase.test_front_port_template_position_count_mismatch",
+   "dcim.tests.test_views.FrontPortTestCase.test_create_multiple_objects_with_multiple_positions"
+  ]
+ },
+ {
+  "issue": 22990,
+  "pr": 23002,
+  "merge": "1077ff4a3321f350082d12abfc9bcab58bc9e345",
+  "test_files": [
+   "netbox/dcim/tests/test_views.py",
+   "netbox/netbox/tests/test_base_classes.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_views",
+   "netbox.tests.test_base_classes.FormClassesTestCase.test_bulk_edit_hardcoded_nullable_fields",
+   "netbox.tests.test_base_classes.FormClassesTestCase.test_bulk_edit_nullable_fields"
+  ]
+ },
+ {
+  "issue": 22985,
+  "pr": 22986,
+  "merge": "e49e6afbbe092f69dbfac0a8bdeebc4182d03795",
+  "test_files": [
+   "netbox/core/tests/test_views.py",
+   "netbox/dcim/tests/test_views.py",
+   "netbox/extras/tests/test_views.py",
+   "netbox/virtualization/tests/test_views.py"
+  ],
+  "test_ids": [
+   "core.tests.test_views.DataFileTestCase.test_content_is_not_cacheable",
+   "dcim.tests.test_views.DeviceTestCase.test_device_configcontext_is_not_cacheable",
+   "dcim.tests.test_views.DeviceTestCase.test_device_renderconfig_is_not_cacheable",
+   "extras.tests.test_views.ConfigContextProfileTestCase.test_content_is_not_cacheable",
+   "extras.tests.test_views.ConfigContextTestCase.test_content_is_not_cacheable",
+   "extras.tests.test_views.ConfigTemplateTestCase.test_content_is_not_cacheable",
+   "extras.tests.test_views.ExportTemplateTestCase.test_content_is_not_cacheable",
+   "virtualization.tests.test_views.VirtualMachineTestCase.test_virtualmachine_configcontext_is_not_cacheable",
+   "virtualization.tests.test_views.VirtualMachineTestCase.test_virtualmachine_renderconfig_is_not_cacheable"
+  ]
+ },
+ {
+  "issue": 22922,
+  "pr": 22928,
+  "merge": "c2d39b12d8b675c1442204a136b4abc448bbe08f",
+  "test_files": [
+   "netbox/dcim/tests/test_models.py",
+   "netbox/dcim/tests/test_signals.py",
+   "netbox/ipam/tests/test_signals.py",
+   "netbox/virtualization/tests/test_signals.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_models.ComponentInstantiationConnectionTestCase.test_device_module_bays_receive_saving_connection",
+   "dcim.tests.test_models.ComponentInstantiationConnectionTestCase.test_module_bay_tree_id_lookup_pinned_to_saving_connection",
+   "dcim.tests.test_models.ComponentInstantiationConnectionTestCase.test_module_component_rebuild_uses_saving_connection",
+   "dcim.tests.test_models.ComponentInstantiationConnectionTestCase.test_module_module_bays_receive_saving_connection",
+   "dcim.tests.test_signals.ScopeSignalConnectionTestCase.test_device_save_pins_queries_to_saving_connection",
+   "dcim.tests.test_signals.ScopeSignalConnectionTestCase.test_location_save_pins_queries_to_saving_connection",
+   "dcim.tests.test_signals.ScopeSignalConnectionTestCase.test_rack_save_pins_queries_to_saving_connection",
+   "dcim.tests.test_signals.ScopeSignalConnectionTestCase.test_site_save_pins_scope_resync_to_saving_connection",
+   "ipam.tests.test_signals.PrefixHierarchySignalConnectionTestCase.test_prefix_deleted_handler_pins_queries_to_given_connection",
+   "ipam.tests.test_signals.PrefixHierarchySignalConnectionTestCase.test_prefix_saved_handler_pins_queries_to_given_connection",
+   "virtualization.tests.test_signals.VirtualizationSignalConnectionTestCase.test_cluster_save_pins_vm_update_to_saving_connection",
+   "virtualization.tests.test_signals.VirtualizationSignalConnectionTestCase.test_virtualdisk_handler_pins_disk_aggregate_to_given_connection",
+   "virtualization.tests.test_signals.VirtualizationSignalConnectionTestCase.test_virtualdisk_save_pins_vm_update_to_saving_connection"
+  ]
+ },
+ {
+  "issue": 22812,
+  "pr": 22867,
+  "merge": "a08d9f13fceeab9fc5bf8f998ddc0997e867eab8",
+  "test_files": [
+   "netbox/extras/tests/test_scripts_deletion.py"
+  ],
+  "test_ids": [
+   "extras.tests.test_scripts_deletion.ConfirmCollectorTestCase.test_confirm_collector_counts_jobs_without_instantiating",
+   "extras.tests.test_scripts_deletion.ConfirmCollectorTestCase.test_confirm_collector_omits_jobs_when_none",
+   "extras.tests.test_scripts_deletion.ConfirmCollectorTestCase.test_count_only_wrapper",
+   "extras.tests.test_scripts_deletion.ObjectDeleteViewCountsTestCase.test_confirm_page_renders_job_count",
+   "extras.tests.test_scripts_deletion.ObjectDeleteViewCountsTestCase.test_get_dependent_objects_omits_jobs_when_none",
+   "extras.tests.test_scripts_deletion.ObjectDeleteViewCountsTestCase.test_get_dependent_objects_returns_count_only_for_jobs",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_delete_datasource_deletes_jobs",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_delete_rolls_back_jobs_on_parent_failure",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_delete_script_batches_jobs",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_delete_script_deletes_all_jobs",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_delete_scriptmodule_batches_child_script_jobs",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_delete_scriptmodule_cascades_to_scripts_and_jobs",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_delete_scriptmodule_rolls_back_child_jobs_on_failure",
+   "extras.tests.test_scripts_deletion.ScriptDeletionTestCase.test_soft_delete_preserves_jobs"
+  ]
+ },
+ {
+  "issue": 22745,
+  "pr": 22777,
+  "merge": "a94878aa08cf425866f56850e5d35996bf292cc3",
+  "test_files": [
+   "netbox/extras/tests/test_api.py",
+   "netbox/extras/tests/test_api_routers.py"
+  ],
+  "test_ids": [
+   "extras.tests.test_api.ScriptTestCase.test_create_script_disabled",
+   "extras.tests.test_api.ScriptTestCase.test_get_script_by_module_and_name",
+   "extras.tests.test_api.ScriptTestCase.test_get_script_invalid_pk",
+   "extras.tests.test_api.ScriptTestCase.test_list_scripts",
+   "extras.tests.test_api.ScriptTestCase.test_modify_script_methods_disabled",
+   "extras.tests.test_api.ScriptTestCase.test_options_detail_route",
+   "extras.tests.test_api.ScriptTestCase.test_options_detail_route_dynamic_fields",
+   "extras.tests.test_api.ScriptTestCase.test_run_script_anonymous",
+   "extras.tests.test_api.ScriptTestCase.test_run_script_by_module_and_name",
+   "extras.tests.test_api.ScriptTestCase.test_run_script_format_suffix",
+   "extras.tests.test_api.ScriptTestCase.test_run_script_not_executable",
+   "extras.tests.test_api.ScriptTestCase.test_run_script_read_only_token",
+   "extras.tests.test_api.ScriptTestCase.test_run_script_read_only_token_without_permission",
+   "extras.tests.test_api.ScriptTestCase.test_run_script_without_permission",
+   "extras.tests.test_api.ScriptTestCase.test_unsupported_method",
+   "extras.tests.test_api_routers.ScriptRouterTestCase.test_other_viewsets_unaffected",
+   "extras.tests.test_api_routers.ScriptRouterTestCase.test_route_templates_not_mutated",
+   "extras.tests.test_api_routers.ScriptRouterTestCase.test_script_routes",
+   "extras.tests.test_api_routers.ScriptRouterTestCase.test_script_viewset_subclass"
+  ]
+ },
+ {
+  "issue": 22852,
+  "pr": 22870,
+  "merge": "ae8fa4c0746a8646d86993f22825be03abd3d82f",
+  "test_files": [
+   "netbox/extras/tests/test_event_rules.py",
+   "netbox/extras/tests/test_management_commands.py"
+  ],
+  "test_ids": [
+   "extras.tests.test_event_rules.EventRuleTestCase.test_eventrule_script_action_honors_script_defaults",
+   "extras.tests.test_management_commands.RunScriptTestCase.test_enqueues_script_job",
+   "extras.tests.test_management_commands.RunScriptTestCase.test_missing_user_falls_back_to_superuser_and_empty_data",
+   "extras.tests.test_management_commands.RunScriptTestCase.test_no_user_argument_falls_back_to_first_superuser"
+  ]
+ },
+ {
+  "issue": 22588,
+  "pr": 22684,
+  "merge": "3e3d36cc2dcc0d4c558d3868ab39b09eca303944",
+  "test_files": [
+   "netbox/ipam/tests/test_filtersets.py",
+   "netbox/ipam/tests/test_forms.py"
+  ],
+  "test_ids": [
+   "ipam.tests.test_filtersets.VLANTestCase.test_available_at_site_group",
+   "ipam.tests.test_forms.PrefixFormTestCase.test_vlan_field_does_not_set_dynamic_params_for_other_scopes",
+   "ipam.tests.test_forms.PrefixFormTestCase.test_vlan_field_sets_dynamic_params_for_scope_site_group"
+  ]
+ },
+ {
+  "issue": 22682,
+  "pr": 22693,
+  "merge": "0eb1fcc09c1df3ccee3f10026a1e0763b819b814",
+  "test_files": [
+   "netbox/ipam/tests/test_models.py",
+   "netbox/virtualization/tests/test_models.py",
+   "netbox/wireless/tests/test_models.py"
+  ],
+  "test_ids": [
+   "ipam.tests.test_models.PrefixTestCase.test_deleting_region_does_not_delete_prefix_scoped_to_member_location",
+   "ipam.tests.test_models.PrefixTestCase.test_deleting_region_does_not_delete_prefix_scoped_to_member_site",
+   "ipam.tests.test_models.PrefixTestCase.test_deleting_region_scoped_to_it_directly_still_deletes_prefix",
+   "ipam.tests.test_models.PrefixTestCase.test_deleting_site_group_does_not_delete_prefix_scoped_to_member_location",
+   "ipam.tests.test_models.PrefixTestCase.test_deleting_site_group_does_not_delete_prefix_scoped_to_member_site",
+   "ipam.tests.test_models.PrefixTestCase.test_deleting_site_group_scoped_to_it_directly_still_deletes_prefix",
+   "virtualization.tests.test_models.ClusterTestCase.test_deleting_region_does_not_delete_cluster_scoped_to_member_site",
+   "virtualization.tests.test_models.ClusterTestCase.test_deleting_region_scoped_to_it_directly_still_deletes_cluster",
+   "virtualization.tests.test_models.ClusterTestCase.test_deleting_site_group_does_not_delete_cluster_scoped_to_member_site",
+   "virtualization.tests.test_models.ClusterTestCase.test_deleting_site_group_scoped_to_it_directly_still_deletes_cluster",
+   "wireless.tests.test_models.WirelessLANTestCase.test_deleting_region_does_not_delete_wirelesslan_scoped_to_member_site",
+   "wireless.tests.test_models.WirelessLANTestCase.test_deleting_region_scoped_to_it_directly_still_deletes_wirelesslan",
+   "wireless.tests.test_models.WirelessLANTestCase.test_deleting_site_group_does_not_delete_wirelesslan_scoped_to_member_site",
+   "wireless.tests.test_models.WirelessLANTestCase.test_deleting_site_group_scoped_to_it_directly_still_deletes_wirelesslan"
+  ]
+ },
+ {
+  "issue": 22644,
+  "pr": 22645,
+  "merge": "c1d8ff1216758a599786f96f752b46ca1aaf6e15",
+  "test_files": [
+   "netbox/dcim/tests/test_port_mappings.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_port_mappings.PortMappingAPITestCase.test_create_records_mappings_and_changelog",
+   "dcim.tests.test_port_mappings.PortMappingAPITestCase.test_update_omitting_rear_ports_preserves_mappings",
+   "dcim.tests.test_port_mappings.PortMappingAPITestCase.test_update_rewires_mappings",
+   "dcim.tests.test_port_mappings.ReconcilePortMappingsTestCase.test_create_records_objectchange",
+   "dcim.tests.test_port_mappings.ReconcilePortMappingsTestCase.test_direct_delete_records_objectchange",
+   "dcim.tests.test_port_mappings.ReconcilePortMappingsTestCase.test_noop_resave_writes_nothing",
+   "dcim.tests.test_port_mappings.ReconcilePortMappingsTestCase.test_removing_a_mapping_records_delete",
+   "dcim.tests.test_port_mappings.ReconcilePortMappingsTestCase.test_repointing_a_slot_deletes_and_creates",
+   "dcim.tests.test_port_mappings.ReconcilePortMappingsTestCase.test_swapping_positions_preserves_constraints",
+   "dcim.tests.test_port_mappings.ReconcilePortMappingsTestCase.test_unchanged_rows_survive_alongside_changed_rows",
+   "dcim.tests.test_port_mappings.ReconcilePortTemplateMappingsTestCase.test_create_records_objectchange",
+   "dcim.tests.test_port_mappings.ReconcilePortTemplateMappingsTestCase.test_noop_resave_writes_nothing"
+  ]
+ },
+ {
+  "issue": 22578,
+  "pr": 22606,
+  "merge": "6edb5ec8b7da022794b2bf95daf9177250a6c7cf",
+  "test_files": [
+   "netbox/extras/tests/test_api.py"
+  ],
+  "test_ids": [
+   "extras.tests.test_api.SavedFilterTestCase.test_private_filter_not_visible_to_other_users",
+   "extras.tests.test_api.TableConfigTestCase.test_private_table_config_not_visible_to_other_users"
+  ]
+ },
+ {
+  "issue": 22429,
+  "pr": 22424,
+  "merge": "d1919627cefc93ba5104f327df0f2959396d129f",
+  "test_files": [
+   "netbox/users/tests/test_api.py",
+   "netbox/users/tests/test_views.py"
+  ],
+  "test_ids": [
+   "users.tests.test_api.TokenTestCase.test_grant_token_constrained_permission_is_enforced",
+   "users.tests.test_api.TokenTestCase.test_grant_token_non_user_field_constraint_fails_closed",
+   "users.tests.test_api.TokenTestCase.test_grant_token_self_only_constraint",
+   "users.tests.test_api.TokenTestCase.test_grant_token_superuser_always_allowed",
+   "users.tests.test_views.TokenGrantPermissionTestCase.test_bulk_import_token_constrained_grant_is_enforced",
+   "users.tests.test_views.TokenGrantPermissionTestCase.test_create_token_via_form_constrained_grant_is_enforced"
+  ]
+ },
+ {
+  "issue": 22273,
+  "pr": 22401,
+  "merge": "b4116f2532b1d1308668f05e7c03e62a3dfe2b11",
+  "test_files": [
+   "netbox/ipam/tests/test_models.py"
+  ],
+  "test_ids": [
+   "ipam.tests.test_models.ServiceTemplateTestCase.test_servicetemplate_empty_ports",
+   "ipam.tests.test_models.ServiceTemplateTestCase.test_servicetemplate_lowest_port",
+   "ipam.tests.test_models.ServiceTemplateTestCase.test_servicetemplate_single_port",
+   "ipam.tests.test_models.ServiceTestCase.test_large_service"
+  ]
+ },
+ {
+  "issue": 22237,
+  "pr": 22385,
+  "merge": "86ea67d6400aa1300d00b047090c8b7d54bb2dac",
+  "test_files": [
+   "netbox/extras/tests/test_forms.py",
+   "netbox/extras/tests/test_models.py",
+   "netbox/extras/tests/test_views.py"
+  ],
+  "test_ids": [
+   "extras.tests.test_forms.TableConfigFormTestCase.test_bulk_edit_form_includes_changelog_message",
+   "extras.tests.test_forms.TableConfigFormTestCase.test_form_includes_changelog_message",
+   "extras.tests.test_forms.TableConfigFormTestCase.test_form_with_invalid_object_type",
+   "extras.tests.test_forms.TableConfigFormTestCase.test_form_with_table_context",
+   "extras.tests.test_forms.TableConfigFormTestCase.test_form_with_unknown_table",
+   "extras.tests.test_forms.TableConfigFormTestCase.test_form_without_table_context",
+   "extras.tests.test_models.TableConfigTestCase.test_clean_accepts_columns_none",
+   "extras.tests.test_models.TableConfigTestCase.test_clean_without_object_type",
+   "extras.tests.test_views.TableConfigTestCase.test_add_view_post_without_table_context",
+   "extras.tests.test_views.TableConfigTestCase.test_add_view_without_table_context"
+  ]
+ },
+ {
+  "issue": 22324,
+  "pr": 22366,
+  "merge": "2e50fc3d97e81f6bac394547415853c00a7950f7",
+  "test_files": [
+   "netbox/extras/tests/test_api.py",
+   "netbox/extras/tests/test_lookups.py",
+   "netbox/utilities/tests/test_serialization.py"
+  ],
+  "test_ids": [
+   "extras.tests.test_api.CustomFieldChoiceSetTestCase.test_graphql_filter_extra_choices",
+   "extras.tests.test_api.CustomFieldChoiceSetTestCase.test_graphql_filter_extra_choices_rejects_array_operands",
+   "extras.tests.test_api.CustomFieldChoiceSetTestCase.test_graphql_filter_extra_choices_via_relation",
+   "extras.tests.test_lookups.ChoiceValueLookupTestCase.test_choice_value_excludes_null_extra_choices",
+   "extras.tests.test_lookups.ChoiceValueLookupTestCase.test_choice_value_matches_values_only",
+   "extras.tests.test_lookups.ChoiceValueLookupTestCase.test_choice_value_not_registered_on_plain_array_fields",
+   "utilities.tests.test_serialization.SerializationTestCase.test_serialize_object_empty_array_field_subclass"
+  ]
+ },
+ {
+  "issue": 22301,
+  "pr": 22323,
+  "merge": "4eb0e727b9bb35e78e91102c0b8a1c2b988dd842",
+  "test_files": [
+   "netbox/extras/tests/test_tags.py"
+  ],
+  "test_ids": [
+   "extras.tests.test_tags.TagsMixinCollisionTestCase.test_deconstruct_emits_upstream_path",
+   "extras.tests.test_tags.TagsMixinCollisionTestCase.test_same_named_taggable_models_in_different_apps"
+  ]
+ },
+ {
+  "issue": 22228,
+  "pr": 22244,
+  "merge": "e15b7bd8ac43ed531c1fc1b30d1477250de807d5",
+  "test_files": [
+   "netbox/ipam/tests/test_models.py",
+   "netbox/netbox/tests/test_api.py",
+   "netbox/utilities/tests/test_data.py"
+  ],
+  "test_ids": [
+   "ipam.tests.test_models.VLANGroupTestCase.test_annotate_utilization_with_zero_total_vlan_ids",
+   "ipam.tests.test_models.VLANGroupTestCase.test_get_available_vids_with_inclusive_ranges",
+   "ipam.tests.test_models.VLANGroupTestCase.test_total_vlan_ids_with_inclusive_ranges",
+   "ipam.tests.test_models.VLANGroupTestCase.test_total_vlan_ids_with_inclusive_ranges_without_full_clean",
+   "ipam.tests.test_models.VLANGroupTestCase.test_total_vlan_ids_with_update_fields",
+   "netbox.tests.test_api.IntegerRangeSerializerTestCase.test_to_internal_value_produces_canonical_half_open_range",
+   "netbox.tests.test_api.IntegerRangeSerializerTestCase.test_to_internal_value_rejects_malformed_input",
+   "netbox.tests.test_api.IntegerRangeSerializerTestCase.test_to_internal_value_rejects_non_integer_bounds",
+   "netbox.tests.test_api.IntegerRangeSerializerTestCase.test_to_representation_emits_inclusive_bounds_for_non_canonical_range",
+   "utilities.tests.test_data.RangeFunctionsTestCase.test_check_ranges_overlap_does_not_mutate_input",
+   "utilities.tests.test_data.RangeFunctionsTestCase.test_check_ranges_overlap_with_non_canonical_bounds",
+   "utilities.tests.test_data.RangeFunctionsTestCase.test_get_inclusive_integer_range_bounds",
+   "utilities.tests.test_data.RangeFunctionsTestCase.test_normalize_integer_range"
+  ]
+ },
+ {
+  "issue": 21498,
+  "pr": 21815,
+  "merge": "b4ee2cf447a351bbacb5b19cf9182fb25a2e83ac",
+  "test_files": [
+   "netbox/dcim/tests/test_models.py",
+   "netbox/extras/tests/test_event_rules.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_models.CableTestCase.test_path_refreshes_replaced_cablepath_reference",
+   "dcim.tests.test_models.CableTestCase.test_serialize_for_event_handles_stale_cablepath_reference_after_retermination",
+   "extras.tests.test_event_rules.EventRuleTest.test_duplicate_enqueue_invalidates_materialized_data",
+   "extras.tests.test_event_rules.EventRuleTest.test_duplicate_enqueue_refreshes_lazy_payload",
+   "extras.tests.test_event_rules.EventRuleTest.test_update_then_delete_enqueue_freezes_payload"
+  ]
+ },
+ {
+  "issue": 20474,
+  "pr": 21740,
+  "merge": "c7bbfb24c5f6ad1891d7e261a05a72f97c5e320c",
+  "test_files": [
+   "netbox/dcim/tests/test_models.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_models.ModuleBayTestCase.test_single_module_token_at_nested_depth"
+  ]
+ },
+ {
+  "issue": 21763,
+  "pr": 21778,
+  "merge": "e54ed878632309cb988bb44bb761f5c671d9af08",
+  "test_files": [
+   "netbox/dcim/tests/test_forms.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_forms.SiteFormTestCase.test_add_remove_mode_adds_asns",
+   "dcim.tests.test_forms.SiteFormTestCase.test_add_remove_mode_removes_asns",
+   "dcim.tests.test_forms.SiteFormTestCase.test_add_remove_mode_simultaneous_add_and_remove",
+   "dcim.tests.test_forms.SiteFormTestCase.test_existing_site_at_threshold_uses_add_remove_mode",
+   "dcim.tests.test_forms.SiteFormTestCase.test_existing_site_below_threshold_uses_simple_mode",
+   "dcim.tests.test_forms.SiteFormTestCase.test_new_site_uses_simple_mode",
+   "dcim.tests.test_forms.SiteFormTestCase.test_simple_mode_assigns_asns_on_create",
+   "dcim.tests.test_forms.SiteFormTestCase.test_simple_mode_replaces_asns_on_edit"
+  ]
+ },
+ {
+  "issue": 21129,
+  "pr": 21309,
+  "merge": "c44e8606f7b240fe0b6955208056ae21f001d346",
+  "test_files": [
+   "netbox/core/tests/test_models.py"
+  ],
+  "test_ids": [
+   "core.tests.test_models.JobTest.test_delete_cancels_job_from_correct_queue"
+  ]
+ },
+ {
+  "issue": 20670,
+  "pr": 20717,
+  "merge": "730d73042d5ee34b31f16e2c978cb65718eb794e",
+  "test_files": [
+   "netbox/dcim/tests/test_views.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_views.DeviceTypeTestCase.test_import_error_numbering",
+   "dcim.tests.test_views.DeviceTypeTestCase.test_import_nodict",
+   "dcim.tests.test_views.DeviceTypeTestCase.test_import_nolist"
+  ]
+ },
+ {
+  "issue": 20389,
+  "pr": 20672,
+  "merge": "aa4571b61f7482ae7a521738c6e0030d75336a69",
+  "test_files": [
+   "netbox/dcim/tests/test_views.py"
+  ],
+  "test_ids": [
+   "dcim.tests.test_views.InterfaceTestCase.test_rename_select_all_spans_pages"
+  ]
+ },
+ {
+  "issue": 18900,
+  "pr": 19943,
+  "merge": "c736ce3179a8bb7bbcbf29324a08a62efa8747b6",
+  "test_files": [
+   "netbox/netbox/tests/test_api.py"
+  ],
+  "test_ids": [
+   "netbox.tests.test_api.OptionalLimitOffsetPaginationTest.test_allows_non_queryset_iterables",
+   "netbox.tests.test_api.OptionalLimitOffsetPaginationTest.test_allows_ordered_queryset",
+   "netbox.tests.test_api.OptionalLimitOffsetPaginationTest.test_raises_exception_for_unordered_queryset"
+  ]
+ },
+ {
+  "issue": 19806,
+  "pr": 19807,
+  "merge": "3b8841ee3b0210b286dd62ca0b4810d0d6b72365",
+  "test_files": [
+   "netbox/netbox/tests/test_jobs.py"
+  ],
+  "test_ids": [
+   "netbox.tests.test_jobs.JobRunnerTest.test_handle_failed"
+  ]
+ }
+]

@@ -1,0 +1,641 @@
+[
+ {
+  "seq": 1,
+  "issue": 23043,
+  "pr": 23055,
+  "merge": "f657bcb78a9862c0e20196e696dcadb77114d71f",
+  "test_files": [
+   "netbox/dcim/tests/test_forms.py",
+   "netbox/dcim/tests/test_views.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 2,
+  "issue": 22990,
+  "pr": 23002,
+  "merge": "1077ff4a3321f350082d12abfc9bcab58bc9e345",
+  "test_files": [
+   "netbox/dcim/tests/test_views.py",
+   "netbox/netbox/tests/test_base_classes.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [
+   "from django.core.exceptions import FieldDoesNotExist"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 3,
+  "issue": 22985,
+  "pr": 22986,
+  "merge": "e49e6afbbe092f69dbfac0a8bdeebc4182d03795",
+  "test_files": [
+   "netbox/core/tests/test_views.py",
+   "netbox/dcim/tests/test_views.py",
+   "netbox/extras/tests/test_views.py",
+   "netbox/virtualization/tests/test_views.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "assertNotCacheable"
+  ],
+  "coupled_symbols": [
+   "assertNotCacheable"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from extras.models import ConfigContext, ConfigTemplate"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 4,
+  "issue": 22922,
+  "pr": 22928,
+  "merge": "c2d39b12d8b675c1442204a136b4abc448bbe08f",
+  "test_files": [
+   "netbox/dcim/tests/test_models.py",
+   "netbox/dcim/tests/test_signals.py",
+   "netbox/ipam/tests/test_signals.py",
+   "netbox/virtualization/tests/test_signals.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "PinnedConnectionRouter",
+   "UnpinnedQuery",
+   "_check",
+   "_get_scope_object",
+   "handle_device_site_change",
+   "handle_prefix_deleted",
+   "handle_prefix_saved",
+   "handle_rack_site_change",
+   "sync_cached_scope_fields",
+   "update_children_depth",
+   "update_denormalized_fields",
+   "update_parents_children",
+   "update_virtualmachine_disk",
+   "update_virtualmachine_site"
+  ],
+  "coupled_symbols": [
+   "PinnedConnectionRouter",
+   "handle_device_site_change",
+   "handle_prefix_deleted",
+   "handle_prefix_saved",
+   "handle_rack_site_change",
+   "sync_cached_scope_fields",
+   "update_virtualmachine_disk",
+   "update_virtualmachine_site"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from django.test import RequestFactory, TestCase, override_settings",
+   "from django.test import SimpleTestCase, TestCase, TransactionTestCase, override_settings",
+   "from django.test import TestCase, override_settings",
+   "from django.test import TestCase, override_settings, tag",
+   "from ipam import signals",
+   "from ipam.models import VRF, IPAddress, Prefix",
+   "from unittest.mock import patch",
+   "from utilities.testing import PinnedConnectionRouter",
+   "from virtualization import signals"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 5,
+  "issue": 22812,
+  "pr": 22867,
+  "merge": "a08d9f13fceeab9fc5bf8f998ddc0997e867eab8",
+  "test_files": [
+   "netbox/extras/tests/test_scripts_deletion.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "ConfirmCollector",
+   "CountOnly",
+   "__iter__",
+   "__len__",
+   "batch_delete_jobs"
+  ],
+  "coupled_symbols": [
+   "ConfirmCollector",
+   "CountOnly"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from core.choices import JobStatusChoices, ManagedFileRootPathChoices",
+   "from core.models import DataSource, Job",
+   "from django.contrib.contenttypes.models import ContentType",
+   "from django.db import router",
+   "from django.db.models import QuerySet",
+   "from django.test import TestCase, override_settings",
+   "from django.urls import reverse",
+   "from extras.models import Script, ScriptModule",
+   "from extras.validators import CustomValidator",
+   "from netbox.models.deletion import ConfirmCollector, CountOnly",
+   "from netbox.views.generic.object_views import ObjectDeleteView",
+   "from unittest import mock",
+   "from utilities.exceptions import AbortRequest",
+   "from utilities.testing import TestCase as ViewTestCase",
+   "import uuid"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 6,
+  "issue": 22745,
+  "pr": 22777,
+  "merge": "a94878aa08cf425866f56850e5d35996bf292cc3",
+  "test_files": [
+   "netbox/extras/tests/test_api.py",
+   "netbox/extras/tests/test_api_routers.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "ScriptRouter",
+   "ScriptViewSet",
+   "get_routes",
+   "get_serializer",
+   "get_serializer_context"
+  ],
+  "coupled_symbols": [
+   "ScriptRouter",
+   "ScriptViewSet",
+   "get_routes"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from core.models import DataFile, DataSource, Job, ObjectType",
+   "from django.test import TestCase",
+   "from django.test import override_settings",
+   "from extras.api.routers import ScriptRouter",
+   "from extras.api.views import CustomFieldChoiceSetViewSet, ScriptViewSet, WebhookViewSet",
+   "from utilities.testing import APITestCase, APIViewTestCases, disable_warnings"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 7,
+  "issue": 22852,
+  "pr": 22870,
+  "merge": "ae8fa4c0746a8646d86993f22825be03abd3d82f",
+  "test_files": [
+   "netbox/extras/tests/test_event_rules.py",
+   "netbox/extras/tests/test_management_commands.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [
+   "from core.choices import JobNotificationChoices",
+   "from core.choices import JobNotificationChoices, ManagedFileRootPathChoices",
+   "from extras.models import EventRule, Notification, Script, ScriptModule, Tag, Webhook",
+   "from extras.scripts import Script, StringVar"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 8,
+  "issue": 22588,
+  "pr": 22684,
+  "merge": "3e3d36cc2dcc0d4c558d3868ab39b09eca303944",
+  "test_files": [
+   "netbox/ipam/tests/test_filtersets.py",
+   "netbox/ipam/tests/test_forms.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "get_for_site_group"
+  ],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 9,
+  "issue": 22682,
+  "pr": 22693,
+  "merge": "0eb1fcc09c1df3ccee3f10026a1e0763b819b814",
+  "test_files": [
+   "netbox/ipam/tests/test_models.py",
+   "netbox/virtualization/tests/test_models.py",
+   "netbox/wireless/tests/test_models.py"
+  ],
+  "migration_files": [
+   "netbox/ipam/migrations/0093_alter_prefix__region_alter_prefix__site_group.py",
+   "netbox/virtualization/migrations/0057_alter_cluster__region_alter_cluster__site_group.py",
+   "netbox/wireless/migrations/0020_alter_wirelesslan__region_and_more.py"
+  ],
+  "new_symbols_in_source": [],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [
+   "from dcim.models import Interface, Region, Site, SiteGroup",
+   "from dcim.models import Location, Region, Site, SiteGroup",
+   "from dcim.models import Platform, Region, Site, SiteGroup",
+   "from wireless.models import WirelessLAN, WirelessLink"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 10,
+  "issue": 22644,
+  "pr": 22645,
+  "merge": "c1d8ff1216758a599786f96f752b46ca1aaf6e15",
+  "test_files": [
+   "netbox/dcim/tests/test_port_mappings.py"
+  ],
+  "migration_files": [
+   "netbox/dcim/migrations/0239_add_portmapping_objectchange.py"
+  ],
+  "new_symbols_in_source": [
+   "Meta",
+   "PortMapping",
+   "PortTemplateMapping",
+   "_reconcile_mappings",
+   "reconcile_port_mappings",
+   "target"
+  ],
+  "coupled_symbols": [
+   "PortMapping",
+   "PortTemplateMapping",
+   "_reconcile_mappings",
+   "reconcile_port_mappings"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from core.choices import ObjectChangeActionChoices",
+   "from core.models import ObjectChange",
+   "from dcim.choices import PortTypeChoices",
+   "from dcim.models import (",
+   "from dcim.utils import reconcile_port_mappings",
+   "from django.contrib.contenttypes.models import ContentType",
+   "from django.test import RequestFactory, TestCase, tag",
+   "from django.urls import reverse",
+   "from netbox.context_managers import event_tracking",
+   "from rest_framework import status",
+   "from users.models import User",
+   "from utilities.testing import APITestCase",
+   "import uuid"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 11,
+  "issue": 22578,
+  "pr": 22606,
+  "merge": "6edb5ec8b7da022794b2bf95daf9177250a6c7cf",
+  "test_files": [
+   "netbox/extras/tests/test_api.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "SavedFilterType",
+   "SavedFilterViewSet",
+   "SharedObjectMixin",
+   "SharedObjectQuerySet",
+   "SharedObjectQuerySetMixin",
+   "TableConfigType",
+   "TableConfigViewSet",
+   "restrict_to_shared"
+  ],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [
+   "from users.models import Group, ObjectPermission, Token, User",
+   "import json"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 12,
+  "issue": 22429,
+  "pr": 22424,
+  "merge": "d1919627cefc93ba5104f327df0f2959396d129f",
+  "test_files": [
+   "netbox/users/tests/test_api.py",
+   "netbox/users/tests/test_views.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "user_may_grant_token"
+  ],
+  "coupled_symbols": [
+   "user_may_grant_token"
+  ],
+  "coupled": true,
+  "test_added_imports": [],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 13,
+  "issue": 22273,
+  "pr": 22401,
+  "merge": "b4116f2532b1d1308668f05e7c03e62a3dfe2b11",
+  "test_files": [
+   "netbox/ipam/tests/test_models.py"
+  ],
+  "migration_files": [
+   "netbox/ipam/migrations/0089_default_ordering_indexes.py",
+   "netbox/ipam/migrations/0091_alter_service_index_and_ordering.py"
+  ],
+  "new_symbols_in_source": [],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [
+   "from ipam.constants import SERVICE_PORT_MAX, SERVICE_PORT_MIN",
+   "from virtualization.models import VirtualMachine"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 14,
+  "issue": 22237,
+  "pr": 22385,
+  "merge": "86ea67d6400aa1300d00b047090c8b7d54bb2dac",
+  "test_files": [
+   "netbox/extras/tests/test_forms.py",
+   "netbox/extras/tests/test_models.py",
+   "netbox/extras/tests/test_views.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "TableConfigBulkEditForm",
+   "TableConfigForm"
+  ],
+  "coupled_symbols": [
+   "TableConfigBulkEditForm",
+   "TableConfigForm"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from django.contrib.messages import get_messages",
+   "from extras.forms import SavedFilterForm, TableConfigBulkEditForm, TableConfigForm"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 15,
+  "issue": 22324,
+  "pr": 22366,
+  "merge": "2e50fc3d97e81f6bac394547415853c00a7950f7",
+  "test_files": [
+   "netbox/extras/tests/test_api.py",
+   "netbox/extras/tests/test_lookups.py",
+   "netbox/utilities/tests/test_serialization.py"
+  ],
+  "migration_files": [
+   "netbox/extras/migrations/0139_alter_customfieldchoiceset_extra_choices.py"
+  ],
+  "new_symbols_in_source": [
+   "ChoiceSetField",
+   "ChoiceValueLookup",
+   "ExtraChoicesLookup",
+   "as_sql"
+  ],
+  "coupled_symbols": [
+   "ChoiceSetField"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from django.core.exceptions import FieldError",
+   "from django.test import TestCase",
+   "from extras.choices import CustomFieldChoiceSetBaseChoices",
+   "from extras.models import CustomFieldChoiceSet, EventRule",
+   "from extras.models import CustomFieldChoiceSet, Tag"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 16,
+  "issue": 22301,
+  "pr": 22323,
+  "merge": "4eb0e727b9bb35e78e91102c0b8a1c2b988dd842",
+  "test_files": [
+   "netbox/extras/tests/test_tags.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "NetBoxTaggableManagerField",
+   "contribute_to_class"
+  ],
+  "coupled_symbols": [
+   "NetBoxTaggableManagerField"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from django.apps import apps",
+   "from django.db import models",
+   "from django.test import SimpleTestCase",
+   "from extras.managers import NetBoxTaggableManagerField",
+   "from netbox.models.features import TagsMixin"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 17,
+  "issue": 22228,
+  "pr": 22244,
+  "merge": "e15b7bd8ac43ed531c1fc1b30d1477250de807d5",
+  "test_files": [
+   "netbox/ipam/tests/test_models.py",
+   "netbox/netbox/tests/test_api.py",
+   "netbox/utilities/tests/test_data.py"
+  ],
+  "migration_files": [
+   "netbox/ipam/migrations/0090_vlangroup_recompute_total_vlan_ids.py"
+  ],
+  "new_symbols_in_source": [
+   "get_inclusive_integer_range_bounds",
+   "normalize_integer_range"
+  ],
+  "coupled_symbols": [
+   "get_inclusive_integer_range_bounds",
+   "normalize_integer_range"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from django.db.backends.postgresql.psycopg_any import NumericRange",
+   "from netbox.api.fields import IntegerRangeSerializer"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 18,
+  "issue": 21498,
+  "pr": 21815,
+  "merge": "b4ee2cf447a351bbacb5b19cf9182fb25a2e83ac",
+  "test_files": [
+   "netbox/dcim/tests/test_models.py",
+   "netbox/extras/tests/test_event_rules.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "freeze_data",
+   "refresh_serialization_source"
+  ],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [
+   "from django.conf import settings",
+   "from extras.events import serialize_for_event",
+   "from the fresher instance on next access.",
+   "from unittest import skipIf"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 19,
+  "issue": 20474,
+  "pr": 21740,
+  "merge": "c7bbfb24c5f6ad1891d7e261a05a72f97c5e320c",
+  "test_files": [
+   "netbox/dcim/tests/test_models.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "get_module_bay_positions",
+   "resolve_module_placeholder"
+  ],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 20,
+  "issue": 21763,
+  "pr": 21778,
+  "merge": "e54ed878632309cb988bb44bb761f5c671d9af08",
+  "test_files": [
+   "netbox/dcim/tests/test_forms.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "M2MAddRemoveFields",
+   "_save_m2m"
+  ],
+  "coupled_symbols": [
+   "M2MAddRemoveFields"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from ipam.models import ASN, RIR, VLAN",
+   "from utilities.forms.rendering import M2MAddRemoveFields"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 21,
+  "issue": 21129,
+  "pr": 21309,
+  "merge": "c44e8606f7b240fe0b6955208056ae21f001d346",
+  "test_files": [
+   "netbox/core/tests/test_models.py"
+  ],
+  "migration_files": [
+   "netbox/core/migrations/0021_job_queue_name.py"
+  ],
+  "new_symbols_in_source": [],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [
+   "from core.models import DataSource, Job, ObjectType",
+   "from unittest.mock import patch, MagicMock"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 22,
+  "issue": 20670,
+  "pr": 20717,
+  "merge": "730d73042d5ee34b31f16e2c978cb65718eb794e",
+  "test_files": [
+   "netbox/dcim/tests/test_views.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "_save_object"
+  ],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 23,
+  "issue": 20389,
+  "pr": 20672,
+  "merge": "aa4571b61f7482ae7a521738c6e0030d75336a69",
+  "test_files": [
+   "netbox/dcim/tests/test_views.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [],
+  "coupled_symbols": [],
+  "coupled": false,
+  "test_added_imports": [],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 24,
+  "issue": 18900,
+  "pr": 19943,
+  "merge": "c736ce3179a8bb7bbcbf29324a08a62efa8747b6",
+  "test_files": [
+   "netbox/netbox/tests/test_api.py"
+  ],
+  "migration_files": [
+   "netbox/users/migrations/0010_add_token_meta_ordering.py"
+  ],
+  "new_symbols_in_source": [
+   "QuerySetNotOrdered"
+  ],
+  "coupled_symbols": [
+   "QuerySetNotOrdered"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from django.test import RequestFactory, TestCase",
+   "from netbox.api.exceptions import QuerySetNotOrdered",
+   "from netbox.api.pagination import OptionalLimitOffsetPagination",
+   "from rest_framework.request import Request",
+   "from users.models import Token"
+  ],
+  "issue_names_interface": "pending"
+ },
+ {
+  "seq": 25,
+  "issue": 19806,
+  "pr": 19807,
+  "merge": "3b8841ee3b0210b286dd62ca0b4810d0d6b72365",
+  "test_files": [
+   "netbox/netbox/tests/test_jobs.py"
+  ],
+  "migration_files": [],
+  "new_symbols_in_source": [
+   "IncompatiblePluginError",
+   "JobFailed",
+   "SyncError"
+  ],
+  "coupled_symbols": [
+   "JobFailed"
+  ],
+  "coupled": true,
+  "test_added_imports": [
+   "from core.exceptions import JobFailed",
+   "from utilities.testing import disable_warnings"
+  ],
+  "issue_names_interface": "pending"
+ }
+]
