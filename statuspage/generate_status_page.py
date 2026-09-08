@@ -17,7 +17,7 @@ import sqlite3, json, math, html, datetime, os, subprocess, textwrap, hashlib
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 P = lambda *a: os.path.join(ROOT, *a)
 DB = P("factgraph", "factgraph.db")
-OUT = P("docs", "index.html")
+OUT = P("docs", "history", "legacy-status.html")
 GENERATED = datetime.date.today().isoformat()
 SRC_COMMIT = os.environ.get("FG_SRC_COMMIT") or subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip() or "uncommitted"
 FG_SHA = hashlib.sha256(open(DB, "rb").read()).hexdigest()[:16]

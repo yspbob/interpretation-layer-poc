@@ -1,0 +1,151 @@
+{
+  "status": "Development definition probes, not blinded model trials, full-application tests or container isolation verification",
+  "network": "HTTPX uses local mock transports or an in-process ASGI application; these probes make no outbound HTTP requests",
+  "httpx_source": "sources/httpx/httpx/__init__.py",
+  "dependency_versions": {
+    "httpcore": "1.0.9",
+    "anyio": "4.13.0",
+    "certifi": "2026.2.25"
+  },
+  "paperless_isolation": "Actual upstream AST definitions executed with small stubs; application dependencies, storage and workers not exercised",
+  "checks": [
+    {
+      "case": "H11",
+      "check": "per-request cookies are accepted with deprecation warning",
+      "passed": true,
+      "observed": {
+        "cookie_header": "probe=value",
+        "warning_types": [
+          "DeprecationWarning"
+        ]
+      }
+    },
+    {
+      "case": "H02",
+      "check": "request preparation combines client and request collections",
+      "passed": true,
+      "observed": {
+        "headers_present": [
+          "x-shared",
+          "x-other"
+        ],
+        "params": {
+          "shared": "yes",
+          "other": "yes"
+        }
+      }
+    },
+    {
+      "case": "H03",
+      "check": "send does not restore missing client headers",
+      "passed": true,
+      "observed": {
+        "shared_header_present": false
+      }
+    },
+    {
+      "case": "H12",
+      "check": "default no-charset response encoding is UTF-8",
+      "passed": true,
+      "observed": {
+        "encoding": "utf-8"
+      }
+    },
+    {
+      "case": "H12",
+      "check": "detection callable is an explicit alternative",
+      "passed": true,
+      "observed": {
+        "encoding": "latin-1"
+      }
+    },
+    {
+      "case": "H04",
+      "check": "stream context closes a partly consumed response",
+      "passed": true,
+      "observed": {
+        "closed": true
+      }
+    },
+    {
+      "case": "H05",
+      "check": "response hook executes before body is read",
+      "passed": true,
+      "observed": {
+        "hook_saw_unread": [
+          true
+        ]
+      }
+    },
+    {
+      "case": "H07",
+      "check": "specific mounts and exclusions override broad routes",
+      "passed": true,
+      "observed": {
+        "routes": [
+          "port",
+          "broad",
+          "ordinary"
+        ]
+      }
+    },
+    {
+      "case": "H10",
+      "check": "ASGI transport issues HTTP scope without lifespan scopes",
+      "passed": true,
+      "observed": {
+        "scope_types": [
+          "http"
+        ]
+      }
+    },
+    {
+      "case": "P16",
+      "check": "external parser wins equal score",
+      "passed": true,
+      "observed": {
+        "winner": "External"
+      }
+    },
+    {
+      "case": "P16",
+      "check": "None score declines selection",
+      "passed": true,
+      "observed": {
+        "winner": "BuiltIn"
+      }
+    },
+    {
+      "case": "P17",
+      "check": "declared remote parser excluded when not allowed",
+      "passed": true,
+      "observed": {
+        "winner": "BuiltIn"
+      }
+    },
+    {
+      "case": "P17",
+      "check": "declared remote parser eligible when allowed",
+      "passed": true,
+      "observed": {
+        "winner": "Remote"
+      }
+    },
+    {
+      "case": "P13",
+      "check": "mandatory rendition overrides never archive mode",
+      "passed": true,
+      "observed": {
+        "produce_archive": true
+      }
+    },
+    {
+      "case": "P13",
+      "check": "never mode suppresses optional archive",
+      "passed": true,
+      "observed": {
+        "produce_archive": false
+      }
+    }
+  ]
+}

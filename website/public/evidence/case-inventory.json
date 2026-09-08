@@ -1,0 +1,2397 @@
+{
+  "updated": "5 September 2026",
+  "summary": {
+    "candidates": 84,
+    "advance": 52,
+    "families": 39,
+    "controls": 15,
+    "deferred": 6,
+    "calibration": 4,
+    "merged": 3,
+    "rejected": 4,
+    "newAdvance": 46,
+    "newFamilies": 33,
+    "blindRuns": 0,
+    "developmentChecks": 15
+  },
+  "repositories": [
+    {
+      "id": "netbox",
+      "snapshot": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+      "url": "https://github.com/netbox-community/netbox/tree/ea4c205a37baa3e58e6e481158c15c6154cceeff",
+      "advance": 13,
+      "controls": 6
+    },
+    {
+      "id": "wagtail",
+      "snapshot": "bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417",
+      "url": "https://github.com/wagtail/wagtail/tree/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417",
+      "advance": 13,
+      "controls": 3
+    },
+    {
+      "id": "paperless-ngx",
+      "snapshot": "835c4e51d0b145007bfac934009713dd8bbf3598",
+      "url": "https://github.com/paperless-ngx/paperless-ngx/tree/835c4e51d0b145007bfac934009713dd8bbf3598",
+      "advance": 15,
+      "controls": 2
+    },
+    {
+      "id": "httpx",
+      "snapshot": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+      "url": "https://github.com/encode/httpx/tree/b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+      "advance": 11,
+      "controls": 4
+    }
+  ],
+  "cases": [
+    {
+      "id": "N01",
+      "repo": "netbox",
+      "title": "Brief serializers, stale guidance and retained special cases",
+      "family": "serializer-representation",
+      "status": "control",
+      "claim": "Ordinary nested relationships can reuse primary serializers using nested=True and brief_fields; specialised nested serializers still exist. Identify the conflicting style guide if documents are available.",
+      "challenge": "Ordinary related object versus specialised representation; identify the allowed route without banning every retained class.",
+      "reason": "Conflict case: competing documentation and retained exceptions.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/migration-v4.md#L227",
+        "path": "docs/plugins/development/migration-v4.md",
+        "line": 227
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/api/serializers/base.py#L17",
+          "path": "netbox/netbox/api/serializers/base.py",
+          "line": 17
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/api/serializers_/asns.py#L16",
+          "path": "netbox/ipam/api/serializers_/asns.py",
+          "line": 16
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/api/serializers_/nested.py#L13",
+          "path": "netbox/ipam/api/serializers_/nested.py",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "repo": "netbox",
+      "title": "Model validation belongs in clean with inherited validation retained",
+      "family": "model-validation",
+      "status": "advance",
+      "claim": "Model-level additional validation uses clean and calls inherited clean; callers still need a validation path such as full_clean.",
+      "challenge": "Add a model invariant used through multiple entry points; retain inherited validation.",
+      "reason": "Model validation and inherited behavior; source access and realistic caller fixture required.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/development/extending-models.md#L34",
+        "path": "docs/development/extending-models.md",
+        "line": 34
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/models/racks.py#L39",
+          "path": "netbox/dcim/models/racks.py",
+          "line": 39
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/models/sites.py#L24",
+          "path": "netbox/dcim/models/sites.py",
+          "line": 24
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/__init__.py#L25",
+          "path": "netbox/netbox/models/__init__.py",
+          "line": 25
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/api/serializers/base.py#L17",
+          "path": "netbox/netbox/api/serializers/base.py",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "repo": "netbox",
+      "title": "Feature composition permits both full and selective mixins",
+      "family": "feature-composition",
+      "status": "advance",
+      "claim": "NetBoxModel bundles features; a plugin can compose a subset using feature mixins and a Django model base. Feature registration follows inheritance.",
+      "challenge": "A plugin model requiring only two features must not be forced into the full feature bundle.",
+      "reason": "Selective capability composition, rather than compulsory full base class.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/models.md#L69",
+        "path": "docs/plugins/development/models.md",
+        "line": 69
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/__init__.py#L25",
+          "path": "netbox/netbox/models/__init__.py",
+          "line": 25
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L49",
+          "path": "netbox/netbox/models/features.py",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "repo": "netbox",
+      "title": "ObjectType convention has a GenericForeignKey exception",
+      "family": "content-type-boundary",
+      "status": "advance",
+      "claim": "Use the ObjectType proxy for ordinary object-type operations; the concrete content-type FK backing a generic relationship points to Django ContentType.",
+      "challenge": "Compare a feature-selection relation and a GenericForeignKey backing field.",
+      "reason": "Concrete/proxy exception at generic relationship boundary.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/migration-v4.md#L25",
+        "path": "docs/plugins/development/migration-v4.md",
+        "line": 25
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/models/contenttypes.py#L12",
+          "path": "netbox/core/models/contenttypes.py",
+          "line": 12
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/customfields.py#L53",
+          "path": "netbox/extras/models/customfields.py",
+          "line": 53
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/models/contacts.py#L20",
+          "path": "netbox/tenancy/models/contacts.py",
+          "line": 20
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/models.py#L45",
+          "path": "netbox/extras/models/models.py",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "repo": "netbox",
+      "title": "Private model flag controls catalogue inclusion, not blanket authorisation",
+      "family": "model-catalogue",
+      "status": "advance",
+      "claim": "_netbox_private excludes the model from registry[models] and the public object-type catalogue. Feature registration is a separate loop.",
+      "challenge": "A hidden support model can retain feature registration; distinguish catalogue hiding from permissions.",
+      "reason": "Catalogue visibility is separate from access control.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/models.md#L65",
+        "path": "docs/plugins/development/models.md",
+        "line": 65
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L49",
+          "path": "netbox/netbox/models/features.py",
+          "line": 49
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/models/contenttypes.py#L12",
+          "path": "netbox/core/models/contenttypes.py",
+          "line": 12
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/tags.py#L24",
+          "path": "netbox/extras/models/tags.py",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "id": "N06",
+      "repo": "netbox",
+      "title": "Script dry-run rollback is bounded to database transaction behaviour",
+      "family": "script-transactions",
+      "status": "advance",
+      "claim": "ScriptJob wraps the call in a transaction and aborts that transaction when commit is false. This does not establish rollback of emails, files, network calls or every database connection.",
+      "challenge": "A script writes a model and emits an external event: distinguish which operation is protected.",
+      "reason": "Database transaction boundary does not cover arbitrary external effects.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/customization/custom-scripts.md#L51",
+        "path": "docs/customization/custom-scripts.md",
+        "line": 51
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/jobs.py#L16",
+          "path": "netbox/extras/jobs.py",
+          "line": 16
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/scripts.py#L51",
+          "path": "netbox/extras/scripts.py",
+          "line": 51
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/exceptions.py#L13",
+          "path": "netbox/utilities/exceptions.py",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "id": "N07",
+      "repo": "netbox",
+      "title": "Field propagation depends on intended surfaces",
+      "family": "field-propagation",
+      "status": "control",
+      "claim": "Consider API, forms, filters, tables and search; update each surface when required by the field purpose. Code can reveal existing mappings, not every future product requirement.",
+      "challenge": "One field is internal-only, another must be editable and filterable; compare obligations supplied in each task.",
+      "reason": "Exposure depends on intended use; no universal every-field-everywhere rule.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/development/extending-models.md#L66",
+        "path": "docs/development/extending-models.md",
+        "line": 66
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/models/sites.py#L24",
+          "path": "netbox/dcim/models/sites.py",
+          "line": 24
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/api/serializers_/sites.py#L21",
+          "path": "netbox/dcim/api/serializers_/sites.py",
+          "line": 21
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/forms/filtersets.py#L63",
+          "path": "netbox/dcim/forms/filtersets.py",
+          "line": 63
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/filtersets.py#L86",
+          "path": "netbox/dcim/filtersets.py",
+          "line": 86
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/tables/sites.py#L22",
+          "path": "netbox/dcim/tables/sites.py",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "id": "N08",
+      "repo": "netbox",
+      "title": "Registry mutability contract and enforcement gap",
+      "family": "registry-enforcement",
+      "status": "control",
+      "claim": "Normal item assignment/deletion is blocked while nested store values remain mutable. The documented intent is stronger than enforcement through inherited dict methods.",
+      "challenge": "Contrast item replacement, nested mutation and inherited update; flag the implementation gap rather than invent permission to bypass.",
+      "reason": "Local dictionary enforcement gap; useful conflict control, not headline architecture.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/development/application-registry.md#L5",
+        "path": "docs/development/application-registry.md",
+        "line": 5
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/registry.py#L5",
+          "path": "netbox/netbox/registry.py",
+          "line": 5
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L49",
+          "path": "netbox/netbox/models/features.py",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "repo": "netbox",
+      "title": "Supported plugin API is a compatibility commitment",
+      "family": "api-authority",
+      "status": "control",
+      "claim": "Code reveals importable interfaces and usage. Without the support-policy record, it cannot establish the exact documented compatibility boundary; request authority.",
+      "challenge": "An importable internal utility is convenient; code-only answer must not promise long-term compatibility.",
+      "reason": "Hidden compatibility promise cannot be established by code.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/index.md#L26",
+        "path": "docs/plugins/development/index.md",
+        "line": 26
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/plugins/__init__.py#L43",
+          "path": "netbox/netbox/plugins/__init__.py",
+          "line": 43
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/__init__.py#L25",
+          "path": "netbox/netbox/models/__init__.py",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "id": "N10",
+      "repo": "netbox",
+      "title": "Dependency acceptance includes a one-year maintenance criterion",
+      "family": "dependency-authority",
+      "status": "control",
+      "claim": "Pins and existing dependencies are observable; the release-age threshold, licence acceptability and procurement rationale require external policy evidence.",
+      "challenge": "Two otherwise similar dependencies differ in release age; code alone cannot supply the governing cutoff.",
+      "reason": "Hidden dependency threshold cannot be established from installed versions.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/development/style-guide.md#L58",
+        "path": "docs/development/style-guide.md",
+        "line": 58
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/base_requirements.txt#L1",
+          "path": "base_requirements.txt",
+          "line": 1
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/requirements.txt#L1",
+          "path": "requirements.txt",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "repo": "netbox",
+      "title": "Released migrations have a policy exception for bug correction",
+      "family": "migration-authority",
+      "status": "control",
+      "claim": "A code snapshot does not establish release status or the authorised bug-correction exception; request the policy and release history.",
+      "challenge": "Contrast unreleased consolidation and a released migration bug; neither authority can be invented from file age.",
+      "reason": "Released migration policy and its exception require external authority.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/development/extending-models.md#L30",
+        "path": "docs/development/extending-models.md",
+        "line": 30
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/migrations/0188_racktype.py#L11",
+          "path": "netbox/dcim/migrations/0188_racktype.py",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "id": "N12",
+      "repo": "netbox",
+      "title": "Pre-change snapshots precede edits for correct change logging",
+      "family": "change-logging",
+      "status": "advance",
+      "claim": "For an existing object supporting change logging, capture the pre-edit state before mutation so the change record has the correct before state. Some managed paths do this centrally.",
+      "challenge": "Compare manual script mutation with a managed path that already captures the snapshot; detect late snapshots.",
+      "reason": "Pre-edit state capture with managed-path exceptions.",
+      "previous": true,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/customization/custom-scripts.md#L221",
+        "path": "docs/customization/custom-scripts.md",
+        "line": 221
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L49",
+          "path": "netbox/netbox/models/features.py",
+          "line": 49
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/api/viewsets/__init__.py#L34",
+          "path": "netbox/netbox/api/viewsets/__init__.py",
+          "line": 34
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/signals.py#L1",
+          "path": "netbox/core/signals.py",
+          "line": 1
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/models/racks.py#L39",
+          "path": "netbox/dcim/models/racks.py",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "id": "N13",
+      "repo": "netbox",
+      "title": "Permission constraint composition",
+      "family": "permissions",
+      "status": "advance",
+      "claim": "Conditions within an object intersect; alternative objects and applicable permission grants combine as alternatives.",
+      "challenge": "Distinguish two restrictive attributes in one grant from two separate grants; do not accidentally turn an OR into an AND.",
+      "reason": "Crosses permission collection and query construction; related to N14, not an independent subsystem.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/administration/permissions.md#L32",
+        "path": "docs/administration/permissions.md",
+        "line": 32
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/permissions.py#L86",
+          "path": "netbox/utilities/permissions.py",
+          "line": 86
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/authentication/__init__.py#L92",
+          "path": "netbox/netbox/authentication/__init__.py",
+          "line": 92
+        }
+      ]
+    },
+    {
+      "id": "N14",
+      "repo": "netbox",
+      "title": "Permission checks on the resulting saved state",
+      "family": "permissions",
+      "status": "advance",
+      "claim": "For these API writes, save and check the resulting restricted queryset inside a transaction so changes that escape allowed scope are rolled back.",
+      "challenge": "Move an otherwise editable object outside its permitted region; contrast a valid in-scope update.",
+      "reason": "Causal transaction and access-control interaction; limit claims to inspected write paths.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/administration/permissions.md#L113",
+        "path": "docs/administration/permissions.md",
+        "line": 113
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/api/viewsets/__init__.py#L166",
+          "path": "netbox/netbox/api/viewsets/__init__.py",
+          "line": 166
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/api/viewsets/__init__.py#L186",
+          "path": "netbox/netbox/api/viewsets/__init__.py",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "id": "N15",
+      "repo": "netbox",
+      "title": "Outbound event actions are deferred selectively",
+      "family": "background-events",
+      "status": "advance",
+      "claim": "Webhook delivery and custom-script execution are enqueued; event-rule evaluation and notification creation are not universally moved to a worker by this code.",
+      "challenge": "A slow outbound webhook versus an in-process notification action; do not generalize queueing to every step of event processing.",
+      "reason": "Source narrows the broad documentation: inspect each action branch. Supports a scoped request/worker boundary, not blanket asynchronous execution.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/features/event-rules.md#L32",
+        "path": "docs/features/event-rules.md",
+        "line": 32
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/events.py#L156",
+          "path": "netbox/extras/events.py",
+          "line": 156
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/events.py#L121",
+          "path": "netbox/extras/events.py",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "id": "N16",
+      "repo": "netbox",
+      "title": "Idempotent scheduling with explicit on-demand jobs",
+      "family": "job-scheduling",
+      "status": "advance",
+      "claim": "Schedule creation checks pending jobs under an advisory lock; on-demand enqueue remains permitted and a changed schedule can replace a pending one.",
+      "challenge": "Concurrent repeated schedule requests versus an explicit immediate job; reject a universal one-job-ever rule.",
+      "reason": "Substantive concurrency and lifecycle interpretation; runnable concurrency fixture still needed.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/background-jobs.md#L43",
+        "path": "docs/plugins/development/background-jobs.md",
+        "line": 43
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/jobs.py#L130",
+          "path": "netbox/netbox/jobs.py",
+          "line": 130
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/jobs.py#L129",
+          "path": "netbox/netbox/jobs.py",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "id": "N17",
+      "repo": "netbox",
+      "title": "Plugin queues require workers that service them",
+      "family": "job-scheduling",
+      "status": "advance",
+      "claim": "Defining a custom plugin queue does not itself establish that a worker services it; queue configuration and worker subscription are separate.",
+      "challenge": "A successfully enqueued plugin task never executes under default worker subscriptions.",
+      "reason": "Boundary between application registration and deployment; must include worker configuration as allowed evidence.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/background-jobs.md#L127",
+        "path": "docs/plugins/development/background-jobs.md",
+        "line": 127
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/settings.py#L766",
+          "path": "netbox/netbox/settings.py",
+          "line": 766
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/management/commands/rqworker.py#L8",
+          "path": "netbox/core/management/commands/rqworker.py",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "id": "N18",
+      "repo": "netbox",
+      "title": "Custom fields stored alongside model records",
+      "family": "custom-fields",
+      "status": "calibration",
+      "claim": "Custom field values are stored in the object's JSON field, separate from the definitions of those fields.",
+      "challenge": "Distinguish per-object values from field definitions; do not invent a measured performance benefit.",
+      "reason": "Storage representation is mostly local extraction; published performance rationale needs separate attribution.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/customization/custom-fields.md#L7",
+        "path": "docs/customization/custom-fields.md",
+        "line": 7
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L166",
+          "path": "netbox/netbox/models/features.py",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "id": "N19",
+      "repo": "netbox",
+      "title": "System-job registration depends on importing its module",
+      "family": "plugin-startup",
+      "status": "advance",
+      "claim": "A registration decorator takes effect when its module is imported; plugin startup must make declared system jobs reachable.",
+      "challenge": "Add a valid decorated job in an unimported module, then contrast startup that imports it.",
+      "reason": "Crosses declaration and initialization; source discovery alone cannot show a job is registered.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/plugins/development/background-jobs.md#L93",
+        "path": "docs/plugins/development/background-jobs.md",
+        "line": 93
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/jobs.py#L21",
+          "path": "netbox/netbox/jobs.py",
+          "line": 21
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/plugins/__init__.py#L100",
+          "path": "netbox/netbox/plugins/__init__.py",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "id": "N20",
+      "repo": "netbox",
+      "title": "Custom-field requiredness and defaults",
+      "family": "custom-fields",
+      "status": "advance",
+      "claim": "Custom field definitions and model validation jointly constrain values; requiredness applies to relevant saves and defaults do not make every supplied value valid.",
+      "challenge": "Save a required field missing, with a valid default, and with an invalid explicit value through a validation-aware path.",
+      "reason": "Schema/data interaction; avoid claiming every raw ORM save performs validation.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/customization/custom-fields.md#L29",
+        "path": "docs/customization/custom-fields.md",
+        "line": 29
+      },
+      "code": [
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L162",
+          "path": "netbox/netbox/models/features.py",
+          "line": 162
+        },
+        {
+          "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/customfields.py#L662",
+          "path": "netbox/extras/models/customfields.py",
+          "line": 662
+        }
+      ]
+    },
+    {
+      "id": "N21",
+      "repo": "netbox",
+      "title": "Final newline style rule",
+      "family": "formatting",
+      "status": "reject",
+      "claim": "The project asks for a final newline.",
+      "challenge": "A file with or without a trailing newline.",
+      "reason": "A linter-level formatting rule adds little evidence about substantive interpretation; rejected from the architecture inventory.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/development/style-guide.md#L13",
+        "path": "docs/development/style-guide.md",
+        "line": 13
+      },
+      "code": []
+    },
+    {
+      "id": "W01",
+      "repo": "wagtail",
+      "title": "Page permissions propagate down the tree",
+      "family": "page-permissions",
+      "status": "advance",
+      "claim": "A grant at an ancestor governs descendants; a root grant reaches the whole tree subject to other action-specific checks.",
+      "challenge": "A user edits a descendant but not a sibling outside the granted subtree.",
+      "reason": "Structural scope with a meaningful negative case.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/permissions.md#L26",
+        "path": "docs/topics/permissions.md",
+        "line": 26
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/permission_policies/pages.py#L9",
+          "path": "wagtail/permission_policies/pages.py",
+          "line": 9
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/pages.py#L2324",
+          "path": "wagtail/models/pages.py",
+          "line": 2324
+        }
+      ]
+    },
+    {
+      "id": "W02",
+      "repo": "wagtail",
+      "title": "Add permission combines with page ownership",
+      "family": "page-permissions",
+      "status": "advance",
+      "claim": "Add permission can allow editing owned pages; deletion has additional subtree and publication checks, so edit permission alone is not an unconditional deletion guarantee.",
+      "challenge": "An editor creates drafts, edits their own draft, and tries to delete a live subtree without publishing rights.",
+      "reason": "Reference language requires qualification against code; grouped with W01.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/permissions.md#L28",
+        "path": "docs/topics/permissions.md",
+        "line": 28
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/pages.py#L2365",
+          "path": "wagtail/models/pages.py",
+          "line": 2365
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/pages.py#L2390",
+          "path": "wagtail/models/pages.py",
+          "line": 2390
+        }
+      ]
+    },
+    {
+      "id": "W03",
+      "repo": "wagtail",
+      "title": "Chooser visibility is not content secrecy",
+      "family": "asset-access",
+      "status": "advance",
+      "claim": "Choose permissions filter selection interfaces; reading document contents has separate privacy and serving requirements, and image secrecy is not established by the chooser.",
+      "challenge": "A hidden chooser item is referenced directly; evaluate content-serving checks separately.",
+      "reason": "Distinct UI and content access boundaries; never score UI filtering as full authorization.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/permissions.md#L52",
+        "path": "docs/topics/permissions.md",
+        "line": 52
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/permission_policies/collections.py#L207",
+          "path": "wagtail/permission_policies/collections.py",
+          "line": 207
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/documents/views/serve.py#L18",
+          "path": "wagtail/documents/views/serve.py",
+          "line": 18
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/documents/wagtail_hooks.py#L165",
+          "path": "wagtail/documents/wagtail_hooks.py",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "id": "W04",
+      "repo": "wagtail",
+      "title": "Document privacy depends on the serving route",
+      "family": "asset-access",
+      "status": "advance",
+      "claim": "Application serving checks cannot protect a file also exposed by a direct storage URL; deployment configuration is part of the boundary.",
+      "challenge": "Compare protected serve_view access with a publicly reachable storage URL.",
+      "reason": "Requires controlled storage fixture; application code alone cannot prove deployment privacy.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/advanced_topics/documents/storing_and_serving.md#L33",
+        "path": "docs/advanced_topics/documents/storing_and_serving.md",
+        "line": 33
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/documents/views/serve.py#L18",
+          "path": "wagtail/documents/views/serve.py",
+          "line": 18
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/documents/models.py#L165",
+          "path": "wagtail/documents/models.py",
+          "line": 165
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/documents/wagtail_hooks.py#L165",
+          "path": "wagtail/documents/wagtail_hooks.py",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "id": "W05",
+      "repo": "wagtail",
+      "title": "Collection management cannot remove its permission anchor",
+      "family": "collection-management",
+      "status": "advance",
+      "claim": "Management grants allow operations below their anchor; deleting a collection also requires it to be empty and childless.",
+      "challenge": "Delete an empty descendant versus the grant anchor or a collection with descendants.",
+      "reason": "Permission scope interacts with hierarchy integrity.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/permissions.md#L66",
+        "path": "docs/topics/permissions.md",
+        "line": 66
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/permission_policies/collections.py#L391",
+          "path": "wagtail/permission_policies/collections.py",
+          "line": 391
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/admin/views/collections.py#L134",
+          "path": "wagtail/admin/views/collections.py",
+          "line": 134
+        }
+      ]
+    },
+    {
+      "id": "W06",
+      "repo": "wagtail",
+      "title": "Revision persistence needs clustered relationships",
+      "family": "revision-content",
+      "status": "defer",
+      "claim": "Revision serialization must include unsaved child and many-to-many state; documented clustered relationships support that boundary.",
+      "challenge": "Save a draft with changed child relations and compare restored content with ordinary database relations.",
+      "reason": "Key semantics live in django-modelcluster, not this checkout; dependency source must be pinned and audited before advancing.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/snippets/features.md#L151",
+        "path": "docs/topics/snippets/features.md",
+        "line": 151
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/revisions.py#L384",
+          "path": "wagtail/models/revisions.py",
+          "line": 384
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/revisions.py#L346",
+          "path": "wagtail/models/revisions.py",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "id": "W07",
+      "repo": "wagtail",
+      "title": "Draft snippets need explicit live filtering at use sites",
+      "family": "snippet-publishing",
+      "status": "advance",
+      "claim": "A snippet's draft state does not automatically exclude it from all page rendering; consumers must apply the intended live-state handling.",
+      "challenge": "Render a page referencing an unpublished snippet and compare a live-aware implementation.",
+      "reason": "Lifecycle state versus downstream consumption; no universal enforcement inferred from the mixin.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/snippets/features.md#L253",
+        "path": "docs/topics/snippets/features.md",
+        "line": 253
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/draft_state.py#L13",
+          "path": "wagtail/models/draft_state.py",
+          "line": 13
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/snippets/views/snippets.py#L508",
+          "path": "wagtail/snippets/views/snippets.py",
+          "line": 508
+        }
+      ]
+    },
+    {
+      "id": "W08",
+      "repo": "wagtail",
+      "title": "Workflow support composes revisions and publishing",
+      "family": "workflow-composition",
+      "status": "advance",
+      "claim": "Workflow-enabled models require revision and draft-state support in the appropriate inheritance order; locking is recommended rather than universally mandatory.",
+      "challenge": "A workflow mixin on a plain model versus the complete required composition; permit omission of optional locking.",
+      "reason": "Dependency and exception reasoning, with existing checks as evaluator evidence kept out of drafter inputs.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/snippets/features.md#L296",
+        "path": "docs/topics/snippets/features.md",
+        "line": 296
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/workflows.py#L1196",
+          "path": "wagtail/models/workflows.py",
+          "line": 1196
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/draft_state.py#L56",
+          "path": "wagtail/models/draft_state.py",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "id": "W09",
+      "repo": "wagtail",
+      "title": "Lockable mixin ordering",
+      "family": "workflow-composition",
+      "status": "merge",
+      "claim": "Lockable and revision mixins have an enforced ordering when composed.",
+      "challenge": "Swap mixin order while keeping names unchanged.",
+      "reason": "Merge into W08 as a challenge variant; do not count it as an independent architectural decision.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/snippets/features.md#L284",
+        "path": "docs/topics/snippets/features.md",
+        "line": 284
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/locking.py#L40",
+          "path": "wagtail/models/locking.py",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "id": "W10",
+      "repo": "wagtail",
+      "title": "Translation identity is shared across locales",
+      "family": "translation",
+      "status": "advance",
+      "claim": "Translation siblings share a key but each locale permits only one member; identity is not determined by title or path alone.",
+      "challenge": "Create a second translation in the same locale versus a translation in a new locale.",
+      "reason": "Data invariant connected to lookup behavior.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/advanced_topics/i18n.md#L70",
+        "path": "docs/advanced_topics/i18n.md",
+        "line": 70
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/i18n.py#L177",
+          "path": "wagtail/models/i18n.py",
+          "line": 177
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/i18n.py#L287",
+          "path": "wagtail/models/i18n.py",
+          "line": 287
+        }
+      ]
+    },
+    {
+      "id": "W11",
+      "repo": "wagtail",
+      "title": "Locale-specific page trees and homepages",
+      "family": "translation",
+      "status": "advance",
+      "claim": "Wagtail's built-in locale model uses related pages in locale-specific trees, with routing selecting the appropriate translated homepage.",
+      "challenge": "Two locale homepages with different child structures; avoid assuming every page must have a translated counterpart.",
+      "reason": "Crosses tree and routing; correlated with W10, not a new repository-level replication.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/advanced_topics/i18n.md#L78",
+        "path": "docs/advanced_topics/i18n.md",
+        "line": 78
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/pages.py#L1410",
+          "path": "wagtail/models/pages.py",
+          "line": 1410
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/models/i18n.py#L247",
+          "path": "wagtail/models/i18n.py",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "id": "W12",
+      "repo": "wagtail",
+      "title": "Rich-text storage is distinct from rendered HTML",
+      "family": "rich-text",
+      "status": "advance",
+      "claim": "Stored rich text retains entity references and must be expanded for rendering; final HTML is not the full storage contract.",
+      "challenge": "A stored page link after the target URL changes; compare reference expansion with a hard-coded URL.",
+      "reason": "Representation boundary with a meaningful lifecycle challenge.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/extending/rich_text_internals.md#L20",
+        "path": "docs/extending/rich_text_internals.md",
+        "line": 20
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/rich_text/__init__.py#L52",
+          "path": "wagtail/rich_text/__init__.py",
+          "line": 52
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/rich_text/rewriters.py#L173",
+          "path": "wagtail/rich_text/rewriters.py",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "id": "W13",
+      "repo": "wagtail",
+      "title": "StreamField block validation is a form-layer operation",
+      "family": "stream-validation",
+      "status": "advance",
+      "claim": "Block clean methods perform recursive validation through the form field; model full_clean alone does not establish valid block content.",
+      "challenge": "Insert invalid block content programmatically versus through BlockField validation.",
+      "reason": "Boundary and recursive validation; include draft deferred-validation conditions in fixture review.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/advanced_topics/streamfield_validation.md#L36",
+        "path": "docs/advanced_topics/streamfield_validation.md",
+        "line": 36
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/blocks/base.py#L790",
+          "path": "wagtail/blocks/base.py",
+          "line": 790
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/blocks/struct_block.py#L311",
+          "path": "wagtail/blocks/struct_block.py",
+          "line": 311
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/fields.py#L110",
+          "path": "wagtail/fields.py",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "id": "W14",
+      "repo": "wagtail",
+      "title": "Search indexes require synchronization with model changes",
+      "family": "search-indexing",
+      "status": "defer",
+      "claim": "Automatic index updates use configured signals and can be disabled; bulk or alternate write paths require checking whether those hooks run.",
+      "challenge": "Ordinary save versus a write path that bypasses signals; contrast explicit rebuild.",
+      "reason": "At this snapshot the implementation is re-exported from modelsearch. Pin and inspect that dependency and backend before advancing; local import stubs are insufficient evidence.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/search/indexing.md#L17",
+        "path": "docs/topics/search/indexing.md",
+        "line": 17
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/search/signal_handlers.py#L1",
+          "path": "wagtail/search/signal_handlers.py",
+          "line": 1
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/search/index.py#L1",
+          "path": "wagtail/search/index.py",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "W15",
+      "repo": "wagtail",
+      "title": "Search fields and filter fields serve different purposes",
+      "family": "search-indexing",
+      "status": "defer",
+      "claim": "A filter field is not automatically a full-text search field.",
+      "challenge": "Search a field registered only for filtering.",
+      "reason": "A mostly local interface distinction, with its actual classes now supplied by modelsearch; defer pending dependency evidence and likely retain only as calibration.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/search/indexing.md#L125",
+        "path": "docs/topics/search/indexing.md",
+        "line": 125
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/search/index.py#L1",
+          "path": "wagtail/search/index.py",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "W16",
+      "repo": "wagtail",
+      "title": "Renditions preserve originals and reuse derived representations",
+      "family": "image-renditions",
+      "status": "advance",
+      "claim": "Renditions are derived image files looked up using transformation and source-related identity; producing one does not replace the original image.",
+      "challenge": "Request the same rendition twice, then change a focal point or filter; check reuse and distinct derived output.",
+      "reason": "Derived-artifact lifecycle; exact cache identity comes from code evidence, not invented rationale.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/advanced_topics/images/renditions.md#L6",
+        "path": "docs/advanced_topics/images/renditions.md",
+        "line": 6
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/images/models.py#L533",
+          "path": "wagtail/images/models.py",
+          "line": 533
+        },
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/images/models.py#L569",
+          "path": "wagtail/images/models.py",
+          "line": 569
+        }
+      ]
+    },
+    {
+      "id": "W17",
+      "repo": "wagtail",
+      "title": "Changing the custom image model after deployment",
+      "family": "image-model-migration",
+      "status": "advance",
+      "claim": "Selecting a model in configuration does not by itself migrate existing image and rendition data.",
+      "challenge": "Switch the setting with existing content and distinguish model resolution from a safe data migration.",
+      "reason": "Explicit migration reference located and model-resolution code inspected. Configuration switches resolution but does not copy old data; a migration fixture is still required.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/advanced_topics/images/custom_image_model.md#L66",
+        "path": "docs/advanced_topics/images/custom_image_model.md",
+        "line": 66
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/images/__init__.py#L5",
+          "path": "wagtail/images/__init__.py",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "id": "W18",
+      "repo": "wagtail",
+      "title": "Permission-policy internals do not carry public API guarantees",
+      "family": "api-authority",
+      "status": "control",
+      "claim": "Importability and registry usage do not establish the hidden support guarantee; retain the documented public-function exception only in the documents-visible condition.",
+      "challenge": "A convenient internal policy API is selected for a long-lived extension; require authority before promising compatibility.",
+      "reason": "Authority-negative control; code cannot establish future support commitments.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/reference/permissions.md#L8",
+        "path": "docs/reference/permissions.md",
+        "line": 8
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/permissions.py#L12",
+          "path": "wagtail/permissions.py",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "id": "W19",
+      "repo": "wagtail",
+      "title": "Admin access is restricted to trusted users",
+      "family": "trust-authority",
+      "status": "control",
+      "claim": "Fine-grained editor permissions do not establish that arbitrary untrusted users are within the project's intended admin threat model.",
+      "challenge": "A deployment proposes open public editor accounts; code-only answer cannot certify the intended trust assumption.",
+      "reason": "Organisational trust statement, not an inferable authorization rule.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/topics/permissions.md#L10",
+        "path": "docs/topics/permissions.md",
+        "line": 10
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/admin/auth.py#L103",
+          "path": "wagtail/admin/auth.py",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "id": "W20",
+      "repo": "wagtail",
+      "title": "Patch compatibility has a security/data-loss exception",
+      "family": "release-authority",
+      "status": "control",
+      "claim": "A version tuple cannot establish the published future compatibility promise or its exceptions.",
+      "challenge": "A patch release changes behavior to address data loss; hidden release policy must not be guessed as established authority.",
+      "reason": "Authority-negative control, with a version file as evidence context rather than proof of policy.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/releases/release_process.md#L16",
+        "path": "docs/releases/release_process.md",
+        "line": 16
+      },
+      "code": [
+        {
+          "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/wagtail/__init__.py#L9",
+          "path": "wagtail/__init__.py",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "id": "W21",
+      "repo": "wagtail",
+      "title": "Four-space indentation",
+      "family": "formatting",
+      "status": "reject",
+      "claim": "The project specifies four-space indentation.",
+      "challenge": "A differently indented otherwise equivalent file.",
+      "reason": "Formatting compliance is outside the main interpretation claim; rejected rather than used to inflate sample size.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/wagtail/wagtail/blob/bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417/docs/contributing/python_guidelines.md#L9",
+        "path": "docs/contributing/python_guidelines.md",
+        "line": 9
+      },
+      "code": []
+    },
+    {
+      "id": "P01",
+      "repo": "paperless-ngx",
+      "title": "Watcher and task processor have separate responsibilities",
+      "family": "consumption-pipeline",
+      "status": "advance",
+      "claim": "The directory watcher submits consumption work; workers perform document processing, also accepting other ingestion sources.",
+      "challenge": "A slow parser should occupy worker processing rather than block the watcher from discovering all later files.",
+      "reason": "Architectural request/discovery/worker boundary; transport and concurrency fixture still needed.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L1164",
+        "path": "docs/usage.md",
+        "line": 1164
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/management/commands/document_consumer.py#L312",
+          "path": "src/documents/management/commands/document_consumer.py",
+          "line": 312
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/tasks.py#L182",
+          "path": "src/documents/tasks.py",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "id": "P02",
+      "repo": "paperless-ngx",
+      "title": "Pre-consumption mutations use a working copy",
+      "family": "consumption-hooks",
+      "status": "advance",
+      "claim": "The pre-hook receives original and working paths; a modifying hook should use the working copy rather than retrigger the watched source.",
+      "challenge": "A deterministic modification of the working copy versus editing the watched original.",
+      "reason": "File ownership and processing-stage boundary; do not infer all external hooks are safe.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/advanced_usage.md#L217",
+        "path": "docs/advanced_usage.md",
+        "line": 217
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/consumer.py#L290",
+          "path": "src/documents/consumer.py",
+          "line": 290
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/consumer.py#L312",
+          "path": "src/documents/consumer.py",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "repo": "paperless-ngx",
+      "title": "Post-consumption hook runs after successful storage",
+      "family": "consumption-hooks",
+      "status": "advance",
+      "claim": "A post-hook runs after the core consumption/storage phase and is not a rollback mechanism for that completed phase.",
+      "challenge": "A failing post-hook versus a failure inside transactional storage; distinguish recorded task failure from reversal of stored data.",
+      "reason": "Lifecycle and transaction boundary; filesystem and database effects need separate checks.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/advanced_usage.md#L288",
+        "path": "docs/advanced_usage.md",
+        "line": 288
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/consumer.py#L332",
+          "path": "src/documents/consumer.py",
+          "line": 332
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/consumer.py#L793",
+          "path": "src/documents/consumer.py",
+          "line": 793
+        }
+      ]
+    },
+    {
+      "id": "P04",
+      "repo": "paperless-ngx",
+      "title": "Duplicate handling is conditional at this snapshot",
+      "family": "duplicate-consumption",
+      "status": "advance",
+      "claim": "Matching original or archive hashes causes duplicate rejection/deletion only when the configured duplicate-deletion mode is enabled; duplicates are otherwise allowed at this snapshot.",
+      "challenge": "Identical content under the two settings, including a match in trash; do not reuse older reject-all assumptions.",
+      "reason": "Version-sensitive lifecycle rule; exact default is easy but the combined behavior is substantive.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/configuration.md#L1361",
+        "path": "docs/configuration.md",
+        "line": 1361
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/consumer.py#L1003",
+          "path": "src/documents/consumer.py",
+          "line": 1003
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/settings/__init__.py#L824",
+          "path": "src/paperless/settings/__init__.py",
+          "line": 824
+        }
+      ]
+    },
+    {
+      "id": "P05",
+      "repo": "paperless-ngx",
+      "title": "Workflow assignments override scalars and merge sets",
+      "family": "workflow-processing",
+      "status": "advance",
+      "claim": "Actions run in order; later scalar assignments override while multi-item assignments such as tags are merged unless an explicit removal action applies.",
+      "challenge": "Two ordered actions set conflicting correspondent values and overlapping tag sets.",
+      "reason": "Noncommutative action composition with legitimate removal exceptions.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L485",
+        "path": "docs/usage.md",
+        "line": 485
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/signals/handlers.py#L926",
+          "path": "src/documents/signals/handlers.py",
+          "line": 926
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/workflows/mutations.py#L16",
+          "path": "src/documents/workflows/mutations.py",
+          "line": 16
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/workflows/utils.py#L14",
+          "path": "src/documents/workflows/utils.py",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "id": "P06",
+      "repo": "paperless-ngx",
+      "title": "Workflow filters depend on processing stage",
+      "family": "workflow-processing",
+      "status": "advance",
+      "claim": "Consumption-started filters can use source context; added/updated stages use extracted document metadata and content under their supported filter rules.",
+      "challenge": "A filename/source filter before consumption versus a content filter after extraction.",
+      "reason": "Pipeline information availability; related to P05, not another independent subsystem.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L497",
+        "path": "docs/usage.md",
+        "line": 497
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/signals/handlers.py#L806",
+          "path": "src/documents/signals/handlers.py",
+          "line": 806
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/matching.py#L637",
+          "path": "src/documents/matching.py",
+          "line": 637
+        }
+      ]
+    },
+    {
+      "id": "P07",
+      "repo": "paperless-ngx",
+      "title": "Global access and object permissions both matter",
+      "family": "object-permissions",
+      "status": "advance",
+      "claim": "Access to an endpoint does not automatically authorize every object returned by that endpoint; queryset and object checks must respect ownership and grants.",
+      "challenge": "A user with document-view capability requests a document owned by someone else without an object grant.",
+      "reason": "Crosses endpoint authorization and data selection.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L426",
+        "path": "docs/usage.md",
+        "line": 426
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/permissions.py#L30",
+          "path": "src/documents/permissions.py",
+          "line": 30
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/permissions.py#L267",
+          "path": "src/documents/permissions.py",
+          "line": 267
+        }
+      ]
+    },
+    {
+      "id": "P08",
+      "repo": "paperless-ngx",
+      "title": "Ownerless objects are a compatibility exception",
+      "family": "object-permissions",
+      "status": "advance",
+      "claim": "Ownerless objects are treated differently from privately owned objects; this exception does not mean anonymous endpoint access is permitted.",
+      "challenge": "Ownerless and privately owned documents under the same authenticated endpoint permissions.",
+      "reason": "Important exception within P07's family; historical compatibility rationale is only documented evidence.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L456",
+        "path": "docs/usage.md",
+        "line": 456
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/permissions.py#L455",
+          "path": "src/documents/permissions.py",
+          "line": 455
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/permissions.py#L176",
+          "path": "src/documents/permissions.py",
+          "line": 176
+        }
+      ]
+    },
+    {
+      "id": "P09",
+      "repo": "paperless-ngx",
+      "title": "Workflow configuration is global rather than owner-scoped",
+      "family": "workflow-authority",
+      "status": "advance",
+      "claim": "Workflow definitions are shared and governed by application-level permissions, rather than an owner-specific workflow collection.",
+      "challenge": "Two users with workflow-edit permission see the same workflows; do not infer workflows inherit document ownership restrictions.",
+      "reason": "Administrative boundary with potential effects on many documents.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L753",
+        "path": "docs/usage.md",
+        "line": 753
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/models.py#L1967",
+          "path": "src/documents/models.py",
+          "line": 1967
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/views.py#L5009",
+          "path": "src/documents/views.py",
+          "line": 5009
+        }
+      ]
+    },
+    {
+      "id": "P10",
+      "repo": "paperless-ngx",
+      "title": "Classifier training excludes inbox material",
+      "family": "classifier-training",
+      "status": "advance",
+      "claim": "The training corpus excludes documents carrying an inbox tag; removing that tag can make a labelled document eligible for training.",
+      "challenge": "A document with both an inbox tag and a topical tag versus one whose inbox tag has been removed.",
+      "reason": "Data-selection boundary; code cannot prove the remaining labels are actually correct.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/advanced_usage.md#L76",
+        "path": "docs/advanced_usage.md",
+        "line": 76
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/classifier.py#L224",
+          "path": "src/documents/classifier.py",
+          "line": 224
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/classifier.py#L233",
+          "path": "src/documents/classifier.py",
+          "line": 233
+        }
+      ]
+    },
+    {
+      "id": "P11",
+      "repo": "paperless-ngx",
+      "title": "Persistent filenames require coordinated moves",
+      "family": "file-identity",
+      "status": "advance",
+      "claim": "Stored file names are part of document state; changing physical paths requires coordinated updates rather than an untracked filesystem move.",
+      "challenge": "A metadata/storage-path rename through the application versus moving the file externally.",
+      "reason": "Database/filesystem consistency; changing the global format requires an explicit existing-file rename step.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/advanced_usage.md#L377",
+        "path": "docs/advanced_usage.md",
+        "line": 377
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/file_handling.py#L65",
+          "path": "src/documents/file_handling.py",
+          "line": 65
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/management/commands/document_renamer.py#L7",
+          "path": "src/documents/management/commands/document_renamer.py",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "id": "P12",
+      "repo": "paperless-ngx",
+      "title": "Trash and permanent deletion are different states",
+      "family": "document-deletion",
+      "status": "defer",
+      "claim": "Soft deletion preserves recoverable state; final deletion removes database/archive state, and an optional trash destination retains only the original file.",
+      "challenge": "Restore a soft-deleted document versus recover from the configured post-deletion directory.",
+      "reason": "Permanent cleanup is visible locally, but the soft-delete manager/restore semantics come from django-softdelete. Pin and inspect that dependency before final lifecycle gold.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L816",
+        "path": "docs/usage.md",
+        "line": 816
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/models.py#L513",
+          "path": "src/documents/models.py",
+          "line": 513
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/tasks.py#L471",
+          "path": "src/documents/tasks.py",
+          "line": 471
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/signals/handlers.py#L344",
+          "path": "src/documents/signals/handlers.py",
+          "line": 344
+        }
+      ]
+    },
+    {
+      "id": "P13",
+      "repo": "paperless-ngx",
+      "title": "Archive-generation settings have parser-specific exceptions",
+      "family": "archive-rendition",
+      "status": "advance",
+      "claim": "Archive policy depends on mode, document characteristics, and parser rendition requirements; never mode does not remove a mandatory display rendition.",
+      "challenge": "A scanned image, born-digital PDF, and a format requiring a PDF rendition under the same mode.",
+      "reason": "Conditional behavior across orchestration and parser capability.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/configuration.md#L964",
+        "path": "docs/configuration.md",
+        "line": 964
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/consumer.py#L124",
+          "path": "src/documents/consumer.py",
+          "line": 124
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/parsers/tika.py#L63",
+          "path": "src/paperless/parsers/tika.py",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "id": "P14",
+      "repo": "paperless-ngx",
+      "title": "PDF editing documentation omits the inspected versioning path",
+      "family": "pdf-versioning-conflict",
+      "status": "control",
+      "claim": "The guide describes editing the original, but the inspected rotate/delete-pages paths write a temporary PDF and enqueue consumption with a root_document_id to create a new version. Do not claim in-place byte mutation or guaranteed archival retention without tracing the version pipeline.",
+      "challenge": "Documents-visible interpretation must reconcile original-file wording with new-version dispatch; code-only should describe that dispatch. A fixture must inspect old and new bytes after worker completion.",
+      "reason": "Concrete source/documentation mismatch found during deeper review. Full retention semantics have not been executed, so this is a conflict candidate rather than a proven immutable-original guarantee.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L806",
+        "path": "docs/usage.md",
+        "line": 806
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/bulk_edit.py#L446",
+          "path": "src/documents/bulk_edit.py",
+          "line": 446
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/bulk_edit.py#L814",
+          "path": "src/documents/bulk_edit.py",
+          "line": 814
+        }
+      ]
+    },
+    {
+      "id": "P15",
+      "repo": "paperless-ngx",
+      "title": "Parser plugins use a structural interface and entry points",
+      "family": "parser-extension",
+      "status": "advance",
+      "claim": "A parser can satisfy the protocol without inheriting a prescribed base class; discovery uses package entry points and validates required class-level members.",
+      "challenge": "A structurally valid external parser with no inheritance versus a subclass missing a required member.",
+      "reason": "Extension boundary connecting discovery and interface validation.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/development.md#L408",
+        "path": "docs/development.md",
+        "line": 408
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/parsers/__init__.py#L117",
+          "path": "src/paperless/parsers/__init__.py",
+          "line": 117
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/parsers/registry.py#L216",
+          "path": "src/paperless/parsers/registry.py",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "id": "P16",
+      "repo": "paperless-ngx",
+      "title": "Parser selection uses scores, abstention, and tie precedence",
+      "family": "parser-extension",
+      "status": "advance",
+      "claim": "Eligible parsers compete by score; None declines, and equal scores prefer external parsers through evaluation order.",
+      "challenge": "Higher-scored built-in, tied external parser, and an external parser returning None.",
+      "reason": "Selection and extension interaction; correlated with P15.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/development.md#L442",
+        "path": "docs/development.md",
+        "line": 442
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/parsers/registry.py#L332",
+          "path": "src/paperless/parsers/registry.py",
+          "line": 332
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/parsers/registry.py#L380",
+          "path": "src/paperless/parsers/registry.py",
+          "line": 380
+        }
+      ]
+    },
+    {
+      "id": "P17",
+      "repo": "paperless-ngx",
+      "title": "Remote parser eligibility depends on declared capability",
+      "family": "parser-remote-boundary",
+      "status": "advance",
+      "claim": "Declared remote parsers are excluded when remote processing is not allowed; an undeclared third-party remote call is not prevented by this metadata gate.",
+      "challenge": "A declared remote parser outranks a local one while remote processing is disabled; contrast an undeclared remote implementation.",
+      "reason": "Capability gate with an important trust limitation; does not prove network confinement.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/development.md#L474",
+        "path": "docs/development.md",
+        "line": 474
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/parsers/registry.py#L365",
+          "path": "src/paperless/parsers/registry.py",
+          "line": 365
+        },
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/consumer.py#L458",
+          "path": "src/documents/consumer.py",
+          "line": 458
+        }
+      ]
+    },
+    {
+      "id": "P18",
+      "repo": "paperless-ngx",
+      "title": "External database modifications require downtime",
+      "family": "database-operations-authority",
+      "status": "control",
+      "claim": "The code/configuration does not establish authorization for live external database edits; the operational prohibition requires its published policy reference.",
+      "challenge": "An operator proposes restoring or manually modifying the database while workers run.",
+      "reason": "Authority-negative control; code can identify consistency risks but cannot establish the hidden operational rule as approved.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/configuration.md#L258",
+        "path": "docs/configuration.md",
+        "line": 258
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/settings/__init__.py#L544",
+          "path": "src/paperless/settings/__init__.py",
+          "line": 544
+        }
+      ]
+    },
+    {
+      "id": "P19",
+      "repo": "paperless-ngx",
+      "title": "Audit log actor differs for workflow changes",
+      "family": "audit-trail",
+      "status": "defer",
+      "claim": "The published history behavior distinguishes system/workflow changes from attributed user changes; audit completeness depends on enabled settings and paths.",
+      "challenge": "A manual metadata edit versus a workflow edit with audit logging enabled.",
+      "reason": "Reference located, but exact audit-actor integration not traced sufficiently. Do not use this as calibrated gold until that path is inspected and exercised.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L812",
+        "path": "docs/usage.md",
+        "line": 812
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/documents/signals/handlers.py#L806",
+          "path": "src/documents/signals/handlers.py",
+          "line": 806
+        }
+      ]
+    },
+    {
+      "id": "P20",
+      "repo": "paperless-ngx",
+      "title": "Parser identity must exist before instantiation",
+      "family": "parser-extension",
+      "status": "merge",
+      "claim": "Discovery reads parser identity and required methods on the class, before creating a parser instance.",
+      "challenge": "Move identity fields into the instance constructor.",
+      "reason": "Merge into P15 as a negative challenge instead of inflating the decision count.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/development.md#L414",
+        "path": "docs/development.md",
+        "line": 414
+      },
+      "code": [
+        {
+          "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/src/paperless/parsers/registry.py#L56",
+          "path": "src/paperless/parsers/registry.py",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "id": "P21",
+      "repo": "paperless-ngx",
+      "title": "Keyboard shortcut help",
+      "family": "interface-help",
+      "status": "reject",
+      "claim": "The application exposes shortcut help.",
+      "challenge": "Open the shortcut-help interface.",
+      "reason": "User-interface feature lookup offers no meaningful architectural interpretation challenge; no implementation audit warranted.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/paperless-ngx/paperless-ngx/blob/835c4e51d0b145007bfac934009713dd8bbf3598/docs/usage.md#L1020",
+        "path": "docs/usage.md",
+        "line": 1020
+      },
+      "code": []
+    },
+    {
+      "id": "H01",
+      "repo": "httpx",
+      "title": "Client lifetime owns reusable transport resources",
+      "family": "client-lifetime",
+      "status": "advance",
+      "claim": "A reused client owns a persistent transport/pool and should be closed at the end of its lifetime; top-level requests create shorter-lived clients.",
+      "challenge": "A batch of requests through one client versus constructing a client per request; check ownership and close behavior without claiming a measured speedup.",
+      "reason": "Resource lifecycle spans top-level API, client, and transport; actual connection reuse depends on httpcore.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/clients.md#L13",
+        "path": "docs/advanced/clients.md",
+        "line": 13
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_api.py#L102",
+          "path": "httpx/_api.py",
+          "line": 102
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L156",
+          "path": "httpx/_client.py",
+          "line": 156
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_transports/default.py#L156",
+          "path": "httpx/_transports/default.py",
+          "line": 156
+        }
+      ]
+    },
+    {
+      "id": "H02",
+      "repo": "httpx",
+      "title": "Client and request configuration merge selectively",
+      "family": "request-configuration",
+      "status": "advance",
+      "claim": "Building a request merges selected collections, with request values overriding conflicts; other supported options follow their own override semantics.",
+      "challenge": "Shared client headers and per-request overrides while preserving unrelated headers and parameters.",
+      "reason": "Configuration composition; do not infer every client option is available per request.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/clients.md#L96",
+        "path": "docs/advanced/clients.md",
+        "line": 96
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L340",
+          "path": "httpx/_client.py",
+          "line": 340
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L424",
+          "path": "httpx/_client.py",
+          "line": 424
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L433",
+          "path": "httpx/_client.py",
+          "line": 433
+        }
+      ]
+    },
+    {
+      "id": "H03",
+      "repo": "httpx",
+      "title": "Explicit requests bypass automatic client-option merging",
+      "family": "request-configuration",
+      "status": "advance",
+      "claim": "Build_request applies client configuration before sending; a directly constructed Request is not retroactively given all client headers and base-URL configuration by send.",
+      "challenge": "Remove a sensitive header after build_request, and compare send of a directly constructed Request.",
+      "reason": "Preparation/dispatch boundary; grouped with H02.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/clients.md#L162",
+        "path": "docs/advanced/clients.md",
+        "line": 162
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L340",
+          "path": "httpx/_client.py",
+          "line": 340
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L879",
+          "path": "httpx/_client.py",
+          "line": 879
+        }
+      ]
+    },
+    {
+      "id": "H04",
+      "repo": "httpx",
+      "title": "Streaming response ownership requires closure",
+      "family": "response-lifetime",
+      "status": "advance",
+      "claim": "Context-managed streaming closes the response on exit; manual streaming transfers responsibility for eventual closure to the caller.",
+      "challenge": "Partially consume a response then exit normally or raise; contrast manual send with explicit close.",
+      "reason": "Resource ownership and exceptional control flow.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/async.md#L87",
+        "path": "docs/async.md",
+        "line": 87
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L1543",
+          "path": "httpx/_client.py",
+          "line": 1543
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L1594",
+          "path": "httpx/_client.py",
+          "line": 1594
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_models.py#L1065",
+          "path": "httpx/_models.py",
+          "line": 1065
+        }
+      ]
+    },
+    {
+      "id": "H05",
+      "repo": "httpx",
+      "title": "Response hooks precede automatic body consumption",
+      "family": "response-lifetime",
+      "status": "advance",
+      "claim": "Response hooks run before the client decides to read the body; a hook needing bytes must read explicitly, using the appropriate sync/async API.",
+      "challenge": "A streaming response hook accesses content before read versus an explicitly reading hook.",
+      "reason": "Ordering and I/O boundary, not merely registration syntax.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/event-hooks.md#L34",
+        "path": "docs/advanced/event-hooks.md",
+        "line": 34
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L964",
+          "path": "httpx/_client.py",
+          "line": 964
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L879",
+          "path": "httpx/_client.py",
+          "line": 879
+        }
+      ]
+    },
+    {
+      "id": "H06",
+      "repo": "httpx",
+      "title": "Shared authentication logic is separated from sync/async I/O",
+      "family": "authentication-flow",
+      "status": "advance",
+      "claim": "A common generator-based auth flow can serve sync and async clients; body requirements are declared, while other I/O needs the appropriate specialized flow override.",
+      "challenge": "Add an authentication cache or body-dependent signature without silently blocking the async path.",
+      "reason": "Meaningful interface/side-effect separation with valid alternatives.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/authentication.md#L125",
+        "path": "docs/advanced/authentication.md",
+        "line": 125
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_auth.py#L62",
+          "path": "httpx/_auth.py",
+          "line": 62
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_auth.py#L87",
+          "path": "httpx/_auth.py",
+          "line": 87
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L930",
+          "path": "httpx/_client.py",
+          "line": 930
+        }
+      ]
+    },
+    {
+      "id": "H07",
+      "repo": "httpx",
+      "title": "Transport mounts resolve specific patterns before broad ones",
+      "family": "transport-routing",
+      "status": "advance",
+      "claim": "Mount resolution uses URL-pattern specificity rather than insertion order; a None exclusion falls back to the ordinary transport.",
+      "challenge": "Overlapping scheme, domain, and port routes plus an explicit exclusion.",
+      "reason": "Routing and precedence cross implementation components.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/transports.md#L338",
+        "path": "docs/advanced/transports.md",
+        "line": 338
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_utils.py#L206",
+          "path": "httpx/_utils.py",
+          "line": 206
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L760",
+          "path": "httpx/_client.py",
+          "line": 760
+        }
+      ]
+    },
+    {
+      "id": "H08",
+      "repo": "httpx",
+      "title": "Extensions carry optional transport information",
+      "family": "transport-interface",
+      "status": "advance",
+      "claim": "Request extensions carry optional metadata such as timeouts through the client/transport boundary; support for arbitrary extensions is transport-dependent.",
+      "challenge": "A custom transport forwards a timeout extension while an unknown extension is not assumed implemented.",
+      "reason": "Interface extensibility; inspect upstream dependencies for end-to-end semantics.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/extensions.md#L5",
+        "path": "docs/advanced/extensions.md",
+        "line": 5
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L584",
+          "path": "httpx/_client.py",
+          "line": 584
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_transports/default.py#L247",
+          "path": "httpx/_transports/default.py",
+          "line": 247
+        }
+      ]
+    },
+    {
+      "id": "H09",
+      "repo": "httpx",
+      "title": "Built-in connection retries do not cover all failure types",
+      "family": "transport-retries",
+      "status": "defer",
+      "claim": "The documented retries option concerns connection failures, not blanket retries for read errors or HTTP status codes.",
+      "challenge": "ConnectError versus a 503 response and a read failure under the same retries setting.",
+      "reason": "Retry implementation is in httpcore; pin and inspect it before treating local forwarding code as sufficient gold.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/transports.md#L17",
+        "path": "docs/advanced/transports.md",
+        "line": 17
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_transports/default.py#L165",
+          "path": "httpx/_transports/default.py",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "id": "H10",
+      "repo": "httpx",
+      "title": "ASGI request transport excludes application lifespan management",
+      "family": "transport-interface",
+      "status": "advance",
+      "claim": "The ASGI transport dispatches HTTP scopes and does not provide startup/shutdown lifespan orchestration; that lifecycle requires a separate component.",
+      "challenge": "An application requiring startup state under bare transport versus an external lifespan manager.",
+      "reason": "Explicit responsibility boundary with a plausible but wrong expectation.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/transports.md#L145",
+        "path": "docs/advanced/transports.md",
+        "line": 145
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_transports/asgi.py#L99",
+          "path": "httpx/_transports/asgi.py",
+          "line": 99
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_transports/asgi.py#L107",
+          "path": "httpx/_transports/asgi.py",
+          "line": 107
+        }
+      ]
+    },
+    {
+      "id": "H11",
+      "repo": "httpx",
+      "title": "Per-request cookie documentation overstates removal",
+      "family": "cookie-policy",
+      "status": "control",
+      "claim": "At this snapshot per-request client cookies still work with a deprecation warning; recommended client-level storage is distinct from an enforced ban.",
+      "challenge": "Give documents and code together and require a discrepancy report; code-only must not invent hidden removal policy.",
+      "reason": "Concrete documentation/code conflict; do not use the documentation alone as an answer key.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/compatibility.md#L114",
+        "path": "docs/compatibility.md",
+        "line": 114
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L806",
+          "path": "httpx/_client.py",
+          "line": 806
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L413",
+          "path": "httpx/_client.py",
+          "line": 413
+        }
+      ]
+    },
+    {
+      "id": "H12",
+      "repo": "httpx",
+      "title": "Response-encoding documentation conflicts with default behavior",
+      "family": "encoding-policy",
+      "status": "control",
+      "claim": "The default response fallback is UTF-8 unless overridden; the compatibility guide's automatic charset-detection description conflicts with the dedicated guide and implementation.",
+      "challenge": "A no-charset response under default settings versus a configured detection callable.",
+      "reason": "Conflict control with executable discriminator; hidden-document conflict is scored only when documents are visible.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/compatibility.md#L101",
+        "path": "docs/compatibility.md",
+        "line": 101
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_models.py#L167",
+          "path": "httpx/_models.py",
+          "line": 167
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L202",
+          "path": "httpx/_client.py",
+          "line": 202
+        }
+      ]
+    },
+    {
+      "id": "H13",
+      "repo": "httpx",
+      "title": "Redirect default does not reveal its design motivation",
+      "family": "redirect-authority",
+      "status": "control",
+      "claim": "Code supports the default and opt-in behavior; it does not establish the published motivation about visibility of network calls as the actual reason.",
+      "challenge": "Recover the default but ask separately for motive; accept unconfirmed rationale rather than fabricated certainty.",
+      "reason": "Useful content-versus-intent control; do not count the same default twice as positive evidence.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/compatibility.md#L12",
+        "path": "docs/compatibility.md",
+        "line": 12
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L197",
+          "path": "httpx/_client.py",
+          "line": 197
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L964",
+          "path": "httpx/_client.py",
+          "line": 964
+        }
+      ]
+    },
+    {
+      "id": "H14",
+      "repo": "httpx",
+      "title": "Timeout default is a local parameter fact",
+      "family": "timeout-default",
+      "status": "calibration",
+      "claim": "Default network inactivity timeout is five seconds, with explicit disabling and phase-specific settings available.",
+      "challenge": "Distinguish a default inactivity timeout from a total wall-clock deadline.",
+      "reason": "Local/default recovery is calibration; phase enforcement belongs to the transport dependency.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/timeouts.md#L3",
+        "path": "docs/advanced/timeouts.md",
+        "line": 3
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_config.py#L246",
+          "path": "httpx/_config.py",
+          "line": 246
+        }
+      ]
+    },
+    {
+      "id": "H15",
+      "repo": "httpx",
+      "title": "SSL configuration belongs to client transport construction",
+      "family": "client-lifetime",
+      "status": "advance",
+      "claim": "SSL configuration initializes transport resources at client construction; different SSL configurations require appropriately separate clients/transports rather than arbitrary per-request verify settings.",
+      "challenge": "Requests to two trust domains with different SSL contexts; reject adding an unsupported request-level option.",
+      "reason": "Configuration follows resource ownership; related to H01 rather than independent repetition.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/compatibility.md#L174",
+        "path": "docs/compatibility.md",
+        "line": 174
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L718",
+          "path": "httpx/_client.py",
+          "line": 718
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_transports/default.py#L153",
+          "path": "httpx/_transports/default.py",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "id": "H16",
+      "repo": "httpx",
+      "title": "Multipart file uploads require binary streams",
+      "family": "multipart-input",
+      "status": "calibration",
+      "claim": "Multipart uploads reject text-mode file objects; binary streams preserve bytes.",
+      "challenge": "Equivalent text-mode and binary-mode file objects.",
+      "reason": "A direct local validation check; insufficient architectural depth for headline evidence.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/compatibility.md#L94",
+        "path": "docs/compatibility.md",
+        "line": 94
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_multipart.py#L162",
+          "path": "httpx/_multipart.py",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "id": "H17",
+      "repo": "httpx",
+      "title": "HTTP/2 opt-in does not prove the published robustness rationale",
+      "family": "http2-authority",
+      "status": "control",
+      "claim": "The default HTTP/2 setting is observable; the project rationale about comparative maturity cannot be established from a Boolean or the presence of two implementations.",
+      "challenge": "Distinguish available protocol support from an empirically proven reliability ranking.",
+      "reason": "Authority/rationale-negative control; no performance or reliability result is implied.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/http2.md#L22",
+        "path": "docs/http2.md",
+        "line": 22
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L650",
+          "path": "httpx/_client.py",
+          "line": 650
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_transports/default.py#L162",
+          "path": "httpx/_transports/default.py",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "id": "H18",
+      "repo": "httpx",
+      "title": "Sync and async request streams must match dispatch",
+      "family": "stream-interface",
+      "status": "advance",
+      "claim": "Client dispatch and transport consume their matching stream interfaces; async streaming request bodies cannot be supplied as ordinary sync iterators interchangeably.",
+      "challenge": "Feed a sync generator to async dispatch versus an async generator, preserving streaming rather than prebuffering everything.",
+      "reason": "Crosses encoding, client, and transport contracts.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/async.md#L109",
+        "path": "docs/async.md",
+        "line": 109
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L1001",
+          "path": "httpx/_client.py",
+          "line": 1001
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L1717",
+          "path": "httpx/_client.py",
+          "line": 1717
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_content.py#L67",
+          "path": "httpx/_content.py",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "id": "H19",
+      "repo": "httpx",
+      "title": "No-proxy routes are mount exclusions",
+      "family": "transport-routing",
+      "status": "merge",
+      "claim": "No-proxy routes use specific exclusions and ordinary transport fallback.",
+      "challenge": "A broad proxy route with one excluded domain.",
+      "reason": "Merge into H07; a second wording of the same precedence mechanism is not an independent decision.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/advanced/transports.md#L417",
+        "path": "docs/advanced/transports.md",
+        "line": 417
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L760",
+          "path": "httpx/_client.py",
+          "line": 760
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_utils.py#L30",
+          "path": "httpx/_utils.py",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "id": "H20",
+      "repo": "httpx",
+      "title": "Bodyless convenience methods retain a generic escape hatch",
+      "family": "request-method-api",
+      "status": "calibration",
+      "claim": "Convenience methods omit body parameters, while the generic request API permits explicit bodies for those methods.",
+      "challenge": "A body passed to get versus request with method GET; do not turn convenience API design into a universal protocol prohibition.",
+      "reason": "Useful exception calibration; the guide's broad protocol explanation is not adopted as external HTTP truth.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/compatibility.md#L182",
+        "path": "docs/compatibility.md",
+        "line": 182
+      },
+      "code": [
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L1036",
+          "path": "httpx/_client.py",
+          "line": 1036
+        },
+        {
+          "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/httpx/_client.py#L771",
+          "path": "httpx/_client.py",
+          "line": 771
+        }
+      ]
+    },
+    {
+      "id": "H21",
+      "repo": "httpx",
+      "title": "Uppercase status-code naming preference",
+      "family": "naming-style",
+      "status": "reject",
+      "claim": "The documentation prefers uppercase status names while retaining lowercase compatibility.",
+      "challenge": "Use equivalent uppercase/lowercase names.",
+      "reason": "A naming preference is not a substantive decision-family test; reject from the main set.",
+      "previous": false,
+      "reference": {
+        "url": "https://github.com/encode/httpx/blob/b5addb64f0161ff6bfe94c124ef76f6a1fba5254/docs/compatibility.md#L125",
+        "path": "docs/compatibility.md",
+        "line": 125
+      },
+      "code": []
+    }
+  ]
+}

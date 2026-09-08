@@ -1,8 +1,24 @@
 # Interpretation-layer POC
 
-**[Open the current study website](https://yspbob.github.io/interpretation-layer-poc/)** · [Progress & findings](https://yspbob.github.io/interpretation-layer-poc/progress/)
+[Study website](https://yspbob.github.io/interpretation-layer-poc/) · [Progress & findings](https://yspbob.github.io/interpretation-layer-poc/progress/)
 
-The website contains the current redesigned POC, its working plan and evidence downloads. The repository overview below and its earlier preregistration files describe the historical NetBox-only experiment. The previous website is preserved in [the history folder](docs/history/status-before-2026-09-08.html).
+This is the shared project repository for the redesigned interpretation-layer experiment. It contains the editable website, current plan, project decisions and development evidence. The pilot is being prepared; there are zero blinded model runs and no demonstrated benefit yet.
+
+## Working on the POC
+
+Start with [the current project state](PROJECT_STATE.md). For a new machine, follow [the short setup guide](START_HERE.md). Codex maintains the context and saves completed work to GitHub, so switching machines does not require a user-written handover. Related changes are saved together; routine conversation does not generate a commit per message.
+
+| File or directory | Current purpose |
+|---|---|
+| `PROJECT_STATE.md` | Decisions, evidence status, open questions and the next step |
+| `AGENTS.md` | Instructions for Codex to retrieve and maintain shared context |
+| `preregistration/plan/working_plan_2026-09-05.md` | Canonical working plan for the redesigned pilot |
+| `preregistration/plan/plan_changes_2026-09-05.md` | Changes and their status |
+| `website/` | Editable site source and build instructions |
+| `docs/` | Rendered GitHub Pages site, downloads and historical pages |
+| `research/` | Pinned candidate repositories, initial playbook review and recorded development probes |
+
+The material below describes the earlier NetBox-only design and is retained for history. Its status and numerical protocol are not current instructions. Consult the working plan before reusing its scripts or fixtures.
 
 ## Historical repository overview
 

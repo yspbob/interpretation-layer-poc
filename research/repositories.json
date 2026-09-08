@@ -1,0 +1,22 @@
+[
+  {
+    "id": "netbox",
+    "url": "https://github.com/netbox-community/netbox.git",
+    "commit": "ea4c205a37baa3e58e6e481158c15c6154cceeff"
+  },
+  {
+    "id": "wagtail",
+    "url": "https://github.com/wagtail/wagtail.git",
+    "commit": "bddc5eaf2e77d6777b11d0e8cd4a3b62cf707417"
+  },
+  {
+    "id": "paperless-ngx",
+    "url": "https://github.com/paperless-ngx/paperless-ngx.git",
+    "commit": "835c4e51d0b145007bfac934009713dd8bbf3598"
+  },
+  {
+    "id": "httpx",
+    "url": "https://github.com/encode/httpx.git",
+    "commit": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254"
+  }
+]
