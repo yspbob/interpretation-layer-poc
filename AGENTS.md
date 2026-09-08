@@ -21,7 +21,7 @@ This is a routine performed by the agent, not an installed background service. I
 ## Research and publication boundaries
 
 - Current authority: `preregistration/plan/working_plan_2026-09-05.md`. Older ratified plans and existing NetBox harness files are historical, not the redesigned pilot specification.
-- The immediate research step is specifying verifier, checker and judge contracts, then one complete development case. Zero blinded runs have been completed. Neither judge qualification nor experimental benefit has been demonstrated.
+- The immediate research step is the model-free isolated role runner recorded in PROJECT_STATE.md. Component contracts and the H04 scripted case are development material, not model qualification. Zero blinded runs have been completed. Neither judge qualification nor experimental benefit has been demonstrated.
 - Preserve claim-level provenance, reference uncertainty, matched reviews and budgets, changed-plan checks and independent scoring. Owner approval cannot be inferred from public documentation. Containers do not establish absence of training-data knowledge.
 - This repository and its website are public. Keep secrets, local environments, raw private chats and future sealed fixtures outside it. In particular, never feed `PROJECT_STATE.md`, the research review, evaluator answers or investigator-visible inventory into an agent that is meant to be blind. Build explicit allowlisted packs in fresh contexts.
 - Write clear full sentences and introduce terms before examples. Keep explanation and progress separate. Match the playbook's colours and fonts. Use ordinary anchor navigation, which works on GitHub Pages.

@@ -1,0 +1,138 @@
+{
+  "version": "h04-trace-v0.1",
+  "mode": "scripted-development",
+  "model": null,
+  "model_calls": 0,
+  "notice": "Investigator-authored proposed outputs. Replaying them tests state transitions, not judgement quality.",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "At this HTTPX pin, an acquired async streaming response must be closed when this caller finishes using it; the stream context manages closure, and manual send requires an equivalent cleanup path.",
+      "kind": "observed behaviour",
+      "scope": "AsyncClient streaming; normal and exceptional exits with functioning cleanup",
+      "exceptions": [
+        "Exhausting the response iterator closes it automatically.",
+        "Manual streaming with explicit cleanup is a legitimate alternative."
+      ],
+      "provenance": "documentation extraction",
+      "evidence": [
+        {
+          "path": "docs/async.md",
+          "sha256": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+          "lines": [
+            85,
+            104
+          ],
+          "supports": "Claim scope and its stated exception or contradiction."
+        },
+        {
+          "path": "httpx/_client.py",
+          "sha256": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+          "lines": [
+            1542,
+            1643
+          ],
+          "supports": "Claim scope and its stated exception or contradiction."
+        },
+        {
+          "path": "httpx/_models.py",
+          "sha256": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+          "lines": [
+            1037,
+            1077
+          ],
+          "supports": "Claim scope and its stated exception or contradiction."
+        }
+      ],
+      "counter_evidence": [],
+      "scripted_verdict": "admit"
+    },
+    {
+      "id": "C2",
+      "text": "Every async HTTPX request must use a stream context manager; manual streaming is forbidden.",
+      "kind": "constraint",
+      "scope": "All async requests",
+      "exceptions": [],
+      "provenance": "unresolved",
+      "evidence": [
+        {
+          "path": "docs/async.md",
+          "sha256": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+          "lines": [
+            85,
+            104
+          ],
+          "supports": "Claim scope and its stated exception or contradiction."
+        }
+      ],
+      "counter_evidence": [
+        "The same source documents manual streaming."
+      ],
+      "scripted_verdict": "reject"
+    },
+    {
+      "id": "C3",
+      "text": "The project owner has approved this newly drafted application rule.",
+      "kind": "authority",
+      "scope": "Owner approval",
+      "exceptions": [],
+      "provenance": "unresolved",
+      "evidence": [],
+      "counter_evidence": [],
+      "scripted_verdict": "unresolved"
+    }
+  ],
+  "consultation": {
+    "input": "Which API can manage this response lifetime, and is explicit closure allowed?",
+    "scripted_output": "AsyncClient.stream manages response cleanup. Manual send(stream=True) is also allowed when all exits close the response. C1 and docs/async.md:85-104 support this."
+  },
+  "steps": [
+    {
+      "checkpoint": "initial",
+      "submission": "plan-0",
+      "input": "Use client.stream, read the first chunk, invoke the consumer, and leave the borrowed client open.",
+      "scripted_decision": "proceed",
+      "expected_state": "approved"
+    },
+    {
+      "checkpoint": "changed",
+      "submission": "patch-1",
+      "input": "Switch to manual send without an updated plan or explicit cleanup; explain that C1 was followed.",
+      "scripted_decision": "revise",
+      "reason": "Submitted code changes response ownership and fails cleanup; a citation does not satisfy C1.",
+      "expected_state": "awaiting_correction"
+    },
+    {
+      "checkpoint": "changed",
+      "submission": "patch-2",
+      "input": "Submit an updated plan and manual_finally implementation. Explicit cleanup is the supported alternative.",
+      "scripted_decision": "proceed",
+      "expected_state": "approved"
+    },
+    {
+      "checkpoint": "final",
+      "submission": "patch-2-final",
+      "input": "Submit the unchanged corrected implementation for the common final review.",
+      "scripted_decision": "proceed",
+      "expected_state": "approved"
+    }
+  ],
+  "other_expected_checker_decisions": [
+    {
+      "input": "manual_finally with the updated plan",
+      "decision": "proceed",
+      "basis": "Equivalent cleanup is allowed."
+    },
+    {
+      "input": "normal_only_close accompanied by correct citations",
+      "decision": "revise",
+      "basis": "HTTP, source and consumer errors bypass closure."
+    },
+    {
+      "input": "A required claim of owner approval with no authority evidence",
+      "decision": "unresolved",
+      "basis": "The permitted sources cannot establish that claim."
+    }
+  ],
+  "final_assessment": "The independent mechanical checks score both valid candidates, both seeded errors and the incomplete candidate. The final checker decision is not used as the final score."
+}

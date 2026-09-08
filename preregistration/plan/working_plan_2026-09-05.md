@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-08.1**
+Plan ID: **pilot-draft-2026-09-08.2**
 Updated: **8 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -137,11 +137,11 @@ This design draws on the distinction between code, model and human graders in [A
 
 ## 10. Execution sequence and current state
 
-### Immediate next step: specify the components and build one complete development case
+### First development case completed; next build the isolated role runner
 
-**Recorded next preparation step, agreed on 5 September 2026. Not completed.** The current design is sufficient to begin a prototype, but it is not a complete implementation specification for the verifier, checker and judge. Write the missing behavioural contracts and exercise them on one complete case before expanding the implementation or attempting independent qualification.
+**Development milestone completed on 8 September 2026; model components and isolation remain unvalidated.** [Component contracts v0.1](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/component-contracts-v0.1.md) and the [H04 response-lifetime case](https://github.com/yspbob/interpretation-layer-poc/tree/main/research/development/h04-response-lifetime) now provide a concrete task, pinned evidence, two valid implementations, two consequential errors, an unfinished implementation, prewritten reference verdicts and a scripted preparation/checking/final-assessment trace. All 25 behaviour comparisons matched their reference expectations. These are investigator-authored development examples and a mechanical replay, not model outputs or independent qualification.
 
-The specification must define:
+The development contracts now specify:
 
 - **Verifier:** claim and evidence format, sufficient support, contradictions, exceptions, unresolved claims, and the conditions for admitting a claim to the frozen guide.
 - **Checker:** initial consultation and targeted questions, the distinction between revise and unresolved, changed-plan triggers, the proposed correction limit, and the exact difference from ordinary review in DIRECT and GUIDE.
@@ -152,15 +152,19 @@ The worked case must contain the pinned evidence, a concrete task, a valid solut
 
 The completion record should show what each component received, what it returned, and whether those results matched the justified expectations. Label the case and all tuning outputs as development material. It cannot count as independent qualification or evidence that the layer improves outcomes. Exact models, budgets, validation sample and acceptance thresholds may remain open while the surrounding software is built, but must be fixed before their corresponding qualification or scored runs.
 
-The user requested this next step to be recorded; this update records the sequence and does not claim that the specification or worked case has been built.
+The runnable prototype checks six control behaviours and records 71 denied file-broker requests, including traversal, prohibited inputs and tampering. It exports hashed documentation-visible drafter, verifier, coder/reviewer, checker and anonymised final-judge packs. A broker allowlist is not a sandbox: the investigator process still has filesystem access, and network/OS isolation has not been demonstrated. No code-inference pack has passed a disclosure audit. No model was called.
+
+For this development case, any confirmed required behavioural failure makes the final result fail; otherwise missing evidence stays insufficient, and all required checks must pass for a scoped pass. Incomplete work fails completion. A second corrected submission may proceed, a further revise stops, and unresolved stops immediately. These are explicit development defaults, not a ratified confirmation endpoint. Scripted lifecycle-call and finally-structure comparisons detect the known candidate changes; general semantic detection and runner-enforced pauses remain open.
+
+**Exact next step:** implement a model-free isolated role runner with structured record validation, immutable pack dispatch, negative filesystem/network checks, and enforced initial, changed-plan and final checkpoints. Use H04 as a regression case. Then prepare different families and fix the qualification coverage, error limits, model settings and budgets before authorised qualification calls. The user asked to stop after recording this milestone and resume tomorrow; no background work or model run is scheduled.
 
 | Stage | Required work | Current state |
 |---|---|---|
 | Frame and inventory | Review the playbook claim, inspect references and select candidate repositories. | Completed as exploratory preparation. |
-| Specify and trace one development case | Write component contracts and exercise the verifier, checker and judge on one complete evidence-backed case. | Agreed immediate preparation step; not complete. |
+| Specify and trace one development case | Write component contracts and trace their inputs and decisions on one evidence-backed case. | H04 contracts, executable checks and scripted trace complete as development. No model role exercised or qualified. |
 | Build pilot cases | Select a spread of decision families; resolve dependencies; construct tasks, alternatives and unpublished variants. | Not complete. Final case list and pilot size remain open. |
 | Validate scoring and inputs | Establish reference verdicts, develop rubrics, qualify each judging role on held-out families under section 9A, and check semantic disclosures. | Protocol proposed; fixtures, numerical acceptance limits and qualification runs not complete. |
-| Build and test the runner | Enforce inputs and checkpoints; test isolation, plan-change handling, logging and checker failures. | Not implemented as a complete blinded trial. |
+| Build and test the runner | Enforce inputs and checkpoints; test isolation, plan-change handling, logging and checker failures. | Narrow pack broker, state transitions and lifecycle triggers exercised in H04. Isolated dispatch and a complete blinded runner remain the next implementation work. |
 | Fix pilot configuration | Record cases, inputs, models, prompts, budgets, correction limits, exclusions and retry policy before runs. | Not frozen. |
 | Run the pilot | Execute fresh matched conditions; retain all attempts; move tuning material out of confirmation. | Not started. |
 | Freeze and run confirmation | Specify final primary claims, endpoints, sample, grouping, thresholds and protocol before confirmation. | Not started. |

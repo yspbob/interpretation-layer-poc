@@ -1,6 +1,14 @@
 # Plan changes reconciled on 5 September 2026
 
-Current plan: **pilot-draft-2026-09-08.1**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-08.2**. Status: working redesign, not a new ratified preregistration.
+
+## Development milestone — 8 September 2026
+
+The user requested continuation of the POC, then asked to stop after the next step and continue tomorrow. Contracts v0.1 and the public H04 response-lifetime case are now implemented as a scripted development rehearsal. All 25 candidate/scenario verdicts matched prewritten expectations; two valid implementations passed overall, two cleanup errors and unfinished work failed. Six control checks and 71 file-broker denials passed. These results establish the narrow fixture and control behaviour, not model judgement, independent qualification or benefit.
+
+The contracts make development defaults explicit: scoped claim admission with exceptions; reject versus unresolved; acceptance on a second correction, terminal exhaustion and unresolved; matched ordinary-review checkpoints; and case scoring in which confirmed failures dominate, missing evidence stays insufficient and incomplete work remains a failure. Hashed documentation-visible role packs and anonymised final-judge inputs are inspectable. Whole-family development exposure, no independent human review and the absence of OS/network isolation are recorded. These are working implementation choices, not user-ratified numerical gates or a frozen endpoint. No scored model outcome was inspected, and zero model calls were made.
+
+Next implement model-free isolated role dispatch and checkpoint enforcement. Do not launch it in the background after this save. Qualification settings and independent family coverage remain open.
 
 ## Publication update — 8 September 2026
 
@@ -18,7 +26,7 @@ The user requested the current explanation and progress website on the POC GitHu
 | Strong comparison rather than extra free review for the layer. | Fairness requirement; exact settings open. | Match checkpoint opportunities and resource caps, count all preparation and review costs, and distinguish ordinary review from structured interaction. |
 | Runtime checking must not grade its own success. | Working method. | Separate final evaluator and hidden references; score false objections, missed violations and incomplete attempts. |
 | Judge calibration and independent qualification need an explicit procedure. | Proposed in response to the user's question; no calibration executed. | Section 9A adds evidence-backed reference verdicts, role-specific rubrics, family-separated development and validation, bias tests, separate error rates, a predeclared qualification gate and regrading after changes. Numerical limits and sample size remain open. |
-| The design needs implementation contracts and a complete worked case before qualification. | Next preparation step accepted by the user and recorded; not completed. | Section 10 specifies missing verifier, checker and judge behaviour, shared information boundaries, and the evidence required for one development case. That case cannot count as independent validation. |
+| The design needs implementation contracts and a complete worked case before qualification. | Contracts and H04 scripted development case completed on 8 September; no model qualification. | Section 10 records the executable evidence and the next isolated-runner work. H04 cannot count as independent validation. |
 | The method section is too convoluted to follow. | Presentation change requested by the user. | Present one visible sequence through a test, with optional detail beside the relevant step. Preserve method requirements in the working plan; keep current status in Progress & findings. |
 | Examples are illustrations, not frozen prompts. | Presentation clarification with input-control implications. | Label the website examples; keep them out of blind packs and specify actual instructions separately. |
 | Wagtail example needs a specific reason for scrutiny. | Case-description clarification. | Identify dependence on internal permission machinery and its documented exception; do not suggest checking every interface indiscriminately. |
@@ -36,7 +44,7 @@ No scored results were reclassified or removed in this reconciliation. No live a
 
 ## Next substantive decisions
 
-First write the component contracts and construct one complete development case as recorded in section 10. Record its inputs, expected and actual decisions, and the independent evidence supporting the expected outcomes before expanding the implementation.
+Contracts and the H04 scripted case now record inputs, proposed component decisions, observed behaviour and reference comparisons. Next implement and test the isolated role runner and checkpoint enforcement described in section 10. Keep H04 in development and establish fresh qualification families.
 
 The judge qualification gate now needs an explicit coverage and precision target, tolerable error rates, a development/validation split, an audit sample and a policy for combining mechanical, model and unresolved verdicts. Without independent expertise for ambiguous labels, restrict scored claims to defensible references and reproducible checks; do not substitute model agreement for ground truth.
 

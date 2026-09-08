@@ -6,11 +6,12 @@ Updated: 8 September 2026. This record is maintained by Codex during normal work
 
 We are testing whether the interpretation layer proposed in [chapter 4 of the AI Engineering Playbook](https://yspbob.github.io/AI-Playbook/AI_Engineering_Playbook.html#4-the-interpretation-layer) produces useful, defensible guidance and improves subsequent engineering work. A positive result would support the mechanism in the tested situations, not prove that every organisation needs it.
 
-The redesigned POC is still being prepared. There are **zero blinded model runs**. The verifier, interactive checker and final judge have not been built or qualified under the current protocol.
+The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts and a scripted development trace now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
 ## Read next
 
 - [Current working plan](preregistration/plan/working_plan_2026-09-05.md), especially sections 9A and 10: component qualification and the immediate development step.
+- [Component contracts v0.1](research/development/component-contracts-v0.1.md) and [H04 worked development case](research/development/h04-response-lifetime/README.md), including its recorded results and reproducible runner.
 - [Decision and plan change register](preregistration/plan/plan_changes_2026-09-05.md).
 - [Study explanation](https://yspbob.github.io/interpretation-layer-poc/) and [Progress & findings](https://yspbob.github.io/interpretation-layer-poc/progress/).
 - [Full playbook context and original POC review](research/development/playbook-and-original-poc-review.md). This is historical analysis: later decisions in the working plan supersede its recommendations, especially the owner-recruitment proposal.
@@ -34,19 +35,23 @@ An inventory contains 84 records across four pinned repositories: NetBox, Wagtai
 
 Fifteen recorded development probes passed (nine HTTPX, six Paperless). These were selected behaviour checks, not full applications, container isolation checks or model comparisons. See `research/development/recorded-probe-results.json`. The portable probe script and source pins are retained alongside the current website source.
 
-The website has separate explanation and progress routes. Its method is presented as four visible steps with optional detail. Progress identifies one complete development example as the next substantive task. GitHub Pages serves `docs/` from main; editable source is in `website/`.
+The website has separate explanation and progress routes. Its method is presented as four visible steps with optional detail. Progress records the first executable, scripted development example and identifies isolated role dispatch as the next substantive task. GitHub Pages serves `docs/` from main; editable source is in `website/`.
 
 ## Next substantive task
 
-Write the verifier, checker and judge contracts, then construct one complete development case with pinned evidence, a concrete task, a valid change, a consequential mistake and a legitimate exception or alternative. Define expected decisions from independent evidence before comparing actual outputs. Trace guidance preparation, use, a changed approach and final assessment. Label all of this as development, not qualification or benefit evidence.
+Implement a model-free isolated role runner: validate structured input/output records, dispatch immutable allowlisted packs into fresh restricted processes/containers, prove filesystem/network denials, and enforce initial, changed-plan and final checkpoints with terminal stops. Use H04 as the regression case. Then prepare distinct qualification families and fix coverage, error limits, models and budgets before authorised qualification calls.
 
-The user has so far requested that this step be recorded. Do not interpret this setup work as permission to launch paid or blinded runs. Case selection, model settings, budgets, repetitions, qualification thresholds, confirmation endpoint and sample size remain open.
+Completed in this piece of work: contracts v0.1 and H04 at the pinned HTTPX source, with a concrete preview task, two valid solutions, two cleanup mistakes, unfinished work, prewritten reference verdicts, scripted guidance/checker trace and anonymised final-judge inputs. All 25 behaviour comparisons matched expectations; six control checks and 71 broker denials passed. The public result records exact source/artifact/input hashes, Python/dependency versions and observations before harness cleanup. The whole family is development material, with no independent human review. The broker is not OS isolation; semantic change detection is narrow, and no model judgement was tested.
+
+The user requested continuation, then asked to stop after this development milestone and continue tomorrow. Work is paused at this milestone pending the user's next continuation request; no scheduled or background work is requested. Do not interpret this setup work as permission to launch paid or blinded runs. Case selection, model settings, budgets, repetitions, qualification thresholds, confirmation endpoint and sample size remain open.
 
 ## Current operational work
 
 The user works on a Windows home PC and Windows laptop with Codex, and wants to switch without an explicit handover. The repository now holds the current plan, editable website and this project record. `AGENTS.md` requires Codex to retrieve the latest state before editing and save reviewed changes and decisions to GitHub before ending meaningful work. The sync helper rejects dirty starts and divergent history; it does not overwrite work or claim to synchronize chat transcripts.
 
 A local Codex project needs to point at this repository on each machine. Project registration and GitHub authentication are one-time machine setup. This setup has not yet been exercised on the physical second machine. Opening a project alone does not establish that this existing conversation is visible there.
+
+This milestone's H04 checks, application type/lint checks and GitHub Pages build passed. The plan downloads and both explanation/progress views have been reconciled. The fixture's text files use LF endings so their recorded hashes survive transfer between Windows checkouts.
 
 The sync routine passed a local two-clone test covering transfer, dirty-work refusal, unpublished commits, divergent history and a server-rejected push. A fresh dependency installation and GitHub Pages build succeeded in the consolidated checkout, with both routes and referenced local assets checked. Plan/download consistency and application type/lint checks passed. These are operational checks, not POC experiment results. Publication is confirmed by Git's remote commit and the live website, rather than a self-reported flag in this file.
 

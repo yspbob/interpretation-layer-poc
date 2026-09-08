@@ -92,7 +92,7 @@ export function ExperimentDetails(){return <>
 
     <div className="method-preparation">
       <h3>We will test the procedure before using it to draw conclusions</h3>
-      <p>First we will write the missing instructions for the verifier, checker and judge, and work through one complete development case. We will then validate the components on separate material and run a small pilot. What we learn will help us fix the method and size of the main trial before it begins.</p>
+      <p>We have written the component contracts and exercised one development case with scripted decisions and executable checks. Next we will implement isolated role execution, validate the components on separate material and run a small pilot. What we learn will help us fix the method and size of the main trial before it begins.</p>
       <PageLink className="text-link" href="/progress">See the current step and what remains <ArrowRight size={16}/></PageLink>
     </div>
 

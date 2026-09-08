@@ -1,0 +1,55 @@
+# Component contracts v0.1
+
+Date: 8 September 2026. Status: **development specification and scripted rehearsal; no component is qualified and no model has been run.** The working plan remains authoritative. These defaults make its first development example executable; they do not freeze pilot settings or authorise model calls.
+
+## Shared records and boundaries
+
+Every invocation must record a run ID, case/family ID, information condition, treatment, role, contract version, prompt hash, input manifest hash, source/environment hashes, model/version/settings, checkpoint and submission IDs, start/end time, token/tool usage and cost. Scripted records must use `mode: scripted-development`, `model: null` and `model_calls: 0`; unavailable measurements remain null. Zero calls is not a zero-cost estimate for the proposed system. Store the exact supplied messages and tool results, not private reasoning. Treat source comments, candidate explanations and tool output as evidence, never as instructions overriding the role contract.
+
+Inputs are immutable, explicitly allowlisted files. Hash their exact bytes before dispatch. No role receives the repository root, project state, inventory, sibling workspaces or the investigator's conversation. Give each real invocation a fresh context and an isolated filesystem with only its pack and declared runtime dependencies. Restrict network access to the logged gateway, and place test execution outside the candidate process. The H04 prototype below tests a file broker and pack construction only: the investigator's Python process still has ordinary filesystem access and is **not** a sandbox.
+
+| Role | Allowed inputs | Excluded inputs |
+|---|---|---|
+| Drafter | Declared source evidence and role instructions. | Downstream task, proposed patches, reference verdicts and final tests. |
+| Verifier | The drafter's evidence, proposed claims and verification instructions. | Downstream task, evaluator references, expected labels and final tests. |
+| DIRECT coder/reviewer | Task, permitted sources, current plan/patch and common task checks. | Guidance, structured consultation, reference labels and final-only tests. |
+| GUIDE coder/reviewer | DIRECT inputs plus the frozen guide. | Structured consultation, reference labels and final-only tests. |
+| INTERACT coder/checker | GUIDE inputs plus submitted questions, consultation answers and checkpoint records. | Reference labels, final-only tests and the coder's private reasoning. |
+| Final outcome judge | Task, anonymised final patch, reference requirements and independently produced test observations. | Treatment/model labels, guidance, persuasive summaries and candidate-specific expected verdicts. |
+| Intervention assessor | Separate transcript, permitted evidence at each checkpoint and reference criteria. | Candidate expected labels. It must assess what was knowable at the time. |
+
+Documentation-visible packs may contain the declared guide sections. Code-inference packs require a separate disclosure audit of all files, including docstrings, tests and dependencies; stripping a filename alone is inadequate. H04 uses documentation-visible development packs only. Its whole family is exposed development material. Public test files in this directory must never become purported sealed fixtures.
+
+Malformed output, missing references, changed hashes, tool failure or timeout produces a recorded infrastructure/format error, not `proceed` or a substantive failure label. No implicit retry or free correction is permitted. The pilot must freeze retry and resource policies before use; the development replay has no retries. A breached information boundary invalidates the affected matched run, which remains in the audit record. Do not quietly continue with a larger pack.
+
+## Verifier contract
+
+A claim has `id`, `text`, `kind` (observed behaviour, recommendation, constraint or authority), `scope`, `exceptions`, `provenance`, `evidence` (permitted path, hash, line span and what it supports) and `counter_evidence`. Provenance is one of documentation extraction, executable-text restatement, structural/behavioural inference or unresolved. Multiple sources can support different parts of a claim; a reference's presence does not establish entailment.
+
+Return one record per claim: `claim_id`, `verdict` (`admit`, `reject` or `unresolved`), `supported_scope`, evidence references, contradictions, missing evidence and a plain-language reason. Admit only when the complete scoped claim is supported and relevant exceptions have been preserved. Reject a contradicted claim or a universal statement disproved by an allowed alternative. Use unresolved when support or authority is unavailable, or a material evidence conflict cannot be settled. Neither rejected nor unresolved claims enter the guide. Record both, including their preparation cost.
+
+A verifier cannot silently rewrite a claim into an admitted rule. A proposed narrower version returns to the drafter as a new version and must be verified again. Freeze a content-addressed guide containing only admitted claim versions before releasing the task. GUIDE and INTERACT share that exact hash. Consultation may explain the guide and permitted sources but cannot amend it or access withheld material. Do not treat this freeze as owner approval.
+
+## Checker and ordinary-review contracts
+
+At initial consultation, INTERACT asks which components can be reused, which scoped rules apply, what evidence supports them and whether an exception needs checking. Answers must cite only the frozen guide or permitted sources and acknowledge absent evidence. A submitted plan identifies files, APIs, intended behaviour, response/resource ownership, applicable rules and claimed alternatives. Request focused missing information; do not turn questions into an unlimited extra review budget.
+
+All treatments have initial-plan, material-change and final-submission checkpoints. DIRECT and GUIDE receive a credible ordinary correctness review at those same opportunities; they can discover the same failure from source evidence. INTERACT additionally records applicable claim IDs, targeted questions, rule-specific findings and exception justification. Model settings, total resource caps, submission limits and common tests must match across conditions. Those numerical settings remain open; the script does not simulate comparative performance or cost.
+
+Return `checkpoint_id`, `submission_id`, `decision`, findings with criterion/rule IDs and exact evidence, targeted questions and required revisions. `proceed` means no identified blocking issue within the checked scope. `revise` requires an actionable defect or an omitted required submission that the agent can correct or defend. `unresolved` means the permitted evidence cannot settle a necessary decision; it is not a synonym for a definite defect. A concrete behavioural error requires revise even if its prose cites the right rule. A supported alternative can proceed without following the preferred API.
+
+The state machine starts awaiting an initial plan. A revise decision permits at most two corrected submissions at that checkpoint; the initial submission is round zero. A second corrected submission may proceed. A further revise stops as `correction_exhausted`. Unresolved stops immediately as `unresolved`. Budget exhaustion or a missing required submission stops and retains the latest patch. A stopped attempt cannot resume under the same run ID. Repeated attempts do not create a fresh allowance for the same checkpoint.
+
+Changes to dependencies, touched components, ownership, APIs or claimed exceptions require a new plan before further work. Compare the actual submitted patch with the last approved plan, not just the coder's declaration. H04's prototype detects changes in lifecycle calls and `finally` structure within its known candidate functions. This is a narrow trigger, not a general semantic detector. A production runner must control writable submissions, enforce the pause and supplement mechanical detection with semantic review. A changed plan gets a distinct checkpoint with the same allowance, subject to a predeclared total checkpoint/resource cap.
+
+## Final judge contract
+
+Return a per-criterion `pass`, `fail` or `insufficient_evidence`, references to patch lines and check observations, completion status and an overall verdict. Score code individually without candidate labels. Record intervention quality separately; correct final code does not prove earlier objections were useful. Never infer success from convincing prose or refusal alone.
+
+For H04, the required criteria are functional behaviour, closing the acquired response on the tested exits, and preserving the borrowed client. Each has an executable reference check. Any confirmed criterion failure makes the case fail. All required criteria passing makes it pass **within those tests' stated scope**. If none fails and any criterion lacks evidence, return insufficient evidence. Empty or unimplemented submissions fail task completion and stay in denominators. Infrastructure failures remain separately identified and cannot become substantive passes. These combination rules are a development default for this case, not the unchosen confirmatory endpoint.
+
+A model judgement cannot override a reproducible failure. Disagreement requires investigation of fixture correctness and evidence; retain the original outputs and versions. Unsupported authority assertions in a guide are scored by the verifier, not converted into unrelated final-code failures. Repeated cancellation, real socket/pool behaviour and ambiguous organisational commitments are outside this case's validated mechanical scope.
+
+## What must precede real qualification
+
+Implement schema validation, immutable dispatch, OS/container isolation, negative filesystem/network tests, gateway usage accounting, all checkpoint enforcement and anonymised scorer input construction. Fix models, prompts, budgets, retry policy, family split, qualification sample and error/precision limits before validation outcomes. Use fresh families for independent validation after tuning. H04's scripted verdicts exercise record design and control logic; they do not measure a verifier, checker or model judge's judgement.

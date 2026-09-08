@@ -1,0 +1,1269 @@
+{
+  "version": "h04-development-v0.1",
+  "mode": "scripted-development",
+  "information_condition": "documentation-visible",
+  "treatment": "not a comparative run",
+  "started_at": "2026-09-08T21:43:19.562278+00:00",
+  "elapsed_seconds": 0.369,
+  "contract_sha256": "4036215f8ed6e8c95bca5ed125995c29f3830ce7fdba286fd8da98deac90bcc3",
+  "model": null,
+  "model_calls": 0,
+  "model_usage": null,
+  "model_cost": null,
+  "source_commit": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+  "source_archive_sha256": "bc225694843cdc4eeed329446bdc52a63d713a1e1d835f269e6729456cc12906",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "dependencies": {
+    "anyio": "4.10.0",
+    "certifi": "2025.8.3",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "idna": "3.10",
+    "sniffio": "1.3.1",
+    "typing_extensions": "4.15.0"
+  },
+  "source_files_verified": 125,
+  "evidence_hashes": {
+    "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+    "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+    "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+  },
+  "artifact_hashes": {
+    "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+    "reference.json": "8390035ca31f14fff966198954c809e9898f273500231f16bc760563b3f74123",
+    "trace.json": "9427261e3a1422731b594c5ff7a7ff16908c615c2d98f2fcf81e1d176528b946",
+    "candidates.py": "05634dc8de1d22b2b31e00d9d6012c59fc71162a107264104a448cdf573f08c0",
+    "run.py": "34118efff57c95e2682aa9c1d5a277035c8b8fb83b3df5e64b9ee1ac566c2a69",
+    "requirements.txt": "99051a6db6d23264275cd758bcc9c1e76d3f34d241c05c7e0f4ca1dd34e47e96"
+  },
+  "role_input_manifests": {
+    "drafter": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "instructions.txt": "40fb3d542907d6508ee5abfa796d8a2bbe34ff8c2bdcd373b572be8e3d0b3425"
+    },
+    "verifier": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "claims.json": "b4d06e44656789b4012a5cfbb177dec6528f54c416375690f342eb07d0dce110",
+      "instructions.txt": "ebb914b690352bb973087f0c617ba22ba33c7440da85803221e60ee31c69990c"
+    },
+    "direct": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "instructions.txt": "b77d0ee5d7ea246f9805ca936afc48c09dadc3f9b2f18bcf30a706837dd71a47"
+    },
+    "guide": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "guide.json": "2abc2d7e8cfe63cb7a58ae7856a20df23c86e3882aed6c3eb5d1183409aafac6",
+      "instructions.txt": "1e88fd2a9fd36d853a1a2cfc93bf2649712396aa6c65025cd365739eb46710cb"
+    },
+    "interact": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "guide.json": "2abc2d7e8cfe63cb7a58ae7856a20df23c86e3882aed6c3eb5d1183409aafac6",
+      "instructions.txt": "29136af50b72ede74a48b8e554fa14c3cb2af424feb5045a67e8403d9b502296"
+    },
+    "reviewer-direct": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "plan.txt": "2b547f87461ed9114196fd703e24f29cae0361ccf4443b70baae7fc952fb6925",
+      "preview.py": "239c957d2d00d83b44b38cde026abe4fd7ed48c9529453f2fd327994314b4cd9",
+      "instructions.txt": "b17444f95a13ae38b02dc42605bcd3ea6efb9d1af6fd8f8e78caf137cf013033"
+    },
+    "reviewer-guide": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "guide.json": "2abc2d7e8cfe63cb7a58ae7856a20df23c86e3882aed6c3eb5d1183409aafac6",
+      "plan.txt": "2b547f87461ed9114196fd703e24f29cae0361ccf4443b70baae7fc952fb6925",
+      "preview.py": "239c957d2d00d83b44b38cde026abe4fd7ed48c9529453f2fd327994314b4cd9",
+      "instructions.txt": "b17444f95a13ae38b02dc42605bcd3ea6efb9d1af6fd8f8e78caf137cf013033"
+    },
+    "checker-interact": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "guide.json": "2abc2d7e8cfe63cb7a58ae7856a20df23c86e3882aed6c3eb5d1183409aafac6",
+      "plan.txt": "2b547f87461ed9114196fd703e24f29cae0361ccf4443b70baae7fc952fb6925",
+      "preview.py": "239c957d2d00d83b44b38cde026abe4fd7ed48c9529453f2fd327994314b4cd9",
+      "instructions.txt": "9e29dbb03ce5d2f74407fe3b29b032a3c77948f5b2fa01817125f6d61dac1eb9"
+    },
+    "checker-change-1": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "guide.json": "2abc2d7e8cfe63cb7a58ae7856a20df23c86e3882aed6c3eb5d1183409aafac6",
+      "previous-plan.txt": "2b547f87461ed9114196fd703e24f29cae0361ccf4443b70baae7fc952fb6925",
+      "submission.txt": "1b91f909c376e56654cc74b55114672dd6a16f69e33625cceb308c3c4e2e2564",
+      "preview.py": "215439585c87588ebd2a269dc1bce053d27582506c2154b2075f1e5748c81ce1",
+      "instructions.txt": "9e29dbb03ce5d2f74407fe3b29b032a3c77948f5b2fa01817125f6d61dac1eb9"
+    },
+    "checker-change-2": {
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "guide.json": "2abc2d7e8cfe63cb7a58ae7856a20df23c86e3882aed6c3eb5d1183409aafac6",
+      "previous-plan.txt": "2b547f87461ed9114196fd703e24f29cae0361ccf4443b70baae7fc952fb6925",
+      "submission.txt": "5441f15408f3aaf4df02abea331dfe7f404b9e38cd2409ce6c6fab01aea3e3ed",
+      "preview.py": "4e42bdb041855989471f04114d0e0df91f4ccc72142597c5dce39bf7881e37ff",
+      "instructions.txt": "9e29dbb03ce5d2f74407fe3b29b032a3c77948f5b2fa01817125f6d61dac1eb9"
+    }
+  },
+  "final_judge_input_manifests": {
+    "submission-1": {
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "preview.py": "239c957d2d00d83b44b38cde026abe4fd7ed48c9529453f2fd327994314b4cd9",
+      "reference-requirements.json": "1cb8e3ceeebf31ed6878bf03703ab944e16a52f556755bfd7b208e4790a1fa67",
+      "observations.json": "101a3871a601fbd87710e9edb2f558ff90160feabfcbd85a5af042bb434c69ef",
+      "instructions.txt": "e0f0ddf15aa21345acbcfa18770f5a3fa62365e357db853eeb5eb6db44433b02",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+    },
+    "submission-2": {
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "preview.py": "4e42bdb041855989471f04114d0e0df91f4ccc72142597c5dce39bf7881e37ff",
+      "reference-requirements.json": "1cb8e3ceeebf31ed6878bf03703ab944e16a52f556755bfd7b208e4790a1fa67",
+      "observations.json": "101a3871a601fbd87710e9edb2f558ff90160feabfcbd85a5af042bb434c69ef",
+      "instructions.txt": "e0f0ddf15aa21345acbcfa18770f5a3fa62365e357db853eeb5eb6db44433b02",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+    },
+    "submission-3": {
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "preview.py": "215439585c87588ebd2a269dc1bce053d27582506c2154b2075f1e5748c81ce1",
+      "reference-requirements.json": "1cb8e3ceeebf31ed6878bf03703ab944e16a52f556755bfd7b208e4790a1fa67",
+      "observations.json": "7a9a526048ebe7b0fa862657de6bab8f0a79f73c2256319c6ce76eba7bf0e626",
+      "instructions.txt": "e0f0ddf15aa21345acbcfa18770f5a3fa62365e357db853eeb5eb6db44433b02",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+    },
+    "submission-4": {
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "preview.py": "509cf2e762e5dea1fd86a3049c391376690bd7c07790395ef6d1ca1741784445",
+      "reference-requirements.json": "1cb8e3ceeebf31ed6878bf03703ab944e16a52f556755bfd7b208e4790a1fa67",
+      "observations.json": "a00f2094559fc7169c6fe336d388acad90d197f5d810a0d635cc118010b0c445",
+      "instructions.txt": "e0f0ddf15aa21345acbcfa18770f5a3fa62365e357db853eeb5eb6db44433b02",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+    },
+    "submission-5": {
+      "task.md": "91650a07c5dd1f76a5ad8ea68683d4bdb56fe90bc9c718833de78c2bfaae8dc9",
+      "preview.py": "40bfdc0839f9d0c28c0702df0b4c1c8f6eb7c62f092f65c89106323c020c24f5",
+      "reference-requirements.json": "1cb8e3ceeebf31ed6878bf03703ab944e16a52f556755bfd7b208e4790a1fa67",
+      "observations.json": "551c199c0976c99ad124c0267ef0fcd3abc3846aa87aca3aae4b329b1531a212",
+      "instructions.txt": "e0f0ddf15aa21345acbcfa18770f5a3fa62365e357db853eeb5eb6db44433b02",
+      "docs/async.md": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+      "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+    }
+  },
+  "broker_denials": [
+    {
+      "role": "drafter",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "drafter",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "drafter",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "drafter",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "drafter",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "drafter",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "drafter",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "verifier",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "verifier",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "verifier",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "verifier",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "verifier",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "verifier",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "verifier",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "direct",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "direct",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "direct",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "direct",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "direct",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "direct",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "direct",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "guide",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "guide",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "guide",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "guide",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "guide",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "guide",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "guide",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "interact",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "interact",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "interact",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "interact",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "interact",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "interact",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "interact",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "reviewer-direct",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "reviewer-direct",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "reviewer-direct",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "reviewer-direct",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "reviewer-direct",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "reviewer-direct",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "reviewer-direct",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "reviewer-guide",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "reviewer-guide",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "reviewer-guide",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "reviewer-guide",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "reviewer-guide",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "reviewer-guide",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "reviewer-guide",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "checker-interact",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "checker-interact",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "checker-interact",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "checker-interact",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "checker-interact",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "checker-interact",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "checker-interact",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "checker-change-1",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "checker-change-1",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "checker-change-1",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "checker-change-1",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "checker-change-1",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "checker-change-1",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "checker-change-1",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "checker-change-2",
+      "rejected": "reference.json"
+    },
+    {
+      "role": "checker-change-2",
+      "rejected": "trace.json"
+    },
+    {
+      "role": "checker-change-2",
+      "rejected": "candidates.py"
+    },
+    {
+      "role": "checker-change-2",
+      "rejected": "recorded-results.json"
+    },
+    {
+      "role": "checker-change-2",
+      "rejected": "PROJECT_STATE.md"
+    },
+    {
+      "role": "checker-change-2",
+      "rejected": "../reference.json"
+    },
+    {
+      "role": "checker-change-2",
+      "rejected": "<absolute reference path>"
+    },
+    {
+      "role": "test",
+      "rejected": "changed input hash"
+    }
+  ],
+  "control_checks": [
+    "A stopped checkpoint cannot resume.",
+    "Two corrections are permitted; a further revise stops.",
+    "Unresolved stops without consuming correction rounds.",
+    "Unknown decisions are rejected.",
+    "Known lifecycle API and finally-structure changes trigger rechecking.",
+    "Mechanical failure dominates; missing evidence cannot become a pass."
+  ],
+  "trace_replay": [
+    {
+      "checkpoint": "initial",
+      "submission": "plan-0",
+      "input": "Use client.stream, read the first chunk, invoke the consumer, and leave the borrowed client open.",
+      "scripted_decision": "proceed",
+      "expected_state": "approved",
+      "actual_state": "approved",
+      "judgement_source": "scripted"
+    },
+    {
+      "checkpoint": "changed",
+      "submission": "patch-1",
+      "input": "Switch to manual send without an updated plan or explicit cleanup; explain that C1 was followed.",
+      "scripted_decision": "revise",
+      "reason": "Submitted code changes response ownership and fails cleanup; a citation does not satisfy C1.",
+      "expected_state": "awaiting_correction",
+      "actual_state": "awaiting_correction",
+      "judgement_source": "scripted"
+    },
+    {
+      "checkpoint": "changed",
+      "submission": "patch-2",
+      "input": "Submit an updated plan and manual_finally implementation. Explicit cleanup is the supported alternative.",
+      "scripted_decision": "proceed",
+      "expected_state": "approved",
+      "actual_state": "approved",
+      "judgement_source": "scripted"
+    },
+    {
+      "checkpoint": "final",
+      "submission": "patch-2-final",
+      "input": "Submit the unchanged corrected implementation for the common final review.",
+      "scripted_decision": "proceed",
+      "expected_state": "approved",
+      "actual_state": "approved",
+      "judgement_source": "scripted"
+    }
+  ],
+  "observed": {
+    "context_managed": [
+      {
+        "scenario": "first_chunk",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": "first",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "empty",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": "",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            ""
+          ],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "http_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": null,
+          "error": "HTTPStatusError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "consumer_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": null,
+          "error": "ValueError",
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "stream_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": null,
+          "error": "ReadError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      }
+    ],
+    "manual_finally": [
+      {
+        "scenario": "first_chunk",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": "first",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "empty",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": "",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            ""
+          ],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "http_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": null,
+          "error": "HTTPStatusError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "consumer_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": null,
+          "error": "ValueError",
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "stream_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": null,
+          "error": "ReadError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      }
+    ],
+    "missing_close": [
+      {
+        "scenario": "first_chunk",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": "first",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": false,
+          "response_closed": false,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "empty",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": "",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            ""
+          ],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "http_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "HTTPStatusError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": false,
+          "response_closed": false,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "consumer_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "ValueError",
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": false,
+          "response_closed": false,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "stream_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "ReadError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": false,
+          "response_closed": false,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      }
+    ],
+    "normal_only_close": [
+      {
+        "scenario": "first_chunk",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": "first",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "empty",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "pass",
+          "client_open": "pass"
+        },
+        "verdict": "pass",
+        "observed": {
+          "return": "",
+          "error": null,
+          "original_error_preserved": true,
+          "consumed": [
+            ""
+          ],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": true,
+          "response_closed": true,
+          "stream_close_calls": 1,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "http_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "HTTPStatusError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": false,
+          "response_closed": false,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "consumer_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "ValueError",
+          "original_error_preserved": true,
+          "consumed": [
+            "first"
+          ],
+          "chunks_yielded": 1,
+          "responses_acquired": 1,
+          "stream_closed": false,
+          "response_closed": false,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "stream_error",
+        "criteria": {
+          "functional": "pass",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "ReadError",
+          "original_error_preserved": true,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 1,
+          "stream_closed": false,
+          "response_closed": false,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      }
+    ],
+    "incomplete": [
+      {
+        "scenario": "first_chunk",
+        "criteria": {
+          "functional": "fail",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "NotImplementedError",
+          "original_error_preserved": false,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 0,
+          "stream_closed": false,
+          "response_closed": null,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "empty",
+        "criteria": {
+          "functional": "fail",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "NotImplementedError",
+          "original_error_preserved": false,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 0,
+          "stream_closed": false,
+          "response_closed": null,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "http_error",
+        "criteria": {
+          "functional": "fail",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "NotImplementedError",
+          "original_error_preserved": false,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 0,
+          "stream_closed": false,
+          "response_closed": null,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "consumer_error",
+        "criteria": {
+          "functional": "fail",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "NotImplementedError",
+          "original_error_preserved": false,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 0,
+          "stream_closed": false,
+          "response_closed": null,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      },
+      {
+        "scenario": "stream_error",
+        "criteria": {
+          "functional": "fail",
+          "response_closed": "fail",
+          "client_open": "pass"
+        },
+        "verdict": "fail",
+        "observed": {
+          "return": null,
+          "error": "NotImplementedError",
+          "original_error_preserved": false,
+          "consumed": [],
+          "chunks_yielded": 0,
+          "responses_acquired": 0,
+          "stream_closed": false,
+          "response_closed": null,
+          "stream_close_calls": 0,
+          "client_open": true
+        }
+      }
+    ]
+  },
+  "reference_comparisons": [
+    {
+      "candidate": "context_managed",
+      "scenario": "first_chunk",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "context_managed",
+      "scenario": "empty",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "context_managed",
+      "scenario": "http_error",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "context_managed",
+      "scenario": "consumer_error",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "context_managed",
+      "scenario": "stream_error",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "manual_finally",
+      "scenario": "first_chunk",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "manual_finally",
+      "scenario": "empty",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "manual_finally",
+      "scenario": "http_error",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "manual_finally",
+      "scenario": "consumer_error",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "manual_finally",
+      "scenario": "stream_error",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "missing_close",
+      "scenario": "first_chunk",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "missing_close",
+      "scenario": "empty",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "missing_close",
+      "scenario": "http_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "missing_close",
+      "scenario": "consumer_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "missing_close",
+      "scenario": "stream_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "normal_only_close",
+      "scenario": "first_chunk",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "normal_only_close",
+      "scenario": "empty",
+      "expected": "pass",
+      "actual": "pass",
+      "matches": true
+    },
+    {
+      "candidate": "normal_only_close",
+      "scenario": "http_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "normal_only_close",
+      "scenario": "consumer_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "normal_only_close",
+      "scenario": "stream_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "incomplete",
+      "scenario": "first_chunk",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "incomplete",
+      "scenario": "empty",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "incomplete",
+      "scenario": "http_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "incomplete",
+      "scenario": "consumer_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    },
+    {
+      "candidate": "incomplete",
+      "scenario": "stream_error",
+      "expected": "fail",
+      "actual": "fail",
+      "matches": true
+    }
+  ],
+  "candidate_verdicts": {
+    "context_managed": "pass",
+    "manual_finally": "pass",
+    "missing_close": "fail",
+    "normal_only_close": "fail",
+    "incomplete": "fail"
+  },
+  "limitations": [
+    "Mock transport; no real socket or connection-pool measurement",
+    "No repeated cancellation or failing aclose test",
+    "No inference-quality result: the task explicitly asks for closure",
+    "Whole family is development; no held-out qualification",
+    "Pack broker is not OS isolation.",
+    "No model verifier/checker/judge was exercised.",
+    "Scripted verdict agreement is not qualification.",
+    "These packs contain documentation disclosures and are not code-inference packs."
+  ]
+}

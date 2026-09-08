@@ -1,0 +1,28 @@
+{
+  "version": "h04-reference-v0.1",
+  "status": "public development reference written before execution; no independent human review",
+  "family": "httpx/response-lifetime",
+  "source_commit": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+  "source_archive_sha256": "bc225694843cdc4eeed329446bdc52a63d713a1e1d835f269e6729456cc12906",
+  "evidence": {
+    "manual_alternative": {"path": "docs/async.md", "lines": [85, 104]},
+    "context_cleanup": {"path": "httpx/_client.py", "lines": [1542, 1592]},
+    "manual_send": {"path": "httpx/_client.py", "lines": [1594, 1643]},
+    "exhaustion_and_close": {"path": "httpx/_models.py", "lines": [1037, 1077]}
+  },
+  "criteria": {
+    "functional": "Return and consume only the first chunk or empty bytes; preserve status, stream and consumer errors.",
+    "response_closed": "After acquisition, the response and its instrumented stream are closed before the function finishes on every tested exit.",
+    "client_open": "The borrowed client is still open when the candidate returns or raises."
+  },
+  "scenarios": ["first_chunk", "empty", "http_error", "consumer_error", "stream_error"],
+  "expected": {
+    "context_managed": {"first_chunk": "pass", "empty": "pass", "http_error": "pass", "consumer_error": "pass", "stream_error": "pass"},
+    "manual_finally": {"first_chunk": "pass", "empty": "pass", "http_error": "pass", "consumer_error": "pass", "stream_error": "pass"},
+    "missing_close": {"first_chunk": "fail", "empty": "pass", "http_error": "fail", "consumer_error": "fail", "stream_error": "fail"},
+    "normal_only_close": {"first_chunk": "pass", "empty": "pass", "http_error": "fail", "consumer_error": "fail", "stream_error": "fail"},
+    "incomplete": {"first_chunk": "fail", "empty": "fail", "http_error": "fail", "consumer_error": "fail", "stream_error": "fail"}
+  },
+  "basis": "Task requirements, pinned context-manager finally clause, manual send returning without reading, and iterator cleanup after exhaustion. The test observes both response and transport stream state before harness cleanup. Verdicts are not derived from model explanations.",
+  "limits": ["Mock transport; no real socket or connection-pool measurement", "No repeated cancellation or failing aclose test", "No inference-quality result: the task explicitly asks for closure", "Whole family is development; no held-out qualification"]
+}
