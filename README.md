@@ -1,5 +1,11 @@
 # Interpretation-layer POC
 
+**[Open the current study website](https://yspbob.github.io/interpretation-layer-poc/)** · [Progress & findings](https://yspbob.github.io/interpretation-layer-poc/progress/)
+
+The website contains the current redesigned POC, its working plan and evidence downloads. The repository overview below and its earlier preregistration files describe the historical NetBox-only experiment. The previous website is preserved in [the history folder](docs/history/status-before-2026-09-08.html).
+
+## Historical repository overview
+
 > **Work in progress.** This experiment is underway and no results exist yet. Everything in this repository can still change through the plan's gated amendment process; every change is dated in the git history. Nothing here is a result.
 
 A pre-registered experiment: does serving **evidence-verified architectural knowledge** (fact graph → draft → verify → serve + enforce) to a coding agent measurably improve **architectural conformance**, and possibly outcome quality, on real historical tickets — versus the same agent, same tickets, same prompt, without it? Since plan v1.1 the design is a 2×2: with or without the knowledge base, with or without the maintainers' own hand-written agent guide (`AGENTS.md`).
