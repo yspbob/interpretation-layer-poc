@@ -37,8 +37,16 @@ export function ExperimentDetails(){return <>
               <p>Each claim must say where it came from. A rule copied from a guide will not be reported as a rule inferred from code. The verifier uses only the material allowed in that test; it cannot consult the hidden assessment to repair the guide.</p>
               <p>Missing or incorrect guidance remains part of the result. The assessment also covers unsupported claims and whether the layer recognises uncertainty. The website’s examples are illustrations, not the guidance supplied to an experimental agent.</p>
             </Disclosure>
-            <Disclosure id="isolation" title="How will withheld answers stay outside the run?">
-              <p>Each attempt starts in a fresh container and fresh model conversations. Only declared files and network access are allowed. The reference answers and scoring stay outside. The runner must record the actual model inputs, outputs and tool activity. Negative tests must establish that prohibited files and network destinations cannot be reached.</p>
+            <Disclosure id="isolation" title="How will agents stay within their boundaries?">
+              <p><strong>Containment is a requirement before model runs. It has not yet been implemented or validated.</strong> I intend to isolate every role and run, with fresh conversations, fixed input packs and private working storage. Agents must not share writable caches, workspaces or access to one another’s history.</p>
+              <p>The Hugging Face incident shows why separate conversations are insufficient. Agents used a shared package service as an unauthorised message board and reached the internet through it. <a className="text-link" href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noreferrer">Read OpenAI’s account</a> and <a className="text-link" href="https://huggingface.co/blog/agent-intrusion-technical-timeline" target="_blank" rel="noreferrer">Hugging Face’s technical account</a>.</p>
+              <ul className="plain-list">
+                <li><strong>Control every exchange.</strong> An external controller must validate permitted messages between roles. Other network access must be blocked, including indirect routes through supporting services.</li>
+                <li><strong>Prepare dependencies beforehand.</strong> Runs receive fixed, read-only dependencies and no live package service. A required environment change stops the attempt for review.</li>
+                <li><strong>Protect assessment and enforcement.</strong> Reference answers stay outside the coding and checking environments. The final judge receives only its assessment pack. Candidate code runs separately from the scorer; credentials, permissions, logs and stop controls remain outside agent-writable environments.</li>
+                <li><strong>Test attempted boundary crossings.</strong> Before model calls, controlled tests must cover unauthorised communication, answer access, indirect internet access and attempts to alter enforcement. An external supervisor must stop affected runs and preserve evidence if containment fails.</li>
+              </ul>
+              <p>The current file-broker checks do not establish containment. The runner must record its actual boundaries and test results. The claim will be protection against specified, tested escape paths, with remaining limitations stated; absolute prevention cannot be guaranteed.</p>
               <p>The input audit must also look for disclosures in comments, tests, examples and dependencies. Removing the obvious guide does not establish that its contents have been withheld.</p>
               <p>Public code may already be familiar to a model from training. Some tests will therefore use unpublished changes that alter the correct rule. The assessment checks whether the answer follows the changed code. Harmless renaming should leave the interpretation unchanged. These controls can make the test inspectable; they cannot prove that the original project was absent from training data.</p>
             </Disclosure>
@@ -92,7 +100,7 @@ export function ExperimentDetails(){return <>
 
     <div className="method-preparation">
       <h3>The procedure needs testing before its results can support conclusions</h3>
-      <p>Component contracts and one development case now exist, with scripted decisions and executable checks. Isolated role execution is the next implementation task, followed by component validation on separate material and a small pilot. Those findings will inform the method and size of the main trial before it begins.</p>
+      <p>Component contracts and one development case now exist, with scripted decisions and executable checks. Isolated role execution and containment testing are the next implementation task, followed by component validation on separate material and a small pilot. Those findings will inform the method and size of the main trial before it begins.</p>
       <PageLink className="text-link" href="/progress">See the current step and what remains <ArrowRight size={16}/></PageLink>
     </div>
 

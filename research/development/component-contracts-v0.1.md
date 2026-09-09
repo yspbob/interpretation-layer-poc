@@ -50,6 +50,16 @@ For H04, the required criteria are functional behaviour, closing the acquired re
 
 A model judgement cannot override a reproducible failure. Disagreement requires investigation of fixture correctness and evidence; retain the original outputs and versions. Unsupported authority assertions in a guide are scored by the verifier, not converted into unrelated final-code failures. Repeated cancellation, real socket/pool behaviour and ambiguous organisational commitments are outside this case's validated mechanical scope.
 
+## Containment addendum — 9 September 2026
+
+**Required for the isolated runner; not implemented by this v0.1 rehearsal.** Apply the containment requirements in [section 8 of the working plan](../../preregistration/plan/working_plan_2026-09-05.md#8-isolation-and-credibility-requirements) before any model invocation. The H04 recorded results remain evidence of the original scripted checks only.
+
+Each role and run needs a separate execution boundary, immutable inputs and private temporary storage. No shared writable cache, workspace, agent history, host mount or administrative socket may connect those boundaries. Provision pinned dependencies before execution; experimental agents receive no live package service. Model credentials remain outside their environments.
+
+An external controller validates every permitted exchange against its schema, run, role and checkpoint. All other direct and indirect network paths must be denied, including routes through supporting services. Protect the controller, logs, stop mechanism and scoring authority from agent writes. The final judge receives only its declared assessment pack; candidate code executes separately from the answer store and scorer. A compromised workload or supporting service must not alone expose other roles or wider networks.
+
+Before model calls, controlled model-free probes must cover unauthorised file and answer access, cross-role and cross-run communication, shared-cache writes, indirect internet access, credential exposure, controller tampering and stop enforcement. Retain configuration and observed denials; recheck after relevant changes. On detected boundary crossing or failed enforcement, the external supervisor stops affected runs, preserves evidence and invalidates affected matched comparisons. Investigate before any recorded restart in clean environments. Passing specified probes does not establish guaranteed containment.
+
 ## What must precede real qualification
 
-Implement schema validation, immutable dispatch, OS/container isolation, negative filesystem/network tests, gateway usage accounting, all checkpoint enforcement and anonymised scorer input construction. Fix models, prompts, budgets, retry policy, family split, qualification sample and error/precision limits before validation outcomes. Use fresh families for independent validation after tuning. H04's scripted verdicts exercise record design and control logic; they do not measure a verifier, checker or model judge's judgement.
+Implement schema validation, immutable dispatch, OS/container isolation, the containment addendum and its adversarial tests, gateway usage accounting, all checkpoint enforcement and anonymised scorer input construction. Fix models, prompts, budgets, retry policy, family split, qualification sample and error/precision limits before validation outcomes. Use fresh families for independent validation after tuning. H04's scripted verdicts exercise record design and control logic; they do not measure a verifier, checker or model judge's judgement.

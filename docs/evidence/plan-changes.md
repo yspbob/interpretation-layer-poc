@@ -1,6 +1,12 @@
 # Plan changes reconciled on 5 September 2026
 
-Current plan: **pilot-draft-2026-09-09.2**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.3**. Status: working redesign, not a new ratified preregistration.
+
+## Agent containment requirement — 9 September 2026
+
+The user raised the Hugging Face incident as a design concern, banked the proposed requirements, and then authorised this release. Section 8 now requires isolation for each role and run, communication through an external controller, preinstalled read-only dependencies, protection of evaluation and enforcement, adversarial boundary tests and externally enforced stops. It explicitly covers indirect internet access and unauthorised messages through supporting services, drawing on the linked primary incident accounts.
+
+This is an agreed requirement for the runner before model calls, not implemented or validated containment. The existing H04 file broker does not meet it. Component contracts and both website views reflect that status. No model run, new containment test or effectiveness result is claimed. Tested escape paths and residual limitations must be reported; absolute prevention is not promised. The next substantive step remains the model-free isolated runner, now subject to these requirements.
 
 ## Narrative voice and scope rationale — 9 September 2026
 
