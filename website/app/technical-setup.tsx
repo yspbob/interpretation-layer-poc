@@ -19,6 +19,23 @@ export function TechnicalSetup(){return <section className="section-block" id="t
     <figcaption id="technical-diagram-caption">Planned data flow. Arrows represent permitted transfers through the runner; they do not imply shared agent storage or unrestricted connections.</figcaption>
   </figure>
 
+  <section className="technology-section" id="tools-technologies" aria-labelledby="tools-technologies-title">
+    <h3 id="tools-technologies-title">Tools and technologies</h3>
+    <p>The experiment needs tools for coordination, model access, isolation, assessment and record keeping. The table records the proposed choices and the decisions still to make. The <PageLink className="text-link" href="/progress#prototype-tools">H04 prototype’s implemented tools</PageLink> are documented on Progress &amp; findings.</p>
+    <table className="technology-table">
+      <caption className="sr-only">Proposed technologies, their purpose and selection status</caption>
+      <thead><tr><th scope="col">Component</th><th scope="col">Technology and reason</th><th scope="col">Choice</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Runner</th><td><strong>Python with a project-specific controller.</strong> This would build on the H04 code for preparing inputs, tracking review states and collecting results. An orchestration framework would need a demonstrated benefit before being added.</td><td>Proposed</td></tr>
+        <tr><th scope="row">Agent access</th><td><strong>A model API or SDK behind the bounded gateway.</strong> The runner needs control of inputs, tool dispatch, usage records and stops. Provider, models, SDK and any agent framework must be selected against those requirements.</td><td>To select</td></tr>
+        <tr><th scope="row">Isolation</th><td><strong>A disposable virtual machine with restricted execution inside it is a candidate.</strong> The hypervisor, guest system, any container runtime and network controls need selection and boundary testing. The technology’s name alone cannot establish containment.</td><td>To select</td></tr>
+        <tr><th scope="row">Assessment</th><td><strong>Python checks, the project’s relevant tests and case-specific probes.</strong> These measure observable behaviour. Separately qualified model assessments cover decisions that need interpretation. Each historical case supplies its own pinned test environment.</td><td>Proposed</td></tr>
+        <tr><th scope="row">Records</th><td><strong>JSON records, SHA-256 hashes and Git version history.</strong> These identify inputs, configurations and results. GitHub holds reviewed public material; sealed evaluation data and credentials require storage outside the public repository and agent workspaces.</td><td>Formats proposed; protected store to select</td></tr>
+      </tbody>
+    </table>
+    <p className="caption">The runtime and interfaces are selected before implementation. Model settings are fixed before qualification. The working plan and each run’s manifest record exact versions, dependency pins, configuration and reproduction commands.</p>
+  </section>
+
   <DetailGroup>
     <Disclosure id="technical-inputs" title="What does each role receive?">
       <p>Each input pack has a manifest: a list of permitted files with hashes that identify their exact contents. The runner checks the manifest before dispatch and starts a fresh context for each role and run.</p>

@@ -54,6 +54,15 @@ export function ProgressView(){return <>
     <div><h3>Isolation and model gateway</h3><p>Filesystem and network containment are unvalidated. The execution technology, permitted controller interfaces and model gateway remain to be selected or implemented. No model has been called in the redesigned experiment.</p></div>
     <div><h3>Independent evaluation</h3><p>The 25 H04 comparisons reproduce authored expectations. The four calibration records are starting material. Separate guidance and intervention assessments, model-judge qualification and historical scoring remain to be built and tested.</p></div>
   </div>
+  <div className="prototype-tools" id="prototype-tools">
+    <h3>Tools implemented in the H04 prototype</h3>
+    <ul className="plain-list">
+      <li><strong>Python 3.12 and asyncio</strong> run the scripted case and asynchronous response checks. The recorded execution used Python 3.12.14 on Windows.</li>
+      <li><strong>HTTPX MockTransport</strong> supplies controlled responses without outbound requests. The custom Python checks inspect cleanup behaviour; a narrow syntax-tree comparison detects known changes in the authored examples.</li>
+      <li><strong>JSON and SHA-256</strong> record results and identify exact input files. Git and GitHub preserve the reviewed public source and evidence.</li>
+    </ul>
+    <p>The prototype has no model API integration, selected isolation product or protected audit-store implementation. Its tools demonstrate the scripted case only. The <a className="text-link" href="https://github.com/yspbob/interpretation-layer-poc/tree/main/research/development/h04-response-lifetime" target="_blank" rel="noreferrer">H04 record</a> includes dependency pins, observed versions and reproduction commands; <PageLink className="text-link" href="/#tools-technologies">The Experiment lists the proposed full-run technology choices.</PageLink></p>
+  </div>
   <p className="caption">Next: select the execution boundary and controller interfaces, build and test the model-free runner, then qualify components on different case families before authorised model comparisons.</p>
 </section>
 <section className="section-block" id="process">

@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-09.6**
+Plan ID: **pilot-draft-2026-09-09.7**
 Updated: **9 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -151,6 +151,22 @@ The required architecture separates the controller, role invocations, candidate-
 During execution, agents must have no general access to the host, other runs or external services. Narrowly defined routes for task input, review exchange and result collection are necessary and belong in the tested boundary. Literal zero interaction with the underlying host is not a defensible guarantee. A disposable virtual machine around restricted execution is a candidate design, not a selected platform. Any chosen runtime must pass the section 8 probes and record residual limitations before model calls; no technology label substitutes for that evidence.
 
 The controller, gateway, isolation runtime and evaluator form the trusted computing base and must be versioned and tested. The gateway accepts only bounded model requests with fixed provider destinations; it must not act as a generic URL fetcher or command proxy. Validate collected paths, symlinks, archives, output size and message sequencing outside the workload. Final code runs without the full reference store or candidate-writable grading logic; use external observations where feasible and probe forged success reports, test tampering and instructions embedded in outputs. These are required tests of the chosen implementation, not a claim that arbitrary hostile code can never defeat it.
+
+### 8B. Tools, technologies and selection record
+
+The following choices describe a working implementation direction, not a deployed or qualified stack. Preserve the distinction between the H04 rehearsal and the full experiment.
+
+| Component | Working technology choice and rationale | Selection status |
+|---|---|---|
+| Runner | Python with a project-specific controller, extending the existing pack, checkpoint and result-recording code. Add an orchestration framework only if its benefits justify the additional dependencies and it preserves explicit dispatch and stop control. | Proposed; full runner not implemented. |
+| Agent access | A provider API or SDK behind the external bounded gateway. It must expose the inputs, outputs, tool requests and usage needed for the audit and permit controller-enforced limits. | Provider, models, SDK and any agent framework remain to be selected. No model integration exists in H04. |
+| Isolation | A disposable VM containing restricted execution is a candidate. Choose the hypervisor, guest operating system, any inner container runtime, filesystem interfaces and network controls together against section 8. | Concrete products and configuration unselected; no containment claim. |
+| Assessment | Python-based behaviour probes and each project's relevant tests, plus separately qualified model assessments for interpretation. Use pinned dependencies and the appropriate test environment for each historical case. | Proposed architecture; H04 supplies narrow scripted checks only. |
+| Records | JSON for structured run records, SHA-256 to identify exact artifacts, and Git/GitHub for reviewed public versions. Place credentials, sealed fixtures and protected audit records outside public Git and agent-writable storage. | Formats proposed for the runner; JSON/hash records and public Git already support H04. Protected storage technology remains unselected. |
+
+**Implemented development tools.** The H04 record reports Python 3.12.14 on Windows. Its custom runner uses `asyncio`, HTTPX `MockTransport`, Python assertions and a narrow `ast` comparison of known lifecycle calls and `finally` blocks. It writes JSON observations and hashed role packs. These tools do not implement model invocation, OS isolation or general semantic change detection. Exact dependency pins are in [requirements.txt](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/h04-response-lifetime/requirements.txt), observed versions in [recorded-results.json](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/h04-response-lifetime/recorded-results.json), and reproduction commands in the [H04 README](https://github.com/yspbob/interpretation-layer-poc/tree/main/research/development/h04-response-lifetime).
+
+**Selection and reproduction.** Before building the isolated runner, record the chosen runtime, controller interfaces, permitted tools and reasons for their selection. Before qualification, fix model/provider identifiers, SDK/framework versions, prompts and settings. Each run manifest records the runner commit, OS/runtime/image identifiers or digests, source and dependency pins, test commands, network/filesystem policy, configuration hashes, record locations and reproduction command. Provider versions that cannot be fixed must be disclosed under section 6. Keep secrets out of manifests and public reports. A software upgrade affecting behaviour or boundaries requires the relevant checks again.
 
 ## 9. Outcomes, analysis and stopping
 

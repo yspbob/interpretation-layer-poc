@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-09.6**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.7**. Status: working redesign, not a new ratified preregistration.
+
+## Tools and technologies — 9 September 2026
+
+The user authorised adding and releasing the banked technology explanation. The Experiment now lists the runner, agent access, isolation, assessment and record-keeping choices, with rationale and explicit proposed or unselected status. Progress identifies the tools actually exercised by H04: Python 3.12, asyncio, HTTPX MockTransport, custom behaviour and narrow syntax checks, JSON and SHA-256. The plan's section 8B records the same distinction and the required version/configuration manifest.
+
+Python is a proposed continuation of the development runner, not a frozen platform choice. Model/provider/SDK selection, the concrete isolation stack and protected storage remain open. No new dependency, framework, model integration, isolation control or experiment is implemented by this documentation release. Exact versions and reproduction commands remain in the executable case records and will be required for the full runner.
 
 ## Whole-site and plan review — 9 September 2026
 
