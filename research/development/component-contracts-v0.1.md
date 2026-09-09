@@ -50,6 +50,14 @@ For H04, the required criteria are functional behaviour, closing the acquired re
 
 A model judgement cannot override a reproducible failure. Disagreement requires investigation of fixture correctness and evidence; retain the original outputs and versions. Unsupported authority assertions in a guide are scored by the verifier, not converted into unrelated final-code failures. Repeated cancellation, real socket/pool behaviour and ambiguous organisational commitments are outside this case's validated mechanical scope.
 
+## Historical comparison addendum — 9 September 2026
+
+**Agreed assessment requirement; not implemented or validated by the H04 rehearsal.** For each historical backtest, prepare a pinned task and historical implementation, plus independently established task requirements, guardrail criteria, applicable exceptions and checks. Audit packs so the original solution and final assessment do not leak to experimental roles. Do not derive scoring rules from the generated guide or assume the historical code complies with them.
+
+Assess historical and agent code individually under the same rubric with origin/treatment labels withheld from the judge. An external comparison step joins results using investigator-held implementation IDs; it must not change criterion verdicts to favour either origin. Record task correctness and guardrail compliance separately, with per-criterion evidence, unresolved issues, avoided historical violations and new agent violations. Credit an avoided historical violation only when the agent delivers the required behaviour. Different valid code is not a failure; a behavioural regression remains adverse even if compliance improves.
+
+Exact points, weights and aggregation remain to be specified before scored runs. Qualification must include genuine improvements over flawed historical code, legitimate historical exceptions and apparent compliance improvements that break the task. Existing H04 verdicts and hashes remain unchanged; they do not establish this comparison or its scoring reliability.
+
 ## Containment addendum — 9 September 2026
 
 **Required for the isolated runner; not implemented by this v0.1 rehearsal.** Apply the containment requirements in [section 8 of the working plan](../../preregistration/plan/working_plan_2026-09-05.md#8-isolation-and-credibility-requirements) before any model invocation. The H04 recorded results remain evidence of the original scripted checks only.

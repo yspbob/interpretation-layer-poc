@@ -1,6 +1,14 @@
 # Plan changes reconciled on 5 September 2026
 
-Current plan: **pilot-draft-2026-09-09.3**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.4**. Status: working redesign, not a new ratified preregistration.
+
+## Historical comparison and clearer review explanation — 9 September 2026
+
+The user clarified that these are backtests and that the actual implementation can itself violate the guidelines. The agreed assessment must score both historical and agent implementations for task correctness and compliance with independently established, applicable guardrails. Avoiding a historical violation while completing the task correctly counts in the agent's favour; matching the original code is not the objective. The historical implementation remains a comparator, not a fourth treatment. Exact points, weights and aggregation remain open and must be set before scored runs.
+
+Sections 3, 7, 9 and 9A and the judging-contract addendum record case preparation, information boundaries, paired criterion reporting and required qualification examples. Historical exceptions and unresolved evidence remain explicit. H04 is still authored development material; no historical comparison, model score or new validation has been produced by this release.
+
+The website replaces the ambiguous reference-answer wording and explains the two assessment dimensions. The dense review explanation is now a three-row table in the proposed comparison section: every group gets review at matched checkpoints and correction limits; INTERACT adds structured questioning to the guidance available in GUIDE. This presentation change preserves the existing matched resource limits and ordinary-review controls. Both pages and the plan downloads are aligned in this authorised release. During review, the user corrected the earlier voice preference: the POC informs readers about its process and the decisions behind it, while the playbook makes proposals and conclusions. Both pages now use factual process language, with named actors and explicit status, rather than copying the playbook’s first-person voice. This supersedes the earlier narrative-voice preference; the playbook itself is unchanged.
 
 ## Agent containment requirement — 9 September 2026
 
