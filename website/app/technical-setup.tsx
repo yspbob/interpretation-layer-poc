@@ -1,10 +1,13 @@
 import { RuntimeDiagram } from './runtime-diagram';
+import { RuntimeOverview } from './runtime-overview';
 import { DetailGroup, Disclosure } from './details';
 import { PageLink } from './page-link';
 
 export function TechnicalSetup(){return <section className="section-block" id="technical-setup">
   <div className="section-heading"><span className="section-no">05</span><div><span className="eyebrow">TECHNICAL SETUP</span><h2>How the components work together</h2></div></div>
-  <p className="section-intro">A runner coordinates the experiment. It supplies each agent with its permitted inputs, passes review messages between roles, controls code execution and records the results. Agents receive separate working environments; the runner controls the connections between them.</p>
+  <p className="section-intro">The experiment runner is the Python controller that coordinates the experiment. It supplies each agent with its permitted inputs, passes review messages between roles, controls code execution and records the results. Agents receive separate working environments; the runner controls the connections between them.</p>
+
+  <RuntimeOverview/>
 
   <RuntimeDiagram/>
 
@@ -15,18 +18,19 @@ export function TechnicalSetup(){return <section className="section-block" id="t
       <caption className="sr-only">Proposed technologies, their purpose and selection status</caption>
       <thead><tr><th scope="col">Component</th><th scope="col">Technology and reason</th><th scope="col">Choice</th></tr></thead>
       <tbody>
-        <tr><th scope="row">Controller</th><td><strong>CPython 3.12: asyncio and subprocess.</strong> Project code dispatches roles, enforces checkpoints and calls VBoxManage with fixed argument lists. No agent orchestration framework is included.</td><td>Chosen for implementation</td></tr>
+        <tr><th scope="row">Experiment runner</th><td><strong>CPython 3.12: asyncio and subprocess.</strong> These low-level utilities can dispatch work and call VBoxManage. The extent of custom coordination code remains subject to the playbook tooling review.</td><td>Proposed; scope under review</td></tr>
         <tr><th scope="row">Record validation</th><td><strong>Pydantic 2.</strong> Strict schemas reject unknown fields and wrong types. Separate controller checks enforce byte limits, path permissions, role identity and state transitions.</td><td>Chosen for implementation</td></tr>
         <tr><th scope="row">Virtual machine</th><td><strong>Oracle VirtualBox 7.2 with VBoxManage.</strong> The controller creates a disposable clone, starts it and forcibly stops it when required. Host compatibility must be tested.</td><td>Chosen; compatibility gate</td></tr>
         <tr><th scope="row">Guest system</th><td><strong>Ubuntu Server 24.04 LTS, amd64.</strong> A minimal Linux guest holds the launcher and preinstalled dependencies. All VM network adapters are disabled during execution.</td><td>Chosen for implementation</td></tr>
         <tr><th scope="row">Containers</th><td><strong>Rootless Podman with crun.</strong> Linux cgroup v2 enforces resource limits; seccomp restricts system calls. Each tool batch has a private workspace, no network and no exposed runtime socket.</td><td>Chosen; enforcement to test</td></tr>
         <tr><th scope="row">Input transfer</th><td><strong>pycdlib.</strong> Python builds an ISO containing only the permitted job pack. VirtualBox attaches it as a read-only optical disk; no host folder is shared.</td><td>Chosen for implementation</td></tr>
         <tr><th scope="row">Output transfer</th><td><strong>VirtualBox virtual serial port + pywin32.</strong> A Windows named pipe carries bounded JSON results. pywin32 supplies Windows pipe and access-control APIs; the controller treats every result as untrusted.</td><td>Chosen; transport to test</td></tr>
-        <tr><th scope="row">Agent access</th><td><strong>Separate role contexts through a project-specific model gateway.</strong> Provider, model IDs and provider adapter remain open pending access, data-handling and budget decisions. Built-in browsing, execution and shared memory are excluded.</td><td>Provider and models to select</td></tr>
-        <tr><th scope="row">Assessment</th><td><strong>Python behaviour checks and pinned project tests.</strong> H04 uses HTTPX MockTransport and custom assertions. Runtime and controller regression tests will use Python unittest; model assessors require separate qualification.</td><td>H04 checks exist; full suite to build</td></tr>
+        <tr><th scope="row">Agent access</th><td><strong>Separate role contexts through a controlled model gateway.</strong> Assess LiteLLM / Portkey before deciding what custom gateway code is needed. Provider, model IDs and adapter remain open. Built-in browsing, execution and shared memory are excluded.</td><td>Provider and models to select</td></tr>
+        <tr><th scope="row">Assessment</th><td><strong>Python behaviour checks and pinned project tests.</strong> H04 uses HTTPX MockTransport and custom assertions. Python unittest is proposed for controller checks. Assess Promptfoo for evaluation execution and Langfuse for traces and cost records; model assessors still require separate qualification.</td><td>H04 checks exist; full suite to build</td></tr>
         <tr><th scope="row">Records and sign-in</th><td><strong>JSON, SHA-256, Git for Windows and Git Credential Manager.</strong> GitHub holds separate public and private repositories. Windows Credential Manager keeps Git credentials local; pywin32’s win32cred API will read separately stored model credentials.</td><td>Private repository and runner storage setup pending</td></tr>
       </tbody>
     </table>
+    <p><strong>Tooling review:</strong> the <a className="text-link" href="https://yspbob.github.io/AI-Playbook/AI_Engineering_Playbook.html#2-infrastructure-platform" target="_blank" rel="noreferrer">playbook recommends existing products for common platform capabilities</a>. The design must compare its gateway, evaluation and tracing needs with those products and explain each adoption or departure. The candidates above are not selected or installed. Python utilities may still provide the experiment-specific coordination.</p>
     <p className="caption">The proposed stack and interfaces must pass compatibility and boundary tests. The listed product names and major versions are design selections, not claims of installed software. Exact patch versions and image digests are locked after compatibility checks and before execution; model settings are fixed before qualification. The working plan and each run’s manifest record exact versions, dependency pins, configuration and reproduction commands.</p>
   </section>
 

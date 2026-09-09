@@ -10,6 +10,36 @@ Use **VirtualBox, Ubuntu Server 24.04 LTS amd64 and rootless Podman** as the wor
 
 The laptop runs Windows 11 Home, so the design cannot assume the Windows Hyper-V role, which [Microsoft does not provide on Home](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-hyper-v). [VirtualBox supports Windows 11 x86-64 hosts](https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/installation.html). Its compatibility and performance with this laptop's active Windows hypervisor and Insider build must still be demonstrated. Do not disable Windows security features to make it work. Check the home PC's edition, architecture and virtualisation support separately. If either host cannot support the proposed boundary, revisit the design before running experiments there.
 
+## Process overview
+
+The **experiment runner** is the Python controller on the active Windows machine. It supplies permitted inputs, dispatches tools, enforces reviews and stops, and retains the record. The process has two connected activities, followed by independent assessment; preparing guidance is not repeated inside every coding step.
+
+### Preparation: establish the guide before task work
+
+The runner gives the drafter its permitted project evidence. A separate verifier checks the proposed claims. Admitted claims form a versioned, frozen guide; this is evidence-based verification without project-owner certification. GUIDE and INTERACT receive the same guide for the declared reuse set. DIRECT receives the permitted sources and applicable project instructions. The drafter and verifier do not receive the later task or historical target solution.
+
+### Task use: repeat for each task and comparison group
+
+Start a fresh coder context and submit a plan for review. Once permitted, execute a bounded tool/code batch in a fresh restricted environment, collect its results and close that environment. Required checkpoints and material plan changes return the attempt to review. INTERACT adds targeted questions about the guidance; every group follows the matched review policy and resource limits. Continue until completion or a terminal stop, carrying forward only each role's permitted history and validated files. The guide remains frozen throughout task use.
+
+### Independent assessment and saving
+
+After an attempt stops, separate assessment roles examine code and review decisions. The frozen guide is assessed independently of its verifier. Assess task correctness and guardrail compliance using the same criteria for historical and agent implementations. Hidden assessment feedback stays outside working-agent contexts. Retain failed and unfinished attempts and their costs. Complete a matched DIRECT/GUIDE/INTERACT block on one host and verify its private save before switching machines.
+
+## Where the containers run
+
+```text
+Windows laptop or home PC
+├─ Experiment runner
+│  └─ Python controller
+└─ VirtualBox
+   └─ Ubuntu VM (offline)
+      └─ Podman container
+         └─ Tools or code
+```
+
+One worker container runs inside one VM at a time. Every tool batch gets a fresh VM and container. Assessment code uses a separate fresh environment. Models run at the provider; the runner on Windows manages their separate role contexts. The following diagrams add the permitted input/output and machine-switching connections to this tree.
+
 ## Deployment diagram
 
 The same layout is installed independently on each machine. Only one machine executes a complete comparison block at a time. The diagram shows access boundaries and interfaces; it is not a single drafting, usage and approval workflow.
@@ -18,7 +48,7 @@ The same layout is installed independently on each machine. Only one machine exe
 flowchart TB
   MODELS["Model provider<br/>Separate context and history per role<br/>Provider and model IDs to select"]
   subgraph HOST["Active Windows machine: laptop or home PC"]
-    CTRL["CPython 3.12 controller and gateway<br/>asyncio + subprocess + Pydantic 2<br/>Credentials stay in Windows Credential Manager"]
+    CTRL["Experiment runner: Python controller<br/>Gateway implementation under review<br/>asyncio + subprocess + Pydantic 2<br/>Credentials stay in Windows Credential Manager"]
     RECORDS["Separate controller-owned stores<br/>Role packs, results and sealed assessment<br/>Git for Windows + GCM for verified saves"]
     subgraph VM["Oracle VirtualBox 7.2: disposable VM"]
       LAUNCH["Ubuntu Server 24.04 LTS amd64<br/>Python guest launcher<br/>No network adapters or host sharing"]
@@ -55,11 +85,13 @@ After an attempt ends, the controller constructs separate anonymised assessment 
 
 ## Product and tool selections
 
+The [playbook's platform guidance](https://yspbob.github.io/AI-Playbook/AI_Engineering_Playbook.html#2-infrastructure-platform) recommends existing products for common capabilities. Before building custom gateway, evaluation or tracing infrastructure, compare LiteLLM / Portkey, Promptfoo and Langfuse with the POC's requirements. Record each adoption or departure against role isolation, sealed-data handling, enforced stops, matched budgets, audit export, resource footprint and two-machine continuity. This review is pending; no candidate is adopted here. `asyncio` and `subprocess` are low-level utilities for coordination and VM invocation, not substitutes for these platform products.
+
 These are the named tools for the proposed implementation. The selection does not mean the software is installed or the control has passed testing. Exact patch versions, package hashes and image digests must be locked during provisioning; do not substitute a floating `latest` image for that record.
 
 | Location / job | Product, library or command to use | Concrete responsibility |
 |---|---|---|
-| Windows controller | **CPython 3.12**, standard-library **asyncio**, **subprocess**, **json**, **hashlib** and **unittest** | Explicit state machine, fixed-argument process invocation, bounded record collection, SHA-256 manifests and controller regression tests. Do not add an agent orchestration framework for the initial runner. |
+| Windows controller | **CPython 3.12**, standard-library **asyncio**, **subprocess**, **json**, **hashlib** and **unittest** | Explicit state machine, fixed-argument process invocation, bounded record collection, SHA-256 manifests and controller regression tests. Limit custom code to justified experiment-specific coordination after the playbook tooling review. |
 | Record schemas | **Pydantic 2** | Use strict field types and `extra="forbid"`. Reject duplicate JSON keys and enforce raw frame size before schema validation; enforce role/state/path rules separately. No schema library establishes containment or semantic correctness. |
 | Outer boundary | **Oracle VirtualBox 7.2** and **VBoxManage** | Prepare the golden guest; clone, configure, start, inspect and stop disposable VMs. Explicitly disable guest network adapters and host integration. |
 | Guest | **Ubuntu Server 24.04 LTS amd64** with its pinned kernel and package set | Minimal offline Linux base. A project-specific Python launcher receives the job and owns the serial endpoint; workload containers cannot access that device. |
@@ -67,7 +99,7 @@ These are the named tools for the proposed implementation. The selection does no
 | Linux enforcement | **cgroup v2**, **seccomp**, user namespaces and a delegated **systemd** user scope | Enforce CPU/memory/process caps and restricted system calls. Verify actual delegation and denials on the guest; fail if rootless resource enforcement is unavailable. |
 | Input images | **pycdlib**; VirtualBox read-only optical media | Build ISO9660 job images from permitted regular files and attach them before guest startup. No shared host folder is needed. |
 | Output transport | VirtualBox **virtual serial Host Pipe**, Windows **named pipes**, **pywin32** (`win32pipe`, `win32file`, `win32security`) | Create an account-restricted endpoint, receive bounded JSON frames and validate results before storing them. Test access controls, cancellation, malformed frames and floods. |
-| Model access | Project-specific Python gateway; **provider, model IDs and provider adapter still to select** | Send only role-specific histories and permitted inputs; record usage and reject unapproved tools/destinations. Select the external service after checking access, retention, model suitability and the authorised budget. This choice is not needed for the first model-free runner. |
+| Model access | Controlled gateway; **LiteLLM / Portkey to assess; provider, model IDs and adapter still to select** | Send only role-specific histories and permitted inputs; record usage and reject unapproved tools/destinations. Select the external service after checking access, retention, model suitability and the authorised budget. This choice is not needed for the first model-free runner. |
 | Code assessment | Pinned project tests plus **Python** case probes; H04 uses **HTTPX MockTransport** and custom assertions | Run deterministic behavioural observations in the isolated guest. Use separately qualified model contexts for judgements requiring interpretation. These are different from controller regression tests. |
 | Git and records | **Git for Windows**, **GitHub**, **Git Credential Manager (GCM)**; JSON and SHA-256 | Public project history and separate private confidential records. The controller invokes Git; the guest does not. The private repository name and access have not yet been configured. |
 | Local credentials | **Windows Credential Manager**; GCM for Git and **pywin32 `win32cred`** for model secrets | Retrieve credentials only in trusted host code. Do not put secrets in job ISOs, Git, command arguments, logs or guest environment variables. |

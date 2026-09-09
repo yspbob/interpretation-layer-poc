@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-09.9**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.10**. Status: working redesign, not a new ratified preregistration.
+
+## Process overview, execution tree and runner terminology — 9 September 2026
+
+The user requested the container nesting tree and a structured process explanation before the deployment diagram. The Experiment and detailed design now lead with guidance preparation, repeated task use and independent assessment, followed by the Windows/VirtualBox/Ubuntu/Podman tree. They explicitly locate the runner on Windows, models at the provider and one worker container in one VM at a time. The frozen guide is reused according to the declared policy and is not regenerated at each tool batch.
+
+The banked label correction names the diagram’s control component “Experiment runner — Python controller”. The custom-tooling concern is recorded as a pending comparison with the playbook’s gateway, evaluation and tracing products, with reasons required for adoption or departure. No product from that review has been adopted and no runtime installed or model called. Existing evidence and experimental scope are unchanged.
 
 ## Concrete deployment diagram and product selections — 9 September 2026
 
