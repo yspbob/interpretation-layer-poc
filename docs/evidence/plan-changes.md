@@ -1,6 +1,12 @@
 # Plan changes reconciled on 5 September 2026
 
-Current plan: **pilot-draft-2026-09-09.1**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.2**. Status: working redesign, not a new ratified preregistration.
+
+## Narrative voice and scope rationale — 9 September 2026
+
+The user asked to bank comments and apply them only on an explicit instruction, then requested a review and release of both pages using the playbook's language. The live playbook uses first-person singular for the author's own recommendations and judgement, declarative or named-actor prose for mechanisms, and plural narration where an actual team is involved. The Experiment and Progress & findings pages, including shared examples and detail panels, now follow that distinction without attributing automated preparation checks to personal human review.
+
+This release also applies the banked scope-note revision: the first POC minimises dependence on maintainers, organisational approvals and ongoing operational involvement. Later iterations could involve owners or test maintenance if needed to answer remaining questions. Evidence verification still does not establish owner approval, guidance stays frozen within a matched comparison, and maintenance is outside the current pilot. This is editorial and scope-rationale clarification; no experimental condition, outcome or qualification status changed. Future comments remain banked until an explicit request to apply them.
 
 ## Two connected cycles — 9 September 2026
 

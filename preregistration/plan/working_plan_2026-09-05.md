@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-09.1**
+Plan ID: **pilot-draft-2026-09-09.2**
 Updated: **9 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -21,6 +21,8 @@ The pilot has three questions:
 3. Does structured consultation and checking add value beyond supplying the guidance and providing ordinary review?
 
 Keep inference quality, handling of documentation, downstream code quality and interaction effects separate. A correct explanation alone does not establish that the layer helps with engineering work. A benefit must also be considered against preparation, verification, consultation and review costs.
+
+This first POC is designed to be as self-contained as possible, minimising external dependencies on project maintainers, organisational approvals and ongoing operational involvement. Public code and recorded decisions allow the technical mechanism to be tested without requiring that participation. Later iterations could involve owners and examine ongoing maintenance if the remaining research questions require them; neither is added to this pilot by this scope clarification.
 
 There is no maintainer-recruitment dependency. Published project decisions and documented behaviour provide reference evidence, not owner approval of newly generated rules. Unrecorded organisational intent, owner certification, adoption, ongoing renewal and production economics remain outside the technical claim. A positive result would support the layer in the situations tested, not prove its universal necessity or the full playbook loop.
 
