@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-09.7**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.8**. Status: working redesign, not a new ratified preregistration.
+
+## Isolated runner and alternating machines — 9 September 2026
+
+The user requested the concrete container design and confirmed a 32 GB laptop, a 64 GB home PC that is not permanently on, and a separate private GitHub repository for future confidential material. Section 8C and the [runner design](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/isolated-runner-design-v0.1.md) propose local execution on either host using VirtualBox, Ubuntu Server 24.04 LTS and rootless Podman. They specify offline guest execution, read-only ISO input, bounded serial output, fresh tool-batch environments, external stop enforcement and whole matched blocks on one host.
+
+Following the user’s reminder, the design explicitly isolates provider contexts, histories, input packs and tool workspaces for each agent role, excludes shared memory/retrieval sessions and requires controller routing and leakage probes.
+
+The design adds host-specific compatibility/containment gates, exact environment manifests and a private-record reservation/save sequence before cross-machine continuation. A read-only prerequisite script records local capabilities without installing software. The laptop's Home edition and active Windows hypervisor require a compatibility check; the second machine remains uninspected. Private storage is selected as a design only; no repository is created. The proposed stack and protocol are unimplemented and unqualified, and resource caps are model-free test defaults. H04 results and zero-model status are unchanged. Both website views and the component contracts distinguish these choices from readiness.
 
 ## Tools and technologies — 9 September 2026
 

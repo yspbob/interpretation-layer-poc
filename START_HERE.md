@@ -24,3 +24,11 @@ Use one machine for editing at a time. Let the current task finish before contin
 This is an agent work routine, not continuous filesystem synchronization or a background service. A completed save is reported with a Git commit; merely closing Codex does not trigger a save.
 
 Local projects provide folder access, and repository instructions provide durable context for later conversations. See the [official OpenAI documentation on projects](https://learn.chatgpt.com/docs/projects). This setup does not assume that creating a local project synchronizes its chat history.
+
+## Future experiment execution
+
+The [runner design](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/isolated-runner-design-v0.1.md) proposes local VirtualBox/Ubuntu/Podman execution on either machine, using the 32 GB laptop as the common baseline. The home PC does not need to remain on. Runtime installation and containment qualification are separate from this repository setup and have not been completed.
+
+Codex can inventory each machine with `powershell -NoProfile -File scripts/runner-preflight.ps1 -MachineAlias laptop` (use `home` on the home PC). On machines that block local scripts, a reviewed invocation may add `-ExecutionPolicy Bypass` for that process only; do not change the persistent execution policy. This changes no machine settings; its report stays in ignored `local-runs/`. Unknown observations are not passes, and the report never authorises model runs.
+
+A separate private GitHub repository is the chosen future home for sealed cases and confidential records. It has not been created; the existing sync script handles only the public project. Once implemented, the agent must verify the private save and matching environment before continuing on the other machine. Complete comparison blocks stay on one host. VM disks, credentials and active processes are not transferred through Git, and no manual handover document is required.
