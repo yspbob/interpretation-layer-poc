@@ -1,7 +1,7 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-08.2**
-Updated: **8 September 2026**
+Plan ID: **pilot-draft-2026-09-09.1**
+Updated: **9 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
 This document incorporates the research review and the subsequent website-design discussion. It is the current planning document for the redesigned POC. The previous ratified v1.2 plan is preserved as a historical record; its NetBox-only four-arm design, 25-ticket sample, 300-run schedule and success rule must not be silently inherited by this pilot.
@@ -11,6 +11,8 @@ The canonical working copy is now `preregistration/plan/working_plan_2026-09-05.
 ## 1. What this POC should establish
 
 Chapter 4 proposes capturing evidence about a system, drafting guidance, obtaining owner approval, serving the relevant guidance during work, and checking compliance. We need evidence that the added technical machinery is useful rather than merely plausible.
+
+The full proposal contains two connected cycles. Drafting, verification and owner review establish a version of guidance; consultation, planning, implementation and checking use that version across tasks. The first drafting cycle establishes a baseline. Subsequent evidence or decision changes can trigger review of affected guidance, without reopening every decision for every task. Observations from use can enter that review, but cannot themselves approve or silently rewrite a decision. This distinction clarifies the explanation; it does not add a maintenance experiment. The current pilot verifies support without owner certification and freezes guidance during each matched comparison. Ongoing maintenance remains outside scope.
 
 The pilot has three questions:
 

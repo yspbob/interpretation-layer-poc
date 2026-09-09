@@ -1,6 +1,10 @@
 # Plan changes reconciled on 5 September 2026
 
-Current plan: **pilot-draft-2026-09-08.2**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.1**. Status: working redesign, not a new ratified preregistration.
+
+## Two connected cycles — 9 September 2026
+
+The user identified that consecutive boxes conflated drafting/approval with usage, and raised the distinction between the first preparation pass and ongoing maintenance. The explanation now separates the two cycles, connects them through versioned approved guidance in the full proposal, and shows evidence from use returning for review. Initial preparation establishes a baseline; later maintenance rechecks affected claims. It does not imply automatic approval or rewriting guidance during a task. The page explicitly distinguishes the full proposal from this pilot's evidence verification and frozen guidance. This is a presentation and scope clarification: no maintenance experiment, owner participation, new experimental condition or result has been added. The isolated role runner remains the next substantive research task.
 
 ## Development milestone — 8 September 2026
 

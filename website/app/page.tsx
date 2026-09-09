@@ -1,6 +1,6 @@
 import { PageLink } from './page-link';
 
-import { ArrowDown, ArrowRight, Layers3, ScanLine, Route, BadgeCheck } from 'lucide-react';
+import { ArrowDown, ArrowRight, CornerUpLeft, RefreshCw } from 'lucide-react';
 import { Shell, chapterUrl } from './ui';
 import { DetailGroup, Disclosure, Examples } from './details';
 import { ExperimentDetails } from './experiment-details';
@@ -37,14 +37,39 @@ export default function Experiment(){return <Shell active="experiment">
 
   <section className="section-block">
     <div className="section-heading"><span className="section-no">02</span><div><span className="eyebrow">THE IDEA BEHIND THE LAYER</span><h2>Turn what the project tells us into guidance for later work</h2></div></div>
-    <p className="section-intro section-intro-wide">The playbook describes a process that goes from finding evidence to getting a decision approved and using it. The distinction matters: observing a pattern in code does not, by itself, make that pattern an approved rule.</p>
-    <div className="mechanism">{[
-      {icon:ScanLine,title:'Find the evidence',body:'Read the relevant code, documentation and recorded decisions. Look for examples that follow the apparent rule and examples that do not.'},
-      {icon:Layers3,title:'Explain and check the draft',body:'Write down the proposed rule, its evidence and exceptions. Automated checks verify the references and flag contradictions before a person reviews it.'},
-      {icon:BadgeCheck,title:'Ask an owner to review it',body:'In the full playbook, someone responsible for the system decides whether the proposed guidance should be treated as an approved decision.'},
-      {icon:Route,title:'Consult the layer and check the work',body:'The agent consults the layer before acting. Its plan names the relevant decisions, and review and automated checks assess whether the work follows them.'},
-    ].map((x,i)=><div className="mechanism-step" key={x.title}><div className="step-top"><x.icon size={22}/><span>0{i+1}</span></div><h3>{x.title}</h3><p>{x.body}</p></div>)}</div>
-    <div className="scope-note"><span>What we can test here</span><p>We are using public projects and their published records, without asking their maintainers to take part. That lets us check whether guidance is supported by the evidence and helps with a change. It does not tell us whether an owner would approve a newly proposed rule, or what they intended but never recorded.</p></div>
+    <p className="section-intro section-intro-wide">The layer connects two cycles: one establishes the guidance; the other uses it during engineering work. Drafting and approval happen before that guidance can be used as an approved decision, but they are not repeated for every task.</p>
+    <div className="guidance-cycles" id="guidance-cycles">
+      <section className="guidance-cycle" aria-labelledby="preparation-cycle-title">
+        <span className="eyebrow">DRAFTING &amp; APPROVAL CYCLE</span>
+        <h3 id="preparation-cycle-title">Establish and maintain the guidance</h3>
+        <ol className="cycle-steps">
+          <li><h4>Find the evidence</h4><p>Read the relevant code, documentation and recorded decisions, including exceptions and conflicting examples.</p></li>
+          <li><h4>Draft and verify the guidance</h4><p>Explain each proposed rule, its scope and its evidence. Check support and contradictions before owner review.</p></li>
+          <li><h4>Review and release a version</h4><p>The responsible owner approves, rejects or requests changes. Only approved decisions are released as approved guidance.</p></li>
+        </ol>
+        <p className="cycle-repeat"><RefreshCw size={17} aria-hidden="true"/><span>Review can send a draft back for revision before a version is released.</span></p>
+        <p className="cycle-timing"><strong>Initially:</strong> establish the baseline.<br/><strong>When evidence or decisions change:</strong> recheck affected guidance and retain, revise or retire it through review.</p>
+      </section>
+      <div className="guidance-connection">
+        <ArrowRight className="guidance-connection-arrow" size={28} aria-hidden="true"/>
+        <strong>Approved guidance</strong>
+        <p>A version with its evidence, scope and exceptions.</p>
+        <span>The same version can support many tasks.</span>
+      </div>
+      <section className="guidance-cycle guidance-cycle-use" aria-labelledby="usage-cycle-title">
+        <span className="eyebrow">USAGE CYCLE</span>
+        <h3 id="usage-cycle-title">Apply the guidance to each task</h3>
+        <ol className="cycle-steps">
+          <li><h4>Consult and plan</h4><p>Retrieve the relevant guidance. Identify what can be reused, what constrains the change and which exceptions may apply.</p></li>
+          <li><h4>Check and carry out the approach</h4><p>Review the plan against the guidance, make the change and recheck material changes of approach.</p></li>
+          <li><h4>Check the resulting work</h4><p>Assess the change against the relevant decisions and task requirements. Record objections and unresolved questions.</p></li>
+        </ol>
+        <p className="cycle-repeat"><RefreshCw size={17} aria-hidden="true"/><span>Objections can send the plan or code back for revision, or stop the attempt.</span></p>
+        <p className="cycle-timing"><strong>For each task:</strong> use the applicable guidance without reopening every approved decision.</p>
+      </section>
+      <div className="guidance-feedback"><CornerUpLeft size={21} aria-hidden="true"/><p><strong>New evidence can prompt a guidance review.</strong> Work may expose an outdated rule, a conflict or an unrecorded exception. Send that evidence back to the drafting and approval cycle; it does not automatically change an approved decision.</p></div>
+    </div>
+    <div className="scope-note"><span>What we can test here</span><div><p>This diagram describes the full proposal. Our pilot tests whether drafted guidance is supported by public evidence and helps with later work. Maintainers are not taking part, so verified guidance in this POC is not owner-approved guidance.</p><p>We freeze a guidance version before each matched comparison. Ongoing maintenance and owner approval remain outside this pilot; feedback from final evaluation cannot be used to repair guidance during a run.</p></div></div>
     <div className="working-loop">
       <h3>How we propose to check the agent in this POC</h3>
       <p><strong>Proposed pilot procedure — still to be built and tested.</strong> In the interactive condition, a separate checking agent would assess the coding agent’s proposed approach and its resulting changes. It would use the same permitted evidence and the guidance prepared before the task, without access to the withheld answers.</p>

@@ -78,3 +78,29 @@ h1{font-size:clamp(2.4rem,4vw,3.5rem);line-height:1.1}h1 em{font-style:normal}
 .roadmap-heading .pill{flex-shrink:0;margin-top:3px}
 .roadmap-stage p{font-size:1.05rem;line-height:1.85;color:#514D46}
 @media(max-width:700px){.next-work{padding:22px 20px}.roadmap-stage{grid-template-columns:32px minmax(0,1fr);gap:12px;padding:22px 0}.roadmap-number{width:30px;height:30px}.roadmap-next{padding-left:10px;padding-right:10px}.roadmap-heading{flex-direction:column;gap:5px}.roadmap-heading h3{font-size:1.15rem}.roadmap-stage p{font-size:1rem}}
+
+/* Two connected cycles: shared guidance is an artifact, not another task step. */
+.guidance-cycles{display:grid;grid-template-columns:minmax(0,1fr) 180px minmax(0,1fr);gap:22px;align-items:stretch}
+.guidance-cycle{border:1px solid #E5DFD4;border-top:3px solid #B08A2E;padding:26px;background:#F8F4EB;display:flex;flex-direction:column}
+.guidance-cycle-use{border-top-color:#1F3864;background:#F5F6F8}
+.guidance-cycle>.eyebrow{color:#806015;margin-bottom:12px}
+.guidance-cycle-use>.eyebrow{color:#1F3864}
+.guidance-cycle>h3{font-size:1.4rem;line-height:1.4;color:#1F3864}
+.cycle-steps{list-style:none;counter-reset:cycle-step;padding:0;margin:22px 0 0}
+.cycle-steps>li{counter-increment:cycle-step;position:relative;padding:0 0 20px 30px}
+.cycle-steps>li::before{content:counter(cycle-step);position:absolute;left:0;top:0;color:#806015;font-size:.85rem}
+.cycle-steps h4{font-size:1rem;line-height:1.5;font-weight:600;color:#1F3864;margin:0 0 7px}
+.cycle-steps p{font-size:.96rem;line-height:1.75;color:#514D46}
+.cycle-repeat{display:flex;gap:10px;align-items:flex-start;border-top:1px solid #DED5C3;padding-top:17px;margin-top:auto;font-size:.9rem;color:#514D46}
+.cycle-repeat svg{flex-shrink:0;margin-top:5px;color:#806015}
+.cycle-timing{font-size:.9rem;color:#514D46;line-height:1.8;margin-top:16px}
+.guidance-connection{align-self:center;text-align:center;color:#1F3864}
+.guidance-connection-arrow{margin:0 auto 15px}
+.guidance-connection strong{display:block;font-size:1.06rem}
+.guidance-connection p{font-size:.94rem;line-height:1.75;margin:10px 0}
+.guidance-connection span{display:block;color:#6B6459;font-size:.88rem;line-height:1.7}
+.guidance-feedback{grid-column:1/-1;display:flex;align-items:flex-start;gap:14px;padding:18px 22px;border:1px dashed #B9AA89;color:#514D46;font-size:.96rem;line-height:1.8}
+.guidance-feedback svg{flex-shrink:0;color:#806015;margin-top:4px}
+.scope-note>div p+p{margin-top:12px}
+@media(max-width:1050px){.guidance-cycles{grid-template-columns:minmax(0,1fr);gap:20px}.guidance-connection{max-width:360px;justify-self:center;padding:4px 14px}.guidance-connection-arrow{transform:rotate(90deg);margin-bottom:10px}.guidance-feedback{grid-column:auto}}
+@media(max-width:700px){.guidance-cycle{padding:22px 20px}.guidance-feedback{padding:18px}.guidance-cycle>h3{font-size:1.25rem}}

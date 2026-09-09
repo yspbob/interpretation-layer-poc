@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 8 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 9 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -36,6 +36,10 @@ An inventory contains 84 records across four pinned repositories: NetBox, Wagtai
 Fifteen recorded development probes passed (nine HTTPX, six Paperless). These were selected behaviour checks, not full applications, container isolation checks or model comparisons. See `research/development/recorded-probe-results.json`. The portable probe script and source pins are retained alongside the current website source.
 
 The website has separate explanation and progress routes. Its method is presented as four visible steps with optional detail. Progress records the first executable, scripted development example and identifies isolated role dispatch as the next substantive task. GitHub Pages serves `docs/` from main; editable source is in `website/`.
+
+## Latest explanation update
+
+On 9 September, the user identified that the explanation conflated drafting/approval with usage. The website now presents two connected cycles, with versioned approved guidance passed from preparation to repeated task use, and new evidence returned for review. It distinguishes an initial baseline from subsequent maintenance and makes clear that the POC tests evidence-supported, frozen guidance without owner certification. Maintenance remains outside the pilot; no research scope or results changed. The canonical plan and change register record this clarification. Application type/lint checks, static build and link/asset checks passed; the two-panel desktop layout was inspected in the browser. The explanation and progress views still describe the same pilot scope.
 
 ## Next substantive task
 
