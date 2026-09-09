@@ -88,3 +88,9 @@ Models use separate provider contexts through the external gateway. Only tools a
 Either host may execute, but a complete matched block stays on one host under the common laptop-sized resource profile. Private GitHub record storage, environment verification and interrupted-block recovery must be implemented before confidential cross-machine work. No confidential store is created or validated by this contract addendum. Exact release pins and numerical qualification/budget settings remain open.
 
 The user explicitly reinforced agent isolation. Each role needs an independently scoped provider context, history, pack and workspace, with no shared memory, retrieval store or tool session. Controller allowlists, role/attempt binding and forbidden-pack marker tests must cover each permitted exchange. Provider tools are disabled unless they meet the same reviewed boundaries. A separate prompt or container alone does not satisfy these requirements.
+
+## First-pilot scope addendum — 9 September 2026
+
+Working plan revision pilot-draft-2026-09-09.11 limits scored pilot tasks to eligible evidence-backed historical changes. Reference criteria require published requirements or documented obligations and reproducible checks; unresolved central requirements exclude a case from scored comparisons. Historical code remains a comparator and may fail the same criteria as agent code. H04 remains authored development material.
+
+Prior familiarity with public projects remains a stated limitation of both information conditions. Matched models/tasks/budgets do not prove that guidance was inferred solely from supplied evidence. Private rule-changing variants are optional later work, with independently justified validation required before admission; author-produced tests and AI agreement alone do not close that gate. Existing role isolation, disclosure audits, qualification and matched-review requirements remain unchanged.

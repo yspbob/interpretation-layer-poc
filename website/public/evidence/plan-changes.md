@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-09.10**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.11**. Status: working redesign, not a new ratified preregistration.
+
+## Evidence-backed first pilot and optional private variants — 9 September 2026
+
+The user agreed to narrow the first-pilot claim and requested transparent publication before switching machines. Scored pilot task comparisons will use eligible real historical changes with published requirements or documented obligations and reproducible behavioural checks. The claim is whether guidance and structured checking help on these public-project tasks, with possible prior model familiarity. It does not establish inference entirely from supplied or previously unseen code. Matching models, tasks and budgets does not eliminate that limitation.
+
+Privately authored changes that alter the correct rule are removed as a prerequisite and deferred to an optional later extension. The author’s edits/tests, another AI’s agreement and private repository storage are not sufficient independent validation. Later admission requires a meaningful coherent change and independently justified reference evidence, with suitable expertise for disputed interpretation or an unresolved disposition. No such expert is arranged. Authored development examples remain separate from historical scored tasks.
+
+Cases whose central requirement depends on undocumented intent or unresolved interpretation are excluded from scored pilot comparisons with reasons retained. Historical code remains a comparator, not ground truth. Existing isolation, disclosure audits, matched reviews/budgets, qualification and family-separation gates stay in force. The explanation, progress, plan, contracts, runner design and continuity instructions now preserve this decision; no cases or model runs were executed in this release.
 
 ## Process overview, execution tree and runner terminology — 9 September 2026
 

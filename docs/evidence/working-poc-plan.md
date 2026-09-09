@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-09.10**
+Plan ID: **pilot-draft-2026-09-09.11**
 Updated: **9 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -16,7 +16,7 @@ The full proposal contains two connected cycles. Drafting, verification and owne
 
 The pilot has three questions:
 
-1. Can the layer derive useful, appropriately qualified guidance from the sources it is allowed to see?
+1. Can the layer produce useful, appropriately qualified guidance supported by the sources it is allowed to see, while acknowledging possible prior familiarity with the public project?
 2. Does giving that guidance to an agent improve a later code change compared with a capable agent working directly from the same sources?
 3. Does structured consultation and checking add value beyond supplying the guidance and providing ordinary review?
 
@@ -25,6 +25,14 @@ Keep inference quality, handling of documentation, downstream code quality and i
 This first POC is designed to be as self-contained as possible, minimising external dependencies on project maintainers, organisational approvals and ongoing operational involvement. Public code and recorded decisions allow the technical mechanism to be tested without requiring that participation. Later iterations could involve owners and examine ongoing maintenance if the remaining research questions require them; neither is added to this pilot by this scope clarification.
 
 There is no maintainer-recruitment dependency. Published project decisions and documented behaviour provide reference evidence, not owner approval of newly generated rules. Unrecorded organisational intent, owner certification, adoption, ongoing renewal and production economics remain outside the technical claim. A positive result would support the layer in the situations tested, not prove its universal necessity or the full playbook loop.
+
+### First-pilot claim and prior familiarity
+
+The first pilot will compare DIRECT, GUIDE and INTERACT on real historical changes with published requirements or documented obligations and reproducible behavioural checks. Its claim is whether the layer helps on these evidence-backed public-project tasks. Models may already know the code or historical solution from training. Matched models, tasks and budgets support the method comparison; they do not remove familiarity, establish equal recall in every context, or prove that guidance was inferred entirely from the supplied evidence. Report this limitation with results and restrict generalisation to the tested conditions.
+
+Privately authored changes that alter the correct rule are optional later work, not a prerequisite for the first pilot. Creating a variant and tests for it in-house does not independently establish its meaning, correctness or coverage. Another AI's agreement and private storage do not solve that problem. Admission of a later variant needs a plausible requirement, a consistent implementation, valid alternatives, discriminating behavioural checks and a reference assessment justified independently of generated guidance and the author's assertion. Clear external evidence and reproducible behaviour can support bounded claims; disputed interpretations require suitable independent expertise or remain unresolved. Such variants stay development material until that evidence is sufficient and remain separately labelled if later admitted.
+
+The first-pilot adjustment does not waive isolation, input audits, historical-comparator assessment, assessor qualification, family separation or predeclared budgets and scoring. Authored cases such as H04 remain useful development/qualification-construction material, not substitutes for eligible historical pilot tasks. A central requirement that depends on undocumented intent or unresolved interpretation excludes the case from scored pilot comparisons; retain the reason in the inventory. A peripheral unresolved criterion cannot silently become a pass. No expert reviewer has been arranged to certify invented variants.
 
 ## 2. Current evidence and repository selection
 
@@ -65,11 +73,11 @@ Candidate counts do not establish statistical sufficiency. Related cases, semant
 
 If these instructions state the target rule, classify the case as documentation-visible. It is not eligible for a code-inference claim for that rule. Keep the actual instructions intact and audit other disclosures for any case selected for code inference. Any separate redaction diagnostic would require a separately declared design; it is not the ordinary baseline.
 
-**Code-inference condition.** Select cases whose applicable AGENTS.md instructions do not disclose the target rule. Withhold other project statements that reveal the target decision, together with alternative narrative disclosures. Review comments, docstrings, tests, examples, error messages, generated files, histories and dependencies for the same information. The allowed code may contain evidence from which the rule can be inferred. The case inventory, challenge labels, investigator discussion and reference answers must not reach the experimental drafter, coder or checker.
+**Code-inference condition (an input restriction, not proof of inference).** Select cases whose applicable AGENTS.md instructions do not disclose the target rule. Withhold other project statements that reveal the target decision, together with alternative narrative disclosures. Review comments, docstrings, tests, examples, error messages, generated files, histories and dependencies for the same information. The allowed code may contain evidence from which the rule can be inferred. The case inventory, challenge labels, investigator discussion and reference answers must not reach the experimental drafter, coder or checker.
 
 **Documentation-visible condition.** Supply the declared documentation as well as the code. Test extraction, interpretation of scope, conflict handling and recognition of authority. Guidance may cite the exact permitted guide section here. Results must not be blended with code-inference results and described as successful recovery from code.
 
-These are information conditions crossed with the three treatment conditions below, not extra independent examples. Eligible cases may differ between information conditions; declare eligibility prospectively and report it. There is no fixed total run count yet.
+The label code-inference identifies the supplied evidence, not an established account of the model’s reasoning. Prior knowledge may contribute in either condition. These are information conditions crossed with the three treatment conditions below, not extra independent examples. Eligible cases may differ between information conditions; declare eligibility prospectively and report it. There is no fixed total run count yet.
 
 Record guidance provenance at claim level: direct documentation extraction, executable-text restatement, structural or behavioural inference, or unresolved. Include permitted evidence references, scope, exceptions and counter-evidence. A string present in executable code is not automatically evidence of substantive inference.
 
@@ -134,7 +142,7 @@ Humans prepare and review cases before runs and examine results afterwards. No u
 
 Record complete model inputs and outputs, tool activity, source and environment hashes, settings, versions, failures and exclusions. The existing file-broker checks establish only narrow input-handling behaviour. The isolated runner must demonstrate these requirements before model qualification or experimental runs. Report protection against specified, tested escape paths and remaining limitations; do not claim guaranteed containment or treat a container label as evidence of security.
 
-Do not run a blinded drafter in the investigator conversation: this conversation has seen the answer material. Use unpublished changes that alter the correct rule to test whether answers follow supplied evidence, and meaning-preserving renamings to check robustness. Containers restrict runtime access; they cannot prove that a public repository was absent from training data.
+Do not run a blinded drafter in the investigator conversation: this conversation has seen the answer material. The first pilot acknowledges possible prior familiarity and does not require unpublished rule-changing variants. Such variants are an optional later extension subject to section 1’s independent-justification requirements. Meaning-preserving renaming may check robustness but cannot establish unfamiliarity. Containers restrict runtime access; they cannot prove that a public repository was absent from training data.
 
 Publishable audit records must be replayable and honest about this limit. Do not expose secrets or make materials public merely because an older attached plan said to publish. On 8 September 2026, the user requested publication of the current explanation and progress website through the POC GitHub repository as a rendered website. GitHub Pages is the public publication target; the separate Sites preview retains its existing access settings. This publication does not authorise disclosure of future withheld evaluation material or change the experimental method.
 
@@ -267,7 +275,7 @@ The investigator records each decision and its evidence in a versioned configura
 | Implementing the isolated runner | Selected execution boundary, threat model, permitted interfaces, output collection, pause/stop semantics and probe plan. | Working architecture and interfaces proposed in section 8C; host compatibility, exact pins and implementation remain open. |
 | Any model invocation, including qualification | Passed isolation/controller probes for the exact configuration; bounded gateway and logging; authorised budget. | Not established. |
 | Held-out component qualification | Role-specific evidence records and splits, frozen instructions/settings, error definitions, numerical limits, sample size and acceptance rule. | Procedure specified; fixtures and numerical gates incomplete. |
-| Pilot comparisons | Qualified components, eligible cases and disclosure audits, guidance preparation/reuse limits, matched budgets and order, scoring/stop/retry rules and audit configuration. | Not frozen; zero runs. |
+| Pilot comparisons | Qualified components, eligible evidence-backed historical cases and disclosure audits, guidance preparation/reuse limits, matched budgets and order, scoring/stop/retry rules and audit configuration. | Not frozen; zero runs. |
 | Main confirmation | Fresh families excluded from tuning, primary contrast and endpoint, minimum worthwhile benefit and cost limit, multiplicity/grouping analysis, repetitions and sample-size justification. | To be set using feasibility evidence before confirmation outcomes. |
 
 ## 10. Execution sequence and current state
@@ -298,7 +306,7 @@ For this development case, any confirmed required behavioural failure makes the 
 | Frame and inventory | Review the playbook claim, inspect references and select candidate repositories. | Completed as exploratory preparation. |
 | Specify and trace one development case | Write component contracts and trace their inputs and decisions on one evidence-backed case. | H04 contracts, executable checks and scripted trace complete as development. No model role exercised or qualified. |
 | Build and test the runner | Enforce inputs and checkpoints; test isolation, plan-change handling, logging and checker failures. | Narrow pack broker, state transitions and lifecycle triggers exercised in H04. Isolated dispatch and a complete blinded runner remain the next implementation work. |
-| Build pilot cases | Select a spread of decision families; resolve dependencies; construct tasks, alternatives and unpublished variants. | Not complete. Final case list and pilot size remain open. |
+| Build pilot cases | Select eligible historical tasks across decision families; resolve dependencies; establish criteria, meaningful errors and valid alternatives. Rule-changing private variants are optional later work. | Not complete. Final case list and pilot size remain open. |
 | Validate scoring and inputs | Establish reference verdicts, develop rubrics, qualify each judging role on held-out families under section 9A, and check semantic disclosures. | Protocol proposed; fixtures, numerical acceptance limits and qualification runs not complete. |
 | Fix pilot configuration | Record cases, inputs, models, prompts, budgets, correction limits, exclusions and retry policy before runs. | Not frozen. |
 | Run the pilot | Execute fresh matched conditions; retain all attempts; move tuning material out of confirmation. | Not started. |
