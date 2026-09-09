@@ -16,7 +16,7 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   title: {default:'Interpretation Layer | Playbook Validation', template:'%s | Interpretation Layer'},
   description: 'Testing whether the AI Engineering Playbook’s interpretation layer earns its place. Explore the experiment, evidence, progress and limits of the study.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://interpretation-layer-study.yaroslav-pavolotskiy.chatgpt.site'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://yspbob.github.io/interpretation-layer-poc/'),
   icons: {icon:sitePath('/favicon.svg')},
 };
 

@@ -1,6 +1,18 @@
-# Plan changes reconciled on 5 September 2026
+# Working-plan change register
 
-Current plan: **pilot-draft-2026-09-09.5**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.6**. Status: working redesign, not a new ratified preregistration.
+
+## Whole-site and plan review — 9 September 2026
+
+The user requested a thorough review and resolution of issues across the website and working plan. This revision makes the design operationally clearer; it does not freeze numerical settings, implement the isolated runner or authorise model calls. The [review record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/site-plan-review-2026-09-09.md) records findings, resolutions and remaining gates.
+
+The review identified circular guidance scoring, ambiguous preparation-cost allocation, overly literal checkpoint matching, incomplete failure attribution and insufficient separation of historical discovery snapshots from runnable backtests. Sections 3–9B now specify time-appropriate evidence, task-neutral pack selection, bounded preparation including empty guides, independent guidance and intervention assessment, and separation of observed patterns from enforceable obligations.
+
+The working budget policy charges each method its attributable preparation plus execution/review cost under a matched total allowance. Shared preparation is allocated over a task set declared before runs, including failures; physical experiment spend is recorded separately. This operationalises cost matching as a working design, not an agreed monetary cap. The plan also requires matched trigger policies rather than identical intermediate transcripts, final review before terminal scoring, treatment-order balancing, handling of agent-produced invalid output, and reporting of all attempts and any infrastructure exclusions.
+
+Section 9A now describes five assessment jobs, their evidence, failure modes, qualification splits and audit/amendment procedure. The verifier cannot grade its own success. Revised criteria are applied consistently, but confirmation material used to repair scoring becomes exploratory. Section 9B records which concrete choices and evidence are required before implementation, model access, qualification, pilot and confirmation. Numerical gates remain explicitly open.
+
+The website removes a repeated review walkthrough, adds cost and comparability detail, corrects the description of control cases and H04 readiness, and aligns the technical explanation and progress gates. Disclosure sections gain stable anchor targets. The plan-directory README now points to the actual canonical plan. Historical fixtures, source pins, candidate classifications and recorded experimental results remain unchanged.
 
 ## Technical setup, project instructions and page responsibilities — 9 September 2026
 

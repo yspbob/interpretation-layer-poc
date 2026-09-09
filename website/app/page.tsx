@@ -13,13 +13,13 @@ export default function Experiment(){return <Shell active="experiment">
     <div>
       <h1>Will an interpretation layer help an AI agent make better code changes?</h1>
       <p className="lead">An AI agent can read a project’s code and documentation. But it still has to decide which existing patterns to follow, which exceptions matter, and what it should leave alone.</p>
-      <p className="intro-explanation">The playbook proposes an <strong>interpretation layer</strong> that turns this evidence into approved guidance, helps agents check a proposed change against it, and supports checks on the resulting work. This experiment asks which parts of that process help, and whether the improvement justifies the effort.</p>
+      <p className="intro-explanation">The playbook proposes an <strong>interpretation layer</strong> that turns this evidence into approved guidance, helps agents check a proposed change against it, and supports checks on the resulting work. This POC tests the technical steps using project evidence. It does not certify new guidance on behalf of a project owner.</p>
       <p className="chapter-context">The full proposal is in <a href={chapterUrl} target="_blank" rel="noreferrer">Chapter 4: The interpretation layer</a> of the public AI Engineering Playbook.</p>
-      <div className="experiment-jumps"><a className="text-link intro-jump" href="#example">What the layer provides <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#technical-setup">Technical setup <ArrowDown size={16}/></a></div>
+      <div className="experiment-jumps"><a className="text-link intro-jump" href="#example">What the layer provides <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#comparison">The comparison <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#method">The method <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#technical-setup">Technical setup <ArrowDown size={16}/></a></div>
     </div>
     <aside className="hypothesis">
       <span className="eyebrow">WHY TEST THIS?</span>
-      <p>Does preparing the guidance help? Does checking the agent’s work against it add a further benefit?</p>
+      <p>Does prepared guidance help beyond the sources and ordinary review? Does structured consultation add a further benefit?</p>
       <div className="hypothesis-explanation">A capable agent may already work out the right approach from the sources. Preparing guidance and consulting it takes time and money. The experiment tests whether these steps prevent enough mistakes to justify the effort.</div>
       <div className="hypothesis-foot"><span className="signal-dot"/>Planned method · See Progress &amp; findings for readiness and results.</div>
     </aside>
@@ -71,20 +71,10 @@ export default function Experiment(){return <Shell active="experiment">
       <div className="guidance-feedback"><CornerUpLeft size={21} aria-hidden="true"/><p><strong>New evidence can prompt a guidance review.</strong> Work may expose an outdated rule, a conflict or an unrecorded exception. Send that evidence back to the drafting and approval cycle; it does not automatically change an approved decision.</p></div>
     </div>
     <div className="scope-note"><span>What this POC can test</span><div><p>The first POC is designed as a self-contained experiment to minimise dependencies on project maintainers, organisational approvals and ongoing operational involvement. Public code and recorded decisions provide a basis for testing whether guidance is supported by evidence and helps with later work.</p><p>This limits the claim: evidence verification does not establish owner approval, and a fixed guidance version does not test ongoing maintenance. Later iterations could involve project owners and examine maintenance if these are needed to answer the remaining questions.</p><p>The diagram above describes the full proposal. This pilot freezes guidance before each matched comparison; feedback from final evaluation cannot be used to repair it during a run.</p></div></div>
-    <div className="working-loop">
-      <h3>How agent review is designed to work in this POC</h3>
-      <p><strong>Planned review procedure.</strong> In the interactive condition, a separate checking agent would assess the coding agent’s proposed approach and its resulting changes. It would use the same permitted evidence and the guidance prepared before the task, without access to the withheld assessment.</p>
-      <ol className="numbered-detail">
-        <li><strong>Check the plan before the first edit.</strong><p>The coding agent asks the layer what to reuse and which rules apply. It then submits the components it will change, the rules it will follow and any exception it intends to use. The checker assesses that reasoning, rather than merely looking for citations.</p></li>
-        <li><strong>Make objections lead to a recorded decision.</strong><p>The checker returns “proceed”, “revise” or “unresolved”, with a reason. A request to revise goes back to the coding agent. The pilot proposal allows at most two correction rounds per checkpoint; an unresolved decision or an exhausted allowance stops the attempt and is recorded for later assessment.</p></li>
-        <li><strong>Check a changed approach before work continues.</strong><p>If the agent needs a new dependency, changes the component it plans to reuse, or relies on a new exception, it must submit an updated plan. The program running the experiment would also compare each submitted code change with the plan. A mismatch sends the attempt back for review.</p></li>
-        <li><strong>Judge the code independently at the end.</strong><p>All conditions run the same task checks. In each backtest, a separate evaluator assesses both the agent’s change and the historical implementation for task correctness and compliance with the applicable guardrails. If the agent avoids a violation in the historical code while completing the task correctly, that counts in its favour. Matching the original code is not the goal.</p></li>
-      </ol>
-      <p className="caption">Owner approval of new decisions, renewal of guidance and checks across an organisation’s systems remain outside this pilot.</p>
-    </div>
+    <p className="caption">In this POC, all three groups receive review. The <a className="text-link" href="#during-work">step-by-step method</a> explains the checks before editing, during implementation and at final submission.</p>
   </section>
 
-  <section className="section-block">
+  <section className="section-block" id="comparison">
     <div className="section-heading"><span className="section-no">03</span><div><span className="eyebrow">THE PROPOSED COMPARISON</span><h2>Separate the value of guidance from the value of checking its use</h2></div></div>
     <p className="section-intro">The design compares agents making the same change under three conditions. This separates the effect of prepared guidance from the additional effect of consultation and checking. The two guidance groups receive the same frozen rules, and preparation costs are recorded. Prompts, budgets and checks are specified and validated before the trial.</p>
     <div className="comparison comparison-three">
@@ -94,18 +84,23 @@ export default function Experiment(){return <Shell active="experiment">
     </div>
     <div className="review-comparison" id="review-comparison">
       <h3>Every group gets a review</h3>
-      <p>All three groups have their plans and code reviewed at the same points, with the same number of opportunities to make corrections. What differs is the help available during review:</p>
+      <p>All three groups follow the same rules for when review is required and how many corrections are allowed. Each has a plan review, checks during work and a final submission review. Different approaches may trigger different numbers of intermediate checks. What differs is the help available during review:</p>
       <table className="review-comparison-table">
         <caption className="sr-only">What the reviewer checks in each group</caption>
         <thead><tr><th scope="col">Group</th><th scope="col">What the reviewer checks</th></tr></thead>
         <tbody>
-          <tr><th scope="row">Sources only</th><td>The plan and code against the available sources, including the project’s actual AGENTS.md instructions.</td></tr>
+          <tr><th scope="row">Sources only</th><td>The plan and code against the available sources, including any applicable AGENTS.md instructions present at the starting revision.</td></tr>
           <tr><th scope="row">Prepared guidance</th><td>The same, with the prepared guidance also available.</td></tr>
           <tr><th scope="row">Guidance and interaction</th><td>The same, plus targeted questions about which rules apply, how the proposed change follows them, and whether an exception is justified.</td></tr>
         </tbody>
       </table>
-      <p>This tests whether structured questioning improves the result beyond an ordinary review with guidance available. Every group has the same overall resource limit, and all review effort counts towards it.</p>
+      <p>This tests whether structured questioning improves the result beyond an ordinary review with guidance available. Every group has the same overall method budget. Preparing guidance uses part of the budget for the groups that receive it; all coding, consultation and review also count.</p>
     </div>
+    <DetailGroup><Disclosure id="fair-comparison" title="How are time, cost and preparation kept comparable?">
+      <p>Preparing guidance has a cost before coding begins. Each guidance group is charged that cost against its total allowance, leaving the remainder for the task and its reviews. The sources-only group uses its allowance directly. Exact limits are fixed before runs.</p>
+      <p>If several tasks share a guide, the preparation cost is divided across a task set declared in advance, including failed attempts. Reports show both the full cost of first use and the cost under that reuse assumption. Final scoring and building the research fixtures are recorded separately as study costs.</p>
+      <p>Matched attempts use the same coding model, tools, source revision and review-model settings. Their execution order is randomised or balanced, with fresh state for each attempt. The comparison tests the required consultation procedure as a whole; ordinary reviewers are still allowed to ask useful questions.</p>
+    </Disclosure></DetailGroup>
   </section>
 
   <ExperimentDetails/>
