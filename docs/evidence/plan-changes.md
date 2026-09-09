@@ -1,6 +1,14 @@
 # Plan changes reconciled on 5 September 2026
 
-Current plan: **pilot-draft-2026-09-09.4**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.5**. Status: working redesign, not a new ratified preregistration.
+
+## Technical setup, project instructions and page responsibilities — 9 September 2026
+
+This authorised release applies the banked case-explanation rewrite and separates the planned method from its implementation status. The Experiment retains the procedure, rationale, requirements and lasting limits, with a new Technical setup section and planned data-flow diagram. Progress & findings owns component readiness, calibration material, open settings, next work and the case inventory. Existing status is consolidated rather than promoted to evidence of completion.
+
+The plan now requires the actual applicable AGENTS.md files from each backtest's starting revision in every matched group, including directory-specific instructions. Absence is recorded. A case whose instructions reveal the target rule is documentation-visible; the ordinary baseline must not be weakened by stripping these instructions. Section 4 and the component contracts record that decision.
+
+The containment discussion generalises the package-service lesson to every exposed capability. The design restricts and records permitted communication, protects host access and examines direct and indirect routes, without claiming control of all possible exchanges or guaranteed containment. Section 8A specifies pack preparation, controller dispatch, external model gateway, separate code execution, independent evaluation and audit records. The concrete runtime and interfaces still need selection and testing; a disposable VM is a candidate, not a deployed solution. The user also identified that the checker explanation omitted checks during implementation. The method and contracts now state that incoming submissions are checked against the approved plan, with pauses and reviewer decisions at configured checkpoints and detected material changes. This clarifies the in-run enforcement requirement while preserving matched review opportunities and budgets; it does not claim continuous semantic monitoring. The scoring explanation also names the shared assessment explicitly: project evidence establishes task requirements and applicable rules before the runs; generated guidance is assessed against that evidence and cannot set its own scoring criteria. Review quality, completion and costs are described separately. The judge-reliability explanation is reorganised into short steps while preserving separate validation cases, error measures, predeclared gates, independent evidence and revalidation after changes. No runner implementation or model run was authorised by this website release.
 
 ## Historical comparison and clearer review explanation — 9 September 2026
 

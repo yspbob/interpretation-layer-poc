@@ -4,6 +4,7 @@ import { ArrowDown, ArrowRight, CornerUpLeft, RefreshCw } from 'lucide-react';
 import { Shell, chapterUrl } from './ui';
 import { DetailGroup, Disclosure, Examples } from './details';
 import { ExperimentDetails } from './experiment-details';
+import { TechnicalSetup } from './technical-setup';
 
 export const dynamic = 'force-static';
 export default function Experiment(){return <Shell active="experiment">
@@ -14,13 +15,13 @@ export default function Experiment(){return <Shell active="experiment">
       <p className="lead">An AI agent can read a project’s code and documentation. But it still has to decide which existing patterns to follow, which exceptions matter, and what it should leave alone.</p>
       <p className="intro-explanation">The playbook proposes an <strong>interpretation layer</strong> that turns this evidence into approved guidance, helps agents check a proposed change against it, and supports checks on the resulting work. This experiment asks which parts of that process help, and whether the improvement justifies the effort.</p>
       <p className="chapter-context">The full proposal is in <a href={chapterUrl} target="_blank" rel="noreferrer">Chapter 4: The interpretation layer</a> of the public AI Engineering Playbook.</p>
-      <a className="text-link intro-jump" href="#example">What the layer provides <ArrowDown size={16}/></a>
+      <div className="experiment-jumps"><a className="text-link intro-jump" href="#example">What the layer provides <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#technical-setup">Technical setup <ArrowDown size={16}/></a></div>
     </div>
     <aside className="hypothesis">
       <span className="eyebrow">WHY TEST THIS?</span>
       <p>Does preparing the guidance help? Does checking the agent’s work against it add a further benefit?</p>
       <div className="hypothesis-explanation">A capable agent may already work out the right approach from the sources. Preparing guidance and consulting it takes time and money. The experiment tests whether these steps prevent enough mistakes to justify the effort.</div>
-      <div className="hypothesis-foot"><span className="signal-dot"/>The experiment is intended to answer this question. It has not answered it yet.</div>
+      <div className="hypothesis-foot"><span className="signal-dot"/>Planned method · See Progress &amp; findings for readiness and results.</div>
     </aside>
   </section>
 
@@ -72,7 +73,7 @@ export default function Experiment(){return <Shell active="experiment">
     <div className="scope-note"><span>What this POC can test</span><div><p>The first POC is designed as a self-contained experiment to minimise dependencies on project maintainers, organisational approvals and ongoing operational involvement. Public code and recorded decisions provide a basis for testing whether guidance is supported by evidence and helps with later work.</p><p>This limits the claim: evidence verification does not establish owner approval, and a fixed guidance version does not test ongoing maintenance. Later iterations could involve project owners and examine maintenance if these are needed to answer the remaining questions.</p><p>The diagram above describes the full proposal. This pilot freezes guidance before each matched comparison; feedback from final evaluation cannot be used to repair it during a run.</p></div></div>
     <div className="working-loop">
       <h3>How agent review is designed to work in this POC</h3>
-      <p><strong>Proposed pilot procedure — not yet implemented as an isolated trial.</strong> In the interactive condition, a separate checking agent would assess the coding agent’s proposed approach and its resulting changes. It would use the same permitted evidence and the guidance prepared before the task, without access to the withheld assessment.</p>
+      <p><strong>Planned review procedure.</strong> In the interactive condition, a separate checking agent would assess the coding agent’s proposed approach and its resulting changes. It would use the same permitted evidence and the guidance prepared before the task, without access to the withheld assessment.</p>
       <ol className="numbered-detail">
         <li><strong>Check the plan before the first edit.</strong><p>The coding agent asks the layer what to reuse and which rules apply. It then submits the components it will change, the rules it will follow and any exception it intends to use. The checker assesses that reasoning, rather than merely looking for citations.</p></li>
         <li><strong>Make objections lead to a recorded decision.</strong><p>The checker returns “proceed”, “revise” or “unresolved”, with a reason. A request to revise goes back to the coding agent. The pilot proposal allows at most two correction rounds per checkpoint; an unresolved decision or an exhausted allowance stops the attempt and is recorded for later assessment.</p></li>
@@ -85,7 +86,7 @@ export default function Experiment(){return <Shell active="experiment">
 
   <section className="section-block">
     <div className="section-heading"><span className="section-no">03</span><div><span className="eyebrow">THE PROPOSED COMPARISON</span><h2>Separate the value of guidance from the value of checking its use</h2></div></div>
-    <p className="section-intro">The design compares agents making the same change under three conditions. This separates the effect of prepared guidance from the additional effect of consultation and checking. The two guidance groups receive the same frozen rules, and preparation costs are recorded. The procedure remains a working design: exact prompts, budgets and checks need validation before the trial.</p>
+    <p className="section-intro">The design compares agents making the same change under three conditions. This separates the effect of prepared guidance from the additional effect of consultation and checking. The two guidance groups receive the same frozen rules, and preparation costs are recorded. Prompts, budgets and checks are specified and validated before the trial.</p>
     <div className="comparison comparison-three">
       <div><span className="eyebrow">WITHOUT THE EXTRA LAYER</span><h3>The agent works from the sources</h3><p>It searches the code and available documentation, works out what matters for the task, and makes the change. This represents a capable agent doing the work directly.</p></div>
       <div><span className="eyebrow">WITH PREPARED GUIDANCE</span><h3>The agent receives the rules</h3><p>The layer has examined the same sources and written guidance before the task begins. The agent receives that guidance and works with it, without an interactive check by the layer.</p></div>
@@ -98,7 +99,7 @@ export default function Experiment(){return <Shell active="experiment">
         <caption className="sr-only">What the reviewer checks in each group</caption>
         <thead><tr><th scope="col">Group</th><th scope="col">What the reviewer checks</th></tr></thead>
         <tbody>
-          <tr><th scope="row">Sources only</th><td>The plan and code against the available code and documentation.</td></tr>
+          <tr><th scope="row">Sources only</th><td>The plan and code against the available sources, including the project’s actual AGENTS.md instructions.</td></tr>
           <tr><th scope="row">Prepared guidance</th><td>The same, with the prepared guidance also available.</td></tr>
           <tr><th scope="row">Guidance and interaction</th><td>The same, plus targeted questions about which rules apply, how the proposed change follows them, and whether an exception is justified.</td></tr>
         </tbody>
@@ -108,5 +109,6 @@ export default function Experiment(){return <Shell active="experiment">
   </section>
 
   <ExperimentDetails/>
+  <TechnicalSetup/>
   <div className="route-footer"><span>For the work completed so far and the decisions still ahead.</span><PageLink href="/progress">Progress & findings <ArrowRight size={18}/></PageLink></div>
 </Shell>}

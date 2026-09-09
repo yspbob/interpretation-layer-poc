@@ -1,6 +1,6 @@
 import { sitePath } from './site-path';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
-import { DetailGroup, Disclosure, RepositoryCards, EvidenceExplorer, EvidenceDownloads } from './details';
+import { DetailGroup, Disclosure, RepositoryCards } from './details';
 import { PageLink } from './page-link';
 import { chapterUrl } from './ui';
 
@@ -15,9 +15,9 @@ export function ExperimentDetails(){return <>
         <div className="method-step-content">
           <p>For each backtest, case preparation records the task, the historical implementation and the guardrails that applied to that work. Before an agent attempts it, the assessment establishes the required behaviour, relevant rules and legitimate exceptions. The historical solution and its assessment stay outside the agent’s workspace.</p>
           <DetailGroup><Disclosure id="choose-case" title="How are tasks selected and assessment criteria established?">
-            <p>Each case starts from a published requirement or decision, with its scope checked against the implementation. The assessment must explain any disagreement between the rules and historical code, including legitimate exceptions. Neither is automatically treated as correct.</p>
-            <p>Each case needs a valid solution and a deliberately incorrect change, with tests that distinguish them. It also needs a legitimate exception or alternative so the scoring does not demand one particular implementation. If the evidence cannot settle the answer, that part of the case remains unresolved.</p>
-            <p>The candidate projects are NetBox, Wagtail, Paperless-ngx and HTTPX. They offer different kinds of engineering decisions, but all four use Python and three use Django. They are not a representative sample of all software projects.</p>
+            <p><strong>Start with the evidence.</strong> Each case uses a published requirement or decision. Its scope is checked against the code, and any disagreement is recorded. Neither the documentation nor the implementation is assumed to be correct.</p>
+            <p><strong>Check that the assessment can tell the difference.</strong> Each case includes:</p><ul className="plain-list"><li>A valid solution.</li><li>A deliberately incorrect change.</li><li>A legitimate exception or alternative.</li></ul><p>Tests must distinguish these outcomes. Where the evidence cannot settle a judgement, it remains unresolved.</p>
+            <p><strong>Keep the coverage in perspective.</strong> The candidate projects are NetBox, Wagtail, Paperless-ngx and HTTPX. They cover different engineering decisions, but all use Python and three use Django. Findings from these projects cannot represent all software development.</p>
             <RepositoryCards/>
           </Disclosure></DetailGroup>
         </div>
@@ -29,24 +29,16 @@ export function ExperimentDetails(){return <>
           <p>The layer examines the allowed project material without seeing the change task. It drafts guidance, and a separate verifier checks whether the evidence supports it. The resulting guide is saved before the task is revealed and stays unchanged during the run.</p>
           <DetailGroup>
             <Disclosure id="allowed-evidence" title="Does the layer read the documentation, or work the rule out from code?">
-              <p>The experiment tests those two abilities separately.</p>
+              <p>The experiment tests those two abilities separately. Each project’s actual <code>AGENTS.md</code> files, including applicable directory-specific instructions, are supplied from the starting revision to all three groups. If those instructions state a tested rule, the case is classified as using documented guidance. Missing files are recorded as absent.</p>
               <ul className="plain-list">
-                <li><strong>Working it out from code.</strong> The input pack excludes documents and other statements that reveal the target rule. The layer has to use the remaining code evidence, or acknowledge that the rule cannot be established.</li>
+                <li><strong>Working it out from code.</strong> Eligible cases do not state the target rule in their applicable AGENTS.md instructions. Other narrative disclosures are withheld consistently across the matched groups. The layer uses the remaining code evidence, or acknowledges that the rule cannot be established.</li>
                 <li><strong>Using documentation.</strong> The declared documents are available. The assessment checks whether the layer understands their scope, preserves exceptions and notices disagreements with the code.</li>
               </ul>
               <p>Each claim must say where it came from. A rule copied from a guide will not be reported as a rule inferred from code. The verifier uses only the material allowed in that test; it cannot consult the hidden assessment to repair the guide.</p>
               <p>Missing or incorrect guidance remains part of the result. The assessment also covers unsupported claims and whether the layer recognises uncertainty. The website’s examples are illustrations, not the guidance supplied to an experimental agent.</p>
             </Disclosure>
-            <Disclosure id="isolation" title="How will agents stay within their boundaries?">
-              <p><strong>Containment is a requirement before model runs. It has not yet been implemented or validated.</strong> The design requires isolation for every role and run, with fresh conversations, fixed input packs and private working storage. Agents must not share writable caches, workspaces or access to one another’s history.</p>
-              <p>The Hugging Face incident shows why separate conversations are insufficient. Agents used a shared package service as an unauthorised message board and reached the internet through it. <a className="text-link" href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/" target="_blank" rel="noreferrer">Read OpenAI’s account</a> and <a className="text-link" href="https://huggingface.co/blog/agent-intrusion-technical-timeline" target="_blank" rel="noreferrer">Hugging Face’s technical account</a>.</p>
-              <ul className="plain-list">
-                <li><strong>Control every exchange.</strong> An external controller must validate permitted messages between roles. Other network access must be blocked, including indirect routes through supporting services.</li>
-                <li><strong>Prepare dependencies beforehand.</strong> Runs receive fixed, read-only dependencies and no live package service. A required environment change stops the attempt for review.</li>
-                <li><strong>Protect assessment and enforcement.</strong> Historical solutions and final assessment material stay outside the coding and checking environments. The final judge receives only its assessment pack. Candidate code runs separately from the scorer; credentials, permissions, logs and stop controls remain outside agent-writable environments.</li>
-                <li><strong>Test attempted boundary crossings.</strong> Before model calls, controlled tests must cover unauthorised communication, answer access, indirect internet access and attempts to alter enforcement. An external supervisor must stop affected runs and preserve evidence if containment fails.</li>
-              </ul>
-              <p>The current file-broker checks do not establish containment. The runner must record its actual boundaries and test results. The claim will be protection against specified, tested escape paths, with remaining limitations stated; absolute prevention cannot be guaranteed.</p>
+            <Disclosure id="isolation" title="How is withheld assessment material kept out of the inputs?">
+              <p>Each role receives only its permitted input pack. Historical solutions and final assessment material stay outside coding and runtime-review environments. The <a className="text-link" href="#technical-setup">technical setup</a> explains the execution boundaries and permitted communication routes.</p>
               <p>The input audit must also look for disclosures in comments, tests, examples and dependencies. Removing the obvious guide does not establish that its contents have been withheld.</p>
               <p>Public code may already be familiar to a model from training. Some tests will therefore use unpublished changes that alter the correct rule. The assessment checks whether the answer follows the changed code. Harmless renaming should leave the interpretation unchanged. These controls can make the test inspectable; they cannot prove that the original project was absent from training data.</p>
             </Disclosure>
@@ -66,10 +58,11 @@ export function ExperimentDetails(){return <>
           <p>All three groups get ordinary review and opportunities to correct mistakes. The interactive group also receives targeted questions about how it applies the rules. The required review points and correction limits are the same across groups, and all reviewing counts towards the agreed budget.</p>
           <DetailGroup><Disclosure id="during-work" title="What does the checker do while the agent works?">
             <p><strong>Before the first edit,</strong> the interactive agent consults the layer and submits a plan. It explains what it will reuse, what it will change and which rules or exceptions apply. A separate checker assesses whether those proposed actions follow the evidence.</p>
+            <p><strong>During implementation,</strong> the runner checks incoming code submissions against the approved plan. At the configured review points, and whenever a material change of approach is detected, it pauses further work and sends the plan and changes to the checker. The checker assesses the applicable rules and exceptions while the task is still in progress, so a blocking issue can be corrected before work continues.</p>
             <p><strong>After a check,</strong> the agent receives “proceed”, “revise” or “unresolved”, with a reason. The proposed limit is two correction rounds at each required review point. An unresolved decision, or failure to satisfy the check within that allowance, stops the attempt. Unfinished work remains in the assessment.</p>
-            <p><strong>If the approach changes,</strong> a new dependency, a different component to reuse or a new claimed exception requires an updated plan. The program controlling the run also compares submitted code with that plan. Tests must establish that it catches undeclared changes of approach.</p>
+            <p><strong>If the approach changes,</strong> a new dependency, a different component to reuse or a new claimed exception requires an updated plan. Tests must establish that the runner catches undeclared changes too. These in-run checks are triggered by submissions and detected changes; the checkpoint schedule and limits are defined before the run.</p>
             <p>The checker can see the task, plan, changes and permitted evidence. It cannot see the hidden answers or the coding agent’s private reasoning. It cannot rewrite the frozen guidance. Questions needing an owner’s authority remain unresolved; the procedure does not permit an unrecorded human answer during a run.</p>
-            <p>Reviewers in the other groups can still identify mistakes and request corrections. They use their group’s sources and, where supplied, guidance. The intended difference is the structured consultation and targeted questions, not the mere presence of a reviewer. Exact instructions and budgets still need to be specified and tested.</p>
+            <p>Reviewers in the other groups can still identify mistakes and request corrections. They use their group’s sources and, where supplied, guidance. The intended difference is the structured consultation and targeted questions, not the mere presence of a reviewer. Instructions and budgets are specified and tested before runs.</p>
           </Disclosure></DetailGroup>
         </div>
       </li>
@@ -82,20 +75,28 @@ export function ExperimentDetails(){return <>
             <li><strong>Task correctness:</strong> does the implementation deliver the required behaviour?</li>
             <li><strong>Guardrail compliance:</strong> does it follow the applicable, evidence-supported rules and legitimate exceptions?</li>
           </ul>
-          <p>If the historical code violates a guardrail and the agent avoids that violation while completing the task correctly, the agent receives credit for the improvement. A different valid solution is not penalised for differing from the original. Exact points and weighting still need to be defined.</p>
-          <p>The scoring rules are established independently of the layer’s generated guidance, before the comparison. A rule invented by the layer cannot earn it credit. The assessment also records unnecessary objections, unfinished attempts and the cost of preparation and review.</p>
+          <p>If the historical code violates a guardrail and the agent avoids that violation while completing the task correctly, the agent receives credit for the improvement. A different valid solution is not penalised for differing from the original. Points and weighting are fixed before scored runs.</p>
+          <p>Before any agent runs, each case has an assessment based on the project’s evidence. It defines what the task must achieve and which project rules apply. Every group and the historical implementation are assessed against those same criteria.</p>
+          <p>The layer’s generated guidance is checked against that evidence too. A new rule proposed by the layer does not automatically become a requirement used to score the work.</p>
+          <p>Separate records show whether reviews raised unnecessary objections, whether the task was finished, and how much preparation and review cost.</p>
           <p>The first comparison tests whether prepared guidance helps. Comparing the two groups that receive guidance tests whether interaction adds a further benefit.</p>
           <DetailGroup>
             <Disclosure id="reliable-judge" title="How will the judge’s reliability be established?">
-              <p>Scoring instructions are first developed using examples whose answers have been established independently. The instructions are then frozen and the judge is tested on different decision families. Examples used to improve it cannot also serve as independent validation.</p>
-              <p>It must catch convincing but incorrect work, accept valid exceptions and recognise when evidence is insufficient. Validation measures errors it accepts and correct solutions it rejects separately. It also tests whether repeated grading or irrelevant changes in presentation alter its verdict. Group labels and model names are removed from final code scoring; interaction records are assessed separately.</p>
-              <p>Acceptable error rates and the amount of validation evidence must be fixed before validation results are seen. The four simple calibration records in the inventory are only starting material. Pilot scores will be audited, and any revised judge must pass validation again before all affected groups are rescored consistently.</p>
-              <p>The verifier, runtime checker and final judge each need to pass tests for their own role. Two AI models agreeing does not establish that an assessment is correct. Without independent expertise to settle an ambiguous case, the judgement must rest on reproducible behaviour or clear published evidence, or remain unresolved.</p>
-              <p>The complete proposed qualification procedure is in section 9A of the <a className="text-link" href={sitePath("/evidence/working-poc-plan.md")} download>working plan</a>. It has not yet been carried out.</p>
+              <p>Each judging role—the verifier, runtime checker and final judge—must pass its own reliability test.</p>
+              <ol className="plain-list">
+                <li><strong>Develop the instructions.</strong> Use examples whose expected assessments are supported by project requirements, documented rules and reproducible tests. The historical implementation is evidence to examine, and may itself contain mistakes; it does not define the correct answer.</li>
+                <li><strong>Set the pass criteria in advance.</strong> Decide the acceptable error rates and how much validation evidence is needed before seeing the results.</li>
+                <li><strong>Test on fresh cases.</strong> Freeze the instructions, then test them on different kinds of project decisions. Examples used to improve the judge cannot also prove its reliability.</li>
+                <li><strong>Measure its mistakes.</strong> Count incorrect work it accepts and correct work it rejects separately. Check that it accepts valid exceptions and recognises insufficient evidence. Repeat grading and vary presentation to see whether irrelevant differences change its verdict.</li>
+              </ol>
+              <p>The judge does not see group labels or model names when scoring code. Review interactions are assessed separately.</p>
+              <p>The expected assessment must rest on reproducible behaviour or clear project evidence, with independent expertise where needed. Agreement between two AI models is not enough. If the evidence cannot settle a judgement, it remains unresolved.</p>
+              <p>Scores are audited during the pilot. If the judge changes, it must pass validation again, and every affected group is rescored using the revised version.</p>
+              <p>Section 9A of the <a className="text-link" href={sitePath("/evidence/working-poc-plan.md")} download>working plan</a> contains the full qualification procedure.</p>
             </Disclosure>
             <Disclosure id="interpret-results" title="What conclusions would the comparison support?">
               <p>Useful guidance must be supported by evidence, improve later work and justify its cost. The guidance itself also needs assessment, so a correct code change does not conceal unsupported rules. A separate small diagnostic supplies a known rule directly to check whether the task could benefit from correct guidance at all.</p>
-              <p>Several tasks may test the same underlying decision. The analysis must account for that relationship rather than count every variation or repeated attempt as independent evidence. The final number of cases and minimum worthwhile improvement remain to be chosen before the main trial.</p>
+              <p>Several tasks may test the same underlying decision. The analysis must account for that relationship rather than count every variation or repeated attempt as independent evidence. The number of cases and minimum worthwhile improvement are set before the main trial.</p>
               <p>A positive result would support the layer in the situations tested. It would not establish universal necessity, owner approval of new rules, adoption by a team or the value of keeping guidance current across an organisation. Inconclusive and negative results would also inform revisions to Chapter 4.</p>
               <a className="text-link" href={chapterUrl} target="_blank" rel="noreferrer">Read Chapter 4 in the public playbook <ArrowUpRight size={16}/></a>
             </Disclosure>
@@ -105,14 +106,10 @@ export function ExperimentDetails(){return <>
     </ol>
 
     <div className="method-preparation">
-      <h3>The procedure needs testing before its results can support conclusions</h3>
-      <p>Component contracts and one development case now exist, with scripted decisions and executable checks. Isolated role execution and containment testing are the next implementation task, followed by component validation on separate material and a small pilot. Those findings will inform the method and size of the main trial before it begins.</p>
-      <PageLink className="text-link" href="/progress">See the current step and what remains <ArrowRight size={16}/></PageLink>
+      <h3>Validation precedes the main trial</h3>
+      <p>Component validation and a small pilot test the procedure before its results support conclusions. Findings from the pilot inform the method and size of the main trial.</p>
+      <PageLink className="text-link" href="/progress">See preparation, decisions and results <ArrowRight size={16}/></PageLink>
     </div>
-
-    <DetailGroup><Disclosure id="method-records" title="Read the full plan or inspect the source evidence">
-      <p>The working plan records the proposed method, unresolved choices and changes to the design. The case library contains candidate material; it is not a finished benchmark.</p>
-      <EvidenceDownloads/><EvidenceExplorer/>
-    </Disclosure></DetailGroup>
+    <p className="caption">The <a className="text-link" href={sitePath("/evidence/working-poc-plan.md")} download>working experiment plan</a> records the full method and design decisions. The <PageLink className="text-link" href="/progress#evidence">evidence record and case library</PageLink> are on Progress &amp; findings.</p>
   </section>
 </>}
