@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-09.8**
+Plan ID: **pilot-draft-2026-09-09.9**
 Updated: **9 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -171,6 +171,8 @@ The following choices describe a working implementation direction, not a deploye
 ### 8C. Concrete execution design and two-machine continuity
 
 The [isolated runner design v0.1](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/isolated-runner-design-v0.1.md) specifies the proposed stack, threat model, preparation state, container restrictions, input/output contract, reset policy and qualification probes. It is an implementation design, not evidence of containment. The laptop has 32 GB RAM and the home PC has 64 GB; the home PC is not permanently available. Either machine should execute locally, with the laptop as the common resource baseline. The laptop's Windows Home edition rules out assuming the Windows Hyper-V role. VirtualBox compatibility with its actual Windows backend, and the home PC's capabilities, require checks before installation and execution.
+
+The deployment diagram and product table are available directly in The Experiment and in the linked design. The implementation selections are CPython 3.12 with asyncio/subprocess and unittest; Pydantic 2 for strict schemas; VBoxManage for VirtualBox control; pycdlib for input ISOs; pywin32 for named pipes, Windows access controls and separately stored model credentials; rootless Podman with crun, cgroup v2, seccomp and systemd user-scope delegation; and Git for Windows with Git Credential Manager. Explicit byte, duplicate-key, path and state checks complement schema validation. Windows Credential Manager holds host credentials. These are unimplemented selections, not a validated installed stack; exact package/image pins remain a provisioning gate. Provider/model IDs and the provider adapter remain open pending access, data-handling and budget decisions. No agent orchestration framework is selected for the initial runner.
 
 Run one worker VM at a time. Supply only allowlisted files on a read-only ISO and collect bounded structured output through a virtual serial port connected to a Windows named pipe. Disable all VM network adapters and host integration during execution. Run generated tools/code in rootless Podman inside the guest; model calls occur through the external Windows controller and provider gateway. No generated command executes on the Windows host. The serial interface and parser remain exposed boundaries requiring adversarial tests; this is not a claim of zero physical host interaction.
 

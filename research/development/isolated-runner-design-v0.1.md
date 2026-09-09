@@ -10,15 +10,69 @@ Use **VirtualBox, Ubuntu Server 24.04 LTS amd64 and rootless Podman** as the wor
 
 The laptop runs Windows 11 Home, so the design cannot assume the Windows Hyper-V role, which [Microsoft does not provide on Home](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-hyper-v). [VirtualBox supports Windows 11 x86-64 hosts](https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/installation.html). Its compatibility and performance with this laptop's active Windows hypervisor and Insider build must still be demonstrated. Do not disable Windows security features to make it work. Check the home PC's edition, architecture and virtualisation support separately. If either host cannot support the proposed boundary, revisit the design before running experiments there.
 
-| Part | Proposed implementation | Reason and qualification condition |
+## Deployment diagram
+
+The same layout is installed independently on each machine. Only one machine executes a complete comparison block at a time. The diagram shows access boundaries and interfaces; it is not a single drafting, usage and approval workflow.
+
+```mermaid
+flowchart TB
+  MODELS["Model provider<br/>Separate context and history per role<br/>Provider and model IDs to select"]
+  subgraph HOST["Active Windows machine: laptop or home PC"]
+    CTRL["CPython 3.12 controller and gateway<br/>asyncio + subprocess + Pydantic 2<br/>Credentials stay in Windows Credential Manager"]
+    RECORDS["Separate controller-owned stores<br/>Role packs, results and sealed assessment<br/>Git for Windows + GCM for verified saves"]
+    subgraph VM["Oracle VirtualBox 7.2: disposable VM"]
+      LAUNCH["Ubuntu Server 24.04 LTS amd64<br/>Python guest launcher<br/>No network adapters or host sharing"]
+      subgraph CONTAINER["Rootless Podman + crun"]
+        WORK["One role's tools or submitted code<br/>Private workspace + read-only image<br/>cgroup v2 + seccomp"]
+      end
+      LAUNCH --> WORK
+    end
+    CTRL <-->|"permitted records only"| RECORDS
+    CTRL -->|"pycdlib: read-only input ISO"| LAUNCH
+    CTRL -.->|"VBoxManage: VM lifecycle"| VM
+    WORK -->|"launcher serial output to pywin32 pipe receiver"| CTRL
+  end
+  MODELS <-->|"host-only model API; controlled role messages"| CTRL
+```
+
+The output arrow includes the guest launcher and Windows named-pipe receiver: code in the container cannot access the serial device directly. The receiver applies byte, schema, path and state checks before results enter the controller. GitHub is reached only by trusted host code, as shown separately below.
+
+```mermaid
+flowchart LR
+  LAPTOP["Laptop: 32 GB<br/>Local installation and credentials"]
+  PRIVATE["Private GitHub repository<br/>Sealed cases, confidential records<br/>and completed-block ledger"]
+  HOME["Home PC: 64 GB<br/>Local installation and credentials"]
+  PUBLIC["Public GitHub repository<br/>Reviewed project files and findings"]
+  LAPTOP <-->|"verified private save / pull"| PRIVATE
+  PRIVATE <-->|"verified private save / pull"| HOME
+  LAPTOP <-->|"public project sync"| PUBLIC
+  PUBLIC <-->|"public project sync"| HOME
+```
+
+**Read the nesting literally:** generated code runs inside a container, inside a disposable Linux VM. Model conversations run at the provider, outside that VM; the host controller controls their separate inputs and tool access. The guest has only the declared ISO and serial interfaces. Private GitHub storage is not mounted into it. Role-specific packs may contain only the assessment material that role is allowed to see.
+
+After an attempt ends, the controller constructs separate anonymised assessment inputs. Evaluation code uses a new guest; no judge feedback or hidden-test result is sent back to working agents. On switching machines, verified public/private commits and exact environment manifests travel; active VM state and credentials do not.
+
+## Product and tool selections
+
+These are the named tools for the proposed implementation. The selection does not mean the software is installed or the control has passed testing. Exact patch versions, package hashes and image digests must be locked during provisioning; do not substitute a floating `latest` image for that record.
+
+| Location / job | Product, library or command to use | Concrete responsibility |
 |---|---|---|
-| Host controller | Python, explicit state machine, Windows subprocess and named-pipe APIs | Builds on H04 while keeping dispatch, budgets and stops outside generated code. Never run model-provided commands in the Windows shell. |
-| Outer boundary | Patched VirtualBox 7.2 series, controlled through VBoxManage | A disposable guest separates workload code from the everyday host. Record the actual hypervisor backend and test it on each machine. |
-| Guest | Minimal Ubuntu Server 24.04 LTS amd64 | Stable Linux base for the Python cases; [standard maintenance runs to May 2029](https://ubuntu.com/about/release-cycle). Pin image, installed package set and kernel. |
-| Inner execution | Rootless Podman, cgroup v2 and its recorded OCI runtime | Disposable restricted containers inside the guest; no host container daemon socket or privileged fallback. |
-| Inputs | Read-only ISO built by Python using pycdlib | Contains only the job's allowlisted files and manifest; no host directory is shared. [pycdlib creates ISO images](https://clalancette.github.io/pycdlib/). |
-| Outputs | Virtual serial device connected to a Windows named pipe; bounded JSON framing | Supports collection without a guest network adapter. The host parser is a security boundary, not a general command service. |
-| Confidential records | Separate private GitHub repository, outside all role packs | User-selected storage for small sealed fixtures and confidential run records. Credentials remain in each machine's local credential store. |
+| Windows controller | **CPython 3.12**, standard-library **asyncio**, **subprocess**, **json**, **hashlib** and **unittest** | Explicit state machine, fixed-argument process invocation, bounded record collection, SHA-256 manifests and controller regression tests. Do not add an agent orchestration framework for the initial runner. |
+| Record schemas | **Pydantic 2** | Use strict field types and `extra="forbid"`. Reject duplicate JSON keys and enforce raw frame size before schema validation; enforce role/state/path rules separately. No schema library establishes containment or semantic correctness. |
+| Outer boundary | **Oracle VirtualBox 7.2** and **VBoxManage** | Prepare the golden guest; clone, configure, start, inspect and stop disposable VMs. Explicitly disable guest network adapters and host integration. |
+| Guest | **Ubuntu Server 24.04 LTS amd64** with its pinned kernel and package set | Minimal offline Linux base. A project-specific Python launcher receives the job and owns the serial endpoint; workload containers cannot access that device. |
+| Containers | **Podman**, rootless, with **crun** explicitly selected as the OCI runtime | Build images during preparation, load pinned images offline and create fresh restricted containers. Record the actual Podman/crun package versions; no Docker daemon or runtime socket is exposed. |
+| Linux enforcement | **cgroup v2**, **seccomp**, user namespaces and a delegated **systemd** user scope | Enforce CPU/memory/process caps and restricted system calls. Verify actual delegation and denials on the guest; fail if rootless resource enforcement is unavailable. |
+| Input images | **pycdlib**; VirtualBox read-only optical media | Build ISO9660 job images from permitted regular files and attach them before guest startup. No shared host folder is needed. |
+| Output transport | VirtualBox **virtual serial Host Pipe**, Windows **named pipes**, **pywin32** (`win32pipe`, `win32file`, `win32security`) | Create an account-restricted endpoint, receive bounded JSON frames and validate results before storing them. Test access controls, cancellation, malformed frames and floods. |
+| Model access | Project-specific Python gateway; **provider, model IDs and provider adapter still to select** | Send only role-specific histories and permitted inputs; record usage and reject unapproved tools/destinations. Select the external service after checking access, retention, model suitability and the authorised budget. This choice is not needed for the first model-free runner. |
+| Code assessment | Pinned project tests plus **Python** case probes; H04 uses **HTTPX MockTransport** and custom assertions | Run deterministic behavioural observations in the isolated guest. Use separately qualified model contexts for judgements requiring interpretation. These are different from controller regression tests. |
+| Git and records | **Git for Windows**, **GitHub**, **Git Credential Manager (GCM)**; JSON and SHA-256 | Public project history and separate private confidential records. The controller invokes Git; the guest does not. The private repository name and access have not yet been configured. |
+| Local credentials | **Windows Credential Manager**; GCM for Git and **pywin32 `win32cred`** for model secrets | Retrieve credentials only in trusted host code. Do not put secrets in job ISOs, Git, command arguments, logs or guest environment variables. |
+
+The product capabilities are documented by [Pydantic strict mode](https://docs.pydantic.dev/latest/concepts/strict_mode/) and [configuration](https://docs.pydantic.dev/latest/api/config/), [pywin32](https://pypi.org/project/pywin32/), [its named-pipe API](https://github.com/mhammond/pywin32/blob/main/win32/src/win32pipe.i), [its credential API](https://github.com/mhammond/pywin32/blob/main/win32/src/win32credmodule.cpp), [Podman](https://docs.podman.io/en/latest/markdown/podman.1.html), [crun](https://github.com/containers/crun/blob/main/crun.1.md) and [GCM's credential-store configuration](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md). These sources support the capabilities used in the design; they do not validate their combination here.
 
 Version families are design choices. Before provisioning, select maintained patch releases and record download provenance and checksums. Before execution, lock the installed versions, guest disk and OCI image digests, controller commit, protocol and configuration hash. An unfilled digest is a failed readiness gate. Do not claim independently rebuilt disks are identical without comparing them.
 
@@ -102,4 +156,4 @@ If the app or machine stops mid-block, keep the reservation and record it as int
 4. Repeat applicable probes on the second host and test a completed private-record handoff. Publish sanitised configuration and observed limitations, keeping sealed content private. No host is qualified by the other host's results alone.
 5. Only then select/freeze model access settings and authorised budgets, complete role-specific qualification fixtures and numerical acceptance limits, and satisfy working-plan section 9B before model calls or scored comparisons.
 
-No private repository has been created, runtime installed, VM launched or containment qualification performed by this design step. Model provider and SDK, exact release pins, transport implementation and its tests, private-repository setup, artifact distribution and numerical research settings remain open.
+No private repository has been created, runtime installed, VM launched or containment qualification performed by this design step. Model provider and provider adapter, exact release pins, transport implementation and its tests, private-repository setup, artifact distribution and numerical research settings remain open.

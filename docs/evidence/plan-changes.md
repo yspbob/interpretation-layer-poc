@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-09.8**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-09.9**. Status: working redesign, not a new ratified preregistration.
+
+## Concrete deployment diagram and product selections — 9 September 2026
+
+The user requested a diagram and exact tools in the document itself. The Experiment now replaces its abstract flow with a deployment diagram showing separate provider contexts, trusted Windows control, explicit ISO/serial interfaces, a Podman container nested inside the offline VirtualBox guest, separate assessment and two-repository continuity. The Markdown design includes a corresponding Mermaid diagram and an expanded product table.
+
+Section 8C names CPython 3.12, Pydantic 2, VBoxManage, pycdlib, pywin32, rootless Podman with crun, Linux enforcement controls, Git for Windows and Git Credential Manager, with concrete responsibilities and limits. Python unittest is selected for controller tests; H04 behaviour checks remain unchanged. The initial runner has no agent orchestration framework. Provider/model selection, exact installed pins and all platform qualification remain open. No dependency was installed and no experimental control or model run is claimed by these documentation changes.
 
 ## Isolated runner and alternating machines — 9 September 2026
 

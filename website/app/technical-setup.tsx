@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowLeftRight, ArrowDown } from 'lucide-react';
+import { RuntimeDiagram } from './runtime-diagram';
 import { DetailGroup, Disclosure } from './details';
 import { PageLink } from './page-link';
 
@@ -6,34 +6,28 @@ export function TechnicalSetup(){return <section className="section-block" id="t
   <div className="section-heading"><span className="section-no">05</span><div><span className="eyebrow">TECHNICAL SETUP</span><h2>How the components work together</h2></div></div>
   <p className="section-intro">A runner coordinates the experiment. It supplies each agent with its permitted inputs, passes review messages between roles, controls code execution and records the results. Agents receive separate working environments; the runner controls the connections between them.</p>
 
-  <figure className="technical-diagram" aria-labelledby="technical-diagram-caption">
-    <div className="technical-flow">
-      <div className="technical-node"><span className="eyebrow">INPUTS</span><h3>Prepared input packs</h3><p>Pinned source files, applicable project instructions and each role’s permitted task material.</p></div>
-      <ArrowRight className="technical-arrow" aria-hidden="true"/>
-      <div className="technical-node technical-controller"><span className="eyebrow">OUTSIDE AGENT CONTROL</span><h3>Runner and controller</h3><p>Dispatch inputs, validate exchanges, enforce checkpoints and stop decisions, and record activity.</p></div>
-      <ArrowLeftRight className="technical-arrow" aria-hidden="true"/>
-      <div className="technical-node"><span className="eyebrow">SEPARATE ENVIRONMENTS</span><h3>Agent roles and code execution</h3><p>Each role receives its own context and workspace. Generated code executes in a restricted test environment.</p></div>
-    </div>
-    <div className="technical-handoff"><ArrowDown aria-hidden="true"/><span>After the attempt stops: final artifacts and recorded observations pass to evaluation.</span></div>
-    <div className="technical-evaluation"><h3>Independent evaluation</h3><p>The evaluator receives the final code and separately held assessment criteria. Historical and agent implementations are assessed under the same rules. Final scores and hidden-test feedback do not return to the running agents.</p></div>
-    <figcaption id="technical-diagram-caption">Planned data flow. Arrows represent permitted transfers through the runner; they do not imply shared agent storage or unrestricted connections.</figcaption>
-  </figure>
+  <RuntimeDiagram/>
 
   <section className="technology-section" id="tools-technologies" aria-labelledby="tools-technologies-title">
     <h3 id="tools-technologies-title">Tools and technologies</h3>
-    <p>The experiment needs tools for coordination, model access, isolation, assessment and record keeping. The table records the proposed choices and the decisions still to make. The <PageLink className="text-link" href="/progress#prototype-tools">H04 prototype’s implemented tools</PageLink> are documented on Progress &amp; findings.</p>
+    <p>The experiment needs tools for coordination, model access, isolation, assessment and record keeping. The table names the products and libraries selected for the proposed implementation and identifies the remaining choices. The <PageLink className="text-link" href="/progress#prototype-tools">H04 prototype’s implemented tools</PageLink> are documented on Progress &amp; findings.</p>
     <table className="technology-table">
       <caption className="sr-only">Proposed technologies, their purpose and selection status</caption>
       <thead><tr><th scope="col">Component</th><th scope="col">Technology and reason</th><th scope="col">Choice</th></tr></thead>
       <tbody>
-        <tr><th scope="row">Runner</th><td><strong>Python with a project-specific controller.</strong> This would build on the H04 code for preparing inputs, tracking review states and collecting results. An orchestration framework would need a demonstrated benefit before being added.</td><td>Proposed</td></tr>
-        <tr><th scope="row">Agent access</th><td><strong>A model API or SDK behind the bounded gateway.</strong> The runner needs control of inputs, tool dispatch, usage records and stops. Provider, models, SDK and any agent framework must be selected against those requirements.</td><td>To select</td></tr>
-        <tr><th scope="row">Isolation</th><td><strong>VirtualBox, Ubuntu Server 24.04 LTS and rootless Podman.</strong> A disposable Linux VM contains the restricted code-execution containers. The guest has no network adapters or host-folder sharing during execution.</td><td>Proposed; requires testing</td></tr>
-        <tr><th scope="row">Assessment</th><td><strong>Python checks, the project’s relevant tests and case-specific probes.</strong> These measure observable behaviour. Separately qualified model assessments cover decisions that need interpretation. Each historical case supplies its own pinned test environment.</td><td>Proposed</td></tr>
-        <tr><th scope="row">Records</th><td><strong>JSON records, SHA-256 hashes and Git version history.</strong> These identify inputs, configurations and results. GitHub holds reviewed public material. A separate private GitHub repository holds sealed cases and confidential run records; credentials stay local to each machine.</td><td>Private storage chosen; setup pending</td></tr>
+        <tr><th scope="row">Controller</th><td><strong>CPython 3.12: asyncio and subprocess.</strong> Project code dispatches roles, enforces checkpoints and calls VBoxManage with fixed argument lists. No agent orchestration framework is included.</td><td>Chosen for implementation</td></tr>
+        <tr><th scope="row">Record validation</th><td><strong>Pydantic 2.</strong> Strict schemas reject unknown fields and wrong types. Separate controller checks enforce byte limits, path permissions, role identity and state transitions.</td><td>Chosen for implementation</td></tr>
+        <tr><th scope="row">Virtual machine</th><td><strong>Oracle VirtualBox 7.2 with VBoxManage.</strong> The controller creates a disposable clone, starts it and forcibly stops it when required. Host compatibility must be tested.</td><td>Chosen; compatibility gate</td></tr>
+        <tr><th scope="row">Guest system</th><td><strong>Ubuntu Server 24.04 LTS, amd64.</strong> A minimal Linux guest holds the launcher and preinstalled dependencies. All VM network adapters are disabled during execution.</td><td>Chosen for implementation</td></tr>
+        <tr><th scope="row">Containers</th><td><strong>Rootless Podman with crun.</strong> Linux cgroup v2 enforces resource limits; seccomp restricts system calls. Each tool batch has a private workspace, no network and no exposed runtime socket.</td><td>Chosen; enforcement to test</td></tr>
+        <tr><th scope="row">Input transfer</th><td><strong>pycdlib.</strong> Python builds an ISO containing only the permitted job pack. VirtualBox attaches it as a read-only optical disk; no host folder is shared.</td><td>Chosen for implementation</td></tr>
+        <tr><th scope="row">Output transfer</th><td><strong>VirtualBox virtual serial port + pywin32.</strong> A Windows named pipe carries bounded JSON results. pywin32 supplies Windows pipe and access-control APIs; the controller treats every result as untrusted.</td><td>Chosen; transport to test</td></tr>
+        <tr><th scope="row">Agent access</th><td><strong>Separate role contexts through a project-specific model gateway.</strong> Provider, model IDs and provider adapter remain open pending access, data-handling and budget decisions. Built-in browsing, execution and shared memory are excluded.</td><td>Provider and models to select</td></tr>
+        <tr><th scope="row">Assessment</th><td><strong>Python behaviour checks and pinned project tests.</strong> H04 uses HTTPX MockTransport and custom assertions. Runtime and controller regression tests will use Python unittest; model assessors require separate qualification.</td><td>H04 checks exist; full suite to build</td></tr>
+        <tr><th scope="row">Records and sign-in</th><td><strong>JSON, SHA-256, Git for Windows and Git Credential Manager.</strong> GitHub holds separate public and private repositories. Windows Credential Manager keeps Git credentials local; pywin32’s win32cred API will read separately stored model credentials.</td><td>Private repository and runner storage setup pending</td></tr>
       </tbody>
     </table>
-    <p className="caption">The proposed stack and interfaces must pass compatibility and boundary tests. Exact releases are pinned during setup; model settings are fixed before qualification. The working plan and each run’s manifest record exact versions, dependency pins, configuration and reproduction commands.</p>
+    <p className="caption">The proposed stack and interfaces must pass compatibility and boundary tests. The listed product names and major versions are design selections, not claims of installed software. Exact patch versions and image digests are locked after compatibility checks and before execution; model settings are fixed before qualification. The working plan and each run’s manifest record exact versions, dependency pins, configuration and reproduction commands.</p>
   </section>
 
   <section className="technology-section" id="containers-and-machines" aria-labelledby="containers-and-machines-title">
