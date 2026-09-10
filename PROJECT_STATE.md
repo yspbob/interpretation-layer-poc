@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 9 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 10 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -113,6 +113,16 @@ The user is ending this session and moving to another machine. Save this whole b
 Verification: application type/lint checks, static build and both routes’ asset checks passed. Browser checks at 1280, 768 and 375 pixels verified the explicit scope limitation, optional-variant wording, navigation between scope and progress, fragment links and revision .11 download, without page errors or horizontal overflow. The scope notice was visually inspected. Plan/download consistency and diff checks passed. Both explanation and progress disclose the claim limitation and the reason private variants are deferred. Existing case inventory, H04 source pins and recorded results are unchanged.
 
 ## Next substantive task
+
+### Implementation takeaways and banked discussion — 10 September 2026
+
+The user requested a cumulative record of takeaways to inform practical implementation. [Implementation takeaways](research/implementation-takeaways.md) now records six entries with source, evidence/decision status, implications, limitations and next actions. Maintain it during ordinary work; distinguish planning insights from experimentally supported findings and preserve negative or inconclusive observations too. The user explicitly requests reasoned pushback when we disagree.
+
+The current banked batch covers break-even across distinct uses of a guidance version, economic signals for maintenance review, a production dashboard supporting human decisions, explicit production-owner versus POC-verifier wording, a separate in-process validation step in the usage block, and two agreed familiarity probes at repository/case selection. Individual-rule ROI attribution remains uncertain; prefer guidance-version or group-level analysis and do not retire mandatory obligations based only on time savings. Familiarity probes are agreed but not specified or run. Production dashboard and maintenance remain outside the frozen-guide pilot.
+
+This update records the discussion and maintenance instructions only. The working plan remains revision .11; its proposed amendments and the website changes await an explicit application/release request. No website rebuild, model call or runtime implementation is included. Checked the record against the discussion and existing scope, local document links and the final diff. The substantive implementation task below remains unchanged.
+
+### Implementation sequence
 
 Review gateway/evaluation/tracing choices against the playbook before building custom platform infrastructure. Check and provision the proposed VirtualBox/Ubuntu/Podman stack on this laptop without weakening Windows security; pin the actual guest/runtime images and validate ISO/serial transport with no models. Then implement a model-free isolated role runner: validate structured input/output records, dispatch immutable allowlisted packs into fresh restricted processes/containers, implement and test the section 8 containment requirements, including cross-role/cross-run and indirect network denials, and enforce initial, changed-plan and final checkpoints with terminal stops. Use H04 as the regression case. Then prepare distinct qualification families, including improvements over flawed historical implementations and behavioural regressions disguised as compliance gains, and fix coverage, scoring points/weights, error limits, models and budgets before authorised qualification calls.
 
