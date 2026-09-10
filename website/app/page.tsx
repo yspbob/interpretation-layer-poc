@@ -5,6 +5,8 @@ import { Shell, chapterUrl } from './ui';
 import { DetailGroup, Disclosure, Examples } from './details';
 import { ExperimentDetails } from './experiment-details';
 import { TechnicalSetup } from './technical-setup';
+import { Economics } from './economics';
+import { ProductionDifference } from './production-difference';
 
 export const dynamic = 'force-static';
 export default function Experiment(){return <Shell active="experiment">
@@ -38,7 +40,7 @@ export default function Experiment(){return <Shell active="experiment">
 
   <section className="section-block">
     <div className="section-heading"><span className="section-no">02</span><div><span className="eyebrow">THE IDEA BEHIND THE LAYER</span><h2>Turn project evidence into guidance for later work</h2></div></div>
-    <p className="section-intro section-intro-wide">The layer connects two cycles: one establishes the guidance; the other uses it during engineering work. Drafting and approval happen before that guidance can be used as an approved decision, but they are not repeated for every task.</p>
+    <p className="section-intro section-intro-wide">The production proposal has two cycles. First, the interpretation layer drafts guidance, checks its evidence and sends it for owner review. Agents then reuse the released version across tasks. Later changes can prompt another review; preparing the guidance is not repeated for every coding task. The notes below explain how the POC simplifies this process.</p>
     <div className="guidance-cycles" id="guidance-cycles">
       <section className="guidance-cycle" aria-labelledby="preparation-cycle-title">
         <span className="eyebrow">DRAFTING &amp; APPROVAL CYCLE</span>
@@ -46,15 +48,15 @@ export default function Experiment(){return <Shell active="experiment">
         <ol className="cycle-steps">
           <li><h4>Find the evidence</h4><p>Read the relevant code, documentation and recorded decisions, including exceptions and conflicting examples.</p></li>
           <li><h4>Draft and verify the guidance</h4><p>Explain each proposed rule, its scope and its evidence. Check support and contradictions before owner review.</p></li>
-          <li><h4>Review and release a version</h4><p>The responsible owner approves, rejects or requests changes. Only approved decisions are released as approved guidance.</p></li>
+          <li><h4>Review and release a version</h4><p>In production, the responsible owner approves the proposed guidance, rejects it or asks for changes. Only approved decisions are released as authoritative guidance.</p></li>
         </ol>
         <p className="cycle-repeat"><RefreshCw size={17} aria-hidden="true"/><span>Review can send a draft back for revision before a version is released.</span></p>
-        <p className="cycle-timing"><strong>Initially:</strong> establish the baseline.<br/><strong>When evidence or decisions change:</strong> recheck affected guidance and retain, revise or retire it through review.</p>
+        <p className="cycle-timing"><strong>In this POC:</strong> there is no responsible project owner. The verifier checks whether the evidence supports each claim, and accepted claims form the guide. This does not make them owner-approved rules. The guide is prepared before the coding tasks and stays unchanged during their comparison.</p>
       </section>
       <div className="guidance-connection">
         <ArrowRight className="guidance-connection-arrow" size={28} aria-hidden="true"/>
-        <strong>Approved guidance</strong>
-        <p>A version with its evidence, scope and exceptions.</p>
+        <strong>A released guidance version</strong>
+        <p>With evidence, scope and exceptions. Owner-approved in production; checked for evidence support in this POC.</p>
         <span>The same version can support many tasks.</span>
       </div>
       <section className="guidance-cycle guidance-cycle-use" aria-labelledby="usage-cycle-title">
@@ -62,15 +64,22 @@ export default function Experiment(){return <Shell active="experiment">
         <h3 id="usage-cycle-title">Apply the guidance to each task</h3>
         <ol className="cycle-steps">
           <li><h4>Consult and plan</h4><p>Retrieve the relevant guidance. Identify what can be reused, what constrains the change and which exceptions may apply.</p></li>
-          <li><h4>Check and carry out the approach</h4><p>Review the plan against the guidance, make the change and recheck material changes of approach.</p></li>
+          <li><h4>Check the plan</h4><p>Review the proposed approach against the guidance and resolve blocking issues before editing.</p></li>
+          <li><h4>Implement and check during work</h4><p>The agent can ask follow-up questions. At defined checkpoints and when the approach changes, the checker reviews the work so far and can require an explanation or correction before it continues.</p></li>
           <li><h4>Check the resulting work</h4><p>Assess the change against the relevant decisions and task requirements. Record objections and unresolved questions.</p></li>
         </ol>
         <p className="cycle-repeat"><RefreshCw size={17} aria-hidden="true"/><span>Objections can send the plan or code back for revision, or stop the attempt.</span></p>
-        <p className="cycle-timing"><strong>For each task:</strong> use the applicable guidance without reopening every approved decision.</p>
+        <p className="cycle-timing"><strong>In this POC:</strong> all groups receive review at the required checkpoints. The interactive group also receives structured questions about the guidance. A necessary unresolved decision stops the attempt; no owner is available to settle it. These are planned checks, not continuous monitoring of every action.</p>
       </section>
-      <div className="guidance-feedback"><CornerUpLeft size={21} aria-hidden="true"/><p><strong>New evidence can prompt a guidance review.</strong> Work may expose an outdated rule, a conflict or an unrecorded exception. Send that evidence back to the drafting and approval cycle; it does not automatically change an approved decision.</p></div>
+      <div className="guidance-feedback"><CornerUpLeft size={21} aria-hidden="true"/><p><strong>New evidence can prompt a guidance review.</strong> Work may expose an outdated rule, a conflict or an unrecorded exception. In production, that evidence goes back for review; it does not automatically change an approved decision. Reviews could run nightly, with earlier review of consequential changes. That cadence is a proposal. This POC records the issue but keeps the guide unchanged.</p></div>
     </div>
-    <div className="scope-note" id="pilot-scope"><span>What this POC can test</span><div><p>The first POC is designed as a self-contained experiment to minimise dependencies on project maintainers, organisational approvals and ongoing operational involvement. The first pilot uses real historical changes with published requirements or documented obligations and reproducible checks. Its question is whether guidance and checking help on these evidence-backed public-project tasks.</p><p><strong>Prior familiarity remains a limitation.</strong> A model may already know the public code. Matched models, tasks and budgets support a comparison of the methods, but do not prove that guidance was inferred entirely from the supplied evidence. Private changes that alter a rule are an optional later extension; they are not required for this first pilot.</p><p>This limits the claim: evidence verification does not establish owner approval, and a fixed guidance version does not test ongoing maintenance. Later iterations could involve project owners and examine maintenance if these are needed to answer the remaining questions.</p><p>The diagram above describes the full proposal. This pilot freezes guidance before each matched comparison; feedback from final evaluation cannot be used to repair it during a run.</p></div></div>
+    <div className="scope-note" id="pilot-scope"><span>What this POC can test</span><div><p>The first POC uses changes previously made in public projects. Each selected task needs requirements supported by project records and tests that can be repeated. This lets the technical steps be examined without asking maintainers to approve new rules or take part in each run.</p><p><strong>Prior familiarity remains a limitation.</strong> A model may already know the public code. Using the same models, tasks and budgets makes the methods comparable, but cannot prove that an agent worked out a rule solely from the files it received. Separate familiarity checks will look for recalled project details and historical fixes before the pilot. Private changes that alter a rule are an optional later extension; they are not required for this first pilot.</p><p>This limits the claim: evidence verification does not establish owner approval, and a fixed guidance version does not test ongoing maintenance. Later iterations could involve project owners and examine maintenance if these are needed to answer the remaining questions.</p><p>The diagram above describes the full proposal. This pilot prepares a guide for a defined code version and set of permitted sources, then reuses it across the associated tasks. It is not one guide for every repository or historical version. Results from final evaluation cannot be used to repair it during that comparison.</p></div></div>
+    <DetailGroup><Disclosure id="production-scope" title="Where does this POC differ from production?" summary="Owner approval, repeated use, maintenance and the way success is measured.">
+      <p>The experiment tests a limited part of the production proposal. It checks evidence-supported guidance and its use on historical tasks, without a project owner certifying it. Guidance remains fixed during each comparison, so the pilot does not test whether updates keep it correct over time.</p>
+      <p>Production would apply the layer to current engineering work. This POC instead repeats the same task under three conditions, with restricted inputs, matched review rules and independent assessment after each attempt. These controls help compare the methods; they are not a prescription for every production workflow.</p>
+      <p>The first pilot also uses public projects and may encounter knowledge a model already has. Familiarity probes can find signs of recall, but cannot certify that a project is unseen. Its cost analysis estimates the return from reusing a fixed guide, not the full economics of a production service.</p>
+      <p>The relevant sections below explain each difference where it affects the procedure. <PageLink className="text-link" href="/progress">Progress &amp; findings</PageLink> shows which parts are built or tested.</p>
+    </Disclosure></DetailGroup>
     <p className="caption">In this POC, all three groups receive review. The <a className="text-link" href="#during-work">step-by-step method</a> explains the checks before editing, during implementation and at final submission.</p>
   </section>
 
@@ -96,10 +105,9 @@ export default function Experiment(){return <Shell active="experiment">
       </table>
       <p>This tests whether structured questioning improves the result beyond an ordinary review with guidance available. Every group has the same overall method budget. Preparing guidance uses part of the budget for the groups that receive it; all coding, consultation and review also count.</p>
     </div>
-    <DetailGroup><Disclosure id="fair-comparison" title="How are time, cost and preparation kept comparable?">
-      <p>Preparing guidance has a cost before coding begins. Each guidance group is charged that cost against its total allowance, leaving the remainder for the task and its reviews. The sources-only group uses its allowance directly. Exact limits are fixed before runs.</p>
-      <p>If several tasks share a guide, the preparation cost is divided across a task set declared in advance, including failed attempts. Reports show both the full cost of first use and the cost under that reuse assumption. Final scoring and building the research fixtures are recorded separately as study costs.</p>
-      <p>Matched attempts use the same coding model, tools, source revision and review-model settings. Their execution order is randomised or balanced, with fresh state for each attempt. The comparison tests the required consultation procedure as a whole; ordinary reviewers are still allowed to ask useful questions.</p>
+    <ProductionDifference production="A team would use the level of assistance and review appropriate to its work. There would be no need to repeat every change three ways." poc="The same task is attempted with sources alone, with prepared guidance, and with guidance plus structured interaction. Review rules and budgets are matched so that extra review is not mistaken for a benefit of the layer." limit="This tests the selected procedures under controlled conditions. It does not establish how teams would adopt them or which review policy suits every organisation."/>
+    <DetailGroup><Disclosure id="fair-comparison" title="What does the layer cost, and when could it pay for itself?">
+      <Economics/>
     </Disclosure></DetailGroup>
   </section>
 

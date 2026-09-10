@@ -4,7 +4,7 @@ export function RuntimeOverview(){return <>
     <p>The experiment has two connected activities: preparing guidance and using it on engineering tasks. Independent assessment examines the resulting work separately. The experiment runner coordinates these activities and enforces their boundaries.</p>
     <div className="runtime-process-stage">
       <span className="eyebrow">PREPARATION · BEFORE TASK WORK</span><h4>Prepare and freeze the guidance</h4>
-      <p>The runner supplies the drafter with permitted project evidence. A separate verifier checks the proposed claims, and supported claims form a versioned guide. This is evidence-based verification, without project-owner certification. The same frozen guide goes to GUIDE and INTERACT for the declared set of tasks; DIRECT works from the permitted sources and project instructions.</p>
+      <p>The runner supplies the drafter with permitted project evidence. A separate verifier checks the proposed claims, and supported claims form a versioned guide. This is evidence-based verification, without project-owner certification. The two groups using guidance receive this same saved guide for the tasks assigned to it. The sources-only group receives the permitted project files and instructions.</p>
     </div>
     <div className="runtime-process-stage">
       <span className="eyebrow">TASK USE · REPEATED FOR EACH COMPARISON GROUP</span><h4>Plan, review and carry out the change</h4>
@@ -14,7 +14,7 @@ export function RuntimeOverview(){return <>
     <div className="runtime-process-stage">
       <span className="eyebrow">INDEPENDENT ASSESSMENT · OUTSIDE THE LIVE TASK CYCLE</span><h4>Assess the work and preserve the record</h4>
       <p>After an attempt stops, separate assessment roles examine its code and review decisions. The frozen guide is assessed independently of the verifier that admitted it. Code assessment checks task correctness and applicable guardrails, using the same criteria for agent and historical implementations. Hidden assessment feedback does not return to the working agents.</p>
-      <p>The runner preserves outcomes and costs, including failed and unfinished attempts. A complete DIRECT, GUIDE and INTERACT comparison block stays on one machine. Its private records must be saved and verified before work continues on the other machine.</p>
+      <p>The runner preserves outcomes and costs, including failed and unfinished attempts. All three methods for a matched task and repeat are run on the same machine. Its private records must be saved and verified before work continues on the other machine.</p>
     </div>
   </section>
   <figure className="execution-tree" id="execution-tree" aria-labelledby="execution-tree-title execution-tree-caption">

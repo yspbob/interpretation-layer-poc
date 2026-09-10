@@ -2,11 +2,13 @@ import { RuntimeDiagram } from './runtime-diagram';
 import { RuntimeOverview } from './runtime-overview';
 import { DetailGroup, Disclosure } from './details';
 import { PageLink } from './page-link';
+import { ProductionDifference } from './production-difference';
 
 export function TechnicalSetup(){return <section className="section-block" id="technical-setup">
   <div className="section-heading"><span className="section-no">05</span><div><span className="eyebrow">TECHNICAL SETUP</span><h2>How the components work together</h2></div></div>
   <p className="section-intro">The experiment runner is the Python controller that coordinates the experiment. It supplies each agent with its permitted inputs, passes review messages between roles, controls code execution and records the results. Agents receive separate working environments; the runner controls the connections between them.</p>
 
+  <ProductionDifference production="A deployed layer would need controlled access to current project systems, organisational permissions and approved guidance. The exact integrations and isolation design would depend on that environment." poc="The proposed runner uses isolated roles, an offline VM and containers, restricted file transfers and hidden assessment records to control this experiment. Separate model sessions keep probe and evaluation material out of coding attempts." limit="The selected research setup is not a production deployment recommendation. Passing its boundary tests would establish only the protections actually tested, not general safety or readiness for organisational use."/>
   <RuntimeOverview/>
 
   <RuntimeDiagram/>
@@ -54,7 +56,7 @@ export function TechnicalSetup(){return <section className="section-block" id="t
         <li><strong>Drafter and verifier:</strong> the permitted project evidence and instructions. The verifier also receives the proposed claims. Neither receives the later change task or final assessment.</li>
         <li><strong>Coder and reviewer:</strong> the task, permitted sources and applicable project instructions. GUIDE and INTERACT also receive the same frozen generated guidance. Reviewers receive the submitted plan and changes; they do not receive the coder’s private reasoning.</li>
         <li><strong>Assessment roles:</strong> a guidance assessor checks the frozen guide against separately prepared evidence; an intervention assessor checks review decisions against what was knowable at the time. These records stay outside the live roles.</li>
-        <li><strong>Final code judge:</strong> the code to assess, task requirements, guardrail criteria and independently produced test observations. Origin, treatment and model labels are withheld for individual code scoring.</li>
+        <li><strong>Final code judge:</strong> the code to assess, task requirements, guardrail criteria and independently produced test observations. The judge is not told whether the code came from a historical change or an agent, which comparison group produced it, or which model was used.</li>
       </ul>
       <p>The project’s actual <code>AGENTS.md</code> files, including applicable directory-specific instructions, are taken from the backtest’s starting revision. The same applicable files are supplied across all three groups. Their absence is recorded rather than filled with invented instructions. If they state a tested rule, that case is classified as using documented guidance.</p>
     </Disclosure>
@@ -77,7 +79,7 @@ export function TechnicalSetup(){return <section className="section-block" id="t
       <p><strong>Proposed implementation:</strong> VirtualBox provides the outer VM boundary, with rootless Podman containers inside an Ubuntu guest. Read-only input images and bounded serial output replace shared folders and guest networking. Hypervisor, guest launcher and host parser vulnerabilities remain possible; the containment claim must state the tested paths and remaining limits.</p>
     </Disclosure>
     <Disclosure id="technical-records" title="What makes a run inspectable and repeatable?">
-      <p>Each run records the source revision, file manifests, environment version, model settings, exact supplied inputs and returned outputs, tool activity, review decisions, revisions, stops and resource use. A controller-managed local store retains these records outside agent access; verified saves to the separate private repository support continuation on the other machine. The runner must record an unsuccessful save and prevent continuation that depends on missing evidence. Collection checks paths, symlinks, archive entries, output limits and message order before accepting untrusted artifacts.</p>
+      <p>Each run records the source revision, file manifests, environment version, model settings, exact supplied inputs and returned outputs, tool activity, review decisions, revisions, stops and resource use. A controller-managed local store retains these records outside agent access; verified saves to the separate private repository support continuation on the other machine. The runner must record an unsuccessful save and prevent continuation that depends on missing evidence. The runner treats returned files and messages as untrusted. Before accepting them, it checks where files would be written, whether links or archive contents could reach outside the allowed folder, whether results exceed size limits, and whether messages arrive in the expected order.</p>
       <p>The assessment records task correctness and guardrail compliance separately, including justified improvements over historical code, new violations and unresolved evidence. Public reports exclude credentials and sealed assessment material. Exact models, budgets, scoring weights and acceptance limits belong in the run configuration, fixed before the relevant scored runs.</p>
     </Disclosure>
   </DetailGroup>

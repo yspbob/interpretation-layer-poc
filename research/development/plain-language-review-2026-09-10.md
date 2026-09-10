@@ -1,6 +1,6 @@
 # Website wording review — 10 September 2026
 
-Status: proposed rewrites, banked for the next authorised website update. The published pages and working plan have not been changed by this review.
+Status: applied, with contextual wording adjustments, in the authorised 10 September release. This file preserves the review proposals and cautions; the website source is the final wording. The release also applies the separately agreed method changes to the plan.
 
 The user identified that the sentence about repository snapshots was difficult to understand and asked for the same problem to be checked elsewhere. This review covers the source text for The Experiment, Progress & findings, their expandable explanations, technical overview and diagram, examples and shared case-detail interface. It is a wording review, not browser testing, a fresh review of every underlying inventory claim or a new validation of the experiment.
 

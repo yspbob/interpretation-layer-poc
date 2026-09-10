@@ -1,7 +1,7 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-09.11**
-Updated: **9 September 2026**
+Plan ID: **pilot-draft-2026-09-10.1**
+Updated: **10 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
 This document incorporates the research review and the subsequent website-design discussion. It is the current planning document for the redesigned POC. The previous ratified v1.2 plan is preserved as a historical record; its NetBox-only four-arm design, 25-ticket sample, 300-run schedule and success rule must not be silently inherited by this pilot.
@@ -34,6 +34,21 @@ Privately authored changes that alter the correct rule are optional later work, 
 
 The first-pilot adjustment does not waive isolation, input audits, historical-comparator assessment, assessor qualification, family separation or predeclared budgets and scoring. Authored cases such as H04 remain useful development/qualification-construction material, not substitutes for eligible historical pilot tasks. A central requirement that depends on undocumented intent or unresolved interpretation excludes the case from scored pilot comparisons; retain the reason in the inventory. A peripheral unresolved criterion cannot silently become a pass. No expert reviewer has been arranged to certify invented variants.
 
+### Production behaviour and what this POC tests
+
+The explanation must distinguish the intended production behaviour from the planned POC procedure wherever they differ. State the reason and consequence of each simplification. Production choices that remain proposals, such as nightly maintenance, are not established requirements or tested capabilities. Keep implementation status on Progress & findings.
+
+| Function | Intended production behaviour | POC procedure and limit |
+|---|---|---|
+| Authority | A responsible owner reviews proposed rules and authorises their release. | No project owner is available. The verifier admits evidence-supported claims; admission is not owner certification. |
+| Initial preparation and reuse | Reconstruct candidate rules from the existing system, verify them and release approved guidance for repeated use. | Prepare a version for a declared repository state, source-access condition and task set before revealing those coding tasks. Reuse it across the associated attempts; do not draft anew per task. |
+| Maintenance | Examine changes, new exceptions and candidate rules, then review affected guidance. Scheduled nightly checks and earlier checks for consequential changes are possible designs. | Keep each guidance version fixed during its comparison. Record defects and review signals without renewing the guide. Maintenance effectiveness and cadence are not tested. |
+| Engineering tasks | Support current work with the assistance and reviews appropriate to the organisation. | Repeat eligible historical tasks under DIRECT, GUIDE and INTERACT with matched rules, resources and declared order. This does not establish adoption or the best review policy for every team. |
+| Questions and decisions during work | Consultation and checks can lead to correction or escalation to an authorised person. | Use enforced review checkpoints and material-change triggers. No unrecorded human answer may settle a live attempt. A necessary unresolved decision stops it. No continuous semantic monitoring is claimed. |
+| Access and isolation | Integrate with authorised live systems while enforcing their permissions and deployment controls. | Use the proposed restricted research runner, offline guest and protected assessment records. Its specific architecture and tests are not a production blueprint or general safety guarantee. |
+| Evaluation and prior familiarity | Observe real engineering outcomes in the actual deployment context. | Independently score saved guidance, code and interventions against prepared evidence. Public-source familiarity remains possible; the probes in section 2A seek indicators, not proof of unfamiliarity. |
+| Economics and human decisions | Account for preparation, repeated use, maintenance and justified quality/risk benefits. A human may use evidence to revise or retire guidance within their authority. | Estimate frozen-guide break-even under section 6A and collect review signals. Do not claim production ROI or operate a production rule dashboard. |
+
 ## 2. Current evidence and repository selection
 
 The inventory is complete: **84 candidate records**, including **52 candidates to develop across 39 named decision families**, 15 controls, six deferred records, four calibration cases, three merged records and four rejected records. Six advancing candidates belong to the original development audit; excluding those leaves 46 new advancing candidates across 33 families. The original twelve audited cases remain development material.
@@ -48,6 +63,23 @@ Fifteen new local development checks passed. These are checks of selected implem
 | HTTPX | `b5addb64f0161ff6bfe94c124ef76f6a1fba5254` | A library outside Django, with request lifecycles, transports and relatively inexpensive local checks. |
 
 All four use Python and three use Django. This is purposive selection, not a representative sample of engineering organisations. A repository enters the runnable pilot only after its selected cases and dependencies pass validation. The earlier fact graph and ticket screens are reusable preparation assets, not evidence that the redesigned test is ready.
+
+### 2A. Check for evidence of prior familiarity
+
+Agreed addition on 10 September; no probes have been run. Repository names or a model's own familiarity statement are not sufficient evidence of training exposure. Use two diagnostics before pilot comparisons:
+
+1. **Repository screening:** choose short excerpts with distinctive details masked, such as unusual comment wording or arbitrary test values. Ask the intended model to recover them from the declared prompt only. Include comparable newly authored snippets to estimate how often details can be inferred or guessed without prior exposure. These controls are imperfect and do not create a certified non-member benchmark.
+2. **Historical case selection:** supply a limited task description without repository, browsing or historical-fix access. Ask for the likely location and change, then compare the response with preselected distinctive details of the hidden fix that the prompt did not supply. A conventional correct solution is weak evidence because it may be derived by reasoning. Distinguish correctness from specific recall.
+
+Predeclare the sampled repositories/cases, excerpts and masking rule, prompts, exact model versions/settings, number of repeated attempts, scoring criteria, evidence thresholds and selection/reporting policy before observing probe outputs. Develop the probe rubric on separate examples; preserve ambiguity rather than deciding retrospectively that a striking answer is decisive. Record exact-match and justified distinctive-detail evidence, failures, uncertainty and the limits of controls. Numerical settings remain open; the decision to add probes does not close those gates.
+
+Use the exact versions intended for roles where prior familiarity could affect the study. A version used in several roles need not receive a duplicate identical probe solely because its role label differs; record the mapping and any material prompt/settings differences. Probe sessions are fresh and separate from all experimental histories, retrieval stores and writable workspaces. Allow only the supplied excerpts or description; disable browsing and additional file access. Apply the model-call authorisation, isolation and logging gates in section 8. Do not probe inside this investigator conversation or send probe answers into drafter, verifier, coder or runtime-review packs.
+
+Run these checks during screening/selection, not during every coding attempt. Revisit if the model version or selected material changes, or service drift invalidates the recorded version/settings. Report “familiarity detected” or “not detected by these probes,” never “proved unfamiliar.” Retain positive and negative probe records and all resulting inclusion/exclusion decisions. A positive indication informs suitability and interpretation but does not automatically disqualify a repository. Non-detection does not remove the first-pilot limitation. Any relationship between probe outcomes and method performance is exploratory unless specified in advance; these indicators cannot establish how much of a treatment effect was caused by memory.
+
+Anonymised prompts are optional diagnostics. Removing names can change difficulty or remove useful context, so a performance difference does not by itself prove memorisation. The first-pilot claim and optional status of private rule-changing variants remain unchanged.
+
+Research basis: the missing-detail design adapts [Testset Slot Guessing](https://arxiv.org/abs/2311.09783); it is not an already validated detector for these repositories. [Membership-inference evaluation](https://arxiv.org/abs/2402.07841) and [code countermeasure research](https://arxiv.org/abs/2403.16898) support caution about non-detection and transformed-input comparisons.
 
 ## 3. Build eligible cases before selecting a confirmation sample
 
@@ -83,6 +115,9 @@ Record guidance provenance at claim level: direct documentation extraction, exec
 
 ## 5. Prepare and freeze the guidance
 
+**Preparation unit and timing.** Preparation happens once for each declared guidance version, not once per coding attempt or once for the entire multi-repository experiment. Identify the repository/start revision, permitted source scope, information condition, drafter/verifier settings and preparation replicate, and the distinct tasks assigned to reuse it. Prepare and freeze that version before revealing downstream tasks to the drafter/verifier. GUIDE and INTERACT reuse the same generated version in their paired comparisons. A different repository state, permitted source condition or separately planned preparation replicate may require a different version. Do not give an earlier historical task guidance derived from later code. A single task can bear the full cost where no valid reuse set exists; it cannot establish cross-task reuse economics.
+
+
 The drafter receives only its declared evidence, without the downstream task or reference assessment. It produces proposed rules, their scope, evidence and exceptions. Automated checks validate references and structure; a separately calibrated verifier assesses support and overclaims using only the permitted evidence. Retain rejected and disputed claims in the investigator record so verification costs and failure rates remain visible.
 
 Select the drafter's source scope by a recorded, task-neutral rule, such as a declared subsystem at the starting revision. Do not select filenames, excerpts or questions using the hidden solution and then describe the pack as task-blind. Record the scope, any unavoidable clues and the tasks intended to share its guide. The same source scope remains available to every coding group.
@@ -110,6 +145,22 @@ All three receive the same review-trigger policy, correction allowance, ordinary
 Report preparation, per-task usage, latency and researcher effort separately, including the first-use cost and declared reuse assumption. Final evaluation and building research fixtures are study costs, outside the agents' method allowance, and must still be reported. An additional comparison with equal execution-only budgets would answer a different question and must be separately declared. Exact amounts and operational time/call limits remain open. Add a small supplied-reference-rule diagnostic, reported separately, to check whether a task can benefit from correct guidance at all.
 
 Match attempts by task, starting snapshot, information condition and replicate. Randomise or counterbalance treatment execution order before running the block, with fresh state and unchanged model settings. Do not always run the most assisted group last. If an unpinnable model service changes or the environment drifts, record it and apply the predeclared block/retry rule. Related tasks, repeated attempts and tasks sharing generated guidance are correlated; retain these group identifiers for analysis. Describe the documentation-visible baseline as existing project practice within the permitted scope, not a comparison against newly written expert guidance or every possible harness.
+
+### 6A. Reuse, costs and break-even
+
+Agreed analysis addition on 10 September. Measure whether reuse of a guidance version can recover its preparation cost while meeting predeclared quality requirements. More uses improve return only if the guidance remains applicable and beneficial. This is an economic analysis alongside the matched-budget method comparison, not permission to change those budgets or suppress unsuccessful attempts.
+
+**Record costs and outcomes.** For each version and declared set of distinct tasks, retain drafting and verification costs (including rejected claims and failed preparation), retrieval/serving, coding, consultation, ordinary and structured review, tool execution, corrections, refusals, unfinished attempts and budget exhaustion. Identify task, decision family, guidance version and preparation replicate. Record model/tool monetary charges using declared rates, human time by activity and elapsed time separately. Monetise human time only under explicit reported rate assumptions. Record familiarity probes, independent scoring and fixture development as study costs separately from method use. Attribute shared guide preparation to each standalone method comparison, but count its actual physical invocation only once in total experiment spending.
+
+**Keep the reuse assumption fixed.** Select a set of distinct tasks that genuinely use the same version before runs and confirm their historical/source compatibility. Several attempts on one task measure variability, not reuse across engineering changes. Section 6's equal allocation across all N declared tasks remains the budget rule, including failed tasks. Do not increase N after seeing results, omit failed uses, or rerun only favourable cases to improve ROI. Costs observed with that declared allocation and budget are not automatically outcomes under a different N or allowance.
+
+**Observed cumulative cost.** For a predeclared order or order-aggregation policy, report the full preparation cost plus cumulative use costs for GUIDE and INTERACT separately against DIRECT on the same tasks. Retain quality, failures and harms alongside costs; do not select only successful attempts for a cheaper-looking comparison. Say that break-even was observed only within the tested task set, under the predeclared quality requirement. If quality or completeness differs, report the cost/outcome trade-off; do not claim a like-for-like saving. If cumulative costs cross more than once, show that rather than implying a permanent saving from the first crossing.
+
+**Estimated break-even.** As a labelled simplified projection, let P be attributable preparation cost and s the estimated per-applicable-task cost saving against DIRECT, before preparation but including the remaining method costs. If s is positive and the quality requirement holds, N_break-even = ceil(P / s). This assumes comparable task mix and stable savings without guide renewal. For illustration only, P = £60 and s = £3 give 20 uses to recover preparation. It is not an observed result. If savings are non-positive, evidence is insufficient, or uncertainty spans no saving, report that no finite break-even is supported or that it may not be reached. Never present an unbounded or unstable estimate as a precise ROI number.
+
+Predeclare prices, outcome/quality criteria, task order/aggregation, allocation, useful reuse horizon and uncertainty method before the economic runs. Account for task families, shared guidance and preparation replicates in uncertainty; repeated runs on one guide do not estimate all variation in generating new guides. Distinguish observed cumulative costs from projections beyond observed tasks, and disclose that a changed allocation can change available execution effort. Do not silently extrapolate the matched-budget results to a new budget regime. Compare GUIDE versus DIRECT and INTERACT versus DIRECT separately; also show the additional cost and quality change for INTERACT versus GUIDE. Exact statistical settings and acceptance thresholds remain open.
+
+**Production maintenance and attribution.** Actual maintenance, organisational adoption and monetised avoided incidents are outside this pilot. Record guidance applicability, evidence conflicts, revisions requested, necessary and unnecessary objections, and supported improvements where the existing assessment can justify them. These signals can inform later maintenance and a human-facing dashboard, but cannot be used to revise the guide during its frozen comparison. Prefer guide-version or related-rule-group economics; allocate benefits to individual rules only with a defensible method, without double-counting shared benefits or costs. Mandatory obligations cannot be retired solely because measured time savings are low. Any dashboard or review cadence remains a production design implication, not a new implemented POC component.
 
 ## 7. Proposed interactive procedure
 
@@ -270,10 +321,12 @@ The use of distinct code, model and human assessment methods is informed by [Ant
 
 The investigator records each decision and its evidence in a versioned configuration. Publishing this working plan does not close these gates or authorise model expenditure.
 
-| Before this activity | Required record | Status on 9 September 2026 |
+| Before this activity | Required record | Status on 10 September 2026 |
 |---|---|---|
 | Implementing the isolated runner | Selected execution boundary, threat model, permitted interfaces, output collection, pause/stop semantics and probe plan. | Working architecture and interfaces proposed in section 8C; host compatibility, exact pins and implementation remain open. |
 | Any model invocation, including qualification | Passed isolation/controller probes for the exact configuration; bounded gateway and logging; authorised budget. | Not established. |
+| Familiarity probes | Passed model-call gates; predefined samples, prompts, exact models/settings, scoring, repetition count and selection/reporting policy under section 2A. | Agreed; not specified or run. |
+| Economic comparison | Declared compatible reuse sets, cost/quality records, prices, allocation, task-order policy, projection horizon and uncertainty method under section 6A. | Analysis design added; data collection and numerical settings incomplete. |
 | Held-out component qualification | Role-specific evidence records and splits, frozen instructions/settings, error definitions, numerical limits, sample size and acceptance rule. | Procedure specified; fixtures and numerical gates incomplete. |
 | Pilot comparisons | Qualified components, eligible evidence-backed historical cases and disclosure audits, guidance preparation/reuse limits, matched budgets and order, scoring/stop/retry rules and audit configuration. | Not frozen; zero runs. |
 | Main confirmation | Fresh families excluded from tuning, primary contrast and endpoint, minimum worthwhile benefit and cost limit, multiplicity/grouping analysis, repetitions and sample-size justification. | To be set using feasibility evidence before confirmation outcomes. |
@@ -330,3 +383,5 @@ Record whether an item is a user constraint, a working proposal, an agreed decis
 The current change register is `plan_changes_2026-09-05.md`. Run `node scripts/sync-plan.mjs --check` from the repository root to compare this plan and register with the website source downloads and published Pages files. That check detects copy drift; semantic agreement between the prose and experimental design still requires review during each substantive edit.
 
 For continuity across machines, Codex maintains `PROJECT_STATE.md` and saves reviewed files and decisions to GitHub at the end of a completed piece of work. The user does not need to request a handover. Quick exchanges that do not change the work require no separate save. These operational changes do not alter experimental conditions, qualify any component or authorize model runs.
+
+Implementation takeaways are maintained in `research/implementation-takeaways.md`. Each records its origin, evidence/decision status, practical implication, uncertainty and next action. Include adverse and inconclusive findings. Planning insights remain distinct from development observations and independently validated findings; a takeaway does not itself authorise a new experiment or production feature.

@@ -1,6 +1,18 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-09.11**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-10.1**. Status: working redesign, not a new ratified preregistration.
+
+## Familiarity, reuse economics and production boundaries — 10 September 2026
+
+The user authorised release of the banked discussion and the page-wide wording review. The plan now specifies two familiarity diagnostics: missing distinctive details during repository screening, with newly written comparison snippets, and historical-fix recall during case selection. They use predefined prompts/scoring/repetitions and isolated sessions for the exact intended model versions. Positive and negative records and selection reasons remain visible. Numerical settings are open; no probe has run, and non-detection does not establish unfamiliarity.
+
+Section 6A adds costs across distinct tasks reusing the same guidance version and a bounded break-even analysis. It preserves the equal total method allowance, predeclared reuse allocation and inclusion of failures, and distinguishes measured cumulative cost from projections with quality requirements and uncertainty. Model charges, human effort, elapsed time and research costs remain separately identifiable. No savings, ROI or break-even result is claimed.
+
+Section 5 states the preparation unit and timing explicitly: one declared guidance version for compatible repository/source conditions and its task set, prepared before downstream tasks reach the drafter/verifier and reused by GUIDE/INTERACT. This does not create one universal guide or allow future-code knowledge into historical tasks.
+
+The production-versus-POC explanation now covers authority, preparation/reuse, maintenance, task work, in-process review, access/isolation, assessment/familiarity and economics. Owner approval belongs to production; evidence verification is the POC substitute with a narrower claim. The usage block shows in-process checks explicitly. Nightly review is a possible production cadence, not a selected or validated requirement. The frozen-guide pilot does not test maintenance or build a rule-ROI dashboard. Economic review triggers and a human decision dashboard are recorded as planning takeaways, with group/version attribution and mandatory-obligation caveats.
+
+The wording review replaces abstract shorthand with actors, actions and explanations across both pages and shared details, while preserving method requirements. The implementation-takeaway record becomes visible from Progress & findings. This is a method/documentation release, not runner implementation, model qualification, familiarity testing or a new H04 result. Runtime setup, tooling review and numerical gates remain open.
 
 ## Evidence-backed first pilot and optional private variants — 9 September 2026
 

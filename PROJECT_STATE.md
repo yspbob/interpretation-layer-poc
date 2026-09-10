@@ -112,6 +112,16 @@ The user is ending this session and moving to another machine. Save this whole b
 
 Verification: application type/lint checks, static build and both routes’ asset checks passed. Browser checks at 1280, 768 and 375 pixels verified the explicit scope limitation, optional-variant wording, navigation between scope and progress, fragment links and revision .11 download, without page errors or horizontal overflow. The scope notice was visually inspected. Plan/download consistency and diff checks passed. Both explanation and progress disclose the claim limitation and the reason private variants are deferred. Existing case inventory, H04 source pins and recorded results are unchanged.
 
+## Banked changes released — 10 September 2026
+
+The user authorised application and release of the accumulated points. Working plan **pilot-draft-2026-09-10.1** adds repository/case familiarity diagnostics (section 2A), guide-version preparation and declared compatible reuse (section 5), and cumulative cost/break-even analysis with quality, failures and uncertainty (section 6A). Exact probe settings, model selection, numerical economic criteria and their implementation remain open. No probes, economic trials, model calls or new H04 runs have taken place.
+
+Both pages now distinguish intended production behaviour from the POC's simplifications and explain the implications for its claims. This covers owner authority, preparation/reuse, maintenance, review checkpoints, task selection, isolation, independent assessment and economics. The usage cycle explicitly shows checks during implementation; preparation names the drafter/verifier and occurs before tasks reach them. Nightly review remains a possible production cadence. The pilot does not implement renewal or a rule-ROI dashboard.
+
+The page-wide plain-language review is applied, retaining method qualifications. Progress links the growing implementation-takeaway record and identifies economic maintenance signals and human review/dashboard ideas as planning findings, not experimental results. The component-contract addendum carries the corresponding future record/control requirements. Earlier entries describing this batch as banked are historical; this release supersedes that pending status. Future website comments remain banked until a new application/release request.
+
+Validation: application type/lint checks and the final static build passed. Both exported routes, referenced local assets, 16 local fragment links, new content, absence of the reviewed shorthand and the current revision download passed non-browser checks. Plan and change-register copies agree. The case inventory, H04 artifacts and recorded results are unchanged. No browser interaction/visual QA or model runs were performed for this release. Publication is verified against the remote commit and live page content. The next substantive implementation sequence remains the one recorded after this release; the current task authorises documentation and website publication only.
+
 ## Next substantive task
 
 ### Implementation takeaways and banked discussion — 10 September 2026

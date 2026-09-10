@@ -4,7 +4,7 @@ Started: 10 September 2026. Updated as the POC develops.
 
 This record connects the POC's design discussions and eventual observations to practical implementation decisions. The initial entries come from planning discussions, not experimental results. No ROI, familiarity, model-quality or production-maintenance result has been established by these entries.
 
-The [working plan](../preregistration/plan/working_plan_2026-09-05.md) remains the experimental specification. Recording a takeaway does not amend that plan, release website changes or authorize new experiments. Proposed changes below remain queued for the next explicitly requested plan and website update.
+The [working plan](../preregistration/plan/working_plan_2026-09-05.md) remains the experimental specification. Recording a takeaway does not amend that plan, release website changes or authorize new experiments. The 10 September release applies the agreed method changes and explanations in working plan `pilot-draft-2026-09-10.1` and both website views. The statuses below distinguish that publication from implementation and experimental evidence.
 
 ## How to maintain this record
 
@@ -16,7 +16,7 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Source:** 10 September discussion of comparable time, cost and ROI. The user proposed break-even as a useful measure and highlighted reuse across changes.
 
-**Status:** Agreed direction for the next planning update; calculation and measurement design remain to be specified. No return has been measured.
+**Status:** Analysis design recorded in plan section 6A on 10 September; numerical settings and measurement implementation remain open. No return has been measured.
 
 **Takeaway:** Preparing and verifying a guide creates an initial cost that may be recovered across multiple applicable tasks. Report cumulative costs alongside task quality and estimate the point at which a method becomes less costly than DIRECT. Calculate GUIDE and INTERACT separately. More uses do not guarantee a better return if the guidance adds cost without sufficient benefit.
 
@@ -24,7 +24,7 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **What remains uncertain:** The cost allocation policy, quality requirements, uncertainty calculation and useful reuse horizon need specification. Monetary costs, human effort and elapsed time must remain distinguishable. Production maintenance and avoided-loss value are outside the current frozen-guide pilot. A simple preparation-cost divided by per-task-saving estimate assumes positive, stable savings and comparable outcomes; report no supported break-even when those conditions fail. Do not extrapolate an observed result indefinitely.
 
-**Next action:** At the next authorised update, specify a bounded break-even analysis and the records needed to support it. Declare reuse sets before runs. Report estimates separately from directly observed cumulative savings.
+**Next action:** Implement the section 6A records and set its numerical assumptions and analysis configuration before economic runs. Declare reuse sets before runs. Report estimates separately from directly observed cumulative savings.
 
 ## IL-002: Use costs and outcomes to prompt maintenance review
 
@@ -58,13 +58,13 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Source:** 10 September user correction of the website sentence about a responsible owner approving guidance. This reinforces an existing boundary in the working plan and component contracts.
 
-**Status:** Existing POC scope requirement; clarification banked for the website. No new owner or approval mechanism is introduced.
+**Status:** Existing POC scope requirement; the production-versus-POC clarification is applied in the 10 September release. No new owner or approval mechanism is introduced.
 
 **Takeaway:** Evidence can support guidance without giving it organisational authority. The full production proposal includes owner approval; the technical POC has no responsible project owner and cannot certify newly constructed rules on one’s behalf.
 
 **Practical implication:** Represent evidence support and approval status separately. Label the production approval step where it appears, and explain the POC's verifier-based admission alongside it. A verifier accepting a claim must not silently confer owner approval. An agent cannot resolve a missing organisational decision by asserting authority.
 
-**Next action:** Clarify the preparation-cycle block in the next website batch while preserving the production step. The plan already records the absence of owner certification.
+**Next action:** Preserve the explicit preparation-cycle distinction as the implementation develops. The plan already records the absence of owner certification.
 
 ## IL-005: Make validation during task execution an explicit stage
 
@@ -76,13 +76,13 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Practical implication:** Agents can ask follow-up questions. Defined checkpoints and material changes trigger checks of the work so far, targeted questions and proceed/revise/unresolved decisions. Required checks must pause further work when necessary. Do not describe continuous semantic monitoring that the runner does not provide. Maintain matched review rules and correction limits across experimental groups.
 
-**Next action:** Expand that specific usage-cycle block at the next website release. Preserve the distinction between live review with correction opportunities and independent assessment after the attempt ends.
+**Next action:** The usage-cycle block now has four explicit steps, including checks during implementation. Implement and test that planned behaviour in the runner. Preserve the distinction between live review with correction opportunities and independent assessment after the attempt ends.
 
 ## IL-006: Test for evidence of familiarity before interpreting public-code results
 
 **Source:** 10 September discussion. The user agreed to two targeted probes during repository screening and case selection, rather than every experimental run.
 
-**Status:** Agreed addition queued for the next plan and website update. Prompts, sampling, scoring and thresholds are not yet specified; no familiarity probes have run.
+**Status:** Procedure added to plan section 2A and explained on the website on 10 September. Prompts, sampling, scoring and thresholds are not yet specified; no familiarity probes have run.
 
 **Takeaway:** Model self-reports cannot establish absence of prior familiarity. Test observable recall: during repository screening, ask for distinctive missing details with newly written comparison snippets; during case selection, test reconstruction of particular historical fixes without repository access. Exact, unusual details are more suggestive than a conventional correct solution that could be reasoned out.
 
@@ -92,4 +92,17 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Research basis:** The missing-detail proposal adapts [Testset Slot Guessing](https://arxiv.org/abs/2311.09783); this is not a validated repository-specific detector. [Membership-inference evaluation](https://arxiv.org/abs/2402.07841) illustrates the limits of inferring training membership. [Code countermeasure research](https://arxiv.org/abs/2403.16898) cautions against treating performance changes after transformations as straightforward evidence of memorisation.
 
-**Next action:** Specify the two probes in the next authorised planning batch. Fix their design and execution boundaries before any model calls. Keep the first-pilot claim limitation in place.
+**Next action:** Implement the two probes and fix their samples, prompts, scoring, repeats and execution boundaries before any authorised model calls. Keep the first-pilot claim limitation in place.
+
+
+## IL-007: Separate guidance preparation from repeated use and explain pilot differences
+
+**Source:** 10 September clarification of when guidance is prepared, followed by the user's requirement to explain every material production-versus-POC difference.
+
+**Status:** Applied to the explanation and working plan on 10 September; production cadence and maintenance effectiveness remain untested.
+
+**Takeaway:** Preparation produces a version for a compatible repository state and permitted source set. Reuse that version across its declared tasks; it is neither a new guide for every coding run nor one universal guide for the whole experiment. Production would add review of changed evidence and proposed new rules. Nightly checks are a possible cadence, with earlier review for consequential changes, not a fixed validated requirement.
+
+**Practical implication:** Identify guidance versions and their applicability explicitly. Explain production intent beside POC simplifications in authority, preparation, reuse, maintenance, interaction, access, evaluation and economics. State what each difference prevents the experiment from concluding. Keep actual implementation and validation status separate from the proposed method.
+
+**Next action:** Carry guide identity and reuse compatibility into the runner and future production design. The current release implements the explanation and specification only; it does not run preparation, maintenance or model trials.
