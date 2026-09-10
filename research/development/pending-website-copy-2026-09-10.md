@@ -1,6 +1,6 @@
-# Pending website copy after the 10 September release
+# Website copy released after the 10 September review
 
-These comments follow release 4d26e4f. They await the user's next application or release request. The budget procedure is already recorded in working plan section 6B; its page explanation below remains pending. No calibration or model run has been authorised.
+These comments followed release 4d26e4f. The user subsequently requested a review of the whole document and release of all changes. This batch is now applied to both website views, including the budget explanation from plan section 6B. The later request to separate observed cost recovery, estimated future recovery and repeated attempts is also applied. The text below preserves the proposed wording for traceability. No calibration or model run was authorised.
 
 ## How will we choose the spending allowance?
 
@@ -18,7 +18,7 @@ If the study budget permits it, we will also compare all three methods at a seco
 
 Money, human effort and elapsed time will be reported separately. No budget has been selected and these calibration trials have not started.
 
-## Other comments to apply in the same future batch
+## Other comments applied in the same batch
 
 1. Expand the production cycles introduction into separate paragraphs explaining initial reconstruction and owner review, repeated use with checks during implementation, later maintenance, and the POC's frozen guidance without an owner. Explain actors and timing rather than compressing the full process into one paragraph.
 2. Remove the sentence about optional private rule changes from the introductory scope explanation. Retain the public familiarity limitation and the detailed plan's optional extension for traceability.
@@ -27,4 +27,4 @@ Money, human effort and elapsed time will be reported separately. No budget has 
 5. Replace the compressed total method budget paragraph with separate sentences about the equal spending allowance, preparation consuming part of it, and preparation shared across a task set chosen in advance.
 6. Avoid hyphens and dash based phrasing in new page copy, except necessary technical names, code and URLs. Use complete sentences and explicit connections between ideas.
 
-At release, add the budget explanation beside the existing cost detail. Update Progress & findings to say that the selection procedure is defined while amounts and calibration remain outstanding. Keep other open numerical gates visible. Do not imply that documenting the process has qualified a judge, validated the runner or produced experimental evidence.
+The budget explanation is now beside the cost detail. Progress & findings records that the procedure is defined while amounts and calibration remain outstanding. Other numerical gates remain open. This publication has not qualified a judge, validated the runner or produced experimental evidence. See the accompanying whole document writing review for the rest of the release.

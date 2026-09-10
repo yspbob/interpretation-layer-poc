@@ -28,6 +28,8 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Budget procedure added on 10 September:** Section 6B now requires a study spending ceiling, development calibration of all three methods under a selection rule recorded in advance, and fixed allowances before scored comparisons. A second budget level is planned where affordable to test whether the conclusion depends on the allowance. This is an agreed design, not a calibrated budget or evidence of savings. Production teams would choose spending policies for their own workload; a useful allowance in this POC would not establish a universal operating budget.
 
+**Explanation released on 10 September:** The website now describes this procedure and separates cost recovery observed during the experiment from estimates about further use. Progress records that amounts remain open and calibration has not run. The wider writing review changes how these takeaways are explained, not their evidence status.
+
 ## IL-002: Use costs and outcomes to prompt maintenance review
 
 **Source:** 10 September discussion following IL-001. The user identified an economic maintenance rule and agreed it could be a takeaway for production.

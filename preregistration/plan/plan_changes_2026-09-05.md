@@ -2,6 +2,12 @@
 
 Current plan: **pilot-draft-2026-09-10.2**. Status: working redesign, not a new ratified preregistration.
 
+## Whole document writing review and pending release: 10 September 2026
+
+The user authorised a review of the entire website for compressed wording and release of all pending changes. Both views now explain the same method with separate paragraphs for actions, reasons and limitations. The budget selection procedure in section 6B is published in the explanation, and Progress records its unselected amounts and unexecuted calibration. Comparison names are consistent, and the review explanation correctly locates assistance throughout planning, implementation and review.
+
+The 84 inventory records receive reading summaries while their original technical records, evidence, classifications and downloads remain intact. The production distinctions, independent assessment requirements, uncertainty and zero model comparison status are preserved. The introductory private variant sentence is removed for clarity; the detailed plan's optional extension is unchanged. This is an editorial release of the existing method, so the working plan identifier remains .2. No implementation or new experimental evidence is implied.
+
 ## How the budget will be chosen: 10 September 2026
 
 The user accepted the proposed budget selection process and requested that it be described in the document. Section 6B separates the overall study spending ceiling from the equal allowance for each method. It specifies calibration on separate development tasks using all three methods, a selection rule recorded before observing those trials, declared guidance reuse and preparation allocation, and frozen limits before scored comparisons. Exhaustion remains an outcome. A second budget level on a predefined subset will check sensitivity if the authorised study ceiling permits it; an omitted check limits the claim.

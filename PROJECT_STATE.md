@@ -132,6 +132,18 @@ Next documentation step: apply the pending copy to the cost explanation and refl
 
 Verification for this update: the static build passed, including both routes and referenced local assets; canonical plan and change register match all download copies. Reviewed the document changes and the existing explanation/progress budget statements for consistency. Application source was not changed. No browser review, calibration, model call or runtime work was performed.
 
+## Whole document writing release: 10 September 2026
+
+The user requested a review of the whole document for compressed writing and release of every pending change. Both website views and shared explanations are revised. The budget selection procedure is now on The Experiment, while Progress records that amounts remain open and calibration has not run. The group names match across cards, review and method. The production cycles, assessment, familiarity, costs and technical setup use explicit actors and separate paragraphs for distinct ideas.
+
+All 84 cases now have reading titles and summaries in `website/app/case-summaries.ts`, based on the original inventory. The original technical records remain available in a labelled disclosure. Search includes both the original and new wording. Inventory data, source links, classifications, family counts and H04 evidence are unchanged. The rewrite is not a new source audit or validation of the cases.
+
+[Whole document writing review](research/development/whole-document-writing-review-2026-09-10.md) records coverage and preserved qualifications. [The pending copy record](research/development/pending-website-copy-2026-09-10.md) is now marked released. This includes the later correction about observed cost recovery, projections and repeated tasks. All comments banked before this request are applied; future comments are banked until another application or release request.
+
+Working plan **pilot-draft-2026-09-10.2** remains authoritative. The change register records this editorial release and downloads are refreshed. No method settings, runtime implementation, calibration or model calls are added. The next substantive task remains the tooling review followed by the isolated runner without model calls, as described below.
+
+Verification: application type and lint checks passed. The final static build verified both routes and their referenced assets. Additional checks passed for paragraph structure, the revised copy and 17 local fragment links. The budget procedure has its own expandable section with a reachable link from Progress. All 84 inventory IDs have reading summaries; original inventory data and H04 records are unchanged. Plan/download consistency and diff checks passed. No browser interaction or visual QA was performed. The local preview was used only for a successful render check and requested as an app preview; the app returned a queued handoff.
+
 ## Next substantive task
 
 ### Implementation takeaways and banked discussion — 10 September 2026

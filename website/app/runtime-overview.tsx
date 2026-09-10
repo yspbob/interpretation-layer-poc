@@ -4,16 +4,16 @@ export function RuntimeOverview(){return <>
     <p>The experiment has two connected activities: preparing guidance and using it on engineering tasks. Independent assessment examines the resulting work separately. The experiment runner coordinates these activities and enforces their boundaries.</p>
     <div className="runtime-process-stage">
       <span className="eyebrow">PREPARATION · BEFORE TASK WORK</span><h4>Prepare and freeze the guidance</h4>
-      <p>The runner supplies the drafter with permitted project evidence. A separate verifier checks the proposed claims, and supported claims form a versioned guide. This is evidence-based verification, without project-owner certification. The two groups using guidance receive this same saved guide for the tasks assigned to it. The sources-only group receives the permitted project files and instructions.</p>
+      <p>The runner gives the drafter the project evidence it is allowed to read. A separate verifier checks the proposed claims. The accepted claims form a saved version of the guide.</p><p>This checks the evidence behind the claims. It does not supply approval from a project owner.</p><p>The two groups using guidance receive that same saved guide for the tasks assigned to it. The group using sources alone receives the permitted project files and instructions.</p>
     </div>
     <div className="runtime-process-stage">
       <span className="eyebrow">TASK USE · REPEATED FOR EACH COMPARISON GROUP</span><h4>Plan, review and carry out the change</h4>
-      <p>Each attempt starts with a fresh coder context. The coder submits a plan for review. When work is permitted, the runner dispatches a bounded batch of tools or code into an isolated environment, collects the results and closes that environment. Required checkpoints and material changes return the work to review. INTERACT adds targeted questions about the guidance; all groups follow the matched review policy and resource limits.</p>
+      <p>Each attempt starts in a separate model session. The coding agent submits a plan for review.</p><p>Once the reviewer permits work, the runner starts a limited batch of tools or code in an isolated environment. It collects the results and closes that environment before deciding what may happen next.</p><p>The work returns to review at the required checkpoints and when the approach changes substantially. The group with interaction also receives questions about how it applies the guidance. All groups follow the same review rules and resource limits.</p>
       <p>The cycle repeats until the attempt finishes or a stop rule ends it. Each role retains only its permitted history and files. The guide stays frozen during task use; it is not redrafted after each tool batch.</p>
     </div>
     <div className="runtime-process-stage">
       <span className="eyebrow">INDEPENDENT ASSESSMENT · OUTSIDE THE LIVE TASK CYCLE</span><h4>Assess the work and preserve the record</h4>
-      <p>After an attempt stops, separate assessment roles examine its code and review decisions. The frozen guide is assessed independently of the verifier that admitted it. Code assessment checks task correctness and applicable guardrails, using the same criteria for agent and historical implementations. Hidden assessment feedback does not return to the working agents.</p>
+      <p>After an attempt ends, separate assessors examine its code and review decisions. The saved guide is also assessed independently of the verifier that accepted it.</p><p>The code assessment asks whether the task was completed correctly and whether the applicable project rules were followed. It uses the same criteria for the agent’s code and the original historical implementation. Hidden assessment feedback does not return to the working agents.</p>
       <p>The runner preserves outcomes and costs, including failed and unfinished attempts. All three methods for a matched task and repeat are run on the same machine. Its private records must be saved and verified before work continues on the other machine.</p>
     </div>
   </section>
@@ -26,6 +26,6 @@ export function RuntimeOverview(){return <>
    └─ Ubuntu VM (offline)
       └─ Podman container
          └─ Tools or code`}</pre>
-    <figcaption id="execution-tree-caption">One worker container inside one VM runs at a time. Each tool batch gets a fresh VM and container; assessment code uses a separate fresh environment. The AI models run at the provider, with separate role contexts managed by the runner on Windows. The detailed diagram below shows the permitted connections.</figcaption>
+    <figcaption id="execution-tree-caption"><p>One worker container runs inside one virtual machine at a time. Each tool batch gets a fresh environment. Assessment code runs in a separate fresh environment.</p><p>The AI models run at the provider. The runner on Windows manages their separate sessions. The diagram below shows which connections are permitted.</p></figcaption>
   </figure>
 </>}
