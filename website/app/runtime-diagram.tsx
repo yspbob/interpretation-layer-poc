@@ -13,7 +13,7 @@ export function RuntimeDiagram(){return <figure className="runtime-diagram" id="
   </div>
   <div className="runtime-api"><ArrowUpDown aria-hidden="true"/><span><strong>Model connection controlled by the runner</strong><br/>Permitted messages and tool requests; credentials stay on Windows.</span></div>
   <div className="runtime-host">
-    <h4>Active Windows machine <span>32 GB laptop or 64 GB home PC · one worker VM at a time</span></h4>
+    <h4>Selected Windows machine <span>Sized for the 32 GB laptop · one worker VM at a time</span></h4>
     <div className="runtime-execution">
       <div className="runtime-controller">
         <span className="eyebrow">TRUSTED CONTROL</span><h5>Experiment runner: Python controller</h5>
@@ -37,6 +37,6 @@ export function RuntimeDiagram(){return <figure className="runtime-diagram" id="
     </div>
     <div className="runtime-assessment"><ArrowDown aria-hidden="true"/><p><strong>After the attempt stops:</strong> the runner supplies anonymised code and permitted evidence to separate assessment contexts. Evaluation code uses a fresh VM. Feedback from hidden tests and final scores do not return to working agents.</p></div>
   </div>
-  <div className="runtime-sync"><ArrowUpDown aria-hidden="true"/><p><strong>Git for Windows + Git Credential Manager → GitHub</strong><br/>Public repository: reviewed project files. Separate private repository: hidden case evidence, confidential results and a record of completed comparisons. Verify the save before switching machines; each machine keeps its own installation and credentials.</p></div>
+  <div className="runtime-sync"><ArrowUpDown aria-hidden="true"/><p><strong>Git for Windows + Git Credential Manager → GitHub</strong><br/>Public repository: reviewed project files. Separate private repository: hidden case evidence, confidential results and a record of completed comparisons. Phase 1 keeps experimental execution on one qualified host. Editing can continue from either machine. Moving confidential runs later requires a verified save and a qualified destination.</p></div>
   <figcaption id="runtime-diagram-caption">The boxes show where components run and what they may access. The arrows show permitted connections. Read the process above for the order of work. Only the runner on Windows connects to models and GitHub. The offline guest has no general route to either service. These controls require implementation and testing.</figcaption>
 </figure>}

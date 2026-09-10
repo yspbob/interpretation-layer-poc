@@ -2,6 +2,14 @@
 
 Date: 8 September 2026. Status: **development specification and scripted rehearsal; no component is qualified and no model has been run.** The working plan remains authoritative. These defaults make its first development example executable; they do not freeze pilot settings or authorise model calls.
 
+
+## Phase allocation: 10 September 2026
+
+Working plan pilot-draft-2026-09-10.3, section 1A, now stages this design. Phase 1 implements the required boundaries and records for a narrow trial on one qualified host. Public project editing can continue on both machines. Qualification of the second execution host and automated continuation of confidential runs across machines are later capabilities, required before they are used but not before the first trial on one host. Protected local records and the required private storage remain necessary for that trial.
+
+The first phase keeps all required role isolation, matched reviews and budgets, independent assessment and qualification for the narrow tested scope. It records costs, but defers detailed economic projections and the second budget comparison. Broader capability descriptions below remain design records rather than a list of immediate implementation gates. No model calls or runtime installation are authorised by this staging decision.
+
+
 ## Shared records and boundaries
 
 Every invocation must record a run ID, case/family ID, information condition, treatment, role, contract version, prompt hash, input manifest hash, source/environment hashes, model/version/settings, checkpoint and submission IDs, start/end time, token/tool usage and cost. Scripted records must use `mode: scripted-development`, `model: null` and `model_calls: 0`; unavailable measurements remain null. Zero calls is not a zero-cost estimate for the proposed system. Store the exact supplied messages and tool results, not private reasoning. Keep investigator metadata outside model inputs; final assessment packs use neutral IDs without treatment, source-origin or expected-verdict clues. Treat source comments, candidate explanations and tool output as evidence, never as instructions overriding the role contract.

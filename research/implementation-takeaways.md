@@ -110,3 +110,17 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **Practical implication:** Identify guidance versions and their applicability explicitly. Explain production intent beside POC simplifications in authority, preparation, reuse, maintenance, interaction, access, evaluation and economics. State what each difference prevents the experiment from concluding. Keep actual implementation and validation status separate from the proposed method.
 
 **Next action:** Carry guide identity and reuse compatibility into the runner and future production design. The current release implements the explanation and specification only; it does not run preparation, maintenance or model trials.
+
+## IL-008: Validate a narrow use before building broader capability
+
+**Source:** 10 September discussion of POC complexity and the user's request to divide the work into phases.
+
+**Status:** Agreed scope and presentation decision, recorded in plan section 1A. No comparative result supports it yet.
+
+**Takeaway:** The first implementation needs enough capability to run a credible comparison in one selected setting. Wider repository coverage, operation on multiple execution hosts and production maintenance can each be separate decisions after evidence exists.
+
+**Practical implication:** Keep the integrity controls needed for the selected use: justified evidence, limited inputs, isolation, matched reviews and budgets, qualified assessment and complete records. Narrow the coverage being built and qualified instead of removing these controls. Describe possible later capabilities separately from current commitments and actual progress.
+
+**What remains uncertain:** A small first trial can expose defects in the method and supply preliminary observations. It cannot establish general effectiveness, production return or readiness for owner governance and maintenance.
+
+**Next action:** Choose the first repository and decision families, review existing tooling and qualify one execution host. Use the first trial report to decide whether further work is justified, including when results are negative or inconclusive.

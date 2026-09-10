@@ -2,6 +2,14 @@
 
 Design version: **0.1 — 9 September 2026**. Implements the planning detail for sections 8–8C of the working plan. This is a proposed implementation, not an installed or qualified runner. The working plan takes precedence on research methods.
 
+
+## Phase allocation: 10 September 2026
+
+Working plan pilot-draft-2026-09-10.3, section 1A, now stages this design. Phase 1 implements the required boundaries and records for a narrow trial on one qualified host. Public project editing can continue on both machines. Qualification of the second execution host and automated continuation of confidential runs across machines are later capabilities, required before they are used but not before the first trial on one host. Protected local records and the required private storage remain necessary for that trial.
+
+The first phase keeps all required role isolation, matched reviews and budgets, independent assessment and qualification for the narrow tested scope. It records costs, but defers detailed economic projections and the second budget comparison. Broader capability descriptions below remain design records rather than a list of immediate implementation gates. No model calls or runtime installation are authorised by this staging decision.
+
+
 ## Design decision
 
 Either Windows machine should be able to run an experiment locally. The laptop has 32 GB RAM; the home PC has 64 GB and is not permanently on. Use the laptop as the common resource baseline and run one worker VM at a time. Switching machines means continuing from saved, completed work, not moving a running VM or depending on the home PC being available.

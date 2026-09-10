@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-10.2**
+Plan ID: **pilot-draft-2026-09-10.3**
 Updated: **10 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -25,6 +25,28 @@ Keep inference quality, handling of documentation, downstream code quality and i
 This first POC is designed to be as self-contained as possible, minimising external dependencies on project maintainers, organisational approvals and ongoing operational involvement. Public code and recorded decisions allow the technical mechanism to be tested without requiring that participation. Later iterations could involve owners and examine ongoing maintenance if the remaining research questions require them; neither is added to this pilot by this scope clarification.
 
 There is no maintainer-recruitment dependency. Published project decisions and documented behaviour provide reference evidence, not owner approval of newly generated rules. Unrecorded organisational intent, owner certification, adoption, ongoing renewal and production economics remain outside the technical claim. A positive result would support the layer in the situations tested, not prove its universal necessity or the full playbook loop.
+
+### 1A. Deliver the study in phases
+
+Agreed direction on 10 September after the user challenged the growing scope. Phase 1 is the current work. The later phases describe decisions to make after it, not parallel implementation commitments or permission to run models.
+
+**Phase 1: Run a credible first trial.** Select one repository and a small set of distinct decision families from the existing candidate pool. Keep DIRECT, GUIDE and INTERACT, including their matched reviews and budget policy. Use one fixed model configuration for each required role and one qualified execution machine. Qualify assessors for the narrow decisions and permitted inputs actually used, while keeping development and independent qualification families separate. Separate role contexts and independent assessment remain mandatory even if several roles use the same model product.
+
+Build only the runner capabilities needed to execute and audit that trial. All required access restrictions, input audits, reference evidence, review pauses, stops, cost records and independent scoring remain in force. Limit familiarity checks to the candidate repository, selected cases and intended model versions needed for this selection. Keep the information conditions and claim provenance in section 4 explicit; choose eligible combinations before runs and do not claim a comparison for an untested condition. Broader model or repository coverage is not a prerequisite.
+
+Use a short, authorised development calibration to choose one allowance under section 6B. Record all preparation and use costs, unsuccessful attempts, human effort and elapsed time. Declare any compatible guide reuse before preparation and keep its allocation fixed. Detailed projections beyond observed tasks and the second budget comparison are deferred. Phase 1 can report observed costs and supported reuse observations, but must not claim a reliable production return or broad effectiveness from a small feasibility trial.
+
+Phase 1 ends with an inspectable trial report: what was run, whether the controls and assessment worked within their tested scope, guidance and task outcomes, failures, costs and unresolved issues. The decision is to proceed, repair and repeat development, narrow the claim, or stop. Progression does not require a favourable treatment effect. A failure is a useful outcome, but is not passed off as successful validation. Repository, family count, models, execution host and numerical settings remain unselected.
+
+**Phase 2: Test the method on fresh cases.** Use Phase 1 feasibility evidence to define a frozen confirmation design. Set the primary question, outcome measure, worthwhile improvement, required precision, sample size, grouping and cost limits before opening confirmation outcomes. Use fresh decision families that were not used to tune the method or assessors. Requalify changed components on appropriate separate material. Scope may remain within the first repository; adding repositories is a deliberate claim and resource decision, not an automatic requirement. Consider the detailed reuse analysis and second budget level here, with predeclared settings and funding. If omitted, limit the claims accordingly.
+
+Phase 2 ends with a bounded conclusion about the tested method, uncertainty and the implications for chapter 4. Negative or inconclusive evidence may justify stopping or revising the proposal. It does not automatically trigger broader work.
+
+**Phase 3: Investigate broader use where justified.** Possible extensions include other repositories or model configurations, operation on another machine, and production questions about owner approval, maintenance or a human dashboard for guidance decisions. These are a menu of later studies, not one promised implementation. Select the next question from unresolved evidence and write its own design and prerequisites. Production studies requiring owners or other independent expertise need that participation arranged first. The current technical POC cannot supply it by inference.
+
+Public project editing and Git continuity remain available on both Windows machines throughout. Phase 1 execution needs one qualified host only. Protected storage and inspectable records remain required on that host; automatic transfer of confidential runs and qualification of the second host can wait until experiments actually need to move. Never resume experimental work on an unqualified host or without the required verified records. The detailed two machine design remains a later capability, not a Phase 1 gate.
+
+The phase allocation in this section takes precedence over older broad implementation sequencing below. Preserve the technical requirements for any capability actually used. Deferring a capability does not assert it has been implemented or validated.
 
 ### First-pilot claim and prior familiarity
 
@@ -148,6 +170,8 @@ Match attempts by task, starting snapshot, information condition and replicate. 
 
 ### 6A. Reuse, costs and break-even
 
+Phase allocation: Phase 1 records actual costs and observed reuse. Detailed projections and additional economic comparisons belong to Phase 2 if selected and funded; they are not prerequisites for the first trial. The specification below governs those analyses whenever they are run.
+
 Agreed analysis addition on 10 September. Measure whether reuse of a guidance version can recover its preparation cost while meeting predeclared quality requirements. More uses improve return only if the guidance remains applicable and beneficial. This is an economic analysis alongside the matched-budget method comparison, not permission to change those budgets or suppress unsuccessful attempts.
 
 **Record costs and outcomes.** For each version and declared set of distinct tasks, retain drafting and verification costs (including rejected claims and failed preparation), retrieval/serving, coding, consultation, ordinary and structured review, tool execution, corrections, refusals, unfinished attempts and budget exhaustion. Identify task, decision family, guidance version and preparation replicate. Record model/tool monetary charges using declared rates, human time by activity and elapsed time separately. Monetise human time only under explicit reported rate assumptions. Record familiarity probes, independent scoring and fixture development as study costs separately from method use. Attribute shared guide preparation to each standalone method comparison, but count its actual physical invocation only once in total experiment spending.
@@ -176,7 +200,7 @@ Agreed procedure on 10 September. No amount has been chosen and no budget calibr
 
 **Freeze the limits before the scored comparison.** Record the selected monetary allowance, preparation limits, prices, reuse allocation, model settings and operational time, call and correction limits. Apply the same policy to all matched groups. Keep the original stop and outcome when an attempt exhausts its allowance; do not grant extra funds because it is close to finishing. If the development evidence suggests no feasible comparison within the study ceiling, revise the scope or seek a new spending decision before proceeding. Do not quietly weaken one method or hide its failures.
 
-**Check whether the conclusion depends on that allowance.** Plan a limited comparison at a second budget level, subject to the overall authorised ceiling. Select the level, task subset and analysis before seeing the scored comparison. Run every method on the selected tasks at both levels with separate attempts. Report this as a sensitivity check, including cases where the apparent benefit changes with the available budget. If this check is unaffordable, record its omission and restrict conclusions to the tested allowance.
+**Check whether the conclusion depends on that allowance in a later phase.** This is deferred from Phase 1 under section 1A. For Phase 2, consider a limited comparison at a second budget level, subject to the overall authorised ceiling. Select the level, task subset and analysis before seeing the scored comparison. Run every method on the selected tasks at both levels with separate attempts. Report this as a sensitivity check, including cases where the apparent benefit changes with the available budget. If this check is unaffordable, record its omission and restrict conclusions to the tested allowance.
 
 Calibration spending belongs to study preparation, not to the later methods' task allowances. For each scored comparison, retain the method accounting in section 6 and report actual study spending separately. A new budget chosen after observing pilot results requires a new declared configuration and fresh confirmation families; the pilot cannot validate its own tuned settings.
 
@@ -345,14 +369,14 @@ The investigator records each decision and its evidence in a versioned configura
 | Any model invocation, including qualification | Passed isolation/controller probes for the exact configuration; bounded gateway and logging; authorised budget. | Not established. |
 | Familiarity probes | Passed model-call gates; predefined samples, prompts, exact models/settings, scoring, repetition count and selection/reporting policy under section 2A. | Agreed; not specified or run. |
 | Budget calibration | Authorised study ceiling, passed model access and containment gates, separate development families, candidate limits and a recorded selection rule under section 6B. | Procedure agreed; amounts, calibration configuration and execution remain open. |
-| Economic comparison | Declared compatible reuse sets, cost/quality records, prices, allocation, task-order policy, projection horizon and uncertainty method under section 6A. | Analysis design added; data collection and numerical settings incomplete. |
+| Detailed economic comparison in Phase 2 if selected | Declared compatible reuse sets, cost/quality records, prices, allocation, task-order policy, projection horizon and uncertainty method under section 6A. | Analysis design added; data collection and numerical settings incomplete. |
 | Held-out component qualification | Role-specific evidence records and splits, frozen instructions/settings, error definitions, numerical limits, sample size and acceptance rule. | Procedure specified; fixtures and numerical gates incomplete. |
 | Pilot comparisons | Qualified components, eligible evidence-backed historical cases and disclosure audits, guidance preparation/reuse limits, matched budgets and order, scoring/stop/retry rules and audit configuration. | Not frozen; zero runs. |
-| Main confirmation | Fresh families excluded from tuning, primary contrast and endpoint, minimum worthwhile benefit and cost limit, multiplicity/grouping analysis, repetitions and sample-size justification. | To be set using feasibility evidence before confirmation outcomes. |
+| Phase 2 confirmation | Fresh families excluded from tuning, primary contrast and endpoint, minimum worthwhile benefit and cost limit, multiplicity/grouping analysis, repetitions and sample-size justification. | To be set using feasibility evidence before confirmation outcomes. |
 
 ## 10. Execution sequence and current state
 
-### First development case completed; next build the isolated role runner
+### Phase 1: first development case completed; next narrow and build the runner
 
 **Development milestone completed on 8 September 2026; model components and isolation remain unvalidated.** [Component contracts v0.1](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/component-contracts-v0.1.md) and the [H04 response-lifetime case](https://github.com/yspbob/interpretation-layer-poc/tree/main/research/development/h04-response-lifetime) now provide a concrete task, pinned evidence, two valid implementations, two consequential errors, an unfinished implementation, prewritten reference verdicts and a scripted preparation/checking/final-assessment trace. All 25 behaviour comparisons matched their reference expectations. These are investigator-authored development examples and a mechanical replay, not model outputs or independent qualification.
 
@@ -371,7 +395,7 @@ The runnable prototype checks six control behaviours and records 71 denied file-
 
 For this development case, any confirmed required behavioural failure makes the final result fail; otherwise missing evidence stays insufficient, and all required checks must pass for a scoped pass. Incomplete work fails completion. A second corrected submission may proceed, a further revise stops, and unresolved stops immediately. These are explicit development defaults, not a ratified confirmation endpoint. Scripted lifecycle-call and finally-structure comparisons detect the known candidate changes; general semantic detection and runner-enforced pauses remain open.
 
-**Exact next step:** check and provision the proposed VirtualBox/Ubuntu/Podman stack on the laptop without weakening host security, then implement a model-free isolated role runner with structured record validation, immutable pack dispatch, the containment controls and adversarial checks in section 8, and enforced initial, changed-plan and final checkpoints. Use H04 as a regression case. Then prepare different families and fix the qualification coverage, error limits, model settings and budgets before authorised qualification calls. The development milestone remains the last implementation step. The subsequent website and plan reviews do not authorise model runs; the readiness gates in section 9B apply.
+**Exact next step:** review the proposed gateway, evaluation and tracing tools against the playbook before building custom infrastructure. Select the Phase 1 repository and required case scope using the existing evidence and eligibility checks. Choose one execution host, with the laptop as the current provisioning candidate, then check and provision the proposed VirtualBox/Ubuntu/Podman stack on that host without weakening host security, then implement a model-free isolated role runner with structured record validation, immutable pack dispatch, the containment controls and adversarial checks in section 8, and enforced initial, changed-plan and final checkpoints. Use H04 as a regression case. Then prepare different families and fix the qualification coverage, error limits, model settings and budgets before authorised qualification calls. The development milestone remains the last implementation step. The subsequent website and plan reviews do not authorise model runs; the readiness gates in section 9B apply.
 
 | Stage | Required work | Current state |
 |---|---|---|
@@ -389,7 +413,7 @@ Numerical settings still open include case count, repetitions, model budgets, re
 
 ## 11. Keep the plan, implementation and description aligned
 
-The Experiment page describes the planned method, technical architecture, decision rationale, requirements and enduring limitations. Progress & findings owns completed work, validation results, implementation gaps, next actions and the inventory's readiness. Keep a brief planned-method label and identify provisional design choices without repeating component status throughout the explanation. The canonical plan retains both requirements and dated status for traceability.
+The Phase 1 plan describes the current phase’s method, technical architecture, rationale, requirements and enduring limitations. A separate study roadmap describes later phases without mixing their proposed work into the current status view. Progress & findings owns completed work, validation results, implementation gaps, next actions and the inventory's readiness. Keep a brief planned-method label and identify provisional design choices without repeating component status throughout the explanation. The canonical plan retains both requirements and dated status for traceability.
 
 For each change discussed in the working conversation, classify it before editing:
 

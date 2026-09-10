@@ -10,9 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts and a scripted development trace now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
+The current scope is Phase 1 under working plan **pilot-draft-2026-09-10.3**: one repository, a small set of distinct decision families and one qualified execution host. The current phase entry below supersedes historical broader sequencing. The website opens on that phase's plan, with separate progress and roadmap pages.
+
 ## Read next
 
-- [Current working plan](preregistration/plan/working_plan_2026-09-05.md), especially sections 9A and 10: component qualification and the immediate development step.
+- [Current working plan](preregistration/plan/working_plan_2026-09-05.md), especially section 1A for the phase boundaries, then sections 9A and 10 for qualification and the immediate development step.
 - [Component contracts v0.1](research/development/component-contracts-v0.1.md) and [H04 worked development case](research/development/h04-response-lifetime/README.md), including its recorded results and reproducible runner.
 - [Decision and plan change register](preregistration/plan/plan_changes_2026-09-05.md).
 - [Study explanation](https://yspbob.github.io/interpretation-layer-poc/) and [Progress & findings](https://yspbob.github.io/interpretation-layer-poc/progress/).
@@ -145,6 +147,20 @@ Working plan **pilot-draft-2026-09-10.2** remains authoritative. The change regi
 Verification: application type and lint checks passed. The final static build verified both routes and their referenced assets. Additional checks passed for paragraph structure, the revised copy and 17 local fragment links. The budget procedure has its own expandable section with a reachable link from Progress. All 84 inventory IDs have reading summaries; original inventory data and H04 records are unchanged. Plan/download consistency and diff checks passed. No browser interaction or visual QA was performed. The local preview was used only for a successful render check and requested as an app preview; the app returned a queued handoff.
 
 ## Next substantive task
+
+### Current phase and page structure: 10 September 2026
+
+Working plan **pilot-draft-2026-09-10.3** supersedes the broader sequencing in the historical entries below. The user requested phases after questioning the growing scope. Phase 1 is a credible first trial in one selected repository, with a small set of distinct decision families, all three methods, fixed model configurations per required role and one qualified execution host. Repository, families, models, host and numerical settings remain open. The existing H04 rehearsal does not select HTTPX for the trial.
+
+Keep the evidence, isolation, matched review and budget controls, independent assessment and appropriate qualification for that narrow scope. Record actual costs and any declared compatible reuse. Broad coverage, a second execution host, detailed cost projections and a second budget level are deferred. Public project editing on either machine remains available. Confidential records must be protected on the execution host; transferring experimental execution later needs verified records and a qualified destination.
+
+Phase 2 would test a frozen method on fresh families if the first trial supports proceeding. Phase 3 lists possible broader or production studies, not promised features. Phase 1 ends with an inspectable report and a decision to proceed, repair, narrow or stop. It need not produce a favourable result. No runtime work or model calls were performed for this change.
+
+The user chose the current phase plan as the landing page, with a link to progress. The sticky header now uses a station line inspired by a London rail map, in the playbook colours. Phase 1 stays marked current; later stations open their explanations on the separate roadmap route. The progress page describes only Phase 1 work and its immediate next step. The production cycle and detailed technical readiness are optional disclosures. This is an authorised application of the phase design; it does not leave these edits banked.
+
+**Exact next substantive step:** Select the narrow trial scope and review gateway, evaluation and tracing choices against the playbook before adding custom infrastructure. Choose one execution host, check and provision the proposed runtime there, then build and test the isolated runner without model calls using H04 as development regression material. Prepare separate qualification families and fix run settings before any separately authorised model work. The older requirement to qualify both machines before this first trial no longer applies.
+
+Verification: application type and lint checks passed. The final static build verified all three routes and referenced assets. Paragraph structure, the station links and 21 local fragment links passed additional checks. Canonical plan and change register match their downloads. Original inventory data and H04 records are unchanged. Diff checks passed. No browser interaction or visual QA was performed; the local preview started and its app handoff was queued. Publication must be confirmed against the remote commit and live content before reporting it complete. No experimental benefit or model qualification is claimed.
 
 ### Implementation takeaways and banked discussion — 10 September 2026
 

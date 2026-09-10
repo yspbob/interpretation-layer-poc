@@ -8,8 +8,8 @@ import { FamiliarityChecks } from './familiarity-checks';
 
 export function ExperimentDetails(){return <>
   <section className="section-block" id="method">
-    <div className="section-heading"><span className="section-no">04</span><div><span className="eyebrow">THE EXPERIMENT, STEP BY STEP</span><h2>How the experiment is designed to run</h2></div></div>
-    <p className="section-intro">The experiment will ask agents to make the same code change with different kinds of help, then compare the work they produce and the effort it took. The sequence below starts with case selection and guidance preparation. The same guide can then be used for several compatible tasks.</p>
+    <div className="section-heading"><span className="section-no">04</span><div><span className="eyebrow">THE EXPERIMENT, STEP BY STEP</span><h2>How the first trial will run</h2></div></div>
+    <p className="section-intro">Within the selected repository, we will ask agents to make the same code change with different kinds of help. We will compare the work they produce and the effort it took. The sequence below starts with case selection and guidance preparation. The same guide can then be used for several compatible tasks.</p>
 
     <ol className="method-steps" aria-label="The four steps in one experiment">
       <li className="method-step">
@@ -20,7 +20,7 @@ export function ExperimentDetails(){return <>
             <p>We inspected one version of each repository to find potential test cases. For a selected task, we will return to the code as it stood before the original change. That may be a different version from the one initially inspected.</p><p>The task requirements and project rules must also belong to that time. Later documentation cannot introduce an obligation that the original developer did not have.</p>
             <p><strong>Start with the evidence.</strong> Each case uses a published requirement or decision. Its scope is checked against the code, and any disagreement is recorded. Neither the documentation nor the implementation is assumed to be correct.</p>
             <p><strong>Check that the assessment can tell the difference.</strong> Each case includes:</p><ul className="plain-list"><li>A valid solution.</li><li>A deliberately incorrect change.</li><li>A legitimate exception or alternative.</li></ul><p>The tests and source evidence must show why the valid solutions are acceptable and the incorrect change is not. A second valid solution can provide the alternative. We will not invent an exception just to complete the list.</p><p>If the evidence cannot settle an important requirement, the case stays out of the scored comparison. Other uncertainties remain recorded. Passing a few tests is not enough if they miss behaviour that matters to the task.</p>
-            <p><strong>Keep the coverage in perspective.</strong> The candidate projects are NetBox, Wagtail, Paperless-ngx and HTTPX. They cover different engineering decisions, but all use Python and three use Django. Findings from these projects cannot represent all software development.</p>
+            <p><strong>Keep the coverage in perspective.</strong> The existing candidate pool covers NetBox, Wagtail, Paperless-ngx and HTTPX. Phase 1 will select one of them and a small set of distinct decision families. Screening four repositories does not commit this phase to running all four.</p>
             <RepositoryCards/>
           </Disclosure></DetailGroup>
         </div>
@@ -77,7 +77,7 @@ export function ExperimentDetails(){return <>
       </li>
 
       <li className="method-step">
-        <div className="method-step-heading"><span className="method-step-number" aria-hidden="true">4</span><h3>Assess the work, its cost and the return from reuse</h3></div>
+        <div className="method-step-heading"><span className="method-step-number" aria-hidden="true">4</span><h3>Assess the work and record its cost</h3></div>
         <div className="method-step-content">
           <p>A separate evaluator assesses both the historical implementation and the agent’s change using the same criteria prepared in step 1:</p>
           <ul className="plain-list">
@@ -108,7 +108,7 @@ export function ExperimentDetails(){return <>
               <p>To justify the layer, its guidance must have evidence behind it, help with later work and be worth the cost. We assess the guidance itself as well as the code. A successful code change could otherwise conceal unsupported rules in the guide.</p><p>We will also run a small, separate check that gives the agent a known correct rule directly. This asks whether the task could benefit from good guidance at all.</p>
               <p>For the first pilot, agents will repeat real changes previously made in the selected projects. Each task must first pass the checks on its requirements, evidence and assessment.</p>
               <p>Authored development examples and any independently justified later variants are reported separately, as are tests with and without the relevant documentation. A task that states the target rule can test its application, but not the benefit of discovering it.</p>
-              <p>Several tasks may test the same underlying decision. The analysis must account for that relationship rather than count every variation or repeated attempt as independent evidence. The number of cases and minimum worthwhile improvement are set before the main trial.</p>
+              <p>Several tasks may test the same underlying decision. The analysis must account for that relationship rather than count every variation or repeated attempt as independent evidence. Phase 1 will report these relationships and the variation it observes. Phase 2 will use that evidence to set a justified confirmation sample before its results are seen.</p>
               <p>A positive result would support using the layer for the kinds of public project tasks we tested. The model may already know some of that code, so we could not claim it discovered every rule from unfamiliar sources.</p><p>The pilot also cannot establish that every organisation needs the layer, that an owner approves its rules or that a team would adopt it. Keeping guidance current across an organisation needs a later study.</p><p>Negative and inconclusive results would also inform revisions to Chapter 4.</p>
               <a className="text-link" href={chapterUrl} target="_blank" rel="noreferrer">Read Chapter 4 in the public playbook <ArrowUpRight size={16}/></a>
             </Disclosure>
@@ -118,8 +118,8 @@ export function ExperimentDetails(){return <>
     </ol>
 
     <div className="method-preparation">
-      <h3>Validation precedes the main trial</h3>
-      <p>Before any model is called, tests must show that agents cannot use the prohibited access routes. Each reviewer and judge must then pass the tests for its role before the pilot relies on its decisions or scores.</p><p>Development tasks will also help us choose the spending allowance. The small pilot will test the full procedure. Its findings will help us choose the method and size of a separate main trial.</p>
+      <h3>When this phase is complete</h3>
+      <p>The trial must leave an inspectable record of its inputs, guidance, work, reviews, failures and costs. The report will explain which controls worked within their tested scope and what remains uncertain.</p><p>We then decide whether to proceed, repair the procedure, narrow the question or stop. A favourable result is not required. The independent confirmation in Phase 2 is a separate decision, using fresh cases.</p>
       <PageLink className="text-link" href="/progress">See preparation, decisions and results <ArrowRight size={16}/></PageLink>
     </div>
     <p className="caption">The <a className="text-link" href={sitePath("/evidence/working-poc-plan.md")} download>working experiment plan</a> records the full method and design decisions. The <PageLink className="text-link" href="/progress#evidence">evidence record and case library</PageLink> are on Progress &amp; findings.</p>

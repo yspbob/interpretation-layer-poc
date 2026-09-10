@@ -1,6 +1,16 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-10.2**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-10.3**. Status: working redesign, not a new ratified preregistration.
+
+## Phase the study and focus the current workspace: 10 September 2026
+
+The user accepted dividing the expanding POC into phases and requested that the page keep phase descriptions and status separate, with attention on progress to date. Section 1A defines the current first trial, a later confirmation on fresh cases, and conditional broader studies. Phase 1 uses one selected repository, a small set of distinct decision families, the existing three conditions, fixed model configurations by role and one qualified execution host. None of the still open numerical or repository choices is silently selected.
+
+The first phase retains justified evidence, input and containment checks, matched reviews and budgets, independent assessment, appropriate qualification and complete failure/cost records. It narrows the coverage of implementation and qualification. Broad model/repository comparisons, qualification of a second execution machine, detailed cost projections and the second budget level no longer block the first trial. Any later use retains its own design, authorisation and validation requirements. Public editing continuity across machines remains in place.
+
+The website separates the current plan and current progress from the roadmap. Progression depends on an inspectable report and a decision to proceed, revise or stop, not a favourable result. This is a scope and presentation revision, not an executed trial or removal of research integrity controls.
+
+The user selected the current phase plan as the landing view and requested a fixed station map like a London rail line. The sticky header links the three phases, keeping Phase 1 visibly current. The separate roadmap shows one phase explanation at a time; current progress remains its own page. The station line uses the existing playbook colours and does not imply that future phases have begun.
 
 ## Whole document writing review and pending release: 10 September 2026
 

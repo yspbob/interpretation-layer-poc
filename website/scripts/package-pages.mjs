@@ -5,21 +5,25 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = join(root, 'dist/client');
 const output = join(root, '.pages-output');
 if (dirname(output) !== root || !output.endsWith('.pages-output')) throw new Error('Unsafe staging directory');
-for (const file of ['index.html', 'progress.html', 'interpretation-layer-poc/_next']) {
+const routes = ['progress', 'phases'];
+for (const file of ['index.html', ...routes.map(route => `${route}.html`), 'interpretation-layer-poc/_next']) {
   if (!existsSync(join(source, file))) throw new Error(`Missing static export: ${file}`);
 }
 // This exact project-owned staging directory contains generated files only.
 rmSync(output, { recursive: true, force: true });
-mkdirSync(join(output, 'progress'), { recursive: true });
+mkdirSync(output, { recursive: true });
 cpSync(join(source, 'interpretation-layer-poc/_next'), join(output, '_next'), { recursive: true });
 cpSync(join(source, 'evidence'), join(output, 'evidence'), { recursive: true });
 for (const file of ['index.html', 'index.rsc', '404.html', 'favicon.svg']) {
   if (existsSync(join(source, file))) cpSync(join(source, file), join(output, file));
 }
-cpSync(join(source, 'progress.html'), join(output, 'progress/index.html'));
-if (existsSync(join(source, 'progress.rsc'))) cpSync(join(source, 'progress.rsc'), join(output, 'progress/index.rsc'));
+for (const route of routes) {
+  mkdirSync(join(output, route), { recursive: true });
+  cpSync(join(source, `${route}.html`), join(output, route, 'index.html'));
+  if (existsSync(join(source, `${route}.rsc`))) cpSync(join(source, `${route}.rsc`), join(output, route, 'index.rsc'));
+}
 writeFileSync(join(output, '.nojekyll'), '');
-for (const page of ['index.html', 'progress/index.html']) {
+for (const page of ['index.html', ...routes.map(route => `${route}/index.html`)]) {
   const html = readFileSync(join(output, page), 'utf8');
   for (const match of html.matchAll(/(?:href|src)="(\/[^"#?]*)/g)) {
     const url = match[1];
@@ -28,4 +32,4 @@ for (const page of ['index.html', 'progress/index.html']) {
     if (!existsSync(join(output, relative))) throw new Error(`Broken local URL: ${url}`);
   }
 }
-console.log('GitHub Pages package ready: both routes and referenced local assets verified.');
+console.log('GitHub Pages package ready: plan, progress, roadmap and referenced local assets verified.');

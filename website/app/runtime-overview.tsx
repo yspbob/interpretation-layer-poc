@@ -14,7 +14,7 @@ export function RuntimeOverview(){return <>
     <div className="runtime-process-stage">
       <span className="eyebrow">INDEPENDENT ASSESSMENT · OUTSIDE THE LIVE TASK CYCLE</span><h4>Assess the work and preserve the record</h4>
       <p>After an attempt ends, separate assessors examine its code and review decisions. The saved guide is also assessed independently of the verifier that accepted it.</p><p>The code assessment asks whether the task was completed correctly and whether the applicable project rules were followed. It uses the same criteria for the agent’s code and the original historical implementation. Hidden assessment feedback does not return to the working agents.</p>
-      <p>The runner preserves outcomes and costs, including failed and unfinished attempts. All three methods for a matched task and repeat are run on the same machine. Its private records must be saved and verified before work continues on the other machine.</p>
+      <p>The runner preserves outcomes and costs, including failed and unfinished attempts. All three methods for a matched task and repeat are run on the same machine. Its private records must be retained and verified. Moving experimental execution to another machine is deferred until it is needed and that host is qualified.</p>
     </div>
   </section>
   <figure className="execution-tree" id="execution-tree" aria-labelledby="execution-tree-title execution-tree-caption">

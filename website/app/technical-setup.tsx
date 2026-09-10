@@ -15,7 +15,7 @@ export function TechnicalSetup(){return <section className="section-block" id="t
 
   <section className="technology-section" id="tools-technologies" aria-labelledby="tools-technologies-title">
     <h3 id="tools-technologies-title">Tools and technologies</h3>
-    <p>The experiment needs tools for coordination, model access, isolation, assessment and record keeping. The table names the products and libraries selected for the proposed implementation and identifies the remaining choices. The <PageLink className="text-link" href="/progress#prototype-tools">H04 prototype’s implemented tools</PageLink> are documented on Progress &amp; findings.</p>
+    <p>The experiment needs tools for coordination, model access, isolation, assessment and record keeping. The table names the products and libraries selected for the proposed implementation and identifies the remaining choices. The <PageLink className="text-link" href="/progress#technical-status">H04 prototype’s implemented tools</PageLink> are documented on Progress &amp; findings.</p>
     <table className="technology-table">
       <caption className="sr-only">Proposed technologies, their purpose and selection status</caption>
       <thead><tr><th scope="col">Component</th><th scope="col">Technology and reason</th><th scope="col">Choice</th></tr></thead>
@@ -37,16 +37,16 @@ export function TechnicalSetup(){return <section className="section-block" id="t
   </section>
 
   <section className="technology-section" id="containers-and-machines" aria-labelledby="containers-and-machines-title">
-    <h3 id="containers-and-machines-title">Containers and switching machines</h3>
-    <p>The design supports local execution on either Windows machine, using the 32 GB laptop as the common resource baseline. It does not depend on the 64 GB home PC staying on.</p>
+    <h3 id="containers-and-machines-title">Run on one qualified machine</h3>
+    <p>Phase 1 will run on one qualified Windows machine. The proposed setup is sized to fit the 32 GB laptop. Editing the project from either machine can continue through GitHub without moving experimental execution between them.</p>
     <ul className="plain-list">
       <li><strong>Separate the agents.</strong> Each role has its own model context, permitted input pack and tool workspace. The controller passes only authorised submissions and review messages. Shared memory, retrieval stores and direct connections between agents are excluded; assessment answers stay outside working roles.</li>
       <li><strong>Prepare a clean environment.</strong> Install pinned dependencies before execution, then disable the VM’s network adapters. The containers run tools and generated code; the Windows controller makes model calls through a separate gateway.</li>
       <li><strong>Limit every transfer.</strong> Supply permitted files on a disk image that the guest cannot change. Collect bounded results through a virtual serial connection checked by the controller. This interface is part of the boundary that must be tested.</li>
       <li><strong>Reset between tool batches.</strong> Each bounded batch uses a fresh VM and container. Only checked workspace files carry forward. Execution stops before the next review, and environments share no writable caches.</li>
-      <li><strong>Switch after a complete comparison.</strong> Run all three groups in a matched block on the same machine. Before continuing elsewhere, verify saved private records, matching environment versions and that machine’s boundary tests.</li>
+      <li><strong>Keep each comparison on the selected host.</strong> Run all three groups on that machine and retain protected records. If experiments later move to another host, it must first pass the same required tests and receive verified records. That transfer capability is not a gate for Phase 1.</li>
     </ul>
-    <p>The <a className="text-link" href="https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/isolated-runner-design-v0.1.md" target="_blank" rel="noreferrer">detailed runner design</a> specifies the container restrictions, transfer limits, provisional resource profile, failure handling and workflow for private records. Compatibility and containment must be demonstrated on each host.</p>
+    <p>The <a className="text-link" href="https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/isolated-runner-design-v0.1.md" target="_blank" rel="noreferrer">detailed runner design</a> specifies the container restrictions, transfer limits, provisional resource profile, failure handling and workflow for private records. Compatibility and containment must be demonstrated on any host before experiments run there. Phase 1 needs one such host.</p>
   </section>
 
   <DetailGroup>

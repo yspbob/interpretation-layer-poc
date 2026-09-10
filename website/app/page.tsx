@@ -10,12 +10,12 @@ import { ProductionDifference } from './production-difference';
 
 export const dynamic = 'force-static';
 export default function Experiment(){return <Shell active="experiment">
-  <div className="page-heading"><span className="eyebrow">AI ENGINEERING PLAYBOOK / CHAPTER 4</span><span className="reading-time">Why this experiment is being run</span></div>
+  <div className="page-heading"><span className="eyebrow">AI ENGINEERING PLAYBOOK / CHAPTER 4</span><span className="reading-time">THE CURRENT PHASE PLAN</span></div>
   <section className="intro">
     <div>
-      <h1>Will an interpretation layer help an AI agent make better code changes?</h1>
-      <p className="lead">An AI agent can read a project’s code and documentation. But it still has to decide which existing patterns to follow, which exceptions matter, and what it should leave alone.</p>
-      <p className="intro-explanation">The playbook proposes an <strong>interpretation layer</strong> that turns this evidence into approved guidance, helps agents check a proposed change against it, and supports checks on the resulting work. This POC tests the technical steps using project evidence. It does not certify new guidance on behalf of a project owner.</p>
+      <h1>Start with a small, credible trial.</h1>
+      <p className="lead">The first phase will test the interpretation layer on a few real tasks from one repository. We want to find out whether the procedure works, whether its guidance is defensible and what the comparison can tell us.</p>
+      <p className="intro-explanation">The playbook’s <strong>interpretation layer</strong> turns project evidence into guidance and helps agents check their work against it. We will test those technical steps here. A small first trial will provide preliminary evidence, not a conclusion about every project or approval from an owner.</p>
       <p className="chapter-context">The full proposal is in <a href={chapterUrl} target="_blank" rel="noreferrer">Chapter 4: The interpretation layer</a> of the public AI Engineering Playbook.</p>
       <div className="experiment-jumps"><a className="text-link intro-jump" href="#example">What the layer provides <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#comparison">The comparison <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#method">The method <ArrowDown size={16}/></a><a className="text-link intro-jump" href="#technical-setup">Technical setup <ArrowDown size={16}/></a></div>
     </div>
@@ -23,8 +23,14 @@ export default function Experiment(){return <Shell active="experiment">
       <span className="eyebrow">WHY TEST THIS?</span>
       <p>Does prepared guidance help beyond the sources and ordinary review? Does structured consultation add a further benefit?</p>
       <div className="hypothesis-explanation">A capable agent may already work out the right approach from the sources. Preparing guidance and consulting it takes time and money. The experiment tests whether these steps prevent enough mistakes to justify the effort.</div>
-      <div className="hypothesis-foot"><span className="signal-dot"/>Planned method · See Progress &amp; findings for readiness and results.</div>
+      <div className="hypothesis-foot"><span className="signal-dot"/>Phase 1 plan · Actual work and results are recorded separately.</div>
     </aside>
+  </section>
+
+  <section className="phase-scope" aria-labelledby="phase-scope-title">
+    <div><span className="eyebrow">THE BOUNDARY OF THIS PHASE</span><h2 id="phase-scope-title">Enough to learn from the first comparison.</h2><p>Use one repository, a few distinct decision families and one qualified execution machine. Keep all three comparison groups, with fixed model settings for each required role.</p></div>
+    <div><h3>What must be trustworthy</h3><p>The evidence, permitted inputs, review checkpoints, budgets and independent assessment. Failures and unfinished work stay in the record.</p><h3>What this phase delivers</h3><p>A report of what ran, what worked, what failed and what it cost. Then decide whether to proceed, repair the procedure or stop.</p></div>
+    <div className="phase-scope-links"><PageLink href="/progress">See progress to date <ArrowRight size={16}/></PageLink><PageLink href="/phases">Read the wider roadmap <ArrowRight size={16}/></PageLink></div>
   </section>
 
   <section id="example" className="section-block">
@@ -40,6 +46,7 @@ export default function Experiment(){return <Shell active="experiment">
 
   <section className="section-block">
     <div className="section-heading"><span className="section-no">02</span><div><span className="eyebrow">THE IDEA BEHIND THE LAYER</span><h2>Turn project evidence into guidance for later work</h2></div></div>
+    <DetailGroup><Disclosure id="production-cycles" title="Read the full playbook cycle and the POC’s simplifications" summary="Preparing guidance, owner approval, repeated use and later maintenance.">
     <p className="section-intro section-intro-wide">Before agents can use the interpretation layer, it needs to build an initial understanding of the system. It examines the code, documentation and recorded decisions, then drafts guidance explaining which rules apply and why. In production, that guidance is checked and sent to the responsible owner for approval.</p><p className="section-intro section-intro-wide">Once approved, the guidance can help agents with many coding tasks. They consult the relevant rules when planning a change and check their work against them as they proceed. The layer does not reconstruct the rules each time a new task begins.</p><p className="section-intro section-intro-wide">The guidance also needs to stay current. Changes to the system may reveal a new rule, an exception or a reason to revise existing guidance. Those findings go through review before the guidance changes.</p><p className="section-intro section-intro-wide">Our POC tests the initial preparation and repeated use of guidance. It has no project owner to approve the rules, and it keeps the guidance unchanged during each comparison. Ongoing maintenance is outside this pilot.</p>
     <div className="guidance-cycles" id="guidance-cycles">
       <section className="guidance-cycle" aria-labelledby="preparation-cycle-title">
@@ -73,12 +80,13 @@ export default function Experiment(){return <Shell active="experiment">
       </section>
       <div className="guidance-feedback"><CornerUpLeft size={21} aria-hidden="true"/><p><strong>New evidence can prompt a guidance review.</strong> Work may expose an outdated rule, a conflict or an unrecorded exception. In production, that evidence goes back for review. It cannot change an approved decision by itself. Reviews could run nightly, with earlier review of consequential changes. That cadence is a proposal. This POC records the issue but keeps the guide unchanged.</p></div>
     </div>
-    <div className="scope-note" id="pilot-scope"><span>What this POC can test</span><div><p>The first POC uses changes previously made in public projects. Each selected task needs requirements supported by project records and tests that can be repeated. This lets the technical steps be examined without asking maintainers to approve new rules or take part in each run.</p><p><strong>Prior familiarity remains a limitation.</strong> A model may already know the public code. Using the same models, tasks and budgets makes the methods comparable, but cannot prove that an agent worked out a rule solely from the files it received. Separate familiarity checks will look for recalled project details and historical fixes before the pilot.</p><p>The results will concern the technical steps. They cannot show that a project owner approves the guidance or that a maintenance process keeps it current. Later iterations could involve project owners and examine maintenance if these are needed to answer the remaining questions.</p><p>The diagram above describes the full proposal. This pilot prepares a guide for a defined code version and set of permitted sources, then reuses it across the associated tasks. It is not one guide for every repository or historical version. Results from final evaluation cannot be used to repair it during that comparison.</p></div></div>
+    </Disclosure></DetailGroup>
+    <div className="scope-note" id="pilot-scope"><span>What this POC can test</span><div><p>Phase 1 selects changes previously made in one public project. Each selected task needs requirements supported by project records and tests that can be repeated. This lets the technical steps be examined without asking maintainers to approve new rules or take part in each run.</p><p><strong>Prior familiarity remains a limitation.</strong> A model may already know the public code. Using the same models, tasks and budgets makes the methods comparable, but cannot prove that an agent worked out a rule solely from the files it received. Separate familiarity checks will look for recalled project details and historical fixes before the pilot.</p><p>The results will concern the technical steps. They cannot show that a project owner approves the guidance or that a maintenance process keeps it current. Later iterations could involve project owners and examine maintenance if these are needed to answer the remaining questions.</p><p>The diagram above describes the full proposal. This pilot prepares a guide for a defined code version and set of permitted sources, then reuses it across the associated tasks. It is not one guide for every repository or historical version. Results from final evaluation cannot be used to repair it during that comparison.</p></div></div>
     <DetailGroup><Disclosure id="production-scope" title="Where does this POC differ from production?" summary="Owner approval, repeated use, maintenance and the way success is measured.">
       <p>The experiment tests a limited part of the production proposal. It checks whether guidance has evidence behind it and helps with historical tasks. No project owner certifies that guidance. Guidance remains fixed during each comparison, so the pilot does not test whether updates keep it correct over time.</p>
       <p>Production would apply the layer to current engineering work. This POC instead repeats the same task under three conditions, with restricted inputs, matched review rules and independent assessment after each attempt. These controls help us compare the methods fairly. A production team would choose a workflow suited to its own work.</p>
-      <p>The first pilot also uses public projects and may encounter knowledge a model already has. Familiarity probes can find signs of recall, but cannot certify that a project is unseen. Its cost analysis estimates the return from reusing a fixed guide, not the full economics of a production service.</p>
-      <p>The relevant sections below explain each difference where it affects the procedure. <PageLink className="text-link" href="/progress">Progress &amp; findings</PageLink> shows which parts are built or tested.</p>
+      <p>The first trial uses a public project and may encounter knowledge a model already has. Familiarity probes can find signs of recall, but cannot certify that a project is unseen. Its cost analysis estimates the return from reusing a fixed guide, not the full economics of a production service.</p>
+      <p>The relevant sections below explain each difference where it affects this trial. Broader studies have their own place on the roadmap. <PageLink className="text-link" href="/progress">Progress &amp; findings</PageLink> shows which parts are built or tested.</p>
     </Disclosure></DetailGroup>
     <p className="caption">In this POC, all three groups receive review. The <a className="text-link" href="#during-work">detailed method</a> explains the checks before editing, during implementation and at final submission.</p>
   </section>
@@ -113,5 +121,5 @@ export default function Experiment(){return <Shell active="experiment">
 
   <ExperimentDetails/>
   <TechnicalSetup/>
-  <div className="route-footer"><span>For the work completed so far and the decisions still ahead.</span><PageLink href="/progress">Progress & findings <ArrowRight size={18}/></PageLink></div>
+  <div className="route-footer"><span>For completed work, today’s blocker and the next step in Phase 1.</span><PageLink href="/progress">Progress & findings <ArrowRight size={18}/></PageLink></div>
 </Shell>}
