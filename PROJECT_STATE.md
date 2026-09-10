@@ -122,6 +122,16 @@ The page-wide plain-language review is applied, retaining method qualifications.
 
 Validation: application type/lint checks and the final static build passed. Both exported routes, referenced local assets, 16 local fragment links, new content, absence of the reviewed shorthand and the current revision download passed non-browser checks. Plan and change-register copies agree. The case inventory, H04 artifacts and recorded results are unchanged. No browser interaction/visual QA or model runs were performed for this release. Publication is verified against the remote commit and live page content. The next substantive implementation sequence remains the one recorded after this release; the current task authorises documentation and website publication only.
 
+## Budget selection recorded: 10 September 2026
+
+The user accepted the proposed process for choosing budgets and requested that it be described in the document. Current working revision **pilot-draft-2026-09-10.2**, section 6B, distinguishes the overall study ceiling from the equal method allowance. It requires development calibration across all three methods with a selection rule recorded before observations, declared preparation allocation, fixed limits before scored comparisons and retained exhausted attempts. A second budget level on a predefined subset is planned if affordable; otherwise conclusions remain limited to the tested allowance. Amounts, sample settings and numerical selection criteria remain open. No model call or expenditure is authorised by this documentation decision.
+
+[Pending website copy](research/development/pending-website-copy-2026-09-10.md) preserves the proposed readable explanation and the other comments since release 4d26e4f. The website narrative remains banked until the next application or release request; only the plan downloads are refreshed in this piece of work. The current explanation and progress still correctly say that budgets need to be set. Use this record rather than the historical banked entries below to identify the outstanding batch. The user also requests no hyphens or dash based phrasing in new page copy, apart from necessary technical names, code and URLs.
+
+Next documentation step: apply the pending copy to the cost explanation and reflect the agreed procedure and outstanding calibration in Progress & findings when the user requests release. The substantive runner sequence below remains unchanged.
+
+Verification for this update: the static build passed, including both routes and referenced local assets; canonical plan and change register match all download copies. Reviewed the document changes and the existing explanation/progress budget statements for consistency. Application source was not changed. No browser review, calibration, model call or runtime work was performed.
+
 ## Next substantive task
 
 ### Implementation takeaways and banked discussion — 10 September 2026

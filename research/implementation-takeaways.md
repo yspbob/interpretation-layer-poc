@@ -26,6 +26,8 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Next action:** Implement the section 6A records and set its numerical assumptions and analysis configuration before economic runs. Declare reuse sets before runs. Report estimates separately from directly observed cumulative savings.
 
+**Budget procedure added on 10 September:** Section 6B now requires a study spending ceiling, development calibration of all three methods under a selection rule recorded in advance, and fixed allowances before scored comparisons. A second budget level is planned where affordable to test whether the conclusion depends on the allowance. This is an agreed design, not a calibrated budget or evidence of savings. Production teams would choose spending policies for their own workload; a useful allowance in this POC would not establish a universal operating budget.
+
 ## IL-002: Use costs and outcomes to prompt maintenance review
 
 **Source:** 10 September discussion following IL-001. The user identified an economic maintenance rule and agreed it could be a takeaway for production.

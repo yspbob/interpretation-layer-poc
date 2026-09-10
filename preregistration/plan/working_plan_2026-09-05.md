@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-10.1**
+Plan ID: **pilot-draft-2026-09-10.2**
 Updated: **10 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -161,6 +161,24 @@ Agreed analysis addition on 10 September. Measure whether reuse of a guidance ve
 Predeclare prices, outcome/quality criteria, task order/aggregation, allocation, useful reuse horizon and uncertainty method before the economic runs. Account for task families, shared guidance and preparation replicates in uncertainty; repeated runs on one guide do not estimate all variation in generating new guides. Distinguish observed cumulative costs from projections beyond observed tasks, and disclose that a changed allocation can change available execution effort. Do not silently extrapolate the matched-budget results to a new budget regime. Compare GUIDE versus DIRECT and INTERACT versus DIRECT separately; also show the additional cost and quality change for INTERACT versus GUIDE. Exact statistical settings and acceptance thresholds remain open.
 
 **Production maintenance and attribution.** Actual maintenance, organisational adoption and monetised avoided incidents are outside this pilot. Record guidance applicability, evidence conflicts, revisions requested, necessary and unnecessary objections, and supported improvements where the existing assessment can justify them. These signals can inform later maintenance and a human-facing dashboard, but cannot be used to revise the guide during its frozen comparison. Prefer guide-version or related-rule-group economics; allocate benefits to individual rules only with a defensible method, without double-counting shared benefits or costs. Mandatory obligations cannot be retired solely because measured time savings are low. Any dashboard or review cadence remains a production design implication, not a new implemented POC component.
+
+### 6B. How we will choose the budget
+
+Agreed procedure on 10 September. No amount has been chosen and no budget calibration has been run. Recording this procedure does not authorise model expenditure.
+
+**First, agree what the whole study can spend.** The user sets an overall spending ceiling before paid work begins. It must cover development, budget calibration, component qualification, familiarity probes, experimental attempts and independent assessment. Keep a reserve for declared retries and unexpected research costs. This ceiling is different from the equal allowance given to each method in a comparison.
+
+**Then measure costs on separate development tasks.** After the model access and containment gates have passed and expenditure is authorised, try all three methods on a small selection of development tasks. Choose tasks spanning the intended scope and difficulty, rather than only convenient examples. Keep their decision families out of independent qualification and confirmation. Record preparation, coding, consultation, review, corrections and unfinished attempts. Report money, human effort and elapsed time separately. Preliminary completion checks can inform feasibility, but an unqualified judge cannot establish comparative quality.
+
+**Decide how the observations will guide the choice before collecting them.** Record the calibration task set, models, candidate spending limits, repetitions, stopping limits and the rule for selecting an allowance. That rule should look for enough room to make a serious attempt, including required reviews, within the study ceiling. Specify what counts as sufficient completion opportunity and how failures or exhausted attempts affect that decision. Do not select the allowance that makes the interpretation layer's advantage look largest. Exact values and this operational selection rule remain to be specified before calibration starts. Preserve unsuccessful trials and any later amendments with their reasons.
+
+**Account for guidance preparation before setting the coding allowance.** Declare which compatible tasks will share a guide, following sections 5 and 6A. Allocate preparation equally across that set, including unsuccessful tasks. Each guidance method pays its allocation from the same total allowance that the sources only method receives. Also set a preparation cap and stopping rule so preparation cannot silently consume an unlimited amount. Repeating one task does not increase the number of distinct tasks over which preparation is shared.
+
+**Freeze the limits before the scored comparison.** Record the selected monetary allowance, preparation limits, prices, reuse allocation, model settings and operational time, call and correction limits. Apply the same policy to all matched groups. Keep the original stop and outcome when an attempt exhausts its allowance; do not grant extra funds because it is close to finishing. If the development evidence suggests no feasible comparison within the study ceiling, revise the scope or seek a new spending decision before proceeding. Do not quietly weaken one method or hide its failures.
+
+**Check whether the conclusion depends on that allowance.** Plan a limited comparison at a second budget level, subject to the overall authorised ceiling. Select the level, task subset and analysis before seeing the scored comparison. Run every method on the selected tasks at both levels with separate attempts. Report this as a sensitivity check, including cases where the apparent benefit changes with the available budget. If this check is unaffordable, record its omission and restrict conclusions to the tested allowance.
+
+Calibration spending belongs to study preparation, not to the later methods' task allowances. For each scored comparison, retain the method accounting in section 6 and report actual study spending separately. A new budget chosen after observing pilot results requires a new declared configuration and fresh confirmation families; the pilot cannot validate its own tuned settings.
 
 ## 7. Proposed interactive procedure
 
@@ -326,6 +344,7 @@ The investigator records each decision and its evidence in a versioned configura
 | Implementing the isolated runner | Selected execution boundary, threat model, permitted interfaces, output collection, pause/stop semantics and probe plan. | Working architecture and interfaces proposed in section 8C; host compatibility, exact pins and implementation remain open. |
 | Any model invocation, including qualification | Passed isolation/controller probes for the exact configuration; bounded gateway and logging; authorised budget. | Not established. |
 | Familiarity probes | Passed model-call gates; predefined samples, prompts, exact models/settings, scoring, repetition count and selection/reporting policy under section 2A. | Agreed; not specified or run. |
+| Budget calibration | Authorised study ceiling, passed model access and containment gates, separate development families, candidate limits and a recorded selection rule under section 6B. | Procedure agreed; amounts, calibration configuration and execution remain open. |
 | Economic comparison | Declared compatible reuse sets, cost/quality records, prices, allocation, task-order policy, projection horizon and uncertainty method under section 6A. | Analysis design added; data collection and numerical settings incomplete. |
 | Held-out component qualification | Role-specific evidence records and splits, frozen instructions/settings, error definitions, numerical limits, sample size and acceptance rule. | Procedure specified; fixtures and numerical gates incomplete. |
 | Pilot comparisons | Qualified components, eligible evidence-backed historical cases and disclosure audits, guidance preparation/reuse limits, matched budgets and order, scoring/stop/retry rules and audit configuration. | Not frozen; zero runs. |

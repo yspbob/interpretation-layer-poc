@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-10.1**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-10.2**. Status: working redesign, not a new ratified preregistration.
+
+## How the budget will be chosen: 10 September 2026
+
+The user accepted the proposed budget selection process and requested that it be described in the document. Section 6B separates the overall study spending ceiling from the equal allowance for each method. It specifies calibration on separate development tasks using all three methods, a selection rule recorded before observing those trials, declared guidance reuse and preparation allocation, and frozen limits before scored comparisons. Exhaustion remains an outcome. A second budget level on a predefined subset will check sensitivity if the authorised study ceiling permits it; an omitted check limits the claim.
+
+Amounts, task selection, repetitions, operational thresholds and the numerical selection rule remain open. No model expenditure, calibration run or demonstrated saving is implied. The readiness table records this gate. The downloadable plan is updated now; the plain language website explanation joins the pending copy batch, without releasing the other banked comments. Existing explanation and progress remain consistent that budgets still need to be set.
 
 ## Familiarity, reuse economics and production boundaries — 10 September 2026
 
