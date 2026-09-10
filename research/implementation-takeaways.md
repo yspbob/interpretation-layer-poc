@@ -124,3 +124,16 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** A small first trial can expose defects in the method and supply preliminary observations. It cannot establish general effectiveness, production return or readiness for owner governance and maintenance.
 
 **Next action:** Choose the first repository and decision families, review existing tooling and qualify one execution host. Use the first trial report to decide whether further work is justified, including when results are negative or inconclusive.
+
+
+### IL-008 refinement: phase by function, not only by coverage
+
+**Source:** 10 September follow-up. The user pointed out that the first phase still carried most of the work, then accepted splitting the first trial itself.
+
+**Status:** Agreed implementation sequence in plan revision .4, not an empirical finding.
+
+**Refinement:** Narrowing the number of repositories leaves most infrastructure in place if the first result still requires every role. Assess guidance reconstruction first, add coding use second, and add interaction third. Each phase should deliver evidence before the next capability is built. Keep the integrity controls required by each exposed capability.
+
+**Limits:** Guidance quality does not establish coding usefulness. Results collected in different phases cannot isolate the interaction effect; rerun matched groups in Phase 3. Assessment feedback and guidance repairs must not contaminate later claims of blinded reconstruction.
+
+**Next action:** Build the restricted preparation and independent guidance assessment path first. Leave code execution and interactive checking out unless an actually exposed capability requires their controls.

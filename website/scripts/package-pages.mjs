@@ -5,7 +5,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = join(root, 'dist/client');
 const output = join(root, '.pages-output');
 if (dirname(output) !== root || !output.endsWith('.pages-output')) throw new Error('Unsafe staging directory');
-const routes = ['progress', 'phases'];
+const routes = ['progress', 'phases', 'trial-method'];
 for (const file of ['index.html', ...routes.map(route => `${route}.html`), 'interpretation-layer-poc/_next']) {
   if (!existsSync(join(source, file))) throw new Error(`Missing static export: ${file}`);
 }
@@ -32,4 +32,4 @@ for (const page of ['index.html', ...routes.map(route => `${route}/index.html`)]
     if (!existsSync(join(output, relative))) throw new Error(`Broken local URL: ${url}`);
   }
 }
-console.log('GitHub Pages package ready: plan, progress, roadmap and referenced local assets verified.');
+console.log('GitHub Pages package ready: plan, progress, roadmap, method reference and referenced local assets verified.');

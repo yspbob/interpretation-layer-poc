@@ -1,6 +1,16 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-10.3**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-10.4**. Status: working redesign, not a new ratified preregistration.
+
+## Split the first trial by function: 10 September 2026
+
+The user observed that the previous Phase 1 still contained most of the engineering work and accepted a split of the first trial itself. Section 1A now defines Phase 1 as guidance reconstruction and independent assessment, Phase 2 as matched DIRECT/GUIDE coding use, and Phase 3 as matched DIRECT/GUIDE/INTERACT execution. Confirmation on fresh families and broader or production studies follow separately if justified.
+
+Phase 1 no longer requires a coding runner, code judge or interactive checker. It retains justified references, coverage and omission assessment, separate drafting and verification, independent assessment of guidance and verifier decisions, required qualification, controlled inputs, tested access boundaries, revisions/stops and preparation cost/failure records. Code execution controls apply before exposing code execution, including for source inspection. No exposed capability loses its required safeguards.
+
+Phase 2 must preserve guidance provenance, compatibility and preparation costs and prevent reference feedback from turning repaired guidance into a purported blinded result. Phase 3 reruns all three groups under matched settings rather than using Phase 2 scores as a control. Model calls, numerical settings and qualification remain unauthorised or unresolved as before.
+
+The website landing page now describes only reconstructing guidance. Progress reports the current phase and existing preparation. The station map and roadmap show the three functional phases; what could follow is secondary. The complete method remains available as a separate reference. This change alters the implementation sequence and public explanation, not the recorded experimental results.
 
 ## Phase the study and focus the current workspace: 10 September 2026
 

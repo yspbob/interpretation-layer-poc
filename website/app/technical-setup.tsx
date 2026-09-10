@@ -38,15 +38,15 @@ export function TechnicalSetup(){return <section className="section-block" id="t
 
   <section className="technology-section" id="containers-and-machines" aria-labelledby="containers-and-machines-title">
     <h3 id="containers-and-machines-title">Run on one qualified machine</h3>
-    <p>Phase 1 will run on one qualified Windows machine. The proposed setup is sized to fit the 32 GB laptop. Editing the project from either machine can continue through GitHub without moving experimental execution between them.</p>
+    <p>The coding phases will run on one qualified Windows machine. The proposed setup is sized to fit the 32 GB laptop. Editing the project from either machine can continue through GitHub without moving experimental execution between them.</p>
     <ul className="plain-list">
       <li><strong>Separate the agents.</strong> Each role has its own model context, permitted input pack and tool workspace. The controller passes only authorised submissions and review messages. Shared memory, retrieval stores and direct connections between agents are excluded; assessment answers stay outside working roles.</li>
       <li><strong>Prepare a clean environment.</strong> Install pinned dependencies before execution, then disable the VM’s network adapters. The containers run tools and generated code; the Windows controller makes model calls through a separate gateway.</li>
       <li><strong>Limit every transfer.</strong> Supply permitted files on a disk image that the guest cannot change. Collect bounded results through a virtual serial connection checked by the controller. This interface is part of the boundary that must be tested.</li>
       <li><strong>Reset between tool batches.</strong> Each bounded batch uses a fresh VM and container. Only checked workspace files carry forward. Execution stops before the next review, and environments share no writable caches.</li>
-      <li><strong>Keep each comparison on the selected host.</strong> Run all three groups on that machine and retain protected records. If experiments later move to another host, it must first pass the same required tests and receive verified records. That transfer capability is not a gate for Phase 1.</li>
+      <li><strong>Keep each comparison on the selected host.</strong> Run all three groups on that machine and retain protected records. If experiments later move to another host, it must first pass the same required tests and receive verified records. That transfer capability is not a gate for the first trial.</li>
     </ul>
-    <p>The <a className="text-link" href="https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/isolated-runner-design-v0.1.md" target="_blank" rel="noreferrer">detailed runner design</a> specifies the container restrictions, transfer limits, provisional resource profile, failure handling and workflow for private records. Compatibility and containment must be demonstrated on any host before experiments run there. Phase 1 needs one such host.</p>
+    <p>The <a className="text-link" href="https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/isolated-runner-design-v0.1.md" target="_blank" rel="noreferrer">detailed runner design</a> specifies the container restrictions, transfer limits, provisional resource profile, failure handling and workflow for private records. Compatibility and containment must be demonstrated on any host before experiments run there. Each phase needs a qualified boundary for the capabilities it actually uses.</p>
   </section>
 
   <DetailGroup>

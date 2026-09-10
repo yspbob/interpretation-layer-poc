@@ -10,7 +10,7 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts and a scripted development trace now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is Phase 1 under working plan **pilot-draft-2026-09-10.3**: one repository, a small set of distinct decision families and one qualified execution host. The current phase entry below supersedes historical broader sequencing. The website opens on that phase's plan, with separate progress and roadmap pages.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-10.4**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website opens on the current guidance plan, with separate progress, roadmap and complete method reference pages.
 
 ## Read next
 
@@ -145,6 +145,22 @@ All 84 cases now have reading titles and summaries in `website/app/case-summarie
 Working plan **pilot-draft-2026-09-10.2** remains authoritative. The change register records this editorial release and downloads are refreshed. No method settings, runtime implementation, calibration or model calls are added. The next substantive task remains the tooling review followed by the isolated runner without model calls, as described below.
 
 Verification: application type and lint checks passed. The final static build verified both routes and their referenced assets. Additional checks passed for paragraph structure, the revised copy and 17 local fragment links. The budget procedure has its own expandable section with a reachable link from Progress. All 84 inventory IDs have reading summaries; original inventory data and H04 records are unchanged. Plan/download consistency and diff checks passed. No browser interaction or visual QA was performed. The local preview was used only for a successful render check and requested as an app preview; the app returned a queued handoff.
+
+## Functional phases of the first trial: 10 September 2026
+
+The user accepted splitting the first trial itself and requested application to the website. The previous three stops left too much engineering in Phase 1. Plan **pilot-draft-2026-09-10.4**, section 1A, is now authoritative over the historical entries below.
+
+Phase 1 reconstructs and independently assesses guidance. It needs one selected repository and distinct decisions, justified references, source/provenance records, separate drafting and verification, independent assessment of guidance and verifier decisions, relevant qualification, controlled inputs, tested access boundaries, bounded revisions and protected cost/failure records. The report must include coverage and missing rules, not just accuracy of the claims made. It cannot claim coding usefulness, savings or owner approval.
+
+Phase 2 adds matched DIRECT/GUIDE coding work, ordinary review including changed plans, and independent code assessment. Phase 3 adds consultation, interactive checking and intervention assessment and compares all three groups together. Do not use old Phase 2 scores as the matched control for Phase 3. Reusing guidance requires compatible inputs, retained preparation costs and no hidden reference feedback; repairs remain development material.
+
+Confirmation on fresh families is a separate possible study after the first trial. Broader settings, detailed cost projections, a second budget level, a second execution host and production studies remain conditional later work. Public editing on either machine continues. No model calls, runtime provisioning or new experimental results are included in this release.
+
+**Exact next substantive step:** select the repository and guidance decisions, justify the reference evidence and define task neutral permitted packs. Review existing gateway and assessment tools, then specify and implement the restricted drafting, verification and independent guidance assessment path without model calls. Start with controlled reading; code execution needs its full containment checks if exposed. Prepare separate qualification families and fix criteria, models, repetitions, revision limits and spending limits before separately authorised model calls. H04 remains development material, not a selected repository or a requirement to build the entire coding workflow first.
+
+The landing page explains only the current guidance phase. The progress view records existing preparation and current gaps. The station line opens the three trial phases, each with its own question, added work and result. Confirmation and production ideas are under “What could follow the first trial”. The detailed method is preserved at `/trial-method/`, with links updated to that reference. No website comments from this agreed phase change remain banked.
+
+Verification: application type and lint checks passed. The final static build verified all four routes and their referenced assets. Additional checks passed for paragraph structure, 18 local fragment links, the current guidance focus and functional roadmap labels. Canonical plan and change register match the downloads. Inventory data, case summaries and H04 evidence are unchanged. No browser interaction or visual QA was performed. The local preview returned HTTP 200 and its app handoff was queued. Publication is confirmed separately against the remote commit and live content before reporting completion.
 
 ## Next substantive task
 

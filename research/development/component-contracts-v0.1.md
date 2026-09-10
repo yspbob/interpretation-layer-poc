@@ -5,10 +5,13 @@ Date: 8 September 2026. Status: **development specification and scripted rehears
 
 ## Phase allocation: 10 September 2026
 
-Working plan pilot-draft-2026-09-10.3, section 1A, now stages this design. Phase 1 implements the required boundaries and records for a narrow trial on one qualified host. Public project editing can continue on both machines. Qualification of the second execution host and automated continuation of confidential runs across machines are later capabilities, required before they are used but not before the first trial on one host. Protected local records and the required private storage remain necessary for that trial.
+Working plan pilot-draft-2026-09-10.4, section 1A, supersedes the earlier phase allocation. The first trial itself has three phases: reconstruct guidance; test its use; test interaction. Phase 1 implements only drafting, verification and independent guidance assessment with immutable permitted inputs, separate contexts, tested access boundaries, bounded revisions, protected assessment records and full costs/failure logging. Qualify only the assessment jobs used in that phase. Coverage and omissions matter as well as false claims.
 
-The first phase keeps all required role isolation, matched reviews and budgets, independent assessment and qualification for the narrow tested scope. It records costs, but defers detailed economic projections and the second budget comparison. Broader capability descriptions below remain design records rather than a list of immediate implementation gates. No model calls or runtime installation are authorised by this staging decision.
+Start with controlled reading of supplied evidence. The code runner, code judge and interactive checker are not Phase 1 gates. If an agent receives a code execution tool for inspection, its full isolation controls must be implemented and tested first. The VM/container design below remains the proposal for execution when introduced; a reading-only result cannot claim that architecture has passed containment tests.
 
+Phase 2 adds matched DIRECT/GUIDE coding comparisons, ordinary changed-plan review and independent code assessment. Phase 3 adds the interactive checker and intervention assessment and reruns all three conditions together. Do not infer the interaction effect from scores collected in different phases. Guidance reuse must preserve original costs, compatible inputs and freedom from hidden assessment feedback; repairs remain development material.
+
+Public editing on either Windows machine continues. Confidential records must remain protected; a second execution host and automated confidential transfer remain deferred until needed and qualified. The full contracts below describe eventual roles, not work required before the first guidance result. No model call or runtime qualification has occurred.
 
 ## Shared records and boundaries
 
