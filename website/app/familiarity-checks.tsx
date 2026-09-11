@@ -1,6 +1,12 @@
 export function FamiliarityChecks() {
   return <>
-    <p>Asking a model whether it recognises a project is not enough. The experiment will look for observable recall in two separate checks, at the relevant selection stage. Repository checks belong to Phase 1; historical fix reconstruction belongs to selecting coding tasks for Phase 2.</p>
+    <h3>What the agent learns during our study</h3>
+    <p>An agent is meant to read the code assigned to its task. It can remember that evidence while it works. What it must not inherit is another attempt’s history, our research notes or the hidden answers.</p>
+    <p>Each independent attempt starts with a fresh conversation and workspace. Only its assigned inputs are carried in, including the prepared guide for groups that receive one. The drafter’s conversation and assessment feedback stay out.</p>
+    <p>Calling a session incognito would not prove that separation. We must check the actual history, files, memory and tool access. These controls are required but have not yet been implemented or tested.</p>
+    <p>Provider training and storage settings need a separate check when we choose the experimental interface. A fresh session cannot erase knowledge already learned during model training.</p>
+    <h3>What the model may have known beforehand</h3>
+    <p>Asking a model whether it recognises a project is not enough. We will look for signs of recall when choosing the project and its tasks. The two checks below ask for details the model has not been given.</p>
     <ol className="plain-list">
       <li><strong>When screening repositories:</strong> give the model a short excerpt with a distinctive detail removed, such as unusual comment wording or an arbitrary test value. Ask it to recover the missing detail. Include comparable, newly written snippets to see how often it can guess without prior exposure.</li>
       <li><strong>When selecting historical tasks:</strong> give the model a limited task description, with no repository access, and ask where and how it would make the change. Compare the answer with distinctive details of the historical fix that were not supplied in the prompt.</li>

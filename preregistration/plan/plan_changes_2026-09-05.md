@@ -1,6 +1,16 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-10.4**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-11.1**. Status: working redesign, not a new ratified preregistration.
+
+## Apply the approach and reading review: 11 September 2026
+
+The user agreed to retain every preparation outcome in the later comparison, including empty guides and their costs, and authorised release of the reviewed changes. The phase transition text now distinguishes a decision to stop or improve the study from selecting only successful guides. The verifier determines which claims enter the frozen guide; independent assessment cannot select only its successes for a claim about the whole method. A selected diagnostic must state its narrower scope.
+
+The plan makes the existing sequence explicit: choose the intended tasks and compatible source versions before preparing their guidance, keep tasks and solutions from the drafter and verifier, and preserve preparation and feedback history. Phase 1 begins with a concrete guidance assessment case. Coding examples and budget calibration are allocated to the phases that use them; no code judge or interactive checker is added to Phase 1.
+
+The familiarity explanation distinguishes reading within an attempt, inherited research history and prior training knowledge. Fresh experimental sessions require controlled inputs, files, memory and tools; an incognito label cannot establish those protections. Provider configuration must be verified separately. The controls remain unimplemented and unvalidated.
+
+Both website views use clearer sentences and describe these decisions consistently. The three phase structure, visible overview and separate progress view remain. No repository, model, numerical threshold or spending ceiling was chosen. No model call or experimental result is included in this release.
 
 ## Restore one continuous explanation: 11 September 2026
 

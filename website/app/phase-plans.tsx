@@ -23,7 +23,7 @@ export function PhasePlans({guidance,use,interaction,reference}:{guidance:ReactN
   return <section className="phase-reader" id="phase-plans" aria-label="The plan by phase">
     <PhaseLine selected={selected} onSelect={choose}/>
     {[guidance,use,interaction].map((content,index)=><div key={index} role="tabpanel" id={`phase-panel-${index+1}`} aria-labelledby={`phase-${index+1}`} hidden={selected!==index+1} data-phase={index+1} className="phase-reading-panel" tabIndex={0}>{content}</div>)}
-    <details className="method-reference" id="full-method"><summary>Read the full method and production context</summary><p className="reference-intro">The sections below preserve the detailed comparison, assessment and technical design. They describe the complete trial; the selected phase above defines what belongs in that phase.</p>{reference}</details>
+    <details className="method-reference" id="full-method"><summary>Explore the comparison, technical setup and production proposal</summary><p className="reference-intro">The phase plan above explains what we will do next. Open this reference when you want to examine a particular part in more detail. Coding comparisons belong to Phases 2 and 3; they are not prerequisites for testing guidance in Phase 1.</p>{reference}</details>
     <div className="route-footer"><span>The plan describes what we intend to do. Progress records what has happened.</span><PageLink href="/progress">Progress &amp; findings →</PageLink></div>
   </section>
 }

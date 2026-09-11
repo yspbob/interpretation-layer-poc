@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-10.4**
+Plan ID: **pilot-draft-2026-09-11.1**
 Updated: **11 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -54,6 +54,10 @@ The deliverable asks whether consultation and checking improve the work beyond a
 
 Public project editing and Git continuity remain available on both Windows machines. Each phase needs a qualified boundary for the capabilities it actually uses. Protected records are required now; automated confidential transfer and a second execution host remain deferred until needed and validated. Section 1A takes precedence over older whole-trial sequencing below. Sections 5 to 7 describe coding comparisons introduced in Phases 2 and 3; their safeguards remain required when those activities begin.
 
+**Phase transition clarification, agreed 11 September.** Deciding whether to continue the study is different from selecting individual successful guides. The study may stop or revise its method after Phase 1. For a declared coding comparison, retain every included preparation outcome and its cost. Use only the verifier's frozen admitted claims, including an empty guide when none were admitted. Independent assessment must not filter the comparison to guides that scored well. Preserve incorrect admitted claims as outcomes rather than silently repairing or excluding them. A separately declared diagnostic using only successful guides must state that conditional scope and cannot establish overall preparation reliability. Record any revised procedure as a new configuration; material or preparation influenced by hidden feedback is development, with fresh permissible preparation where required.
+
+Before preparing guidance intended for later use, choose and record its task set, applicable starting versions and permitted sources. This implements the existing declared reuse policy; do not select later tasks because the finished guide happens to help them. The investigator can reserve these tasks before their full coding infrastructure is built. Neither drafter nor verifier receives the tasks or solutions. Carry guide identity, source hashes, revision and feedback exposure history, preparation costs and declared task set into the later phase.
+
 ### First-pilot claim and prior familiarity
 
 The first pilot will compare DIRECT, GUIDE and INTERACT on real historical changes with published requirements or documented obligations and reproducible behavioural checks. Its claim is whether the layer helps on these evidence-backed public-project tasks. Models may already know the code or historical solution from training. Matched models, tasks and budgets support the method comparison; they do not remove familiarity, establish equal recall in every context, or prove that guidance was inferred entirely from the supplied evidence. Report this limitation with results and restrict generalisation to the tested conditions.
@@ -94,6 +98,10 @@ All four use Python and three use Django. This is purposive selection, not a rep
 
 ### 2A. Check for evidence of prior familiarity
 
+Distinguish prior training knowledge from intended reading within an attempt and unintended information carried across attempts. Each independent attempt and role uses its own permitted history, files and tools under section 8. Preserve legitimate working history within an attempt; pass only explicitly authorised artifacts between roles, such as the frozen guide. Do not import investigator conversations, probe answers, hidden reference feedback or earlier attempts. Fresh sessions cannot erase prior training knowledge. An incognito label or an instruction to forget does not establish isolation.
+
+Before selecting an experimental interface, verify and record its conversation persistence, shared memory and retrieval behaviour, provider training/data sharing settings and retention policy. Disable unintended history and sharing; test the actual request and tool boundaries. Provider storage is separate from model input history and use for training. These requirements remain unimplemented and unvalidated; no product default establishes the actual account configuration.
+
 Agreed addition on 10 September; no probes have been run. Repository names or a model's own familiarity statement are not sufficient evidence of training exposure. Use two diagnostics before pilot comparisons:
 
 1. **Repository screening:** choose short excerpts with distinctive details masked, such as unusual comment wording or arbitrary test values. Ask the intended model to recover them from the declared prompt only. Include comparable newly authored snippets to estimate how often details can be inferred or guessed without prior exposure. These controls are imperfect and do not create a certified non-member benchmark.
@@ -110,6 +118,8 @@ Anonymised prompts are optional diagnostics. Removing names can change difficult
 Research basis: the missing-detail design adapts [Testset Slot Guessing](https://arxiv.org/abs/2311.09783); it is not an already validated detector for these repositories. [Membership-inference evaluation](https://arxiv.org/abs/2402.07841) and [code countermeasure research](https://arxiv.org/abs/2403.16898) support caution about non-detection and transformed-input comparisons.
 
 ## 3. Build eligible cases before selecting a confirmation sample
+
+Phase allocation: the code implementation examples and executable task criteria below apply to coding cases in Phases 2 and 3. Phase 1 starts with a bounded guidance case and the reference assessment in section 9A. A code judge or interactive checker is not a prerequisite for that guidance case.
 
 For each candidate, record the published reference, corresponding implementation, relevant exceptions, any disagreement, the decision family, a proposed change task, disclosure risks and the screening decision. Find reference evidence before evaluating generated guidance; do not construct the answer key from the layer's output.
 
@@ -200,7 +210,7 @@ Agreed procedure on 10 September. No amount has been chosen and no budget calibr
 
 **First, agree what the whole study can spend.** The user sets an overall spending ceiling before paid work begins. It must cover development, budget calibration, component qualification, familiarity probes, experimental attempts and independent assessment. Keep a reserve for declared retries and unexpected research costs. This ceiling is different from the equal allowance given to each method in a comparison.
 
-**Then measure costs on separate development tasks.** After the model access and containment gates have passed and expenditure is authorised, try all three methods on a small selection of development tasks. Choose tasks spanning the intended scope and difficulty, rather than only convenient examples. Keep their decision families out of independent qualification and confirmation. Record preparation, coding, consultation, review, corrections and unfinished attempts. Report money, human effort and elapsed time separately. Preliminary completion checks can inform feasibility, but an unqualified judge cannot establish comparative quality.
+**Then measure costs on separate development tasks.** After the model access and containment gates have passed and expenditure is authorised, try the methods used in that phase on a small selection of development tasks: DIRECT/GUIDE in Phase 2 and all three in Phase 3. Phase 1 instead calibrates only its drafting, verification and independent guidance assessment jobs on separate development material; it does not require coding calibration. Choose tasks spanning the intended scope and difficulty, rather than only convenient examples. Keep their decision families out of independent qualification and confirmation. Record preparation, coding, consultation, review, corrections and unfinished attempts. Report money, human effort and elapsed time separately. Preliminary completion checks can inform feasibility, but an unqualified judge cannot establish comparative quality.
 
 **Decide how the observations will guide the choice before collecting them.** Record the calibration task set, models, candidate spending limits, repetitions, stopping limits and the rule for selecting an allowance. That rule should look for enough room to make a serious attempt, including required reviews, within the study ceiling. Specify what counts as sufficient completion opportunity and how failures or exhausted attempts affect that decision. Do not select the allowance that makes the interpretation layer's advantage look largest. Exact values and this operational selection rule remain to be specified before calibration starts. Preserve unsuccessful trials and any later amendments with their reasons.
 
@@ -330,6 +340,8 @@ Choose the minimum worthwhile improvement, acceptable additional cost, primary e
 These are separate assessment jobs, not necessarily five different model products. Keep their contexts and outputs separate. The verifier's admission decision is part of the treatment; it cannot serve as the independent score of that treatment's guidance. A model/version passing one role does not qualify its other roles or different input permissions.
 
 #### 2. Establish the expected assessment before testing the assessor
+
+Start Phase 1 with one concrete case specification before building a general assessment framework. Declare the audited source scope and expected decisions, supporting evidence, valid alternative answers, uncertainty, omissions and serious errors. Explain how duplicate claims and differently worded versions of the same decision are counted. Establish coverage only within that audited scope, never an assumed total of all rules in the repository. Use separate cases to qualify the actual assessor; the worked development case cannot qualify itself. Case selection, numerical pass limits and qualification samples remain open.
 
 For each item, create an evidence record containing the source and dependency revisions, submitted claim/plan/code, applicable criterion and severity, legitimate exceptions, expected decision, and the evidence supporting it. Record which facts were available to the role at that point. Historical code is evidence to examine, not an automatic answer key.
 

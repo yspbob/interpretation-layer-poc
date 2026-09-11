@@ -2,7 +2,7 @@
 
 11 September 2026
 
-**Status:** Review recommendations, not agreed method changes or experimental findings. The user requested an assessment of gaps and asked that the text be easily digestible. Website changes below are banked for application. No model runs were performed.
+**Status:** The user accepted the guidance outcome policy and authorised release on 11 September. The plan and website now apply the clarifications and writing changes below under revision pilot-draft-2026-09-11.1. This document preserves the review reasoning; it is not an experimental finding. Completing a concrete Phase 1 assessment case is the next substantive task, not completed work. No model runs were performed.
 
 Reviewed the current working plan, especially sections 1A, 5, 6, 8, 9A and 10, against the continuous explanation and phase panels in the website source. This is a review of the specification and writing, not a new browser inspection or validation of the proposed controls.
 

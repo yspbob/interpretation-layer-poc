@@ -103,7 +103,7 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Source:** 11 September user question about source inspection and incognito execution, assessed in the [approach review](development/approach-and-reading-review-2026-09-11.md).
 
-**Status:** Explanation of existing separation requirements, not a newly validated control. Website wording is banked. Provider settings remain to be verified for the selected experimental interface.
+**Status:** Explanation of existing separation requirements, applied to the website and plan on 11 September. This is not a newly validated control. Provider settings remain to be verified for the selected experimental interface.
 
 **Takeaway:** Keep three things distinct: prior training knowledge, intended reading during an attempt, and information inherited from other tasks. Fresh experimental sessions address the third only when history, files, memory and retrieval access are actually controlled. They cannot erase prior training knowledge.
 
@@ -152,12 +152,12 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Source:** [Approach and reading review, 11 September](development/approach-and-reading-review-2026-09-11.md), prompted by the user's request to analyse the approach. This is an assistant recommendation based on the difference between the Phase 2 page wording and working plan section 5.
 
-**Status:** Proposed clarification, not yet adopted and not an experimental finding. The existing plan already retains empty guides and failed preparation.
+**Status:** Agreed by the user and applied on 11 September in plan revision .1 and both website views. This clarifies existing retention of empty guides and failed preparation; it is not an experimental finding.
 
 **Takeaway:** A verifier's decision to admit a claim and an independent assessment of the resulting guide serve different purposes. Selecting only guides that score well in the latter can hide preparation failures when assessing the overall method's usefulness.
 
 **Practical implication:** Keep the original draft, verifier decisions, released guide version, independent assessment, preparation cost and intended uses separately traceable. Preserve empty outputs and failures. Do not infer overall preparation reliability from results collected only after successful preparation.
 
-**What remains uncertain:** The study may reasonably stop or repair the method between phases. A test of only successful guides can answer a narrower question. The transition policy needs to distinguish these choices before comparative results are interpreted; this review does not choose new numerical gates.
+**What remains uncertain:** The study may reasonably stop or repair the method between phases. A test of only successful guides can answer a narrower question. The transition policy now distinguishes these choices. Numerical gates remain open.
 
-**Next action:** Clarify the transition policy in the working plan and public explanation when the recommendations are adopted. Retain the existing separation between development feedback and blinded preparation.
+**Next action:** Implement the recorded transition policy and preserve preparation outcomes, costs and feedback history. Retain the separation between development feedback and blinded preparation.
