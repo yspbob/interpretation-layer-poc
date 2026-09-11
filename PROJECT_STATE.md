@@ -14,6 +14,7 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 ## Read next
 
+- [Approach and reading review, 11 September](research/development/approach-and-reading-review-2026-09-11.md). Recommendations are pending; they do not amend the agreed method or authorise website edits.
 - [Current working plan](preregistration/plan/working_plan_2026-09-05.md), especially section 1A for the phase boundaries, then sections 9A and 10 for qualification and the immediate development step.
 - [Component contracts v0.1](research/development/component-contracts-v0.1.md) and [H04 worked development case](research/development/h04-response-lifetime/README.md), including its recorded results and reproducible runner.
 - [Decision and plan change register](preregistration/plan/plan_changes_2026-09-05.md).
@@ -21,6 +22,18 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 - [Full playbook context and original POC review](research/development/playbook-and-original-poc-review.md). This is historical analysis: later decisions in the working plan supersede its recommendations, especially the owner-recruitment proposal.
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
+
+## Current review: 11 September 2026
+
+The user requested an analysis of the approach and emphasised that the text must be easily digestible. The linked review recommends keeping the three functional phases. Its main concern is the Phase 2 page's instruction to use guidance that passed Phase 1 checks: clarify verifier admission versus selecting only independently successful guides, preserving section 5's empty guides and preparation failures. It also recommends making the existing task selection and reuse safeguards explicit across the phase boundary, completing one bounded Phase 1 assessment specification, and labelling inherited whole trial requirements by the activity that needs them.
+
+These are review recommendations, not newly agreed method changes or empirical findings. Website wording proposals remain banked. The reading review calls for less repetition, named actors, explanations of unfamiliar terms and full sentences that give each important qualification room. It includes concrete proposed rewrites. The canonical plan, website source and live pages are unchanged by this review; no model or containment run was performed. IL-009 records the associated implementation implication with its uncertainty and status.
+
+**Next action:** resolve the guidance selection clarification and the sequence for reserving later tasks before applying method or website changes. The substantive development direction remains the restricted Phase 1 path in section 1A, beginning with selected evidence and a concrete assessment case. No coding judge or interactive checker is a prerequisite merely because it appears in the complete trial specification.
+
+The user also asked whether research tasks make the model familiar with the code and suggested incognito execution. The review distinguishes intended reading during an attempt, forbidden carryover from other sessions and prior training familiarity. The plan already requires separate role/attempt histories and no shared memory or retrieval stores. The proposed explanation makes those controls explicit without claiming they are implemented. OpenAI documentation was checked for API conversation state and separate training/retention policies; the eventual account configuration remains unverified. Bank this explanation with the other website recommendations. Do not run a blinded participant in this investigator conversation.
+
+Verification: reviewed the recommendations against the cited plan sections and website source; diff checks and plan/download consistency passed. This documentation review does not require a website rebuild and includes no new browser or experimental validation.
 
 ## Decisions to preserve
 

@@ -99,6 +99,16 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **Next action:** Implement the two probes and fix their samples, prompts, scoring, repeats and execution boundaries before any authorised model calls. Keep the first-pilot claim limitation in place.
 
 
+### IL-006 clarification: familiarity created by our own work
+
+**Source:** 11 September user question about source inspection and incognito execution, assessed in the [approach review](development/approach-and-reading-review-2026-09-11.md).
+
+**Status:** Explanation of existing separation requirements, not a newly validated control. Website wording is banked. Provider settings remain to be verified for the selected experimental interface.
+
+**Takeaway:** Keep three things distinct: prior training knowledge, intended reading during an attempt, and information inherited from other tasks. Fresh experimental sessions address the third only when history, files, memory and retrieval access are actually controlled. They cannot erase prior training knowledge.
+
+**Next action:** Verify those boundaries in the runner and explain them plainly. Preserve permitted history within an attempt and intentionally supplied guidance. Never pass the investigator's conversation or hidden assessment feedback to a working role. Check provider training and retention policies separately; an incognito label is not an isolation test.
+
 ## IL-007: Separate guidance preparation from repeated use and explain pilot differences
 
 **Source:** 10 September clarification of when guidance is prepared, followed by the user's requirement to explain every material production-versus-POC difference.
@@ -137,3 +147,17 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **Limits:** Guidance quality does not establish coding usefulness. Results collected in different phases cannot isolate the interaction effect; rerun matched groups in Phase 3. Assessment feedback and guidance repairs must not contaminate later claims of blinded reconstruction.
 
 **Next action:** Build the restricted preparation and independent guidance assessment path first. Leave code execution and interactive checking out unless an actually exposed capability requires their controls.
+
+## IL-009: Preserve unsuccessful preparation when assessing later usefulness
+
+**Source:** [Approach and reading review, 11 September](development/approach-and-reading-review-2026-09-11.md), prompted by the user's request to analyse the approach. This is an assistant recommendation based on the difference between the Phase 2 page wording and working plan section 5.
+
+**Status:** Proposed clarification, not yet adopted and not an experimental finding. The existing plan already retains empty guides and failed preparation.
+
+**Takeaway:** A verifier's decision to admit a claim and an independent assessment of the resulting guide serve different purposes. Selecting only guides that score well in the latter can hide preparation failures when assessing the overall method's usefulness.
+
+**Practical implication:** Keep the original draft, verifier decisions, released guide version, independent assessment, preparation cost and intended uses separately traceable. Preserve empty outputs and failures. Do not infer overall preparation reliability from results collected only after successful preparation.
+
+**What remains uncertain:** The study may reasonably stop or repair the method between phases. A test of only successful guides can answer a narrower question. The transition policy needs to distinguish these choices before comparative results are interpreted; this review does not choose new numerical gates.
+
+**Next action:** Clarify the transition policy in the working plan and public explanation when the recommendations are adopted. Retain the existing separation between development feedback and blinded preparation.
