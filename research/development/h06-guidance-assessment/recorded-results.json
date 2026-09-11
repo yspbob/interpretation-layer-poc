@@ -1,8 +1,8 @@
 {
   "status": "Investigator development probes; no model calls, semantic grading or isolation validation",
   "source_commit": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
-  "source_manifest_sha256": "12207160153540ab34fad7385cca84268a3b938a87b7893ac96671adc2fd74b9",
-  "probe_sha256": "53460a88cbb51a90f1c4e380bde36cf0a7b9376e05520089d4ca18ac604b2d28",
+  "source_manifest_sha256": "72dea16eabd027b0650c51478dbe630438de2b36a99ff0e1f78be8656b011a79",
+  "probe_sha256": "535b1eb2ca9ddc1cfae0f4ddf2aaa8eae9e34134f5aa0a7ae677f9514c8c4d1e",
   "python": "3.13.12",
   "httpx_version_from_pinned_source": "0.28.1",
   "dependencies": {

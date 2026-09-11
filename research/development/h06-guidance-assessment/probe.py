@@ -149,7 +149,7 @@ def main():
         "checks": rows,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"{sum(row['passed'] for row in rows)}/{len(rows)} development checks matched their declared expectations")
     if not all(row["passed"] for row in rows):
         raise SystemExit(1)
