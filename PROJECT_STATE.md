@@ -39,6 +39,12 @@ Verification: application type and lint checks passed. The final static build ve
 
 ## Decisions to preserve
 
+### Banked status clarification: 11 September 2026
+
+The user questioned whether candidate review was complete and accepted distinguishing initial screening from experimental readiness. Checked the screening protocol, inventory review, 84 structured records and recorded probe summary. Initial screening is complete as exploratory preparation; the 52 advancing records are candidates for development, not qualified cases. No new source inspection or behaviour test was performed in this check.
+
+For the next authorised wording release, rename the completed step to “Find and screen candidate material” and replace “The evidence is gathered” with “Candidate material is available”. Explain the next step's deliverable as a selected project and concrete guidance assessment case, with supporting sources, valid alternatives, uncertainty and permitted agent inputs. Keep familiarity checks, input separation and qualification explicitly outstanding. Section 10 of the Markdown plan agrees on exploratory completion and open case selection, and its downloads match. However, its older H04 passage still says a worked case must cover verifier, checker and judge under the Phase 1 heading. Label that passage as the historical full workflow rehearsal, preserving its evidence, so it cannot be read as a new Phase 1 prerequisite. Section 1A and the exact next step already give the correct restricted scope. These are banked presentation clarifications; no further broad review or change to the research sequence is proposed.
+
 - No accessible project owner is available. The technical experiment uses published references and reproducible behaviour; it cannot certify that newly inferred rules express an owner's unrecorded intentions.
 - Separate deriving guidance from code from reading guidance in documentation. Record the provenance and qualifications of individual claims.
 - Use the actual applicable AGENTS.md files from each backtest’s starting revision in all matched groups; record hashes, scope or absence. If the files state the target rule, classify the case as documentation-visible rather than strip real instructions or claim code inference.
