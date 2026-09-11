@@ -9,3 +9,4 @@
 *.png binary
 research/development/h04-response-lifetime/* text eol=lf
 research/development/h06-guidance-assessment/* text eol=lf
+research/development/netbox-bulk-error-candidate/* text eol=lf

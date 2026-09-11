@@ -1,0 +1,44 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: netbox
+      POSTGRES_PASSWORD: netbox
+      POSTGRES_DB: netbox_nb_bulk_reproduction
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U netbox -d netbox_nb_bulk_reproduction"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    mem_limit: 1g
+    networks: [reproduction]
+  redis:
+    image: redis:7
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    mem_limit: 256m
+    networks: [reproduction]
+  probe:
+    image: nb-bulk-reproduction:${NETBOX_REVISION:?Set NETBOX_REVISION}
+    build:
+      context: .
+      args:
+        NETBOX_REVISION: ${NETBOX_REVISION}
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    environment:
+      NB_BULK_DB_HOST: postgres
+      NB_BULK_REDIS_HOST: redis
+    volumes:
+      - type: bind
+        source: ${NB_BULK_RESULTS:?Set NB_BULK_RESULTS}
+        target: /results
+    mem_limit: 4g
+    networks: [reproduction]
+networks:
+  reproduction:
+    internal: true

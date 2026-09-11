@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-11.3**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-11.4**. Status: working redesign, not a new ratified preregistration.
+
+## Complete the local NetBox reproduction: 11 September 2026
+
+Revision .4 records the authorised investigator reproduction before building the Phase 1 harness. Following the user's preference for local development on both Windows machines, Docker Desktop with WSL 2 was installed on the current PC. The portable runner uses an 8 GB WSL budget and sequential revisions. No GitHub Actions run was dispatched. The laptop still needs its own Docker installation.
+
+Four request scenarios completed at each of three pinned NetBox revisions. Successful batches saved both records and queued two webhook jobs. Failed batches rolled back database and change log writes. The starting revision left an incorrect job when a valid item preceded an invalid one. The feature revision did so in either order. The later QA revision queued no jobs for failed batches. This confirms a preexisting defect whose reach expanded with the feature, not an entirely new regression.
+
+The probe uses real PostgreSQL, Redis and NetBox request/event paths. It records queued dispatch, not outgoing webhook delivery, and uses a superuser. This is one development family with twelve related observations, not twelve independent cases. No model role, qualification or agent containment was tested. The next step is explicit NetBox guidance assessment records and the minimal Phase 1 harness, with separate qualification material.
 
 ## Prioritise a substantive candidate: 11 September 2026
 

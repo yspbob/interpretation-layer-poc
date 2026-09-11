@@ -191,3 +191,14 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** The full request path has not been reproduced here. The earlier source already contains a cleanup convention; this is not proof of discovering an undocumented decision or of superiority over an ordinary agent.
 
 **Next action:** Reproduce the bounded NetBox case before admitting a runtime reference. Keep code observations, documented guarantees and inferred scope separately traceable.
+
+
+### IL-011 runtime update: existing behaviour can violate the supported rule
+
+**Source:** [Local NetBox reproduction](development/netbox-bulk-error-candidate/reproduction.md), completed on 11 September with real PostgreSQL and Redis.
+
+**Evidence:** All twelve request scenarios completed across three revisions. Failed batches restored the records and their change logs. The starting revision nevertheless queued an incorrect webhook job in one mixed ordering; the feature did so in both orderings. The later QA queued no jobs for failed batches and retained successful events. These are related checks of one public development family. Delivery to a recipient was not tested.
+
+**Practical implication:** A guide must distinguish a supported guarantee from code that currently violates it. Repeating the API implementation would preserve this defect. Record the conflicting paths and the evidence for the rule; do not treat the historical implementation as an answer key.
+
+**Limits and next action:** Model reconstruction and added value remain untested. Turn the scoped rule, exceptions and uncertainty into assessment records, and qualify on separate material. The local container setup is a development environment, not qualified agent containment.

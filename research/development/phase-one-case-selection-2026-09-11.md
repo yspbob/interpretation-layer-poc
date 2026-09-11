@@ -2,6 +2,12 @@
 
 11 September 2026. Selection is in progress; this is not a frozen trial allocation.
 
+## Runtime update
+
+The [NetBox reproduction](netbox-bulk-error-candidate/reproduction.md) completed on 11 September. It confirms the scoped database and queued event behaviour across the starting, feature and later QA revisions. The first two contain the fault in different request orders; the later revision satisfies the tested event rule. NetBox now supplies a runtime checked development reference. H06 remains the existing guidance assessment development case. These are different kinds of preparation, not two qualified experimental cases.
+
+Next define the NetBox guidance assessment records and implement the minimal Phase 1 harness. Preserve the public development exposure and select separate qualification families. The historical task is plausible later use; repeated guide reuse and final trial allocation are still unestablished.
+
 ## Selection update after reviewing the purpose of the case
 
 The user questioned whether H06 would mainly test extraction of documented facts and agreed to investigate a stronger candidate. Keep H06 for developing the assessment machinery. Do not make ease of running it the reason to select HTTPX for the substantive trial.

@@ -2,6 +2,12 @@
 
 11 September 2026. Candidate NB-BULK-01. Public investigator research, not a frozen task, an agent input pack or a model result.
 
+## Runtime check completed
+
+The [local reproduction](reproduction.md) has now run four request scenarios at each of three revisions using real NetBox, PostgreSQL and Redis. Failed batches restored the database but could leave an incorrect webhook job queued in both the starting and feature revisions. The later QA revision removed those jobs while preserving successful events. The bug therefore predates the feature; the feature expands its reach.
+
+This is a checked development reference for the scoped behaviour, not a model result or a final trial allocation. The earlier source audit below is retained as the record of why the case was investigated. Its statements that runtime work was pending describe that earlier stage and are superseded by the reproduction report.
+
 ## The task in plain language
 
 NetBox keeps records of network infrastructure. Its API lets a client edit several records in one request. A user asked for an error against each item that failed, so they could understand what to correct without repeatedly submitting the batch.
@@ -62,7 +68,7 @@ The drafter and verifier must not receive this record, later patches, the select
 
 This public discussion exposes the candidate family. If it is used to develop prompts or assessment examples, keep it in development and qualify the method on different families. No untouched qualification claim is made here. Choosing a known problematic change is also deliberate selection: success on it would not show how frequently ordinary tasks benefit from the layer.
 
-## Work completed and next step
+## Work completed at source review and its next step
 
 The feature, its actual starting parent and the later QA change have been located. Selected earlier documentation and source paths were inspected and hashed. This establishes a plausible task and a reason to investigate it. No NetBox integration test, model call, guidance preparation, cost measurement or isolation test ran.
 

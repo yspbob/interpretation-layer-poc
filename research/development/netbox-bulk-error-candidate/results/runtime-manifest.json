@@ -1,0 +1,136 @@
+{
+  "run_date": "2026-09-11",
+  "environment": "Docker Desktop 4.90.0, WSL 2 on Windows; local investigator run",
+  "wsl_memory_cap_gib": 8,
+  "scenarios_per_revision": 4,
+  "independent_case_families": 1,
+  "model_calls": 0,
+  "revisions": {
+    "starting": {
+      "source_revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "observations_sha256": "78294fccf592e9effe4b98f7dfbbc02e593afaca69d047ff3bc18addb3772270",
+      "images": [
+        {
+          "Id": "sha256:0a7543eefa0e764b136e479a3350a0b747d56684437f089daca1e29b102868c3",
+          "RepoTags": [
+            "nb-bulk-reproduction:d13c98b9ea8c55dafdcdecbf3058a731814a7ead"
+          ],
+          "RepoDigests": [
+            "nb-bulk-reproduction@sha256:0a7543eefa0e764b136e479a3350a0b747d56684437f089daca1e29b102868c3"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 286025619
+        },
+        {
+          "Id": "sha256:67f41722b7a8cbdb868a44a4995c846eddfdc2973bccb291ce937dce88ad5675",
+          "RepoTags": [
+            "postgres:17"
+          ],
+          "RepoDigests": [
+            "postgres@sha256:67f41722b7a8cbdb868a44a4995c846eddfdc2973bccb291ce937dce88ad5675"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 161309188
+        },
+        {
+          "Id": "sha256:71da9275c5f3fcb97d0fa0c8c5b36cc995327265420f17a04bfd544f458059f7",
+          "RepoTags": [
+            "redis:7"
+          ],
+          "RepoDigests": [
+            "redis@sha256:71da9275c5f3fcb97d0fa0c8c5b36cc995327265420f17a04bfd544f458059f7"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 43602786
+        }
+      ]
+    },
+    "feature": {
+      "source_revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "observations_sha256": "c5c81c25a2de479e7ba4c3f6a63af998940f0cb6b29c8f9fd79e0e4895104aef",
+      "images": [
+        {
+          "Id": "sha256:fb0c959758c393d8045ddb072d9e903f75ada63f35321ff6bbb019fb8def2f04",
+          "RepoTags": [
+            "nb-bulk-reproduction:6068f417876e79b6d588bd8b05a7a4e515378b51"
+          ],
+          "RepoDigests": [
+            "nb-bulk-reproduction@sha256:fb0c959758c393d8045ddb072d9e903f75ada63f35321ff6bbb019fb8def2f04"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 286034612
+        },
+        {
+          "Id": "sha256:67f41722b7a8cbdb868a44a4995c846eddfdc2973bccb291ce937dce88ad5675",
+          "RepoTags": [
+            "postgres:17"
+          ],
+          "RepoDigests": [
+            "postgres@sha256:67f41722b7a8cbdb868a44a4995c846eddfdc2973bccb291ce937dce88ad5675"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 161309188
+        },
+        {
+          "Id": "sha256:71da9275c5f3fcb97d0fa0c8c5b36cc995327265420f17a04bfd544f458059f7",
+          "RepoTags": [
+            "redis:7"
+          ],
+          "RepoDigests": [
+            "redis@sha256:71da9275c5f3fcb97d0fa0c8c5b36cc995327265420f17a04bfd544f458059f7"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 43602786
+        }
+      ]
+    },
+    "later-qa": {
+      "source_revision": "3793160eba4d54070552eacfc1502027a7e042c1",
+      "observations_sha256": "bfe2d94e6100b23ee22be9a8e0cd9a3bd07784f89169e0d26ef3292e1a41f0ad",
+      "images": [
+        {
+          "Id": "sha256:2282e5764394b34e89a080b0165a0b52c5f8b895b179d328d1edec49894089d2",
+          "RepoTags": [
+            "nb-bulk-reproduction:3793160eba4d54070552eacfc1502027a7e042c1"
+          ],
+          "RepoDigests": [
+            "nb-bulk-reproduction@sha256:2282e5764394b34e89a080b0165a0b52c5f8b895b179d328d1edec49894089d2"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 287202276
+        },
+        {
+          "Id": "sha256:67f41722b7a8cbdb868a44a4995c846eddfdc2973bccb291ce937dce88ad5675",
+          "RepoTags": [
+            "postgres:17"
+          ],
+          "RepoDigests": [
+            "postgres@sha256:67f41722b7a8cbdb868a44a4995c846eddfdc2973bccb291ce937dce88ad5675"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 161309188
+        },
+        {
+          "Id": "sha256:71da9275c5f3fcb97d0fa0c8c5b36cc995327265420f17a04bfd544f458059f7",
+          "RepoTags": [
+            "redis:7"
+          ],
+          "RepoDigests": [
+            "redis@sha256:71da9275c5f3fcb97d0fa0c8c5b36cc995327265420f17a04bfd544f458059f7"
+          ],
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 43602786
+        }
+      ]
+    }
+  }
+}
