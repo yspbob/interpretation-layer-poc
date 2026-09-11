@@ -202,3 +202,18 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **Practical implication:** A guide must distinguish a supported guarantee from code that currently violates it. Repeating the API implementation would preserve this defect. Record the conflicting paths and the evidence for the rule; do not treat the historical implementation as an answer key.
 
 **Limits and next action:** Model reconstruction and added value remain untested. Turn the scoped rule, exceptions and uncertainty into assessment records, and qualify on separate material. The local container setup is a development environment, not qualified agent containment.
+
+
+## IL-012: Separate releasing guidance from assessing its quality
+
+**Source:** [First Phase 1 harness](development/phase1-harness/README.md), 11 September 2026, implementing the previously agreed preparation and assessment separation.
+
+**Status:** Implemented and checked with authored examples. This is an engineering control, not an observed model benefit.
+
+**Takeaway:** Save the exact guide that verification released before assessing it. Otherwise a later assessment can quietly turn an unsuccessful preparation into a successful looking guide. Record the original draft, corrections, rejected claims and omissions alongside that released version.
+
+**Practical implication:** A production dashboard can show both release status and independent quality evidence. A later review may justify a new version, but it should preserve the earlier version and explain what changed. An empty guide should remain visible as an outcome with missing coverage, not appear successful merely because it contains no false claims.
+
+**What remains uncertain:** The rehearsal does not show whether models make sound admission or assessment decisions. Independent model qualification, operating costs and the benefit of a production dashboard remain untested.
+
+**Next action:** Preserve this separation in the actual provider adapter and qualification runs. Do not let assessment feedback enter working role inputs without recording a new development or preparation stage.

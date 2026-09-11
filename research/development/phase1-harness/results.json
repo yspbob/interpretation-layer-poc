@@ -1,0 +1,755 @@
+{
+  "boundary_probes": [
+    {
+      "reads": [
+        {
+          "allowed": false,
+          "path": "PROJECT_STATE.md",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "../netbox-reference.json",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "/etc/passwd",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "https://example.com",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "research/implementation-takeaways.md",
+          "sha256": null
+        }
+      ],
+      "response": {
+        "docker_socket_absent": true,
+        "fresh_marker_absent": true,
+        "network_connect_denied": true,
+        "project_state_absent": true,
+        "reference_absent": true,
+        "root_write_denied": true,
+        "uid": 65534,
+        "worker_write_denied": true
+      }
+    },
+    {
+      "reads": [
+        {
+          "allowed": false,
+          "path": "PROJECT_STATE.md",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "../netbox-reference.json",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "/etc/passwd",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "https://example.com",
+          "sha256": null
+        },
+        {
+          "allowed": false,
+          "path": "research/implementation-takeaways.md",
+          "sha256": null
+        }
+      ],
+      "response": {
+        "docker_socket_absent": true,
+        "fresh_marker_absent": true,
+        "network_connect_denied": true,
+        "project_state_absent": true,
+        "reference_absent": true,
+        "root_write_denied": true,
+        "uid": 65534,
+        "worker_write_denied": true
+      }
+    }
+  ],
+  "completed_at": "2026-09-11T21:17:37.093453+00:00",
+  "docker_version": "29.7.2",
+  "host": "Windows-11-10.0.26220-SP0",
+  "image_id": "sha256:310a1088e622d82f6d2bdc555abcefe8b9144291c102c47a9b644304a5eccd78",
+  "model_calls": 0,
+  "python": "3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]",
+  "runs": [
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "7c629ff98d1d0c023eca97108d866375c947dbc34c5a8bf673f97542cc516afd",
+            "output_hash": "e67248edda6b3fa98c6c44528cdead1f0a828084bd2def73a4c2278f78951453",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "eef81bd7c4335e9918e441234002412e9f25b1d0b908027b96f05a810d3ea35c",
+            "output_hash": "6b6998242566932313e0889fffa83943e934ae65befa0a13050a7782d2449790",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "20945baf47dcb10bbefa07a6fb57891128c55def3da6f9bcb1daf986bb1771b1",
+            "output_hash": "28779050282b0fd744227a980603f55e18e9a872b30eb837b33de277f19a102e",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "20945baf47dcb10bbefa07a6fb57891128c55def3da6f9bcb1daf986bb1771b1",
+            "output_hash": "28779050282b0fd744227a980603f55e18e9a872b30eb837b33de277f19a102e",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "353595565b68d0700b517ff9d4b84586eaab414b46ab862919d554b7e6fa71c3",
+            "output_hash": "a6d8f76b8b5ee20693b112f549671d265e28d3b2e0b14faaa92afcd07b1d41b9",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "98098d0736f46ec865cb18bfcb2a03f9ece8c6354ed8a546b5cc916f9d2535e0"
+      },
+      "case": "netbox",
+      "result": {
+        "claim_count": 4,
+        "guide_hash": "75832bdcba054bc6abd367eaf1753d9b527d2f3a5ed6a08172cd6d1ad4c9f5b7",
+        "invocations": 5,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "scenario": "supported"
+    },
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "b2b622d574968c0c548444cf72bead097830dc6f1da5b216c2b23d98fb30cbe9",
+            "output_hash": "d1271fd7aa06924da4d8f76bd5951e374c5cb50d777be98654cd5c1acb4e7416",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "32ab9eae50168d9cfde7d746aa507092359cbddade29b113a79238e7dc8a6cc2",
+            "output_hash": "6b6998242566932313e0889fffa83943e934ae65befa0a13050a7782d2449790",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "02cf3bd1b3ed5600423f4fd50b660646419d45f50d21ac3d762fc278989fa852",
+            "output_hash": "cf535d353bb49fbbba72ecab520a0f5abb9118efe732328b29010fcab55ca024",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "02cf3bd1b3ed5600423f4fd50b660646419d45f50d21ac3d762fc278989fa852",
+            "output_hash": "cf535d353bb49fbbba72ecab520a0f5abb9118efe732328b29010fcab55ca024",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "93ef247354db3575dcb5b0084fa479027578ede8b63c9c714a0134eaecb05d49",
+            "output_hash": "f234125cea7a93b07dd843d37bc80a09dbdfe7ad719bdc58c629412288f2c28b",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "25a651a0760d0005d15da8120ffddf6519c0ed3f30769eab5fd1ec08a55c81d9"
+      },
+      "case": "netbox",
+      "result": {
+        "claim_count": 4,
+        "guide_hash": "c6a73a9f01e3326c34160154dc04d211f1e4207d8dbc8432da13b41d9b5b0968",
+        "invocations": 5,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": [
+          {
+            "actual": "admit",
+            "claim_id": "C1",
+            "expected": "reject",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          }
+        ]
+      },
+      "scenario": "bad_admission"
+    },
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "7c629ff98d1d0c023eca97108d866375c947dbc34c5a8bf673f97542cc516afd",
+            "output_hash": "e67248edda6b3fa98c6c44528cdead1f0a828084bd2def73a4c2278f78951453",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "82a55b770424584a8fa78f9447939b38f2a0fe8841b8bb94926d65d4f756ef89",
+            "output_hash": "d1c3ca5b0bb65d4210886b2b90429161714ab06a535c66cfaebe6e377b27ae0c",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "20945baf47dcb10bbefa07a6fb57891128c55def3da6f9bcb1daf986bb1771b1",
+            "output_hash": "28779050282b0fd744227a980603f55e18e9a872b30eb837b33de277f19a102e",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "1c8ae58bfc8c62583fb1becc70fa56a396e120d0265f9c459a07d278883d55e6",
+            "output_hash": "13a05806694adb2d8f08e241251b2cba7de267858bf013a9323260f80f80d826",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "1e3301f9969a9dd9526663994edbfce977a2071c5e8c18c50d042fa29cb2ef95",
+            "output_hash": "5fbe1f3ca361392072661b70b73b841493abe02042108a9183438a180a0e0601",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "a772d25b4b97fdfa78c90776151c6ed796e8d4fbf1be014e0ab8737f12b99563"
+      },
+      "case": "netbox",
+      "result": {
+        "claim_count": 0,
+        "guide_hash": "9ab10f0f885c9c17b9bb160e685330f8e0891ef8f13bba2ae0d86091e62bb844",
+        "invocations": 5,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": [
+          {
+            "actual": "reject",
+            "claim_id": "C1",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "reject",
+            "claim_id": "C2",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "reject",
+            "claim_id": "C3",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "reject",
+            "claim_id": "C4",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          }
+        ]
+      },
+      "scenario": "false_rejection"
+    },
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "c1b48d37426cd23ff0feadbc1cd1224a1b532ed0ea553091bee6387f4d6379c4",
+            "output_hash": "d53e3de064b89487460fafd9a05481910b28063d3c3ab67678485bb478836598",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "3f9b8a0b2dae21f112f8ed08ac479aa74d877bdb7d752d93fd9a590df6ec9c7b",
+            "output_hash": "77166d8846575802654d4c4c19b77d6b78eb4b05bf662f74612d78e9b9a8b585",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "1c8ae58bfc8c62583fb1becc70fa56a396e120d0265f9c459a07d278883d55e6",
+            "output_hash": "13a05806694adb2d8f08e241251b2cba7de267858bf013a9323260f80f80d826",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "1c8ae58bfc8c62583fb1becc70fa56a396e120d0265f9c459a07d278883d55e6",
+            "output_hash": "13a05806694adb2d8f08e241251b2cba7de267858bf013a9323260f80f80d826",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "f0f551181f0e0de3d75b9b645ef30611ccfc4f181357da5c53c9c238524f12a0",
+            "output_hash": "3d9ad9e2420aa05ed091422dc79cf15fb11865657c2178543164c95923acea79",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "2d597dfb52ac2a7540fb71214c0ed4810a70b32098511db45dd7da89da16fb82"
+      },
+      "case": "netbox",
+      "result": {
+        "claim_count": 0,
+        "guide_hash": "9ab10f0f885c9c17b9bb160e685330f8e0891ef8f13bba2ae0d86091e62bb844",
+        "invocations": 5,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "scenario": "empty"
+    },
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "b2b622d574968c0c548444cf72bead097830dc6f1da5b216c2b23d98fb30cbe9",
+            "output_hash": "d1271fd7aa06924da4d8f76bd5951e374c5cb50d777be98654cd5c1acb4e7416",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "ac63f1eccd1dc14987ff0d1d82bb458b6249991a26bf1733922fb99e6eae86a3",
+            "output_hash": "833a22177098dabb58eb93fd9b7a1b4f913fadb9c9718e4b1372a827af442318",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "026ea3b3675bedcb3b22b4391c856397d76ea72db6ffc00ef47a4059ec69b4ae",
+            "output_hash": "e67248edda6b3fa98c6c44528cdead1f0a828084bd2def73a4c2278f78951453",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "eef81bd7c4335e9918e441234002412e9f25b1d0b908027b96f05a810d3ea35c",
+            "output_hash": "6b6998242566932313e0889fffa83943e934ae65befa0a13050a7782d2449790",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "02cf3bd1b3ed5600423f4fd50b660646419d45f50d21ac3d762fc278989fa852",
+            "output_hash": "cf535d353bb49fbbba72ecab520a0f5abb9118efe732328b29010fcab55ca024",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "20945baf47dcb10bbefa07a6fb57891128c55def3da6f9bcb1daf986bb1771b1",
+            "output_hash": "28779050282b0fd744227a980603f55e18e9a872b30eb837b33de277f19a102e",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "6a6625a8134cde819c57ac3f6948075ebc9388fb8e2339d1527350647f3b67e7",
+            "output_hash": "80e373f78e4b8c4e2091f239ff96fddd07aa40132012197febce5584561457ee",
+            "role": "verifier_assessor"
+          },
+          {
+            "input_hash": "353595565b68d0700b517ff9d4b84586eaab414b46ab862919d554b7e6fa71c3",
+            "output_hash": "a6d8f76b8b5ee20693b112f549671d265e28d3b2e0b14faaa92afcd07b1d41b9",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "84fc2f3df8e50843a0ed7b64c9b318c6da50ac8020109ce3aa24c7f6b958af82"
+      },
+      "case": "netbox",
+      "result": {
+        "claim_count": 4,
+        "guide_hash": "75832bdcba054bc6abd367eaf1753d9b527d2f3a5ed6a08172cd6d1ad4c9f5b7",
+        "invocations": 8,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "scenario": "corrected"
+    },
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "b2b622d574968c0c548444cf72bead097830dc6f1da5b216c2b23d98fb30cbe9",
+            "output_hash": "d1271fd7aa06924da4d8f76bd5951e374c5cb50d777be98654cd5c1acb4e7416",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "ac63f1eccd1dc14987ff0d1d82bb458b6249991a26bf1733922fb99e6eae86a3",
+            "output_hash": "833a22177098dabb58eb93fd9b7a1b4f913fadb9c9718e4b1372a827af442318",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "9e6b466cce74366df9bcb9617492951c6ae23237d743d397c1da986af3ac9d41",
+            "output_hash": "d1271fd7aa06924da4d8f76bd5951e374c5cb50d777be98654cd5c1acb4e7416",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "ac63f1eccd1dc14987ff0d1d82bb458b6249991a26bf1733922fb99e6eae86a3",
+            "output_hash": "833a22177098dabb58eb93fd9b7a1b4f913fadb9c9718e4b1372a827af442318",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "9e6b466cce74366df9bcb9617492951c6ae23237d743d397c1da986af3ac9d41",
+            "output_hash": "d1271fd7aa06924da4d8f76bd5951e374c5cb50d777be98654cd5c1acb4e7416",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "ac63f1eccd1dc14987ff0d1d82bb458b6249991a26bf1733922fb99e6eae86a3",
+            "output_hash": "833a22177098dabb58eb93fd9b7a1b4f913fadb9c9718e4b1372a827af442318",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "02cf3bd1b3ed5600423f4fd50b660646419d45f50d21ac3d762fc278989fa852",
+            "output_hash": "cf535d353bb49fbbba72ecab520a0f5abb9118efe732328b29010fcab55ca024",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "af3f462a5b8a9ae001f9f185dfb772e1cbb8ed3711a819ada3b4cc56026dff17",
+            "output_hash": "659e58889f42f10b18a6415df9982cc70312fa00ef0f5073c7524de2e4977371",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "6a6625a8134cde819c57ac3f6948075ebc9388fb8e2339d1527350647f3b67e7",
+            "output_hash": "80e373f78e4b8c4e2091f239ff96fddd07aa40132012197febce5584561457ee",
+            "role": "verifier_assessor"
+          },
+          {
+            "input_hash": "6a6625a8134cde819c57ac3f6948075ebc9388fb8e2339d1527350647f3b67e7",
+            "output_hash": "80e373f78e4b8c4e2091f239ff96fddd07aa40132012197febce5584561457ee",
+            "role": "verifier_assessor"
+          },
+          {
+            "input_hash": "6a6625a8134cde819c57ac3f6948075ebc9388fb8e2339d1527350647f3b67e7",
+            "output_hash": "80e373f78e4b8c4e2091f239ff96fddd07aa40132012197febce5584561457ee",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "c7722a47a654e314720488bf160239cbb7704a57cbf52aa60585aa7be8d8ec6b"
+      },
+      "case": "netbox",
+      "result": {
+        "claim_count": 3,
+        "guide_hash": "fbb98a6b26086fd00be71cf35f18c837b642db5515c5a2cfe3e3f73908e19758",
+        "invocations": 11,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "revision_exhausted",
+        "verifier_errors": []
+      },
+      "scenario": "exhausted"
+    },
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "7c629ff98d1d0c023eca97108d866375c947dbc34c5a8bf673f97542cc516afd",
+            "output_hash": "e67248edda6b3fa98c6c44528cdead1f0a828084bd2def73a4c2278f78951453",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "3a31365edf9c314a9504a88d01d33b181a4fb6be393994f2461e762efca2723d",
+            "output_hash": "21be2a6276f1a7298ea499ea5f75bb764a0bb27d2da5eeb7ee5868885c0f9f52",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "20945baf47dcb10bbefa07a6fb57891128c55def3da6f9bcb1daf986bb1771b1",
+            "output_hash": "28779050282b0fd744227a980603f55e18e9a872b30eb837b33de277f19a102e",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "1c8ae58bfc8c62583fb1becc70fa56a396e120d0265f9c459a07d278883d55e6",
+            "output_hash": "13a05806694adb2d8f08e241251b2cba7de267858bf013a9323260f80f80d826",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "9d6f249f869967aaaae10fbc24355d874f5c7920f4c5bc8f8779fef9843aff18",
+            "output_hash": "2ab9cb96f709536a9e9e9c114639cc1d07a975e7bfffffb47d7176566449e167",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "a6c7f1770a614b5b3e300659054758820d306c99b19b4632ab12ef7366422e36"
+      },
+      "case": "netbox",
+      "result": {
+        "claim_count": 0,
+        "guide_hash": "9ab10f0f885c9c17b9bb160e685330f8e0891ef8f13bba2ae0d86091e62bb844",
+        "invocations": 5,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "unresolved",
+        "verifier_errors": [
+          {
+            "actual": "unresolved",
+            "claim_id": "C1",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "unresolved",
+            "claim_id": "C2",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "unresolved",
+            "claim_id": "C3",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "unresolved",
+            "claim_id": "C4",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          }
+        ]
+      },
+      "scenario": "unresolved"
+    },
+    {
+      "audit": {
+        "invocations": [
+          {
+            "input_hash": "ed9a459a80c56b4fb5959bc750e042d709c88aff4a4adbc4485e82c69231254d",
+            "output_hash": "c395d5c281dcddd395ed24bf7c47f6d00a288d9fac8b60c43bb304aa53852920",
+            "role": "drafter"
+          },
+          {
+            "input_hash": "2068671ec1e82d91318ff07f81066fd8486048812fa370338abd4c327fd8fc42",
+            "output_hash": "f8b2b1855673703349bf5554b840628fd83276ac297dfdef076fe8d741e2fe7c",
+            "role": "verifier"
+          },
+          {
+            "input_hash": "099452cf35ea423fa489da5b3020417b974d2c5cca47e8bd9c8f2bd89e7e4145",
+            "output_hash": "3eb74e3bee38bcfbb92b770f4bc51c26487044b8463fa523696a7ac33ecf6f7a",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "099452cf35ea423fa489da5b3020417b974d2c5cca47e8bd9c8f2bd89e7e4145",
+            "output_hash": "3eb74e3bee38bcfbb92b770f4bc51c26487044b8463fa523696a7ac33ecf6f7a",
+            "role": "guidance_assessor"
+          },
+          {
+            "input_hash": "45d96eff9b498b3ff88f0750e3f1f3e635b61760e292cf26ddbbe702e15295d7",
+            "output_hash": "4fa9bafa8f162b44451525add9a5c4cc2dc5dabbac973b7c92bbb49bcb82d0f8",
+            "role": "verifier_assessor"
+          }
+        ],
+        "terminal_event_hash": "d855789e3641bd45e0693a354ad85fa414a5bf336e374ecf043336bfbc585db9"
+      },
+      "case": "h06",
+      "result": {
+        "claim_count": 6,
+        "guide_hash": "28fda8a27f1920b37ce0cdf853f24ce1c9c18c430c0bb47136b2712090817472",
+        "invocations": 5,
+        "mode": "scripted-development",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "scenario": "supported"
+    }
+  ],
+  "script_hashes": {
+    "Dockerfile": "75c7162208e18d433541edf4ec09013bd75c83481779d567ad0628ffb672d7db",
+    "fixtures.py": "52a591fa5b3165f9ad5d0387e692d879e39ae554001179f3a9d457c003c03fed",
+    "h06-reference.json": "417520432bf15f9898caeda96cdde29baeed885c0bc338f2ca88f65bd6031a4b",
+    "harness.py": "111bc33cb07070f472be5c569f657b420a87164130542350dd2cf7353edee75b",
+    "netbox-reference.json": "d5e30f037b3ec77e59f7bbbd09377ea6f36854a2a1e4d5d73e1b680f97726b7f",
+    "requirements.txt": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+    "run.py": "0099e14d9749d66e64e887b99f5e5cfaa03c25e79e8f2fcf43ca3aff29ce518b",
+    "schemas.py": "53af10ee957065149dcd302bcd2c1e12289e414c079ad40c32760308b0cdc880",
+    "test_harness.py": "0f0f024c690857030736bcbac979a42b516becfa068207d40c118051def1aa30",
+    "worker.py": "f812bc2c43210a3c5557cb703ff004a5d3e2d262762973c542ad2d43e1590bac"
+  },
+  "source_packs": {
+    "h06": {
+      "files": {
+        "LICENSE.md": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d",
+        "docs/advanced/authentication.md": "490c0393f5af1bdcf70ed5dc6e296d75f4a4035d1916f2262102de61c623dc04",
+        "httpx/__init__.py": "ee97edea66c8b6e7fa76ac30847e4189dfe114069e86827719e23a7c2e110f40",
+        "httpx/__version__.py": "2e853261e3974e2786cee3ffeb850bd30c5db718eebbf41b3af13b34e83e22a5",
+        "httpx/_api.py": "aff660b388c8a5c3c92ea2b975b6d26b2aa8fe254c2856b164277ea0e1f12c4b",
+        "httpx/_auth.py": "60f0aac5d3c7b9b60c0f5a2bc284636e284a4b1e0f65c0028567dc98841f580b",
+        "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+        "httpx/_config.py": "a4fa7653ec2271f70ab05f8a6111352d876dddee84446788a1767c1a3a372d67",
+        "httpx/_content.py": "2c61b3ac94d1dcebcde0c6f519554d2d7917247fbaa0a97002db4ef69e70ff28",
+        "httpx/_decoders.py": "a74757f08d0d1077b1b37506a784ac66eb62321b17aeb5a5ebe1a7a956f488a3",
+        "httpx/_exceptions.py": "494a7dec969198444f988c6ab8dc480273a6f2aa11ae523a094e0cbc90f1b7d7",
+        "httpx/_main.py": "0a0f4631a6e24d3fecc1a0df5202118ad4b0c4b44c4b05033a6ecb7521aa940e",
+        "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac",
+        "httpx/_multipart.py": "28e1c465997aa28860f663da2b2caedf8e6aab5ac92e0df94d41b7600cd70776",
+        "httpx/_status_codes.py": "0d89fedae7c180c797cb9b3cc77fd307bc2302e00031ec136a43eb9b9ad712c7",
+        "httpx/_transports/__init__.py": "19b52805200ea7bcfe97ef63e5884c851dc3308727e8554b863d3bd8edcd9e7a",
+        "httpx/_transports/asgi.py": "1d17e20d830fb78c101f6805807660e1cfa2dec6e5a3a6cbe464ea7044fec73f",
+        "httpx/_transports/base.py": "9194bf54c6d58987c5e7bd29a205022756ee973fb26df2f9d4faacf7292d79b5",
+        "httpx/_transports/default.py": "bfb106716ce33f4c29583cc1e43803109a9dba532613ec4f6fe2cd09e7c022e3",
+        "httpx/_transports/mock.py": "3d3a34779ebb4484d7c46ae48ba90deffebbc300317f088c0dcb972626428c4a",
+        "httpx/_transports/wsgi.py": "35c3d7dd76a9fc4c0215958efce692c9036e227098c7540c35b3bc1807a2ea36",
+        "httpx/_types.py": "272878d4642aec039ebfc20e58a0c083bcc26ef1c07ee7e65b983f3e24ed12b6",
+        "httpx/_urlparse.py": "640987e3b38d7e4c6bae3f8f3d88467a21e36fa0232824be00d58837838bfca6",
+        "httpx/_urls.py": "a9ef05964015f9499a66e55cd0c4e1e0ae7a51f93cd9a1fe9e007d793edb7981",
+        "httpx/_utils.py": "fd355ea802afc4990a1ddcfb74579be2cd0b66a41781e1645d281f88704aff5a"
+      },
+      "hash": "59d3b2af2863b9ac4c3c89de58d2bf518233e1cd362b16dabeb9dbba4675acd4",
+      "instruction_paths": [],
+      "revision": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254"
+    },
+    "netbox": {
+      "files": {
+        "AGENTS.md": "4bc76f4ed8331c43ad8f42056cfbea117f2853072641f3d04ae68522113872eb",
+        "docs/features/change-logging.md": "a91b1be6e4791a4b24652bb11317a436491dcf4db796402b918aba3a6a97b5e5",
+        "docs/features/event-rules.md": "8e8e89e58fe68e4a4264aa41820c98cdd5d6288a58504a813016f9252916bf27",
+        "docs/integrations/rest-api.md": "1e5a0e3a8d01fc62609266717f1f70b87734a0a19f044dcaba47b997ed0e7e0c",
+        "docs/integrations/webhooks.md": "fc767e7780d1c6c8961de5ba315b2439aa895ae3ee3fd5e38d06ab419743efec",
+        "netbox/core/events.py": "b9cde5ea36b2cc7b92c8b574a9413375365eeffca688cae822ea6da40131f75b",
+        "netbox/core/signals.py": "122c2c26d76845d6865ae1c654fbd73a12f373f78e813fe56ac09d92f038b8bc",
+        "netbox/extras/events.py": "a737f201b5ef51bb24a6f026e3f99b70332349ef12e10541d95516f5e4b5b3f4",
+        "netbox/netbox/api/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "netbox/netbox/api/exceptions.py": "3b1e5dbf0815fd8372ce423cc6490aebab14f85fd8d0092b16dff56ba063c801",
+        "netbox/netbox/api/viewsets/__init__.py": "10ba40a790f77180c94110932fb2ff97ec5c4fa8b9247f7b809a3d0f088cc716",
+        "netbox/netbox/api/viewsets/mixins.py": "c2e88ee8d1446a16344115e0e196a39c367911db91ddb78fc8c70536b14476e2",
+        "netbox/netbox/context.py": "ac74ae4b01d21030831c494d41dc3c3d868bb12dd9ef45084d473b8d3f678d95",
+        "netbox/netbox/context_managers.py": "174c99978ad72b1ce7b949cc63d336091e0b10c15c55a9a51fdbe6d88f3f975d",
+        "netbox/netbox/middleware.py": "908ca9e440aeb348a00598dbac5b5a35ce7883a7b28f5fe0c20bcc701f3376b2",
+        "netbox/netbox/settings.py": "c7633767bd4abf2f2d5058a6bc27ff54babd8aae0476bcbf8cf324d49846ad6e",
+        "netbox/netbox/views/generic/bulk_views.py": "f7af8f358eaced093e1992b2624142463aa5714c08664101aeb4126c8d3199d5",
+        "netbox/utilities/api.py": "157722540516827ee71a677ae0fbd7d3d237ce6fcfedf7157e13114facf736b9",
+        "netbox/utilities/error_handlers.py": "75626bb33bf10397ad47a9642baf9b588d60ddcdd067d9b63f5b90879c21625f"
+      },
+      "hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35",
+      "instruction_paths": [
+        "AGENTS.md"
+      ],
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead"
+    }
+  },
+  "status": "scripted development only; authored answers, not model judgements",
+  "total_role_invocations": 49,
+  "controller_tests": {
+    "passed": 15,
+    "failed": 0,
+    "command": "python research/development/phase1-harness/test_harness.py",
+    "note": "Temporary folder creation was blocked in the desktop sandbox on the initial attempt. The completed test run used the ordinary local environment."
+  },
+  "dependencies": [
+    "attrs==26.1.0",
+    "jsonschema==4.26.0",
+    "jsonschema-specifications==2025.9.1",
+    "referencing==0.37.0",
+    "rpds-py==2026.6.3"
+  ],
+  "records_note": "Full role inputs and outputs remain in ignored local storage. This public report is a reproducible development summary, not independently attested execution or model qualification."
+}

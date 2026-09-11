@@ -8,9 +8,9 @@ We are testing whether the interpretation layer proposed in [chapter 4 of the AI
 
 The agreed first pilot compares the methods on evidence-backed historical tasks from public projects, with possible prior model familiarity. It does not establish inference entirely from unseen code. Private rule-changing variants are optional later work, not a pilot prerequisite.
 
-The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts and a scripted development trace now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
+The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts, development references and a scripted Phase 1 harness now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-11.4**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-11.5**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
@@ -27,7 +27,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: local NetBox reproduction completed on 11 September 2026
+## Current work: first Phase 1 harness completed on 11 September 2026
+
+The user authorised defining the NetBox assessment reference and building the minimal harness. See [the harness guide](research/development/phase1-harness/README.md), its reference JSON files, tool review and results.json. The controller handles drafting, verification, bounded corrections, exact admitted claim release, separate assessment of original and released guidance, and assessment of every verifier decision. It preserves bad admissions, empty guides, exhausted revisions and failed records. A scope change requires a new drafter version. It does not silently rewrite guidance after assessment.
+
+Fifteen controller tests passed. Eight scripted scenarios passed their declared expectations across NetBox and H06, using 49 fresh role containers. Two additional container probes passed for denied paths, forbidden writes, external connectivity and temporary state carryover. Role input audits verified fixed source hashes and reference separation; event chains were checked. The worker image uses a pinned Python base. The public report records image, source, script and role exchange hashes; full inputs and outputs remain in ignored local-runs/phase1/20260911T211704Z-a9d53094/. Host Python dependencies are in local-runs/phase1-env/. Nothing here synchronises private execution records to the laptop.
+
+All answers are authored fixtures. The worker sees the answer it must return, so these are deliberately not blinded runs or semantic model tests. This is a tested trusted replay path, not arbitrary execution containment or a live gateway. The controller rejects live transports. No model calls or spending occurred. Two corrections, twelve calls and the worker resource limits are development defaults, not agreed experimental thresholds. Existing assessment and gateway products were reviewed; only JSON Schema was integrated.
+
+**Exact next substantive step:** implement a real provider adapter and test its request construction, permitted destinations, isolated role inputs, usage accounting and spending stops without paid model calls. Reuse existing gateway capabilities where suitable. Live requests must never include authored fixture answers. Then prepare separate qualification families and fix models, settings, numerical criteria and spending limits before separately authorised model qualification. Both public development families remain excluded from untouched qualification if they inform the method. Final trial case allocation and task scope for later coding work remain open.
+
+The working plan is .5. The website progress view now marks guidance test preparation in progress and distinguishes the working rehearsal from an untested interpretation layer. The existing phase explanation is unchanged. Verification: 15 controller tests, eight container scenarios, two boundary probes, role input and audit chain checks passed. Published script hashes match the tested bytes. Website type and lint checks, the four route static build, local asset and documentation links, one current progress step, unique IDs, and plan download consistency passed. No browser visual QA or model run was performed. Publication is verified after saving before reporting availability on the laptop.
+
+## Previous work: local NetBox reproduction completed on 11 September 2026
 
 The user authorised reproducing NetBox before building the harness and then preferred local development on both Windows machines. Docker Desktop 4.90.0 is installed and running on this PC with WSL 2, an 8 GB memory cap and 2 GB swap. No prior .wslconfig was overwritten. The laptop has not been configured; use the shared LOCAL_SETUP.md there. A GitHub Actions workflow was drafted but removed before publication or dispatch. No CI or model run occurred.
 

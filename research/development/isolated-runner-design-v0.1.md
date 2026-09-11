@@ -1,5 +1,8 @@
 # Isolated runner and two-machine execution
 
+Current development update, 11 September: the [Phase 1 rehearsal](phase1-harness/README.md) uses a pinned Docker worker to replay authored records. Its tested limits and role packets apply only to that trusted worker. A live provider adapter and its qualification remain outstanding. This does not validate or replace the later arbitrary execution architecture below.
+
+
 Design version: **0.1 — 9 September 2026**. Implements the planning detail for sections 8–8C of the working plan. This is a proposed implementation, not an installed or qualified runner. The working plan takes precedence on research methods.
 
 

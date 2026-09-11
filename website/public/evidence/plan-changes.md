@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-11.4**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-11.5**. Status: working redesign, not a new ratified preregistration.
+
+## Build the first Phase 1 rehearsal: 11 September 2026
+
+Revision .5 records the user's approval to define the NetBox guidance reference and build the minimal harness. The public reference specifies four related obligations and their exceptions. H06 remains a second development family. A small controller and pinned Docker worker now exercise drafting, verification, exact guide release and independent assessments using authored answers. Existing assessment and gateway tools were reviewed; the live provider adapter remains to be implemented.
+
+Fifteen controller tests and eight scripted scenarios passed, covering corrections, bad admissions, false rejections, empty guidance, unresolved stops and exhausted revisions. Forty nine role containers and two boundary probes completed. Sources are pinned and restricted; assessment references are supplied only to assessment role packets. Fixture answers are intentionally supplied to the replay worker, so none of these are blinded model runs. The checks do not qualify a model, arbitrary code execution or a provider gateway. No spending was authorised or incurred through model calls.
+
+The next step is an adapter tested without model calls, followed by separate qualification material and fixed settings, criteria and spending limits. The website reports this development progress without changing the phase design or claiming experimental benefit.
 
 ## Complete the local NetBox reproduction: 11 September 2026
 

@@ -1,0 +1,167 @@
+{
+  "case_id": "NB_BULK_01",
+  "family": "transaction_event_consequences",
+  "status": "public development reference; no independent qualification",
+  "units": [
+    {
+      "id": "B1",
+      "requirement": "A failed synchronous bulk update must leave none of its database edits committed.",
+      "basis": "Documentation extraction: rest-api.md bulk update guarantee.",
+      "exceptions": [
+        "A wholly successful batch keeps its edits."
+      ],
+      "evidence_paths": [
+        "docs/integrations/rest-api.md"
+      ]
+    },
+    {
+      "id": "B2",
+      "requirement": "Database rollback does not automatically discard the in-memory event queue. Explain how saving, enqueueing and later request processing interact.",
+      "basis": "Structural inference across signals, queue storage and request processor; reproduced independently.",
+      "exceptions": [
+        "Do not claim every object or save produces an event regardless of feature support or configuration."
+      ],
+      "evidence_paths": [
+        "netbox/core/signals.py",
+        "netbox/extras/events.py",
+        "netbox/netbox/context_managers.py"
+      ]
+    },
+    {
+      "id": "B3",
+      "requirement": "An aborted batch must not dispatch notifications about its undone changes. Preserve events for successful committed changes.",
+      "basis": "Supported inference from documented batch semantics and existing aborted-transaction cleanup.",
+      "exceptions": [
+        "Do not prescribe deleting every event for every error, unrelated transaction or nested savepoint.",
+        "Equivalent correctly scoped cleanup or deferred dispatch can be valid; one named helper is not mandatory."
+      ],
+      "evidence_paths": [
+        "netbox/core/signals.py",
+        "netbox/netbox/views/generic/bulk_views.py",
+        "docs/features/event-rules.md"
+      ]
+    },
+    {
+      "id": "B4",
+      "requirement": "Distinguish the supported rule from the earlier API path that can violate it. Keep documentation, comments and inference traceable; do not claim owner approval.",
+      "basis": "Conflicting source paths and reference uncertainty; runtime confirms the earlier defect.",
+      "exceptions": [
+        "No general claim about all write paths, authentication, delivery or concurrency."
+      ],
+      "evidence_paths": [
+        "netbox/netbox/api/viewsets/mixins.py",
+        "netbox/netbox/views/generic/bulk_views.py"
+      ]
+    }
+  ],
+  "serious_errors": [
+    "Rollback guarantees the in-memory queue is empty.",
+    "Every failed batch in the starting revision already clears its queued events.",
+    "Disable all event processing, including successful batches.",
+    "A maintainer approved this newly drafted guide."
+  ],
+  "unresolved_outside_scope": [
+    "Nested savepoint ownership of unrelated events",
+    "Concurrent requests",
+    "Event delivery to a recipient",
+    "Historical request wording about partial success before a coding brief is frozen"
+  ],
+  "accepted_alternatives": [
+    "Plain language without naming a specific helper, with precise scope and evidence.",
+    "A different justified technique preserving failed and successful outcomes; not yet a validated coding solution."
+  ],
+  "provenance_note": "The queue-clearing function has a descriptive comment. This is mixed documentation and implementation evidence, not wholly undocumented inference.",
+  "runtime_reference": {
+    "source": "../netbox-bulk-error-candidate/results/",
+    "note": "Assessor-only investigator observations; not in drafting/verifier packs.",
+    "observations": {
+      "starting": {
+        "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+        "scenarios": [
+          {
+            "name": "success",
+            "changed_rows": 2,
+            "change_log_rows_added": 2,
+            "queued_job_count": 2
+          },
+          {
+            "name": "valid_then_invalid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 1
+          },
+          {
+            "name": "invalid_then_valid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 0
+          },
+          {
+            "name": "both_invalid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 0
+          }
+        ]
+      },
+      "feature": {
+        "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+        "scenarios": [
+          {
+            "name": "success",
+            "changed_rows": 2,
+            "change_log_rows_added": 2,
+            "queued_job_count": 2
+          },
+          {
+            "name": "valid_then_invalid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 1
+          },
+          {
+            "name": "invalid_then_valid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 1
+          },
+          {
+            "name": "both_invalid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 0
+          }
+        ]
+      },
+      "later-qa": {
+        "revision": "3793160eba4d54070552eacfc1502027a7e042c1",
+        "scenarios": [
+          {
+            "name": "success",
+            "changed_rows": 2,
+            "change_log_rows_added": 2,
+            "queued_job_count": 2
+          },
+          {
+            "name": "valid_then_invalid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 0
+          },
+          {
+            "name": "invalid_then_valid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 0
+          },
+          {
+            "name": "both_invalid",
+            "changed_rows": 0,
+            "change_log_rows_added": 0,
+            "queued_job_count": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "case_id": "H06",
+  "family": "authentication_flow",
+  "status": "public development reference; no independent qualification",
+  "units": [
+    {
+      "id": "D1",
+      "requirement": "Common auth_flow shares logic through the default sync and async adapters; yielded HTTP requests differ from arbitrary blocking operations.",
+      "basis": "See H06 reference and pinned authentication guide, adapters, client dispatch and body access."
+    },
+    {
+      "id": "D2",
+      "requirement": "requires_request_body loads an unread request body through the default adapter; already loaded or unused bodies are valid exceptions.",
+      "basis": "See H06 reference and pinned authentication guide, adapters, client dispatch and body access."
+    },
+    {
+      "id": "D3",
+      "requirement": "requires_response_body loads responses through the default adapter; header-only use need not request a body.",
+      "basis": "See H06 reference and pinned authentication guide, adapters, client dispatch and body access."
+    },
+    {
+      "id": "D4",
+      "requirement": "Custom I/O and locking require operations appropriate to the client mode; overriding a method alone does not make blocking work asynchronous.",
+      "basis": "See H06 reference and pinned authentication guide, adapters, client dispatch and body access."
+    },
+    {
+      "id": "D5",
+      "requirement": "Explicitly rejecting an unsupported client mode is a valid alternative unless a task separately requires it.",
+      "basis": "See H06 reference and pinned authentication guide, adapters, client dispatch and body access."
+    },
+    {
+      "id": "D6",
+      "requirement": "A complete adapter override bypasses base body reads unless it performs or delegates them.",
+      "basis": "See H06 reference and pinned authentication guide, adapters, client dispatch and body access."
+    }
+  ],
+  "serious_errors": [
+    "Both modes are mandatory.",
+    "A body flag still guarantees reads after a complete custom override.",
+    "Blocking calls automatically become asynchronous."
+  ],
+  "reference_source": "../h06-guidance-assessment/README.md",
+  "uncertainty": "Concurrency safety and production benefit not validated."
+}
