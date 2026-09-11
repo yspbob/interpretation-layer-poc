@@ -1,0 +1,1 @@
+import{r as e}from"./framework-CCI86Hco.js";import{t}from"./site-path-D2lVN15j.js";var n=e();function r({children:e,href:r,...i}){let a=r;if(r?.startsWith(`/`)&&!r.startsWith(`//`)){let e=r.search(/[?#]/),n=e<0?r:r.slice(0,e),i=e<0?``:r.slice(e);a=t(`${n.endsWith(`/`)?n:`${n}/`}${i}`)}return(0,n.jsx)(`a`,{...i,href:a,children:e})}export{r as t};

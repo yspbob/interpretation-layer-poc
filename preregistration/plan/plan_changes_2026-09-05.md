@@ -2,6 +2,12 @@
 
 Current plan: **pilot-draft-2026-09-10.4**. Status: working redesign, not a new ratified preregistration.
 
+## Restore one continuous explanation: 11 September 2026
+
+The user found that separating the phase plan, roadmap and complete method made the approach hard to understand. They requested a reader-led flow and explicitly retained “How the three phases fit together” as one named section. The authorised release now puts the purpose and whole-experiment explanation before an in-page station selector and the selected phase's detailed plan. Progress remains separate. Optional depth stays on the same reading surface, and the previous addresses remain compatible with saved links.
+
+This is an editorial and navigation revision to working plan .4. It does not change the three functional phases, evidence/qualification requirements, budgets, method settings or implementation status. Section 11 records the presentation rule. No research or model runs were performed.
+
 ## Split the first trial by function: 10 September 2026
 
 The user observed that the previous Phase 1 still contained most of the engineering work and accepted a split of the first trial itself. Section 1A now defines Phase 1 as guidance reconstruction and independent assessment, Phase 2 as matched DIRECT/GUIDE coding use, and Phase 3 as matched DIRECT/GUIDE/INTERACT execution. Confirmation on fresh families and broader or production studies follow separately if justified.

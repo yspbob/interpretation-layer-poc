@@ -1,7 +1,7 @@
 # Working pilot plan: interpretation-layer validation
 
 Plan ID: **pilot-draft-2026-09-10.4**
-Updated: **10 September 2026**
+Updated: **11 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
 This document incorporates the research review and the subsequent website-design discussion. It is the current planning document for the redesigned POC. The previous ratified v1.2 plan is preserved as a historical record; its NetBox-only four-arm design, 25-ticket sample, 300-run schedule and success rule must not be silently inherited by this pilot.
@@ -425,7 +425,9 @@ Numerical settings still open include case count, repetitions, model budgets, re
 
 ## 11. Keep the plan, implementation and description aligned
 
-The Phase 1 plan describes the current phase’s method, technical architecture, rationale, requirements and enduring limitations. The first trial roadmap describes the three functional phases one at a time. A separate method reference preserves the complete technical design; conditional confirmation and production studies sit under what could follow the trial. Do not mix their proposed work into the current status view. Progress & findings owns completed work, validation results, implementation gaps, next actions and the inventory's readiness. Keep a brief planned-method label and identify provisional design choices without repeating component status throughout the explanation. The canonical plan retains both requirements and dated status for traceability.
+The website has two primary views: The plan and Progress & findings. The plan opens with the question and playbook context, followed by a visible, continuous section named “How the three phases fit together”. Explain the whole approach before showing the station selector and the detailed plan for one phase at a time. Phase 1 is selected by default. Introduce actors when their roles matter; essential reasoning must not require expanding detail or navigating elsewhere. Optional technical and production detail remains on the same page. The previous roadmap and method URLs are compatibility routes to that reading surface, not separate required destinations.
+
+Progress & findings owns completed work, validation results, implementation gaps, next actions and inventory readiness. It stays focused on the current guidance phase. Keep proposal, implementation and validation distinct. The 11 September reading-flow revision changes presentation only; the functional phases, controls, open settings and zero model run status remain unchanged. The canonical plan retains requirements and dated status for traceability.
 
 For each change discussed in the working conversation, classify it before editing:
 

@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 10 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 11 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -10,7 +10,7 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts and a scripted development trace now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-10.4**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website opens on the current guidance plan, with separate progress, roadmap and complete method reference pages.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-10.4**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
@@ -145,6 +145,16 @@ All 84 cases now have reading titles and summaries in `website/app/case-summarie
 Working plan **pilot-draft-2026-09-10.2** remains authoritative. The change register records this editorial release and downloads are refreshed. No method settings, runtime implementation, calibration or model calls are added. The next substantive task remains the tooling review followed by the isolated runner without model calls, as described below.
 
 Verification: application type and lint checks passed. The final static build verified both routes and their referenced assets. Additional checks passed for paragraph structure, the revised copy and 17 local fragment links. The budget procedure has its own expandable section with a reachable link from Progress. All 84 inventory IDs have reading summaries; original inventory data and H04 records are unchanged. Plan/download consistency and diff checks passed. No browser interaction or visual QA was performed. The local preview was used only for a successful render check and requested as an app preview; the app returned a queued handoff.
+
+## Continuous plan reading flow: 11 September 2026
+
+The user rejected the fragmented navigation after the functional phase split. They explicitly retained “How the three phases fit together” as one section and authorised a reader-led redesign. The plan now explains purpose and playbook context, then the whole approach, before introducing the station selector and the selected phase's details. Phase 1 remains the default/current phase. Selecting another phase changes its detail in place. Progress remains a separate primary view. Optional methods, production context and technical reference are available on the same plan page; the older `/phases/` and `/trial-method/` routes serve that plan for saved-link compatibility.
+
+New phase detail follows inputs, actions, assessment and output, with transitions explaining what one phase cannot establish and why the next question follows. The drafter, verifier and checker are introduced in the shared narrative. All three phase descriptions remain available; future description is not future progress. The station map starts after the narrative and becomes sticky while reading the phase detail. It supports keyboard selection, URL fragments and browser history.
+
+Working plan .4 remains authoritative. Only section 11 and the change register change for presentation; research scope, qualification gates, numerical settings and the exact next substantive guidance-preparation task are unchanged. No experimental or model runs occurred. This release applies the feedback since 812f0f4; it is not a banked proposal.
+
+Verification: application type and lint checks passed, as did the final static build and its four route/asset checks. Additional checks verified unique IDs, paragraph structure, 22 local fragment links, narrative before selector, preserved reference anchors and no required navigation to the old routes. Browser checks confirmed phase switching, keyboard navigation, Back restoring the prior phase, and a saved method fragment revealing its detail. The narrow layout was visually inspected. Inventory data, case summaries and H04 records are unchanged; plan/download copies agree. Publication is verified against the remote commit and live content before reporting completion. Preserve this reading flow when adding future detail instead of creating another required reading destination.
 
 ## Functional phases of the first trial: 10 September 2026
 
