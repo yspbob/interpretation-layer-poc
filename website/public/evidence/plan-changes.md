@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-11.2**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-11.3**. Status: working redesign, not a new ratified preregistration.
+
+## Prioritise a substantive candidate: 11 September 2026
+
+Working plan revision .3 records the user's agreement to retain H06 for assessment development and investigate a case that requires connecting evidence. H06 no longer makes HTTPX the preferred substantive trial repository. NetBox NB-BULK-01 is the leading candidate for further investigation, with a real historical bulk error reporting task and a source audit of database rollback and event handling.
+
+The earlier contract supports the investigation; the later upstream QA is a comparator and research lead, not an answer key. NetBox runtime behaviour remains to be reproduced. Ordinary documentation and repository instructions remain available to both groups. No assumption of layer advantage, independent qualification, final repository allocation or sufficient task reuse is made. The next step is a bounded runtime reproduction before making this a worked case. No model calls ran or are authorised by this update.
 
 ## Clarify screening completion and begin case development: 11 September 2026
 

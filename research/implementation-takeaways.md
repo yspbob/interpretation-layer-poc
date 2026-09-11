@@ -176,3 +176,18 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** The H06 checks cover dispatch and body availability, not concurrency safety, event loop blocking, real authentication services or other frameworks. Whether the layer reliably recovers and communicates this distinction is untested.
 
 **Next action:** Use the case when specifying development assessment records, then qualify the assessor on separate families. Do not generalise the observation into a universal rule about all configuration flags.
+
+
+## IL-011: Follow an operation beyond the database transaction
+
+**Source:** [NetBox NB-BULK-01 candidate investigation](development/netbox-bulk-error-candidate/README.md), 11 September 2026. Earlier code and documentation were inspected alongside the historical feature and later upstream QA.
+
+**Status:** Source supported implementation observation and upstream reported correction. NetBox runtime reproduction and model assessment remain pending.
+
+**Takeaway:** A database rollback does not necessarily undo related work held elsewhere. In this NetBox path, change events are queued in memory and processed after the request. Guidance about a failed batch needs to account for those events as well as the database writes.
+
+**Practical implication:** When reconstructing a transaction rule, follow its consequences through event queues and other side effects. Record what each mechanism protects, where cleanup occurs and what successful operations must preserve. Do not turn this into an instruction to clear all events whenever any error occurs.
+
+**What remains uncertain:** The full request path has not been reproduced here. The earlier source already contains a cleanup convention; this is not proof of discovering an undocumented decision or of superiority over an ordinary agent.
+
+**Next action:** Reproduce the bounded NetBox case before admitting a runtime reference. Keep code observations, documented guarantees and inferred scope separately traceable.

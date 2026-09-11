@@ -10,9 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts and a scripted development trace now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-11.2**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-11.3**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
+
+- [Leading substantive candidate: NetBox NB-BULK-01](research/development/netbox-bulk-error-candidate/README.md). Source audit and historical task identified; runtime reproduction pending.
 
 - [First guidance assessment case: HTTPX H06](research/development/h06-guidance-assessment/README.md) and [case selection record](research/development/phase-one-case-selection-2026-09-11.md). Public development material; no model assessment or isolation validation.
 
@@ -25,7 +27,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: case selection started on 11 September 2026
+## Current work: stronger candidate investigation on 11 September 2026
+
+The user questioned whether H06 would mainly test reading documentation and agreed to investigate a stronger case. H06 is retained for developing assessment tools; it no longer anchors substantive repository selection. NB-BULK-01, NetBox batch error reporting, is the leading candidate for further investigation. Final repository and task allocation remain open.
+
+The record identifies issue 20054, feature PR 22646, the actual premerge parent and later QA PR 22901. Selected source supports a connection between batch rollback, eagerly queued events and request completion. Existing UI cleanup provides earlier evidence for the scoped rule. The later QA is a lead and comparator, not a retroactive answer key. The candidate manifest hashes 26 retrieved source files across the starting and feature revisions. This is investigator research and must never enter blind packs. No model, NetBox runtime reproduction or containment run was performed.
+
+Preserve all ordinary permitted documentation and the applicable root AGENTS.md in matched inputs. A direct agent may derive the same guidance. Do not manufacture a difference by withholding normal documentation, infer owner approval, treat several linked guardrails as independent cases, or claim representative benefit from a deliberately selected historical problem. The public family must stay in development if used to tune prompts or scoring.
+
+**Exact next substantive step:** reproduce synchronous bulk update behaviour in the pinned NetBox environment with PostgreSQL and Redis. Compare database state and event dispatch at starting revision d13c98b9ea8c55dafdcdecbf3058a731814a7ead and feature merge 6068f417876e79b6d588bd8b05a7a4e515378b51, including a successful batch control. Distinguish existing failures from feature changes and reconcile the task with the earlier contract before creating a worked case. Keep webhook delivery local. No paid or blinded model calls are authorised. Do not build the whole coding runner to perform this investigator check.
+
+The selection record, working plan .3, change register and implementation takeaway IL-011 record this decision. The progress view is refreshed only to report this research status and next step; the explanation's phase design is unchanged. Existing H06 and H04 results and original inventory counts remain intact. Verification: all 26 manifest hashes match the retrieved files; the actual merge parent and root instruction file inventory agree with GitHub metadata. Type and lint checks, the four route static build, local asset checks, progress text and unique IDs checks, and plan download consistency passed. No browser or NetBox runtime test was performed. Publication is verified after saving.
+
+## Previous work: case selection started on 11 September 2026
 
 The user accepted the screening clarification and proceeding with case selection. Applied the completed step label “Find and screen candidate material”, the headline “Candidate material is available”, and the clearer next deliverable. Plan section 10 now labels the H04 full workflow requirements as historical development work. These wording corrections are released together with the new case record; none from this batch remain banked.
 

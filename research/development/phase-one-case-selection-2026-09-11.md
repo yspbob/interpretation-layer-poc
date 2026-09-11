@@ -2,7 +2,17 @@
 
 11 September 2026. Selection is in progress; this is not a frozen trial allocation.
 
-## Working choice
+## Selection update after reviewing the purpose of the case
+
+The user questioned whether H06 would mainly test extraction of documented facts and agreed to investigate a stronger candidate. Keep H06 for developing the assessment machinery. Do not make ease of running it the reason to select HTTPX for the substantive trial.
+
+The leading candidate for further investigation is now [NB-BULK-01: NetBox batch error reporting](netbox-bulk-error-candidate/README.md). It connects a real historical feature request with the interaction between database rollback and queued change events. Selected source at the actual starting revision was inspected. A later upstream correction supports the investigation, but no NetBox runtime reproduction or model comparison has been performed.
+
+Next reproduce that narrow behaviour before promoting the candidate to a worked case. Preserve ordinary documentation and instructions for both groups. A direct agent may recover the same rule; the study must retain an equal or negative result. Final repository selection remains open, and no additional independent family count is claimed.
+
+The following sections preserve the original H06 selection and its rationale. Their proposal to inspect HTTPX families first is superseded by this update.
+
+## Original working choice
 
 Use HTTPX H06, the authentication flow family, to develop the first guidance assessment case. It covers shared logic, mode dependent operations, body handling and valid alternatives. It is sufficiently bounded to inspect and probe without a running database or web application. That makes it useful for developing the assessment procedure before selecting the full trial set.
 

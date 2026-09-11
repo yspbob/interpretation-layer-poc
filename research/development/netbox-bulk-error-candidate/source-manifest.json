@@ -1,0 +1,199 @@
+{
+  "status": "Public investigator source audit; not an agent pack or runtime result",
+  "retrieved": "2026-09-11",
+  "repository": "https://github.com/netbox-community/netbox",
+  "starting_revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+  "feature_merge": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+  "later_qa_merge": "3793160eba4d54070552eacfc1502027a7e042c1",
+  "instruction_file_inventory": {
+    "recursive_tree_truncated": false,
+    "paths": [
+      "AGENTS.md"
+    ],
+    "note": "Root instruction file found in starting revision; preserve it in matched inputs. No claim of full documentation absence."
+  },
+  "files": [
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "AGENTS.md",
+      "sha256": "4bc76f4ed8331c43ad8f42056cfbea117f2853072641f3d04ae68522113872eb",
+      "bytes": 17810,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/AGENTS.md"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "docs/features/change-logging.md",
+      "sha256": "a91b1be6e4791a4b24652bb11317a436491dcf4db796402b918aba3a6a97b5e5",
+      "bytes": 2432,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/docs/features/change-logging.md"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "docs/features/event-rules.md",
+      "sha256": "8e8e89e58fe68e4a4264aa41820c98cdd5d6288a58504a813016f9252916bf27",
+      "bytes": 1841,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/docs/features/event-rules.md"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "docs/integrations/rest-api.md",
+      "sha256": "1e5a0e3a8d01fc62609266717f1f70b87734a0a19f044dcaba47b997ed0e7e0c",
+      "bytes": 40660,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/docs/integrations/rest-api.md"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "docs/integrations/webhooks.md",
+      "sha256": "fc767e7780d1c6c8961de5ba315b2439aa895ae3ee3fd5e38d06ab419743efec",
+      "bytes": 6696,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/docs/integrations/webhooks.md"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/core/events.py",
+      "sha256": "b9cde5ea36b2cc7b92c8b574a9413375365eeffca688cae822ea6da40131f75b",
+      "bytes": 404,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/core/events.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/core/signals.py",
+      "sha256": "122c2c26d76845d6865ae1c654fbd73a12f373f78e813fe56ac09d92f038b8bc",
+      "bytes": 12684,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/core/signals.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/extras/events.py",
+      "sha256": "a737f201b5ef51bb24a6f026e3f99b70332349ef12e10541d95516f5e4b5b3f4",
+      "bytes": 11752,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/extras/events.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/api/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/api/__init__.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/api/exceptions.py",
+      "sha256": "3b1e5dbf0815fd8372ce423cc6490aebab14f85fd8d0092b16dff56ba063c801",
+      "bytes": 340,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/api/exceptions.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/api/viewsets/__init__.py",
+      "sha256": "10ba40a790f77180c94110932fb2ff97ec5c4fa8b9247f7b809a3d0f088cc716",
+      "bytes": 15551,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/api/viewsets/__init__.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/api/viewsets/mixins.py",
+      "sha256": "c2e88ee8d1446a16344115e0e196a39c367911db91ddb78fc8c70536b14476e2",
+      "bytes": 14035,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/api/viewsets/mixins.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/context.py",
+      "sha256": "ac74ae4b01d21030831c494d41dc3c3d868bb12dd9ef45084d473b8d3f678d95",
+      "bytes": 288,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/context.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/context_managers.py",
+      "sha256": "174c99978ad72b1ce7b949cc63d336091e0b10c15c55a9a51fdbe6d88f3f975d",
+      "bytes": 882,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/context_managers.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/middleware.py",
+      "sha256": "908ca9e440aeb348a00598dbac5b5a35ce7883a7b28f5fe0c20bcc701f3376b2",
+      "bytes": 12671,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/middleware.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/settings.py",
+      "sha256": "c7633767bd4abf2f2d5058a6bc27ff54babd8aae0476bcbf8cf324d49846ad6e",
+      "bytes": 38603,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/settings.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/netbox/views/generic/bulk_views.py",
+      "sha256": "f7af8f358eaced093e1992b2624142463aa5714c08664101aeb4126c8d3199d5",
+      "bytes": 57890,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/views/generic/bulk_views.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/utilities/api.py",
+      "sha256": "157722540516827ee71a677ae0fbd7d3d237ce6fcfedf7157e13114facf736b9",
+      "bytes": 9689,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/utilities/api.py"
+    },
+    {
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "path": "netbox/utilities/error_handlers.py",
+      "sha256": "75626bb33bf10397ad47a9642baf9b588d60ddcdd067d9b63f5b90879c21625f",
+      "bytes": 2047,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/utilities/error_handlers.py"
+    },
+    {
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "path": "netbox/core/signals.py",
+      "sha256": "122c2c26d76845d6865ae1c654fbd73a12f373f78e813fe56ac09d92f038b8bc",
+      "bytes": 12684,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/6068f417876e79b6d588bd8b05a7a4e515378b51/netbox/core/signals.py"
+    },
+    {
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "path": "netbox/extras/events.py",
+      "sha256": "a737f201b5ef51bb24a6f026e3f99b70332349ef12e10541d95516f5e4b5b3f4",
+      "bytes": 11752,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/6068f417876e79b6d588bd8b05a7a4e515378b51/netbox/extras/events.py"
+    },
+    {
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "path": "netbox/netbox/api/viewsets/__init__.py",
+      "sha256": "10ba40a790f77180c94110932fb2ff97ec5c4fa8b9247f7b809a3d0f088cc716",
+      "bytes": 15551,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/6068f417876e79b6d588bd8b05a7a4e515378b51/netbox/netbox/api/viewsets/__init__.py"
+    },
+    {
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "path": "netbox/netbox/api/viewsets/mixins.py",
+      "sha256": "a0715c3587eae9eea3a117764096d251ad5646c1a9d24180e6ac642ac70eb562",
+      "bytes": 17776,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/6068f417876e79b6d588bd8b05a7a4e515378b51/netbox/netbox/api/viewsets/mixins.py"
+    },
+    {
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "path": "netbox/netbox/context_managers.py",
+      "sha256": "174c99978ad72b1ce7b949cc63d336091e0b10c15c55a9a51fdbe6d88f3f975d",
+      "bytes": 882,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/6068f417876e79b6d588bd8b05a7a4e515378b51/netbox/netbox/context_managers.py"
+    },
+    {
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "path": "netbox/netbox/middleware.py",
+      "sha256": "908ca9e440aeb348a00598dbac5b5a35ce7883a7b28f5fe0c20bcc701f3376b2",
+      "bytes": 12671,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/6068f417876e79b6d588bd8b05a7a4e515378b51/netbox/netbox/middleware.py"
+    },
+    {
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "path": "netbox/utilities/api.py",
+      "sha256": "157722540516827ee71a677ae0fbd7d3d237ce6fcfedf7157e13114facf736b9",
+      "bytes": 9689,
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/6068f417876e79b6d588bd8b05a7a4e515378b51/netbox/utilities/api.py"
+    }
+  ]
+}
