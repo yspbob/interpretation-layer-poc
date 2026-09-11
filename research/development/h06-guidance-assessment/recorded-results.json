@@ -1,0 +1,108 @@
+{
+  "status": "Investigator development probes; no model calls, semantic grading or isolation validation",
+  "source_commit": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+  "source_manifest_sha256": "12207160153540ab34fad7385cca84268a3b938a87b7893ac96671adc2fd74b9",
+  "probe_sha256": "53460a88cbb51a90f1c4e380bde36cf0a7b9376e05520089d4ca18ac604b2d28",
+  "python": "3.13.12",
+  "httpx_version_from_pinned_source": "0.28.1",
+  "dependencies": {
+    "httpcore": "1.0.9",
+    "anyio": "4.13.0",
+    "certifi": "2026.2.25",
+    "idna": "3.11"
+  },
+  "network": "MockTransport and local flow generators only; no outbound requests or provider calls",
+  "limits": "Body checks exercise base adapters directly; dispatch checks use real Client and AsyncClient with a mock transport. No event loop blocking, real authentication service, concurrency, cryptographic security or full upstream suite was tested.",
+  "checks": [
+    {
+      "check": "sync: shared flow through client",
+      "expected": "shared",
+      "observed": "shared",
+      "passed": true
+    },
+    {
+      "check": "sync: specialised flow through client",
+      "expected": "sync",
+      "observed": "sync",
+      "passed": true
+    },
+    {
+      "check": "sync: request body declared",
+      "expected": "firstsecond",
+      "observed": "firstsecond",
+      "passed": true
+    },
+    {
+      "check": "sync: request body undeclared",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "passed": true
+    },
+    {
+      "check": "sync: response body declared",
+      "expected": "firstsecond",
+      "observed": "firstsecond",
+      "passed": true
+    },
+    {
+      "check": "sync: response body undeclared",
+      "expected": "ResponseNotRead",
+      "observed": "ResponseNotRead",
+      "passed": true
+    },
+    {
+      "check": "sync: override bypasses base body read",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "passed": true
+    },
+    {
+      "check": "async: shared flow through client",
+      "expected": "shared",
+      "observed": "shared",
+      "passed": true
+    },
+    {
+      "check": "async: specialised flow through client",
+      "expected": "async",
+      "observed": "async",
+      "passed": true
+    },
+    {
+      "check": "async: request body declared",
+      "expected": "firstsecond",
+      "observed": "firstsecond",
+      "passed": true
+    },
+    {
+      "check": "async: request body undeclared",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "passed": true
+    },
+    {
+      "check": "async: response body declared",
+      "expected": "firstsecond",
+      "observed": "firstsecond",
+      "passed": true
+    },
+    {
+      "check": "async: response body undeclared",
+      "expected": "ResponseNotRead",
+      "observed": "ResponseNotRead",
+      "passed": true
+    },
+    {
+      "check": "async: override bypasses base body read",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "passed": true
+    },
+    {
+      "check": "async: explicit unsupported mode",
+      "expected": "RuntimeError",
+      "observed": "RuntimeError",
+      "passed": true
+    }
+  ]
+}

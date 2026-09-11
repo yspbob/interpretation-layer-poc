@@ -161,3 +161,18 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** The study may reasonably stop or repair the method between phases. A test of only successful guides can answer a narrower question. The transition policy now distinguishes these choices. Numerical gates remain open.
 
 **Next action:** Implement the recorded transition policy and preserve preparation outcomes, costs and feedback history. Retain the separation between development feedback and blinded preparation.
+
+
+## IL-010: Explain when a custom implementation bypasses framework support
+
+**Source:** 11 September inspection and local checks of HTTPX H06 at the inventory's pinned commit. See the [guidance assessment case](development/h06-guidance-assessment/README.md).
+
+**Status:** An implementation observation supported by source inspection and selected local behaviour checks. It is not evidence of model interpretation quality or a measured production benefit.
+
+**Takeaway:** A configuration flag can work through a particular framework method rather than apply everywhere. A custom override may bypass that method. Guidance needs to explain that boundary, not merely repeat the flag's name or promise.
+
+**Practical implication:** Record which implementation supplies a guarantee, when it runs and what an override must preserve or replace. Accept a valid alternative that performs the required work itself. Include both the usual path and an override when checking a proposed guide.
+
+**What remains uncertain:** The H06 checks cover dispatch and body availability, not concurrency safety, event loop blocking, real authentication services or other frameworks. Whether the layer reliably recovers and communicates this distinction is untested.
+
+**Next action:** Use the case when specifying development assessment records, then qualify the assessor on separate families. Do not generalise the observation into a universal rule about all configuration flags.

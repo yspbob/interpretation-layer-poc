@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-11.1**
+Plan ID: **pilot-draft-2026-09-11.2**
 Updated: **11 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -401,6 +401,10 @@ The investigator records each decision and its evidence in a versioned configura
 
 ### Phase 1: select guidance cases and prepare the restricted role path
 
+#### Historical full workflow rehearsal: H04
+
+This subsection records earlier development work. Its coding, checker and code judge requirements do not apply to the current Phase 1 guidance case. Section 1A defines the roles needed now.
+
 **Development milestone completed on 8 September 2026; model components and isolation remain unvalidated.** [Component contracts v0.1](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/component-contracts-v0.1.md) and the [H04 response-lifetime case](https://github.com/yspbob/interpretation-layer-poc/tree/main/research/development/h04-response-lifetime) now provide a concrete task, pinned evidence, two valid implementations, two consequential errors, an unfinished implementation, prewritten reference verdicts and a scripted preparation/checking/final-assessment trace. All 25 behaviour comparisons matched their reference expectations. These are investigator-authored development examples and a mechanical replay, not model outputs or independent qualification.
 
 The H04 development contracts and recorded trace cover the following. The later plan also requires independent guidance and intervention assessments, which H04 has not implemented:
@@ -410,7 +414,7 @@ The H04 development contracts and recorded trace cover the following. The later 
 - **Judge:** case-specific scoring criteria, how mechanical and model judgements combine, and the treatment of incomplete work and insufficient evidence.
 - **Shared controls:** explicit input and output records, allowed files for each role, enforced information boundaries, logging, failure handling, versioned instructions and model settings. Demonstrate the boundaries with attempts to access prohibited inputs.
 
-The worked case must contain the pinned evidence, a concrete task, a valid solution, a deliberate consequential mistake, a valid exception or alternative, expected verifier/checker/judge decisions, and independent evidence supporting those expectations. It should demonstrate preparation and verification of guidance, its use during the task, intervention on a changed approach, and final assessment. Keep the evaluator's reference material outside every experimental component that is not permitted to see it. A manually traced case or scripted output may help develop the specification but must not be reported as a model run.
+The H04 rehearsal was designed to contain the pinned evidence, a concrete task, a valid solution, a deliberate consequential mistake, a valid exception or alternative, expected verifier/checker/judge decisions, and independent evidence supporting those expectations. It traced preparation and verification of guidance, its use during a task, intervention on a changed approach and final assessment using scripted decisions. Keep the evaluator's reference material outside every experimental component that is not permitted to see it. A manually traced case or scripted output may help develop the specification but must not be reported as a model run.
 
 The completion record should show what each component received, what it returned, and whether those results matched the justified expectations. Label the case and all tuning outputs as development material. It cannot count as independent qualification or evidence that the layer improves outcomes. Exact models, budgets, validation sample and acceptance thresholds may remain open while the surrounding software is built, but must be fixed before their corresponding qualification or scored runs.
 
@@ -418,14 +422,20 @@ The runnable prototype checks six control behaviours and records 71 denied file-
 
 For this development case, any confirmed required behavioural failure makes the final result fail; otherwise missing evidence stays insufficient, and all required checks must pass for a scoped pass. Incomplete work fails completion. A second corrected submission may proceed, a further revise stops, and unresolved stops immediately. These are explicit development defaults, not a ratified confirmation endpoint. Scripted lifecycle-call and finally-structure comparisons detect the known candidate changes; general semantic detection and runner-enforced pauses remain open.
 
-**Exact next step:** choose one repository and a few distinct guidance decisions, establish reference support and exclusions, and define task neutral input packs. Review existing gateway and assessment tools against the playbook. Specify the minimal reading-only drafter, verifier and independent guidance assessment path, then implement and test its structured inputs, access denials, bounded revision/stops, protected records and model gateway without calling models. Use relevant H04 claims and invalid-pack probes only as development examples; do not require its coding/checker workflow for Phase 1. Prepare separate qualification families and fix role settings and budgets before separately authorised model qualification and guidance runs. No VM provisioning or coding runner is a prerequisite unless a selected exposed capability requires it.
+#### Current Phase 1 development: H06
+
+On 11 September, case selection began with HTTPX H06, the authentication flow family. The [selection record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase-one-case-selection-2026-09-11.md) compares its fit with existing candidates and keeps final trial selection open. The [guidance case](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/h06-guidance-assessment/README.md) defines six related decision units, source provenance, expected assessments, omissions and valid alternatives. Fifteen local checks of the pinned implementation matched their declared expectations. No model judgement or isolation was tested.
+
+The case is documentation visible: the guide and source docstrings disclose parts of the rule. It cannot establish undocumented rule inference. Its expected answers are public development material, and the whole family must be excluded from untouched qualification or confirmation if it informs the method. No historical coding tasks are reserved and no guide from this work is authorised for later comparison reuse. The original inventory counts remain a historical screening record.
+
+**Exact next step:** use the H06 development case to specify the restricted input and assessment records, review additional substantive families before final repository and case selection, and prepare separate qualification material. Establish reference support, exclusions and task neutral input packs for the selected cases. Review existing gateway and assessment tools against the playbook. Specify the minimal reading-only drafter, verifier and independent guidance assessment path, then implement and test its structured inputs, access denials, bounded revision/stops, protected records and model gateway without calling models. Use relevant H04 claims and invalid-pack probes only as development examples; do not require its coding/checker workflow for Phase 1. Prepare separate qualification families and fix role settings and budgets before separately authorised model qualification and guidance runs. No VM provisioning or coding runner is a prerequisite unless a selected exposed capability requires it.
 
 
 | Stage | Required work | Current state |
 |---|---|---|
-| Frame and inventory | Review the playbook claim, inspect references and select candidate repositories. | Completed as exploratory preparation. |
+| Find and screen candidate material | Review the playbook claim, inspect references and identify candidate repositories. | Completed as exploratory preparation; experimental eligibility remains separate. |
 | Specify and trace one development case | Write component contracts and trace their inputs and decisions on one evidence-backed case. | H04 contracts, executable checks and scripted trace complete as development. No model role exercised or qualified. |
-| Phase 1: select guidance cases | One repository, distinct decisions, justified references, exceptions, omissions and source conditions. | Next; selection remains open. |
+| Phase 1: select guidance cases | One repository, distinct decisions, justified references, exceptions, omissions and source conditions. | In progress. HTTPX H06 development case defined with 15 local checks; final trial selection remains open. |
 | Phase 1: prepare role access and assessment | Restricted drafting, verification and independent guidance assessment; qualify only the jobs in use and fix settings. | Not implemented or qualified. |
 | Phase 1: run and report | Retain guides, drafts, decisions, assessed errors, omissions, failures and preparation costs. | Not started. |
 | Phase 2: test use | Add coding execution, matched DIRECT/GUIDE reviews and qualified independent code assessment. | Later phase, not a Phase 1 gate. |

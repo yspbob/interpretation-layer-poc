@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-11.1**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-11.2**. Status: working redesign, not a new ratified preregistration.
+
+## Clarify screening completion and begin case development: 11 September 2026
+
+The user accepted clarifying the completed screening step and proceeding with case selection. The progress page now calls the completed work “Find and screen candidate material” and states that candidate material is available. Section 10 explicitly labels H04 as a historical full workflow rehearsal; it does not require the coding judge or interactive checker in Phase 1.
+
+HTTPX H06 was selected as the first public development case. The case records six related decision units, sources, valid alternatives, expected assessment examples, input restrictions and uncertainty. Fifteen local behaviour checks matched their expectations. The case is documentation visible and provides no model qualification or evidence of undocumented rule inference. It is now exposed development material. Final trial repository selection, additional cases, model settings, numerical qualification criteria, access controls and budgets remain open. No model calls or later coding tasks are authorised by this update.
 
 ## Apply the approach and reading review: 11 September 2026
 
