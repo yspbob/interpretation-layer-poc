@@ -14,4 +14,13 @@ Relevant primary documentation: [Promptfoo configuration](https://www.promptfoo.
 
 The small custom controller handles what is specific to this study: separate permitted evidence, exact admitted claim versions, bounded revisions, retained failures and assessment after release. This does not mean the reviewed tools cannot support the study. Before implementing a live gateway, compare their adapters against destination restrictions, fail closed spending limits, provider metadata, fresh requests and the ability to keep assessment references out of working roles.
 
-For now, the only implemented transport is a trusted scripted worker. Supplying a live transport is rejected. A disabled model path prevents accidental spending here but does not constitute an implemented or qualified model gateway.
+At the time of the 11 September review, the only implemented transport was a trusted scripted worker. Live transports were rejected. The 13 September update below records the subsequent adapter implementation.
+
+
+## Adapter decision: 13 September 2026
+
+The first connection now uses the official OpenAI Python SDK 3.13.0 and its HTTPX2 transport, pinned to 2.12.0. It supports a single fixed Responses endpoint and one sequential attempt. Using the SDK reuses request construction and HTTP handling without deploying a proxy service. The study controller supplies the role and release rules; a small wrapper enforces destination, request, ledger and stop policy.
+
+LiteLLM and Portkey remain candidates if multiple providers or centrally managed budgets become necessary. The present attempt ledger is not an account wide quota service. Promptfoo and Langfuse remain optional for larger qualification datasets and reporting. No claim is made that these products cannot support the study.
+
+The [adapter record](PROVIDER.md) links the official API documentation, records the limits of the spending control and distinguishes simulated SDK checks from live endpoint or model qualification. Model selection, actual prices and spending authorisation remain open.

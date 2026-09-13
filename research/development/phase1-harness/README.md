@@ -1,5 +1,7 @@
 # First guidance harness
 
+Update, 13 September: the [model connection](PROVIDER.md) is now implemented and tested through the official SDK with simulated responses. The original container rehearsal below is retained for traceability. Its published results identify the code from commit eead62c; the controller has since been extended, so use that revision to reproduce the original script hashes. No live model has been qualified.
+
 This is a working rehearsal of the Phase 1 process. It passes authored drafts, reviews and assessments between separate containers and checks the resulting records. It makes no model calls. Passing this rehearsal does not qualify an AI verifier or demonstrate that the interpretation layer helps.
 
 ## What happens in one attempt
@@ -60,6 +62,6 @@ The development defaults allow two corrections and at most twelve role invocatio
 
 ## What comes next
 
-Add the actual provider adapter and test it without spending money first. Unlike this replay, it must send only the declared role input, never a fixture answer. It must enforce allowed destinations, credentials, request limits and usage recording outside the roles. The [tool review](tooling-review.md) identifies candidates to reuse.
+The [provider adapter](PROVIDER.md) now passes simulated SDK and workflow checks. It sends permitted role inputs without authored fixture answers and records usage against an attempt allowance.
 
-Then fix model settings and qualification criteria, prepare separate assessment families and seek the required authorisation for model spending. The live verifier and assessors still need qualification before collecting a guidance result. Coding execution and the interactive checker remain work for later phases.
+Next, fix model settings and qualification criteria, prepare separate assessment families and verify provider settings and prices. Obtain model spending authorisation before live tests. The verifier and assessors still need qualification before collecting a guidance result. Coding execution and the interactive checker remain work for later phases.

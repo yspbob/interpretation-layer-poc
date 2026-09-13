@@ -1,4 +1,4 @@
-"""Phase 1 controller. Only scripted development transport is implemented."""
+"""Phase 1 controller for scripted replay and separately controlled provider connections."""
 from copy import deepcopy
 from datetime import datetime, timezone
 import hashlib
@@ -141,7 +141,8 @@ class DockerReplay:
 
 class Controller:
     def __init__(self, sources, reference, transport, folder, max_revisions=2, max_calls=12):
-        require(transport.mode == "scripted-development", "Live model gateway disabled")
+        require(transport.mode in {"scripted-development", "provider-simulation", "provider-live"}, "Unknown model connection")
+        self.scripted = transport.mode == "scripted-development"
         require(type(max_revisions) is int and 0 <= max_revisions <= 2, "Invalid revision limit")
         require(type(max_calls) is int and 0 <= max_calls <= 12, "Invalid invocation limit")
         self.sources, self.reference = deepcopy(sources), deepcopy(reference)
@@ -152,6 +153,8 @@ class Controller:
         self.events = []
         self.closed = False
         self.run_id = self.folder.name
+        if not self.scripted:
+            transport.bind(self.run_id)
         self.log("opened", {"mode": transport.mode, "contract": CONTRACT,
                             "source_hash": digest(sources), "reference_hash": digest(reference),
                             "max_revisions": max_revisions, "max_calls": max_calls})
@@ -181,8 +184,19 @@ class Controller:
             "guidance_assessor": "Independently assess this candidate against the reference and evidence. Check every claim and every required unit. Empty guidance can omit required rules. Do not infer truth from acceptance.",
             "verifier_assessor": "Independently determine the justified verdict for every claim in this review. The verifier's verdict is an object of assessment, not evidence of truth.",
         }[role]
-        message = {"mode": "scripted-development", "packet": packet, "instruction": prompt,
-                   "response": replay, "reads": list(self.sources["files"])}
+        if self.scripted:
+            message = {"mode": "scripted-development", "packet": packet, "instruction": prompt,
+                       "response": replay, "reads": list(self.sources["files"])}
+        else:
+            require(replay is None, "Scripted answer cannot enter a provider call")
+            if role == "guidance_assessor":
+                packet["candidate_hash"] = digest(packet["candidate"])
+            if role == "verifier_assessor":
+                packet["review_hash"] = digest(packet["submission"])
+            from provider import PROMPTS
+            prompt = PROMPTS[role]
+            message = {"mode": self.transport.mode, "packet": packet, "instruction": prompt,
+                       "run_id": self.run_id, "call_id": self.calls + 1}
         require(len(wire(message)) <= MAX_INPUT, "Invocation input byte limit")
         self.calls += 1
         self.save(f"invocation-{self.calls:02}-input.json", message)
@@ -193,7 +207,8 @@ class Controller:
             self.log("invocation_failed", {"role": role, "input_hash": digest(message),
                 "elapsed_seconds": time.monotonic() - started,
                 "error_type": type(error).__name__, "reason": str(error),
-                "model_calls": 0, "tokens": None, "cost_usd": None})
+                "provider_summary": self.transport.summary() if not self.scripted else None,
+                "model_calls": self.transport.summary()["model_calls"] if not self.scripted else 0, "tokens": None, "cost_usd": None})
             raise
         require(len(wire(output)) <= MAX_OUTPUT, "Invocation output byte limit")
         self.save(f"invocation-{self.calls:02}-output.json", output)
@@ -201,21 +216,25 @@ class Controller:
                                 "output_hash": digest(output), "prompt_hash": digest(prompt),
                                 "elapsed_seconds": time.monotonic() - started,
                                 "input_bytes": len(wire(message)), "output_bytes": len(wire(output)),
-                                "model": None, "model_calls": 0, "tokens": None, "cost_usd": None,
+                                "model": output.get("provider", {}).get("returned_model"),
+                                "model_calls": 1 if self.transport.mode == "provider-live" else 0,
+                                "provider": output.get("provider"), "tokens": None, "cost_usd": None,
                                 "image_id": getattr(self.transport, "image_id", None)})
         return output["response"]
 
-    def run(self, drafts, reviews, assessments):
+    def run(self, drafts=None, reviews=None, assessments=None):
         require(not self.closed, "Run cannot resume")
+        require(self.scripted or (drafts is None and reviews is None and assessments is None),
+                "Provider workflow cannot receive scripted answers")
         history, guide, status = [], {"claims": []}, "not_prepared"
-        result = {"mode": "scripted-development", "model_calls": 0, "model_cost_usd": None}
+        result = {"mode": self.transport.mode, "model_calls": 0, "model_cost_usd": None}
         try:
             for round_no in range(self.max_revisions + 1):
                 payload = {} if not history else {"previous_draft": history[-1]["draft"],
                                                   "feedback": history[-1]["review"]}
-                draft = self.invoke("drafter", payload, drafts[round_no])
+                draft = self.invoke("drafter", payload, drafts[round_no] if self.scripted else None)
                 validate_draft(draft, self.sources)
-                review = self.invoke("verifier", {"candidate": draft}, reviews[round_no])
+                review = self.invoke("verifier", {"candidate": draft}, reviews[round_no] if self.scripted else None)
                 validate_review(review, draft, self.sources)
                 history.append({"draft": deepcopy(draft), "review": deepcopy(review)})
                 self.save(f"round-{round_no}.json", history[-1])
@@ -231,16 +250,20 @@ class Controller:
             # Freeze precedes any independent feedback. Both original and released outputs are assessed.
             scores = {}
             for label, candidate in [("original", history[0]["draft"]), ("released", guide)]:
-                script = deepcopy(assessments[label])
-                script["candidate_hash"] = digest(candidate)
+                script = None
+                if self.scripted:
+                    script = deepcopy(assessments[label])
+                    script["candidate_hash"] = digest(candidate)
                 response = self.invoke("guidance_assessor", {"candidate": candidate,
                     "reference": self.reference}, script)
                 scores[label] = assess_guidance(response, candidate, self.reference)
                 self.save(f"assessment-{label}.json", response)
             errors = []
             for index, item in enumerate(history):
-                script = deepcopy(assessments["reviews"][index])
-                script["review_hash"] = digest(item)
+                script = None
+                if self.scripted:
+                    script = deepcopy(assessments["reviews"][index])
+                    script["review_hash"] = digest(item)
                 response = self.invoke("verifier_assessor", {"submission": item,
                     "reference": self.reference}, script)
                 validate(response, VERIFIER_ASSESSMENT)
@@ -264,6 +287,10 @@ class Controller:
         finally:
             self.closed = True
             result["invocations"] = self.calls
+            if not self.scripted:
+                self.transport.finish()
+                result["provider_summary"] = self.transport.summary()
+                result["model_calls"] = result["provider_summary"]["model_calls"]
             self.log("terminal", result)
             self.save("result.json", result)
         return result

@@ -1,5 +1,7 @@
 # Isolated runner and two-machine execution
 
+Update, 13 September: the [provider connection](phase1-harness/PROVIDER.md) now uses the official SDK and has passed simulated request and workflow tests. It exposes no execution tools. Its fixed endpoint, role inputs and attempt ledger do not qualify the arbitrary execution architecture described below. Live model compatibility and assessment qualification remain open.
+
 Current development update, 11 September: the [Phase 1 rehearsal](phase1-harness/README.md) uses a pinned Docker worker to replay authored records. Its tested limits and role packets apply only to that trusted worker. A live provider adapter and its qualification remain outstanding. This does not validate or replace the later arbitrary execution architecture below.
 
 

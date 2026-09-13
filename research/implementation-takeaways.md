@@ -217,3 +217,18 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** The rehearsal does not show whether models make sound admission or assessment decisions. Independent model qualification, operating costs and the benefit of a production dashboard remain untested.
 
 **Next action:** Preserve this separation in the actual provider adapter and qualification runs. Do not let assessment feedback enter working role inputs without recording a new development or preparation stage.
+
+
+## IL-013: An uncertain call must not silently become a free retry
+
+**Source:** [Provider adapter development](development/phase1-harness/PROVIDER.md), 13 September 2026, implementing the POC's existing spending and failure requirements.
+
+**Status:** Implemented control checked with simulated timeouts, missing usage and HTTP failures. No real provider charge was measured.
+
+**Takeaway:** When a model request times out, the caller may not know whether it reached the provider or incurred a charge. Automatically repeating it can consume more money and create an unrecorded extra attempt.
+
+**Practical implication:** Reserve an allowance before sending a request. Keep that reservation if usage is unknown, stop further calls and reconcile the outcome. Preserve refusals and invalid answers in cost records when usage is available. A production rules dashboard should distinguish known cost from amounts awaiting reconciliation.
+
+**What remains uncertain:** Configured rates and token bounds must match the selected provider. This control cannot reverse a charge or cap unrelated account activity. Its operational cost and effect on the layer's return remain untested.
+
+**Next action:** Verify provider pricing and usage behaviour during the separately authorised connection check, then preserve the same accounting in qualification and guidance runs.

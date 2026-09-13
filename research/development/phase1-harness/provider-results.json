@@ -1,0 +1,691 @@
+{
+  "completed_at": "2026-09-13T19:26:24.936078+00:00",
+  "dependencies": {
+    "httpx2": "2.12.0",
+    "jsonschema": "4.26.0",
+    "openai": "3.13.0"
+  },
+  "limitations": [
+    "All answers and token usage were authored; no model quality or real prices measured",
+    "No live endpoint, credential, data retention or model compatibility check",
+    "Input token ceiling and rates must be verified for selected live model",
+    "No arbitrary code execution or new container qualification"
+  ],
+  "model_calls": 0,
+  "platform": "Windows-11-10.0.26220-SP0",
+  "scenarios": [
+    {
+      "case": "netbox",
+      "outcome": {
+        "claim_count": 4,
+        "guide_hash": "75832bdcba054bc6abd367eaf1753d9b527d2f3a5ed6a08172cd6d1ad4c9f5b7",
+        "invocations": 5,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 3000,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 5,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "reference_hash": "7870abc8cda3f65643c80f61adf76bd3305e44f50e5be8c908ad330342f315cf",
+      "requests": [
+        {
+          "hash": "911f1b6329ba0470dcd988485188e4f3f3e1bd8cfd7d7643dd68eaf095c2b60d",
+          "role": "drafter"
+        },
+        {
+          "hash": "ad3141548aaafdfaf354e7cf664cf5a3589c23431c63306d279362a5341a40ac",
+          "role": "verifier"
+        },
+        {
+          "hash": "976369be7db3af858a2458aedcc7bafbe9b6f4b3168a0934085b47870230be17",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "976369be7db3af858a2458aedcc7bafbe9b6f4b3168a0934085b47870230be17",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "f7b508cdde4114284f0c8a7eed8a9c672a3b2d24720e10658e1b91e32de95630",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "supported",
+      "source_hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35"
+    },
+    {
+      "case": "netbox",
+      "outcome": {
+        "claim_count": 4,
+        "guide_hash": "c6a73a9f01e3326c34160154dc04d211f1e4207d8dbc8432da13b41d9b5b0968",
+        "invocations": 5,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 3000,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 5,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": [
+          {
+            "actual": "admit",
+            "claim_id": "C1",
+            "expected": "reject",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          }
+        ]
+      },
+      "reference_hash": "7870abc8cda3f65643c80f61adf76bd3305e44f50e5be8c908ad330342f315cf",
+      "requests": [
+        {
+          "hash": "911f1b6329ba0470dcd988485188e4f3f3e1bd8cfd7d7643dd68eaf095c2b60d",
+          "role": "drafter"
+        },
+        {
+          "hash": "4d0cea331a2e4473222bedbd62dea23db45efdd5394f171a02388de1ede3066b",
+          "role": "verifier"
+        },
+        {
+          "hash": "985022cfe9358eae3014208788ff4b73f9762099d1d48df8faf4f786cbd89616",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "985022cfe9358eae3014208788ff4b73f9762099d1d48df8faf4f786cbd89616",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "d321c89bb44d325bca94458e678d8e68961b9b7619cc604d77101cae60687c67",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "bad_admission",
+      "source_hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35"
+    },
+    {
+      "case": "netbox",
+      "outcome": {
+        "claim_count": 0,
+        "guide_hash": "9ab10f0f885c9c17b9bb160e685330f8e0891ef8f13bba2ae0d86091e62bb844",
+        "invocations": 5,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 3000,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 5,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": [
+          {
+            "actual": "reject",
+            "claim_id": "C1",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "reject",
+            "claim_id": "C2",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "reject",
+            "claim_id": "C3",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "reject",
+            "claim_id": "C4",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          }
+        ]
+      },
+      "reference_hash": "7870abc8cda3f65643c80f61adf76bd3305e44f50e5be8c908ad330342f315cf",
+      "requests": [
+        {
+          "hash": "911f1b6329ba0470dcd988485188e4f3f3e1bd8cfd7d7643dd68eaf095c2b60d",
+          "role": "drafter"
+        },
+        {
+          "hash": "ad3141548aaafdfaf354e7cf664cf5a3589c23431c63306d279362a5341a40ac",
+          "role": "verifier"
+        },
+        {
+          "hash": "976369be7db3af858a2458aedcc7bafbe9b6f4b3168a0934085b47870230be17",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "acf82f6560d9a9af9f1598e66b60c5e941f5bde3528a60c3c6c60fe53daf90ee",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "04938521078fe49f8d2c691422c3210b0289363598143eaf5ac60398213617aa",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "false_rejection",
+      "source_hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35"
+    },
+    {
+      "case": "netbox",
+      "outcome": {
+        "claim_count": 0,
+        "guide_hash": "9ab10f0f885c9c17b9bb160e685330f8e0891ef8f13bba2ae0d86091e62bb844",
+        "invocations": 5,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 3000,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 5,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "reference_hash": "7870abc8cda3f65643c80f61adf76bd3305e44f50e5be8c908ad330342f315cf",
+      "requests": [
+        {
+          "hash": "911f1b6329ba0470dcd988485188e4f3f3e1bd8cfd7d7643dd68eaf095c2b60d",
+          "role": "drafter"
+        },
+        {
+          "hash": "e134960cfb68859d767a04dcd16b03797edbc16d393eb7380c2ded378bdb8b9e",
+          "role": "verifier"
+        },
+        {
+          "hash": "acf82f6560d9a9af9f1598e66b60c5e941f5bde3528a60c3c6c60fe53daf90ee",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "acf82f6560d9a9af9f1598e66b60c5e941f5bde3528a60c3c6c60fe53daf90ee",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "18096058c32796aa8a62beef3d9415b696e69001ea6582777a69206f4acf9fea",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "empty",
+      "source_hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35"
+    },
+    {
+      "case": "netbox",
+      "outcome": {
+        "claim_count": 4,
+        "guide_hash": "75832bdcba054bc6abd367eaf1753d9b527d2f3a5ed6a08172cd6d1ad4c9f5b7",
+        "invocations": 8,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 4800,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 8,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "reference_hash": "7870abc8cda3f65643c80f61adf76bd3305e44f50e5be8c908ad330342f315cf",
+      "requests": [
+        {
+          "hash": "911f1b6329ba0470dcd988485188e4f3f3e1bd8cfd7d7643dd68eaf095c2b60d",
+          "role": "drafter"
+        },
+        {
+          "hash": "4d0cea331a2e4473222bedbd62dea23db45efdd5394f171a02388de1ede3066b",
+          "role": "verifier"
+        },
+        {
+          "hash": "3493df87d2dd04a525edc9acc3ad3711f5eff9b5d637cf10e88a237fb8a8c5ab",
+          "role": "drafter"
+        },
+        {
+          "hash": "ad3141548aaafdfaf354e7cf664cf5a3589c23431c63306d279362a5341a40ac",
+          "role": "verifier"
+        },
+        {
+          "hash": "985022cfe9358eae3014208788ff4b73f9762099d1d48df8faf4f786cbd89616",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "976369be7db3af858a2458aedcc7bafbe9b6f4b3168a0934085b47870230be17",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "533485740ed70c5e2d5f5e0b3e45a1312cfe78652b8aed5c4726bd39247a9c97",
+          "role": "verifier_assessor"
+        },
+        {
+          "hash": "f7b508cdde4114284f0c8a7eed8a9c672a3b2d24720e10658e1b91e32de95630",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "corrected",
+      "source_hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35"
+    },
+    {
+      "case": "netbox",
+      "outcome": {
+        "claim_count": 3,
+        "guide_hash": "fbb98a6b26086fd00be71cf35f18c837b642db5515c5a2cfe3e3f73908e19758",
+        "invocations": 11,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 6600,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 11,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 1,
+            "verdict": "fail"
+          },
+          "released": {
+            "missing_units": 1,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "revision_exhausted",
+        "verifier_errors": []
+      },
+      "reference_hash": "7870abc8cda3f65643c80f61adf76bd3305e44f50e5be8c908ad330342f315cf",
+      "requests": [
+        {
+          "hash": "911f1b6329ba0470dcd988485188e4f3f3e1bd8cfd7d7643dd68eaf095c2b60d",
+          "role": "drafter"
+        },
+        {
+          "hash": "4d0cea331a2e4473222bedbd62dea23db45efdd5394f171a02388de1ede3066b",
+          "role": "verifier"
+        },
+        {
+          "hash": "3493df87d2dd04a525edc9acc3ad3711f5eff9b5d637cf10e88a237fb8a8c5ab",
+          "role": "drafter"
+        },
+        {
+          "hash": "4d0cea331a2e4473222bedbd62dea23db45efdd5394f171a02388de1ede3066b",
+          "role": "verifier"
+        },
+        {
+          "hash": "3493df87d2dd04a525edc9acc3ad3711f5eff9b5d637cf10e88a237fb8a8c5ab",
+          "role": "drafter"
+        },
+        {
+          "hash": "4d0cea331a2e4473222bedbd62dea23db45efdd5394f171a02388de1ede3066b",
+          "role": "verifier"
+        },
+        {
+          "hash": "985022cfe9358eae3014208788ff4b73f9762099d1d48df8faf4f786cbd89616",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "4bd0a83cfe00e4aff5bd4026fb299b0e888c3eabb0d18e9d9c8709fa51ae565e",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "533485740ed70c5e2d5f5e0b3e45a1312cfe78652b8aed5c4726bd39247a9c97",
+          "role": "verifier_assessor"
+        },
+        {
+          "hash": "533485740ed70c5e2d5f5e0b3e45a1312cfe78652b8aed5c4726bd39247a9c97",
+          "role": "verifier_assessor"
+        },
+        {
+          "hash": "533485740ed70c5e2d5f5e0b3e45a1312cfe78652b8aed5c4726bd39247a9c97",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "exhausted",
+      "source_hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35"
+    },
+    {
+      "case": "netbox",
+      "outcome": {
+        "claim_count": 0,
+        "guide_hash": "9ab10f0f885c9c17b9bb160e685330f8e0891ef8f13bba2ae0d86091e62bb844",
+        "invocations": 5,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 3000,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 5,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 4,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "fail"
+          }
+        },
+        "status": "unresolved",
+        "verifier_errors": [
+          {
+            "actual": "unresolved",
+            "claim_id": "C1",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "unresolved",
+            "claim_id": "C2",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "unresolved",
+            "claim_id": "C3",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          },
+          {
+            "actual": "unresolved",
+            "claim_id": "C4",
+            "expected": "admit",
+            "reason": "Authored independently of the replayed verifier decision.",
+            "round": 0
+          }
+        ]
+      },
+      "reference_hash": "7870abc8cda3f65643c80f61adf76bd3305e44f50e5be8c908ad330342f315cf",
+      "requests": [
+        {
+          "hash": "911f1b6329ba0470dcd988485188e4f3f3e1bd8cfd7d7643dd68eaf095c2b60d",
+          "role": "drafter"
+        },
+        {
+          "hash": "ad3141548aaafdfaf354e7cf664cf5a3589c23431c63306d279362a5341a40ac",
+          "role": "verifier"
+        },
+        {
+          "hash": "976369be7db3af858a2458aedcc7bafbe9b6f4b3168a0934085b47870230be17",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "acf82f6560d9a9af9f1598e66b60c5e941f5bde3528a60c3c6c60fe53daf90ee",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "914c1a0b9a24b1327fd9fb62ab3b8bfcb040aef02686b66d11b41c836ff1df2b",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "unresolved",
+      "source_hash": "5df7854f04b5c40d54b71b04db1ed8a9eb40ac2cc0b4c2a5be73917b63246d35"
+    },
+    {
+      "case": "h06",
+      "outcome": {
+        "claim_count": 6,
+        "guide_hash": "28fda8a27f1920b37ce0cdf853f24ce1c9c18c430c0bb47136b2712090817472",
+        "invocations": 5,
+        "mode": "provider-simulation",
+        "model_calls": 0,
+        "model_cost_usd": null,
+        "provider_summary": {
+          "accounted_nusd": 3000,
+          "budget_nusd": 100000000,
+          "connection_stopped": true,
+          "mode": "provider-simulation",
+          "model_calls": 0,
+          "price_basis": "simulated",
+          "provider_requests": 5,
+          "reserved_nusd": 0
+        },
+        "scores": {
+          "original": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          },
+          "released": {
+            "missing_units": 0,
+            "unresolved": 0,
+            "unsupported_claims": 0,
+            "verdict": "pass"
+          }
+        },
+        "status": "frozen",
+        "verifier_errors": []
+      },
+      "reference_hash": "2f317d9a928e7e938ceb252fad76b1712e34732fe4d2503fc8efba536907336d",
+      "requests": [
+        {
+          "hash": "761642b7722870562e8ba951d3e1095ed4a9efd381d11940f28eb65a27972983",
+          "role": "drafter"
+        },
+        {
+          "hash": "1ccde0b793cae28088654d0cfb59eb8c5e9f277e0a94005a463dc2a79515c24c",
+          "role": "verifier"
+        },
+        {
+          "hash": "8ec55a37f3318b0f128d471686d9b2d9d0e4964989df199263f9333b2b22d268",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "8ec55a37f3318b0f128d471686d9b2d9d0e4964989df199263f9333b2b22d268",
+          "role": "guidance_assessor"
+        },
+        {
+          "hash": "ab851cf575e2cdbf69512d9b83af409cb02701136f328122ea86368fa33fd314",
+          "role": "verifier_assessor"
+        }
+      ],
+      "scenario": "supported",
+      "source_hash": "59d3b2af2863b9ac4c3c89de58d2bf518233e1cd362b16dabeb9dbba4675acd4"
+    }
+  ],
+  "scripts": {
+    "fixtures.py": "52a591fa5b3165f9ad5d0387e692d879e39ae554001179f3a9d457c003c03fed",
+    "harness.py": "5a555ee6295fb99ffaa384b1355f9be66df52d700e3673d3195436d451ccf091",
+    "provider-lock.txt": "4e75b5ef003d93ac5e91e59295b8d257c435a1d4e9c229a4a142a7d21e5ba760",
+    "provider-requirements.txt": "41f94a705b805f5e22c02abd526b66e96c985c495e7b8e8a271a46ef02fcf395",
+    "provider.py": "c427d7146f671d36fa33c7ae23d7eca167601747af95c48286af1abfd68ed6cd",
+    "requirements.txt": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+    "run.py": "0099e14d9749d66e64e887b99f5e5cfaa03c25e79e8f2fcf43ca3aff29ce518b",
+    "run_provider_checks.py": "11dc12c866c7c086478396319c7724513bf9c462a8b0890e905cace78323b57f",
+    "schemas.py": "53af10ee957065149dcd302bcd2c1e12289e414c079ad40c32760308b0cdc880",
+    "test_harness.py": "0f0f024c690857030736bcbac979a42b516becfa068207d40c118051def1aa30",
+    "test_provider.py": "e08e48fece65503a2c377d8a5aa5f2d30676f79f96b4917e7e475d85931ed4e1",
+    "worker.py": "f812bc2c43210a3c5557cb703ff004a5d3e2d262762973c542ad2d43e1590bac"
+  },
+  "simulated_requests": 49,
+  "status": "SDK and workflow simulation; no real provider contacted",
+  "test_log_hash": "de8c326d3c4f32e7d294ce4402745004bd3ee532956021bd733d114e4415c025",
+  "tests": {
+    "failed": 0,
+    "names": [
+      "test_assessment_cannot_repair_wrong_admission (test_harness.HarnessTests.test_assessment_cannot_repair_wrong_admission)",
+      "test_call_budget_stops_and_retains_records (test_harness.HarnessTests.test_call_budget_stops_and_retains_records)",
+      "test_candidate_hash_tampering_rejected (test_harness.HarnessTests.test_candidate_hash_tampering_rejected)",
+      "test_empty_guide_has_missing_coverage (test_harness.HarnessTests.test_empty_guide_has_missing_coverage)",
+      "test_freeze_precedes_assessment_and_sources_match (test_harness.HarnessTests.test_freeze_precedes_assessment_and_sources_match)",
+      "test_invalid_citations_and_duplicate_claims (test_harness.HarnessTests.test_invalid_citations_and_duplicate_claims)",
+      "test_live_gateway_and_resume_denied (test_harness.HarnessTests.test_live_gateway_and_resume_denied)",
+      "test_missing_coverage_rejected (test_harness.HarnessTests.test_missing_coverage_rejected)",
+      "test_narrowed_admission_requires_redraft (test_harness.HarnessTests.test_narrowed_admission_requires_redraft)",
+      "test_output_limit_stops (test_harness.HarnessTests.test_output_limit_stops)",
+      "test_reference_not_sent_through_working_role (test_harness.HarnessTests.test_reference_not_sent_through_working_role)",
+      "test_source_tampering_traversal_and_missing_instructions (test_harness.HarnessTests.test_source_tampering_traversal_and_missing_instructions)",
+      "test_timeout_is_infrastructure_failure (test_harness.HarnessTests.test_timeout_is_infrastructure_failure)",
+      "test_two_corrections_then_freeze (test_harness.HarnessTests.test_two_corrections_then_freeze)",
+      "test_verifier_cannot_add_or_omit_claim (test_harness.HarnessTests.test_verifier_cannot_add_or_omit_claim)",
+      "test_budget_is_shared_across_roles (test_provider.ProviderTests.test_budget_is_shared_across_roles)",
+      "test_call_limit_blocks (test_provider.ProviderTests.test_call_limit_blocks)",
+      "test_changed_role_instructions_denied (test_provider.ProviderTests.test_changed_role_instructions_denied)",
+      "test_concurrent_dispatch_denied (test_provider.ProviderTests.test_concurrent_dispatch_denied)",
+      "test_cross_attempt_denied (test_provider.ProviderTests.test_cross_attempt_denied)",
+      "test_destination_guard_denies_other_hosts_and_paths (test_provider.ProviderTests.test_destination_guard_denies_other_hosts_and_paths)",
+      "test_disk_failure_prevents_dispatch (test_provider.ProviderTests.test_disk_failure_prevents_dispatch)",
+      "test_duplicate_json_keys_rejected (test_provider.ProviderTests.test_duplicate_json_keys_rejected)",
+      "test_encoded_request_limit_precedes_transport (test_provider.ProviderTests.test_encoded_request_limit_precedes_transport)",
+      "test_environment_and_cookies_do_not_carry_over (test_provider.ProviderTests.test_environment_and_cookies_do_not_carry_over)",
+      "test_existing_ledger_cannot_reset_budget (test_provider.ProviderTests.test_existing_ledger_cannot_reset_budget)",
+      "test_expired_or_wrong_approval_rejected (test_provider.ProviderTests.test_expired_or_wrong_approval_rejected)",
+      "test_fixture_and_history_fields_denied (test_provider.ProviderTests.test_fixture_and_history_fields_denied)",
+      "test_full_controller_has_no_authored_answers (test_provider.ProviderTests.test_full_controller_has_no_authored_answers)",
+      "test_http_error_not_retried (test_provider.ProviderTests.test_http_error_not_retried)",
+      "test_incomplete_is_charged_but_not_repaired (test_provider.ProviderTests.test_incomplete_is_charged_but_not_repaired)",
+      "test_input_allowance_checked_before_call (test_provider.ProviderTests.test_input_allowance_checked_before_call)",
+      "test_live_requires_approval_before_reading_credentials (test_provider.ProviderTests.test_live_requires_approval_before_reading_credentials)",
+      "test_malformed_schema_rejected (test_provider.ProviderTests.test_malformed_schema_rejected)",
+      "test_matching_approval_expiry_is_checked (test_provider.ProviderTests.test_matching_approval_expiry_is_checked)",
+      "test_missing_usage_holds_reserve (test_provider.ProviderTests.test_missing_usage_holds_reserve)",
+      "test_model_change_holds_reserve (test_provider.ProviderTests.test_model_change_holds_reserve)",
+      "test_other_role_history_denied (test_provider.ProviderTests.test_other_role_history_denied)",
+      "test_oversize_request_never_sent (test_provider.ProviderTests.test_oversize_request_never_sent)",
+      "test_oversize_response_stops (test_provider.ProviderTests.test_oversize_response_stops)",
+      "test_rate_tier_change_holds_reserve (test_provider.ProviderTests.test_rate_tier_change_holds_reserve)",
+      "test_redirect_not_followed (test_provider.ProviderTests.test_redirect_not_followed)",
+      "test_reference_hash_change_denied (test_provider.ProviderTests.test_reference_hash_change_denied)",
+      "test_refusal_is_charged_but_not_a_guide (test_provider.ProviderTests.test_refusal_is_charged_but_not_a_guide)",
+      "test_sdk_request_is_fresh_bounded_and_has_no_fixture (test_provider.ProviderTests.test_sdk_request_is_fresh_bounded_and_has_no_fixture)",
+      "test_source_tampering_denied (test_provider.ProviderTests.test_source_tampering_denied)",
+      "test_spending_reservation_blocks_before_dispatch (test_provider.ProviderTests.test_spending_reservation_blocks_before_dispatch)",
+      "test_stale_sequence_denied (test_provider.ProviderTests.test_stale_sequence_denied)",
+      "test_timeout_holds_reserve_and_never_retries (test_provider.ProviderTests.test_timeout_holds_reserve_and_never_retries)",
+      "test_unexpected_tool_output_is_never_executed (test_provider.ProviderTests.test_unexpected_tool_output_is_never_executed)",
+      "test_usage_overrun_retains_full_reservation (test_provider.ProviderTests.test_usage_overrun_retains_full_reservation)",
+      "test_working_role_cannot_receive_reference (test_provider.ProviderTests.test_working_role_cannot_receive_reference)"
+    ],
+    "passed": 52
+  }
+}

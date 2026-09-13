@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 11 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 13 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -8,17 +8,19 @@ We are testing whether the interpretation layer proposed in [chapter 4 of the AI
 
 The agreed first pilot compares the methods on evidence-backed historical tasks from public projects, with possible prior model familiarity. It does not establish inference entirely from unseen code. Private rule-changing variants are optional later work, not a pilot prerequisite.
 
-The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts, development references and a scripted Phase 1 harness now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
+The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-11.5**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.1**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
+
+- [Current provider adapter and qualification boundary](research/development/phase1-harness/PROVIDER.md), with recorded simulated checks.
 
 - [Leading substantive candidate: NetBox NB-BULK-01](research/development/netbox-bulk-error-candidate/README.md). Source audit and historical task identified; local runtime reproduction complete.
 
 - [First guidance assessment case: HTTPX H06](research/development/h06-guidance-assessment/README.md) and [case selection record](research/development/phase-one-case-selection-2026-09-11.md). Public development material; no model assessment or isolation validation.
 
-- [Approach and reading review, 11 September](research/development/approach-and-reading-review-2026-09-11.md). Applied following user agreement and release authorisation; the assessment case and runtime controls remain to be built.
+- [Approach and reading review, 11 September](research/development/approach-and-reading-review-2026-09-11.md). Applied following user agreement and release authorisation. This is a historical review; see the current work below for implementation status.
 - [Current working plan](preregistration/plan/working_plan_2026-09-05.md), especially section 1A for the phase boundaries, then sections 9A and 10 for qualification and the immediate development step.
 - [Component contracts v0.1](research/development/component-contracts-v0.1.md) and [H04 worked development case](research/development/h04-response-lifetime/README.md), including its recorded results and reproducible runner.
 - [Decision and plan change register](preregistration/plan/plan_changes_2026-09-05.md).
@@ -27,7 +29,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: first Phase 1 harness completed on 11 September 2026
+## Current work: provider adapter completed on 13 September 2026
+
+The user authorised building the controlled model connection without paid calls. [PROVIDER.md](research/development/phase1-harness/PROVIDER.md) explains the implementation and limits. The first adapter uses OpenAI SDK 3.13.0 and HTTPX2 2.12.0, with a dependency lock. It sends a fresh request to the fixed Responses endpoint for each role, with no authored answer, shared conversation identity, tool or provider cookie carryover. Inputs are restricted by role, source and reference hashes, attempt and sequence. The existing controller now supports this connection while retaining its original scripted mode.
+
+The adapter reserves a configured allowance before dispatch and records exact request bodies, responses, model, tier, usage and configured cost. All roles share the attempt ledger. Redirects and automatic retries are denied. Timeouts, unknown usage and model or tier changes stop further calls and retain the reservation. Refusals and malformed answers remain charged when valid usage is available. The live library requires explicit credentials and a matching unexpired approval record; no live command, credential or approval was added. A configured bound is not a provider invoice guarantee. Verify the selected model's input bound, upper rates and data policy before authorising a live attempt. The ledger does not control unrelated spending or simultaneous work on another machine.
+
+Verification: all 52 controller and adapter tests passed, including the previous 15 controller tests. Eight development scenarios passed through 49 simulated SDK requests. Socket connections were blocked. Full local records are in local-runs/provider-checks/20260913T192622Z-fbdcd410/. The public provider-results.json contains hashes, outcomes and dependency versions; no raw source packs or credentials. The original results.json remains historical at commit eead62c. No new Docker or arbitrary execution qualification was performed. No live endpoint, model judgement, actual price, provider retention setting or account access was tested. Zero blinded model runs and zero paid calls remain.
+
+**Exact next substantive step:** choose model settings, qualification criteria and a proposed spending ceiling, then prepare separate qualification cases outside the public development families. Verify model request compatibility, input allowance, upper rates and provider data settings before seeking the required spending authorisation. Run a small authorised connection check and qualify the verifier and independent assessors before collecting guidance results. NetBox and H06 remain public development material. Final trial selection and later coding task scope remain open.
+
+The canonical plan is pilot-draft-2026-09-13.1. Progress now reports the tested connection and points to qualification preparation. The phase explanation and separation of description from progress are preserved. Website type and lint checks, the four route static build and referenced local assets passed. Recorded script hashes, local documentation links, progress content and plan download consistency are checked before publication. No browser visual QA was performed. The release is verified after saving before reporting public availability.
+
+## Previous work: first Phase 1 harness completed on 11 September 2026
 
 The user authorised defining the NetBox assessment reference and building the minimal harness. See [the harness guide](research/development/phase1-harness/README.md), its reference JSON files, tool review and results.json. The controller handles drafting, verification, bounded corrections, exact admitted claim release, separate assessment of original and released guidance, and assessment of every verifier decision. It preserves bad admissions, empty guides, exhausted revisions and failed records. A scope change requires a new drafter version. It does not silently rewrite guidance after assessment.
 

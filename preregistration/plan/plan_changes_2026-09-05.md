@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-11.5**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-13.1**. Status: working redesign, not a new ratified preregistration.
+
+## Implement the first provider connection: 13 September 2026
+
+Revision pilot-draft-2026-09-13.1 records the user's authorisation to build the connection and test it without paid model calls. The adapter uses the official OpenAI SDK at a fixed Responses endpoint. This is an implementation choice for the first connection, not selection of an experimental model. Fresh requests contain only permitted role input. No scripted answer, shared conversation identifier or tool is sent.
+
+Fifty two controller and adapter tests passed. Eight NetBox and HTTPX scenarios passed through 49 simulated SDK requests with sockets blocked. The connection preserves failures and records usage. It reserves a configured allowance before sending a call, shares the ledger across roles, disables automatic retries and retains a reservation when usage is uncertain. Prices and input bounds remain to be verified for the selected live model. These controls are not a guarantee about an unverified provider invoice or an account wide quota.
+
+The original container record is retained as historical development evidence. No live endpoint, credential, model, independent qualification or effectiveness result was tested. Next, choose settings and qualification criteria, prepare separate cases, verify model and provider assumptions, and obtain spending authorisation before live qualification. The public progress page reports this change without changing the three phase design.
 
 ## Build the first Phase 1 rehearsal: 11 September 2026
 
