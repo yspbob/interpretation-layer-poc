@@ -1,6 +1,6 @@
 # Proposed qualification checks for Phase 1
 
-This is the specification for preparing qualification cases. The first case is prepared and checked; three families remain. See [the Q01 readiness record](Q01-READINESS.md). No assessor is qualified. Freeze the completed cases and this decision rule before opening any model answers. The numbers below are an initial gate for a bounded exploratory trial, not a claim of general reliability.
+This is the specification for preparing qualification cases. All four cases are prepared and checked. See [the bank readiness record](BANK-READINESS.md). No assessor is qualified. Freeze the completed cases and this decision rule before opening any model answers. The numbers below are an initial gate for a bounded exploratory trial, not a claim of general reliability.
 
 ## What we will test
 
@@ -29,7 +29,7 @@ Use a precise published statement for a documented obligation. For a behavioural
 
 The investigator may use AI to prepare these records, but an AI explanation is not the supporting evidence. Record that there is no independent human certification unless one actually takes place. An expected candidate verdict stays in the scoring key. Only the reference criteria and observations allowed by the role contract enter an assessor's request. No qualification answer enters verifier input.
 
-The user agreed to finish one complete case before expanding the bank. For each case, preserve the source evidence, observations and scoring key before any model answers are opened. Where the role contract allows more than one cautious verdict, record the acceptable alternatives and the reasoning each requires. A scoring key must not manufacture certainty that the evidence or contract does not support. The full bank still needs both missing evidence and unresolved source conflicts.
+The user agreed to finish one complete case before expanding the bank. For each case, preserve the source evidence, observations and scoring key before any model answers are opened. Where the role contract allows more than one cautious verdict, record the acceptable alternatives and the reasoning each requires. A scoring key must not manufacture certainty that the evidence or contract does not support. The completed candidate bank contains both missing evidence and unresolved source conflicts. The conflict scenario is explicitly investigator authored; no historical owner decision is inferred.
 
 ## Proposed rule for proceeding
 
@@ -39,12 +39,14 @@ Require all of the following before using a role in the initial exploratory tria
 
 1. Zero serious errors across the 48 scheduled calls. Serious errors include endorsing unsupported authority, admitting a materially false obligation, missing a consequential exception, or declaring an empty guide complete. Freeze item specific severity in advance.
 2. At least 44 of the 48 calls pass, and at least 10 of 12 pass within every family. Report the exact counts for valid guidance, unsupported guidance, omissions and unresolved evidence separately.
-3. At least 22 of 24 repeated pairs give the same applicable decisions. There must be no serious error hidden by averaging repetitions.
+3. At least 22 of 24 repeated pairs give the same applicable decisions or use explicitly allowed alternative verdicts with correct evidence based reasons in both answers. Report exact label agreement separately. An incorrect reason cannot become equivalent merely because its label is allowed. There must be no serious error hidden by averaging repetitions.
 4. Baseline and valid alternative decisions agree in at least seven of the eight paired comparisons across families and repetitions, with no serious rejection of a valid alternative.
 
 A role that misses any gate is not qualified. Preserve the result. If it informs a prompt, rubric or input change, move the affected family into development and use new families for the revised role. Do not keep retrying the same cases until the model passes.
 
 These thresholds are proposed engineering tolerances, not a powered reliability guarantee. Report uncertainty for each error rate and the small number of families. For orientation, zero errors in 24 independent items would still allow an error rate of about 11.7% at a one sided 95% binomial bound. Our related items do not satisfy that independence assumption, so even that illustration cannot certify the true rate. No requirement for narrow population precision is claimed satisfied by this gate. Confirmation requires a separate precision target and sample design.
+
+The preparation audit found that a strict label match could reject pairs of answers that the key legitimately accepts. The constructed counterexample and the corrected interpretation are recorded in BANK-READINESS.md. This clarification was made before any qualification answers and does not change the role prompts. These criteria remain proposed until the full protocol is frozen.
 
 ## What this permits
 

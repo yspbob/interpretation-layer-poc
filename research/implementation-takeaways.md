@@ -261,3 +261,18 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** The preparation shows how to justify one reference. It does not establish that a model will notice the conflict, resolve it correctly or save time by doing so. Behavioural observations establish what happened under tested conditions; they cannot establish owner approval.
 
 **Next action:** Preserve counterevidence in qualification inputs and test the actual assessment roles. Keep legitimate cautious verdicts in the scoring rules where the evidence does not justify a single answer.
+
+
+## IL-016: Challenge the assessment reference as well as the candidate
+
+**Source:** [Qualification bank evidence review](development/astra-preparation/BANK-READINESS.md), 13 September 2026. The underlying source and runtime records are committed by hash and remain private until qualification permits release.
+
+**Status:** A preparation finding supported by an observed exception and a constructed scoring counterexample. No model benefit has been measured.
+
+**Takeaway:** The expected answer can contain a mistake. A runtime check contradicted an overbroad reference assertion, which was corrected before model testing. Separately, the proposed repeat check could penalise two verdicts that the same scoring key accepted.
+
+**Practical implication:** Test whether the reference accounts for known exceptions and permits legitimate alternatives. Preserve the old reference and explain changes with evidence. In production, an adverse review should remain open to a demonstrated flaw in the rule or assessment criterion; an earlier approval is not proof of correctness.
+
+**What remains uncertain:** These corrections show specific preparation defects. They do not measure how frequently such defects occur, whether an AI will find them or how much review effort a production layer will save.
+
+**Next action:** Keep references and scoring rules versioned. During qualification, retain any disagreement with executable evidence and investigate it before interpreting a model failure. Material used to revise a role after seeing its answers becomes development material.

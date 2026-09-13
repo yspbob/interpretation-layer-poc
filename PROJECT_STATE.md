@@ -10,11 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.4**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.5**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
-- [First qualification case readiness](research/development/astra-preparation/Q01-READINESS.md). One private case is prepared; three families and model qualification remain pending.
+- [Qualification bank readiness](research/development/astra-preparation/BANK-READINESS.md). Four private cases are prepared; the batch runner and model qualification remain pending.
 
 - [Astra screening preparation and proposed qualification](research/development/astra-preparation/README.md). The preliminary subagent screen is complete; controlled API execution and assessment qualification remain pending.
 
@@ -33,7 +33,23 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: first qualification case prepared on 13 September 2026
+## Current work: four qualification cases prepared on 13 September 2026
+
+The user authorised preparing the remaining three cases, requested rigorous quality and reasonableness checks, and required any reported gaps to be fact based. The private bank now contains four distinct families, 72 role items and 144 planned calls. No qualification model has received these items. All candidates are authored, documentation is available, and the represented ecosystem is Python. Qualification must not be generalised beyond that coverage.
+
+Across the bank, 37 authored behavioural scenarios passed and the checks detected 13 deliberate faults. Fourteen relevant upstream test invocations passed. Three unchanged upstream methods also passed with a local fixture; those are separately recorded, not described as a full upstream suite. All 72 items passed source identity, excerpt, citation, schema, role boundary and request checks. The largest development input bound including padding is 32,183 within the proposed 32,768. Actual provider token accounting remains unverified.
+
+Private location: C:/Users/Yaroslav/Documents/Codex/poc-private/qualification-bank-2026-09-13/. Read README-v2.md and freeze-v2.json as investigator material only. The active bank is prepared-v4. It includes a revised Q01 candidate package; the original Q01 folder and freeze remain unchanged and provide its runtime evidence. The other three cases and all answers, keys, source packs and raw evidence remain private. Neither this state nor any investigator record may enter a blind role context. Both private folders are only on this PC; public Git sync does not transfer them.
+
+The fact based review removed candidate metadata that revealed the intended verdict, corrected an overbroad rule after a source check and reproduced exception, and replaced an inferred CLI status with an observed one. It also demonstrated that strict label consistency could penalise two legitimate verdicts. The proposed consistency gate now recognises frozen alternatives only when both reasons are correct and reports exact label changes separately. A final content check found no partial guide omission or explicit false claim of documentation absence. Both were added within the existing item count. Correct behavioural coverage is preserved when a source attribution claim is false. Earlier versions are preserved. Role prompts and Q01's expected labels were unchanged. This is preparation quality evidence, not a layer finding or independent human certification.
+
+The public report research/development/astra-preparation/BANK-READINESS.md records counts, limitations and the private freeze commitment. The private freeze SHA256 is aab7980d712c24445a0645006f826a8b5392dfd82897ed835f5b543589c41bed. It commits to 36 current files and the unchanged earlier bank freeze, which in turn commits to 80 evidence and preparation files and the prior Q01 freeze. A hash is an integrity record, not independent certification of reference quality.
+
+**Exact next substantive step:** implement and test the controlled qualification batch runner without model calls. Use one fixed 144 call schedule, a shared spending ledger and fresh allowlisted role inputs, preserve unsuccessful attempts, and test failures and budget stops with simulated responses. The existing adapter's twelve call attempt cap is not a completed qualification batch control. Then freeze the full protocol, proposed criteria and settings, verify actual model/account configuration and token bounds, and seek explicit spending authorisation before qualification. The controlled familiarity requirement is not silently replaced by the preliminary subagent screen. No API spending is authorised.
+
+Canonical plan: pilot-draft-2026-09-13.5. The progress page reports four prepared cases while preserving zero qualified assessors and zero experimental guidance runs. Website type and lint checks, the four route static build, asset checks and plan download consistency passed. Both private freezes are intact and match the public commitments. Progress has unique IDs and one current step; current content and its compiled disclosure link passed checks. Sealed case identifiers, source pins and answer markers were absent from changed public files. No browser visual review was performed. The live release is verified after saving before reporting publication.
+
+## Previous work: first qualification case prepared on 13 September 2026
 
 The user agreed to complete one evidence justified qualification case before building the remaining bank. Q01 is prepared from a distinct family that has not been used to tune the role prompts. Its documented contract, scope, exceptions, valid alternatives and uncertainty are recorded privately. It tests assessment quality with documentation available, not undocumented rule reconstruction.
 

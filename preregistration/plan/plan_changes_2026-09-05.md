@@ -1,6 +1,16 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-13.4**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-13.5**. Status: working redesign, not a new ratified preregistration.
+
+## Complete the candidate qualification bank: 13 September 2026
+
+Revision pilot-draft-2026-09-13.5 records the user's authorisation to prepare the remaining three cases and the explicit requirement for rigorous, fact based gap checks. Four families now provide 72 distinct role items and 144 planned calls. Thirty seven authored runtime scenarios passed, 13 deliberate faults were detected, and fourteen upstream test invocations plus three separately recorded adapted methods passed. No qualification model calls ran.
+
+The evidence review corrected answer clues in candidate metadata, an overbroad rule and a probe that inferred rather than observed an exit status. Earlier versions remain private and preserved. The revised Q01 retains its original expected labels. Role prompts did not change. A final content check added a partially complete guide and a false claim of documentation absence within the existing item count; the expected coverage distinguishes a correct behavioural rule from a false attribution.
+
+A calculation using the actual keys showed that strict label consistency could fail legitimate alternative verdicts. The proposed gate now recognises those alternatives with correct reasons and reports raw label changes separately. Numerical tolerances remain proposed, and no outcome informed the change. The bank includes an explicitly authored source conflict and candidate instructions; these are assessment controls, not historical discoveries.
+
+All candidates are authored and documentation is visible. The bank cannot qualify every source condition or later assessment role. Its material is frozen privately, with a public integrity commitment. The next step is a controlled batch runner tested without model calls, followed by protocol, account and input checks and explicit spending approval. Progress and the plan now reflect the completed preparation and remaining gates.
 
 ## Prepare one complete qualification case: 13 September 2026
 

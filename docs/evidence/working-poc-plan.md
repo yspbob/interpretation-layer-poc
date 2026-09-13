@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-13.4**
+Plan ID: **pilot-draft-2026-09-13.5**
 Updated: **13 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -125,7 +125,18 @@ The [Astra preparation package](https://github.com/yspbob/interpretation-layer-p
 
 The proposed setting is gpt-6-astra with high reasoning effort and standard service. The proposed preparation ceiling is $150: $10 for the connection check and familiarity screen, $10 for separate development calibration, $120 for qualification and $10 unallocated reserve. No allocation is approved. Actual model identity, request compatibility, input bounds and account data settings still need verification. Published pricing was checked on 13 September; a rate calculation is not a verified invoice cap.
 
-The proposed exploratory qualification gate covers four unused families, six challenges per family for each of three assessment roles and two repetitions, totalling 144 calls. Each role must have no serious errors, at least 44 of 48 successful calls, at least 10 of 12 within every family, consistent decisions in 22 of 24 repeated pairs and agreement in seven of eight baseline versus valid alternative comparisons. Freeze justified labels, severity and the complete rule before outputs. These small counts do not demonstrate a low population error rate or satisfy a future confirmation precision target. The qualification document explains the limits. One case is now prepared and checked; the other three families remain pending; NetBox bulk error handling, H06 and H04 are excluded from untouched qualification.
+The proposed qualification check uses four distinct families. Each supplies six challenges for each of three assessment roles. Repeating every item twice gives 144 calls in total.
+
+For each role, the proposed requirements are:
+
+- No serious errors.
+- At least 44 successful calls out of 48, including at least ten out of twelve in every family.
+- Equivalent decisions in at least 22 of 24 repeated pairs.
+- Agreement in at least seven of eight comparisons between baseline guidance and its valid alternative.
+
+An explicitly allowed alternative verdict can count as equivalent only when both answers have correct reasons. Exact label changes are reported separately. Freeze the expected answers, severity and complete scoring rule before opening model outputs.
+
+These small counts do not establish a low population error rate or meet a future confirmation precision target. All four candidate cases are now prepared and checked. NetBox bulk error handling, H06 and H04 remain excluded from untouched qualification.
 
 The controlled familiarity format still needs its transport and batch spending ledger. Test that path without live calls and verify the remaining account and input assumptions before requesting a concrete screening allocation. Qualification case preparation can proceed while these gates remain open. Preserve all probe outcomes and use them during final material selection. Prepare and freeze the separate qualification bank before seeking its spending allocation. Do not dispatch paid calls merely because the user agreed to prepare this work.
 
@@ -147,7 +158,21 @@ The case contains eighteen distinct role items and thirty six planned calls. No 
 
 All role inputs passed source, citation, schema and separation checks. The first source pack was too large and is preserved as superseded. The final pack uses traceable excerpts and fits the existing development input screen without changing the role prompts or allowance. Actual provider token bounds remain unverified. The [public readiness record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q01-READINESS.md) contains the private freeze commitment and limits, without publishing future assessment answers.
 
-Prepare the remaining three families next. The completed bank must still cover unresolved source conflicts and instructions embedded in candidate material. This case freeze is not a freeze of the complete qualification protocol. Final criteria, settings, controlled batch execution, account checks and explicit spending authorisation remain required before qualification.
+At this point, the next step was the remaining three families, including unresolved source conflicts and instructions embedded in candidate material. The subsequent bank record below reports their preparation. This case freeze is not a freeze of the complete qualification protocol. Final criteria, settings, controlled batch execution, account checks and explicit spending authorisation remain required before qualification.
+
+### Qualification bank prepared and checked, 13 September
+
+The user authorised completing the bank and required rigorous checks with fact based gap reporting. All four families now have private references, candidate guidance, expected decisions, scope, exceptions and severity records. The bank contains 72 role items and 144 planned calls. No qualification calls have run.
+
+Across the four families, 37 authored behavioural scenarios passed and 13 deliberate faults were detected. Fourteen upstream test invocations passed, plus three separately recorded methods run with a local fixture. All role packets passed source, citation, schema, input separation and development request size checks. The role prompts were unchanged.
+
+The review found candidate metadata that revealed intended verdicts, an overbroad rule contradicted by a reproduced exception and a probe that inferred an exit status instead of recording it. These were corrected with prior versions retained. Q01's expected labels were preserved while its candidate metadata was revised. The bank also includes an explicitly fictional conflict and instructions embedded in a candidate. Neither is passed off as historical evidence. A final content check added a partially complete guide and a false assertion that supplied documentation did not state a rule. The latter preserves correct behavioural coverage while failing the false attribution. These additions retain the 72 item and 144 call counts.
+
+The proposed repeat criterion now recognises explicitly allowed verdict alternatives with correct reasoning in both answers, while exact label consistency remains separately reported. The actual keys provided a constructed counterexample in which strict label matching would fail despite every selected label being permitted. This clarification precedes all model answers; the numerical thresholds and full protocol remain proposals pending freeze.
+
+The [bank readiness record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/BANK-READINESS.md) records the private commitment, evidence and limits. All candidates are authored, documentation is visible, and all four families concern Python software. No independent human certification or broad model reliability is claimed.
+
+Next implement and test the controlled qualification batch runner without model calls. Its fixed schedule, role inputs and shared budget must cover the entire batch; the existing twelve call attempt cap does not do so. Complete the full protocol freeze, actual provider checks and explicit spending approval before qualification. A candidate material freeze does not close those gates.
 
 ## 3. Build eligible cases before selecting a confirmation sample
 
@@ -373,7 +398,7 @@ These are separate assessment jobs, not necessarily five different model product
 
 #### 2. Establish the expected assessment before testing the assessor
 
-Start Phase 1 with one concrete case specification before building a general assessment framework. Declare the audited source scope and expected decisions, supporting evidence, valid alternative answers, uncertainty, omissions and serious errors. Explain how duplicate claims and differently worded versions of the same decision are counted. Establish coverage only within that audited scope, never an assumed total of all rules in the repository. Use separate cases to qualify the actual assessor; the worked development case cannot qualify itself. Case selection, numerical pass limits and qualification samples remain open.
+Start Phase 1 with one concrete case specification before building a general assessment framework. Declare the audited source scope and expected decisions, supporting evidence, valid alternative answers, uncertainty, omissions and serious errors. Explain how duplicate claims and differently worded versions of the same decision are counted. Establish coverage only within that audited scope, never an assumed total of all rules in the repository. Use separate cases to qualify the actual assessor; the worked development case cannot qualify itself. The candidate qualification bank is now prepared. Its numerical pass limits and complete execution protocol remain proposed until freeze; final experimental case selection is still open.
 
 For each item, create an evidence record containing the source and dependency revisions, submitted claim/plan/code, applicable criterion and severity, legitimate exceptions, expected decision, and the evidence supporting it. Record which facts were available to the role at that point. Historical code is evidence to examine, not an automatic answer key.
 
@@ -470,7 +495,7 @@ The [provider connection](https://github.com/yspbob/interpretation-layer-poc/blo
 
 The connection records exact request bodies, returned model and service tier, usage and configured cost. It reserves an attempt allowance before dispatch, shares that allowance across roles, disables automatic retries and stops on uncertain usage. Unknown charges retain their reservation. This does not guarantee the provider invoice: the selected model's input bound and upper rates must be verified, and an unexpected overrun can only stop subsequent calls. The current library requires explicit credentials and a matching, unexpired operator approval record for live use. There is no live command or approval checked into the repository. These are implemented development controls, not completed model qualification.
 
-**Exact next step:** prepare the remaining three qualification families to the evidence standard established by Q01. One case is prepared; no assessor is qualified. The preliminary subagent observation in section 2B is recorded separately. Also complete and simulate the familiarity transport and batch spending control before any controlled API screen. Verify model access, request compatibility, input allowance, billing rates and account data settings, then seek a concrete screening allocation. Run the authorised screen before final material selection. Prepare separate qualification families and freeze the criteria before their separately authorised model checks. Qualify each assessment role before collecting a guidance result. Final trial case allocation remains open. Resolve task scope ambiguity and reserve compatible tasks before preparing guidance for coding comparisons. Coding execution and the interactive checker remain later phase work.
+**Exact next step:** implement and test the controlled qualification batch runner without model calls. All four cases are prepared; no assessor is qualified. The preliminary subagent observation in section 2B is recorded separately. Also complete and simulate the familiarity transport and batch spending control before any controlled API screen. Verify model access, request compatibility, input allowance, billing rates and account data settings, then seek a concrete screening allocation. Run the authorised screen before final material selection. Freeze the prepared qualification material and criteria before their separately authorised model checks. Qualify each assessment role before collecting a guidance result. Final trial case allocation remains open. Resolve task scope ambiguity and reserve compatible tasks before preparing guidance for coding comparisons. Coding execution and the interactive checker remain later phase work.
 
 
 | Stage | Required work | Current state |

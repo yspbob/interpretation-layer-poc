@@ -1,5 +1,7 @@
 # First qualification case prepared
 
+This is the historical first case record. See [the completed bank record](BANK-READINESS.md) for the current private version, subsequent candidate metadata correction and next step.
+
 On 13 September 2026, the user agreed to complete one qualification case before expanding the bank. Q01 is now prepared and checked. It has not been sent to a qualification model.
 
 The case uses a family separate from the public development examples. Its documentation is available to the roles. This makes it a test of assessment quality within a stated scope; it does not test reconstruction of undocumented rules.

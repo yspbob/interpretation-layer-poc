@@ -6,11 +6,11 @@ We will first look for signs that Astra can recall details from NetBox and HTTPX
 
 ## What is ready
 
-[The first qualification case](Q01-READINESS.md) is prepared and checked, with its source evidence and expected answers kept private. Eight behavioural scenarios and four upstream tests passed; three deliberate faults were detected. These are checks of one family, not model qualification.
+[All four qualification cases](BANK-READINESS.md) are prepared and checked, with their source evidence and expected answers kept private. Across the bank, 37 authored scenarios passed and 13 deliberate faults were detected. Fourteen upstream test invocations and three separately recorded adapted methods passed. These are checks of four families, not model qualification.
 
 The proposed settings and allocations are in [settings.json](settings.json). The offline packet builder prepares 24 separate requests and keeps the answers in a different file outside the public repository. It has no provider connection, credential handling or live mode. The request builder and exact match scorer have automated checks using public toy examples.
 
-The private screening material contains three source excerpts and three authored controls for each repository. Each item is scheduled twice in a fresh request. The source revisions are the existing NetBox starting revision d13c98b9ea8c55dafdcdecbf3058a731814a7ead and HTTPX b5addb64f0161ff6bfe94c124ef76f6a1fba5254. These are deliberately chosen diagnostic examples, not a random sample of either repository. NetBox and HTTPX remain development material; one separate qualification family is now prepared and three remain.
+The private screening material contains three source excerpts and three authored controls for each repository. Each item is scheduled twice in a fresh request. The source revisions are the existing NetBox starting revision d13c98b9ea8c55dafdcdecbf3058a731814a7ead and HTTPX b5addb64f0161ff6bfe94c124ef76f6a1fba5254. These are deliberately chosen diagnostic examples, not a random sample of either repository. NetBox and HTTPX remain development material; four separate qualification families are now prepared.
 
 The private folder contains the selection specification, provenance, exact expected completions, requests and a hash manifest. It is local to the preparation machine. Public Git sync does not transfer it to the laptop. The request file alone is eligible for the screening transport; neither the scoring key nor this project conversation is a model input.
 
@@ -53,7 +53,7 @@ The existing adapter supports the four study roles. It does not yet accept the s
 
 Check the actual account's model access, training opt in and retention settings, and establish the input token bound. The [provider data policy](https://developers.openai.com/api/docs/guides/your-data) distinguishes model training, response storage and abuse monitoring. Sending `store: false` does not establish zero retention or verify the account settings. No account setting has been inspected here.
 
-Freeze the final packet and request hashes, scoring rule, order, settings and authorised allocation before dispatch. The ordinary connection check must contain no probe or qualification answers. Complete the required familiarity work before final experimental material selection. The separate cases described in [QUALIFICATION.md](QUALIFICATION.md) can be prepared while the controlled execution gates remain open. One is now ready; prepare the remaining three next. Do not request qualification spending approval until those cases and their evidence are ready to review.
+Freeze the final packet and request hashes, scoring rule, order, settings and authorised allocation before dispatch. The ordinary connection check must contain no probe or qualification answers. Complete the required familiarity work before final experimental material selection. The separate cases described in [QUALIFICATION.md](QUALIFICATION.md) can be prepared while the controlled execution gates remain open. All four are now prepared. Next build and test the controlled qualification batch runner without model calls. Do not request qualification spending approval until those cases and their evidence are ready to review.
 
 ## Reproduce the offline checks
 
