@@ -1,0 +1,24 @@
+{
+  "status": "prepared_not_run",
+  "model_calls": 0,
+  "offline_tests_passed": 6,
+  "unique_source_items": 6,
+  "authored_controls": 6,
+  "prepared_requests": 24,
+  "private_manifest_sha256": "8c818fc40f42224f874842130cf53bb3293149e11a890eec2ed87c432cdddffb",
+  "audits": [
+    "all expected phrases absent from every request",
+    "exact source bytes and masked lines match six source records",
+    "prepared request bodies and private key match manifest hashes"
+  ],
+  "limitations": [
+    "No live transport or account check",
+    "No model familiarity or qualification result",
+    "No protected transfer to laptop"
+  ],
+  "files_sha256": {
+    "prepare.py": "795f4209ca903ba372255ffdc8b7193d25ece3a7d6f9fa3d939576716354fa75",
+    "test_prepare.py": "41e478ab6783b958ad854ccf6d6925b01feeac3b182f4679ec15128d7e4e7644",
+    "settings.json": "39c2ed2dda2dfd7c26424d6d047c7963a32df8da854d3a7f165337cb10dfacef"
+  }
+}

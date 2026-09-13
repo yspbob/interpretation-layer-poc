@@ -10,9 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.1**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.2**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
+
+- [Astra screening preparation and proposed qualification](research/development/astra-preparation/README.md). Private screening packets are prepared; paid execution and qualification remain pending.
 
 - [Current provider adapter and qualification boundary](research/development/phase1-harness/PROVIDER.md), with recorded simulated checks.
 
@@ -29,7 +31,21 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: provider adapter completed on 13 September 2026
+## Current work: Astra preparation on 13 September 2026
+
+The user agreed to use GPT-6 Astra alone and defer Fable 5.1. No Fable adapter or spending is planned now. Separate role contexts remain mandatory, but same model errors may correlate. Source evidence and runtime checks must justify expected assessments; another model agreeing is not ground truth.
+
+The preparation package in research/development/astra-preparation/ contains an offline packet builder, exact match scorer, proposed high reasoning settings, a staged $150 preparation ceiling and exploratory qualification criteria. These settings, numerical gates and spending allocations are proposals, not a frozen protocol or spending approval. The qualification specification covers four unused families, six challenges per family per assessment role and two repeats: 144 calls. The actual qualification cases have not been built or independently checked.
+
+Private screening material is at C:/Users/Yaroslav/Documents/Codex/poc-private/astra-screening-2026-09-13/. It contains selection.json and prepared/ with 24 requests, a separate scoring key, settings and a manifest. Six source excerpts and six authored controls cover NetBox and HTTPX, with two repetitions. The set is a deliberately chosen small diagnostic, not a validated familiarity detector. Keep all content out of public Git and experimental role inputs. Git sync does not transfer this folder to the laptop. Its manifest hash is recorded in the public preparation-results.json; no probe answers or excerpts are published.
+
+Verification: six offline tests passed. All six source byte hashes and masked lines were checked, every expected phrase was absent from every request body, and saved request/key hashes matched the private manifest. There is no SDK or live mode in the packet builder. No credential, provider account or paid model call was used. The 52 earlier adapter tests remain their separate recorded evidence. Model access, actual input bounds, account settings and semantic qualification remain unverified. Zero blinded model runs remain.
+
+**Exact next substantive step:** connect the prepared familiarity requests through the bounded provider transport, with one ledger for the 25 scheduled calls including an ordinary connection check. Test this path with simulated replies and real network denied. Verify Astra account access, data settings, current rates and the token bound, then present the concrete $10 screening allocation for approval. Do not claim this builder is a completed live runner. After the authorised screen, finalise material selection and prepare evidence justified qualification cases outside the exposed development families before requesting that separate allocation. No paid calls are authorised.
+
+Canonical plan: pilot-draft-2026-09-13.2. The progress page now reports Astra selection and prepared familiarity packets while preserving zero model results. Optional unrelated website comments remain banked. Verification also passed website type and lint checks, the four route static build, referenced local assets, unique progress IDs, one current process step, published script hashes, plan download consistency and a check that private completions are absent from the public changes. The build required ordinary Windows child process access outside the restricted shell. No visual browser review was performed. Public availability is checked after publication before reporting release.
+
+## Previous work: provider adapter completed on 13 September 2026
 
 The user authorised building the controlled model connection without paid calls. [PROVIDER.md](research/development/phase1-harness/PROVIDER.md) explains the implementation and limits. The first adapter uses OpenAI SDK 3.13.0 and HTTPX2 2.12.0, with a dependency lock. It sends a fresh request to the fixed Responses endpoint for each role, with no authored answer, shared conversation identity, tool or provider cookie carryover. Inputs are restricted by role, source and reference hashes, attempt and sequence. The existing controller now supports this connection while retaining its original scripted mode.
 

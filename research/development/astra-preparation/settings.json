@@ -1,0 +1,35 @@
+{
+  "status": "proposal_no_spending_authorised",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "service_tier": "default",
+  "store": false,
+  "tools": [],
+  "screening": {
+    "repositories": ["netbox", "httpx"],
+    "items_per_repository": 3,
+    "controls_per_repository": 3,
+    "repetitions": 2,
+    "max_input_tokens": 8192,
+    "max_output_tokens": 4096,
+    "max_calls_including_connection_check": 25,
+    "proposed_ceiling_usd": 10
+  },
+  "qualification": {
+    "families": 4,
+    "items_per_family_per_role": 6,
+    "roles": ["verifier", "guidance_assessor", "verifier_assessor"],
+    "repetitions": 2,
+    "max_input_tokens": 32768,
+    "max_output_tokens": 8192,
+    "max_calls": 144,
+    "proposed_ceiling_usd": 120
+  },
+  "development": {"max_calls": 12, "proposed_ceiling_usd": 10},
+  "unallocated_reserve_usd": 10,
+  "proposed_preparation_total_usd": 150,
+  "reservation_rates_usd_per_million": {"input": 12.5, "output": 50},
+  "pricing_checked_on": "2026-09-13",
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "account_and_input_bound_verified": false
+}

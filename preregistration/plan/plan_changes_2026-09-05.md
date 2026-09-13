@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-13.1**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-13.2**. Status: working redesign, not a new ratified preregistration.
+
+## Select Astra and prepare the first checks: 13 September 2026
+
+Revision pilot-draft-2026-09-13.2 records the user's agreement to use Astra alone and defer Fable. The preparation now includes 24 private familiarity request packets, separate expected completions, proposed settings, scoring and staged spending, plus an exploratory qualification specification. Six offline tests and private source, answer separation and manifest checks passed. There are still zero model calls.
+
+The proposed $150 preparation ceiling and numerical qualification gates are agent proposals, not user approved spending or a frozen protocol. The qualification bank has not been built. The first screen uses six deliberately chosen source items and six authored controls, each repeated twice; it is not a validated detector. Positive recall informs selection without automatically excluding a repository, and non-detection cannot certify unfamiliarity.
+
+The immediate implementation step is the separate familiarity transport with a batch ledger, followed by account and input checks before seeking a concrete screening allocation. Future qualification uses unused families and evidence justified independently of the tested model's agreement. The site reports factual preparation progress; no effectiveness or qualification claim is added.
 
 ## Implement the first provider connection: 13 September 2026
 

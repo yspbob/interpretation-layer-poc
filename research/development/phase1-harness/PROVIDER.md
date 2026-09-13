@@ -1,6 +1,6 @@
 # The first model connection
 
-The harness now has a connection to the OpenAI Responses API through the official Python SDK. It has been tested with simulated provider responses. No real endpoint, credential or model has been exercised, and no model has been selected for the experiment.
+The harness now has a connection to the OpenAI Responses API through the official Python SDK. It has been tested with simulated provider responses. No real endpoint, credential or model has been exercised, and Astra has now been selected for the first stage. Fable is deferred.
 
 This replaces the rehearsal's answer delivery mechanism. The controller still owns drafting, verification, corrections, guide release and separate assessment. The connection sends the role's permitted information and receives its structured answer. It does not receive the authored answers used in development tests.
 
@@ -51,4 +51,4 @@ The library contains the real SDK transport, but constructing it requires an exp
 
 ## The next decision
 
-Choose models and settings, prepare separate qualification cases and decide the pass criteria. Verify the chosen model's request compatibility, input allowance, rates and provider data settings before authorising a small qualification budget. Both NetBox and H06 remain public development material. A successful first connection test will not, by itself, qualify the verifier or assessor.
+The user selected Astra alone. The [preparation package](../astra-preparation/README.md) contains private familiarity packets and proposed settings, qualification criteria and spending. The separate familiarity request format still needs a controlled transport and a batch ledger. Verify account and input assumptions before seeking screening authorisation, and prepare separate qualification cases before seeking that allocation. Both NetBox and H06 remain public development material. A successful first connection test will not, by itself, qualify the verifier or assessor.

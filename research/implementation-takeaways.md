@@ -232,3 +232,17 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** Configured rates and token bounds must match the selected provider. This control cannot reverse a charge or cap unrelated account activity. Its operational cost and effect on the layer's return remain untested.
 
 **Next action:** Verify provider pricing and usage behaviour during the separately authorised connection check, then preserve the same accounting in qualification and guidance runs.
+
+## IL-014: Separate review roles can still share the same blind spots
+
+**Source:** User agreement on 13 September 2026 to start with Astra and defer Fable, and the [qualification preparation](development/astra-preparation/QUALIFICATION.md).
+
+**Status:** Design implication. No model qualification or correlated error measurement has run.
+
+**Takeaway:** Fresh contexts prevent a reviewer from inheriting another role's conversation. They do not guarantee that the roles will make different mistakes. Repeated agreement can therefore overstate the confidence justified by the evidence.
+
+**Practical implication:** Show the evidence supporting a rule alongside its review verdict and model configuration. Use behavioural checks and justified references where possible. Adding a second model is a possible source of another opinion, not automatic certification.
+
+**What remains uncertain:** We do not yet know how often Astra's verifier and assessors will make the same error, or whether adding another model would justify its cost.
+
+**Next action:** Qualify each actual role on separate evidence justified cases, preserve disagreement and unresolved decisions, and keep claims limited to the tested model configuration.

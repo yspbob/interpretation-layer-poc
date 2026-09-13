@@ -1,7 +1,7 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-13.1**
-Updated: **11 September 2026**
+Plan ID: **pilot-draft-2026-09-13.2**
+Updated: **13 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
 This document incorporates the research review and the subsequent website-design discussion. It is the current planning document for the redesigned POC. The previous ratified v1.2 plan is preserved as a historical record; its NetBox-only four-arm design, 25-ticket sample, 300-run schedule and success rule must not be silently inherited by this pilot.
@@ -100,7 +100,7 @@ All four use Python and three use Django. This is purposive selection, not a rep
 
 Distinguish prior training knowledge from intended reading within an attempt and unintended information carried across attempts. Each independent attempt and role uses its own permitted history, files and tools under section 8. Preserve legitimate working history within an attempt; pass only explicitly authorised artifacts between roles, such as the frozen guide. Do not import investigator conversations, probe answers, hidden reference feedback or earlier attempts. Fresh sessions cannot erase prior training knowledge. An incognito label or an instruction to forget does not establish isolation.
 
-Before selecting an experimental interface, verify and record its conversation persistence, shared memory and retrieval behaviour, provider training/data sharing settings and retention policy. Disable unintended history and sharing; test the actual request and tool boundaries. Provider storage is separate from model input history and use for training. These requirements remain unimplemented and unvalidated; no product default establishes the actual account configuration.
+Before selecting an experimental interface, verify and record its conversation persistence, shared memory and retrieval behaviour, provider training/data sharing settings and retention policy. Disable unintended history and sharing; test the actual request and tool boundaries. Provider storage is separate from model input history and use for training. Request separation has simulated checks; actual account settings and provider behaviour remain unverified. No product default establishes the account configuration.
 
 Agreed addition on 10 September; no probes have been run. Repository names or a model's own familiarity statement are not sufficient evidence of training exposure. Use two diagnostics before pilot comparisons:
 
@@ -116,6 +116,18 @@ Run these checks during screening/selection, not during every coding attempt. Re
 Anonymised prompts are optional diagnostics. Removing names can change difficulty or remove useful context, so a performance difference does not by itself prove memorisation. The first-pilot claim and optional status of private rule-changing variants remain unchanged.
 
 Research basis: the missing-detail design adapts [Testset Slot Guessing](https://arxiv.org/abs/2311.09783); it is not an already validated detector for these repositories. [Membership-inference evaluation](https://arxiv.org/abs/2402.07841) and [code countermeasure research](https://arxiv.org/abs/2403.16898) support caution about non-detection and transformed-input comparisons.
+
+### 2B. First model and preparation package, 13 September
+
+The user agreed to use GPT-6 Astra alone for the first stage and defer Fable 5.1. Use separate role contexts with the same selected model. Their errors may still be correlated; another role's agreement is not independent truth. The evidence supporting each expected assessment remains essential. Results will apply to the tested Astra configuration, not models in general.
+
+The [Astra preparation package](https://github.com/yspbob/interpretation-layer-poc/tree/main/research/development/astra-preparation) supplies proposed settings, familiarity scoring and qualification criteria. These operational proposals are not spending authorisation or a frozen qualification protocol. The private screening pack is prepared: three source excerpts and three authored controls per repository for NetBox and HTTPX, with two fresh requests per item. The 24 request bodies and separate scoring key have passed offline preparation checks. Neither the screen nor any model qualification has run. The excerpt set is deliberately selected and small; it cannot certify unfamiliarity.
+
+The proposed setting is gpt-6-astra with high reasoning effort and standard service. The proposed preparation ceiling is $150: $10 for the connection check and familiarity screen, $10 for separate development calibration, $120 for qualification and $10 unallocated reserve. No allocation is approved. Actual model identity, request compatibility, input bounds and account data settings still need verification. Published pricing was checked on 13 September; a rate calculation is not a verified invoice cap.
+
+The proposed exploratory qualification gate covers four unused families, six challenges per family for each of three assessment roles and two repetitions, totalling 144 calls. Each role must have no serious errors, at least 44 of 48 successful calls, at least 10 of 12 within every family, consistent decisions in 22 of 24 repeated pairs and agreement in seven of eight baseline versus valid alternative comparisons. Freeze justified labels, severity and the complete rule before outputs. These small counts do not demonstrate a low population error rate or satisfy a future confirmation precision target. The qualification document explains the limits. Its actual cases remain to be prepared and checked; NetBox bulk error handling, H06 and H04 are excluded from untouched qualification.
+
+Next, connect the prepared familiarity format through the controlled transport and one batch spending ledger, test it without live calls, then verify the remaining account and input assumptions before requesting a concrete screening allocation. Preserve all probe outcomes and use them during final material selection. Prepare and freeze the separate qualification bank before seeking its spending allocation. Do not dispatch paid calls merely because the user agreed to prepare this work.
 
 ## 3. Build eligible cases before selecting a confirmation sample
 
@@ -280,7 +292,7 @@ The following choices describe a working implementation direction, not a deploye
 | Component | Working technology choice and rationale | Selection status |
 |---|---|---|
 | Runner | Python with a project-specific controller, extending the existing pack, checkpoint and result-recording code. Review existing platform products before deciding how much custom coordination and gateway code is justified. | Proposed; full runner not implemented. |
-| Agent access | A provider API or SDK behind the external bounded gateway. It must expose the inputs, outputs, tool requests and usage needed for the audit and permit controller-enforced limits. | Phase 1 has an OpenAI Responses adapter using SDK 3.13.0, tested with simulated responses. Model selection and live qualification remain open. H04 is historical. |
+| Agent access | A provider API or SDK behind the external bounded gateway. It must expose the inputs, outputs, tool requests and usage needed for the audit and permit controller-enforced limits. | Phase 1 has an OpenAI Responses adapter using SDK 3.13.0, tested with simulated responses. Astra is selected for the first stage; live qualification remains open. H04 is historical. |
 | Isolation | VirtualBox 7.2 series, Ubuntu Server 24.04 LTS amd64 and rootless Podman, with no guest network adapters, read-only ISO inputs and bounded serial output. See section 8C. | Proposed; exact releases, compatibility and containment remain to be validated on each host. |
 | Assessment | Python-based behaviour probes and each project's relevant tests, plus separately qualified model assessments for interpretation. Use pinned dependencies and the appropriate test environment for each historical case. | Proposed architecture; H04 supplies narrow scripted checks only. |
 | Records | JSON for structured run records, SHA-256 to identify exact artifacts, and Git/GitHub for reviewed public versions. Place credentials, sealed fixtures and protected audit records outside public Git and agent-writable storage. | JSON/hash records and public Git already support H04. A separate private GitHub repository is the user-selected design for sealed fixtures and confidential records; it has not been created. Credentials remain local. |
@@ -438,7 +450,7 @@ The [provider connection](https://github.com/yspbob/interpretation-layer-poc/blo
 
 The connection records exact request bodies, returned model and service tier, usage and configured cost. It reserves an attempt allowance before dispatch, shares that allowance across roles, disables automatic retries and stops on uncertain usage. Unknown charges retain their reservation. This does not guarantee the provider invoice: the selected model's input bound and upper rates must be verified, and an unexpected overrun can only stop subsequent calls. The current library requires explicit credentials and a matching, unexpired operator approval record for live use. There is no live command or approval checked into the repository. These are implemented development controls, not completed model qualification.
 
-**Exact next step:** choose and record model settings, qualification criteria and the proposed spending ceiling. Prepare qualification families separate from NetBox and H06 development material. Verify the selected model's request compatibility, input allowance, upper billing rates and provider data settings before separately authorised live checks. Then qualify the verifier and independent assessors before collecting a guidance result. Final trial case allocation remains open. Resolve task scope ambiguity and reserve compatible tasks before preparing guidance for coding comparisons. Coding execution and the interactive checker remain later phase work.
+**Exact next step:** complete and simulate the familiarity transport and batch spending control for the prepared Astra requests under section 2B. Verify model access, request compatibility, input allowance, billing rates and account data settings, then seek a concrete screening allocation. Run the authorised screen before final material selection. Prepare separate qualification families and freeze the criteria before their separately authorised model checks. Qualify each assessment role before collecting a guidance result. Final trial case allocation remains open. Resolve task scope ambiguity and reserve compatible tasks before preparing guidance for coding comparisons. Coding execution and the interactive checker remain later phase work.
 
 
 | Stage | Required work | Current state |
@@ -446,7 +458,7 @@ The connection records exact request bodies, returned model and service tier, us
 | Find and screen candidate material | Review the playbook claim, inspect references and identify candidate repositories. | Completed as exploratory preparation; experimental eligibility remains separate. |
 | Specify and trace one development case | Write component contracts and trace their inputs and decisions on one evidence-backed case. | H04 contracts, executable checks and scripted trace complete as development. No model role exercised or qualified. |
 | Phase 1: select guidance cases | One repository, distinct decisions, justified references, exceptions, omissions and source conditions. | Development references exist for NetBox NB-BULK-01 and H06. Separate qualification and final trial selection remain open. |
-| Phase 1: prepare role access and assessment | Restricted drafting, verification and independent guidance assessment; qualify only the jobs in use and fix settings. | Controller, container rehearsal and provider adapter tested with authored responses. Model settings, separate qualification and authorised live checks remain open. |
+| Phase 1: prepare role access and assessment | Restricted drafting, verification and independent guidance assessment; qualify only the jobs in use and fix settings. | Controller, container rehearsal and provider adapter tested with authored responses. Astra selected; screening packets and proposed settings prepared. Separate qualification and authorised live checks remain open. |
 | Phase 1: run and report | Retain guides, drafts, decisions, assessed errors, omissions, failures and preparation costs. | Not started. |
 | Phase 2: test use | Add coding execution, matched DIRECT/GUIDE reviews and qualified independent code assessment. | Later phase, not a Phase 1 gate. |
 | Phase 3: test interaction | Add and qualify interactive checking and intervention assessment; compare all three groups together. | Later phase, not a Phase 1 gate. |
