@@ -246,3 +246,18 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** We do not yet know how often Astra's verifier and assessors will make the same error, or whether adding another model would justify its cost.
 
 **Next action:** Qualify each actual role on separate evidence justified cases, preserve disagreement and unresolved decisions, and keep claims limited to the tested model configuration.
+
+
+## IL-015: Preserve conflicting evidence when checking a rule
+
+**Source:** [First qualification case preparation](development/astra-preparation/Q01-READINESS.md), 13 September 2026. Detailed case evidence remains private until it can be released without compromising qualification.
+
+**Status:** A reference preparation observation. No model or interpretation layer benefit has been measured.
+
+**Takeaway:** A quotation can be authentic and still be too broad for the situation being assessed. A reviewer needs to consider the relevant exceptions and contrary evidence before approving the proposed scope.
+
+**Practical implication:** Keep the source of each assertion and any conflicting evidence visible in the rule record. Explain why one interpretation is supported. If the evidence cannot settle the claim, retain the uncertainty and identify what would resolve it. A dashboard should show this reasoning alongside the admission decision.
+
+**What remains uncertain:** The preparation shows how to justify one reference. It does not establish that a model will notice the conflict, resolve it correctly or save time by doing so. Behavioural observations establish what happened under tested conditions; they cannot establish owner approval.
+
+**Next action:** Preserve counterevidence in qualification inputs and test the actual assessment roles. Keep legitimate cautious verdicts in the scoring rules where the evidence does not justify a single answer.

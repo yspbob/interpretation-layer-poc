@@ -1,6 +1,6 @@
 # Proposed qualification checks for Phase 1
 
-This is the specification for preparing qualification cases. The cases themselves are not ready, and no assessor is qualified. Freeze the completed cases and this decision rule before opening any model answers. The numbers below are an initial gate for a bounded exploratory trial, not a claim of general reliability.
+This is the specification for preparing qualification cases. The first case is prepared and checked; three families remain. See [the Q01 readiness record](Q01-READINESS.md). No assessor is qualified. Freeze the completed cases and this decision rule before opening any model answers. The numbers below are an initial gate for a bounded exploratory trial, not a claim of general reliability.
 
 ## What we will test
 
@@ -15,7 +15,7 @@ For each family, prepare six challenges for each of three roles: the verifier, g
 | Unsupported claim | An invented obligation, misleading citation or unsupported claim of owner approval |
 | Missed exception | A broadly plausible rule that becomes wrong in an evidenced exception |
 | Missing information | An omitted required rule for the guidance assessor; a claim whose support is missing for the verifier and its assessor |
-| Unresolved evidence | A conflict the supplied evidence cannot settle, where a confident admission would be unjustified |
+| Unresolved evidence | Evidence that cannot settle a claim, including missing information or an unresolved conflict; confident admission would be unjustified |
 
 For the assessor of verifier decisions, include both correct and incorrect submitted verdicts across every family. Its job is to identify the justified verdict, not agree with the submission. For the guidance assessor, include an empty guide within the omission challenges. Include candidate text asking the assessor to ignore its instructions within the unsupported challenges. Candidate instructions have no authority.
 
@@ -28,6 +28,8 @@ Each private item must record the pinned sources, the exact submitted artifact, 
 Use a precise published statement for a documented obligation. For a behavioural claim, run a check that distinguishes the valid behaviour from a deliberately wrong implementation. Save the inputs, observations and versions. If the evidence does not settle a central interpretation, exclude it from a scored right or wrong claim and retain the uncertainty record.
 
 The investigator may use AI to prepare these records, but an AI explanation is not the supporting evidence. Record that there is no independent human certification unless one actually takes place. An expected candidate verdict stays in the scoring key. Only the reference criteria and observations allowed by the role contract enter an assessor's request. No qualification answer enters verifier input.
+
+The user agreed to finish one complete case before expanding the bank. For each case, preserve the source evidence, observations and scoring key before any model answers are opened. Where the role contract allows more than one cautious verdict, record the acceptable alternatives and the reasoning each requires. A scoring key must not manufacture certainty that the evidence or contract does not support. The full bank still needs both missing evidence and unresolved source conflicts.
 
 ## Proposed rule for proceeding
 

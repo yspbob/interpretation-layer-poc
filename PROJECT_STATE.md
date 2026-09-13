@@ -10,9 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.3**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.4**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
+
+- [First qualification case readiness](research/development/astra-preparation/Q01-READINESS.md). One private case is prepared; three families and model qualification remain pending.
 
 - [Astra screening preparation and proposed qualification](research/development/astra-preparation/README.md). The preliminary subagent screen is complete; controlled API execution and assessment qualification remain pending.
 
@@ -31,7 +33,21 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: preliminary subagent screen on 13 September 2026
+## Current work: first qualification case prepared on 13 September 2026
+
+The user agreed to complete one evidence justified qualification case before building the remaining bank. Q01 is prepared from a distinct family that has not been used to tune the role prompts. Its documented contract, scope, exceptions, valid alternatives and uncertainty are recorded privately. It tests assessment quality with documentation available, not undocumented rule reconstruction.
+
+Eight authored behavioural scenarios passed, four relevant upstream tests passed, and three deliberate faults were detected. The private package contains eighteen distinct role items, six for each assessment role, with two repetitions planned. No qualification model calls ran. Codex prepared and checked the evidence; there is no independent human certification. The expected answers rely on published evidence and reproduced behaviour, not AI agreement.
+
+Private location: C:/Users/Yaroslav/Documents/Codex/poc-private/qualification-q01-2026-09-13/. Read its README.md and freeze.json as investigator material only. Active bundle: sealed-v2. The first version is preserved because it exceeded the input allowance. The final version retains traceable source excerpts and the relevant counterevidence. Neither bundle, its keys nor this state may enter blind role contexts. This folder is only on the current PC; project Git sync does not transfer it to the laptop.
+
+Verification: all eighteen items passed source hash, original excerpt, citation range, schema, identity and input boundary checks. Existing role prompts were unchanged. The largest encoded request is 28,053 bytes; the existing development screen including padding is 32,149 within the proposed 32,768 allowance. This does not verify actual provider token accounting. Runtime evidence, dependencies, preparation scripts, scoring rules, source packs and the final audit are covered by the private freeze record. Its public commitment and readiness report are in research/development/astra-preparation/Q01-READINESS.md.
+
+**Exact next substantive step:** prepare the remaining three distinct qualification families to the same evidence standard. Address bank coverage gaps, including unresolved source conflicts and instructions embedded in candidate material. Then freeze the full bank, acceptance rules and settings, complete the controlled batch runner and account checks, and obtain explicit spending authorisation before model qualification. The preliminary familiarity screen remains limited evidence; replacing the controlled screen still needs an explicit protocol decision. No API spending is authorised.
+
+The canonical plan is pilot-draft-2026-09-13.4. Progress now reports one prepared qualification case and separates it from zero qualified assessors and zero experimental guidance runs. Website type and lint checks, the four route static build, asset checks and plan download consistency passed. The progress page has one current step and unique IDs. Private freeze hashes match the public commitment; sealed source and answer markers were absent from changed public files. The disclosure link was verified in the compiled component because its closed body is not present in the initial HTML. No browser visual review was performed. Public availability is verified after saving before reporting release.
+
+## Previous work: preliminary subagent screen on 13 September 2026
 
 The user requested subagents as an alternative to the API screen. The assistant disclosed before dispatch that this would be preliminary because tool access could not be disabled. Twenty four fresh subagents were requested with gpt-6-astra, high reasoning effort and fork_turns none. Each received only the fixed instruction and one masked excerpt as its task message. The prepared dispatch order and scoring rule were retained. No probe response was supplied to another probe, and no unsuccessful score was retried.
 

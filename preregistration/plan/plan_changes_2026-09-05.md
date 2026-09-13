@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-13.3**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-13.4**. Status: working redesign, not a new ratified preregistration.
+
+## Prepare one complete qualification case: 13 September 2026
+
+Revision pilot-draft-2026-09-13.4 records the user's agreement to complete one case before expanding the qualification bank. Q01 is prepared privately from a separate family. Eight behavioural scenarios and four upstream tests passed, and three deliberate faults were detected. Eighteen role items and their expected assessments passed preparation checks. Thirty six calls are scheduled but none has run.
+
+Expected assessments use traceable published evidence and reproduced behaviour. There is no independent human certification. The scoring rule accepts legitimate cautious alternatives when the existing role contract cannot justify a unique label. The bank must still cover unresolved conflicts and candidate instructions. This clarifies reference quality without changing prompts on qualification material or declaring any model qualified.
+
+The first source pack exceeded the proposed input allowance. It remains preserved; the final excerpts retain relevant counterevidence and pass the existing request size check. No allowance or spending approval was increased. Source packs, keys and raw evidence remain outside public Git; the public report records their frozen commitment. Next, prepare the remaining three families and satisfy the controlled execution gates before any qualification calls.
 
 ## Run the requested preliminary subagent screen: 13 September 2026
 
