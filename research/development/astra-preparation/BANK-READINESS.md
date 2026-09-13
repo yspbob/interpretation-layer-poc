@@ -4,11 +4,11 @@ The private qualification bank is prepared and checked. It contains four distinc
 
 ## Evidence checks
 
-Across the four families, 37 authored behavioural scenarios passed and the checks detected 13 deliberate faults. Fourteen relevant upstream test invocations passed. Three additional upstream methods passed with a local fixture; those are recorded separately because the full upstream suite was not run for that case.
+Across the four families, 42 authored behavioural scenarios passed and the checks detected 13 deliberate faults. Fourteen relevant upstream test invocations passed. Three additional upstream methods passed with a local fixture; those are recorded separately because the full upstream suite was not run for that case.
 
 The source records preserve exact revisions, file hashes, excerpt locations and counterevidence. All 72 role items passed source, citation, schema and input separation checks. The scoring keys stay outside the model requests. The verifier does not receive the assessment reference. The role prompts were unchanged.
 
-The largest encoded request plus the existing development padding is 32,183, within the proposed allowance of 32,768. This is a development check, not verification of actual provider token accounting.
+The largest encoded request plus the existing development padding is 32,441, within the proposed allowance of 32,768. This is a development check, not verification of actual provider token accounting.
 
 ## Gaps found through evidence
 
@@ -26,6 +26,20 @@ Five targeted supplementary scenarios checked assertions that were not directly 
 
 These are findings about preparation quality. They are not evidence that the interpretation layer helps an agent.
 
+## Adversarial review of the expected answers
+
+The subsequent review examined every expected verdict: 295 claim decisions and 96 coverage decisions across all 72 items. The private record traces them to the permitted evidence, checks alternatives and explains the treatment of omissions and serious mistakes.
+
+Three issues were addressed:
+
+1. A supposedly equivalent paraphrase assumed a starting state that its scope did not require. A runtime counterexample showed that a correct reviewer could reject it and receive a serious error. The paraphrase now preserves the actual state transition.
+2. Another rule blurred successful completion with success of a following step. A targeted check reproduced completion followed by failure. A separate check also exposed an unstated entry precondition. The wording now preserves both boundaries.
+3. The coverage rule did not explain how to score a guide that states a rule correctly and contradicts it elsewhere. The reference now gives coverage credit for the complete correct statement, while the contradictory claim still fails its own assessment. Coverage cannot make that guide pass.
+
+Five new runtime scenarios passed. They are included in the cumulative 42; the earlier 13 deliberate faults and upstream test counts are unchanged. The revised bank passed all 72 source, schema, identity and request checks. During editing, that audit caught a newly miscalculated submission hash; it was corrected and the failed check was retained. Previous freezes remain intact.
+
+The expected verdict labels, role prompts, proposed thresholds and 144 call schedule did not change. The reference wording did change, before any qualification answers. No further demonstrated verdict mismatch was identified in this review. This is a bounded investigator audit, not a proof that no gaps remain.
+
 ## Limits and remaining work
 
 All four cases use authored candidates and make documentation available. They concern Python libraries or applications. There are no naturally generated model answers in the bank. Any eventual qualification claim must stay within the represented source conditions, cases and roles.
@@ -38,8 +52,8 @@ The complete execution protocol, criteria and settings still need to be frozen b
 
 **Next:** implement and test the controlled qualification batch runner without model calls. It must preserve the fixed schedule, permitted inputs, failures and one shared spending ledger. Then complete the provider checks and seek a concrete approval before live qualification.
 
-Private bank freeze SHA256: `aab7980d712c24445a0645006f826a8b5392dfd82897ed835f5b543589c41bed`.
+Private bank freeze SHA256: `bc256b1d390f2f595c0212d157892572fd64226701200236ffcf28add0ef8ae9`.
 
-Private audit SHA256: `efe502fe6d72037e943cea753ecd318f9fafd2c9bf0d66ddb49a3890c8761965`.
+Private audit SHA256: `ab18e11b0eef432ab1a498916f481eaeed50c0d1647ec7eda29c11b450a23f22`.
 
 The private files remain on the preparation PC. Public Git sync does not transfer them to the laptop. The [first Q01 readiness report](Q01-READINESS.md) remains a historical record of that earlier version.

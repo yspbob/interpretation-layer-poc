@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-13.5**
+Plan ID: **pilot-draft-2026-09-13.6**
 Updated: **13 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -406,6 +406,10 @@ Use executable observations for behavioural requirements. Check the test with a 
 
 An AI may help prepare an item, but its explanation or another model's agreement cannot be the sole justification for the label. Without a qualified person to resolve an ambiguous interpretation, rely on reproducible behaviour or unambiguous source evidence, or keep that dimension unresolved. Only dimensions with defensible expected assessments can support confirmation.
 
+Coverage asks whether the guide states each required rule correctly and completely. Read all its claims together when checking for omissions. If another claim contradicts a correctly stated rule, retain the coverage credit but score the contradictory claim as a failure. Coverage alone therefore cannot make a guide pass. State this meaning in the assessor reference before running it.
+
+The completed adversarial bank review checked all 72 items, with 295 expected claim decisions and 96 coverage decisions. It corrected wording exposed by runtime counterexamples and made the coverage policy explicit. Expected labels, role prompts, planned calls and proposed thresholds were unchanged. The [bank readiness record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/BANK-READINESS.md) preserves the evidence status and limitations. No assessment role is qualified.
+
 #### 3. Develop instructions, then test on unused decision families
 
 Allocate whole families and their variants to development, qualification or experimental confirmation, with hashes and exposure records. Judge development and pilot tuning material cannot also validate the revised judge or support confirmation. Keep expected candidate labels out of all judge inputs. Reference criteria and test observations may be supplied only to roles entitled to receive them.
@@ -449,7 +453,7 @@ The investigator records each decision and its evidence in a versioned configura
 | Familiarity probes | Passed model-call gates; predefined samples, prompts, exact models/settings, scoring, repetition count and selection/reporting policy under section 2A. | Agreed; not specified or run. |
 | Budget calibration | Authorised study ceiling, passed model access and containment gates, separate development families, candidate limits and a recorded selection rule under section 6B. | Procedure agreed; amounts, calibration configuration and execution remain open. |
 | Detailed economic comparison after the first trial, if selected | Declared compatible reuse sets, cost/quality records, prices, allocation, task-order policy, projection horizon and uncertainty method under section 6A. | Analysis design added; data collection and numerical settings incomplete. |
-| Component qualification for the roles used in the current phase | Role-specific evidence records and splits, frozen instructions/settings, error definitions, numerical limits, sample size and acceptance rule. | Procedure specified; fixtures and numerical gates incomplete. |
+| Component qualification for the roles used in the current phase | Role-specific evidence records and splits, frozen instructions/settings, error definitions, numerical limits, sample size and acceptance rule. | Four candidate families prepared and audited; proposed gates and full execution protocol await freeze. |
 | Phase 1 guidance runs | Defensible reference cases, separated inputs, qualified verifier and independent guidance assessment, fixed criteria, revisions, repetitions and spending limits. No code judge or interactive checker gate. | Not established; zero model guidance runs. |
 | Coding comparisons in Phases 2 and 3 | Qualified components, eligible evidence-backed historical cases and disclosure audits, guidance preparation/reuse limits, matched budgets and order, scoring/stop/retry rules and audit configuration. | Not frozen; zero runs. |
 | Separate confirmation after the first trial | Fresh families excluded from tuning, primary contrast and endpoint, minimum worthwhile benefit and cost limit, multiplicity/grouping analysis, repetitions and sample-size justification. | To be set using feasibility evidence before confirmation outcomes. |
@@ -494,6 +498,8 @@ The controller validates claim records and citations, permits bounded correction
 The [provider connection](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/PROVIDER.md) was implemented on 13 September. It uses the official OpenAI SDK for a fixed Responses endpoint. It creates fresh requests from permitted role inputs, with no authored answers, shared conversation identifiers or tools. The controller keeps the same release and assessment sequence. All 52 controller and adapter tests passed, as did eight development scenarios with 49 simulated SDK requests. Sockets were blocked during these tests. No live endpoint, credential, model or actual price was tested.
 
 The connection records exact request bodies, returned model and service tier, usage and configured cost. It reserves an attempt allowance before dispatch, shares that allowance across roles, disables automatic retries and stops on uncertain usage. Unknown charges retain their reservation. This does not guarantee the provider invoice: the selected model's input bound and upper rates must be verified, and an unexpected overrun can only stop subsequent calls. The current library requires explicit credentials and a matching, unexpired operator approval record for live use. There is no live command or approval checked into the repository. These are implemented development controls, not completed model qualification.
+
+**Keep Phase 1 bounded.** Its question is whether guidance is defensible and sufficiently complete within the selected evidence. Use a small runner for the existing fixed qualification schedule, reusing the tested adapter. Add work only to address a demonstrated failure or an unmet requirement. Do not expand the bank or build a general assessment platform to address speculative risks. Coding comparisons, interaction, maintenance and ROI remain later work.
 
 **Exact next step:** implement and test the controlled qualification batch runner without model calls. All four cases are prepared; no assessor is qualified. The preliminary subagent observation in section 2B is recorded separately. Also complete and simulate the familiarity transport and batch spending control before any controlled API screen. Verify model access, request compatibility, input allowance, billing rates and account data settings, then seek a concrete screening allocation. Run the authorised screen before final material selection. Freeze the prepared qualification material and criteria before their separately authorised model checks. Qualify each assessment role before collecting a guidance result. Final trial case allocation remains open. Resolve task scope ambiguity and reserve compatible tasks before preparing guidance for coding comparisons. Coding execution and the interactive checker remain later phase work.
 

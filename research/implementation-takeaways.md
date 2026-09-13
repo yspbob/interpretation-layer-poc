@@ -265,6 +265,8 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 ## IL-016: Challenge the assessment reference as well as the candidate
 
+**Follow up, 13 September:** The complete verdict review reproduced counterexamples to a purportedly equivalent paraphrase and a rule that blurred consecutive operations. It also made coverage explicit when a guide contradicts itself. A production assessment should preserve those distinctions: correct wording somewhere in a guide is not evidence that the whole guide is reliable. These are preparation defects supported by source and runtime evidence, not a measured benefit from the layer. Keep the audit bounded to demonstrated issues and required checks.
+
 **Source:** [Qualification bank evidence review](development/astra-preparation/BANK-READINESS.md), 13 September 2026. The underlying source and runtime records are committed by hash and remain private until qualification permits release.
 
 **Status:** A preparation finding supported by an observed exception and a constructed scoring counterexample. No model benefit has been measured.

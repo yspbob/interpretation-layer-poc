@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-13.5**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-13.6**. Status: working redesign, not a new ratified preregistration.
+
+## Challenge every expected verdict: 13 September 2026
+
+Revision pilot-draft-2026-09-13.6 records the requested adversarial review of all 72 qualification items. It traced 295 claim decisions and 96 coverage decisions to permitted evidence. Five new runtime scenarios supported wording corrections concerning an assumed starting state and failure boundaries. A clarification now separates correctly stated coverage from a separate contradictory claim. That definition enters the assessor reference; the expected labels, role prompts, schedule and proposed thresholds remain unchanged. Earlier private versions and failed preparation checks are preserved. No qualification model calls ran.
+
+The user also asked to keep Phase 1 from becoming too complicated. Its purpose and later phase boundaries are unchanged. The next implementation should be a small runner for the fixed bank using the existing adapter. Further work needs a demonstrated failure or unmet requirement; speculative expansion and a general assessment platform are not part of this step.
 
 ## Complete the candidate qualification bank: 13 September 2026
 

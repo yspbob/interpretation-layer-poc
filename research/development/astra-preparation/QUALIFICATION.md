@@ -31,6 +31,8 @@ The investigator may use AI to prepare these records, but an AI explanation is n
 
 The user agreed to finish one complete case before expanding the bank. For each case, preserve the source evidence, observations and scoring key before any model answers are opened. Where the role contract allows more than one cautious verdict, record the acceptable alternatives and the reasoning each requires. A scoring key must not manufacture certainty that the evidence or contract does not support. The completed candidate bank contains both missing evidence and unresolved source conflicts. The conflict scenario is explicitly investigator authored; no historical owner decision is inferred.
 
+Coverage asks whether the guide states each required rule correctly and completely. Read all its claims together when checking for omissions. If another claim contradicts a correctly stated rule, retain the coverage credit but score the contradictory claim as a failure. Coverage alone therefore cannot make a guide pass. State this meaning in the assessor reference before running it.
+
 ## Proposed rule for proceeding
 
 Score each role separately against its private expected decisions. An item passes only if all applicable decisions and their evidence based reasons are correct. Schema compliance and a correct label with a contradictory reason do not count as a pass. Refusals, malformed answers and missing submissions count as unsuccessful scheduled items, with their cause reported.

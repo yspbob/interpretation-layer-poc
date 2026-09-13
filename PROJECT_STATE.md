@@ -10,7 +10,7 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.5**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.6**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
@@ -33,7 +33,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: four qualification cases prepared on 13 September 2026
+## Current work: adversarial verdict review completed on 13 September 2026
+
+The user authorised challenging every expected verdict and asked to keep Phase 1 bounded. The review traced all 72 items, 295 claim decisions and 96 coverage decisions to the permitted evidence. Five new runtime scenarios supported corrections to a purported equivalent paraphrase and failure boundaries in another rule. The assessor reference now explicitly separates coverage of a correctly stated rule from a separate contradictory claim. Expected labels, severity, role prompts, proposed thresholds and the 144 call schedule are unchanged. No qualification model calls ran. There is no independent human certification or proof that no further gaps exist.
+
+Private authority: C:/Users/Yaroslav/Documents/Codex/poc-private/qualification-bank-2026-09-13/README-v3.md and freeze-v3.json; active bank prepared-v5. The full verdict trace and counterexamples are in adversarial-review/. All prior freezes were checked and remain intact. The new freeze commits 48 files and the prior freeze, SHA256 bc256b1d390f2f595c0212d157892572fd64226701200236ffcf28add0ef8ae9. Keep all sealed material outside public Git and blind model inputs. These private files remain only on this PC.
+
+Cumulative authored scenarios: 42. The earlier 13 detected deliberate faults, 14 upstream test invocations and three separately recorded adapted methods are unchanged, not rerun or counted again. All 72 revised source, schema, identity and request checks passed; maximum development bound 32,441 within 32,768. The first revision check caught an editing error in a submission hash calculation. It was corrected before freeze and the failed check retained privately. Actual provider token accounting remains unverified.
+
+**Exact next step:** build and simulate the smallest controlled batch runner for the existing fixed schedule, reusing the tested adapter. It needs permitted inputs, a shared spending ledger and preserved attempts and failures. Do not expand the bank or build a general assessment platform for speculative risks. Add work for demonstrated failures or unmet requirements. Phase 1 remains guidance defensibility and scoped coverage; coding, interaction, maintenance and ROI stay in later phases. Complete the protocol freeze and provider/account checks before seeking explicit spending authorisation. No API spending is authorised.
+
+The canonical plan is pilot-draft-2026-09-13.6. The public readiness report and progress explanation record the audit without disclosing sealed source identities or answers. Website type and lint checks, the static build, asset checks and plan download consistency passed. Progress IDs are unique and the updated content is present in the generated page and disclosure component. Changed public files passed a sealed source and answer marker screen. All 48 new frozen private files and the three earlier freezes are intact. No browser visual review was performed. Live release verification follows publication.
+
+## Previous work: four qualification cases prepared on 13 September 2026
 
 The user authorised preparing the remaining three cases, requested rigorous quality and reasonableness checks, and required any reported gaps to be fact based. The private bank now contains four distinct families, 72 role items and 144 planned calls. No qualification model has received these items. All candidates are authored, documentation is available, and the represented ecosystem is Python. Qualification must not be generalised beyond that coverage.
 
