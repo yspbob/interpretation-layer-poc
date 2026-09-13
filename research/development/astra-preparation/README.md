@@ -2,7 +2,7 @@
 
 The user agreed on 13 September to start with GPT-6 Astra alone. Fable 5.1 is deferred. This keeps the first stage focused on whether the workflow and assessments work. It will not establish that the findings apply to other models.
 
-We will first look for signs that Astra can recall details from NetBox and HTTPX. Then we will test the verifier and assessors against cases with defensible expected answers. Neither activity has run. No spending has been authorised.
+We will first look for signs that Astra can recall details from NetBox and HTTPX. Then we will test the verifier and assessors against cases with defensible expected answers. A preliminary screen has now run through 24 fresh Astra subagents at the user's request. It found no exact matches to the selected hidden source text. The controlled API screen and assessment qualification have not run. No API spending has been authorised. See [the result and its limits](SUBAGENT-SCREEN.md).
 
 ## What is ready
 

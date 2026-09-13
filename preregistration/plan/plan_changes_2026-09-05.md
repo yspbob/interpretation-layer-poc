@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-13.2**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-13.3**. Status: working redesign, not a new ratified preregistration.
+
+## Run the requested preliminary subagent screen: 13 September 2026
+
+Revision pilot-draft-2026-09-13.3 records the user's request to use subagents and the disclosed limits of that route. Twenty four fresh Astra subagents received the prepared prompts with no inherited conversation. All returned valid JSON. There were no exact source matches and no control matches; one control completion was empty. The prewritten exact match rule was unchanged.
+
+This is an exploratory observation under a different execution path. Tool use was prohibited by instruction, not disabled. Full provider requests, backend version, tier, token limits, tool activity and cost were not independently verified. No API runner was used and no paid API allocation was approved. The result cannot certify unfamiliarity, qualify assessment or establish a benefit from the layer.
+
+The controlled screen remains pending. Qualification case preparation can proceed, but replacing a required controlled gate needs an explicit protocol decision before scored runs. The plan and progress now distinguish these 24 preliminary responses from zero experimental guidance runs. Raw answers and probe content remain private.
 
 ## Select Astra and prepare the first checks: 13 September 2026
 

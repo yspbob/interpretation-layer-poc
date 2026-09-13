@@ -1,0 +1,224 @@
+{
+  "status": "preliminary_screen_completed",
+  "mode": "preliminary_codex_subagents",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "high",
+  "fresh_subagents": 24,
+  "inherited_conversation": false,
+  "counts": {
+    "netbox": {
+      "source": {
+        "unique_items": 3,
+        "responses": 6,
+        "exact_matches": 0,
+        "invalid_or_missing": 0,
+        "empty_completions": 0
+      },
+      "control": {
+        "unique_items": 3,
+        "responses": 6,
+        "exact_matches": 0,
+        "invalid_or_missing": 0,
+        "empty_completions": 1
+      }
+    },
+    "httpx": {
+      "source": {
+        "unique_items": 3,
+        "responses": 6,
+        "exact_matches": 0,
+        "invalid_or_missing": 0,
+        "empty_completions": 0
+      },
+      "control": {
+        "unique_items": 3,
+        "responses": 6,
+        "exact_matches": 0,
+        "invalid_or_missing": 0,
+        "empty_completions": 0
+      }
+    }
+  },
+  "interpretation": "No exact recall signal in these six selected source excerpts. This does not establish unfamiliarity with either repository.",
+  "experimental_guidance_runs": 0,
+  "api_runner_calls": 0,
+  "private_manifest_sha256": "9d814c03abf289f944152e2cd38f8626f5e88ff6222ff9184f4f687396881430",
+  "responses_sha256": "abed953515021904e81b706d23224ea84c394527a97c329ad1cd41f8173d2316",
+  "scorer_sha256": "795f4209ca903ba372255ffdc8b7193d25ece3a7d6f9fa3d939576716354fa75",
+  "limitations": [
+    "No enforced tool denial or independent tool activity audit",
+    "Full provider inputs, immutable model version, service tier, token limits and cost not verified",
+    "Selected small sample and imperfect authored controls; no detector sensitivity established",
+    "Subagent output is exploratory and does not qualify the API runner or any assessment role"
+  ],
+  "rows": [
+    {
+      "id": "P05_R2",
+      "repository": "netbox",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P12_R1",
+      "repository": "httpx",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P08_R1",
+      "repository": "httpx",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P03_R1",
+      "repository": "netbox",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P09_R2",
+      "repository": "httpx",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P08_R2",
+      "repository": "httpx",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P10_R1",
+      "repository": "httpx",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P11_R1",
+      "repository": "httpx",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P01_R1",
+      "repository": "netbox",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P09_R1",
+      "repository": "httpx",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P02_R1",
+      "repository": "netbox",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P05_R1",
+      "repository": "netbox",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P12_R2",
+      "repository": "httpx",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P11_R2",
+      "repository": "httpx",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P03_R2",
+      "repository": "netbox",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P01_R2",
+      "repository": "netbox",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P06_R1",
+      "repository": "netbox",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P07_R2",
+      "repository": "httpx",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P07_R1",
+      "repository": "httpx",
+      "kind": "source",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P06_R2",
+      "repository": "netbox",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P04_R2",
+      "repository": "netbox",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P04_R1",
+      "repository": "netbox",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P10_R2",
+      "repository": "httpx",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    },
+    {
+      "id": "P02_R2",
+      "repository": "netbox",
+      "kind": "control",
+      "status": "valid",
+      "exact_match": false
+    }
+  ]
+}

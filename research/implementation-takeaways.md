@@ -2,7 +2,7 @@
 
 Started: 10 September 2026. Updated as the POC develops.
 
-This record connects the POC's design discussions and eventual observations to practical implementation decisions. The initial entries come from planning discussions, not experimental results. No ROI, familiarity, model-quality or production-maintenance result has been established by these entries.
+This record connects the POC's design discussions and eventual observations to practical implementation decisions. The initial entries come from planning discussions, not experimental results. No ROI, model quality or production maintenance benefit has been established. IL-006 now includes a preliminary familiarity observation with explicit execution limits.
 
 The [working plan](../preregistration/plan/working_plan_2026-09-05.md) remains the experimental specification. Recording a takeaway does not amend that plan, release website changes or authorize new experiments. The 10 September release applies the agreed method changes and explanations in working plan `pilot-draft-2026-09-10.1` and both website views. The statuses below distinguish that publication from implementation and experimental evidence.
 
@@ -86,7 +86,7 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Source:** 10 September discussion. The user agreed to two targeted probes during repository screening and case selection, rather than every experimental run.
 
-**Status:** Procedure added to plan section 2A and explained on the website on 10 September. Prompts, sampling, scoring and thresholds are not yet specified; no familiarity probes have run.
+**Status:** Procedure added to plan section 2A and explained on the website on 10 September. The prepared prompts and scoring were used in a preliminary screen through 24 fresh Astra subagents on 13 September. It found no exact source matches. The controlled API screen remains pending.
 
 **Takeaway:** Model self-reports cannot establish absence of prior familiarity. Test observable recall: during repository screening, ask for distinctive missing details with newly written comparison snippets; during case selection, test reconstruction of particular historical fixes without repository access. Exact, unusual details are more suggestive than a conventional correct solution that could be reasoned out.
 
@@ -96,7 +96,7 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 
 **Research basis:** The missing-detail proposal adapts [Testset Slot Guessing](https://arxiv.org/abs/2311.09783); this is not a validated repository-specific detector. [Membership-inference evaluation](https://arxiv.org/abs/2402.07841) illustrates the limits of inferring training membership. [Code countermeasure research](https://arxiv.org/abs/2403.16898) cautions against treating performance changes after transformations as straightforward evidence of memorisation.
 
-**Next action:** Implement the two probes and fix their samples, prompts, scoring, repeats and execution boundaries before any authorised model calls. Keep the first-pilot claim limitation in place.
+**Next action:** Preserve the [preliminary result](development/astra-preparation/SUBAGENT-SCREEN.md) without treating it as proof of unfamiliarity. Verify the eventual experimental configuration and complete the required controlled gates before scored work. The historical task diagnostic remains later case selection work. Keep the first pilot limitation in place.
 
 
 ### IL-006 clarification: familiarity created by our own work

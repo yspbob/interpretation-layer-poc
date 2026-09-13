@@ -8,13 +8,13 @@ We are testing whether the interpretation layer proposed in [chapter 4 of the AI
 
 The agreed first pilot compares the methods on evidence-backed historical tasks from public projects, with possible prior model familiarity. It does not establish inference entirely from unseen code. Private rule-changing variants are optional later work, not a pilot prerequisite.
 
-The redesigned POC is still being prepared. There are **zero blinded model runs**. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
+The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.2**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.3**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
-- [Astra screening preparation and proposed qualification](research/development/astra-preparation/README.md). Private screening packets are prepared; paid execution and qualification remain pending.
+- [Astra screening preparation and proposed qualification](research/development/astra-preparation/README.md). The preliminary subagent screen is complete; controlled API execution and assessment qualification remain pending.
 
 - [Current provider adapter and qualification boundary](research/development/phase1-harness/PROVIDER.md), with recorded simulated checks.
 
@@ -31,7 +31,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: Astra preparation on 13 September 2026
+## Current work: preliminary subagent screen on 13 September 2026
+
+The user requested subagents as an alternative to the API screen. The assistant disclosed before dispatch that this would be preliminary because tool access could not be disabled. Twenty four fresh subagents were requested with gpt-6-astra, high reasoning effort and fork_turns none. Each received only the fixed instruction and one masked excerpt as its task message. The prepared dispatch order and scoring rule were retained. No probe response was supplied to another probe, and no unsuccessful score was retried.
+
+All 24 returned valid JSON. There were zero exact matches in the 12 source responses and 12 control responses; one control completion was empty. These represent six source excerpts and six controls, each repeated twice. The result is no specific recall signal in those excerpts, not proof that Astra does not know either repository. Both remain candidates. Full provider input, tool activity, enforced denials, immutable model version, tier, token limits and cost were not independently verified. These were actual Codex model calls; no API key or project API runner was used. No model verifier or assessor has been qualified, and experimental guidance runs remain zero.
+
+Private outputs and the reconstructed dispatch manifest are in C:/Users/Yaroslav/Documents/Codex/poc-private/astra-screening-2026-09-13/subagent-run/. Preserve them locally; they are not synced to the laptop. Public counts, item outcomes and hashes are in research/development/astra-preparation/subagent-results.json, with a plain language report in SUBAGENT-SCREEN.md. Do not send these records into experimental role inputs. The earlier preparation-results.json remains an unchanged historical preparation record.
+
+**Exact next substantive step:** prepare separate qualification cases under QUALIFICATION.md with source and behavioural evidence for their expected assessments. Keep the controlled API/account gates pending. Before scored API work, verify the actual model configuration and finish the required controlled path. The planned API familiarity screen is not silently replaced by this observation; an explicit protocol decision is needed if we choose to substitute it. No API spending is authorised. The user's request authorised the 24 subagent calls through Codex, not all future model execution.
+
+Verification: all 24 expected IDs have one response, the existing scorer retained every outcome, and public/private record hashes agree. The public result contains no excerpts or hidden completions. Website type and lint checks, four route static build, asset checks, plan download consistency, one current progress step, unique IDs and private completion exclusion passed. No browser visual review was performed. Public availability is verified after saving before reporting release. Canonical plan: pilot-draft-2026-09-13.3.
+
+## Previous work: Astra preparation on 13 September 2026
 
 The user agreed to use GPT-6 Astra alone and defer Fable 5.1. No Fable adapter or spending is planned now. Separate role contexts remain mandatory, but same model errors may correlate. Source evidence and runtime checks must justify expected assessments; another model agreeing is not ground truth.
 
