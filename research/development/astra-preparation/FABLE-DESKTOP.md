@@ -28,7 +28,7 @@ Skills stayed listed even with execution off. Hidden application instructions, c
 
 Use the existing guidance assessor qualification subset: 24 distinct challenges across four families, each repeated once, for 48 scheduled responses. Keep the other two role subsets on the existing Astra route. Do not modify the frozen private bank or the 144 call Astra schedule.
 
-Fix the desktop input format, prompts, effort, order, capture procedure, failure policy and pass criteria before opening qualification answers. Apply the guidance assessor criteria in QUALIFICATION.md to the desktop responses. Use separate contexts and keep the expected labels out of model input. A failure stays a failure. Any material used to tune Fable's assessment becomes development material under the existing rule.
+Use the [fixed qualification procedure](FABLE-QUALIFICATION.md) and its private freeze for the input format, prompts, High effort, order, capture, failure handling and pass criteria. Verify that freeze before opening qualification answers. Apply the guidance assessor criteria in QUALIFICATION.md to the desktop responses. Use separate contexts and keep the expected labels out of model input. A failure stays a failure. Any material used to tune Fable's assessment becomes development material under the existing rule.
 
 These checks concern Fable through the recorded desktop configuration. Even a pass does not make that route equivalent to the API runner. The app does not currently have demonstrated controls matching our exact provider request, usage and spending records. Keep its results in a separate supplementary report; changing the primary scoring method requires a protocol amendment before experimental results are opened.
 

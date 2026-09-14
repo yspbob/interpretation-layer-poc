@@ -323,3 +323,6 @@ The reference review found useful qualifications about which request a flag prep
 Turning off connectors left attachment tools active in the earlier review. Turning off the separate cloud execution feature allowed the tested text attachment to be read without visible tool calls. A fresh chat did not return the preceding chat's random marker. Skills still appeared in menus, and the provider's complete context remained invisible.
 
 **Practical implication and next action:** Record actual feature settings and observed access separately. Recheck restrictions when starting a session, especially after restoring settings for ordinary use. Do not turn a successful diagnostic into a claim that every hidden access path is blocked. Check the real packet format before qualification and keep this desktop route separate from controlled API scores.
+
+
+Follow through on IL-020, 14 September: the [desktop qualification freeze](development/astra-preparation/FABLE-QUALIFICATION-READINESS.md) now preserves each permitted input and its order, separately from expected answers. Exact input equality and byte fit passed. These checks still cannot establish provider context or answer correctness. Next apply the same fixed procedure to qualification and preserve actual access and capture failures.

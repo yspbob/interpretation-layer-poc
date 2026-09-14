@@ -1,0 +1,22 @@
+{
+  "desktop_freeze_sha256": "d1d52bddd42290ff8459a0c827611f066cab57cda1dd6ff3acb8635c56c30fa4",
+  "original_bank_freeze_sha256": "bc256b1d390f2f595c0212d157892572fd64226701200236ffcf28add0ef8ae9",
+  "desktop_files_verified": 61,
+  "original_bank_files_unchanged": 48,
+  "scheduled_inputs_checked": 48,
+  "distinct_items": 24,
+  "distinct_packet_hashes": 24,
+  "identical_repeats": 24,
+  "families": 4,
+  "max_attachment_bytes": 23555,
+  "wrapper_bytes": 353,
+  "max_combined_bytes": 23908,
+  "rehearsed_bytes": 32768,
+  "max_claims": 5,
+  "max_reference_units": 4,
+  "software_checks_passed": 7,
+  "qualification_model_calls": 0,
+  "semantic_scoring": "not performed",
+  "output_capture": "existing structure and identity validator checked with synthetic answers; actual desktop capture remains per attempt",
+  "initial_test_issue": "Restricted Windows temporary directory access; unchanged tests passed with appropriate filesystem permission"
+}

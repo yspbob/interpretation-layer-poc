@@ -45,8 +45,8 @@ export function ProgressView() {
     </nav>
 
     <section className="current-next" aria-labelledby="next-step-title">
-      <div><span className="eyebrow">NEXT</span><h2 id="next-step-title">Finish preparing the reviewer tests.</h2><p>For Astra, we still need to check the real service connection, account settings and usage reporting. For Fable, the desktop procedure has passed two small access checks. We now need to fix the actual test packets and their order before using the prepared qualification cases.</p></div>
-      <div><h3>Then run the reviewer tests.</h3><p>Fix the model, instructions, scoring rules and permitted usage before opening the answers. Fable uses the included Max allowance. Paid API requests still need a concrete allocation and approval.</p><p>We will use the four prepared cases. We are not expanding the test bank or building a general testing platform for this step.</p></div>
+      <div><span className="eyebrow">NEXT</span><h2 id="next-step-title">Run Fable’s prepared reviewer tests.</h2><p>Fable’s questions, permitted evidence, order and pass criteria are now fixed. We will check the desktop settings and included allowance, then start the scheduled tests. Each question gets a fresh chat and its first answer stays in the record.</p></div>
+      <div><h3>Astra needs a separate connection check.</h3><p>We still need to verify Astra’s real service connection, account settings and usage reporting. Paid API requests need a concrete allocation and approval. Fable’s desktop test does not replace that work.</p><p>We will use the four prepared cases. We are not expanding the test bank or building a general testing platform for this step.</p></div>
     </section>
 
     <section className="section-block" id="process">
@@ -82,7 +82,8 @@ export function ProgressView() {
           <p>Astra remains the model for the controlled workflow. Fable 5.1 will provide an additional assessment through Claude Desktop at High effort. It receives the guide and permitted evidence without Astra’s verdict. It also checks proposed reference rules in a separate chat. Both jobs have now been tried on one public development example; no experimental guide exists yet.</p>
           <p>We will compare their answers after both are saved. A disagreement must be resolved by the source evidence or a behaviour check. Agreement alone does not establish correctness: both models could miss the same exception or rely on a faulty reference.</p>
           <p>We also examine Astra’s verifier decisions to understand whether its review helped or introduced mistakes. This explains how the layer reached its result.</p>
-          <ReportLink path="research/development/astra-preparation/QUALIFICATION.md">Read the proposed pass criteria</ReportLink>
+          <ReportLink path="research/development/astra-preparation/QUALIFICATION.md">Read the reviewer pass criteria</ReportLink>
+          <p><ReportLink path="research/development/astra-preparation/FABLE-QUALIFICATION-READINESS.md">Read what is fixed for Fable’s test</ReportLink></p>
         </Disclosure>
       </DetailGroup>
     </section>
@@ -113,7 +114,7 @@ export function ProgressView() {
           <p>We still need to select the cases for the guidance experiment and fix their permitted evidence. A central requirement that the evidence cannot justify will stay outside scoring. Public documentation cannot establish an unrecorded owner decision.</p>
           <p>Astra remains selected for the controlled workflow. Its proposed preparation ceiling of $150 is not spending approval. Fable’s additional desktop review will use the included Max allowance and stop if paid credits are needed.</p>
           <p>The first desktop reviews used attachment tools despite our restrictions. We then found a separate execution feature that was still on. With that feature off, two small public checks returned the expected answers without visible tool calls. We saved both first responses.</p>
-          <p>This checks the procedure, not the reviewer’s judgement, and does not prove that hidden context is absent. The actual qualification packets and schedule still need to be fixed. Desktop results remain separate from controlled API scores.</p>
+          <p>This checks the procedure, not the reviewer’s judgement, and does not prove that hidden context is absent. The 48 scheduled inputs and their order are now frozen. They preserve the original evidence and fit within the size used in the reading check. The actual qualification answers remain untested. Desktop results stay separate from controlled API scores.</p>
           <ReportLink path="research/development/astra-preparation/FABLE-DESKTOP.md">Read the additional review procedure</ReportLink>
           <p><ReportLink path="research/development/astra-preparation/FABLE-DESKTOP-CONTROLS.md">Read the two access checks and their limits</ReportLink></p>
           <p>Before paid calls, we will present the verified configuration and a concrete allocation for approval.</p>

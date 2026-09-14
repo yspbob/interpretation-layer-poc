@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-14.4**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-14.5**. Status: working redesign, not a new ratified preregistration.
+
+## Freeze the supplementary desktop qualification: 14 September 2026
+
+Revision pilot-draft-2026-09-14.5 records the user's authorisation to prepare and freeze the existing Fable guidance assessor inputs and schedule. The 24 distinct challenges, two repetitions, four families, underlying permitted evidence, role prompt, response schema and numerical pass criteria are unchanged. The desktop order is the original Astra schedule filtered to this role. Its wrapper, capture and failure policy are fixed in FABLE-QUALIFICATION.md; the schema is supplied as text rather than enforced by the provider.
+
+All 48 scheduled packets passed exact content and source identity checks, with identical repeated inputs. The largest attachment and wrapper total 23,908 bytes, below the public 32,768 byte reading diagnostic. Seven offline packaging and validation checks passed. The freeze commits 61 private files and links the unchanged original bank and scoring keys. No qualification or experimental model call ran. Live app settings, included allowance and full response capture must still be checked for each applicable attempt. The controlled Astra schedule and its unresolved account and spending gates are unchanged.
+
+The frozen desktop procedure preserves unsuccessful and uncertain attempts, forbids retries, allows breaks between never submitted positions and stops on access deviations or model changes. Its fifteen minute operator deadline and 128,000 byte local processing limit do not claim provider enforcement. Qualification adopts the existing exploratory tolerances; it does not establish population accuracy or API equivalence.
 
 ## Specify and rehearse the desktop access procedure: 14 September 2026
 
