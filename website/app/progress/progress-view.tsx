@@ -77,9 +77,11 @@ export function ProgressView() {
           <ReportLink path="research/development/phase1-harness/QUALIFICATION-BATCH.md">Read the runner checks and limits</ReportLink>
         </Disclosure>
         <Disclosure id="review-roles" title="What each AI reviewer will do" summary="Checking a draft and judging that check are separate jobs.">
-          <p>The verifier examines the layer’s proposed claims against the evidence available to it. It can accept a claim, reject it or leave it unresolved.</p>
-          <p>A separate guidance assessor checks the saved guide for unsupported claims and missing rules. Another assessment checks whether the verifier’s decisions were justified. The verifier cannot certify its own success.</p>
-          <p>Astra is the AI model selected for these roles. Each role receives a separate conversation and its permitted evidence. Their mistakes could still be related, so agreement between their answers is not enough. We compare their decisions with the source evidence and recorded software behaviour.</p>
+          <p>The verifier is part of the layer. It checks proposed rules while the guide is being prepared, and its feedback can lead to corrections.</p>
+          <p>The guidance assessor examines the saved guide after preparation is finished. It checks each claim against the evidence, then checks our separately prepared reference for rules the guide missed. Its findings do not change that guide during the measured attempt.</p>
+          <p>Astra remains the model for the controlled workflow. Fable 5.1 will provide an additional assessment through Claude Desktop. It receives the guide and permitted evidence without Astra’s verdict. This review is agreed, but it has not run yet.</p>
+          <p>We will compare their answers after both are saved. A disagreement must be resolved by the source evidence or a behaviour check. Agreement alone does not establish correctness: both models could miss the same exception or rely on a faulty reference.</p>
+          <p>We also examine Astra’s verifier decisions to understand whether its review helped or introduced mistakes. This explains how the layer reached its result.</p>
           <ReportLink path="research/development/astra-preparation/QUALIFICATION.md">Read the proposed pass criteria</ReportLink>
         </Disclosure>
       </DetailGroup>
@@ -109,7 +111,9 @@ export function ProgressView() {
         <Disclosure id="settings" title="The final cases, settings and spending approval" summary="The reviewer test cases are prepared; the guidance experiment still needs its final selection.">
           <span id="references"/>
           <p>We still need to select the cases for the guidance experiment and fix their permitted evidence. A central requirement that the evidence cannot justify will stay outside scoring. Public documentation cannot establish an unrecorded owner decision.</p>
-          <p>Astra is selected and Fable is deferred. High reasoning effort and a total preparation ceiling of $150 have been proposed. Neither that proposal nor the simulated cost records authorise spending.</p>
+          <p>Astra remains selected for the controlled workflow. Its proposed preparation ceiling of $150 is not spending approval. Fable’s additional desktop review will use the included Max allowance and stop if paid credits are needed.</p>
+          <p>We must check Fable’s app settings and save complete input and response records before using sealed test cases. Its reviews will be reported separately because we have not demonstrated the same controls as the API runner.</p>
+          <ReportLink path="research/development/astra-preparation/FABLE-DESKTOP.md">Read the additional review procedure</ReportLink>
           <p>Before paid calls, we will present the verified configuration and a concrete allocation for approval.</p>
         </Disclosure>
       </DetailGroup>

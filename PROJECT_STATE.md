@@ -10,7 +10,7 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-14.1**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-14.2**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
@@ -35,7 +35,17 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: offline batch runner and complete progress rewrite, 14 September 2026
+## Current work: supplementary Fable assessor, 14 September 2026
+
+The user confirmed a Max plan and agreed to add Fable 5.1 through Claude Desktop as a supplementary guidance assessor. The procedure is in research/development/astra-preparation/FABLE-DESKTOP.md. It explains separate inputs and verdicts, qualification on the existing guidance subset, included allowance only, preserved failures and evidence based resolution. No Fable request has run, no app settings have been inspected, and no paid credits or API spending are authorised. The existing Astra runner, frozen bank and 144 call schedule are unchanged.
+
+The added review checks every saved final guide in the bounded first Phase 1 set. It cannot repair guidance during a measured attempt or silently replace the primary score. Different models can share mistakes. The desktop record does not expose hidden app instructions or establish API equivalence. A reference challenge by Fable is recommended because the preparation audit found defects; it remains a proposal, not an added run. No additional drafting, verifier or familiarity role is selected.
+
+**Exact next step:** prepare and rehearse the desktop capture procedure with a public development example before exposing sealed qualification inputs. Verify the displayed model, effort, incognito state, personalisation, tools and remaining included allowance. The current session has no native app control; do not claim to have operated Claude Desktop or substitute a browser without making the route explicit. Continue the existing controlled familiarity transport and provider/account checks for Astra. Freeze each route's settings and recording procedure before model qualification. Private material remains on the preparation PC until a separate private transfer is arranged.
+
+The canonical plan is pilot-draft-2026-09-14.2. The plan and progress explanations are updated together. Type and lint checks, the static Pages build, generated route and asset checks, and plan download consistency passed. The Fable text is present in the generated plan and progress assets, and all progress report targets exist. The reviewed changes contain only public procedure and explanation material. No runtime code, private bank or model output changed. No new visual review was performed for these text changes. Live publication is checked after the save.
+
+## Previous work: offline batch runner and complete progress rewrite, 14 September 2026
 
 The user authorised the small qualification runner with rigorous checks and requested that the entire progress page be understandable to a reader with little or no context. These requests were completed together. The page explains the study before the status, the purpose of preparation before the test records, and the distinction between checking software and testing AI judgement. It retains separate plan and progress views, plain language, optional detail, and the existing playbook colours and fonts. The user's examples were treated as symptoms across the page, not an exhaustive edit list.
 

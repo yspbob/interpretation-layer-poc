@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-14.1**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-14.2**. Status: working redesign, not a new ratified preregistration.
+
+## Add a supplementary desktop assessor: 14 September 2026
+
+Revision pilot-draft-2026-09-14.2 records the user's agreement to add Fable 5.1 through Claude Desktop on Max. Astra continues the controlled workflow. Fable will assess saved final guides in separate incognito sessions without seeing Astra's verdicts. The existing guidance assessor qualification subset will check this desktop configuration; the frozen bank and 144 call Astra schedule remain unchanged. No Fable model calls have run.
+
+The desktop result remains supplementary. Its complete provider request, precise usage and equivalence to API controls have not been demonstrated. Preserve each attempt, fix settings and criteria before results, resolve disagreements with evidence and retain uncertainty. Use only the included Max allowance; no additional credits or API spending are authorised. The plan and progress explanation now distinguish improving the draft from assessing the finished guide.
+
+A Fable review of reference assumptions is recommended in response to defects found during preparation. It is not yet an agreed extra run. Drafting, verification, familiarity and later phase roles are unchanged.
 
 ## Complete the offline batch runner and rewrite progress: 14 September 2026
 

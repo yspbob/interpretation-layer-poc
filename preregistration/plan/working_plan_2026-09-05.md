@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-14.1**
+Plan ID: **pilot-draft-2026-09-14.2**
 Updated: **14 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -119,7 +119,7 @@ Research basis: the missing-detail design adapts [Testset Slot Guessing](https:/
 
 ### 2B. First model and preparation package, 13 September
 
-The user agreed to use GPT-6 Astra alone for the first stage and defer Fable 5.1. Use separate role contexts with the same selected model. Their errors may still be correlated; another role's agreement is not independent truth. The evidence supporting each expected assessment remains essential. Results will apply to the tested Astra configuration, not models in general.
+Astra remains the model for the controlled Phase 1 workflow. On 14 September, the user added Fable 5.1 through Claude Desktop on Max as a supplementary guidance assessor. It will assess the same saved final guides separately, without Astra's assessment or the verifier's conclusions. It will not change guidance during a measured attempt. Qualify the desktop assessor on the existing 48 response guidance subset before relying on its verdicts. The controlled 144 call Astra schedule is unchanged. Keep the desktop results separate from primary scores because equivalent request, usage and execution controls have not been demonstrated. Neither agreement nor different model families establishes truth; the underlying evidence remains decisive. See the [desktop procedure](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/FABLE-DESKTOP.md). No Fable run has taken place. Results remain specific to the tested configurations.
 
 The [Astra preparation package](https://github.com/yspbob/interpretation-layer-poc/tree/main/research/development/astra-preparation) supplies proposed settings, familiarity scoring and qualification criteria. These operational proposals are not spending authorisation or a frozen qualification protocol. The private screening pack is prepared: three source excerpts and three authored controls per repository for NetBox and HTTPX, with two fresh requests per item. The 24 request bodies and separate scoring key have passed offline preparation checks. A preliminary subagent screen has since run as described below. Neither the controlled API screen nor model qualification has run. The excerpt set is deliberately selected and small; it cannot certify unfamiliarity.
 
@@ -431,6 +431,8 @@ A reproducible behavioural failure cannot be overridden by fluent model reasonin
 Score code individually without origin, treatment or model labels, generated guides or persuasive agent summaries. Retain the evidence needed to judge it fairly, and record clues that cannot be removed. The controller holds the mapping needed to join scores afterwards. Guidance and interaction assessments use separate inputs; a transcript may reveal the group, so it cannot be described as fully blinded.
 
 On qualification material, repeat grading, vary harmless presentation and, for any secondary pairwise comparison, reverse order. A different model family can help find disagreements, but cannot replace evidence. The reference record must support the answer without asking an assessor to certify itself. Intervention quality measures whether the review was justified; treatment comparisons, not an individual successful correction, estimate the benefit of interaction.
+
+The supplementary Fable assessment covers every final guide in the bounded first Phase 1 set, including empty and unsuccessful results. Preserve both models' original verdicts before comparing them. Resolve substantive disagreements through source evidence or reproducible checks, not a casting vote or a debate until they agree. Audit agreement against the evidence too. Report mistakes caught by either model and demonstrated shared mistakes, without claiming to know all undetected errors. Reference corrections require versioning and review of every affected result. This addition uses the included Max allowance only; usage credits and API spending remain outside its authorisation. Desktop capture, settings and qualification remain pending. A Fable challenge of the reference itself is recommended because the preparation audit found reference defects, but it is not yet an added run.
 
 #### 6. Audit results and handle changes without moving the target
 

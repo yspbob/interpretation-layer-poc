@@ -288,3 +288,14 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 The batch checks show why each attempt needs both an outcome and a spending record. An unusable answer can still incur a known charge. A timeout can leave usage unknown. These require different accounting, while both attempts must remain visible. The implemented runner charges known usage, preserves uncertain reservations and does not automatically retry.
 
 **Limit and next action:** Simulated usage does not certify provider billing. Verify actual usage and prices before any authorised live run, and preserve this separation in its records. Do not infer permission to restart a stopped batch with a fresh budget.
+
+
+## IL-018: A second model can expose a disagreement, not settle it
+
+**Source:** User discussion and the [Fable desktop procedure](development/astra-preparation/FABLE-DESKTOP.md), 14 September 2026.
+
+**Status:** Agreed assessment design. No Fable results.
+
+Astra fills both preparation and assessment roles in the controlled workflow. Fable will assess finished guidance separately to look for errors that Astra misses. Preserve each initial verdict before comparison. Resolve disputes through sources and reproducible checks rather than a vote. Agreement can still conceal a faulty shared reference.
+
+**Uncertainty and next action:** The benefit and shared error rate are unmeasured. Qualify the recorded desktop configuration before relying on its judgements, report both useful corrections and mistaken objections, and keep its results separate from controlled API scores. A challenge to reference assumptions is recommended but not yet added.
