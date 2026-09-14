@@ -312,3 +312,14 @@ The reference review found useful qualifications about which request a flag prep
 **Practical implication:** Keep the original verdict and investigate its counterexample against the rule's actual conditions. Record both accepted and rejected objections. Documentation may support an intended usage rule while its example code still needs correction.
 
 **Uncertainty and next action:** This does not estimate either model's reliability. Qualify the chosen configuration before using scores. The desktop rehearsal also showed that disabling connectors leaves attachment tools available; permitted evidence, reading tools and observed access need separate records before any sealed test.
+
+
+## IL-020: Check separate tool controls and preserve their limits
+
+**Source:** [Desktop access rehearsal](development/astra-preparation/FABLE-DESKTOP-CONTROLS.md), 14 September 2026.
+
+**Status:** Two public operating diagnostics, not a finding about guidance quality or general isolation.
+
+Turning off connectors left attachment tools active in the earlier review. Turning off the separate cloud execution feature allowed the tested text attachment to be read without visible tool calls. A fresh chat did not return the preceding chat's random marker. Skills still appeared in menus, and the provider's complete context remained invisible.
+
+**Practical implication and next action:** Record actual feature settings and observed access separately. Recheck restrictions when starting a session, especially after restoring settings for ordinary use. Do not turn a successful diagnostic into a claim that every hidden access path is blocked. Check the real packet format before qualification and keep this desktop route separate from controlled API scores.

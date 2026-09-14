@@ -1,0 +1,30 @@
+{
+  "model": "Fable 5.1",
+  "effort": "High",
+  "classification": "public development diagnostic, not qualification",
+  "attempts": [
+    {
+      "id": "a",
+      "attempt": 1,
+      "started_utc": "2026-09-14T20:48:07.573Z",
+      "captured_utc": "2026-09-14T20:48:24.470Z",
+      "input_sha256": "c01bc93ef2042c1aabe55ec61bcd6d91ccb377bfb5931ca642a694a71b285c11",
+      "response_sha256": "42cfe569ffdde71d0de0d1de4b8177a38dc99be834b979fd3587eddd6ff26e53",
+      "matches_prepared_expectation": true,
+      "visible_tool_calls": 0,
+      "delivery": "attachment plus saved wrapper"
+    },
+    {
+      "id": "b",
+      "attempt": 1,
+      "started_utc": "2026-09-14T20:49:15.704Z",
+      "captured_utc": "2026-09-14T20:50:57.349Z",
+      "input_sha256": "79ef267988d7b2e4a9e84dfeb62689e6694b0e44adbd2f30071c1ce04ab2e71e",
+      "response_sha256": "bc6405e7fdabeca78602d95a79e82142ff2b6ae1636f18e9253e54e23fdc0052",
+      "matches_prepared_expectation": true,
+      "visible_tool_calls": 0,
+      "delivery": "packet text pasted in prompt"
+    }
+  ],
+  "wrapper_a_sha256": "ef48067d14aedc7fd7717fd7ca92102b3bc0656d900c2674c986efc277225c24"
+}

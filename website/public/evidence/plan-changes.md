@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-14.3**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-14.4**. Status: working redesign, not a new ratified preregistration.
+
+## Specify and rehearse the desktop access procedure: 14 September 2026
+
+Revision pilot-draft-2026-09-14.4 records desktop procedure version 2. Disable the separate cloud execution feature as well as search, connectors and artifact features before fresh incognito study chats. Preserve the first response and visible access trace, stop on deviations or model changes, and restore temporary feature settings after capture. Skills remained listed; hidden context and exact provider input are not verified.
+
+Two fixed public diagnostics ran once each at High effort. A 32,768 byte attachment returned its three markers, ignored its labelled embedded instruction and showed no tool calls. A separate chat returned null for the earlier marker. These narrow observations do not qualify a model, certify isolation or establish general packet capacity. Prepare and freeze the existing 48 response desktop schedule and verify the actual packet format before qualification. The sealed bank, Astra schedule, role prompts and proposed pass criteria are unchanged. No API requests or experimental guidance runs occurred.
 
 ## Authorise reference review and actual desktop runs: 14 September 2026
 
