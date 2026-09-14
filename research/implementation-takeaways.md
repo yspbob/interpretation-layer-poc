@@ -326,3 +326,16 @@ Turning off connectors left attachment tools active in the earlier review. Turni
 
 
 Follow through on IL-020, 14 September: the [desktop qualification freeze](development/astra-preparation/FABLE-QUALIFICATION-READINESS.md) now preserves each permitted input and its order, separately from expected answers. Exact input equality and byte fit passed. These checks still cannot establish provider context or answer correctness. Next apply the same fixed procedure to qualification and preserve actual access and capture failures.
+
+
+## IL-021: Count the effort needed to operate the assessment
+
+**Source:** The first three frozen Fable qualification responses and the user's concern about elapsed time and Codex usage, 14 September 2026. Execution details are in PROJECT_STATE.md; raw captures remain private.
+
+**Status:** An observed preparation cost, not a result about reviewer accuracy or the layer's return.
+
+Desktop assessment requires more than waiting for an answer. This session repeatedly checked settings and allowance, uploaded the permitted file, and captured and checked each response. Three answers were preserved before the user raised the cost of continuing. Window changes, capture layout and a file dialog also required operator attention.
+
+**Practical implication:** Record operator effort alongside model usage when choosing how to run an assessment. An included subscription allowance does not make the whole process free.
+
+**Uncertainty and next action:** This session does not provide a controlled time comparison with another route. Review whether delivery can be made more efficient while preserving the frozen inputs, first answers and access records. No replacement route or reduced test has been agreed.

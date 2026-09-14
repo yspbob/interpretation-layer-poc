@@ -35,7 +35,21 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: Fable qualification package frozen, 14 September 2026
+## Current work: Fable qualification paused after three responses, 14 September 2026
+
+The user authorised the frozen desktop schedule, then raised concern about the time and Codex allowance consumed by its execution. Positions 001, 002 and 003 were each submitted once through Fable 5.1 High in separate incognito chats. Their first answers and audit captures are saved. All three passed the response structure and identity checks; correctness has not been scored. No visible tool calls, flags or model changes were observed. Position 004 was prepared but never submitted. This is an ordinary pause, not a formal termination or qualification decision. Do not score or give feedback while the schedule remains paused.
+
+The installed app version matched 1.52386.3. All 61 frozen package files were verified before execution. The five temporary feature restrictions, empty personal instructions, six listed skills, disabled web search, research and eleven connectors were inspected. The latest included allowance observation, before position 004 and after the three completed calls, remained within the subscription allowance, with no usage credits spent. No API calls occurred. A separate Codex account check showed that exhaustion was not imminent. Account usage is not a measurement of this task's tokens; detailed usage captures remain private.
+
+Private execution record: C:/Users/Yaroslav/Documents/Codex/poc-private/fable-qualification-run-2026-09-14/. All 51 staged audit files were copied there and checked byte for byte. Inputs and answer keys remain in their existing separate frozen packages. Raw responses, screenshots and account details must remain private. These files are not transferred by public project sync. Capture limitations remain explicit: long code lines extend beyond individual screenshots, although full accessibility text was retained and answer endings were inspected. Structural success is not proof of complete visual transcription or semantic correctness.
+
+**Exact next step:** review the operator effort of the desktop delivery method before making more model requests. No alternative route, paid run or reduction of the qualification criteria has been agreed. If the same method resumes, retain the unchanged freeze and all first answers, inspect existing attempt records, recheck settings and begin at position 004. A changed delivery method requires its own operating check and a documented decision on comparability before further qualification calls. Do not silently combine different configurations.
+
+**App left at pause:** the file picker for position 004 remains open; its file was not uploaded. Attempts to cancel it were rejected by native automation as outside the target window, and a keyboard Escape did not close it. Further UI recovery was stopped. The five temporary global feature settings remain off: cloud code execution and file creation, connector search, artifacts, AI powered artifacts and inline visualizations. Restore them for ordinary use when app control is available. No model request is running.
+
+Qualification responses collected: 3 of 48. Correctness assessments completed: zero. Fable development calls remain four. Experimental guidance runs and Astra API qualification calls remain zero. The working method and numerical gates are unchanged, so the canonical plan remains pilot-draft-2026-09-14.5. The public website still shows the preceding frozen package status; its update is banked for the next requested release to avoid extending this pause with a website build. This state record takes precedence for execution continuity.
+
+## Previous work: Fable qualification package frozen, 14 September 2026
 
 The user authorised preparing and freezing the existing 48 response desktop schedule. This is complete, with zero additional model calls. The four families and 24 distinct guidance assessor items, their role prompt, evidence, schema, expected answers and numerical criteria are unchanged. The desktop schedule preserves the original Astra order filtered to the guidance assessor role. All repeated attachments are byte identical. The 144 call Astra schedule remains unchanged.
 
