@@ -339,3 +339,17 @@ Desktop assessment requires more than waiting for an answer. This session repeat
 **Practical implication:** Record operator effort alongside model usage when choosing how to run an assessment. An included subscription allowance does not make the whole process free.
 
 **Uncertainty and next action:** This session does not provide a controlled time comparison with another route. Review whether delivery can be made more efficient while preserving the frozen inputs, first answers and access records. No replacement route or reduced test has been agreed.
+
+
+Follow through on IL-021, 14 September: the [delivery comparison](development/astra-preparation/DELIVERY-OPTIONS-2026-09-14.md) measures input sizes and separates token price, reasoning assumptions, operator effort and setup work. It compares direct API, subscription automation, manual delivery and a reduced second reviewer role. These are options, not measured savings or agreed method changes. Choose the delivery route before implementing another integration; preserve the original responses when changing configuration.
+
+
+## IL-022: A fresh worker is not proof of a single attempt
+
+**Source:** [Claude Code subagent documentation](https://code.claude.com/docs/en/sub-agents), inspected 14 September 2026, and the user's proposal to delegate one test to each worker.
+
+**Status:** Documented application behaviour, not yet observed in our rehearsal.
+
+Ordinary subagents start separate conversations, but custom workers can receive project instructions. Conversation forks inherit earlier history. Claude Code can also continue an interrupted worker response automatically. These distinctions matter when a study requires only the permitted evidence and preserves the first answer.
+
+**Next action:** Inspect the effective worker inputs and raw response records in the two public rehearsals. Record any inherited material, extra generation or fallback. Do not call the route qualified merely because two toy outputs are correct.
