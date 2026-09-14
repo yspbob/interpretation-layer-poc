@@ -1,0 +1,156 @@
+{
+  "status": "Investigator checks of Fable objections, not model qualification",
+  "source_commit": "b5addb64f0161ff6bfe94c124ef76f6a1fba5254",
+  "source_manifest_sha256": "72dea16eabd027b0650c51478dbe630438de2b36a99ff0e1f78be8656b011a79",
+  "probe_sha256": "c69648965cc19653b3c9ed144ef27953f478772cf277a53cd20eea7e1be1a74a",
+  "python": "3.13.12",
+  "dependencies": {
+    "httpcore": "1.0.9",
+    "anyio": "4.15.1",
+    "certifi": "2026.7.22",
+    "idna": "3.19"
+  },
+  "network": "Local adapters and mock transport only; no outbound requests",
+  "checks": [
+    {
+      "check": "sync: flag loads initial body but not new request in flow",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "details": {
+        "message": "Attempted to access streaming request content, without having called `read()`.",
+        "context": null
+      },
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "sync: previously streamed body loaded explicitly needs no flag",
+      "expected": "body available",
+      "observed": "body available",
+      "details": {},
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "sync: unread body without flag still fails",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "details": {
+        "message": "Attempted to access streaming request content, without having called `read()`.",
+        "context": null
+      },
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "sync: stream response with body flag False",
+      "expected": {
+        "consumed": false,
+        "closed": false
+      },
+      "observed": {
+        "consumed": false,
+        "closed": false
+      },
+      "details": {},
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "sync: stream response with body flag True",
+      "expected": {
+        "consumed": true,
+        "closed": true
+      },
+      "observed": {
+        "consumed": true,
+        "closed": true
+      },
+      "details": {},
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "async: flag loads initial body but not new request in flow",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "details": {
+        "message": "Attempted to access streaming request content, without having called `read()`.",
+        "context": null
+      },
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "async: previously streamed body loaded explicitly needs no flag",
+      "expected": "body available",
+      "observed": "body available",
+      "details": {},
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "async: unread body without flag still fails",
+      "expected": "RequestNotRead",
+      "observed": "RequestNotRead",
+      "details": {
+        "message": "Attempted to access streaming request content, without having called `read()`.",
+        "context": null
+      },
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "async: stream response with body flag False",
+      "expected": {
+        "consumed": false,
+        "closed": false
+      },
+      "observed": {
+        "consumed": false,
+        "closed": false
+      },
+      "details": {},
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "async: stream response with body flag True",
+      "expected": {
+        "consumed": true,
+        "closed": true
+      },
+      "observed": {
+        "consumed": true,
+        "closed": true
+      },
+      "details": {},
+      "warnings": [],
+      "passed": true
+    },
+    {
+      "check": "async: documented rejection without yield",
+      "expected": "AttributeError",
+      "observed": "AttributeError",
+      "details": {
+        "message": "'coroutine' object has no attribute 'aclose'",
+        "context": "'coroutine' object has no attribute '__anext__'"
+      },
+      "warnings": [
+        "coroutine 'main.<locals>.DocRejection.async_auth_flow' was never awaited"
+      ],
+      "passed": true
+    },
+    {
+      "check": "async: rejection preserving generator contract",
+      "expected": "RuntimeError",
+      "observed": "RuntimeError",
+      "details": {
+        "message": "Cannot use a sync authentication class with httpx.AsyncClient",
+        "context": null
+      },
+      "warnings": [],
+      "passed": true
+    }
+  ]
+}

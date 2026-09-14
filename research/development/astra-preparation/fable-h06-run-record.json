@@ -1,0 +1,42 @@
+{
+  "desktop_version": "1.52386.3",
+  "record_limit": "Operator captures of visible UI, not complete provider requests or independent attestation",
+  "reviews": [
+    {
+      "review": "H06-guidance",
+      "kind": "public development, not qualification",
+      "model": "Fable 5.1",
+      "effort": "High",
+      "attempt": 1,
+      "dispatch_utc": "2026-09-14T20:12:33.322Z",
+      "completion_observed_utc": "2026-09-14T20:19:00.292Z",
+      "input_sha256": "e9c19cf22f7c33d066b4806b28b758e0062dff1bd423548601d8c18e9c8b8682",
+      "wrapper_sha256": "f4dc6c000236f071e5370c40609b67688209682bf407c1b6b777813a7e6c0407",
+      "response_capture_sha256": "6f846038905324f974c2452c1a594965bea1809f60a30e50723e64133b8c2296",
+      "source_files": {
+        "docs/advanced/authentication.md": "490c0393f5af1bdcf70ed5dc6e296d75f4a4035d1916f2262102de61c623dc04",
+        "httpx/_auth.py": "60f0aac5d3c7b9b60c0f5a2bc284636e284a4b1e0f65c0028567dc98841f580b",
+        "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+        "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+      }
+    },
+    {
+      "review": "H06-reference",
+      "kind": "public development, not qualification",
+      "model": "Fable 5.1",
+      "effort": "High",
+      "attempt": 1,
+      "dispatch_utc": "2026-09-14T20:21:28.081Z",
+      "completion_observed_utc": "2026-09-14T20:24:24.027Z",
+      "input_sha256": "5d546a5d21b8f7bdbf5d4a26e4119a625d8a26429ce88f9503fa994567af45c7",
+      "wrapper_sha256": "b08b8408b71f136af3f04812508f67100931832476aebdb76076289548960136",
+      "response_capture_sha256": "a62a8d31f19196953f2eb3bba7a44ddfa93326591ccc83983d21e345026a6cea",
+      "source_files": {
+        "docs/advanced/authentication.md": "490c0393f5af1bdcf70ed5dc6e296d75f4a4035d1916f2262102de61c623dc04",
+        "httpx/_auth.py": "60f0aac5d3c7b9b60c0f5a2bc284636e284a4b1e0f65c0028567dc98841f580b",
+        "httpx/_client.py": "ed717b3ac00debb48d089daeb4dd7fbaf47cb5642ebc4a6e76f3a2fc6cfc0f70",
+        "httpx/_models.py": "af118b075a5bcece608acbc989b221703935cbea128a4a98ca21a23ff3e860ac"
+      }
+    }
+  ]
+}

@@ -27,9 +27,9 @@ export function ProgressView() {
     <p className="progress-context">This study tests a proposed interpretation layer. It would read a software project’s code and documentation, then prepare guidance for AI coding agents. We want to find out whether that guidance is supported by the evidence and covers the important rules in the selected material.</p>
     <section className="progress-intro">
       <div>
-        <div className="status-line"><span className="pill green"><Check size={13}/>Test rehearsal complete</span><span className="pill neutral">The layer is still untested</span></div>
-        <h1>We have rehearsed the tests.<br/><em>We have not tested the layer yet.</em></h1>
-        <p className="lead">Before we judge the layer’s guidance, we need to know whether its reviewers can recognise mistakes. We have prepared the examples and rehearsed the software that will run those checks. No AI reviewer has taken those tests yet.</p>
+        <div className="status-line"><span className="pill green"><Check size={13}/>First additional reviews complete</span><span className="pill neutral">The layer is still untested</span></div>
+        <h1>We have started checking the reviewers.<br/><em>The layer is still untested.</em></h1>
+        <p className="lead">Fable has reviewed a public example guide and, separately, the rules we planned to assess it against. Source checks and small behaviour tests confirmed useful corrections, but also a mistaken objection. The separate tests needed to qualify the reviewers have not started.</p>
       </div>
       <aside className="credibility-card">
         <div className="credibility-heading"><ShieldQuestion size={21}/><span className="eyebrow">THE QUESTION FOR PHASE 1</span></div>
@@ -59,7 +59,7 @@ export function ProgressView() {
 
     <section className="section-block" id="technical-status">
       <Heading number="02" label="COMPLETED PREPARATION">What is ready</Heading>
-      <p className="section-intro">Before we can judge the layer, we need examples with justified answers and a reliable way to put them to the reviewers. We prepared the examples first, then checked the software that sends them. The remaining step is to see how the AI reviewers actually answer.</p>
+      <p className="section-intro">Before we can judge the layer, we need examples with justified answers and a reliable way to put them to the reviewers. We prepared the examples first, then checked the software that sends them. We have also tried two Fable reviews on a public development example. The separate qualification tests still need to run before we rely on the reviewers’ scores.</p>
       <DetailGroup>
         <Disclosure id="qualification-case" title="Four cases are ready for testing the reviewers" summary="They include correct guidance, mistakes and missing information.">
           <p>Each case concerns a different kind of software behaviour. We prepared examples that a reviewer should accept, examples it should challenge and examples where the evidence cannot settle the answer. The expected decisions are supported by published sources and recorded behaviour checks.</p>
@@ -79,7 +79,7 @@ export function ProgressView() {
         <Disclosure id="review-roles" title="What each AI reviewer will do" summary="Checking a draft and judging that check are separate jobs.">
           <p>The verifier is part of the layer. It checks proposed rules while the guide is being prepared, and its feedback can lead to corrections.</p>
           <p>The guidance assessor examines the saved guide after preparation is finished. It checks each claim against the evidence, then checks our separately prepared reference for rules the guide missed. Its findings do not change that guide during the measured attempt.</p>
-          <p>Astra remains the model for the controlled workflow. Fable 5.1 will provide an additional assessment through Claude Desktop. It receives the guide and permitted evidence without Astra’s verdict. This review is agreed, but it has not run yet.</p>
+          <p>Astra remains the model for the controlled workflow. Fable 5.1 will provide an additional assessment through Claude Desktop at High effort. It receives the guide and permitted evidence without Astra’s verdict. It also checks proposed reference rules in a separate chat. Both jobs have now been tried on one public development example; no experimental guide exists yet.</p>
           <p>We will compare their answers after both are saved. A disagreement must be resolved by the source evidence or a behaviour check. Agreement alone does not establish correctness: both models could miss the same exception or rely on a faulty reference.</p>
           <p>We also examine Astra’s verifier decisions to understand whether its review helped or introduced mistakes. This explains how the layer reached its result.</p>
           <ReportLink path="research/development/astra-preparation/QUALIFICATION.md">Read the proposed pass criteria</ReportLink>
@@ -112,7 +112,7 @@ export function ProgressView() {
           <span id="references"/>
           <p>We still need to select the cases for the guidance experiment and fix their permitted evidence. A central requirement that the evidence cannot justify will stay outside scoring. Public documentation cannot establish an unrecorded owner decision.</p>
           <p>Astra remains selected for the controlled workflow. Its proposed preparation ceiling of $150 is not spending approval. Fable’s additional desktop review will use the included Max allowance and stop if paid credits are needed.</p>
-          <p>We must check Fable’s app settings and save complete input and response records before using sealed test cases. Its reviews will be reported separately because we have not demonstrated the same controls as the API runner.</p>
+          <p>The desktop check confirmed High effort and separate incognito chats. It also showed that turning off search and connectors leaves built in attachment tools available. The visible actions read only the supplied packet. We have saved both first responses and must finish the access procedure before using sealed test cases. Desktop results remain separate from controlled API scores.</p>
           <ReportLink path="research/development/astra-preparation/FABLE-DESKTOP.md">Read the additional review procedure</ReportLink>
           <p>Before paid calls, we will present the verified configuration and a concrete allocation for approval.</p>
         </Disclosure>
@@ -123,6 +123,12 @@ export function ProgressView() {
       <Heading number="04" label="LESSONS FROM PREPARATION">What we have learned so far</Heading>
       <p className="section-intro">These observations have improved the test design. They are not evidence that the interpretation layer improves engineering work.</p>
       <DetailGroup>
+        <Disclosure id="fable-first-review" title="A second reviewer found useful corrections and made a mistaken objection" summary="Two public development reviews have run, both at High effort.">
+          <p>Fable checked an example guide and then, in a separate chat, the reference rules. It found imprecise citations and a missing qualification: a body preparation flag loads the initial request, not every request created later. It also questioned a documentation example that can raise the wrong error.</p>
+          <p>We investigated with the pinned source and twelve small local behaviour checks. They supported those corrections. They also showed why we should keep an exception that Fable challenged: content already loaded can be used without asking the framework to load it again.</p>
+          <p>The original guide, reference and first responses remain preserved. A reference addendum records the corrections. This was an authored example for testing our procedure, not guidance produced by the interpretation layer. It does not qualify either reviewer or establish that Fable is better than Astra.</p>
+          <ReportLink path="research/development/astra-preparation/FABLE-H06-REVIEW.md">Read the reviews and evidence checks</ReportLink>
+        </Disclosure>
         <Disclosure id="rule-exceptions" title="The guide needs to explain when extra work is necessary" summary="The same instruction can be necessary in one situation and redundant in another.">
           <p>Consider an application that records the history of edits. Its standard editing function might save the old value automatically. Code that writes directly to the record may need to save that old value itself.</p>
           <p>This illustrates why we include exceptions in the tests. A guide should explain both situations. Telling the agent to add the same step everywhere would duplicate work the application already does. Telling it the application always handles that step would leave the direct edit without the required history.</p>

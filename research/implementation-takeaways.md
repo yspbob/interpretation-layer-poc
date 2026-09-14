@@ -294,8 +294,21 @@ The batch checks show why each attempt needs both an outcome and a spending reco
 
 **Source:** User discussion and the [Fable desktop procedure](development/astra-preparation/FABLE-DESKTOP.md), 14 September 2026.
 
-**Status:** Agreed assessment design. No Fable results.
+**Status:** Agreed assessment design, now exercised in two public H06 development reviews at High effort. No qualification or experimental result.
 
 Astra fills both preparation and assessment roles in the controlled workflow. Fable will assess finished guidance separately to look for errors that Astra misses. Preserve each initial verdict before comparison. Resolve disputes through sources and reproducible checks rather than a vote. Agreement can still conceal a faulty shared reference.
 
-**Uncertainty and next action:** The benefit and shared error rate are unmeasured. Qualify the recorded desktop configuration before relying on its judgements, report both useful corrections and mistaken objections, and keep its results separate from controlled API scores. A challenge to reference assumptions is recommended but not yet added.
+**Uncertainty and next action:** The benefit and shared error rate are unmeasured. Qualify the recorded desktop configuration before relying on its judgements, report both useful corrections and mistaken objections, and keep its results separate from controlled API scores. The user subsequently authorised reference challenges and both applicable reviews at High effort. Preserve reference revisions and resolve objections against evidence before changing labels.
+
+
+## IL-019: Check reviewer objections as carefully as approvals
+
+**Source:** [Fable H06 reviews and evidence checks](development/astra-preparation/FABLE-H06-REVIEW.md), 14 September 2026.
+
+**Status:** Preparation findings supported by pinned source and twelve focused behaviour checks. One public development family, not a measured benefit from the layer.
+
+The reference review found useful qualifications about which request a flag prepares and whether a documentation example actually produces its intended error. It also challenged an already loaded body exception using a counterexample whose body was not loaded. We retained the exception after checking both states. A second model is useful as a source of specific challenges, not as a final authority.
+
+**Practical implication:** Keep the original verdict and investigate its counterexample against the rule's actual conditions. Record both accepted and rejected objections. Documentation may support an intended usage rule while its example code still needs correction.
+
+**Uncertainty and next action:** This does not estimate either model's reliability. Qualify the chosen configuration before using scores. The desktop rehearsal also showed that disabling connectors leaves attachment tools available; permitted evidence, reading tools and observed access need separate records before any sealed test.

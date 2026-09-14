@@ -2,7 +2,7 @@
 
 11 September 2026. Case H06, authentication flow family.
 
-**Status:** A public development case for Phase 1. The source has been inspected and 15 local behaviour checks matched their expected results. No model drafted guidance or assessed an answer. This case does not qualify an assessor, prove inference from undocumented code or establish a benefit from using the layer.
+**Status:** A public development case for Phase 1. The source has been inspected and 15 local behaviour checks matched their expected results. No model drafted guidance in this case. On 14 September, Fable reviewed the authored example and reference through the desktop app; the [separate report](../astra-preparation/FABLE-H06-REVIEW.md) records its findings and access limitations. This case does not qualify an assessor, prove inference from undocumented code or establish a benefit from using the layer.
 
 HTTPX is the working choice for developing this first case. The final trial repository and set of cases remain open until the selection and access checks are complete. The [selection record](../phase-one-case-selection-2026-09-11.md) explains this choice and its limits.
 
@@ -51,7 +51,7 @@ For this development specification, propose complete files rather than answer re
 
 The independent assessor may also receive the case reference, source evidence and saved draft, verifier decisions and resulting guide. It must assess the claims itself; verifier acceptance is not the expected score. In assessor qualification, the expected labels for the examples below must remain outside the model's inputs.
 
-Keep this README, the selection record, probe code and results, expected example labels, inventory and research conversation out of drafter and verifier inputs. No actual isolated pack or provider context has been built or dispatched. The proposed file scope is a development input specification, not a completed disclosure audit.
+Keep this README, the selection record, probe code and results, expected example labels, inventory and research conversation out of drafter and verifier inputs. The original 11 September specification below predates the scripted harness and desktop reviews. Their separate records describe the packs actually used; this proposed file scope alone is not a completed disclosure audit.
 
 **Information condition:** documentation visible. Both the guide and source docstrings state parts of the rule. Removing the guide would not make this a clean code inference case. Do not strip these disclosures merely to claim that a rule was hidden.
 

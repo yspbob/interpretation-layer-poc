@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-14.2**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-14.3**. Status: working redesign, not a new ratified preregistration.
+
+## Authorise reference review and actual desktop runs: 14 September 2026
+
+Revision pilot-draft-2026-09-14.3 records the user's agreement to add reference material assessment and run both Fable reviews when applicable. The user selected High effort. A reference challenge is investigator preparation; a guidance assessment measures a saved guide after preparation. Neither an objection nor agreement automatically changes a reference or a score.
+
+Use public development material to rehearse the desktop procedure before qualification inputs. Experimental guides do not yet exist, so reviews of authored public guides remain development work. The controlled Astra schedule and private freeze are unchanged. Preserve each initial response and investigate evidence before correcting anything. The execution record reports actual outcomes and remaining controls separately.
+
+The two public H06 reviews subsequently completed at High effort. Their first responses and visible access traces are preserved. Twelve local checks investigated the objections; the separate report records supported corrections and a rejected objection. The reference addendum supplements the unchanged historical fixture. The first request's no tools instruction was not followed: built in attachment tools read its packet. Before the second request, reading and searching the attachment were explicitly permitted. No sealed inputs were exposed; the desktop procedure and qualification remain gates. Plan and progress text report development work separately from experimental results.
 
 ## Add a supplementary desktop assessor: 14 September 2026
 
