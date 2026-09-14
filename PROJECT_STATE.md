@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 13 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 14 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -10,11 +10,13 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-13.6**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-14.1**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
-- [Qualification bank readiness](research/development/astra-preparation/BANK-READINESS.md). Four private cases are prepared; the batch runner and model qualification remain pending.
+- [Qualification batch runner](research/development/phase1-harness/QUALIFICATION-BATCH.md). Offline implementation and full schedule rehearsals are complete; live configuration remains pending.
+
+- [Qualification bank readiness](research/development/astra-preparation/BANK-READINESS.md). Four private cases are prepared; model qualification remains pending.
 
 - [Astra screening preparation and proposed qualification](research/development/astra-preparation/README.md). The preliminary subagent screen is complete; controlled API execution and assessment qualification remain pending.
 
@@ -33,7 +35,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: adversarial verdict review completed on 13 September 2026
+## Current work: offline batch runner and complete progress rewrite, 14 September 2026
+
+The user authorised the small qualification runner with rigorous checks and requested that the entire progress page be understandable to a reader with little or no context. These requests were completed together. The page explains the study before the status, the purpose of preparation before the test records, and the distinction between checking software and testing AI judgement. It retains separate plan and progress views, plain language, optional detail, and the existing playbook colours and fonts. The user's examples were treated as symptoms across the page, not an exhaustive edit list.
+
+The runner reuses the unchanged provider adapter. It loads only frozen permitted inputs, enforces the fixed 72 item / 144 call schedule, creates fresh connections and shares one spending record. Twenty new tests and 52 existing controller/provider tests passed. A complete synthetic rehearsal and a separate rehearsal with the actual private bank each completed 144 simulated SDK requests. No live endpoint was contacted, no answer key was loaded, and no model was qualified. Invalid answers with known usage remain charged and are not retried. Unknown usage stops further calls and retains the reservation. Existing output folders and repeat runs are denied. A hard process kill can prevent a final summary; no automatic recovery or renewed spending is authorised.
+
+Public technical record: research/development/phase1-harness/QUALIFICATION-BATCH.md and qualification-batch-results.json. Final synthetic checks: local-runs/batch-checks/20260914T191752Z-bed5133e/. Raw private rehearsal: C:/Users/Yaroslav/Documents/Codex/poc-private/batch-rehearsal-2026-09-14/. The largest private encoded request was 28,346 bytes under fictional simulation settings; actual model token bounds and prices remain unverified. The original private bank and freeze-v3.json were not changed. Read README-v3.md there for its authority and evidence.
+
+**Exact next step:** complete and simulate the separate familiarity transport, then prepare actual model/account checks. Before live qualification, freeze the full protocol and settings and bind a live batch entry point to an explicitly authorised allocation. The current batch has no live execution switch. No paid model requests are authorised. Keep Phase 1 bounded to guidance defensibility and scoped coverage; do not expand the bank or build a general assessment platform without a demonstrated failure or unmet requirement.
+
+Canonical plan: pilot-draft-2026-09-14.1. Website type and lint checks, the static build, generated links/assets and synchronized plan downloads passed. In the browser, all 16 disclosures opened and closed, navigation reached the intended sections, and the page had one current step and no horizontal overflow at the inspected desktop width. The introduction, preparation explanation and concrete exception example were visually reviewed. All report targets exist. Changed public files passed the sealed source marker screen; the private freeze remains intact. Live publication is verified after the save. All experimental guidance and qualification model counts remain zero; the earlier 24 preliminary subagent answers remain a separate limited familiarity observation.
+
+## Previous work: adversarial verdict review completed on 13 September 2026
 
 The user authorised challenging every expected verdict and asked to keep Phase 1 bounded. The review traced all 72 items, 295 claim decisions and 96 coverage decisions to the permitted evidence. Five new runtime scenarios supported corrections to a purported equivalent paraphrase and failure boundaries in another rule. The assessor reference now explicitly separates coverage of a correctly stated rule from a separate contradictory claim. Expected labels, severity, role prompts, proposed thresholds and the 144 call schedule are unchanged. No qualification model calls ran. There is no independent human certification or proof that no further gaps exist.
 

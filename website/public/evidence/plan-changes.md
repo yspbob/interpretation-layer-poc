@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-13.6**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-14.1**. Status: working redesign, not a new ratified preregistration.
+
+## Complete the offline batch runner and rewrite progress: 14 September 2026
+
+Revision pilot-draft-2026-09-14.1 records the fixed qualification runner and its simulated checks. Twenty new batch tests and 52 existing controller/provider tests passed. Two full schedule rehearsals used synthetic inputs and the frozen private inputs respectively. Every response was local; no live model calls ran. The runner preserves the fixed schedule, permitted inputs, known charges, uncertain reservations, unsuccessful attempts and unrun items. It has no automatic retry, resume or live switch. The provider adapter and role prompts are unchanged.
+
+The immediate work is the controlled familiarity connection and actual provider/account checks, followed by the complete protocol and authorised live entry point. The test bank, proposed thresholds and Phase 1 purpose remain unchanged.
+
+The user requested a rewrite of the whole progress page for a reader with little or no context. The page now introduces the study, explains why the preparation was necessary, separates completed software checks from untested AI judgement, and moves detailed counts and history into optional sections. Examples of exceptions explain when an instruction is needed and when the application already handles it. This is a presentation change, not additional experimental work.
 
 ## Challenge every expected verdict: 13 September 2026
 

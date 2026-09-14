@@ -6,7 +6,7 @@ We will first look for signs that Astra can recall details from NetBox and HTTPX
 
 ## What is ready
 
-[All four qualification cases](BANK-READINESS.md) are prepared and checked, with their source evidence and expected answers kept private. Across the bank, 37 authored scenarios passed and 13 deliberate faults were detected. Fourteen upstream test invocations and three separately recorded adapted methods passed. These are checks of four families, not model qualification.
+[All four qualification cases](BANK-READINESS.md) are prepared and checked, with their source evidence and expected answers kept private. Across the bank, 42 authored scenarios passed and 13 deliberate faults were detected. Fourteen upstream test invocations and three separately recorded adapted methods passed. These are checks of four families, not model qualification.
 
 The proposed settings and allocations are in [settings.json](settings.json). The offline packet builder prepares 24 separate requests and keeps the answers in a different file outside the public repository. It has no provider connection, credential handling or live mode. The request builder and exact match scorer have automated checks using public toy examples.
 
@@ -53,7 +53,7 @@ The existing adapter supports the four study roles. It does not yet accept the s
 
 Check the actual account's model access, training opt in and retention settings, and establish the input token bound. The [provider data policy](https://developers.openai.com/api/docs/guides/your-data) distinguishes model training, response storage and abuse monitoring. Sending `store: false` does not establish zero retention or verify the account settings. No account setting has been inspected here.
 
-Freeze the final packet and request hashes, scoring rule, order, settings and authorised allocation before dispatch. The ordinary connection check must contain no probe or qualification answers. Complete the required familiarity work before final experimental material selection. The separate cases described in [QUALIFICATION.md](QUALIFICATION.md) can be prepared while the controlled execution gates remain open. All four are now prepared. Next build and test the controlled qualification batch runner without model calls. Do not request qualification spending approval until those cases and their evidence are ready to review.
+Freeze the final packet and request hashes, scoring rule, order, settings and authorised allocation before dispatch. The ordinary connection check must contain no probe or qualification answers. Complete the required familiarity work before final experimental material selection. The separate cases described in [QUALIFICATION.md](QUALIFICATION.md) can be prepared while the controlled execution gates remain open. All four are now prepared. The controlled qualification batch runner now passes its offline checks and full schedule rehearsals. See [the runner record](../phase1-harness/QUALIFICATION-BATCH.md). The separate familiarity connection, actual provider checks and authorised live entry point remain open. Do not request qualification spending approval until those cases and their evidence are ready to review.
 
 ## Reproduce the offline checks
 

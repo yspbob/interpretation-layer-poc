@@ -52,3 +52,7 @@ The library contains the real SDK transport, but constructing it requires an exp
 ## The next decision
 
 The user selected Astra alone. The [preparation package](../astra-preparation/README.md) contains private familiarity packets and proposed settings, qualification criteria and spending. The separate familiarity request format still needs a controlled transport and a batch ledger. Verify account and input assumptions before seeking screening authorisation, and prepare separate qualification cases before seeking that allocation. Both NetBox and H06 remain public development material. A successful first connection test will not, by itself, qualify the verifier or assessor.
+
+## Fixed qualification batch, 14 September 2026
+
+The [batch runner](QUALIFICATION-BATCH.md) now wraps this unchanged adapter with a fixed schedule and shared spending record. Its offline checks and both complete schedule rehearsals passed. It accepts only local simulated responses; this does not qualify live model behaviour or authorise spending.

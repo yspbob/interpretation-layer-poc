@@ -48,9 +48,9 @@ The bank now includes conflicting source material and instructions embedded in a
 
 Codex prepared and checked the references. There is no independent human certification. Published evidence and reproduced behaviour support the expected answers; AI agreement is not the basis for them. Detailed records remain private until they can be released without compromising qualification. The hashes below commit to those records but do not independently certify their contents.
 
-The complete execution protocol, criteria and settings still need to be frozen before model answers are opened. The existing adapter limits an attempt to twelve calls; it does not yet implement the planned 144 call qualification batch. Actual model access, account settings and input bounds remain unverified. No API spending is authorised.
+The complete execution protocol, criteria and settings still need to be frozen before model answers are opened. The [qualification batch runner](../phase1-harness/QUALIFICATION-BATCH.md) now completes the fixed 144 call schedule in simulation. It does not yet expose an authorised live batch entry point. Actual model access, account settings and input bounds remain unverified. No API spending is authorised.
 
-**Next:** implement and test the controlled qualification batch runner without model calls. It must preserve the fixed schedule, permitted inputs, failures and one shared spending ledger. Then complete the provider checks and seek a concrete approval before live qualification.
+**Next:** finish the controlled familiarity connection and actual provider/account checks. Freeze the full protocol and bind a live batch entry point to an explicitly authorised allocation before model qualification. The offline runner is complete; no paid calls are authorised.
 
 Private bank freeze SHA256: `bc256b1d390f2f595c0212d157892572fd64226701200236ffcf28add0ef8ae9`.
 

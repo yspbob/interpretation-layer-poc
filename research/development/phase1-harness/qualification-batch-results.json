@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-09-14T19:18:04.396848+00:00",
+  "mode": "provider-simulation",
+  "tests_passed": 72,
+  "qualification_model_calls": 0,
+  "experimental_guidance_runs": 0,
+  "qualified": false,
+  "semantic_assessment": "not performed",
+  "python": "3.13.12",
+  "platform": "Windows",
+  "dependencies": {
+    "httpx2": "2.12.0",
+    "jsonschema": "4.26.0",
+    "openai": "3.13.0"
+  },
+  "source_hashes": {
+    "fixtures.py": "52a591fa5b3165f9ad5d0387e692d879e39ae554001179f3a9d457c003c03fed",
+    "harness.py": "5a555ee6295fb99ffaa384b1355f9be66df52d700e3673d3195436d451ccf091",
+    "provider.py": "c427d7146f671d36fa33c7ae23d7eca167601747af95c48286af1abfd68ed6cd",
+    "qualification_batch.py": "ba7bb52a3009597ae38eddbf8cd1ea86d2a66fdaefbe0152ace179fb1f0aabed",
+    "run.py": "0099e14d9749d66e64e887b99f5e5cfaa03c25e79e8f2fcf43ca3aff29ce518b",
+    "run_provider_checks.py": "11dc12c866c7c086478396319c7724513bf9c462a8b0890e905cace78323b57f",
+    "run_qualification_checks.py": "740cd8cbf88e4f101b04f013b2a01e5906a94366dcd3a642875a07b8dcb0b96c",
+    "schemas.py": "53af10ee957065149dcd302bcd2c1e12289e414c079ad40c32760308b0cdc880",
+    "test_harness.py": "0f0f024c690857030736bcbac979a42b516becfa068207d40c118051def1aa30",
+    "test_provider.py": "e08e48fece65503a2c377d8a5aa5f2d30676f79f96b4917e7e475d85931ed4e1",
+    "test_qualification_batch.py": "8875a5dbb745037fd0b640d2be1de8a0b0edbc01a988170e8dc9186d8fbdb32c",
+    "worker.py": "f812bc2c43210a3c5557cb703ff004a5d3e2d262762973c542ad2d43e1590bac"
+  },
+  "limits": [
+    "Local simulated responses, not verified provider behaviour or billing.",
+    "No scoring key was loaded. Synthetic responses are not qualification answers.",
+    "No automatic recovery from process termination or permission to start a new paid batch."
+  ],
+  "batch_tests": 20,
+  "existing_controller_and_provider_tests": 52,
+  "synthetic_schedule_requests": 144,
+  "private_schedule_requests": 144,
+  "private_max_encoded_request_bytes": 28346,
+  "private_rehearsal_record_sha256": "af556287641eb59a66c8ed022847ad6bd205c2a7dcbf63d939a8255512000315",
+  "original_bank_freeze_sha256": "bc256b1d390f2f595c0212d157892572fd64226701200236ffcf28add0ef8ae9",
+  "socket_connections_denied": true,
+  "live_transport_denied": true
+}

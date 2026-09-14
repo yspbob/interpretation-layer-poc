@@ -278,3 +278,13 @@ Keep stable entry IDs. Preserve important revisions and reasons through dated no
 **What remains uncertain:** These corrections show specific preparation defects. They do not measure how frequently such defects occur, whether an AI will find them or how much review effort a production layer will save.
 
 **Next action:** Keep references and scoring rules versioned. During qualification, retain any disagreement with executable evidence and investigate it before interpreting a model failure. Material used to revise a role after seeing its answers becomes development material.
+
+## IL-017: Keep unsuccessful reviews and their cost visible
+
+**Source:** [Qualification batch rehearsal](development/phase1-harness/QUALIFICATION-BATCH.md), 14 September 2026.
+
+**Status:** Software behaviour demonstrated with local responses. No model reliability or production cost finding.
+
+The batch checks show why each attempt needs both an outcome and a spending record. An unusable answer can still incur a known charge. A timeout can leave usage unknown. These require different accounting, while both attempts must remain visible. The implemented runner charges known usage, preserves uncertain reservations and does not automatically retry.
+
+**Limit and next action:** Simulated usage does not certify provider billing. Verify actual usage and prices before any authorised live run, and preserve this separation in its records. Do not infer permission to restart a stopped batch with a fresh budget.
