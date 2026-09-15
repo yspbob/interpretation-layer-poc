@@ -73,4 +73,4 @@ Fable is now an advisory reviewer, not a supplementary scorer. Its [instructions
 
 ## Next concrete deliverable
 
-Prepare and audit one complete replacement family, including all 18 role items and their justified expected answers, without model calls. Then complete the remaining two under this same specification. Stop before collecting qualification responses until the new freeze, execution checks and applicable authorisation are complete.
+The [first replacement, Q05](Q05-READINESS.md), is prepared and audited with 18 role items. Prepare the second replacement under the same requirements, then the third. Q01 still needs its final retention audit. Stop before collecting qualification responses until the combined freeze, runtime prompt binding, execution checks and applicable authorisation are complete.

@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.5**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.6**. Status: working redesign, not a new ratified preregistration.
+
+## Record the first replacement family: 15 September 2026
+
+Q05 now contains 18 authored role items with separate expected answers. Thirteen scoped behaviour scenarios passed against the pinned implementation and four deliberate implementation faults were detected. Source and reference review, all 18 input and format checks, and three changed input denials passed. These are preparation results, not model qualification.
+
+The first packet version exceeded the development allowance for six requests. Preserve it alongside the revised version, which reduces repeated metadata without changing role instructions or expected verdicts. All revised requests fit the existing bound; actual provider token accounting remains unverified. Both versions and the evidence records are committed privately, with a public hash. No case contents or answer keys are published.
+
+Prepare the second replacement family next. Two replacements, the final Q01 audit, combined bank, prompt binding and live gates remain outstanding. No sample size, scoring rule, experimental result or model authorisation changed. Website body wording remains banked.
 
 ## Specify the revised Astra qualification: 15 September 2026
 

@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.5**
+Plan ID: **pilot-draft-2026-09-15.6**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -488,7 +488,7 @@ The investigator records each decision and its evidence in a versioned configura
 
 ### Phase 1: select guidance cases and prepare the restricted role path
 
-**Current next step, 15 September.** The [revised Astra qualification specification](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/ASTRA-QUALIFICATION-REVISION.md) is prepared. Retain Q01 subject to final audit and disclose its prior Fable evaluation. Replace Q02, Q03 and Q04 with three distinct families for the revised roles, preserving four families, three roles, six challenges and two repetitions: 144 responses. The four acceptance requirements are unchanged. Prepare and audit one complete replacement family before expanding to the other two. Revised role instructions and Fable advisory instructions are prepared but not installed or tested in model runs. The existing loader must bind the revised prompts to a new private freeze. Verify actual access, input bounds, capture and spending allocation before live qualification. These documentation changes do not authorise a model call.
+**Current next step, 15 September.** The [first replacement qualification family, Q05](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q05-READINESS.md), is prepared and audited. It contains 18 role items supported by 13 authored behaviour checks and four detected deliberate faults. Prepare the second replacement under the [existing specification](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/ASTRA-QUALIFICATION-REVISION.md), then the third. Q01 remains subject to final audit and prior Fable exposure disclosure. The combined bank, revised runtime prompt binding and live access and spending gates remain outstanding. The existing 144 response design and four acceptance requirements are unchanged. Astra is not qualified, and no model call was made during this preparation.
 
 #### Historical full workflow rehearsal: H04
 

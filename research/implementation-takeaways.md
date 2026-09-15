@@ -413,3 +413,6 @@ A supplementary model can flag possible problems without having authority to sco
 
 
 Qualification preparation, 15 September: the committed repair selection names Q02, Q03 and Q04 as development families for common instruction revisions, including overlapping Astra roles. Changing the assessor model therefore does not make those families unused. The revised specification replaces them while retaining Q01 with its prior Fable exposure disclosed. This is a protocol boundary supported by the saved selection, not a claim that training data changed. Preserve family exposure and prompt versions together; verify the actual packet and runtime instruction match before qualification. Replacement material and live qualification remain outstanding.
+
+
+Preparation observation, 15 September: Q05's first packet version exceeded the existing development input allowance for six requests. Removing repeated scope and citation metadata and compacting named observations brought all 18 requests within the bound while preserving source evidence, expected verdicts and instructions. The original version remains committed. This is an input preparation observation, not evidence that shorter packets improve model accuracy. Recheck the exact serialized request after any change; fitting a development byte estimate does not verify provider token accounting.
