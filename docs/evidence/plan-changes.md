@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.11**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.12**. Status: working redesign, not a new ratified preregistration.
+
+## Complete the local profile investigation: 15 September 2026
+
+Four empty Codex profiles were checked against a local simulator without model calls. Three simulated connection failures stopped after one request each under explicit zero retry settings. Actual requests still contained tool definitions in an additional_tools input item. The initial top level tools check is retained with a corrected audit. No hard provider output limit or complete capture on authenticated subscription transport was established. No reserved material was used.
+
+The recommendation is to establish a concrete cost option for the existing API runner before more subscription integration. This does not authorise spending or change the chosen experimental design. The qualification bank, prompts, drafter, schedule and acceptance rules are unchanged. Website body edits remain banked; current plan downloads are updated. The private evidence commitment covers 30 verified files.
 
 ## Investigate subscription execution before API spending: 15 September 2026
 

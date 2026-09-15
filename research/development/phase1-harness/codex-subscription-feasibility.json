@@ -54,9 +54,9 @@
   ],
   "qualification_route_ready": false,
   "remaining": [
-    "Dedicated clean authenticated profile and exact context validation.",
-    "Actual tool exposure and internal retry behaviour.",
-    "Bounded usage, failure handling and collection audit differences."
+    "Resolve advertised tools and verify execution restrictions before using this CLI route.",
+    "Establish hard usage limits and authenticated collection records.",
+    "Price the existing API runner before deciding whether further subscription integration is worthwhile."
   ],
   "earlier_api_runner_unchanged": true,
   "private_record_files": 42,
@@ -64,5 +64,17 @@
   "marker_order": [
     "global_instructions",
     "project_instructions"
-  ]
+  ],
+  "local_profile_followup": {
+    "report": "CODEX-PROFILE-CHECKS.md",
+    "simulated_requests": 4,
+    "model_calls": 0,
+    "failure_cases_without_retry": 3,
+    "advertised_tools_remained": true,
+    "actual_tool_execution_tested": false,
+    "hard_output_token_limit_established": false,
+    "authenticated_transport_verified": false,
+    "private_record_files": 30,
+    "private_record_freeze_sha256": "c3c6a169177b524c799be2e36a13833690282f1575c2fafc83b453e5b5e18cfa"
+  }
 }

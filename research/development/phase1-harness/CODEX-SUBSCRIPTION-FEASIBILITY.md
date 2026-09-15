@@ -4,7 +4,7 @@
 
 Two small artificial questions completed through Codex CLI with ChatGPT authentication required and API credential environment variables excluded. No reserved question, reference or answer key was used. These are connection probes, not qualification answers or experimental guidance.
 
-The next step is to prepare a separate clean Codex profile and check the remaining execution controls before adapting the batch runner. The API runner remains available. Neither route should receive reserved questions until its configuration and collection procedure are fixed.
+The subsequent [separate profile checks](CODEX-PROFILE-CHECKS.md) are complete using a local simulator. Three connection failures stopped without retries, but the client still advertised tools and no hard output token limit was established. The recommendation is to price the existing API runner before building more subscription integration. Neither route should receive reserved questions until its configuration and collection procedure are fixed.
 
 ## What we checked
 
@@ -26,7 +26,9 @@ The first skill exclusion configuration named skill folders. The skill catalogue
 
 Even after skill exclusion, the rendered input retained Codex permission, collaboration and environment messages. The local rendering command is not a capture of the exact request sent during the successful subscription probes. It shows why we need a fixed, inspected Codex configuration and why qualification would apply to that configuration rather than automatically to the API version.
 
-## What is still required
+## Requirements identified by the connection probes
+
+The list below records the gates identified at this step. The later profile report distinguishes what was checked from what remains unresolved.
 
 1. Use a dedicated clean profile. Keep personal instructions, project state, skills, memories, plugins and earlier sessions outside the assessment inputs. Verify the final configuration with artificial markers before exposing reserved material. Do not alter the user's ordinary Codex profile to achieve this.
 2. Verify which tools the model can actually access and what happens on a connection failure. The two successful probes do not establish that tools are unavailable or that the client cannot make an internal retry.

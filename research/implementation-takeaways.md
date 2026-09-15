@@ -459,3 +459,8 @@ Disabling project instruction loading removed the artificial project marker but 
 **Practical implication:** Treat the client profile and automatically added instructions as part of the assessed configuration. Verify exclusion using identifiable artificial material, including a positive control, rather than relying only on the model saying it has no prior context.
 
 **Uncertainty and next action:** Local rendering does not capture the complete request sent during a live run. Prepare a dedicated clean profile and establish the tool and request audit boundary before using reserved evaluation material. The two successful subscription connection probes do not qualify any model role.
+
+
+Follow through on IL-027, 15 September: the [separate profile checks](development/phase1-harness/CODEX-PROFILE-CHECKS.md) captured actual requests sent to a local simulator. Empty profiles excluded the project state and skills catalogue in those requests, but client instructions and advertised tools remained. The first summary looked only at the top level tools field; the definitions were inside an additional_tools input item. The corrected audit and original summary are both preserved.
+
+For implementation, inspect the complete serialized request before claiming that configuration settings excluded a capability. Distinguish a tool advertised to the model from a tool that can actually execute. These checks establish the former only. Three failures stopped without retries locally; authenticated transport and hard usage limits remain unverified. The next action is a cost comparison with the existing API runner, not a new drafter instruction or an experimental finding about guidance quality.
