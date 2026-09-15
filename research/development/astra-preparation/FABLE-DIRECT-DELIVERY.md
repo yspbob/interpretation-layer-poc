@@ -1,6 +1,6 @@
 # Deliver the assessment file directly
 
-15 September 2026. Proposed qualification configuration, checked with public material. No qualification calls through this route.
+15 September 2026. The user has chosen this route, operated by Codex. The [fixed procedure](FABLE-DIRECT-PROCEDURE.md) and private freeze govern qualification. No qualification calls through this route are recorded in this development report.
 
 ## Why change the delivery method?
 
@@ -22,7 +22,7 @@ Our first synthetic packet used invalid values for the candidate kind and proven
 
 The earlier sample still demonstrates a source copying error: the original and delegated source strings differ. It cannot establish handling of a valid qualification input. Neither sample contained private qualification evidence or scoring keys. No frozen question or reference changed.
 
-## Proposed operating configuration
+## Selected operating configuration
 
 Use interactive Claude Code 2.1.270 with a custom assessor as the primary agent, explicit `claude-fable-5-1`, High effort and no tools. Use restricted settings, empty MCP configuration, disabled project instructions and automatic memory, and a disabled updater for the process. Clear API credential environment overrides and verify Claude Max before submission. The exact tested options and worker instruction are saved with the private audit.
 
@@ -38,6 +38,6 @@ The new route must use its own complete 48 response schedule and configuration r
 
 The client adds application and account context. Fresh sessions and matching saved inputs do not reveal all provider processing or establish absence of prior model knowledge. No interrupted output occurred in these checks. Any unidentifiable continuation or retry remains a qualification limitation; do not certify it from a single response record.
 
-Prepare the direct route's private freeze and per response audit against the existing 48 packets. This can use local file and transcript checks with the existing validator. It does not require another desktop clicking workflow or a general orchestration system. The direct packet check is complete; do not repeat it without a relevant change or unresolved failure.
+The direct procedure uses a private freeze and a local audit against the existing 48 packets. These use file and transcript checks with the existing validator. They do not require another desktop clicking workflow or a general orchestration system. The direct packet check is complete; do not repeat it without a relevant change or unresolved failure. PROJECT_STATE.md records the current freeze and execution position.
 
 The private record is `C:/Users/Yaroslav/Documents/Codex/poc-private/fable-packet-check-2026-09-15/`. It retains both attempts, exact inputs, original outputs, preparation mistakes, audits and usage observations. Raw account and machine context stays outside public Git. The website update remains banked.

@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-14.5**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.1**. Status: working redesign, not a new ratified preregistration.
+
+## Adopt direct Fable delivery: 15 September 2026
+
+The user chose direct delivery operated by Codex to reduce routine interface work. Interactive Claude Code receives each unchanged file in a fresh Fable 5.1 High assessor session. No coordinator model copies the evidence. A larger public relay altered source text, while direct insertion preserved all 30,025 bytes and produced a response that passed structure and identity checks. Neither observation qualifies the assessor.
+
+Freeze the direct configuration, custom worker instruction and transcript audit for the existing 48 response schedule. The questions, order and four scoring gates remain unchanged. Preserve the three desktop responses as a separate unscored configuration. Included Max allowance remains the only authorised route; pause at 80% usage or uncertain allowance. The client context and hidden provider operations remain limitations. No further public model rehearsal is required unless the relevant configuration changes or a failure demands it. The controlled Astra procedure is unchanged.
 
 ## Freeze the supplementary desktop qualification: 14 September 2026
 

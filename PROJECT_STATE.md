@@ -10,7 +10,7 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-14.5**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.1**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
@@ -35,7 +35,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: direct packet delivery checked, 15 September 2026
+## Current work: direct qualification procedure frozen, 15 September 2026
+
+The user chose direct delivery operated by Codex, with manual user intervention reserved for sign in or an account action. The [fixed procedure](research/development/astra-preparation/FABLE-DIRECT-PROCEDURE.md) is frozen as fable-direct-v1. It uses interactive Claude Code 2.1.270, Fable 5.1 High, a fresh custom assessor session per position and no tools. The unchanged permitted file is inserted directly. No model coordinator copies evidence. Included Max allowance is checked before each call, with a conservative pause at 80% usage or uncertain allowance. No paid credits or API billing are authorised.
+
+Private freeze: C:/Users/Yaroslav/Documents/Codex/poc-private/fable-direct-qualification-2026-09-15/. Freeze SHA256: 46a7413ace977627534fdd3988447c9a15b157f82f060c40b3d9cb3dc7b253df. The manifest commits 66 files, including all 48 unchanged inputs, original order and scoring commitments, exact worker configuration, procedure and audit code. Inputs total 933,522 bytes; the largest is 23,555 bytes. The previous desktop freeze and all 61 of its files were verified. Expected answers were not read or copied into the new operator package.
+
+Six synthetic tests passed without network or model calls. They cover changed input, extra user context, tool access, missing snapshots, model and effort changes, extra responses and iterations, invalid JSON, candidate schema errors, altered source hashes, exact packet copies and preservation of existing freezes. The auditor also passed the saved public direct transcript: identical 30,025 byte input, empty tools, one response and a valid 4,992 byte answer. It inspects client records; visible completion, application context, deadline and account checks remain operator responsibilities. Hidden provider operations are not certified.
+
+The canonical plan is now pilot-draft-2026-09-15.1 and its change register records route adoption. The plan downloads are refreshed through the normal build. Website wording changes remain banked; the page body still describes desktop delivery and an older execution status. That known gap must be corrected at the next requested website release, rather than presented as current live status. No new model call was made in this preparation step. Direct qualification remains 0 of 48, the three desktop answers remain unscored and separate, and experimental guidance runs remain zero.
+
+**Exact next step:** verify the new private freeze, current Max allowance and client settings, create an exclusive attempt record, and begin direct qualification at position 001. Preserve each original transcript and answer, run the frozen audit and inspect completion before the next position. Keep all private files outside public Git. Do not repeat the completed public diagnostics or add a model relay. An uncertain or failed submission is never retried. Stop for control deviations and pause before paid continuation. Apply semantic scoring only after completion or a formal stop.
+
+## Previous work: direct packet delivery checked, 15 September 2026
 
 The user authorised continuing while avoiding token expenditure on routine interface operation. The [direct delivery record and proposed configuration](research/development/astra-preparation/FABLE-DIRECT-DELIVERY.md) now replaces the coordinator relay proposal for the next preparation step. The larger public relay failed exact delivery: 30,037 bytes became 31,093 bytes, with changed source text. Its worker still produced structurally valid JSON. Do not extend this model copying route to qualification.
 
