@@ -35,7 +35,21 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: direct qualification procedure frozen, 15 September 2026
+## Current work: 15 direct responses saved, paused for allowance confirmation, 15 September 2026
+
+The user explicitly approved sending all 48 frozen packets to Anthropic Fable 5.1 through included Claude Max after automatic approval review required confirmation beyond the earlier route agreement. That approval persists for the full schedule. Do not request permission to export those packets again. No API or paid credit spending was authorised.
+
+Direct positions 001 through 015 were each submitted once in separate interactive assessor sessions. All 15 original responses are saved and passed the frozen input, model, effort, tool and response structure checks. Semantic correctness has not been scored. No input or assessor instruction changed. The three earlier desktop responses remain separate and unscored. Experimental guidance runs remain zero.
+
+An auxiliary context screen paused on position 001 because it did not recognise the total_tokens_reminder attachment. Inspection confirmed that the identical attachment already appeared in the public direct rehearsal. The frozen auditor had passed. The original screen result, context review and exact comparison are preserved; no answer was retried or used to change the assessor. The auxiliary capture script now recognises that exact standard application notice. Early comparison commands looked in the wrong prompt field; the final comparison checked the actual attachment and passed.
+
+After position 015 was captured and audited, the automatic allowance reader could not extract a complete usage view. The run stopped before position 016 was prepared or sent. This is an account observation pause, not an assessor failure or a formal end to qualification. The session was closed by the cleanup routine; a later terminal lookup confirmed it no longer exists. Exit status was not retained, so it is recorded as unknown. The last successful allowance observation was 17% used with zero paid credit spending; the post 015 observation remains unresolved. A concise question asks the user to check whether all relevant limits remain below 80% with no paid credits spent. Do not assume the answer from the previous reading.
+
+Private run: C:/Users/Yaroslav/Documents/Codex/poc-private/fable-direct-run-2026-09-15/. Each completed position preserves its input, preflight, dispatch, original transcript, raw answer and audit. The pause manifest covers the saved records and operator scripts. Position 015 preserves the incomplete allowance error and closure observation. The run uses freeze 46a7413ace977627534fdd3988447c9a15b157f82f060c40b3d9cb3dc7b253df under fable-direct-v1. The direct freeze, questions, criteria and method are unchanged.
+
+**Exact next step:** obtain the pending fresh allowance confirmation, record it and resume only at position 016 after the normal checks. The user has already authorised all 48 submissions. Do not rerun any of the 15 completed positions. Continue collecting and auditing first responses without semantic scoring. If the allowance display again needs manual intervention, hand over the specific account check rather than spending tokens on lengthy interface troubleshooting. The plan download is verified live at revision pilot-draft-2026-09-15.1; website wording and status updates remain banked.
+
+## Previous work: direct qualification procedure frozen, 15 September 2026
 
 The user chose direct delivery operated by Codex, with manual user intervention reserved for sign in or an account action. The [fixed procedure](research/development/astra-preparation/FABLE-DIRECT-PROCEDURE.md) is frozen as fable-direct-v1. It uses interactive Claude Code 2.1.270, Fable 5.1 High, a fresh custom assessor session per position and no tools. The unchanged permitted file is inserted directly. No model coordinator copies evidence. Included Max allowance is checked before each call, with a conservative pause at 80% usage or uncertain allowance. No paid credits or API billing are authorised.
 
