@@ -355,3 +355,13 @@ Ordinary subagents start separate conversations, but custom workers can receive 
 **Next action:** Inspect the effective worker inputs and raw response records in the two public rehearsals. Record any inherited material, extra generation or fallback. Do not call the route qualified merely because two toy outputs are correct.
 
 Follow through on IL-022, 15 September: the [public rehearsal](development/astra-preparation/FABLE-SUBAGENT-REHEARSAL.md) completed with two fresh Fable 5.1 High workers. Exact inputs, empty tool lists and one recorded response per worker were verified. Neither worker record contains the other marker. Both records do contain standard application and account context, so a fresh worker is not a context containing only our own text. An earlier attempt failed because safe mode disabled the custom agent; that failure is retained. No interrupted response was observed or tested. Check the full packet delivery method and record these limits before qualification, without changing the frozen questions or treating this diagnostic as assessor validation.
+
+## IL-023: Deliver evidence without asking a model to copy it
+
+**Source:** [Public packet delivery checks](development/astra-preparation/FABLE-DIRECT-DELIVERY.md), 15 September 2026.
+
+**Status:** Observed transport failure and successful direct delivery check. Not an assessment of guidance quality.
+
+A coordinator changed source text while relaying a larger packet, although its worker returned valid assessment JSON. Direct insertion into a fresh assessor preserved every byte. Checking only the answer format would have missed the altered evidence.
+
+**Practical implication and next action:** Use ordinary file handling to deliver evidence and compare the actual saved input with the approved packet. Do not spend model output generating copies of that packet. Preserve failed attempts, including our own synthetic schema mistakes. Freeze the direct procedure before qualification; one public example does not prove reliability for every input or reveal hidden provider activity.
