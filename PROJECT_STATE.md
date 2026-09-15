@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 14 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 15 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -35,7 +35,17 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: subagent rehearsal prepared and paused, 14 September 2026
+## Current work: rehearsal ready, subscription sign in needed, 15 September 2026
+
+The user resumed the two public subagent rehearsals. GitHub sync succeeded after an initial automatic approval review capacity failure; the reviewed sync script was retried unchanged. The isolated Claude Code remains version 2.1.270. Its account status now reports no signed in account, both with restricted and normal credential access. This differs from the previous evening. No cause for that change has been established.
+
+The subscription sign in command was opened for the user to complete. It is an interactive login, not a model request or an API billing selection. The process was waiting for completion in terminal session 52777 when this record was prepared. No login code, credential or authorisation URL is saved in public Git. Do not automate the user's authentication or assume a successful sign in from the presence of a browser tab. Recheck the status after the user completes it.
+
+Before sending either test, the original second prompt was found to require a null previous marker even if earlier context were visible. Revision 2 asks for the earlier marker if one is present, otherwise null. This removes that instruction conflict, but a null answer still cannot prove complete isolation. Version 1 is preserved and no model has seen either version. The original marker values and expected outputs are unchanged. Version 2 is prepared under ignored local-runs/fable-subagent-rehearsal-2026-09-15/. All three revision and status files were copied to C:/Users/Yaroslav/Documents/Codex/poc-private/fable-subagent-rehearsal-2026-09-15/ and verified byte for byte. Its checks confirm that the second prompt contains no first marker and no unconditional null instruction.
+
+**Exact next step:** let the user finish the Claude subscription sign in, verify Max and available included allowance, then complete session setup and send the version 2 public rehearsal to two fresh Fable 5.1 High workers. Inspect their actual delegated inputs and original responses. Do not use version 1 by accident or load qualification material. No paid API or usage credits are authorised. No rehearsal model calls have run; the three desktop qualification responses remain unscored and separate. Website changes remain banked.
+
+## Previous work: subagent rehearsal prepared and paused, 14 September 2026
 
 The user proposed having Claude coordinate a fresh subagent for each test, agreed to try two public rehearsals first, then requested a pause to sleep. The [coordinator instruction](research/development/astra-preparation/CLAUDE-SUBAGENT-INSTRUCTION.md) is prepared. No rehearsal test was submitted and no new model response was generated. All three original desktop answers remain unscored; qualification position 004 remains unsent. API spending and paid credits remain unauthorised.
 
