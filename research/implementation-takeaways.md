@@ -486,3 +486,16 @@ A stop request could arrive after the monitoring loop's last check but before th
 
 
 Follow through on IL-028, 15 September: the [subscription run protocol](development/phase1-harness/SUBSCRIPTION-PROTOCOL.md) now distinguishes a collector attempt from a backend request. The schedule coordinator preserves a failed position, stops later dispatch and keeps unrun positions in the denominator. Its complete rehearsal uses artificial answers and establishes recording behaviour only. Qualification and any benefit from the interpretation layer remain unmeasured.
+
+
+## IL-029: Say when a returned field must preserve exact text
+
+**Source:** The [first Astra qualification allocation](development/phase1-harness/SUBSCRIPTION-QUALIFICATION-STOP.md), 15 September 2026. It stopped on the first verifier response.
+
+**Evidence status:** Confirmed contract mismatch. Four admitted scope fields differed from the submitted strings. One expansion reproduced the supplied test conditions exactly. This does not establish that every reformulation is equivalent or that the response is substantively correct.
+
+The verifier instruction required the exact submitted scope, but the schema described the returned field only as a string. The validator requires literal equality. A natural language restatement can therefore be rejected even when it preserves the supplied conditions. The frozen response remains rejected; its correctness has not been assumed.
+
+**Practical implication:** Distinguish fields that carry reasoning from fields that must preserve an existing claim's exact text or identity. Make copying requirements explicit and verify them on development examples. Keep the protection against silently changing a claim while approving it.
+
+**Uncertainty and next action:** An explicit copying instruction is a proposed repair, not a demonstrated improvement. Test it on public material and disclose which prior responses informed it before selecting further qualification material. Do not retry the failed packet and label that retry untouched qualification.

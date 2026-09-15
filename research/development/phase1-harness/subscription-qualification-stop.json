@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-15",
+  "configuration_hash": "c82f5816cf20d8b05eba45be6e35525e3a0d3825777f1f60a503eb91804146c1",
+  "collection_sha256": "dd648aa1868ba60facb2da37a85aa7f0317f7e4e73352bb97d5811996fc962f4",
+  "collection_files_verified": 326,
+  "scheduled": 144,
+  "collector_attempts": 11,
+  "completed_client_responses": 11,
+  "structurally_valid": 10,
+  "failed_contract": 1,
+  "not_run": 133,
+  "operator_retries": 0,
+  "recorded_tool_attempts": 0,
+  "unique_sessions": 11,
+  "qualified": false,
+  "experimental_guidance_runs": 0,
+  "reported_input_tokens": 114960,
+  "reported_output_tokens": 7031,
+  "reported_reasoning_output_tokens": 798,
+  "usage_reconciliation": "Original summary counted only the ten accepted records. Completed-turn usage from the rejected eleventh answer is added here; the original summary is unchanged.",
+  "semantic_scoring": "Not performed; incomplete collection cannot pass. Only the operational failure has been reviewed.",
+  "exposure_by_role": {
+    "guidance_assessor": 4,
+    "verifier_assessor": 6,
+    "verifier": 1
+  },
+  "exposure_by_family": {
+    "Q07": 4,
+    "Q01": 6,
+    "Q05": 1
+  },
+  "evidence_status": "Confirmed exact-text contract mismatch. One expanded scope reproduces supplied conditions exactly; substantive accuracy is not established.",
+  "monitoring_correction": "The batch stopped and committed normally. The supervising task surfaced its final tool result several minutes later and initially described the attempt as still running. That status was corrected; no further call occurred.",
+  "additional_spending_authorised": 0,
+  "api_used": false,
+  "copied_credentials_remaining": false,
+  "audit_sha256": "bffe7fc4a88bb65c9c0e2ab09d2676894ce06b0c5aa0f24a1b78441a725897f8",
+  "audit_files": 35
+}

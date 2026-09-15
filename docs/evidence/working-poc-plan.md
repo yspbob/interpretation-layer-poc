@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.16**
+Plan ID: **pilot-draft-2026-09-15.17**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -547,7 +547,11 @@ The collector retains intended inputs, exact settings, first answers and client 
 
 The proposed allocation is at most 144 sequential subscription attempts, with no additional spending, a five minute deadline and one megabyte output limit per attempt. Each position needs a fresh account check showing no paid credits and more than 10% remaining in every reported core window. Stop on the first failed or uncertain collection, configuration or approval change, unexpected tool activity, reused session or missing allowance observation. Keep every position in the summary and freeze collection before semantic scoring. The client audit limits above are explicit protocol limitations; the API transport guarantees are not claimed for this route. Cases, instructions and all four acceptance requirements remain unchanged.
 
-**Exact next step:** approve the concrete subscription allocation and declared protocol boundary, then execute the existing schedule with fresh account observations supplied by the supervising Codex task. The private prepared allocation remains unapproved; this implementation request did not initiate reserved dispatch. Do not expand the bank or add another framework. Apply the unchanged scoring procedure only after collection is committed. Final trial case selection, coding execution and interaction remain later work.
+**First subscription qualification attempt closed, 15 September.** The user approved the prepared allocation. The [run stopped at position 11](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/SUBSCRIPTION-QUALIFICATION-STOP.md): ten responses passed collection checks and the eleventh failed the verifier's exact scope string comparison. The remaining 133 positions were not run. All first responses, usage and the failure are committed, with no retry. No role qualified. The failed answer expanded four admitted scope fields; one expansion exactly reproduces supplied conditions. This is a confirmed contract mismatch, not proof that the answer's substantive reasoning was wrong. Full semantic scoring has not been performed.
+
+The original validator, instructions, criteria and failure remain unchanged. Eleven distinct sessions returned completed responses, with no recorded tool attempt and no copied credentials remaining. Fresh account checks showed included allowance and no paid credits. Reconciled usage is 114,960 input and 7,031 output tokens; no API spending occurred. A delayed monitoring display was corrected after the runner had already stopped normally. The frozen attempt cannot be resumed or relabelled as a pass.
+
+**Exact next step:** propose an explicit instruction to copy the submitted scope string when admitting a claim, check it on public development material and determine the appropriate fresh qualification material for the revised verifier. Preserve exposure and the original result. No repair or replacement bank has been changed. The completed allocation does not authorise another live batch. Coding execution and interaction remain later work.
 
 
 | Stage | Required work | Current state |
@@ -555,7 +559,7 @@ The proposed allocation is at most 144 sequential subscription attempts, with no
 | Find and screen candidate material | Review the playbook claim, inspect references and identify candidate repositories. | Completed as exploratory preparation; experimental eligibility remains separate. |
 | Specify and trace one development case | Write component contracts and trace their inputs and decisions on one evidence-backed case. | H04 contracts, executable checks and scripted trace complete as development. No model role exercised or qualified. |
 | Phase 1: select guidance cases | One repository, distinct decisions, justified references, exceptions, omissions and source conditions. | Development references exist for NetBox NB-BULK-01 and H06. Separate qualification and final trial selection remain open. |
-| Phase 1: prepare role access and assessment | Restricted drafting, verification and separate guidance assessment; qualify the jobs in use and fix settings. | Qualification bank, scoring procedure and controlled command prepared; 86 tests and exact bank rehearsal passed with simulated responses. Actual provider checks, spending approval and model qualification remain open. |
+| Phase 1: prepare role access and assessment | Restricted drafting, verification and separate guidance assessment; qualify the jobs in use and fix settings. | Subscription protocol and runner prepared and checked. The first approved allocation stopped after eleven responses on a verifier contract failure; 133 positions were unrun. No role qualified. |
 | Phase 1: run and report | Retain guides, drafts, decisions, assessed errors, omissions, failures and preparation costs. | Not started. |
 | Phase 2: test use | Add coding execution, matched DIRECT/GUIDE reviews and qualified independent code assessment. | Later phase, not a Phase 1 gate. |
 | Phase 3: test interaction | Add and qualify interactive checking and intervention assessment; compare all three groups together. | Later phase, not a Phase 1 gate. |

@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.16**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.17**. Status: working redesign, not a new ratified preregistration.
+
+## Record the stopped Astra qualification allocation: 15 September 2026
+
+The user approved the prepared subscription allocation. Eleven first responses were collected; ten passed collection checks and the first verifier response failed literal scope equality. The runner stopped, preserving 133 unrun positions. One rejected expansion repeats the supplied conditions, so this is not evidence by itself of poor substantive judgement. The original failure is retained, no answer was retried and no role qualified.
+
+The run is committed and the separate audit reconciles usage for the rejected answer. No prompt, schema, validator, scoring requirement or allocation was changed. Full semantic scoring remains unperformed because incomplete collection cannot qualify. Next propose and test a narrow interface clarification on public material and assess what fresh qualification material it requires. No repair was made, and this record does not authorise another live run. Website body changes remain banked.
 
 ## Prepare subscription protocol and connect the schedule: 15 September 2026
 
