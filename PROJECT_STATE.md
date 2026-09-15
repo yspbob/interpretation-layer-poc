@@ -14,9 +14,11 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 ## Read next
 
+- [Fable qualification result](research/development/astra-preparation/FABLE-QUALIFICATION-RESULTS.md). All 48 direct responses are scored. The supplementary assessor did not pass; the source based failures and reference weaknesses are recorded separately.
+
 - [Qualification batch runner](research/development/phase1-harness/QUALIFICATION-BATCH.md). Offline implementation and full schedule rehearsals are complete; live configuration remains pending.
 
-- [Qualification bank readiness](research/development/astra-preparation/BANK-READINESS.md). Four private cases are prepared; model qualification remains pending.
+- [Qualification bank readiness](research/development/astra-preparation/BANK-READINESS.md). Four private cases were prepared. This is the preparation record; the later Fable result is linked above, and Astra qualification remains pending.
 
 - [Astra screening preparation and proposed qualification](research/development/astra-preparation/README.md). The preliminary subagent screen is complete; controlled API execution and assessment qualification remain pending.
 
@@ -35,7 +37,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: all 48 direct responses collected, correctness scoring next, 15 September 2026
+## Current work: Fable scoring complete, qualification failed, 15 September 2026
+
+The [qualification result](research/development/astra-preparation/FABLE-QUALIFICATION-RESULTS.md) records all 48 original answers against the unchanged keys. Every response had the expected verdict labels, but only 35 had correct reasons too. Family results were Q01 12/12, Q02 11/12, Q03 10/12 and Q04 2/12. There were zero errors in the predefined serious categories. Correct repeated pairs were 16/24, although exact labels matched in all 24. Baseline versus valid alternative decisions matched in all 8 comparisons; both full answers passed in 6. The frozen fourth gate concerns decision agreement, so it passes without adding a new reason requirement after collection. The total correctness and repeated pair gates fail. Fable is not qualified as the supplementary guidance assessor.
+
+Three responses invented contradictions between claims about different conditions or processing stages. Ten responses in Q04 overstated behaviour or misread observations. The source review and a local diagnostic confirmed a side effect denied by several explanations. Four Q04 responses specifically misinterpreted saved observations. Granting passes to all six Q04 failures based only on broad wording would raise the result to 41/48, Q04 8/12 and correct repeated pairs 19/24; qualification still fails. The alternative calculation is preserved separately from the primary score.
+
+The reference packet also had weaknesses: some observations had no named field legend, and the code excerpt showed a wrapper without the implementation it called. The central expected recommendation remains valid. These weaknesses may contribute to the errors, but their effect is not measured. The review was performed by Codex against source evidence, without independent human certification. The four related families do not support a general accuracy estimate. No answer, key, severity or assessor instruction was changed. No model call or paid spending occurred during scoring. Astra's controlled qualification and all experimental guidance runs remain outstanding.
+
+Verification: all 48 committed original bank files and 492 collection files matched their hashes. Every response passed structure and identity validation again. Four synthetic scoring checks passed. The private scoring record at C:/Users/Yaroslav/Documents/Codex/poc-private/fable-direct-scoring-2026-09-15/ preserves the reviews, quotes, diagnostic, code, individual scores and manifest. Scoring manifest SHA256: 6e3afe66f58a0b13599735d1b986396e5ae3810078dd53e7b565941ab24f55c4. Original bank freeze: bc256b1d390f2f595c0212d157892572fd64226701200236ffcf28add0ef8ae9. Collection manifest: 7a1bd142f53736f0cfa865c2ec0993f0af370c2251131c9b5ca1123b0ae6f123. The observation generating script is preserved in the scoring audit but was not part of the original freeze; that distinction is explicit. Pinned source identity and the new diagnostic provide separate support for the behaviour finding.
+
+**Exact next step:** prepare a small development revision of the affected reference presentation and evidence boundary instructions, using the saved failures. Label each observation and explain what its test actually exercised. Keep missing evidence separate from a demonstrated contradiction. Do not start further model calls or repair the recorded answers. Any family used to shape a repair becomes development material; qualification of a revised configuration requires fresh applicable families. A common instruction repair must not reuse these reviewed answers as evidence that it works. Keep Fable's role supplementary and do not present this result as an experimental test of the layer. Website changes remain banked; the canonical method is unchanged at pilot-draft-2026-09-15.1.
+
+## Previous work: all 48 direct responses collected, correctness scoring next, 15 September 2026
 
 The approved Fable 5.1 High collection through interactive Claude Code and included Max is complete. Positions 001 through 048 each have one original response from a distinct session and neutral directory. All 48 passed the frozen checks for exact input, model, effort, tools, response identity and answer structure. No answer was retried, repaired or used to change later inputs. Semantic correctness has not been scored, so the assessor is not yet qualified. Experimental guidance runs remain zero; the three earlier desktop answers stay separate and unscored.
 

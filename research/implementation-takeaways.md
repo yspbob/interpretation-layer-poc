@@ -369,3 +369,27 @@ A coordinator changed source text while relaying a larger packet, although its w
 Follow through on IL-023, 15 September: the user selected direct delivery operated by Codex. The fixed procedure and new private freeze preserve all 48 original files and scoring criteria. Six local failure tests and the saved public transcript passed the audit. Account checks and uncertain provider behaviour remain explicit operator limits. Qualification starts with fresh sessions under this configuration; the three older desktop responses cannot fill positions in the new schedule.
 
 Collection observation, 15 September: all 48 direct responses were preserved, and their actual submitted inputs matched the frozen files exactly. The final audit also confirmed separate sessions and completion within the deadline. This supports delivery integrity for this batch; correctness scoring has not started. Three incomplete account views caused pauses. One saved view explicitly reports a rate limited usage lookup, followed by a complete observation before continuation. Practical follow through: preserve failed account readings and recovery observations separately, and pause dispatch when the required allowance information is missing. A missing paid credit figure must not be recorded as zero. This is an operating observation, not evidence of the interpretation layer's benefit.
+
+## IL-024: A correct verdict can conceal an incorrect explanation
+
+**Source:** [Fable qualification result](development/astra-preparation/FABLE-QUALIFICATION-RESULTS.md), 15 September 2026. Original answers, source checks and individual scoring remain in the private audit.
+
+**Status:** Observed assessment failures in three of the four qualification families. Not a finding about the interpretation layer's benefit or a general model accuracy estimate.
+
+All 48 answers selected the expected verdicts, but 13 contained incorrect explanations under the frozen scoring rule. Three treated claims about different conditions as contradictory. Other answers overstated behaviour or misread observations. Repeated verdict labels were consistent even where their reasons were wrong.
+
+**Practical implication:** Check why a reviewer reached its decision before using that explanation to amend guidance. A lack of evidence can justify leaving a claim unresolved or unsupported. It does not prove the opposite claim. Preserve verdict agreement and correctness of reasoning as separate measures.
+
+**Uncertainty and next action:** Some broad wording admits a more generous reading, but the result still fails qualification when those responses receive credit. Review was source based and performed by Codex, without independent human certification. Use exposed failures for development; do not reuse them to qualify a repaired assessor.
+
+## IL-025: Observations need to explain what was tested
+
+**Source:** The same qualification review and its saved comparison of the reference packet, observation driver and pinned implementation.
+
+**Status:** A confirmed reference presentation weakness and observed misinterpretations. Its causal contribution to the assessment failures is unmeasured.
+
+One packet supplied observations as arrays without naming their fields. Several answers described those values as evidence of behaviour the tests had not exercised. A code excerpt also showed a wrapper without the implementation it called, and some answers inferred that an unshown side effect could not occur.
+
+**Practical implication:** Attach readable field names, the tested conditions and the limits of each observation. Explain when a supplied excerpt ends at a call into code that has not been included. Do not treat the absence of that implementation as evidence that its side effects are absent.
+
+**Uncertainty and next action:** The central reference recommendation remains supported. Clearer presentation is a proposed repair, not a demonstrated cure for these errors. Prepare it on development material and assess the revised configuration on fresh applicable families.
