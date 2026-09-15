@@ -31,7 +31,9 @@ The first summary looked only for a top level `tools` field and recorded null. T
 
 **The record is complete only for this simulator.** We saved the exact local request bytes, the artificial response and the client events. That does not demonstrate the same capture on the authenticated subscription connection. This check also did not use the assessment response schema. The earlier live connection probes returned structured answers, but the combined assessment configuration has not been verified.
 
-## The practical recommendation
+## The practical recommendation at that point
+
+The later [cost and route decision](EXECUTION-COST-DECISION.md) supersedes this recommendation. The user chose subscription only. The observations above remain valid; actual tool denial is the next check.
 
 Do not send the qualification bank through this configuration. The investigation found enough uncertainty to make further integration a separate piece of work. It did not show that subscription execution is impossible.
 

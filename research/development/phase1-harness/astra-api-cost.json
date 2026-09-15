@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-15",
+  "status": "API option rejected by user; subscription only selected",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "service_tier": "default",
+  "input_allowance": 32768,
+  "input_allowance_provider_verified": false,
+  "proposed_max_output_tokens": 25000,
+  "rates_usd_per_million": {
+    "input": 10,
+    "cache_read": 1,
+    "cache_write": 12.5,
+    "output_including_reasoning": 50
+  },
+  "budget_input_rate": "highest input category, no cache discount assumed",
+  "requests": 144,
+  "scenarios": [
+    {
+      "output_tokens_per_response": 4096,
+      "usd_144_responses": "88.4736000",
+      "usd_per_response": "0.6144000"
+    },
+    {
+      "output_tokens_per_response": 8192,
+      "usd_144_responses": "117.9648000",
+      "usd_per_response": "0.8192000"
+    },
+    {
+      "output_tokens_per_response": 16384,
+      "usd_144_responses": "176.9472000",
+      "usd_per_response": "1.2288000"
+    },
+    {
+      "output_tokens_per_response": 25000,
+      "usd_144_responses": "238.9824000",
+      "usd_per_response": "1.6596000"
+    }
+  ],
+  "proposed_allocation_usd": {
+    "qualification": 240,
+    "public_connection_checks": 10,
+    "total": 250
+  },
+  "public_checks_max_requests": 3,
+  "public_checks_same_limits_max_usd": "4.9788000",
+  "preflight": {
+    "items": 72,
+    "request_manifest_hash": "43ae35838b5e1fd5376b3b8dfc63ba6b60a7862160c3604c84b67ebe2b041070",
+    "max_padded_bytes": 32740
+  },
+  "permitted_files_read": 18,
+  "source_freeze": "7f503564d6dbb198b8494fcbac2a9acdb311521cff7e0e4865b80d6cc2c9be91",
+  "live_calls": 0,
+  "account_access_verified": false,
+  "output_sufficiency_verified": false,
+  "exclusions": [
+    "tax",
+    "currency conversion",
+    "later guidance experiments",
+    "retries",
+    "additional repair or scoring model calls"
+  ],
+  "sources": [
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "https://developers.openai.com/api/docs/guides/reasoning"
+  ],
+  "allocation_adopted": false,
+  "user_api_account_status": "Not set up yet"
+}

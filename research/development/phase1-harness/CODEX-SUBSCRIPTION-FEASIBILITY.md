@@ -4,7 +4,7 @@
 
 Two small artificial questions completed through Codex CLI with ChatGPT authentication required and API credential environment variables excluded. No reserved question, reference or answer key was used. These are connection probes, not qualification answers or experimental guidance.
 
-The subsequent [separate profile checks](CODEX-PROFILE-CHECKS.md) are complete using a local simulator. Three connection failures stopped without retries, but the client still advertised tools and no hard output token limit was established. The recommendation is to price the existing API runner before building more subscription integration. Neither route should receive reserved questions until its configuration and collection procedure are fixed.
+The subsequent [separate profile checks](CODEX-PROFILE-CHECKS.md) are complete using a local simulator. Three connection failures stopped without retries, but the client still advertised tools and no hard output token limit was established. The later [cost decision](EXECUTION-COST-DECISION.md) records the user’s choice of subscription only. Next test actual tool denial locally. Neither route should receive reserved questions until its configuration and collection procedure are fixed.
 
 ## What we checked
 

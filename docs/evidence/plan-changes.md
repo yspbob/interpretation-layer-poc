@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.12**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.13**. Status: working redesign, not a new ratified preregistration.
+
+## Use included subscription allowance only: 15 September 2026
+
+The user confirmed that no API account is set up, rejected the conservative $250 API proposal and chose subscription only. No API charges or paid credits are authorised. The priced proposal and offline request preflight are retained as an option that was not adopted. Its larger output allowance is not a change to qualification settings.
+
+The API recommendation was premature: advertised tools do not prove execution, and payment protection for subscription use need not duplicate an API billing cap. Evidence isolation and fixed execution rules remain requirements. Next test actual tool denial with artificial local inputs. Hooks have documented coverage exceptions and are not sufficient proof by themselves. A subscription protocol amendment is required before qualification. No case, instruction, drafter, response schedule or acceptance requirement changed. Website body changes remain banked.
 
 ## Complete the local profile investigation: 15 September 2026
 

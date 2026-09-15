@@ -10,9 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.12**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.13**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
+
+- [Subscription only decision](research/development/phase1-harness/EXECUTION-COST-DECISION.md). The user rejected the API cost and chose included subscription allowance only. Next test tool denial locally; no API setup, paid credits or reserved dispatch.
 
 - [Separate Codex profile checks](research/development/phase1-harness/CODEX-PROFILE-CHECKS.md). Four local simulations are complete. Three failures stopped without retry, but tool exclusion and hard usage limits remain unverified. Next establish a concrete API cost option before further subscription integration.
 
@@ -55,7 +57,23 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: separate profile investigation complete, 15 September 2026
+## Current work: subscription only chosen, 15 September 2026
+
+The user asked for the API cost, confirmed that no API account is set up, rejected the $250 conservative proposal as too expensive, and explicitly chose the existing subscription only. Read [the cost and route decision](research/development/phase1-harness/EXECUTION-COST-DECISION.md). No API setup, payment, paid credit or qualification dispatch is authorised. The API recommendation below is now historical.
+
+Current official documentation lists gpt-6-astra, High effort, Responses and structured outputs. Standard input/output prices are $10/$50 per million tokens, with a $12.50 cache write rate. The calculation conservatively charges all input at the highest input rate. Its 25,000 output allowance was a proposal based on published starting guidance, not a measured need or an approved change. Four output scenarios cost $88.47 to $238.98 for 144 requests at the full 32,768 input allowance. These are not forecasts or verified invoice caps. The API account and actual token bounds remain unverified.
+
+Offline preflight passed all 72 distinct requests with gpt-6-astra, High effort and the proposed larger output allowance. The largest serialized request plus padding was 32,740 bytes. The allowlisted loader read 18 permitted files; socket connections were blocked. No answer keys or model calls were used. Public calculation: research/development/phase1-harness/astra-api-cost.json. Local calculation script and report: local-runs/price-astra-qualification.py and local-runs/astra-api-cost-2026-09-15/. Runtime and assessment instructions are unchanged.
+
+**Exact next step:** use the existing local simulator and clean test profile to test harmless attempted tool calls. Establish whether each advertised path is disabled or denied before execution. Investigate documented PreToolUse denials while accounting for hosted and specialized paths outside hook coverage. Keep the user's ordinary profile unchanged. No live model call or reserved packet is needed for this check. Do not create a broad new platform or return to paid API setup. If isolation remains unresolved, identify the specific path and distinguish any proposed development exercise from qualification.
+
+The subscription protocol still needs to fix evidence isolation, fresh contexts, model/effort, attempt and operational limits, usage recording and collection records. Included allowance must be verified, paid usage disabled, and uncertain or exhausted allowance must stop dispatch. A local deadline does not establish a provider token cap. Any departure from the API controls requires a stated protocol amendment before qualification; the payment preference does not waive research requirements. Advertised tools alone do not prove execution, so the earlier API recommendation was premature.
+
+The user also pointed to successful Fable delivery as the precedent. Reuse the direct packet loader, fresh session and first answer collection pattern documented in FABLE-DIRECT-DELIVERY.md, with Codex specific checks. Fable used an empty tool list, a fifteen minute deadline and a bounded answer record; it did not establish a hard provider output token cap. Do not impose API billing controls on Astra simply to make the routes look alike. Retain the Fable account freshness correction and preserve the different client limitations.
+
+Current plan: pilot-draft-2026-09-15.13. The 144 response schedule, cases, role instructions, drafter and four acceptance requirements remain unchanged. Astra remains unqualified with zero qualification answers and zero experimental guidance runs. No new Fable export or live call occurred. Offline request preflight, cost arithmetic, plan/download consistency, Pages build and route/asset checks passed. Explanation and progress displayed text matches the previous release; their historical Fable status wording remains banked. Assessment runtime source is unchanged and the existing 86 test suite was not rerun. Website body corrections remain banked; current records and downloads are updated.
+
+## Previous work: separate profile investigation complete, 15 September 2026
 
 Read [the profile check report](research/development/phase1-harness/CODEX-PROFILE-CHECKS.md). Four fresh, unauthenticated profiles sent artificial questions to a local simulator. The user's ordinary profile was unchanged. No reserved material, credential or model call was involved. The simulator did not forward requests. The captured requests contained the supplied artificial instructions and question, plus Codex permission, collaboration and environment messages; no skills catalogue or project state appeared.
 
