@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.10**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.11**. Status: working redesign, not a new ratified preregistration.
+
+## Investigate subscription execution before API spending: 15 September 2026
+
+The user agreed to investigate Codex CLI using the existing subscription. Two artificial questions completed with requested Astra High settings, separate session IDs, structured answers and usage logs. No reserved evaluation material was loaded. Earlier configuration failures are preserved.
+
+Local canary checks found that disabling project instructions did not exclude global instructions. Skill exclusions required SKILL.md file paths in this installed version. These observations prevent treating an ordinary fresh Codex session as the controlled assessment environment. Next prepare a clean profile and verify the remaining tool, retry, usage and recording controls before adopting this route. The API runner remains available. The bank, model role instructions, drafter, sample and scoring thresholds remain unchanged; no assessor is qualified. Current plan downloads change, while website body copy remains banked.
 
 ## Prepare controlled qualification execution and explanation scoring: 15 September 2026
 

@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-15",
+  "cli_version": "0.154.0-alpha.6.2",
+  "cli_binary_sha256": "081e4de4be8e38fac6ed4d95e3b1a0b9f6d31c090ddc36e1696b349fe406f575",
+  "auth_status": "ChatGPT",
+  "forced_login_method": "chatgpt",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "served_model_snapshot_verified": false,
+  "successful_artificial_runs": 2,
+  "configuration_failures_before_sessions": 2,
+  "qualification_responses": 0,
+  "experimental_guidance_runs": 0,
+  "reserved_material_loaded": false,
+  "input_tokens_reported": 9937,
+  "output_tokens_reported": 67,
+  "distinct_session_ids": true,
+  "second_run_repeated_first_marker": false,
+  "observed_tool_execution_events": 0,
+  "tool_absence_proven": false,
+  "local_prompt_checks": [
+    {
+      "name": "instructions-v2-disabled",
+      "marker_present": [
+        true,
+        false
+      ],
+      "skills_catalog_present": false,
+      "role_messages": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "bytes": 7357
+    },
+    {
+      "name": "instructions-v2-positive-control",
+      "marker_present": [
+        true,
+        true
+      ],
+      "skills_catalog_present": false,
+      "role_messages": [
+        "developer",
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "bytes": 7500
+    }
+  ],
+  "qualification_route_ready": false,
+  "remaining": [
+    "Dedicated clean authenticated profile and exact context validation.",
+    "Actual tool exposure and internal retry behaviour.",
+    "Bounded usage, failure handling and collection audit differences."
+  ],
+  "earlier_api_runner_unchanged": true,
+  "private_record_files": 42,
+  "private_record_freeze_sha256": "05cf0a953e3e95c557b74655a9430ebba2ada3fc1452c733406862b054b09cdc",
+  "marker_order": [
+    "global_instructions",
+    "project_instructions"
+  ]
+}

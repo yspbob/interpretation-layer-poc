@@ -446,3 +446,16 @@ The adapter calculated a hash of the original response bytes but saved only pars
 **Practical implication:** Keep the original model response alongside the structured interpretation and link both to the assessed artifact. Preserve malformed responses too. Reformatting for display must not replace the original audit record.
 
 **Uncertainty and next action:** This detects later changes relative to a saved commitment; it does not independently certify execution or provider retention. Verify the same recording path in the first separately authorised live connection check. Do not add more model calls solely to repeat an unchanged storage test.
+
+
+## IL-027: A fresh task can still inherit global instructions
+
+**Source:** Local prompt rendering and artificial instruction canaries during the [Codex subscription investigation](development/phase1-harness/CODEX-SUBSCRIPTION-FEASIBILITY.md), 15 September 2026.
+
+**Evidence status:** Observed in installed CLI 0.154.0-alpha.6.2. It is not a claim about every client or proof that a model saw a reserved answer.
+
+Disabling project instruction loading removed the artificial project marker but retained the marker in the temporary profile's global instructions. A fresh task therefore did not, by itself, establish the intended input boundary. Skill folder exclusions also left the catalogue present; actual SKILL.md paths removed it in this version.
+
+**Practical implication:** Treat the client profile and automatically added instructions as part of the assessed configuration. Verify exclusion using identifiable artificial material, including a positive control, rather than relying only on the model saying it has no prior context.
+
+**Uncertainty and next action:** Local rendering does not capture the complete request sent during a live run. Prepare a dedicated clean profile and establish the tool and request audit boundary before using reserved evaluation material. The two successful subscription connection probes do not qualify any model role.
