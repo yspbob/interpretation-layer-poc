@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.8**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.9**. Status: working redesign, not a new ratified preregistration.
+
+## Assemble and rehearse the revised qualification batch: 15 September 2026
+
+Q01 passed its full retention audit, with earlier Fable exposure disclosed. The four family bank now contains 72 distinct items and the original 144 response design. Runtime assessment instructions match the declared revision; drafting and schemas are unchanged. Two Q01 requests exceeded the bound after instruction binding. Repeated source metadata was reduced, preserving every question, source passage, reference and expected answer. The previous version remains saved.
+
+All 73 runner tests passed. The exact private bank completed all 144 simulated requests with High effort as a request setting, a fictional model and artificial prices. Input denials and allowed file reads were checked. No live call or semantic qualification occurred. The largest padded request is close to the allowance, so actual configuration changes need another check.
+
+Next fix the scoring review procedure and prepare the bounded live entry point. Actual access, account verification and an approved allocation remain gates. This is an input and runtime commitment, not a complete live protocol freeze. Existing acceptance criteria and the no retry policy remain. Website body wording stays banked.
 
 ## Record the third replacement family: 15 September 2026
 

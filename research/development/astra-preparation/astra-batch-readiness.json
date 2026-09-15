@@ -1,0 +1,81 @@
+{
+  "mode": "provider-simulation",
+  "settings": {
+    "budget_nusd": 20000000,
+    "input_nusd_per_token": 1,
+    "input_padding_tokens": 4096,
+    "max_calls": 12,
+    "max_input_tokens": 32768,
+    "max_output_tokens": 8192,
+    "model": "fixture-model",
+    "output_nusd_per_token": 2,
+    "reasoning_effort": "high",
+    "request_byte_limit": 1000000,
+    "response_byte_limit": 1000000,
+    "timeout_seconds": 60
+  },
+  "prompt_version": "astra-assessment-instructions-v2",
+  "freeze_sha256": "7f503564d6dbb198b8494fcbac2a9acdb311521cff7e0e4865b80d6cc2c9be91",
+  "material_hash": "aaab8260b4874421e4d2d0af2cf3f5eedcf8956f8e939dc05d0f45e546c736ec",
+  "items": 72,
+  "families": [
+    "Q01",
+    "Q05",
+    "Q06",
+    "Q07"
+  ],
+  "scheduled": 144,
+  "simulated_sdk_requests": 144,
+  "model_calls": 0,
+  "qualified": false,
+  "semantic_assessment": "not performed",
+  "max_encoded_request_bytes": 28645,
+  "max_padded_request": 32741,
+  "boundary_denials": [
+    {
+      "case": "changed_instruction",
+      "denied": true,
+      "reason": "Role contract changed"
+    },
+    {
+      "case": "changed_source",
+      "denied": true,
+      "reason": "Frozen input mismatch"
+    },
+    {
+      "case": "injected_key",
+      "denied": true,
+      "reason": "Unexpected role input"
+    },
+    {
+      "case": "old_prompt_freeze",
+      "denied": true,
+      "reason": "Frozen role prompts differ from runtime"
+    }
+  ],
+  "limits": [
+    "Fictional model and prices; High effort tested only as request configuration.",
+    "No keys or investigator notes loaded by the runner.",
+    "Actual live provider, account, token bounds, billing and live entry point remain unverified."
+  ],
+  "date": "2026-09-15",
+  "tests_passed": 73,
+  "permitted_bank_files_opened": 18,
+  "input_files_committed": 52,
+  "prior_commitment_files_checked": 172,
+  "repair_commitment_files_checked": 26,
+  "Q01_items_retained": 18,
+  "Q01_source_excerpts_matched": 7,
+  "Q01_max_padded_request": 31986,
+  "Q01_prior_fable_exposure": true,
+  "rehearsal_freeze_sha256": "bb2735c71fb31a70ebd916c202f53b5bd178e35f78d8d99bdce28b8b6d8cda02",
+  "runtime_hashes": {
+    "provider.py": "fb5731b792a8e3eec4c7876974a37cc291d39f50036dc555313c75dff92d048a",
+    "qualification_batch.py": "ba7bb52a3009597ae38eddbf8cd1ea86d2a66fdaefbe0152ace179fb1f0aabed",
+    "harness.py": "5a555ee6295fb99ffaa384b1355f9be66df52d700e3673d3195436d451ccf091",
+    "schemas.py": "53af10ee957065149dcd302bcd2c1e12289e414c079ad40c32760308b0cdc880",
+    "test_prompt_binding.py": "4be300d4d6a606ef698f3d74844354a030a08097981d3486fa65e60a64cd228c"
+  },
+  "earlier_private_rehearsal_requests": 144,
+  "runtime_comment_correction": "Earlier Fable development informed the predeclared prompts. Replacement family preparation did not tune them. A corrected comment preserved the executable AST and strings; the final commitment was rehearsed again."
+}

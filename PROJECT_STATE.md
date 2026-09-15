@@ -10,11 +10,13 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.8**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.9**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
-- [Third replacement family Q07](research/development/astra-preparation/Q07-READINESS.md). All three replacements are prepared; Q01 final audit and the combined configuration remain.
+- [Revised Astra batch readiness](research/development/astra-preparation/ASTRA-BATCH-READINESS.md). Q01 audit, input assembly, prompt binding and the 144 request simulation are complete. Live protocol and execution gates remain.
+
+- [Third replacement family Q07](research/development/astra-preparation/Q07-READINESS.md). All three replacements are prepared; see the batch readiness record for later assembly and rehearsal.
 
 - [Second replacement family Q06](research/development/astra-preparation/Q06-READINESS.md) and [drafter learning record](research/development/astra-preparation/DRAFTER-LEARNINGS.md). See Q07 for current progress; saved lessons have not changed the drafter.
 
@@ -47,7 +49,25 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: all three replacement families prepared, 15 September 2026
+## Current work: revised bank assembled and rehearsed, 15 September 2026
+
+Read [Astra batch readiness](research/development/astra-preparation/ASTRA-BATCH-READINESS.md) and its machine readable totals. Q01's full 18 item family passed the retention and input audit. Seven source excerpts matched their original file hashes and line spans. Its source/reference and all expected decisions were reviewed; the earlier behavioural observations were not rerun unnecessarily. Prior Fable exposure remains disclosed. The committed repair selection retires Q02/Q03/Q04, and all 26 files matched its freeze. No Q01 questions were selected or tuned in response to Fable answers.
+
+All 172 files in the four inherited input commitments matched. Q01/Q05/Q06/Q07 are assembled with 72 items and 144 scheduled responses. The original schedule positions, roles and repetitions are preserved through whole family identifier replacement. The three declared assessment instructions are now installed in provider.py as astra-assessment-instructions-v2. Drafter instructions and schemas remain unchanged. The old bank is deliberately rejected by this runtime.
+
+Two Q01 requests exceeded the input allowance with the longer instructions. The first assembled version is preserved. Active bank-v2 removes repeated source origin URLs, repository names and revisions while preserving the global repository/revision, hashes, coordinates and every source passage, candidate, submitted review, reference, observation and expected answer. Q01's maximum padded request is 31,986. No role instruction was tuned using these cases.
+
+All 73 controller/provider/batch tests passed, plus a full public synthetic rehearsal. The exact private bank completed all 144 requests with locally generated synthetic answers, High effort as a request field, a fictional model and artificial prices. Socket connections and live HTTP transport were disabled. The loader opened the freeze and 17 permitted input files; no answer key or investigator file was read. Changed instruction/source, injected answer field and old prompt bank were rejected. All usage reservations settled under simulated accounting. Maximum padded request was 32,741 of 32,768. Actual token accounting and prices remain unverified; any request change needs another bound check.
+
+Private input record: C:/Users/Yaroslav/Documents/Codex/poc-private/qualification-revised-bank-2026-09-15/. Active freeze-v2.json: 7f503564d6dbb198b8494fcbac2a9acdb311521cff7e0e4865b80d6cc2c9be91; 52 files verified in private storage. Private rehearsal: C:/Users/Yaroslav/Documents/Codex/poc-private/qualification-revised-rehearsal-v2-2026-09-15/. Record freeze bb2735c71fb31a70ebd916c202f53b5bd178e35f78d8d99bdce28b8b6d8cda02 commits 1,354 files, including synthetic outputs and denial variants. They are not model responses. The earlier input freeze and rehearsal remain unchanged. A source comment was corrected to acknowledge that earlier development informed the declared prompt revision. The executable AST and prompt strings were identical, and the final runtime commitment passed another full rehearsal. Preparation scripts and final audit are retained separately with the audit completion record. No private records transfer through public Git.
+
+The completion audit and assembly scripts are at C:/Users/Yaroslav/Documents/Codex/poc-private/qualification-revised-audit-2026-09-15/. Its eight file commitment is f436ced7710d133a22a7b9acb4533f43d8f2870aea95992b618a48a521bd30a8. That completion check matched all 1,430 files across the new input bank, rehearsal and original repair selection. The public synthetic check record is local-runs/batch-checks/20260915T180944Z-9c263a37/.
+
+**Exact next step:** fix the explanation scoring and audit procedure, then implement and simulate a bounded live batch entry point tied to the input freeze, runtime and authorised allocation. This is preparation only. Verify actual model/account configuration, token bounds and prices before presenting a concrete live allocation for approval. Preserve all 144 scheduled responses, four acceptance requirements, prior exposure disclosures and the no retry policy. The current runner has no live batch switch. The input freeze is not a full live protocol freeze. Do not rerun unchanged simulations merely to mark progress.
+
+Current plan: pilot-draft-2026-09-15.9. Verification includes source commitments, semantic retention review, 73 tests, exact bank simulation and denials, plan/download consistency, Pages build and links, and reviewed public changes. Website explanation/progress body wording remains banked. No drafter change, live model call, new qualification response or experimental guidance run occurred. Astra remains unqualified.
+
+## Previous work: all three replacement families prepared, 15 September 2026
 
 The third replacement family is complete without model calls. Read [Q07 readiness](research/development/astra-preparation/Q07-READINESS.md). It contains 18 authored items across three roles and four reference rules, with supported alternatives, a partial omission, an evidenced exception and uncertainty about an application stage outside the supplied code. Its underlying decision differs from the other families. Proposed role instructions and acceptance requirements remain unchanged.
 

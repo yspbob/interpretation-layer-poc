@@ -57,7 +57,7 @@ These are bounded exploratory tolerances, not a statistical guarantee of general
 
 ## What needs preparing before execution
 
-The [proposed role instructions](astra-assessment-instructions-v2.json) retain the existing output schemas and add the evidence distinctions learned during development. They are not installed in the provider adapter. The current batch loader requires exact agreement with the runtime prompts, so the revised configuration must bind and verify the new prompt version before it can run. A changed prompt must not silently load the old freeze.
+The [proposed role instructions](astra-assessment-instructions-v2.json) retain the existing output schemas and add the evidence distinctions learned during development. They are now installed in the provider adapter and checked against the declared revision. The revised input bank passed its full offline rehearsal; see [batch readiness](ASTRA-BATCH-READINESS.md). The loader requires exact agreement with runtime prompts and rejects the old freeze. Actual live configuration remains outstanding.
 
 The loader accepts four family identifiers rather than hardcoding Q01 through Q04. Replacing three families therefore does not require a general scheduling framework. Reuse the fixed schedule design and existing source, identity and separation checks.
 
@@ -73,4 +73,4 @@ Fable is now an advisory reviewer, not a supplementary scorer. Its [instructions
 
 ## Next concrete deliverable
 
-All three replacements, [Q05](Q05-READINESS.md), [Q06](Q06-READINESS.md) and [Q07](Q07-READINESS.md), are prepared and audited with 18 role items each. Complete Q01's retention and input audit, preserving its earlier Fable exposure and the whole family selection. Then assemble the combined bank, bind the proposed runtime prompts and rehearse the exact configuration without model calls. Qualification responses must wait until that freeze and the actual execution and authorisation gates are complete. The separate [drafter learning record](DRAFTER-LEARNINGS.md) preserves earlier development lessons without changing prompts or exposing replacement answers.
+The four families are assembled and [the complete offline rehearsal passed](ASTRA-BATCH-READINESS.md). Q01 retention and the proposed runtime prompt binding are complete. Next fix the explanation scoring and audit procedure and prepare the bounded live entry point using simulation. Actual model/account verification and an authorised allocation remain gates. The input commitment is not a complete live protocol freeze. Preserve the separate drafter learning record without exposing reserved case answers or changing drafting on their basis.

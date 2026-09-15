@@ -1,5 +1,7 @@
 # Qualification runner: offline checks complete
 
+**Update, 15 September:** [The revised bank rehearsal](../astra-preparation/ASTRA-BATCH-READINESS.md) passed all 144 scheduled requests after assessment instruction binding. All 73 tests passed. The earlier results below remain historical; the new record contains the current input commitment and limits.
+
 The runner now rehearses the fixed 144 call qualification schedule with one shared spending record. It reuses the existing provider adapter and creates a fresh connection for each scheduled call. It currently accepts only locally supplied responses. It has no live execution switch, credential argument or permission to spend.
 
 This work tests the machinery that will deliver the reviewer tests. It does not test whether any reviewer gives a correct answer.

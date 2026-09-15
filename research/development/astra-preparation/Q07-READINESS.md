@@ -1,5 +1,7 @@
 # Third replacement family prepared
 
+**Later update, 15 September:** [The combined batch has now been rehearsed](ASTRA-BATCH-READINESS.md), including the completed Q01 audit. Live execution gates remain.
+
 15 September 2026. Q07 is prepared and audited. It has not been sent to a model for qualification.
 
 All three replacement families are now ready. They provide examples for checking whether the reviewers recognise supported guidance, mistakes and missing evidence. These are authored test materials, not guidance produced by the interpretation layer.

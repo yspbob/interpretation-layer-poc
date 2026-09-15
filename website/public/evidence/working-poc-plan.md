@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.8**
+Plan ID: **pilot-draft-2026-09-15.9**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -488,7 +488,7 @@ The investigator records each decision and its evidence in a versioned configura
 
 ### Phase 1: select guidance cases and prepare the restricted role path
 
-**Current next step, 15 September.** All three replacements, [Q05](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q05-READINESS.md), [Q06](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q06-READINESS.md) and [Q07](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q07-READINESS.md), are prepared with 18 role items each. Complete Q01's retention and input audit, preserving its prior Fable exposure and the whole family selection. Then assemble the four families, bind the revised runtime instructions and rehearse that exact configuration without model calls. Actual model access, account controls and an authorised allocation remain gates. The [drafter learning record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/DRAFTER-LEARNINGS.md) preserves earlier development lessons separately from reserved case answers. No drafter prompt changed. The 144 response design and acceptance requirements are unchanged. Astra is not qualified, and no model call was made during this preparation.
+**Current next step, 15 September.** Q01's retention audit is complete and the [revised four family batch](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/ASTRA-BATCH-READINESS.md) has passed its full 144 request simulation. The declared assessment instructions are installed; drafter instructions remain unchanged. The saved commitment fixes the inputs and rehearsed runtime, not a complete live protocol. Next fix the explanation scoring and audit procedure, then prepare and simulate the bounded live batch entry point. Actual model/account checks, token bounds, prices and an authorised allocation remain gates before live calls. Q01's prior Fable exposure stays disclosed. The 144 response design and four acceptance requirements are unchanged. Astra remains unqualified; no new model call or experimental guidance run occurred.
 
 #### Historical full workflow rehearsal: H04
 
