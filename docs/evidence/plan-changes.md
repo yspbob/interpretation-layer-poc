@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.13**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.14**. Status: working redesign, not a new ratified preregistration.
+
+## Check actual Codex tool denial: 15 September 2026
+
+The corrected clean profile blocked eight advertised paths through PreToolUse; the two code execution paths refused because their host was disabled. A no-hook listing control and startup marker established that the observed denials were meaningful. Earlier failures, including incorrect Windows hook invocation, are retained. All 21 completed sessions and 42 requests used artificial local responses, with no model calls.
+
+Next prepare the small subscription launcher and first answer audit using the Fable delivery pattern. No general containment claim, live qualification or API spending follows from these checks. The subscription protocol and public collection check remain prerequisites to reserved dispatch. The bank, sample, instructions and scoring criteria are unchanged. Website body changes remain banked.
 
 ## Use included subscription allowance only: 15 September 2026
 

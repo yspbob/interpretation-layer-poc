@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-15",
+  "mode": "local-simulator-only",
+  "cli_version": "0.154.0-alpha.6.2",
+  "sessions": 21,
+  "simulated_requests": 42,
+  "live_model_calls": 0,
+  "qualification_answers": 0,
+  "final_advertised_tool_paths": [
+    "functions.exec",
+    "functions.wait",
+    "functions.request_user_input",
+    "functions.request_user_input_async",
+    "collaboration.followup_task",
+    "collaboration.interrupt_agent",
+    "collaboration.list_agents",
+    "collaboration.send_message",
+    "collaboration.spawn_agent",
+    "collaboration.wait_agent"
+  ],
+  "hook_denials": 8,
+  "disabled_host_denials": 2,
+  "positive_control": "list_agents returned only the artificial current root when no hook was installed",
+  "startup_control_passed": true,
+  "earlier_configuration_attempts_preserved": true,
+  "reserved_material_loaded": false,
+  "qualified": false,
+  "limits": [
+    "One harmless call shape per advertised tool; not every argument or failure tested.",
+    "Hooks did not prevent calls in earlier incorrect configurations. Preflight and immutable settings are required.",
+    "No authenticated subscription collection or full containment certification.",
+    "No billing change, paid credit or API call."
+  ],
+  "private_record_files": 288,
+  "private_record_freeze_sha256": "c7284d07658407bfbbccf714be7a6faab9d56d3171e1683996b321caea2af2c3"
+}

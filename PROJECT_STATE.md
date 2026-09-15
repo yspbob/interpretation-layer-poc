@@ -10,13 +10,15 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.13**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.14**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
+- [Codex tool denial result](research/development/phase1-harness/CODEX-TOOL-DENIAL.md). All ten advertised paths were blocked or disabled in local simulation. Next prepare the bounded subscription launcher and collection audit; no qualification dispatch yet.
+
 - [Subscription only decision](research/development/phase1-harness/EXECUTION-COST-DECISION.md). The user rejected the API cost and chose included subscription allowance only. Next test tool denial locally; no API setup, paid credits or reserved dispatch.
 
-- [Separate Codex profile checks](research/development/phase1-harness/CODEX-PROFILE-CHECKS.md). Four local simulations are complete. Three failures stopped without retry, but tool exclusion and hard usage limits remain unverified. Next establish a concrete API cost option before further subscription integration.
+- [Separate Codex profile checks](research/development/phase1-harness/CODEX-PROFILE-CHECKS.md). Four local simulations are complete. Three failures stopped without retry, but tool exclusion and hard usage limits remain unverified. The later subscription only decision supersedes the API recommendation.
 
 - [Codex subscription feasibility](research/development/phase1-harness/CODEX-SUBSCRIPTION-FEASIBILITY.md). Two artificial subscription runs completed. Global instruction inclusion was observed in local canary checks; the qualification route needs a separate clean profile and remaining execution controls.
 
@@ -57,7 +59,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: subscription only chosen, 15 September 2026
+## Current work: local Codex tool denial checked, 15 September 2026
+
+Read [the tool denial result](research/development/phase1-harness/CODEX-TOOL-DENIAL.md) and its aggregate audit. All ten paths advertised by the installed client were exercised using artificial provider responses: eight were denied by PreToolUse and functions.exec/functions.wait refused because the code mode host was disabled. A no-hook control returned only the artificial root agent; the corrected hook blocked the same listing call. A startup marker confirmed hook execution. No real agents were spawned or contacted. Invalid/missing spawn arguments and nonexistent message targets were used; denial occurred before argument handling.
+
+Earlier configurations left listing callable and are preserved. The working setup uses a fresh profile with config.toml and hooks.json plus PowerShell's invocation operator before the quoted hook command. The interactive check exposed a command failure; noninteractive execution worked after correction. This does not prove every failure or argument combination safe. A broken hook can leave a tool callable. Hosted tools were absent from the captured catalogue; newly exposed paths require review. The ordinary profile was unchanged. A temporary interactive test profile completed non-admin sandbox setup; that is not certification of the assessment environment.
+
+Private record: C:/Users/Yaroslav/Documents/Codex/poc-private/codex-tool-denial-2026-09-15/. Freeze c7284d07658407bfbbccf714be7a6faab9d56d3171e1683996b321caea2af2c3 covers 288 verified files. Working records are the six local-runs/codex-tool-denial* dated directories. All 21 completed artificial sessions and 42 local requests were audited; none carried an authentication header or called a model. Each test supplied a tool response followed by a simulated final answer. Generated runtime databases and bundled skill copies remain outside the commitment. Two preliminary launch errors (script quoting and Windows argument quoting) occurred before sessions and are visible in this task's tool history. All test processes have ended.
+
+**Exact next step:** prepare a small subscription launcher and first answer audit using the Fable direct delivery pattern. Freeze the working profile, verify startup and denial locally before dispatch, load packets directly, use a fresh context, and stop on drift, hook failure, attempted tools, extra turns or uncertain usage. Reuse the existing packet identity and response validators; do not build a new general framework. Start with artificial local tests and no model calls. Then define the bounded public subscription check for schema, input fidelity, response identity and audit records after verifying included allowance and disabled paid usage. Do not expose reserved cases before the subscription protocol is fixed. No API setup or paid credits.
+
+Current plan: pilot-draft-2026-09-15.14. Subscription only remains required. The bank, 144 responses, role instructions, drafter and four acceptance requirements are unchanged. Astra remains unqualified with zero qualification answers and zero experimental guidance runs. No live call or new Fable export occurred. All 288 private file hashes, the final tool coverage audit, plan/download consistency and Pages route/asset checks passed. Displayed explanation and progress text matches the preceding release; historical Fable status wording remains banked. Assessment runtime source is unchanged, so the existing 86 test suite was not rerun. Website body corrections remain banked; only records and downloads change.
+
+## Previous work: subscription only chosen, 15 September 2026
 
 The user asked for the API cost, confirmed that no API account is set up, rejected the $250 conservative proposal as too expensive, and explicitly chose the existing subscription only. Read [the cost and route decision](research/development/phase1-harness/EXECUTION-COST-DECISION.md). No API setup, payment, paid credit or qualification dispatch is authorised. The API recommendation below is now historical.
 

@@ -31,6 +31,8 @@ A finite request count and a local deadline do not prove a hard provider token c
 
 ## The next small check
 
+Update: the [local tool denial check](CODEX-TOOL-DENIAL.md) is complete. All ten advertised paths were blocked or disabled in the corrected configuration. Next prepare the bounded subscription launcher and first answer audit. The original check description below is retained for context.
+
 The user pointed to completed Fable delivery as the practical precedent. Its [48 collected answers](../astra-preparation/FABLE-QUALIFICATION-RESULTS.md) establish that subscription delivery and automatic collection can work for this project. Reuse its frozen packet, fresh session and first answer recording pattern. Preserve the later correction about stale account readings. This supports trying the same approach with Astra; it does not establish that Codex has the same controls as Claude Code.
 
 Use the local simulator to attempt harmless tool calls in the clean test profile. Check whether each advertised path is disabled or denied before execution, and retain both the attempted call and the denial. No model or reserved question is needed for this check.

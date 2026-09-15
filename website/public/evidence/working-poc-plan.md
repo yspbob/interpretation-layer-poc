@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.13**
+Plan ID: **pilot-draft-2026-09-15.14**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -537,7 +537,9 @@ The connection records exact request bodies, returned model and service tier, us
 
 **Subscription only decision, 15 September.** The user rejected the costed API option and selected included subscription allowance only, with no API charges or paid credits. The [decision record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/EXECUTION-COST-DECISION.md) preserves the cost calculation and its assumptions. API availability is documented, but no account is set up and no live access was verified. The payment preference does not waive evidence isolation or assessment requirements.
 
-**Exact next step:** test harmless attempted tool calls against the clean Codex profile using the local simulator. Verify which advertised paths are disabled or denied before execution. Documented hooks are a candidate control, not a complete isolation boundary. Do not make live model calls, expose reserved cases or begin API setup for this check. Before qualification, fix a subscription protocol covering fresh contexts, permitted inputs, model/effort, attempts, operational limits, usage stops and collection records. Verify included allowance and disabled paid usage; stop on uncertainty or exhaustion. State any departure from API controls explicitly, including the absence of a proven provider token cap. The existing CLI configuration is not yet ready for qualification. Preserve the prepared cases, 144 scheduled responses and all four acceptance requirements. The preliminary familiarity screen remains separate. Final trial case selection, coding execution and the interactive checker remain later work.
+**Local tool check completed, 15 September.** The [Codex denial check](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/CODEX-TOOL-DENIAL.md) exercised all ten advertised paths with artificial responses. Eight were denied by the corrected hook and two refused because their execution host was disabled. A positive control and startup marker passed. Earlier configuration failures remain preserved. These are local client checks, not model qualification or a complete containment guarantee.
+
+**Exact next step:** prepare a small subscription launcher and first answer audit using the existing direct packet delivery pattern. Freeze the working profile, verify startup and denial locally, reuse identity/schema validators and stop on drift, hook errors, tool attempts, extra turns or uncertain allowance. First test with artificial local inputs and no model calls. Then define a bounded public subscription check after verifying included allowance and disabled paid usage. Do not expose reserved cases or begin API setup. Before qualification, fix a subscription protocol covering fresh contexts, permitted inputs, model/effort, attempts, operational limits, usage stops and collection records. Verify included allowance and disabled paid usage; stop on uncertainty or exhaustion. State any departure from API controls explicitly, including the absence of a proven provider token cap. The existing CLI configuration is not yet ready for qualification. Preserve the prepared cases, 144 scheduled responses and all four acceptance requirements. The preliminary familiarity screen remains separate. Final trial case selection, coding execution and the interactive checker remain later work.
 
 
 | Stage | Required work | Current state |
