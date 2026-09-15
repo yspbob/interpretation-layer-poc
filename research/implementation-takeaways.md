@@ -499,3 +499,18 @@ The verifier instruction required the exact submitted scope, but the schema desc
 **Practical implication:** Distinguish fields that carry reasoning from fields that must preserve an existing claim's exact text or identity. Make copying requirements explicit and verify them on development examples. Keep the protection against silently changing a claim while approving it.
 
 **Uncertainty and next action:** An explicit copying instruction is a proposed repair, not a demonstrated improvement. Test it on public material and disclose which prior responses informed it before selecting further qualification material. Do not retry the failed packet and label that retry untouched qualification.
+
+
+## IL-030: A fixed claim reference prevents rewriting, not misunderstanding
+
+**Source:** User clarification and agreed repair on 15 September 2026; [development report](development/phase1-harness/VERIFIER-INTERPRETATION.md) and [audit](development/phase1-harness/verifier-interpretation-results.json).
+
+**Status:** Implemented identity control with six successful public development checks. Not qualification or evidence of experimental benefit.
+
+A verifier should judge the claim and conditions it received. Returning a draft fingerprint and claim ID avoids asking it to repeat scope text. The controller must take released wording from that identified draft. This makes a changed version detectable, but a verifier can still misread the original wording.
+
+Test interpretation separately. Include limited observations that cannot support a universal statement, evidence under different settings, and undefined wording that permits different verdicts. Include supported counterparts so blanket refusal fails. Fix the expected verdict and required explanation before collection. Check cited evidence as well as the verdict.
+
+All six Astra responses met those criteria, once each on simple invented examples. The investigating assistant prepared and assessed them, without independent human review. For the future drafter, favour explicit conditions and quantifiers and resolve material ambiguity through a new claim version. Its prompt has not been changed here.
+
+**Next action:** Carry the fixed reference requirement and interpretation failure modes into suitable qualification material. Preserve the stopped attempt and do not use these examples as independent qualification.

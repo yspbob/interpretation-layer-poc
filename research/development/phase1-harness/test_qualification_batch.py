@@ -37,8 +37,8 @@ def synthetic_bank(root):
         candidate = {"claims": [{"id": "C1", "text": "A named value exists.", "scope": "Synthetic source only",
             "kind": "observation", "provenance": "executable_text_restatement", "exceptions": [],
             "evidence": evidence, "counter_evidence": []}]}
-        review = {"action": "freeze", "decisions": [{"claim_id": "C1", "verdict": "admit",
-            "reason": "Synthetic review", "supported_scope": "Synthetic source only", "evidence": evidence,
+        review = {"candidate_hash": digest(candidate), "action": "freeze", "decisions": [{"claim_id": "C1", "verdict": "admit",
+            "reason": "Synthetic review", "evidence": evidence,
             "contradictions": [], "missing_evidence": []}]}
         items = []
         for role in ("verifier", "guidance_assessor", "verifier_assessor"):
@@ -49,6 +49,7 @@ def synthetic_bank(root):
                     packet["review_hash"] = digest(packet["submission"])
                 else:
                     packet["candidate"] = candidate
+                    packet["candidate_hash"] = digest(candidate)
                     if role == "guidance_assessor":
                         packet.update(candidate_hash=digest(candidate), reference=reference)
                 identifier = f"{case}_{role}_{n}"
@@ -75,8 +76,8 @@ def synthetic_answer(packet):
     draft = packet["submission"]["draft"] if role == "verifier_assessor" else packet["candidate"]
     reason = "Synthetic transport response; no claim of semantic correctness."
     if role == "verifier":
-        return {"action": "stop_unresolved", "decisions": [{"claim_id": c["id"], "verdict": "unresolved",
-            "reason": reason, "supported_scope": c["scope"], "evidence": [],
+        return {"candidate_hash": digest(draft), "action": "stop_unresolved", "decisions": [{"claim_id": c["id"], "verdict": "unresolved",
+            "reason": reason, "evidence": [],
             "contradictions": [], "missing_evidence": []} for c in draft["claims"]]}
     if role == "guidance_assessor":
         return {"candidate_hash": packet["candidate_hash"],

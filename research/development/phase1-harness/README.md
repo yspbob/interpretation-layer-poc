@@ -1,5 +1,7 @@
 # First guidance harness
 
+Update, 15 September: [verifier identity and interpretation checks](VERIFIER-INTERPRETATION.md) replace repeated scope text with a reference to the unchanged draft and claim. The current development contract is v0.2. Earlier packets and results retain their original contracts and runtime requirements; the frozen qualification bank has not been migrated.
+
 Update, 13 September: the [model connection](PROVIDER.md) is now implemented and tested through the official SDK with simulated responses. The original container rehearsal below is retained for traceability. Its published results identify the code from commit eead62c; the controller has since been extended, so use that revision to reproduce the original script hashes. No live model has been qualified.
 
 This is a working rehearsal of the Phase 1 process. It passes authored drafts, reviews and assessments between separate containers and checks the resulting records. It makes no model calls. Passing this rehearsal does not qualify an AI verifier or demonstrate that the interpretation layer helps.

@@ -10,9 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references and a controlled subscription runner exist. The first Astra qualification allocation stopped after eleven responses, with no role qualified. The interactive checker and coding judge remain later work.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.17**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.18**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
+
+- [Verifier repair and interpretation checks](research/development/phase1-harness/VERIFIER-INTERPRETATION.md). Six public development responses met the saved verdict and explanation requirements. No role is qualified. Next review qualification exposure and compatibility.
 
 - [First Astra qualification attempt: stopped](research/development/phase1-harness/SUBSCRIPTION-QUALIFICATION-STOP.md). Eleven responses are preserved; the exact scope text check rejected the eleventh and 133 positions were not run. No role is qualified and no retry is authorised.
 
@@ -65,7 +67,29 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: first Astra qualification allocation closed, 15 September 2026
+## Current work: verifier repair tested, 15 September 2026
+
+The user agreed to identify the unchanged claim instead of copying its scope, added interpretation tests and requested execution. The controller supplies the complete draft fingerprint; the verifier returns it with each claim ID, verdict, evidence and explanation. It cannot return a replacement scope. The controller still releases original admitted claims. Correct identity does not prove correct understanding.
+
+The verifier must assess the whole claim under its stated conditions. Evidence contradicting it requires rejection. Missing evidence or wording with materially different readings requires an unresolved decision. A narrower alternative needs a new draft and review. Three pairs of public examples test partial versus complete input coverage, different versus matching settings, and ambiguous versus precise wording.
+
+All 122 offline tests passed. All six first Astra High responses matched the expected verdicts. The investigating assistant checked their explanations and cited passages against criteria fixed before dispatch; all met those criteria. These simple invented examples had one attempt each, with no independent human review. They are development checks, not qualification.
+
+The six calls used fresh sessions and included subscription allowance. Usage was 30,396 input and 1,554 output tokens. No reserved packet, operator retry, recorded tool attempt, remaining copied login, paid API route or Fable call was involved. Final allowance was 30% with no paid credits. The original eleven qualification responses and stopped outcome are unchanged. There are still zero experimental guidance runs.
+
+Contract phase1-development-v0.2 and assessment instruction version v3 now apply to development. Only verifier wording changed; the drafter and other assessment wording are unchanged. Earlier packets retain their original contract. The private frozen bank has not been migrated, retried or automatically replaced.
+
+Read the [report](research/development/phase1-harness/VERIFIER-INTERPRETATION.md) and [aggregate audit](research/development/phase1-harness/verifier-interpretation-results.json).
+
+Private records: C:/Users/Yaroslav/Documents/Codex/poc-private/interpretation-development-2026-09-15/. Input commitment: 0883a10aed391fb7c29e111ab90fd0e9fe62befd39dd50451715bf539ffe2aca. Collection commitment: 00722523c9fe7807876caffdd03b9a7e8cbbd10fef62e2490c72398a7aad1d83. All 130 included hashes verified before assessment. Temporary profile databases are excluded. The earlier client audit limitations remain. Six public development calls are added to the five earlier artificial checks; the 24 familiarity responses remain separate.
+
+**Exact next step:** review role and family exposure from the stopped allocation and compatibility with the changed verifier interface. Specify which material can be retained and which needs replacement, then prepare and check the corresponding qualification allocation. Do not resume the closed batch or use these six development examples as qualification evidence. The user authorised these development checks, not an unspecified new reserved batch or paid usage. Coding execution and interaction remain later work.
+
+Verification: all 122 offline tests passed, all six collection records and source references validated, and all 130 collection hashes verified. The Pages build checked routes and assets; plan downloads agree. No browser visual review was needed because page bodies did not change.
+
+Current plan: pilot-draft-2026-09-15.18. Website bodies remain unchanged as requested; downloads carry the current plan. Reviewed both views: their general verifier explanation is consistent, but visible progress still awaits the banked updates about later qualification and this repair. No website body release is implied by saving this work.
+
+## Previous work: first Astra qualification allocation closed, 15 September 2026
 
 The user explicitly approved up to 144 Astra High attempts through the existing subscription, with no extra spending and a stop at 10% remaining allowance. The approved configuration was c82f5816cf20d8b05eba45be6e35525e3a0d3825777f1f60a503eb91804146c1, matching the prepared bank, runtime, catalogue, protocol and scoring rules. Read [the stop report](research/development/phase1-harness/SUBSCRIPTION-QUALIFICATION-STOP.md) and [aggregate audit](research/development/phase1-harness/subscription-qualification-stop.json).
 

@@ -157,8 +157,9 @@ class HarnessTests(unittest.TestCase):
 
     def test_narrowed_admission_requires_redraft(self):
         verdict = review(self.draft)
-        verdict["decisions"][0]["supported_scope"] = "A different scope"
-        self.assertRaises(ValueError, validate_review, verdict, self.draft, self.sources)
+        changed = deepcopy(self.draft)
+        changed["claims"][0]["scope"] = "A different scope"
+        self.assertRaises(ValueError, validate_review, verdict, changed, self.sources)
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.17**
+Plan ID: **pilot-draft-2026-09-15.18**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -549,9 +549,23 @@ The proposed allocation is at most 144 sequential subscription attempts, with no
 
 **First subscription qualification attempt closed, 15 September.** The user approved the prepared allocation. The [run stopped at position 11](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/SUBSCRIPTION-QUALIFICATION-STOP.md): ten responses passed collection checks and the eleventh failed the verifier's exact scope string comparison. The remaining 133 positions were not run. All first responses, usage and the failure are committed, with no retry. No role qualified. The failed answer expanded four admitted scope fields; one expansion exactly reproduces supplied conditions. This is a confirmed contract mismatch, not proof that the answer's substantive reasoning was wrong. Full semantic scoring has not been performed.
 
-The original validator, instructions, criteria and failure remain unchanged. Eleven distinct sessions returned completed responses, with no recorded tool attempt and no copied credentials remaining. Fresh account checks showed included allowance and no paid credits. Reconciled usage is 114,960 input and 7,031 output tokens; no API spending occurred. A delayed monitoring display was corrected after the runner had already stopped normally. The frozen attempt cannot be resumed or relabelled as a pass.
+The original validator, instructions, criteria and failure remain preserved in the frozen run. Eleven distinct sessions returned completed responses, with no recorded tool attempt and no copied credentials remaining. Fresh account checks showed included allowance and no paid credits. Reconciled usage is 114,960 input and 7,031 output tokens; no API spending occurred. A delayed monitoring display was corrected after the runner had already stopped normally. The frozen attempt cannot be resumed or relabelled as a pass.
 
-**Exact next step:** propose an explicit instruction to copy the submitted scope string when admitting a claim, check it on public development material and determine the appropriate fresh qualification material for the revised verifier. Preserve exposure and the original result. No repair or replacement bank has been changed. The completed allocation does not authorise another live batch. Coding execution and interaction remain later work.
+**Verifier repair and public development checks, 15 September.**
+
+The user agreed to identify the unchanged claim instead of copying its scope, added interpretation tests and requested execution. The controller supplies the complete draft fingerprint; the verifier returns it with each claim ID, verdict, evidence and explanation. It cannot return a replacement scope. The controller still releases original admitted claims. Correct identity does not prove correct understanding.
+
+The verifier must assess the whole claim under its stated conditions. Evidence contradicting it requires rejection. Missing evidence or wording with materially different readings requires an unresolved decision. A narrower alternative needs a new draft and review. Three pairs of public examples test partial versus complete input coverage, different versus matching settings, and ambiguous versus precise wording.
+
+All 122 offline tests passed. All six first Astra High responses matched the expected verdicts. The investigating assistant checked their explanations and cited passages against criteria fixed before dispatch; all met those criteria. These simple invented examples had one attempt each, with no independent human review. They are development checks, not qualification.
+
+The six calls used fresh sessions and included subscription allowance. Usage was 30,396 input and 1,554 output tokens. No reserved packet, operator retry, recorded tool attempt, remaining copied login, paid API route or Fable call was involved. Final allowance was 30% with no paid credits. The original eleven qualification responses and stopped outcome are unchanged. There are still zero experimental guidance runs.
+
+Contract phase1-development-v0.2 and assessment instruction version v3 now apply to development. Only verifier wording changed; the drafter and other assessment wording are unchanged. Earlier packets retain their original contract. The private frozen bank has not been migrated, retried or automatically replaced.
+
+Read the [development report](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/VERIFIER-INTERPRETATION.md) for evidence and limits.
+
+**Exact next step:** review role and family exposure from the stopped allocation and compatibility with the changed verifier interface. Specify which material can be retained and which needs replacement, then prepare and check the corresponding qualification allocation. Do not resume the closed batch or use these six development examples as qualification evidence. The user authorised these development checks, not an unspecified new reserved batch or paid usage. Coding execution and interaction remain later work.
 
 
 | Stage | Required work | Current state |

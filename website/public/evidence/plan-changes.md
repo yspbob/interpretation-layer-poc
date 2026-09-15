@@ -1,6 +1,22 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.17**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.18**. Status: working redesign, not a new ratified preregistration.
+
+## Bind decisions to fixed claims and test interpretation: 15 September 2026
+
+The user agreed to identify the unchanged claim instead of copying its scope, added interpretation tests and requested execution. The controller supplies the complete draft fingerprint; the verifier returns it with each claim ID, verdict, evidence and explanation. It cannot return a replacement scope. The controller still releases original admitted claims. Correct identity does not prove correct understanding.
+
+The verifier must assess the whole claim under its stated conditions. Evidence contradicting it requires rejection. Missing evidence or wording with materially different readings requires an unresolved decision. A narrower alternative needs a new draft and review. Three pairs of public examples test partial versus complete input coverage, different versus matching settings, and ambiguous versus precise wording.
+
+All 122 offline tests passed. All six first Astra High responses matched the expected verdicts. The investigating assistant checked their explanations and cited passages against criteria fixed before dispatch; all met those criteria. These simple invented examples had one attempt each, with no independent human review. They are development checks, not qualification.
+
+The six calls used fresh sessions and included subscription allowance. Usage was 30,396 input and 1,554 output tokens. No reserved packet, operator retry, recorded tool attempt, remaining copied login, paid API route or Fable call was involved. Final allowance was 30% with no paid credits. The original eleven qualification responses and stopped outcome are unchanged. There are still zero experimental guidance runs.
+
+Contract phase1-development-v0.2 and assessment instruction version v3 now apply to development. Only verifier wording changed; the drafter and other assessment wording are unchanged. Earlier packets retain their original contract. The private frozen bank has not been migrated, retried or automatically replaced.
+
+**Exact next step:** review role and family exposure from the stopped allocation and compatibility with the changed verifier interface. Specify which material can be retained and which needs replacement, then prepare and check the corresponding qualification allocation. Do not resume the closed batch or use these six development examples as qualification evidence. The user authorised these development checks, not an unspecified new reserved batch or paid usage. Coding execution and interaction remain later work.
+
+Website body changes remain banked.
 
 ## Record the stopped Astra qualification allocation: 15 September 2026
 

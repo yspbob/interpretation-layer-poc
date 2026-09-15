@@ -26,9 +26,10 @@ CLAIM = obj(dict(id=ID, text=TEXT, kind=enum("observation", "recommendation", "c
                  evidence=array(REF), counter_evidence=array(REF)))
 DRAFT = obj(dict(claims=array(CLAIM, 32)))
 DECISION = obj(dict(claim_id=ID, verdict=enum("admit", "reject", "unresolved"),
-                    reason=TEXT, supported_scope=TEXT, evidence=array(REF),
+                    reason=TEXT, evidence=array(REF),
                     contradictions=array(TEXT), missing_evidence=array(TEXT)))
-REVIEW = obj(dict(decisions=array(DECISION, 32), action=enum("freeze", "revise", "stop_unresolved")))
+REVIEW = obj(dict(candidate_hash=HASH, decisions=array(DECISION, 32),
+                  action=enum("freeze", "revise", "stop_unresolved")))
 GUIDANCE_ASSESSMENT = obj(dict(
     candidate_hash=HASH,
     claims=array(obj(dict(claim_id=ID, verdict=enum("supported", "unsupported", "unresolved"),

@@ -1,5 +1,6 @@
 """Authored example answers and assessments. These scripts are NOT AI judgements."""
 from copy import deepcopy
+from harness import digest
 
 
 def reference_at(sources, path, needle, supports):
@@ -50,9 +51,9 @@ def claims_for(sources, reference):
 
 def review(draft, verdict="admit", action="freeze", overrides=None):
     overrides = overrides or {}
-    return {"action": action, "decisions": [dict(claim_id=c["id"], verdict=overrides.get(c["id"], verdict),
+    return {"candidate_hash": digest(draft), "action": action, "decisions": [dict(claim_id=c["id"], verdict=overrides.get(c["id"], verdict),
              reason="Authored development decision; not a semantic model judgement.",
-             supported_scope=c["scope"], evidence=c["evidence"], contradictions=[], missing_evidence=[])
+             evidence=c["evidence"], contradictions=[], missing_evidence=[])
              for c in draft["claims"]]}
 
 

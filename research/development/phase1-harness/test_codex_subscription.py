@@ -23,14 +23,15 @@ def public_packet(role):
         "kind": "observation", "provenance": "executable_text_restatement", "exceptions": [],
         "evidence": evidence, "counter_evidence": []}]}
     reference = {"units": [{"id": "U1", "requirement": "Identify the value assigned to DEFAULT_TIMEOUT in widget.py.", "evidence": evidence}]}
-    review = {"action": "freeze", "decisions": [{"claim_id": "C1", "verdict": "admit", "reason": "Line 1 assigns 30.",
-        "supported_scope": "The supplied widget.py only", "evidence": evidence, "contradictions": [], "missing_evidence": []}]}
+    review = {"candidate_hash": digest(draft), "action": "freeze", "decisions": [{"claim_id": "C1", "verdict": "admit", "reason": "Line 1 assigns 30.",
+        "evidence": evidence, "contradictions": [], "missing_evidence": []}]}
     packet = {"role": role, "contract": CONTRACT, "sources": sources}
     if role == "verifier_assessor":
         packet.update(submission={"draft": draft, "review": review}, reference=reference)
         packet["review_hash"] = digest(packet["submission"])
     else:
         packet["candidate"] = draft
+        packet["candidate_hash"] = digest(draft)
         if role == "guidance_assessor":
             packet.update(reference=reference, candidate_hash=digest(draft))
     return packet

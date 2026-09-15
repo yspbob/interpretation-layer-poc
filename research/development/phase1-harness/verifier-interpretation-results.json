@@ -1,0 +1,128 @@
+{
+  "status": "public_development_checks_passed_not_qualification",
+  "model_requested": "gpt-6-astra",
+  "effort_requested": "high",
+  "contract": "phase1-development-v0.2",
+  "prompt_version": "astra-assessment-instructions-v3",
+  "offline_tests": 122,
+  "public_model_calls": 6,
+  "experimental_guidance_runs": 0,
+  "reserved_qualification_retries": 0,
+  "fresh_sessions": 6,
+  "known_tool_attempts": 0,
+  "retries_by_operator": 0,
+  "usage": {
+    "input_tokens": 30396,
+    "output_tokens": 1554,
+    "reasoning_output_tokens": 279,
+    "cached_input_tokens": 3328
+  },
+  "input_freeze_sha256": "0883a10aed391fb7c29e111ab90fd0e9fe62befd39dd50451715bf539ffe2aca",
+  "collection_file_count": 130,
+  "collection_freeze_sha256": "00722523c9fe7807876caffdd03b9a7e8cbbd10fef62e2490c72398a7aad1d83",
+  "reason_review_method": "Investigating assistant compared each explanation and cited passage with criteria fixed before collection. No independent human or qualified assessor review.",
+  "limits": [
+    "Simple public examples, one response each; not independent qualification.",
+    "Client records do not independently prove backend model identity or reveal every internal retry.",
+    "The local deadline is not a hard provider token cap.",
+    "Correct claim identity does not establish correct interpretation."
+  ],
+  "cases": [
+    {
+      "case": "partial_inputs",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "verdict_check": "pass",
+      "reason_review": "pass",
+      "reason_review_basis": "Identifies untested blue; does not treat absence of evidence as a contradiction. Suggests narrowing only as a new drafter version.",
+      "citations": [
+        {
+          "path": "observations.txt",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "answer_hash": "772166bea17137a806705ad8618fcf5fb01a957a85b24edc8617c2a17601ba48"
+    },
+    {
+      "case": "complete_inputs",
+      "expected": "admit",
+      "actual": "admit",
+      "verdict_check": "pass",
+      "reason_review": "pass",
+      "reason_review_basis": "Cites both observations and the complete supported set. Admits the full claim.",
+      "citations": [
+        {
+          "path": "observations.txt",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "answer_hash": "d65387c5b800d20b87178a0b1886491021905e4862223de57e0d577e35592bf9"
+    },
+    {
+      "case": "wrong_setting",
+      "expected": "reject",
+      "actual": "reject",
+      "verdict_check": "pass",
+      "reason_review": "pass",
+      "reason_review_basis": "Cites the default behaviour as a contradiction and rejects use of the special setting to justify the claim.",
+      "citations": [
+        {
+          "path": "observations.txt",
+          "start": 2,
+          "end": 3
+        }
+      ],
+      "answer_hash": "63d352412531946286b4b77c3b56e40f35f13139a67f398ed80c0658d575e12f"
+    },
+    {
+      "case": "matching_setting",
+      "expected": "admit",
+      "actual": "admit",
+      "verdict_check": "pass",
+      "reason_review": "pass",
+      "reason_review_basis": "Cites the explicitly scoped special setting and correctly admits the claim.",
+      "citations": [
+        {
+          "path": "observations.txt",
+          "start": 3,
+          "end": 3
+        }
+      ],
+      "answer_hash": "5582c7b20cd9f9a5bf534862dfd0599fba88a0a7249d4e6bcc7482967d473692"
+    },
+    {
+      "case": "ambiguous_wording",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "verdict_check": "pass",
+      "reason_review": "pass",
+      "reason_review_basis": "Distinguishes trimming from changing case, identifies the missing definition and requests clarification.",
+      "citations": [
+        {
+          "path": "observations.txt",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "answer_hash": "d63c555407909f6282064295ab1d2be74470ac482e396f2769436cc852ce7529"
+    },
+    {
+      "case": "precise_wording",
+      "expected": "admit",
+      "actual": "admit",
+      "verdict_check": "pass",
+      "reason_review": "pass",
+      "reason_review_basis": "Cites the explicit trimming statement and admits the whole claim including all text inputs.",
+      "citations": [
+        {
+          "path": "observations.txt",
+          "start": 1,
+          "end": 1
+        }
+      ],
+      "answer_hash": "42c1383e1bd6147f5a37d33713dc5c698b5bc5ac2df5ff25cc90da2305e41237"
+    }
+  ]
+}

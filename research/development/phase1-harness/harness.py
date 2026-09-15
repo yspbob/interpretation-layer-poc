@@ -13,7 +13,7 @@ from schemas import DRAFT, REVIEW, GUIDANCE_ASSESSMENT, VERIFIER_ASSESSMENT, val
 
 MAX_INPUT = 8_000_000
 MAX_OUTPUT = 128_000
-CONTRACT = "phase1-development-v0.1"
+CONTRACT = "phase1-development-v0.2"
 
 
 def wire(value):
@@ -81,15 +81,13 @@ def validate_draft(draft, sources):
 
 def validate_review(review, draft, sources):
     validate(review, REVIEW)
+    require(review["candidate_hash"] == digest(draft), "Review candidate version mismatch")
     require(ids(review["decisions"], "claim_id") == ids(draft["claims"], "id"),
             "Review must address exactly the submitted claims")
     for decision in review["decisions"]:
         refs_valid(decision["evidence"], sources)
-        if decision["verdict"] == "admit":
-            original = next(c for c in draft["claims"] if c["id"] == decision["claim_id"])
-            require(decision["supported_scope"] == original["scope"],
-                    "Changed scope requires a new drafter version before admission")
-    # The verifier can suggest changes, but only exact submitted claim versions are frozen.
+    # Identity binds the submitted text, scope and exceptions. It does not prove
+    # correct interpretation; evidence and reasoning need independent assessment.
 
 
 def assess_guidance(result, candidate, reference):
@@ -189,7 +187,7 @@ class Controller:
                        "response": replay, "reads": list(self.sources["files"])}
         else:
             require(replay is None, "Scripted answer cannot enter a provider call")
-            if role == "guidance_assessor":
+            if role in {"verifier", "guidance_assessor"}:
                 packet["candidate_hash"] = digest(packet["candidate"])
             if role == "verifier_assessor":
                 packet["review_hash"] = digest(packet["submission"])
