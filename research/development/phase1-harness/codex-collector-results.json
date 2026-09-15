@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-15",
+  "scope": "Three artificial public examples only; not qualification",
+  "unit_tests": 16,
+  "public_subscription_runs": 3,
+  "qualification_answers": 0,
+  "experimental_guidance_runs": 0,
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "input_tokens": 15187,
+  "output_tokens": 364,
+  "roles": [
+    {
+      "role": "verifier",
+      "status": "structurally_valid",
+      "answer_hash": "319b7ef434c825089333b52297b9048854b751a281f003ba4ecaf5c6042017df",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 4953,
+        "output_tokens": 144,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "role": "guidance_assessor",
+      "status": "structurally_valid",
+      "answer_hash": "bb7bc0692dc1818b4f6eedadc073b20efa0391e54317f0c0d392945b36b45538",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 5090,
+        "output_tokens": 128,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "role": "verifier_assessor",
+      "status": "structurally_valid",
+      "answer_hash": "a023195da785d25cd14d2c4296f55cac05e6440bb9ac06a42950c68a51c0b0a0",
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 5144,
+        "output_tokens": 92,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "raw_subscription_request_captured": false,
+  "immutable_served_model_verified": false,
+  "hard_provider_token_cap": false,
+  "all_temporary_login_copies_removed": true,
+  "separately_billed_api_used": false,
+  "qualified": false,
+  "local_checks": "Three successful role collections; tool, deadline, drift and corrected stop failures; original stop race retained.",
+  "revisions": "After the first two live checks, added rejection of stderr diagnostics. After all three, added input source/citation validation, runtime snapshotting and final STOP check. The saved three inputs and outputs pass all final checks. No prompt/schema or model setting changed; no live rerun.",
+  "private_freeze_sha256": "0ccc4086fda1124e953a15b2d67fe2d0972cb89643eb5bc2b3140f855f914034",
+  "private_evidence_files": 340
+}

@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.14**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.15**. Status: working redesign, not a new ratified preregistration.
+
+## Complete the public subscription collection check: 15 September 2026
+
+The user authorised the remaining collector work, local checks and bounded public subscription examples. All three assessment roles returned valid answers for one artificial source assignment in fresh profiles. Sixteen focused tests pass. Client simulations checked exact packet delivery, tool denial, deadline, input drift and stopping; a stop race was corrected with the original failure retained. The three saved live inputs and outputs pass the final validators without rerunning a model.
+
+These are development checks, not qualification. No reserved case, API charge, changed role instruction or new Fable call occurred. The next step is to fix the subscription protocol and integrate the existing schedule, explicitly preserving the limits of client event records, model identity, internal retry visibility and local usage controls. The bank, 144 response schedule and four acceptance requirements remain unchanged. Website body changes remain banked.
 
 ## Check actual Codex tool denial: 15 September 2026
 

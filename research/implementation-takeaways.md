@@ -470,3 +470,16 @@ Follow through on IL-021 and IL-027, 15 September: the user rejected the API cos
 
 
 Follow through on IL-027, 15 September: [actual tool denial tests](development/phase1-harness/CODEX-TOOL-DENIAL.md) found that a misconfigured hook left listing callable, while the corrected Windows command blocked it. All ten advertised paths were then denied or disabled in local simulation. A positive control and startup marker made the result distinguishable from an unrecognized tool request. Freeze and check the client configuration before using it; record hook errors as failures rather than silently continuing. Coverage is limited to the tested client and call shapes. Next integrate these checks with direct packet delivery; no drafter behaviour or guidance finding follows from them.
+
+
+## IL-028: An operational stop must also be checked when an answer completes
+
+**Source:** Artificial client tests in the [subscription collector check](development/phase1-harness/CODEX-COLLECTOR.md), 15 September 2026.
+
+**Evidence status:** Observed implementation failure, corrected in the collector and checked locally. This is not evidence about guidance quality.
+
+A stop request could arrive after the monitoring loop's last check but before the client finished. The first collector then accepted the answer. It now checks again before completing collection and while auditing the answer. The initial failure is retained. The first answer remains saved even when the stop invalidates that attempt.
+
+**Practical implication:** Check stop and integrity conditions at completion as well as during work. Keep invalid outputs for the audit without promoting them to successful results.
+
+**Uncertainty and next action:** External stopping does not guarantee that the provider has stopped computation. One forced tool test sent a second request before the monitor reacted, although the tool was denied. Record these limits in the subscription qualification protocol; do not claim that a local deadline establishes a provider token cap.

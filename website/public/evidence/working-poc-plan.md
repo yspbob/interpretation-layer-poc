@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.14**
+Plan ID: **pilot-draft-2026-09-15.15**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -539,7 +539,11 @@ The connection records exact request bodies, returned model and service tier, us
 
 **Local tool check completed, 15 September.** The [Codex denial check](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/CODEX-TOOL-DENIAL.md) exercised all ten advertised paths with artificial responses. Eight were denied by the corrected hook and two refused because their execution host was disabled. A positive control and startup marker passed. Earlier configuration failures remain preserved. These are local client checks, not model qualification or a complete containment guarantee.
 
-**Exact next step:** prepare a small subscription launcher and first answer audit using the existing direct packet delivery pattern. Freeze the working profile, verify startup and denial locally, reuse identity/schema validators and stop on drift, hook errors, tool attempts, extra turns or uncertain allowance. First test with artificial local inputs and no model calls. Then define a bounded public subscription check after verifying included allowance and disabled paid usage. Do not expose reserved cases or begin API setup. Before qualification, fix a subscription protocol covering fresh contexts, permitted inputs, model/effort, attempts, operational limits, usage stops and collection records. Verify included allowance and disabled paid usage; stop on uncertainty or exhaustion. State any departure from API controls explicitly, including the absence of a proven provider token cap. The existing CLI configuration is not yet ready for qualification. Preserve the prepared cases, 144 scheduled responses and all four acceptance requirements. The preliminary familiarity screen remains separate. Final trial case selection, coding execution and the interactive checker remain later work.
+**Subscription collector checked, 15 September.** The [collection report](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/CODEX-COLLECTOR.md) records three successful public artificial examples, one per assessment role, using the existing subscription. Each returned one valid answer in a fresh profile. Sixteen focused tests and actual client simulations checked collection and failure handling; a stop race was found and corrected. No reserved case was sent. These examples establish neither assessor quality nor guidance benefit.
+
+The collector retains intended inputs, exact settings, first answers and client events. Complete authenticated wire capture, immutable served model identity, internal retries and a hard provider token limit are not established. A local tool test reached a second request before external stopping; the tool was denied and the collection rejected. These limits must appear in the subscription protocol rather than being implied away by a successful answer. Included allowance and zero paid credits were checked before each live call. No separately billed API route was used.
+
+**Exact next step:** fix the subscription qualification protocol and connect the collector to the existing schedule and shared attempt record. Declare fresh contexts, permitted inputs, model/effort, first answer handling, operational limits, allowance checks and the audit limits above. Stop on uncertain allowance, unexpected tools, failures or configuration drift. Freeze the concrete allocation before reserved dispatch. Preserve the cases, 144 scheduled responses, role instructions and all four acceptance requirements. No additional framework, API setup or bank expansion is required. Final trial case selection, coding execution and interaction remain later work.
 
 
 | Stage | Required work | Current state |
