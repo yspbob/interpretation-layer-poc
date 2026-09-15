@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.2**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.3**. Status: working redesign, not a new ratified preregistration.
+
+## Record the completed development repair: 15 September 2026
+
+The user explicitly approved the six revised packets through included Claude Max. All six first responses are preserved from separate Fable High sessions. All 46 individual claim and coverage verdicts were correct. Five complete responses passed the original explanation criterion; the sixth contains a broad statement whose narrower possible reading would yield a pass. Preserve both interpretations. This selected development set cannot qualify the assessor under either reading or establish a general improvement rate.
+
+The single agreed repair cycle is complete. The original qualification and criteria remain unchanged. Revisit the supplementary role before further model work; the investigator's suggestion to use Fable for source checked objections instead of scoring is not an adopted protocol change. Recorded account views settled within the included allowance and showed zero credit spending. The full client audit passed; hidden provider behaviour and the absence of independent human certification remain limitations.
 
 ## Agree one assessor repair cycle: 15 September 2026
 

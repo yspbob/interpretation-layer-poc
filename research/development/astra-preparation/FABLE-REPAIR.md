@@ -2,7 +2,7 @@
 
 15 September 2026. The user agreed to one focused repair cycle after the [failed qualification](FABLE-QUALIFICATION-RESULTS.md).
 
-**The repair is prepared and locally checked. The six model checks have not run.** Automatic approval review requires explicit permission to send the revised packets to Anthropic through Claude Max. The original qualification result remains unchanged.
+**The six model checks are complete.** The user explicitly approved the revised exports after the initial automatic approval rejection. See the [development result](FABLE-REPAIR-RESULTS.md): all six verdict sets were correct; five explanations passed under the original reading, with a narrower possible reading of the remaining sentence recorded separately. The original qualification result remains unchanged. The sections below preserve the preparation and agreed procedure.
 
 ## What changed
 
@@ -50,4 +50,4 @@ Completed readiness manifest, including the account control addendum: `7c219d474
 
 The records preserve the six inputs, separate keys, selection and stop rule, evidence checks, revised instruction, original audit code and the development adapter. The original qualification and scoring commitments remain those in the result report.
 
-The next step is the six development responses after explicit export approval and successful live settings and allowance checks. No new qualification batch or paid spending is authorised by this document. Website wording and progress updates remain banked; the downloadable working plan records this decision.
+The original next step was the six development responses after explicit export approval and successful live settings and allowance checks. That step is now complete. The next decision is the supplementary reviewer's role, as explained in the result report. No new qualification batch or paid spending is authorised by this document. Website wording and progress updates remain banked; the downloadable working plan records this decision.
