@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.15**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.16**. Status: working redesign, not a new ratified preregistration.
+
+## Prepare subscription protocol and connect the schedule: 15 September 2026
+
+The user authorised this implementation step. The new protocol fixes fresh profiles, unchanged role inputs, position specific account checks, one collector attempt per position, first answer retention and stopping. It explicitly records the lack of full authenticated request capture, immutable backend identity, visibility of internal retries and a hard provider token cap. These narrower audit claims replace the API-specific transport assumptions for the proposed subscription route.
+
+The coordinator preserves the existing bank, 144 response schedule and four scoring requirements. It stops on the first collection failure or uncertainty and leaves later positions not run. Twenty eight focused tests and a complete exact bank rehearsal passed with simulated answers and blocked model connections. A private allocation is prepared with approval fields false; no reserved model call occurred. Website body changes remain banked.
 
 ## Complete the public subscription collection check: 15 September 2026
 

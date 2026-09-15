@@ -1,0 +1,41 @@
+# Astra qualification through the Codex subscription
+
+Version: subscription-qualification-v1. Fixed before reserved collection. Preparation does not authorise a model run.
+
+## What this run will establish
+
+We will qualify the verifier, guidance assessor and verifier assessor using the existing Q01, Q05, Q06 and Q07 bank. There are 72 distinct packets, each used twice, giving 144 scheduled responses and 48 per role. Keep their frozen order. The bank, role instructions and [four scoring requirements](SCORING-PROCEDURE.md) do not change.
+
+Any qualification applies to the recorded Codex client configuration requesting Astra at High effort. It is not certification of an independently identified backend snapshot. It does not qualify the drafter, coding judge or interactive checker.
+
+## What each attempt receives
+
+The existing allowlisted bank loader reads the input commitment, sources, references, prompts and schedule. It does not read scoring keys or investigator notes. The collector sends only the current role's packet, the unchanged role instruction and its response schema. A verifier receives no assessor reference.
+
+Each attempt starts with an empty working folder and separate Codex profile. It has no previous conversation. Only the ChatGPT login cache is copied temporarily, then removed. Project instructions, memory, apps, plugins and skills are disabled using the tested configuration. The code execution host is disabled and the inspected hook denies tool use. The client still adds its own instructions and advertises some disabled or denied tools. These are part of the recorded configuration.
+
+Pin the client binary, model catalogue, Python environment, collector, batch coordinator, existing validators, role prompts, schemas, this protocol and the scoring procedure. A change prevents the next attempt and invalidates an active collection if detected. Do not alter prompts or cases in response to collected answers.
+
+## Allocation and payment
+
+The proposed allocation is at most 144 sequential attempts through the existing subscription, with zero additional spending. No API fallback, purchased credits, reset credits or parallel model sessions are permitted. The allocation record binds the input bank, schedule, runtime, output folder and account. It requires an explicit approval reference and expiry before dispatch. The preparation command leaves it unapproved.
+
+Before every attempt, obtain a new account observation for that scheduled position. At dispatch it must be no more than 120 seconds old, match the login account, allow ordinary usage, show more than 10% remaining in every reported core Codex window, and show zero paid credits. Missing or uncertain information stops the batch. The observer records the source of the check; filling a field is not independent evidence that a check occurred.
+
+Each attempt has a five minute local deadline and a one megabyte output record limit. At most 144 such attempts are permitted, giving a twelve hour maximum of active collection time before overhead. These are operational limits, not a provider token cap. Record reported input and output tokens cumulatively; do not convert subscription tokens into a fictional API invoice or infer a precise subscription percentage cost from them.
+
+## Collection and stopping
+
+Create one new output folder and save the full policy and schedule before starting. Save a durable reservation for the next position before passing its packet to the collector. Retain the packet, settings, hook checks, client events, first answer, usage and result. A second answer cannot replace the first. A reused session identifier fails collection.
+
+Stop at the first failed or uncertain attempt, an operator stop, expired or revoked approval, configuration change, stale allowance or unexpected tool activity. Preserve all records. The attempted position remains used, and later positions remain not run. Do not retry, resume automatically or create another folder to evade a used allocation. A crash with an unfinished reservation requires explicit reconciliation and formal closure before any further decision. An incomplete collection cannot pass qualification.
+
+A normal completion or recorded stop produces a summary for all 144 positions and a file commitment before semantic scoring. Remove copied credentials and exclude generated profile databases from that commitment; keep the exact profile configuration and hook files. Apply the unchanged scoring procedure only after this commitment exists. Invalid or unrun responses remain in the denominators.
+
+## Limits we must report
+
+The public checks captured exact requests to a local simulator. The authenticated subscription route records intended input files, settings, client events and first answers, but not the full provider wire exchange or an immutable served model identifier. Internal retries may not be visible. A local tool test sent a follow-up request before the external stop reacted; the tool was denied and collection was rejected. We therefore promise one collector attempt per position, not exactly one backend request.
+
+The hook configuration has been exercised for the ten advertised paths in the pinned client. Broken hooks have previously failed open. Fresh profiles and denied tools reduce the demonstrated exposure paths; they are not a proof of arbitrary operating system containment or absence of prior model knowledge. Any attempted tool use or unexpected diagnostic invalidates the collection and stops later dispatch.
+
+These limitations replace API-specific claims of exact request capture, returned model identity, disabled transport retries and a provider output allowance. They do not relax evidence separation, first answer retention or scoring. Report the narrower execution evidence with any result. The successful public examples establish delivery on simple material, not assessor quality.

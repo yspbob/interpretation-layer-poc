@@ -1,0 +1,20 @@
+{
+  "approval": false,
+  "collection_hash": "becd34d6a08703a5a5a77dbb82ae94c51c7686c2ece6d6e53644dfea7f1773ec",
+  "counts": {
+    "structurally_valid": 144
+  },
+  "evidence_files": 953,
+  "evidence_hash": "43fd6b8bb1cc27288b0fa54b264870473c67b3d26a61f58fd40fcc4549dc3ddb",
+  "input_files_read": 18,
+  "max_packet_bytes": 25089,
+  "mode": "simulation",
+  "model_calls": 0,
+  "qualified": false,
+  "requests": 144,
+  "unit_tests": 28,
+  "qualification_answers": 0,
+  "experimental_guidance_runs": 0,
+  "protocol": "subscription-qualification-v1",
+  "additional_spending_authorised": 0
+}

@@ -483,3 +483,6 @@ A stop request could arrive after the monitoring loop's last check but before th
 **Practical implication:** Check stop and integrity conditions at completion as well as during work. Keep invalid outputs for the audit without promoting them to successful results.
 
 **Uncertainty and next action:** External stopping does not guarantee that the provider has stopped computation. One forced tool test sent a second request before the monitor reacted, although the tool was denied. Record these limits in the subscription qualification protocol; do not claim that a local deadline establishes a provider token cap.
+
+
+Follow through on IL-028, 15 September: the [subscription run protocol](development/phase1-harness/SUBSCRIPTION-PROTOCOL.md) now distinguishes a collector attempt from a backend request. The schedule coordinator preserves a failed position, stops later dispatch and keeps unrun positions in the denominator. Its complete rehearsal uses artificial answers and establishes recording behaviour only. Qualification and any benefit from the interpretation layer remain unmeasured.

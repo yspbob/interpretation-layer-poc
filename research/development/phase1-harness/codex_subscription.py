@@ -1,4 +1,4 @@
-"""Single packet collector for public Codex subscription checks, not qualification.
+"""Single packet collector for Codex subscription checks and approved batches.
 
 No batch dispatch, credential discovery, API fallback, retry or semantic scoring.
 The operator supplies a reviewed client/catalogue and a fresh account observation.
@@ -98,8 +98,9 @@ def audit_events(folder, packet, code):
 
 
 def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
-               auth_path=None, account_observation=None, deadline=300):
-    """One attempt. Public tests only until the separate protocol is fixed."""
+               auth_path=None, account_observation=None, deadline=300,
+               qualification_permit=None, dispatch_guard=None):
+    """One attempt. Qualification requires the batch's bound permit and guard."""
     require(0 < deadline <= 300, "Deadline exceeds public check limit")
     packet = load_packet(packet_path, packet_hash)
     require(sha(exe) == CLIENT_HASH, "Unreviewed client binary")
@@ -107,7 +108,16 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
         require(mock_url.startswith("http://127.0.0.1:") and auth_path is None, "Local simulation only")
     else:
         require(auth_path is not None and account_observation is not None, "Subscription evidence required")
-        require(account_observation.get("public_probe_only") is True, "Qualification not authorised here")
+        if qualification_permit is None:
+            require(account_observation.get("public_probe_only") is True, "Qualification permit required")
+        else:
+            require(set(qualification_permit) == {"packet_hash", "output_path", "allocation_hash", "approval_reference"}, "Invalid permit")
+            require(qualification_permit["packet_hash"] == packet_hash
+                    and qualification_permit["output_path"] == str(Path(folder).resolve())
+                    and all(isinstance(qualification_permit[k], str) and qualification_permit[k]
+                            for k in ("allocation_hash", "approval_reference")), "Permit binding mismatch")
+            require(account_observation.get("public_probe_only") is False and callable(dispatch_guard), "Batch guard required")
+            dispatch_guard()
         require(0 <= time.time() - account_observation["observed_at"] <= 120, "Stale account check")
         require(account_observation.get("ordinary_usage_allowed") is True
                 and account_observation.get("remaining_percent", 0) > 10
@@ -160,7 +170,8 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
         args.extend(["-c", k + "=" + toml(v)])
     args.append("-")
     (folder / "invocation.json").write_bytes(wire({"args": args, "deadline_seconds": deadline,
-        "mode": "simulation" if mock_url else "public_subscription_probe", "packet_hash": packet_hash,
+        "mode": "simulation" if mock_url else ("subscription_qualification" if qualification_permit else "public_subscription_probe"), "packet_hash": packet_hash,
+        "qualification_permit": qualification_permit,
         "account_observation": account_observation, "client_hash": CLIENT_HASH}))
     committed = {str(p.relative_to(folder)): sha(p) for p in folder.rglob("*") if p.is_file()}
     (folder / "input-commitment.json").write_bytes(wire(committed))
@@ -180,6 +191,10 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
     code = None
     started = time.monotonic()
     try:
+        if dispatch_guard:
+            dispatch_guard()
+        if not mock_url:
+            require(0 <= time.time() - account_observation["observed_at"] <= 120, "Account check expired during preparation")
         if auth_path:
             shutil.copyfile(auth_path, home / "auth.json")
         with (folder / "events.jsonl").open("xb") as out, (folder / "stderr.txt").open("xb") as err:
@@ -187,6 +202,8 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
             try:
                 process.stdin.write(wire(packet)); process.stdin.close()
                 while process.poll() is None:
+                    if dispatch_guard:
+                        dispatch_guard()
                     require(time.monotonic() - started <= deadline, "Deadline reached")
                     require(not (folder / "STOP").exists() and not (folder / "tool-attempt.json").exists(), "Stop or tool attempt")
                     require(all(sha(folder / name) == value for name, value in committed.items()), "Input drift")
@@ -197,9 +214,13 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
                 if process.poll() is None:
                     process.kill(); process.wait(timeout=10)
         require(not (folder / "STOP").exists(), "Stop requested before collection completed")
+        if dispatch_guard:
+            dispatch_guard()
+        require(sum((folder / name).stat().st_size for name in ("events.jsonl", "stderr.txt", "last-answer.json")
+                    if (folder / name).exists()) < 1000000, "Output record limit")
         require(all(sha(folder / name) == value for name, value in committed.items()), "Input drift")
         result = audit_events(folder, packet, code)
-        result.update(mode="simulation" if mock_url else "public_subscription_probe", elapsed_seconds=round(time.monotonic() - started, 2))
+        result.update(mode="simulation" if mock_url else ("subscription_qualification" if qualification_permit else "public_subscription_probe"), elapsed_seconds=round(time.monotonic() - started, 2))
         (folder / "result.json").write_bytes(wire(result))
         return result
     except Exception as exc:

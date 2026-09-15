@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.15**
+Plan ID: **pilot-draft-2026-09-15.16**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -543,7 +543,11 @@ The connection records exact request bodies, returned model and service tier, us
 
 The collector retains intended inputs, exact settings, first answers and client events. Complete authenticated wire capture, immutable served model identity, internal retries and a hard provider token limit are not established. A local tool test reached a second request before external stopping; the tool was denied and the collection rejected. These limits must appear in the subscription protocol rather than being implied away by a successful answer. Included allowance and zero paid credits were checked before each live call. No separately billed API route was used.
 
-**Exact next step:** fix the subscription qualification protocol and connect the collector to the existing schedule and shared attempt record. Declare fresh contexts, permitted inputs, model/effort, first answer handling, operational limits, allowance checks and the audit limits above. Stop on uncertain allowance, unexpected tools, failures or configuration drift. Freeze the concrete allocation before reserved dispatch. Preserve the cases, 144 scheduled responses, role instructions and all four acceptance requirements. No additional framework, API setup or bank expansion is required. Final trial case selection, coding execution and interaction remain later work.
+**Subscription schedule connected, 15 September.** The [run protocol](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/SUBSCRIPTION-PROTOCOL.md) and [coordinator](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/SUBSCRIPTION-BATCH.md) are prepared. All 28 focused tests passed. The unchanged private bank completed all 144 positions with simulated answers, blocked network/process connections and only 18 permitted input files opened. No model response was generated.
+
+The proposed allocation is at most 144 sequential subscription attempts, with no additional spending, a five minute deadline and one megabyte output limit per attempt. Each position needs a fresh account check showing no paid credits and more than 10% remaining in every reported core window. Stop on the first failed or uncertain collection, configuration or approval change, unexpected tool activity, reused session or missing allowance observation. Keep every position in the summary and freeze collection before semantic scoring. The client audit limits above are explicit protocol limitations; the API transport guarantees are not claimed for this route. Cases, instructions and all four acceptance requirements remain unchanged.
+
+**Exact next step:** approve the concrete subscription allocation and declared protocol boundary, then execute the existing schedule with fresh account observations supplied by the supervising Codex task. The private prepared allocation remains unapproved; this implementation request did not initiate reserved dispatch. Do not expand the bank or add another framework. Apply the unchanged scoring procedure only after collection is committed. Final trial case selection, coding execution and interaction remain later work.
 
 
 | Stage | Required work | Current state |
