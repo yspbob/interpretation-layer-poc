@@ -399,3 +399,14 @@ Repair preparation, 15 September: the user agreed to one focused cycle. Six deve
 Correction to the collection observation under IL-023, 15 September: later inspection found cached or rate limited usage notices in 27 saved preflight records. Numeric fields alone had been treated as a successful fresh reading. The saved account audit and earlier summary therefore overstated freshness. A new display check rejects those notices, incomplete readings, refreshing views, paid spending and excessive usage; six synthetic checks passed. This corrects an operating control, not the semantic scoring result. The live account state at those earlier dispatches cannot be reconstructed from cached views alone.
 
 Repair observation, 15 September: [all six development responses](development/astra-preparation/FABLE-REPAIR-RESULTS.md) gave correct verdicts. Five also passed the explanation review under the original interpretation. The scope errors and observation misreadings did not recur in the selected checks, but one broad statement about a called function's effect remained. Its narrower possible reading is explicitly recorded; accepting that reading changes the development outcome. Preserve ambiguity in the assessment itself instead of presenting a judgement sensitive to wording as an unambiguous model failure. These examples were selected from exposed families, and instructions and evidence changed together, so they establish neither a general improvement rate nor which repair caused it. The single agreed cycle is complete; the supplementary role must be revisited before further model work.
+
+
+## Advisory objections need evidence before they change a result
+
+**Source:** User agreement on 15 September 2026 to the advisory Fable option, following the six development checks. See the working plan, section 9A.
+
+**Evidence status:** Agreed design decision, not a finding that this role is effective in production.
+
+A supplementary model can flag possible problems without having authority to score a guide. Review every saved guide independently, then check each objection against the sources. Keep the original objection and record whether the evidence supports it, contradicts it or leaves it unresolved. A reviewer that raises nothing has not certified the guide. Preserve original assessments and show any evidence justified corrections separately.
+
+**Uncertainty and next action:** This does not establish how many errors the reviewer misses or whether its benefit exceeds review cost. Prepare the advisory instructions and record before use. Retain source audits and qualification for roles whose model scores will be used. The checks here remain investigator work, without independent human certification.

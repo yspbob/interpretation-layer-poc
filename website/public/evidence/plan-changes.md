@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.3**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.4**. Status: working redesign, not a new ratified preregistration.
+
+## Use Fable to flag concerns for source checking: 15 September 2026
+
+The user selected the advisory option. Fable 5.1 High will review every saved Phase 1 guide, including empty and unsuccessful outcomes, before seeing Astra's assessment. It may also challenge reference material in a separate review. It will identify possible problems rather than supply authoritative scores. Check each concern against pinned evidence or reproducible observations and record whether it is supported, unsupported or unresolved. Silence and model agreement do not establish correctness.
+
+Keep original model responses, assessments, guides and references. Record evidence justified assessment corrections separately and review all results affected by a reference change. Feedback must not repair the frozen guide during its measured attempt. Investigator source checks are not independent human certification.
+
+This changes the planned supplementary scoring role. It does not erase the failed qualification, change its criteria, establish Fable's reliability or qualify Astra. The six development responses and their interpretation sensitive result remain unchanged. Fresh applicable qualification is still required before relying on model scores. The next preparation step is to specify Astra's outstanding qualification, respecting exposed families, and prepare the advisory instructions. No new model call, packet export or paid expenditure is authorised by this decision. Website body updates remain banked; the plan downloads are refreshed.
 
 ## Record the completed development repair: 15 September 2026
 
