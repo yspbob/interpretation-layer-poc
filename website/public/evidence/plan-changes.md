@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.7**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.8**. Status: working redesign, not a new ratified preregistration.
+
+## Record the third replacement family: 15 September 2026
+
+Q07 completes preparation of the three replacements. It contains 18 authored role items and four reference rules. Eighteen behaviour checks passed against the pinned implementation, four deliberate faults were detected, and all 18 input checks passed. No upstream test suite was run. The investigator audit found and corrected an overbroad reference clause before any model response. Preparation failures and previous versions are preserved in the private commitment.
+
+The source, reference, candidate and expected answer changes belong to reference preparation. Role prompts and expected verdict labels were not changed. No qualification case contents were added to drafter development material. All three families remain unexecuted.
+
+Q01's final retention and input audit is next, followed by the combined freeze, runtime prompt binding and exact rehearsal. The original 144 response design, acceptance criteria and live gates remain. Website body wording stays banked. Current plan downloads record this preparation milestone, not model qualification.
 
 ## Record Q06 and preserve lessons for the drafter: 15 September 2026
 

@@ -1,5 +1,7 @@
 # Second replacement family prepared
 
+**Later update, 15 September:** [Q07 is also prepared](Q07-READINESS.md). All three replacements are ready; Q01 final audit and the combined configuration remain. The preparation record below is retained.
+
 15 September 2026. Q06 is prepared and audited. No model has received its questions or answers.
 
 This family supplies another set of examples for testing whether the reviewers can recognise correct guidance, plausible mistakes and uncertainty. It concerns a different underlying decision from the earlier families. It is not guidance produced by the interpretation layer.
