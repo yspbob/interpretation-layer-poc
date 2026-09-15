@@ -2,6 +2,8 @@
 
 15 September 2026. Q05 is prepared and checked. It has not been sent to Astra or Fable.
 
+Later preparation update: [Q06 is also ready](Q06-READINESS.md), leaving one replacement family. The record below preserves the checks and position when Q05 was completed.
+
 This is material for testing the reviewers, not a guide produced by the interpretation layer. We prepared examples with justified answers so that a later model response can be checked against something more dependable than another model's opinion.
 
 ## What is ready

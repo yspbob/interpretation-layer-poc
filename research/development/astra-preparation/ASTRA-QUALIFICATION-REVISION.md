@@ -73,4 +73,4 @@ Fable is now an advisory reviewer, not a supplementary scorer. Its [instructions
 
 ## Next concrete deliverable
 
-The [first replacement, Q05](Q05-READINESS.md), is prepared and audited with 18 role items. Prepare the second replacement under the same requirements, then the third. Q01 still needs its final retention audit. Stop before collecting qualification responses until the combined freeze, runtime prompt binding, execution checks and applicable authorisation are complete.
+The first two replacements, [Q05](Q05-READINESS.md) and [Q06](Q06-READINESS.md), are prepared and audited with 18 role items each. Prepare the third replacement under the same requirements. Q01 still needs its final retention audit. Stop before collecting qualification responses until the combined freeze, runtime prompt binding, execution checks and applicable authorisation are complete. The separate [drafter learning record](DRAFTER-LEARNINGS.md) preserves lessons for future drafter preparation without changing the current role prompts.

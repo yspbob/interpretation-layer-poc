@@ -416,3 +416,14 @@ Qualification preparation, 15 September: the committed repair selection names Q0
 
 
 Preparation observation, 15 September: Q05's first packet version exceeded the existing development input allowance for six requests. Removing repeated scope and citation metadata and compacting named observations brought all 18 requests within the bound while preserving source evidence, expected verdicts and instructions. The original version remains committed. This is an input preparation observation, not evidence that shorter packets improve model accuracy. Recheck the exact serialized request after any change; fitting a development byte estimate does not verify provider token accounting.
+
+
+## Keep drafter lessons separate from reserved evaluation answers
+
+**Source:** User request on 15 September 2026 to retain lessons from this exercise for the drafter, and the earlier Fable development records linked in [DRAFTER-LEARNINGS.md](development/astra-preparation/DRAFTER-LEARNINGS.md).
+
+**Evidence status:** Assessment errors and preparation observations are recorded; their transfer to better drafting remains untested.
+
+Save each lesson with its source, uncertainty and proposed use. The current record covers scoped claims, missing evidence, called code, named observations, provenance and omissions. It does not contain the replacement families' sealed answers. Better instructions alone do not establish improved guidance, and neither model agreement nor an empty list of objections certifies quality.
+
+**Next action:** Map the saved lessons to a proposed drafter configuration before fixing it for an experiment. Check changes on separate development material, preserving the original instructions and outputs. Record and respect any later exposure of reserved families. No drafter prompt changed in this step.

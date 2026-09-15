@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.6**
+Plan ID: **pilot-draft-2026-09-15.7**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -488,7 +488,7 @@ The investigator records each decision and its evidence in a versioned configura
 
 ### Phase 1: select guidance cases and prepare the restricted role path
 
-**Current next step, 15 September.** The [first replacement qualification family, Q05](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q05-READINESS.md), is prepared and audited. It contains 18 role items supported by 13 authored behaviour checks and four detected deliberate faults. Prepare the second replacement under the [existing specification](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/ASTRA-QUALIFICATION-REVISION.md), then the third. Q01 remains subject to final audit and prior Fable exposure disclosure. The combined bank, revised runtime prompt binding and live access and spending gates remain outstanding. The existing 144 response design and four acceptance requirements are unchanged. Astra is not qualified, and no model call was made during this preparation.
+**Current next step, 15 September.** Two replacement qualification families, [Q05](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q05-READINESS.md) and [Q06](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/Q06-READINESS.md), are prepared with 18 role items each. Prepare the third replacement under the existing specification. Q01 remains subject to its final audit and prior Fable exposure disclosure. Then assemble the combined bank, bind the revised runtime instructions and verify the live access and spending controls. The [drafter learning record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/DRAFTER-LEARNINGS.md) preserves lessons from earlier development for later drafter preparation; it does not expose replacement answer keys or change the current prompts. The 144 response design and acceptance requirements are unchanged. Astra is not qualified, and no model call was made during this preparation.
 
 #### Historical full workflow rehearsal: H04
 

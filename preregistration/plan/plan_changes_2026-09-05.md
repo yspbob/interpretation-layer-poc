@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.6**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.7**. Status: working redesign, not a new ratified preregistration.
+
+## Record Q06 and preserve lessons for the drafter: 15 September 2026
+
+The second replacement family contains 18 authored items, including an empty guide. Fourteen local behaviour checks and three selected upstream tests passed; four deliberate implementation faults were detected. All 18 input, citation, identity and format checks passed, alongside three changed input denials. The private commitment preserves source records, expected answers and preparation failures. No model call occurred.
+
+The user also requested that lessons from the exercise be saved for the drafter. DRAFTER-LEARNINGS.md distinguishes observed assessment errors from proposed improvements to drafting. It covers scope, uncertainty, called code, readable observations, provenance, omissions and preserving evidence within input limits. No drafter prompt or schema changed. New qualification case contents and answers must not enter its development material without an explicit exposure record and consequent exclusion from evaluation of the revised behaviour.
+
+One replacement family and Q01's final audit remain before the combined bank can be prepared. Sample size, acceptance criteria and live authorisation are unchanged. Website body wording remains banked.
 
 ## Record the first replacement family: 15 September 2026
 

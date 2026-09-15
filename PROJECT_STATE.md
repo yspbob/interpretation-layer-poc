@@ -10,11 +10,13 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.6**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.7**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
 
-- [First replacement family Q05](research/development/astra-preparation/Q05-READINESS.md). Prepared and audited; two replacements remain before the combined bank can be assembled.
+- [Second replacement family Q06](research/development/astra-preparation/Q06-READINESS.md) and [drafter learning record](research/development/astra-preparation/DRAFTER-LEARNINGS.md). One replacement remains; saved lessons have not changed the drafter.
+
+- [First replacement family Q05](research/development/astra-preparation/Q05-READINESS.md). Prepared and audited; see the current Q06 record for overall progress.
 
 - [Revised Astra qualification specification](research/development/astra-preparation/ASTRA-QUALIFICATION-REVISION.md) and [Fable advisory review](research/development/astra-preparation/FABLE-ADVISORY-REVIEW.md). Preparation complete; replacement families and actual execution gates remain.
 
@@ -43,7 +45,23 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: Q05 replacement family prepared, 15 September 2026
+## Current work: Q06 prepared and drafter lessons saved, 15 September 2026
+
+The second replacement family is complete without model calls. Read [Q06 readiness](research/development/astra-preparation/Q06-READINESS.md). It has 18 items across the three roles and four reference units, including the empty guide required alongside Q05's partial omission. It covers a distinct decision and preserves valid alternatives, exception handling, source scope and uncertainty about an earlier application stage. The proposed role instructions were not changed during preparation.
+
+Fourteen authored behaviour checks passed against three installed implementation files that match their pinned upstream sources. Four deliberate faults were detected, and three selected upstream tests passed. All 18 source, citation, identity, separation and schema checks passed. The request builder rejected an altered instruction, changed source and injected key. Maximum serialized request plus padding was 30,563 of 32,768 under the offline configuration; actual provider accounting remains unverified. Source based investigator review is recorded, without independent human certification.
+
+Preparation failures are preserved: the package was absent from the two inspected environments; the new restricted environment bootstrap failed before pip was installed and was then completed; the first fault script encountered a repeated source fragment and was replaced with one targeting the exact class. These were preparation failures, not model responses or post hoc changes to expected verdicts. The local environment is excluded from the private commitment; observed dependencies are recorded.
+
+Private record: C:/Users/Yaroslav/Documents/Codex/poc-private/qualification-q06-2026-09-15/. Active family: prepared-v1. Freeze SHA256: 7e57005a6b1108b395db029f44a218c39c8b54e4deb8f59a068832ea50e9eb7a. All 30 committed files matched after copying. The ignored working copy and test environment remain in local-runs/qualification-q06-2026-09-15/. Do not overwrite the frozen files or disclose their contents through public Git. Private artifacts do not transfer through public project sync.
+
+The user explicitly asked to save lessons for the drafter. [DRAFTER-LEARNINGS.md](research/development/astra-preparation/DRAFTER-LEARNINGS.md) now records them from the earlier development review and public preparation observations. It separates evidence from proposed transfer to drafting and records the absence of demonstrated drafter improvement. It includes no sealed replacement answers. Neither the drafter prompt nor its schema changed. Keep this record for drafter configuration preparation; any later use of reserved case contents for tuning requires exposure tracking and exclusion from evaluation of that revised behaviour.
+
+**Exact next step:** prepare and audit the third replacement family without model calls, under ASTRA-QUALIFICATION-REVISION.md. Then finish Q01's retention/input audit and assemble the four family bank with the proposed runtime prompts. Preserve the 144 response design and all acceptance requirements. The combined freeze, prompt binding, exact configuration rehearsal, actual account checks and authorised live allocation remain gates. Do not repeat unchanged Q05 or Q06 merely to show activity.
+
+Current plan: pilot-draft-2026-09-15.7. Verification includes the recorded source and behavioural audits, copied private hashes, document links, plan synchronisation, Pages build and link checks, and reviewed public changes. The website body still carries older wording and remains banked. Astra is unqualified; no new model calls or experimental guidance runs occurred.
+
+## Previous work: Q05 replacement family prepared, 15 September 2026
 
 The first replacement family is prepared and audited without model calls. Read [Q05 readiness](research/development/astra-preparation/Q05-READINESS.md). It has 18 items across the existing three roles, four reference units, source justified expected answers and item specific severity. It covers a distinct decision, valid alternatives, a partial omission, misleading provenance, candidate instructions and a labelled fictional deployment conflict. Keep the empty guide requirement visible for the remaining bank. The proposed role instructions were not tuned during this preparation.
 
