@@ -2,7 +2,7 @@
 
 [Study website](https://yspbob.github.io/interpretation-layer-poc/) · [Progress & findings](https://yspbob.github.io/interpretation-layer-poc/progress/)
 
-This is the shared project repository for the redesigned interpretation-layer experiment. It contains the editable website, current plan, project decisions and development evidence. The pilot is being prepared; there are zero blinded model runs and no demonstrated benefit yet.
+This is the shared project repository for the redesigned interpretation-layer experiment. It contains the editable website, current plan, project decisions and development evidence. The pilot is being prepared. Qualification and development checks are recorded in the project state; there are zero experimental guidance runs and no demonstrated benefit yet.
 
 ## Working on the POC
 

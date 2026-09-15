@@ -8,6 +8,10 @@ Read `PROJECT_STATE.md`. Before editing, run `node scripts/project-sync.mjs star
 
 If the checkout has unfinished changes, inspect and preserve them. Do not reset, auto-stash, force-push or overwrite them. If the machines have diverged, reconcile the actual changes explicitly. A failed fetch means that freshness is unknown; explain this before work that could conflict. The simple automatic routine expects main in the saved project folder; an existing worktree or feature branch needs deliberate integration, not an automatic branch switch.
 
+The laptop has not run POC work, as confirmed on 15 September. Start there with `START_HERE.md`: retrieve the separate private evidence repository, verify its transfer manifest, recreate the pinned Python environment and run offline checks. Do not assume tools, source caches, credentials, client paths or execution controls from the home PC exist on the laptop. Setup does not authorise model runs or restart the closed qualification allocation.
+
+Private records now belong to `yspbob/interpretation-layer-poc-private`, checked out outside this public repository. For work requiring them, use `node scripts/private-project-sync.mjs start "<private root>"` and verify the transfer manifest on first use or after transfer. Before publishing private changes, preserve existing freezes, refresh the private transfer manifest, inspect and explicitly commit the intended records, then use the private sync helper with `publish`. It checks the exact remote and private visibility. Do not stage private files in this public checkout. Public only work can proceed without private evidence; do not claim evidence dependent checks when that repository is unavailable.
+
 ## Before completing meaningful work
 
 1. Update `PROJECT_STATE.md` with decisions, completed work, verification, unresolved issues and the exact next step. Record meaningful discussion-only decisions too. Maintain `research/implementation-takeaways.md` when a discussion or observation has implications for practical implementation; preserve its source, evidence status, uncertainty and next action. Do not transcribe the whole conversation or invent agreement.
