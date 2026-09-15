@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.1**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.2**. Status: working redesign, not a new ratified preregistration.
+
+## Agree one assessor repair cycle: 15 September 2026
+
+The user agreed to repair unclear evidence packets and constrain explanations to what their sources establish. Prepare a small development check before spending effort on fresh qualification. The selected six cases cover observed failures, an empty guide and valid alternatives. Preserve the original qualification result, expected decisions, severity and four acceptance requirements. The development check requires all six verdicts and reasons to be correct, with no coaching, retries or changes during collection. If it fails, revisit Fable's supplementary role before further tuning. Passing this development check would still require qualification on fresh applicable families.
+
+Q02, Q03 and Q04 are used to develop this repair and must not qualify revised roles using it, including overlapping Astra material. Original bank files remain intact. The six revised packets and execution record are prepared, with 29 observations reproduced, four deliberately wrong behaviour checks detected and four local input audit checks passed. No development model response has been collected. Automatic approval review requires explicit permission to send the revised inputs through Claude Max.
+
+A review of original preflight records found cached or rate limited usage notices in 27 records. The earlier summary overstated freshness. Preserve that correction without changing the recorded semantic scores. Future dispatch must pause on cached or uncertain account readings, even when numeric balances are present. Included Max only and no paid credits remain the limits. Website wording remains banked; refresh the plan downloads through the normal publication routine.
 
 ## Adopt direct Fable delivery: 15 September 2026
 

@@ -70,3 +70,5 @@ The private audit retains every response decision, the source based review, exac
 | Completed scoring record | `6e3afe66f58a0b13599735d1b986396e5ae3810078dd53e7b565941ab24f55c4` |
 
 Website wording and progress changes remain banked for the next requested release. This report and the shared project state record the current result.
+
+Account audit correction, 15 September: later inspection found cached or rate limited usage notices in 27 original preflight records. The earlier collection summary overstated freshness. Numeric balances and zero recorded credit spending were present, but they do not establish a current account observation before every dispatch. The original answers and semantic scores above remain unchanged. The [repair record](FABLE-REPAIR.md) preserves the correction and the stricter account freshness check for future submissions.

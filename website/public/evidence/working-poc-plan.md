@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.1**
+Plan ID: **pilot-draft-2026-09-15.2**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -427,6 +427,8 @@ Develop the rubric and input format on development examples. Include correct wor
 Before opening qualification results, freeze the model/settings, instructions, input builder, checks, verdict-combination rules, split, sample size and acceptance limits. If a failed qualification item informs a revision, move its family into development and use fresh families for the next qualification. Do not repeatedly tune against a nominal holdout.
 
 #### 4. Measure errors with explicit denominators
+
+**Assessor repair decision, 15 September.** The completed supplementary Fable qualification did not pass: 35 of 48 responses had both correct verdicts and correct explanations, against the unchanged requirement of 44 overall and 10 per family. The user agreed to one focused development repair. Name observation fields, state each tested setup and supply relevant omitted implementation or preserve its uncertainty. Ask the assessor to ground concise reasons in those sources and distinguish missing evidence from a contradiction under the same conditions. Keep the original result, keys and severity unchanged. The [repair record](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/FABLE-REPAIR.md) describes six separate development cases with valid controls. All six decisions and their reasons must be correct before proceeding to fresh qualification preparation. Do not retry them until they pass or use them to qualify the repaired role. Q02, Q03 and Q04 are now development families for revised roles using this repair, including overlapping Astra assessment material. A successful repair still requires fresh qualification families under the existing four requirements. If this cycle fails, revisit the supplementary role before adding more tuning or relying on its scores. The six model checks are prepared but have not run; automatic approval review requires explicit export approval for the revised packets. Included Max only remains the permitted route. Incomplete, cached or rate limited account readings must pause dispatch; numeric values alone do not establish a fresh observation.
 
 Count separately: confirmed violations accepted; valid work rejected; justified unresolved decisions; unnecessary unresolved decisions; and verdict changes under repetition or irrelevant presentation changes. Report the number of eligible examples for each rate, grouped by family, criterion and severity. State coverage gaps and uncertainty; a pooled accuracy figure cannot establish reliability on rare serious errors.
 
