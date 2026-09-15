@@ -28,11 +28,9 @@ The first rehearsal remains saved. A source comment was then corrected to descri
 
 ## What remains before Astra takes the test
 
-The saved commitment fixes the inputs and the rehearsed software. It is not yet a complete live protocol. We still need to:
+The saved commitment fixes the inputs and the rehearsed software. A subsequent step completed the [scoring procedure and controlled execution command](../phase1-harness/LIVE-QUALIFICATION.md). All 86 tests passed, and the exact private bank completed another simulated rehearsal through that command's execution path. The earlier results above remain the record of input assembly.
 
-1. Fix the procedure for reviewing explanations and auditing scores, including how ambiguous answers will be reported.
-2. Prepare and test the bounded live batch entry point. The current batch runner accepts only simulated responses.
-3. Verify actual model access, account settings, token limits and prices, then agree a concrete allocation before paid requests.
+What remains is to verify actual model access, account settings, token limits and prices, then agree a concrete allocation before paid requests. The input commitment and simulated approvals are not a complete authorised live protocol.
 
 The existing sample size and all four acceptance requirements remain unchanged. No retries or new repair cycle are authorised. The family contents and answer keys remain outside drafter development material.
 

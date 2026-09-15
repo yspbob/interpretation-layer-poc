@@ -1,0 +1,36 @@
+{
+  "mode": "live-path-simulation",
+  "live_model_calls": 0,
+  "qualified": false,
+  "synthetic_sdk_requests": 144,
+  "input_freeze_sha256": "7f503564d6dbb198b8494fcbac2a9acdb311521cff7e0e4865b80d6cc2c9be91",
+  "collection_freeze_sha256": "47445b419c008c806fc7a3d5de05f8c3bc2889857dc7474c7878d729500f6914",
+  "preflight": {
+    "items": 72,
+    "max_padded_bytes": 32741,
+    "request_manifest_hash": "ab78cf73b0217401154e5fced0102bd22bf94f3079dac6bab6e3f4e6e29e0f8f"
+  },
+  "runtime_hashes": {
+    "harness.py": "5a555ee6295fb99ffaa384b1355f9be66df52d700e3673d3195436d451ccf091",
+    "live_qualification.py": "390a3a5dbf4e0bb15e5a17cd61f602046d307108f9a5179ccaec0d876a65a832",
+    "provider.py": "649ec97b5f17253cb7143092bcd4cc82f6450ebafa10e1418bf196cef6add462",
+    "qualification_batch.py": "eff9f35e75924a666dd9a26f9649e203c84e4ffa38a7a21db73a9acfc930a53c",
+    "schemas.py": "53af10ee957065149dcd302bcd2c1e12289e414c079ad40c32760308b0cdc880"
+  },
+  "scoring_procedure_sha256": "0bf713b59149419554f900330e6517e8fadfde95abe896ea3063f8cc8b4be158",
+  "limits": [
+    "All responses and the credential are fictional. No provider access, pricing or account verification occurred.",
+    "The inner controller records provider-live because that code branch was exercised. Its model_calls counter measures attempts, not actual model generations. No external request occurred.",
+    "No semantic scoring or answer key reading. The original input freeze and earlier rehearsals remain unchanged."
+  ],
+  "date": "2026-09-15",
+  "tests_passed": 86,
+  "new_live_controller_tests": 13,
+  "public_synthetic_rehearsal_requests": 144,
+  "permitted_input_files_read": 18,
+  "record_files_verified": 1455,
+  "record_freeze_sha256": "159d6d21503a96b3ff91b417030c1ed2aa39739f9bc7a8b7c9cfc780ba9ab974",
+  "exact_response_files_verified": 144,
+  "semantic_assessment": "not performed",
+  "test_source_hash": "f510dc74ccd8486282224069873187e85565d2f74484f2906ab6448b39a36e9a"
+}

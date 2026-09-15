@@ -157,8 +157,11 @@ class Provider:
         require(expires.tzinfo is not None and datetime.now(timezone.utc) < expires, "Live approval expired")
 
     def save(self, name, value):
+        self.save_bytes(name, wire(value))
+
+    def save_bytes(self, name, raw):
         with (self.folder / name).open("xb") as stream:
-            stream.write(wire(value))
+            stream.write(raw)
             stream.flush()
             os.fsync(stream.fileno())
 
@@ -251,6 +254,7 @@ class Provider:
                     with client.responses.with_streaming_response.create(**body) as response:
                         raw = response.read()
                         request_id = response.headers.get("x-request-id")
+            self.save_bytes(prefix + "-response.raw", raw)
             data = strict_json(raw)
             self.save(prefix + "-response.json", data)
             require(data.get("model") == s.model, "Unexpected returned model")

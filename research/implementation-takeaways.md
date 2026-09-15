@@ -433,3 +433,16 @@ Reference preparation observation, 15 September: the [Q07 answer audit](developm
 
 
 Combined preparation observation, 15 September: two retained Q01 requests exceeded the allowance after the longer, previously declared role instructions were included. Removing repeated source metadata preserved their substantive contents and brought them within the bound. The [full batch rehearsal](development/astra-preparation/ASTRA-BATCH-READINESS.md) therefore reinforces the existing requirement to check the complete request after an instruction or configuration change. A case fitting an earlier configuration does not establish that it fits the current one. This is an operating observation, not evidence about model accuracy. Next action: check the actual live configuration and retain the input commitment; no case answers were added to drafter development.
+
+
+## IL-026: Preserve the exact response that a recorded hash identifies
+
+**Source:** Source inspection during controlled runner preparation, 15 September 2026. See [the execution and recording review](development/phase1-harness/LIVE-QUALIFICATION.md).
+
+**Evidence status:** A confirmed recording gap, corrected and checked with simulated responses. This is not evidence about model quality.
+
+The adapter calculated a hash of the original response bytes but saved only parsed JSON. Parsing can change the byte representation, so the saved JSON alone could not verify that hash. The adapter now saves the original body before parsing. All 144 raw response hashes matched in the exact private rehearsal, and the completed collection has a separate commitment before scoring.
+
+**Practical implication:** Keep the original model response alongside the structured interpretation and link both to the assessed artifact. Preserve malformed responses too. Reformatting for display must not replace the original audit record.
+
+**Uncertainty and next action:** This detects later changes relative to a saved commitment; it does not independently certify execution or provider retention. Verify the same recording path in the first separately authorised live connection check. Do not add more model calls solely to repeat an unchanged storage test.

@@ -1,5 +1,7 @@
 # The first model connection
 
+**Current update, 15 September:** Read [controlled qualification execution](LIVE-QUALIFICATION.md) for current readiness. The adapter now preserves exact response bytes before parsing. Actual provider checks remain open. Earlier model selection wording below describes the initial adapter work; PROJECT_STATE.md records the current Fable advisory role.
+
 The harness now has a connection to the OpenAI Responses API through the official Python SDK. It has been tested with simulated provider responses. No real endpoint, credential or model has been exercised, and Astra has now been selected for the first stage. Fable is deferred.
 
 This replaces the rehearsal's answer delivery mechanism. The controller still owns drafting, verification, corrections, guide release and separate assessment. The connection sends the role's permitted information and receives its structured answer. It does not receive the authored answers used in development tests.

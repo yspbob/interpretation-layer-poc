@@ -1,8 +1,8 @@
 # Qualification runner: offline checks complete
 
-**Update, 15 September:** [The revised bank rehearsal](../astra-preparation/ASTRA-BATCH-READINESS.md) passed all 144 scheduled requests after assessment instruction binding. All 73 tests passed. The earlier results below remain historical; the new record contains the current input commitment and limits.
+**Current update, 15 September:** The [controlled execution command and scoring procedure](LIVE-QUALIFICATION.md) are implemented and tested with simulated responses. All 86 tests passed. Actual provider checks and spending approval remain gates. The earlier offline results below remain historical; the new record contains the current runtime commitment and limits.
 
-The runner now rehearses the fixed 144 call qualification schedule with one shared spending record. It reuses the existing provider adapter and creates a fresh connection for each scheduled call. It currently accepts only locally supplied responses. It has no live execution switch, credential argument or permission to spend.
+The original simulation runner rehearses the fixed 144 call qualification schedule with one shared spending record. It reuses the existing provider adapter and creates a fresh connection for each scheduled call. That entry point still accepts only locally supplied responses. The separate controlled command extends the same batch ledger and requires explicit verified approval before live execution. Neither command creates permission to spend.
 
 This work tests the machinery that will deliver the reviewer tests. It does not test whether any reviewer gives a correct answer.
 
@@ -50,6 +50,6 @@ The first restricted test invocation could not access temporary test folders. Th
 
 ## What comes next
 
-Complete the controlled familiarity connection and prepare the actual model/account checks. Before live qualification, freeze the full protocol and settings, bind any live batch entry point to the authorised allocation, and verify it with simulation. Any recovery after interruption needs an explicit policy that retains prior spending and attempts. No paid call is authorised by the existence of this runner.
+Verify actual model access, account settings, token bounds and prices, then prepare a concrete allocation for approval. The controlled command binds that approval to the reviewed protocol and settings. Any recovery after interruption needs an explicit policy that retains prior spending and attempts. No paid call is authorised by the existence of this runner.
 
 Keep this implementation focused on the fixed schedule. Coding execution, interaction and a general assessment platform are outside this step.

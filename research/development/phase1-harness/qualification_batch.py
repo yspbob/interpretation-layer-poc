@@ -1,4 +1,4 @@
-"""Fixed qualification schedule with a shared ledger. Simulation only for now.
+"""Fixed qualification schedule with a shared ledger.
 
 No answer key is loaded and no semantic verdict is inferred from schema validity.
 The provider adapter owns request construction and each fresh SDK connection.
@@ -146,6 +146,8 @@ class QualificationBatch:
     Only a supplied local response handler is accepted. A live entry point and
     its protocol/account approval binding must be reviewed separately.
     """
+    mode = "provider-simulation"
+
     def __init__(self, bank, settings, folder, *, mock_handler):
         require(callable(mock_handler), "A local simulation handler is required")
         bank.verify()
@@ -159,16 +161,17 @@ class QualificationBatch:
         self.lock = threading.Lock()
         self.started = False
         self.charged = self.held = 0
+        self.provider_attempts = 0
         self.events, self.outcomes = [], []
         # Validate every outgoing packet and bound before creating a batch or dispatching.
         for item in self.bank.items.values():
             p = item["packet"]
-            adapter = SimpleNamespace(settings=self.attempt_settings, mode="provider-simulation",
+            adapter = SimpleNamespace(settings=self.attempt_settings, mode=self.mode,
                 bound_run="qualification", calls=0, prompts=PROMPTS, schemas=SCHEMAS,
                 source_hash=digest(p["sources"]), reference_hash=digest(p.get("reference")))
             Provider.request(adapter, self.message(item))
         self.folder.mkdir(parents=True, exist_ok=False)
-        self.save("policy.json", {"mode": "provider-simulation", "settings": asdict(settings),
+        self.save("policy.json", {"mode": self.mode, "settings": asdict(settings),
             "freeze_hash": bank.freeze_hash, "material_hash": bank.material_hash,
             "schedule": bank.schedule, "reserve_per_attempt_nusd": self.reserve,
             "role_prompts": PROMPTS, "schemas": SCHEMAS,
@@ -178,8 +181,17 @@ class QualificationBatch:
             "restart": "Existing folders cannot be reused. No automatic resume or retry."})
 
     def message(self, item):
-        return {"mode": "provider-simulation", "packet": deepcopy(item["packet"]),
+        return {"mode": self.mode, "packet": deepcopy(item["packet"]),
                 "instruction": item["instruction"], "run_id": "qualification", "call_id": 1}
+
+    def before_attempt(self):
+        """Live subclass validates its allocation before any new reservation."""
+        return None
+
+    def make_connection(self, item, index):
+        packet = item["packet"]
+        return Provider(self.attempt_settings, packet["sources"], packet.get("reference"),
+                        self.folder / f"attempt-{index + 1:03}", mock_handler=self.handler)
 
     def save(self, name, value):
         with (self.folder / name).open("xb") as stream:
@@ -202,19 +214,20 @@ class QualificationBatch:
             self.bank.verify()
             stop, interrupt = None, None
             for index, row in enumerate(self.bank.schedule):
+                if stop is None:
+                    stop = self.before_attempt()
                 if stop is None and self.charged + self.held + self.reserve > self.settings.budget_nusd:
                     stop = "budget_exhausted"
                 if stop is not None:
                     self.outcomes.append({**row, "status": "not_run", "cause": stop})
                     continue
                 item = self.bank.items[row["item_id"]]
+                packet = item["packet"]
                 self.held += self.reserve
                 self.event("reserved", scheduled=row, packet_hash=digest(item["packet"]), reserve_nusd=self.reserve)
                 connection = None
                 try:
-                    packet = item["packet"]
-                    connection = Provider(self.attempt_settings, packet["sources"], packet.get("reference"),
-                        self.folder / f"attempt-{index + 1:03}", mock_handler=self.handler)
+                    connection = self.make_connection(item, index)
                     connection.bind("qualification")
                     response = connection.call(self.message(item))
                     validate_answer(response["response"], packet)
@@ -230,6 +243,8 @@ class QualificationBatch:
                 # No release on unknown usage, even if a failed call might have cost nothing.
                 known = (connection is not None and connection.last_record is not None
                          and connection.held == 0)
+                if connection is not None:
+                    self.provider_attempts += connection.calls
                 if known:
                     self.charged += connection.charged
                     self.held -= self.reserve
@@ -238,11 +253,14 @@ class QualificationBatch:
                 self.outcomes.append({**row, "status": status, "cause": cause,
                                       "usage_known": known, "semantic_assessment": "pending"})
                 self.event("outcome", outcome=self.outcomes[-1])
-            summary = {"mode": "provider-simulation", "model_calls": 0, "qualified": False,
+            summary = {"mode": self.mode,
+                       "model_calls": self.provider_attempts if self.mode == "provider-live" else 0,
+                       "qualified": False,
                        "scheduled": len(self.bank.schedule), "outcomes": self.outcomes,
                        "counts": dict(Counter(r["status"] for r in self.outcomes)), "stop": stop,
                        "charged_nusd": self.charged, "held_nusd": self.held,
-                       "budget_nusd": self.settings.budget_nusd, "price_basis": "simulated",
+                       "budget_nusd": self.settings.budget_nusd,
+                       "price_basis": "simulated" if self.mode == "provider-simulation" else "configured_rates",
                        "semantic_assessment": "pending"}
             self.save("summary.json", summary)
             if interrupt is not None:

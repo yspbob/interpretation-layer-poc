@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.9**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.10**. Status: working redesign, not a new ratified preregistration.
+
+## Prepare controlled qualification execution and explanation scoring: 15 September 2026
+
+The scoring procedure now fixes collection closure, source based explanation review, ambiguity reporting and a reproducible investigator audit. It preserves all four existing acceptance requirements. The live command binds verified approval to the inputs, runtime, scoring procedure, settings, account record and spending allocation. It uses the same shared ledger and fixed schedule as the simulation runner.
+
+All 86 tests passed. The exact private bank completed 144 simulated requests through the live execution path with fictional credentials and blocked external traffic. Original response bytes are now retained so their recorded hashes can be checked. The new runtime and collection have separate commitments; earlier records remain unchanged. No semantic qualification or live model call occurred.
+
+Next verify actual model access, account settings, prices and input allowance, then present a concrete allocation for approval. Website body wording remains banked; update current plan downloads. No new repair, drafter change or Fable export is authorised.
 
 ## Assemble and rehearse the revised qualification batch: 15 September 2026
 
