@@ -10,9 +10,11 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references, a scripted Phase 1 harness and a provider adapter tested in simulation now exist; no model verifier, interactive checker or final judge has been exercised or qualified under the current protocol.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.4**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.5**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
 ## Read next
+
+- [Revised Astra qualification specification](research/development/astra-preparation/ASTRA-QUALIFICATION-REVISION.md) and [Fable advisory review](research/development/astra-preparation/FABLE-ADVISORY-REVIEW.md). Preparation complete; replacement families and actual execution gates remain.
 
 - [Development repair result](research/development/astra-preparation/FABLE-REPAIR-RESULTS.md). All six responses are collected and reviewed. Five complete answers pass under the original reading; the remaining wording admits a narrower reading. The single repair cycle is complete.
 
@@ -39,7 +41,19 @@ The current scope is guidance reconstruction under working plan **pilot-draft-20
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: Fable advisory role agreed, 15 September 2026
+## Current work: revised Astra specification prepared, 15 September 2026
+
+The user authorised preparation of the bounded specification. Read [ASTRA-QUALIFICATION-REVISION.md](research/development/astra-preparation/ASTRA-QUALIFICATION-REVISION.md) first. It retains the existing three roles and four acceptance requirements. Retain Q01 subject to final audit; replace Q02, Q03 and Q04 for revised roles. The recorded repair explicitly retired those families and selected no Q01 items. Q01 was previously evaluated with Fable and is not wholly unseen across models. Its retention must not become selection of individual successful cases.
+
+The original 48 committed bank files and 26 repair files still match their hashes. Q01 contains six items per role. The design remains four families, six challenges per role and two repetitions: 72 distinct items and 144 responses. Three replacements require 54 new role items. They have not been built. The public audit contains counts and commitments, not sealed content. An initial metadata read attempted to parse only the first JSON line and failed; the complete file was then parsed and the hash audit passed.
+
+Proposed Astra role instructions retain the existing schemas and clarify evidence scope, observations, alternatives and coverage. They are not installed in the provider. Source inspection confirms that the loader permits new family identifiers but requires exact runtime prompt equality; bind the revised version before the new bank rehearsal. The offline runner does not qualify the live route. Fable advisory instructions and an investigator objection record are prepared separately, without a model run. Current plan: pilot-draft-2026-09-15.5.
+
+**Exact next step:** prepare and audit one complete replacement family with 18 role items and source justified expected decisions, without model calls. Check genuinely distinct decisions, named behavioural evidence and relevant deliberate faults, permitted inputs, alternatives, ambiguity, provenance and severity before expanding to the other two. Preserve the original bank. Then bind prompts and the revised freeze, rehearse the exact configuration and verify actual model/account settings and a concrete authorised allocation before qualification. No fresh qualification, experiment or paid call is authorised by this preparation.
+
+Verification: committed file hashes and selection audit passed; proposed prompt JSON and role set checked; local document links and plan copies checked; Pages build and local route/assets checks passed before publication. The website explanation and progress body still describe older supplementary scoring and desktop readiness; reviewed and left banked under the existing instruction. Only the downloadable plan and shared records are current. Zero experimental guidance runs remain.
+
+## Previous work: Fable advisory role agreed, 15 September 2026
 
 The user selected Fable as a source of concerns checked against evidence, rather than a supplementary scorer. Fable 5.1 High will independently review every saved final Phase 1 guide, including empty and unsuccessful results, before seeing Astra's assessment. Reference challenges remain a separate preparation activity when applicable. Each objection needs a source check and a recorded supported, unsupported or unresolved outcome. Silence and agreement do not certify correctness. Preserve the original guide and assessments; source justified corrections stay separately traceable. These checks are performed by the investigator, without independent human certification.
 

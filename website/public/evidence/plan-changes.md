@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.4**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-15.5**. Status: working redesign, not a new ratified preregistration.
+
+## Specify the revised Astra qualification: 15 September 2026
+
+Prepared a bounded replacement specification under the existing qualification requirements. Q01 remains eligible subject to the final audit and disclosure of its prior Fable evaluation. The committed repair used and explicitly retired Q02, Q03 and Q04. Replace these three whole families for revised roles, retaining the existing 144 response design and all four acceptance requirements. Do not describe the retained Q01 material as wholly unseen or choose individual successful items.
+
+The new role instructions make evidence conditions and explanation checks explicit without changing the output schemas. They are proposed files, not installed runtime prompts. The existing loader checks exact prompt equality, so bind the revised configuration and rehearse its new freeze before any live use. The original 48 bank files and 26 repair files matched their commitments during this preparation. No model call occurred.
+
+Prepared Fable advisory instructions and an objection record separately. Source checks, uncertainty and preservation remain required; its objections are not scores. The next step is one complete replacement family with 18 role items and justified answers. Keep the other two replacements, final freeze and live account gates visible as remaining work. Website body wording remains banked; refresh the current plan download.
 
 ## Use Fable to flag concerns for source checking: 15 September 2026
 

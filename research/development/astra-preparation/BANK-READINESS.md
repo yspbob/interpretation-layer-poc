@@ -1,5 +1,7 @@
 # Four qualification cases prepared
 
+**Current revision, 15 September:** Read [the revised Astra qualification specification](ASTRA-QUALIFICATION-REVISION.md). Q01 remains eligible subject to audit; Q02, Q03 and Q04 require replacement for revised roles. The 144 response design and four acceptance requirements remain. Fable now raises concerns for source checking rather than providing supplementary scores. Earlier preparation and route statements below are retained as history; they are not current readiness claims.
+
 The private qualification bank is prepared and checked. It contains four distinct families, with six items for each of three assessment roles in every family. That is 72 distinct role items and 144 planned calls after two repetitions. No qualification calls have run, and no assessor is qualified.
 
 ## Evidence checks

@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.4**
+Plan ID: **pilot-draft-2026-09-15.5**
 Updated: **15 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -488,7 +488,7 @@ The investigator records each decision and its evidence in a versioned configura
 
 ### Phase 1: select guidance cases and prepare the restricted role path
 
-**Current next step, 15 September.** Prepare a bounded specification for the outstanding Astra qualification roles. Identify which existing items remain eligible and which families must be replaced after exposure during the Fable repair. Retain the original bank and results. Freeze the applicable sources, instructions, expected decisions, acceptance rules and actual access configuration before collecting new qualification answers. Prepare Fable's advisory instructions separately; they do not replace Astra qualification. No new model run is authorised by this planning decision.
+**Current next step, 15 September.** The [revised Astra qualification specification](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/ASTRA-QUALIFICATION-REVISION.md) is prepared. Retain Q01 subject to final audit and disclose its prior Fable evaluation. Replace Q02, Q03 and Q04 with three distinct families for the revised roles, preserving four families, three roles, six challenges and two repetitions: 144 responses. The four acceptance requirements are unchanged. Prepare and audit one complete replacement family before expanding to the other two. Revised role instructions and Fable advisory instructions are prepared but not installed or tested in model runs. The existing loader must bind the revised prompts to a new private freeze. Verify actual access, input bounds, capture and spending allocation before live qualification. These documentation changes do not authorise a model call.
 
 #### Historical full workflow rehearsal: H04
 

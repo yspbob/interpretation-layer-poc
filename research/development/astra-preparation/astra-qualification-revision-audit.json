@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-15",
+  "method": "Read committed manifests, match file hashes, inspect repair selection and original Q01 item counts. No model calls or scoring keys submitted.",
+  "original_bank": {
+    "freeze_sha256": "bc256b1d390f2f595c0212d157892572fd64226701200236ffcf28add0ef8ae9",
+    "files_checked": 48,
+    "mismatches": 0
+  },
+  "repair_bank": {
+    "freeze_sha256": "3ce3495814066b7f475ae037baf0a3b06636f71076cb9f35a3e9855665e2964d",
+    "files_checked": 26,
+    "mismatches": 0,
+    "selected_responses": 6,
+    "selected_families": [
+      "Q02",
+      "Q03",
+      "Q04"
+    ],
+    "explicitly_retired_families": [
+      "Q02",
+      "Q03",
+      "Q04"
+    ]
+  },
+  "Q01": {
+    "items_by_role": {
+      "verifier": 6,
+      "guidance_assessor": 6,
+      "verifier_assessor": 6
+    },
+    "status": "eligible_for_retention_subject_to_final_audit",
+    "limitation": "Previously evaluated with Fable; not wholly unseen across models. Not selected in the recorded repair. Do not tune on its answers."
+  },
+  "proposed_schedule": {
+    "families": 4,
+    "roles": 3,
+    "challenges_per_family_role": 6,
+    "repetitions": 2,
+    "distinct_items": 72,
+    "responses": 144,
+    "replacement_items_needed": 54
+  },
+  "implementation_observation": "Current loader accepts any four safe family identifiers, but requires exact prompt equality with provider.PROMPTS; revised prompt version is not installed.",
+  "qualification_calls_this_work": 0
+}

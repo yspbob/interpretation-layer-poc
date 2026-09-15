@@ -1,5 +1,7 @@
 # Proposed qualification checks for Phase 1
 
+**Current revision, 15 September:** Read [the revised Astra qualification specification](ASTRA-QUALIFICATION-REVISION.md). Q01 remains eligible subject to audit; Q02, Q03 and Q04 require replacement for revised roles. The 144 response design and four acceptance requirements remain. Fable now raises concerns for source checking rather than providing supplementary scores. Earlier preparation and route statements below are retained as history; they are not current readiness claims.
+
 This is the specification for preparing qualification cases. All four cases are prepared and checked. See [the bank readiness record](BANK-READINESS.md). No assessor is qualified. Freeze the completed cases and this decision rule before opening any model answers. The numbers below are an initial gate for a bounded exploratory trial, not a claim of general reliability.
 
 ## What we will test
