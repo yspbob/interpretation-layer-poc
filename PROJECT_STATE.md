@@ -12,7 +12,17 @@ The redesigned POC is still being prepared. There are **zero experimental guidan
 
 The current scope is one exploratory worked guide under working plan **pilot-draft-2026-09-16.29**; formal assessor qualification and fresh-bank preparation are paused. The formal first trial retains three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the latest decision below before following historical next steps. The website opens on one continuous plan with Phase 1 selected. Its body updates remain banked; progress stays separate and older addresses are compatibility routes.
 
-## Current work: return to a useful worked guide, 16 September 2026
+## Current work: small implementation-review check complete, 16 September 2026
+
+The user approved using the worked guide in an implementation review. Read [the review](research/exploratory/netbox-bulk-guide/IMPLEMENTATION-REVIEW.md). Applied to the historical NetBox feature merge, it produces a concrete change request: failed-batch database rollback leaves request-context events queued. Both saved mixed-batch scenarios retain one webhook job despite zero committed edits or change records. Successful updates retain two jobs, which rules out unconditional queue clearing as an acceptable repair. The review specifies scoped cleanup before request completion and preservation of the normal update path; it does not implement or validate a patch.
+
+Seven pinned feature-source files matched the existing manifest. The four saved scenario records were checked for committed rows, change records, queued jobs and matching invalid-item response IDs. No application request, model batch or separate reviewer was run. The same investigator knew the defect before writing and applying the guide; this establishes actionable advice on one known case, not independent discovery, comparative benefit or cost savings. Qualification remains paused and controlled experimental guidance runs remain zero. The method is unchanged, so no plan revision or website release was needed.
+
+**Exact next step:** choose one small, different change not previously reviewed for a bounded comparison of ordinary review and review using guidance, if continuing the value question. Specify the comparison before examining its outcome; the exposed NetBox case cannot establish the guide's incremental benefit. Do not restart qualification, prepare a new qualification bank or launch a model allocation automatically.
+
+**Continuity:** public sync succeeded with ten unpublished commits and no incoming changes. Private evidence was not needed or changed. Source retrieval initially failed under sandbox network restrictions; the approved read-only retry retrieved and verified all seven files. The review and continuity update are saved locally. Public publication remains blocked by automatic approval review over historical account/credit metadata, so this work is not available on the other machine.
+
+## Previous work: return to a useful worked guide, 16 September 2026
 
 **Current authority: pilot-draft-2026-09-16.29.** The user challenged the time and effort spent on qualification, then agreed to produce and source-check one concrete guide before investing further. This supersedes earlier next steps about another qualification bank. Assessor qualification, fresh-family preparation and additional infrastructure are paused; closed allocations and their records remain unchanged.
 
