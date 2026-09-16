@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.29**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.30**. Status: working redesign, not a new ratified preregistration.
+
+## Select a fresh change and separate guidance from the request: 16 September 2026
+
+The user challenged the circularity of reviewing a known defect and approved selecting one small new change. FC-01 is a privately recorded, newly authored request against a pinned public repository, with explicit acceptance criteria and no supplied implementation. It is a study requirement, not an upstream decision. Prepare repository guidance without access to that request, then compare two fresh coding contexts with the same inputs and limits except for the saved guide. Fix common evaluator tests before outputs and disclose full acceptance requirements to both conditions. Prior investigator and repository familiarity remain disclosed; freshness does not establish absence from training. Qualification stays paused and no comparison has run. This creates a bounded exploratory coding comparison outside the formal qualified trial. No selected task, test fixture or solution is published in the public project. Website body edits remain banked.
 
 ## Pause qualification and produce one useful guide: 16 September 2026
 

@@ -617,3 +617,13 @@ The supervisor prepared an ancillary closure script while the run was active. Th
 **Uncertainty and next action:** Check whether the guide actually makes implementation review more actionable. Stop or simplify if it adds little beyond ordinary review. This exposed-case diagnostic cannot estimate an unbiased DIRECT-versus-GUIDE effect, and it does not waive formal comparison requirements or reopen closed allocations.
 
 **IL-038 follow-up, 16 September:** the [implementation review](exploratory/netbox-bulk-guide/IMPLEMENTATION-REVIEW.md) translates the guide into a specific failed-batch cleanup request, confirms the normal update path and identifies the successful-event control that rejects unconditional cleanup. Seven source hashes and four existing scenario records were checked; no application run occurred. This shows the advice is actionable on the known case. Since prior knowledge informed both guide and review, it does not establish incremental reviewer benefit. A different, previously unreviewed change with an ordinary-review comparison would address that question more directly than repeating this example or restarting qualification.
+
+## IL-039: Keep task selection knowledge out of reusable guidance
+
+**Source:** the user's 16 September objection to testing a known change, the subsequent fresh-task decision, and private FC-01 selection records.
+
+**Status:** Agreed exploratory design; task selected, no guide or comparative result produced.
+
+**Practical implication:** A fresh coding session is insufficient if its guide was tailored around the already known answer. Prepare repository guidance without the later request, preserve that guide before disclosure, and give the ordinary and guided conditions the same task requirements and repository access. The selecting investigator's knowledge must not enter the guidance context. Include preparation cost and retain a null or negative outcome.
+
+**Uncertainty and next action:** Inspect actual input boundaries, fix acceptance tests and equal limits before the two attempts, and report prior project familiarity. Newly specifying a task removes dependence on replaying a selected historical fix, but does not establish that the model has never seen an analogous problem. One small exploratory pair cannot establish general effectiveness.
