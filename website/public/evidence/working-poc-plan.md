@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-16.24**
+Plan ID: **pilot-draft-2026-09-16.25**
 Updated: **16 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -429,6 +429,8 @@ Develop the rubric and input format on development examples. Include correct wor
 Before opening qualification results, freeze the model/settings, instructions, input builder, checks, verdict-combination rules, split, sample size and acceptance limits. If a failed qualification item informs a revision, move its family into development and use fresh families for the next qualification. Do not repeatedly tune against a nominal holdout.
 
 **Fresh-family decision, 16 September.** The user chose unused decision families instead of the proposed infrastructure-only reuse exception. The exception is withdrawn and its bound allocation must not run. Exclude exposed Q01/Q05/Q08 from the next qualification bank; Q02/Q03/Q04/Q07 remain development. Q06 had no recorded Astra dispatch in the reviewed allocations but requires an audit of all study exposure before retention. Select replacements by source-supported decisions and coverage, not expected model scores; renaming or rewording an old case is insufficient. Preserve the four-family, 72-item, 144-position design and existing role instructions and scoring gates unless a change is explicitly recorded before freeze. See [fresh qualification preparation](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/FRESH-QUALIFICATION-PREPARATION.md). A new bank and bound allocation require offline validation and explicit execution approval. Fresh within this study does not establish absence of training-data familiarity. Both stopped allocations and the withdrawn proposal remain preserved.
+
+**Fresh-bank readiness, 16 September.** The documented exposure audit supports retaining unchanged Q06 and replacing the three exposed families with Q09/Q10/Q11. The new bank and separate keys are frozen; all 72 packet checks and the 144-position synthetic rehearsal passed without model calls. Instructions, schemas and all four scoring requirements remain unchanged. The three replacements share one upstream project, have investigator-authored references and lack independent human certification; report this limited coverage. The [bound fresh allocation](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/FRESH-QUALIFICATION-ALLOCATION.md) is prepared but needs explicit execution approval. The withdrawn reuse proposal remains closed.
 
 #### 4. Measure errors with explicit denominators
 

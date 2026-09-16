@@ -1,6 +1,6 @@
 # Prepare qualification on unused decision families
 
-16 September 2026. Agreed direction; replacement material is not yet assembled or approved for execution.
+16 September 2026. Preparation is complete. Q06 passed the documented exposure audit; Q09/Q10/Q11 replacements are assembled and frozen. See [the checked allocation proposal](FRESH-QUALIFICATION-ALLOCATION.md). Execution remains unapproved.
 
 The user chose fresh cases after discussing prior exposure. The proposed infrastructure-only reuse exception is withdrawn. Do not execute configuration `e3b8f72a6c9a12623b8391212f27090cccaabddf147480d70ecff26b0872c22c` or approve its pending template. Preserve its frozen preparation and synthetic rehearsal as historical engineering evidence.
 
@@ -21,6 +21,6 @@ This does not establish absence of model training familiarity with historical pu
 
 ## Current boundary and next step
 
-This decision authorises the preparation direction, not a new live allocation, Fable export, API spend or public publication. No new cases were assembled or private records reopened in recording it. No model was called and no role is qualified.
+The user subsequently authorised preparation. The private audit, replacements, freeze and synthetic rehearsal are complete. This does not authorise a live allocation, Fable export, API spend or public publication. No model was called and no role is qualified.
 
-Next audit Q06 and select fresh replacement families from pinned source evidence. Preserve all stopped outcomes and the withdrawn proposal; no old answer or score contributes to the next qualification result.
+Next obtain explicit approval of the new bound allocation. Preserve all stopped outcomes and the withdrawn proposal; no old answer or score contributes to the next qualification result.

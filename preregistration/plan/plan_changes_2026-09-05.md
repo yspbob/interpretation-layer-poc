@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.24**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.25**. Status: working redesign, not a new ratified preregistration.
+
+## Freeze fresh cases and prepare a new allocation: 16 September 2026
+
+The user authorised preparation. The transferred-record audit supports retaining Q06, with its original preparation and compatibility history disclosed. Q09/Q10/Q11 replace exposed Q01/Q05/Q08. New source evidence, expected answers and twelve units were checked before freeze; no model feedback informed them. The three replacements share one upstream project and have no independent human certification. The 72-item, 144-position design, role instructions and scoring gates remain fixed. Packet checks, authored schema witnesses and a full synthetic rehearsal passed without model calls or key access by the collector. A new exact configuration is prepared with approval flags false; old approvals are rejected. Public publication remains blocked and website body comments remain banked.
 
 ## Choose unused families and withdraw the reuse exception: 16 September 2026
 
