@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.30**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.31**. Status: working redesign, not a new ratified preregistration.
+
+## Complete the first fresh-task exploratory comparison: 16 September 2026
+
+The user explicitly approved three added-credit sessions: one guide and two coding attempts. All completed once. Both candidates passed the nine fixed acceptance checks and preserved/passed 104 existing relevant regression cases; their core implementation was essentially the same. Record no observed correctness advantage and include preparation effort. General parent instructions and globally available tools limit input isolation despite checked source directories and no prohibited reads observed in tool traces. No qualified assessor, independent guide certification or Fable review is claimed. The allocation is closed; formal qualification stays paused. Retain this null result and decide whether a further task is justified before new execution. Raw task, outputs and operational evidence remain private; website body updates remain banked.
 
 ## Select a fresh change and separate guidance from the request: 16 September 2026
 

@@ -627,3 +627,13 @@ The supervisor prepared an ancillary closure script while the run was active. Th
 **Practical implication:** A fresh coding session is insufficient if its guide was tailored around the already known answer. Prepare repository guidance without the later request, preserve that guide before disclosure, and give the ordinary and guided conditions the same task requirements and repository access. The selecting investigator's knowledge must not enter the guidance context. Include preparation cost and retain a null or negative outcome.
 
 **Uncertainty and next action:** Inspect actual input boundaries, fix acceptance tests and equal limits before the two attempts, and report prior project familiarity. Newly specifying a task removes dependence on replaying a selected historical fix, but does not establish that the model has never seen an analogous problem. One small exploratory pair cannot establish general effectiveness.
+
+## IL-040: A usable guide may add no measurable value to a small task
+
+**Source:** the [first fresh-task comparison](exploratory/fresh-task-comparison/README.md), 16 September 2026; two retained first outputs and their common acceptance/regression results.
+
+**Status:** Observed null result on one exploratory pair, with inherited general context and no OS read isolation. No qualified formal comparison or general equivalence claim.
+
+Both coding attempts passed the same nine acceptance checks and original 104 relevant regression cases with essentially the same core implementation. Supplying the repository guide produced no observed correctness advantage. Its creation added work, and small elapsed-time differences between concurrent coding sessions cannot establish a speedup. Explicit requirements and a small change may leave little room for generic guidance to help.
+
+**Practical implication and next action:** Retain the null result and its preparation costs. Before another experiment, identify a concrete kind of repository decision where guidance might add value, rather than automatically adding evaluation machinery or choosing a harder task to replace an inconvenient result. Keep any later comparison separate and preserve equal or worse outcomes.
