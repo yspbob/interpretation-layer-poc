@@ -551,3 +551,16 @@ The profile guard stopped a live attempt because its directory listing contained
 **Practical implication:** Save the offending path and minimal relevant metadata at the point of rejection, while preserving the stop. A later clean directory cannot establish the earlier state. Successful startup probes do not guarantee that intermittent behaviour is absent.
 
 **Uncertainty and next action:** Instrument artificial checks before proposing a lifecycle fix or changing the allowlist. Keep the stopped attempt, unknown usage and exposed packet in the record. Do not turn an unexplained infrastructure failure into either a semantic error or permission to retry qualification.
+
+
+## IL-034: Distinguish a discovered input from a similarly named file
+
+**Source:** [Profile guard diagnosis](development/phase1-harness/PROFILE-GUARD-DIAGNOSIS.md), 16 September 2026, and [official skill format documentation](https://learn.chatgpt.com/docs/build-skills).
+
+**Status:** Observed transient names and tested regular-file exception. Original failure cause, natural entry type and creating process remain unproven.
+
+An all-names guard can reject a metadata file even when the installed client does not discover it as instructions. Directory notifications exposed a brief desktop.ini entry missed by short startup probes. Type matters: a directory with that name can contain SKILL.md and must still be refused.
+
+**Practical implication:** Justify exceptions with captured-input canaries for the exact installed client. Keep the exception narrow, reject links and uncertain types, and retain the listing that caused any stop. Documentation describes intended discovery; observations establish the tested behaviour.
+
+**Uncertainty and next action:** This is not complete containment or a retrospective explanation of the old failure. Rebind changed execution code before another allocation and preserve earlier exposure and outcomes. Do not treat successful artificial responses as qualification.

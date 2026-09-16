@@ -2,6 +2,8 @@
 
 Version: subscription-qualification-v2. Updated 16 September 2026 before new reserved collection. Preparation does not authorise a model run. The closed v1 allocation and its frozen protocol remain unchanged.
 
+Post-stop development amendment, 16 September: v2 also stopped and is closed. The current collector now records rejected skill listings and permits the narrowly tested regular `desktop.ini` file described below. This amended working protocol is not a continuation approval. A future allocation must bind its new bytes and collector, disclose prior exposure and receive a separate explicit decision. The original frozen v2 protocol remains preserved privately.
+
 ## What this run will establish
 
 We will test qualification of the verifier, guidance assessor and verifier assessor using the replacement Q01, Q05, Q06 and Q08 bank, contract v0.2 and fixed v3 role instructions. The [post-repair readiness record](../astra-preparation/POST-REPAIR-READINESS.md) discloses exposure, whole-family replacement and pre-response criterion amendments. There are 72 distinct packets, each used twice, giving 144 scheduled fresh responses and 48 per role. Keep their frozen order and the unchanged [four scoring requirements](SCORING-PROCEDURE.md). No answer or approval carries over from the closed allocation.
@@ -15,6 +17,8 @@ The existing allowlisted bank loader reads the input commitment, sources, refere
 Each attempt starts with an empty working folder and separate Codex profile. It has no previous conversation. Only the ChatGPT login cache is copied temporarily, then removed. Project instructions, memory, apps, plugins and skills are disabled using the tested configuration. The code execution host is disabled and the inspected hook denies tool use. The client still adds its own instructions and advertises some disabled or denied tools. These are part of the recorded configuration.
 
 The laptop collector additionally checks that the working folder remains empty, the fresh profile contains no AGENTS.md or AGENTS.override.md, and no external skill directory exists at the checked workspace ancestors, user or administrator location. Local canaries showed why these checks are needed: the earlier settings did not exclude instructions inserted into the fresh profile or a newly discovered workspace skill. An experimental skip setting also failed the workspace-skill canary and is not used. These checks detect tested input changes; they do not eliminate every possible race or operating-system exposure.
+
+Following the [profile investigation](PROFILE-GUARD-DIAGNOSIS.md), a regular file named exactly `desktop.ini` is permitted directly inside the two checked skill directories. This exception does not permit same-named directories, symbolic links, Windows reparse points or uncertain types, and does not apply to the workspace. Actual-client canaries found no metadata-file contents in requests. Unexpected skill entries still stop collection, with the original rejected listing retained in the failure record. The original failure's exact cause remains unproven.
 
 Pin the client binary, model catalogue, Python environment, collector, batch coordinator, existing validators, role prompts, schemas, this protocol and the scoring procedure. A change prevents the next attempt and invalidates an active collection if detected. Do not alter prompts or cases in response to collected answers.
 

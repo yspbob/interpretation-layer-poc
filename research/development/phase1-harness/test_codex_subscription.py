@@ -8,7 +8,7 @@ import time
 from unittest.mock import patch
 
 from harness import CONTRACT, digest, wire
-from codex_subscription import audit_events, load_packet, run_packet, sha, verify_profile
+from codex_subscription import audit_events, load_packet, run_packet, sha, verify_profile, ProfileSkillError
 from test_qualification_batch import synthetic_answer
 
 
@@ -184,6 +184,87 @@ class CollectorTests(unittest.TestCase):
                     run_packet(p, sha(p), self.root / "above", p, p, auth_path=auth,
                         account_observation={**observation, "remaining_percent": 5.01})
             launch.assert_not_called()
+
+    def test_rejected_listing_survives_disappearing_entry(self):
+        home, work = self.root / "home", self.root / "work"
+        home.mkdir(); work.mkdir()
+        skill = home / "skills" / "temporary-artificial-entry"
+        skill.mkdir(parents=True)
+        original = Path.iterdir
+        def listing(path):
+            entries = list(original(path))
+            if path == home / "skills":
+                skill.rmdir()
+            return iter(entries)
+        with patch.object(Path, "iterdir", listing):
+            with self.assertRaises(ProfileSkillError) as caught:
+                verify_profile(home, work)
+        self.assertFalse(skill.exists())
+        self.assertEqual(caught.exception.observation["unexpected_entries"], [skill.name])
+        self.assertEqual(caught.exception.observation["directory"], str(skill.parent))
+
+    def test_desktop_metadata_exception_is_limited_to_regular_skill_root_files(self):
+        home, work = self.root / "home", self.root / "work"
+        home.mkdir(); work.mkdir()
+        for root in (home / "skills", home / "skills/.system"):
+            root.mkdir(exist_ok=True)
+            metadata = root / "desktop.ini"
+            metadata.write_text("Artificial metadata canary")
+            verify_profile(home, work)
+            metadata.unlink(); metadata.mkdir()
+            with self.assertRaises(ProfileSkillError): verify_profile(home, work)
+            metadata.rmdir()
+        (work / "desktop.ini").write_text("Still an unexpected workspace input")
+        with self.assertRaisesRegex(ValueError, "Working folder"):
+            verify_profile(home, work)
+
+    def test_desktop_metadata_type_uncertainty_and_links_still_reject(self):
+        from types import SimpleNamespace
+        import stat
+        home, work = self.root / "home", self.root / "work"
+        home.mkdir(); work.mkdir()
+        metadata = home / "skills/desktop.ini"
+        metadata.parent.mkdir(); metadata.write_text("Artificial metadata")
+        original = Path.lstat
+        for value in (FileNotFoundError(), SimpleNamespace(st_mode=stat.S_IFLNK),
+                      SimpleNamespace(st_mode=stat.S_IFREG, st_file_attributes=stat.FILE_ATTRIBUTE_REPARSE_POINT)):
+            def inspect(path):
+                if path != metadata:return original(path)
+                if isinstance(value, Exception):raise value
+                return value
+            with patch.object(Path, "lstat", inspect):
+                with self.assertRaises(ProfileSkillError):verify_profile(home, work)
+
+    def test_bundled_skill_rejection_records_exact_name(self):
+        home, work = self.root / "home", self.root / "work"
+        home.mkdir(); work.mkdir()
+        skill = home / "skills" / ".system" / "artificial-unreviewed"
+        skill.mkdir(parents=True)
+        with self.assertRaises(ProfileSkillError) as caught:
+            verify_profile(home, work)
+        self.assertEqual(caught.exception.observation["unexpected_entries"], [skill.name])
+
+    def test_profile_failure_is_saved_before_any_client_launch(self):
+        from types import SimpleNamespace
+        packet = self.root / "packet.json"; packet.write_bytes(wire(self.packet))
+        folder = self.root / "run"
+        def preflight(args, **kwargs):
+            if "startup.py" in args[-1]:
+                (folder / "startup-ok").write_text("yes")
+                output = b"{}"
+            else:
+                (folder / "tool-attempt.json").write_text("{}")
+                (folder / "home/skills/artificial").mkdir(parents=True)
+                output = b'{"hookSpecificOutput":{"permissionDecision":"deny"}}'
+            return SimpleNamespace(returncode=0, stdout=output, stderr=b"")
+        with patch("codex_subscription.CLIENT_HASH", sha(packet)), \
+             patch("subprocess.run", side_effect=preflight), patch("subprocess.Popen") as launch:
+            with self.assertRaises(ProfileSkillError):
+                run_packet(packet, sha(packet), folder, packet, packet, mock_url="http://127.0.0.1:1/v1")
+            launch.assert_not_called()
+        failure = json.loads((folder / "failure.json").read_bytes())
+        self.assertEqual(failure["error"], "Unexpected profile skill")
+        self.assertEqual(failure["profile_observation"]["unexpected_entries"], ["artificial"])
 
 
 if __name__ == "__main__":

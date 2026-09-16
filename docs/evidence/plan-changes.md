@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.21**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.22**. Status: working redesign, not a new ratified preregistration.
+
+## Diagnose transient profile entries and constrain the exception: 16 September 2026
+
+The user authorised artificial investigation. A longer filesystem trace captured transient desktop.ini names in skill directories; neither their writer nor the original failed entry was established. The guard now records its rejected listing and permits only regular desktop.ini files in the two checked skill directories. Directories, links, reparse points, uncertain types and other added skills remain rejected. Canaries in all three role requests did not enter captured inputs. Seven final installed-client cases and 132 offline tests passed; failed artificial probes remain preserved.
+
+This changes an execution guard and its working protocol, not model instructions, reference keys or scoring requirements. A new runtime binding and explicit allocation decision are required after exposure review. Both old allocations remain closed, and no model call occurred. Public publication remains blocked; website body comments remain banked while plan downloads advance locally to .22.
 
 ## Close and score the second qualification allocation: 16 September 2026
 

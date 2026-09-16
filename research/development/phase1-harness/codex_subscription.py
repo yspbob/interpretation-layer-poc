@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import stat
 import subprocess
 import sys
 import time
@@ -39,6 +40,36 @@ def toml(value):
     return json.dumps(value)
 
 
+class ProfileSkillError(ValueError):
+    """Retain the exact rejected listing even if the entry later disappears."""
+
+    def __init__(self, message, directory, entries, unexpected):
+        super().__init__(message)
+        self.observation = {"directory": str(directory), "observed_entries": entries,
+                            "unexpected_entries": unexpected, "observed_at_ns": time.time_ns()}
+
+
+def verify_skill_entries(directory, permitted, message):
+    entries = [p.name for p in directory.iterdir()]
+    unexpected = []
+    for name in entries:
+        if name in permitted:
+            continue
+        # The pinned Windows client does not discover a regular desktop.ini
+        # as a skill. Never extend this exception to a directory or link.
+        if name == "desktop.ini":
+            try:
+                info = (directory / name).lstat()
+                if stat.S_ISREG(info.st_mode) and not (
+                        getattr(info, "st_file_attributes", 0) & stat.FILE_ATTRIBUTE_REPARSE_POINT):
+                    continue
+            except OSError:
+                pass  # An uncertain type still stops collection.
+        unexpected.append(name)
+    if unexpected:
+        raise ProfileSkillError(message, directory, entries, unexpected)
+
+
 def verify_profile(home, work):
     """Fresh profiles must not acquire instruction files or workspace inputs."""
     require(not any(work.iterdir()), "Working folder is no longer empty")
@@ -50,11 +81,11 @@ def verify_profile(home, work):
     require(not Path("/etc/codex/skills").exists(), "Discoverable administrator skills")
     skills = home / "skills"
     if skills.exists():
-        require(all(p.name == ".system" for p in skills.iterdir()), "Unexpected profile skill")
+        verify_skill_entries(skills, (".system",), "Unexpected profile skill")
         system = skills / ".system"
         if system.exists():
-            require(all(p.name in (*SYSTEM_SKILLS, ".codex-system-skills.marker") for p in system.iterdir()),
-                    "Unreviewed bundled skill")
+            verify_skill_entries(system, (*SYSTEM_SKILLS, ".codex-system-skills.marker"),
+                                 "Unreviewed bundled skill")
 
 
 def load_packet(path, expected_hash):
@@ -252,7 +283,10 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
             audit_events(folder, packet, code)
         except Exception:
             pass
-        (folder / "failure.json").write_bytes(wire({"error": str(exc), "exit_code": code}))
+        failure = {"error": str(exc), "exit_code": code}
+        if isinstance(exc, ProfileSkillError):
+            failure["profile_observation"] = exc.observation
+        (folder / "failure.json").write_bytes(wire(failure))
         raise
     finally:
         (home / "auth.json").unlink(missing_ok=True)
