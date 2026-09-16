@@ -538,3 +538,16 @@ A fresh profile with an empty workspace reduces accidental context, but the clie
 **Practical implication:** Inventory the inputs the installed client actually discovers. Use canaries and inspect captured requests. Check absent locations as well as fixed file hashes, repeat those checks around execution, pin the executable and retain failed probes. Do not infer a control's coverage from its name.
 
 **Uncertainty and next action:** The guards cover checked locations and can still race with host changes. They do not prove complete operating-system containment or authenticated wire equivalence. Bind these limitations to the next qualification approval and repeat relevant checks if the client, catalogue or profile changes.
+
+
+## IL-033: Record the state that caused a guard to stop
+
+**Source:** [Second qualification stop](development/phase1-harness/SUBSCRIPTION-QUALIFICATION-V02-STOP.md), 16 September 2026.
+
+**Status:** Observed operational failure with unresolved cause, not a model-quality failure or a proven containment breach.
+
+The profile guard stopped a live attempt because its directory listing contained an unexpected skill entry. It recorded the error but not the entry. A later inspection showed only permitted names, and twenty artificial startup checks did not reproduce the event. That does not establish whether a temporary installer directory or another change caused the failure.
+
+**Practical implication:** Save the offending path and minimal relevant metadata at the point of rejection, while preserving the stop. A later clean directory cannot establish the earlier state. Successful startup probes do not guarantee that intermittent behaviour is absent.
+
+**Uncertainty and next action:** Instrument artificial checks before proposing a lifecycle fix or changing the allowlist. Keep the stopped attempt, unknown usage and exposed packet in the record. Do not turn an unexplained infrastructure failure into either a semantic error or permission to retry qualification.

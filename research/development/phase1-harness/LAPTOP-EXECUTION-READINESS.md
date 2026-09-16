@@ -2,6 +2,8 @@
 
 16 September 2026. Local validation and allocation preparation are complete. **No new model call was made and no role is qualified.** The replacement allocation still requires explicit approval.
 
+Subsequent status: the user approved this configuration, and its allocation stopped at attempt six. Read [the stop and scoring report](SUBSCRIPTION-QUALIFICATION-V02-STOP.md). The preparation record below is historical; it is not a pending approval or permission to resume.
+
 ## Concrete proposal
 
 | Setting | Proposed execution |

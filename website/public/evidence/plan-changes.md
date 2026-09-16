@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.20**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.21**. Status: working redesign, not a new ratified preregistration.
+
+## Close and score the second qualification allocation: 16 September 2026
+
+The user approved the prepared configuration. Five responses completed; attempt six stopped on an unexpected profile skill and 138 positions were not run. The collection was committed before source-based scoring. All five completed answers pass, with no serious semantic error observed, but no role qualifies from this incomplete collection. A second check by the same investigator agrees; no independent human certification is claimed. Twenty artificial startup probes did not reproduce the profile event, whose exact directory name was not captured.
+
+This records execution and its limitations; it changes no prompt, key, seriousness category, acceptance requirement or live runtime. The allocation is closed. Next investigate the profile guard using artificial inputs, then review any execution change and exposure before a new approval. Original responses and freezes remain intact. Public publication remains blocked by the earlier automatic review; the run approval did not override that block. Website body changes remain banked; plan downloads advance locally to .21.
 
 ## Validate the laptop client and bind the next allocation: 16 September 2026
 

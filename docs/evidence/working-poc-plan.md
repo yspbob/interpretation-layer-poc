@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-16.20**
+Plan ID: **pilot-draft-2026-09-16.21**
 Updated: **16 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -514,6 +514,8 @@ The completion record should show what each component received, what it returned
 The runnable prototype checks six control behaviours and records 71 denied file-broker requests, including traversal, prohibited inputs and tampering. It exports hashed documentation-visible drafter, verifier, coder/reviewer, checker and anonymised final-judge packs. A broker allowlist is not a sandbox: the investigator process still has filesystem access, and network/OS isolation has not been demonstrated. No code-inference pack has passed a disclosure audit. No model was called.
 
 For this development case, any confirmed required behavioural failure makes the final result fail; otherwise missing evidence stays insufficient, and all required checks must pass for a scoped pass. Incomplete work fails completion. A second corrected submission may proceed, a further revise stops, and unresolved stops immediately. These are explicit development defaults, not a ratified confirmation endpoint. Scripted lifecycle-call and finally-structure comparisons detect the known candidate changes; general semantic detection and runner-enforced pauses remain open.
+
+**Second allocation stopped, 16 September.** The user approved the prepared configuration. Five answers completed before the sixth attempt stopped on an unexpected profile skill; 138 positions were not run. The [stop and scoring report](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/SUBSCRIPTION-QUALIFICATION-V02-STOP.md) records the verified collection and source checks. All five answers pass the fixed criteria, but the incomplete allocation has no complete repeated pairs or alternative comparisons and qualifies no role. The same investigator performed both source checks; this is not independent certification. No prompt, key or acceptance requirement changed. The offending directory entry was not captured, and twenty artificial local probes did not reproduce it. Next investigate the profile lifecycle with artificial inputs, then review execution changes and exposure before seeking a new allocation decision. This allocation is closed; no retry or automatic continuation is authorised. The failed attempt counts as exposed. Zero experimental guidance runs.
 
 #### Current Phase 1 development and candidate investigation
 
