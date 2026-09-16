@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-16.23**
+Plan ID: **pilot-draft-2026-09-16.24**
 Updated: **16 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -428,7 +428,7 @@ Develop the rubric and input format on development examples. Include correct wor
 
 Before opening qualification results, freeze the model/settings, instructions, input builder, checks, verdict-combination rules, split, sample size and acceptance limits. If a failed qualification item informs a revision, move its family into development and use fresh families for the next qualification. Do not repeatedly tune against a nominal holdout.
 
-**Proposed infrastructure-only exception, 16 September; awaiting explicit approval.** The [third allocation proposal](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/NEXT-QUALIFICATION-ALLOCATION.md) would retain the complete unchanged Q01/Q05/Q06/Q08 bank after the content-independent profile guard repair. No model-response content changed role instructions, scoring, evidence, candidates, model settings or order. This is an explicit proposed exception to the preceding family-retirement rule, not a claim that prior exposure disappeared. Thirteen prior Astra dispatches in retained families, Q01's earlier Fable exposure and the investigator's scoring of five responses remain disclosed. Collect all 144 new responses, carry forward no earlier successes, and preserve both stopped allocations. The proposal needs specific acceptance with the new bound allocation; it is not adopted by preparing or publishing this document. Substantive judgement repairs still require unused families.
+**Fresh-family decision, 16 September.** The user chose unused decision families instead of the proposed infrastructure-only reuse exception. The exception is withdrawn and its bound allocation must not run. Exclude exposed Q01/Q05/Q08 from the next qualification bank; Q02/Q03/Q04/Q07 remain development. Q06 had no recorded Astra dispatch in the reviewed allocations but requires an audit of all study exposure before retention. Select replacements by source-supported decisions and coverage, not expected model scores; renaming or rewording an old case is insufficient. Preserve the four-family, 72-item, 144-position design and existing role instructions and scoring gates unless a change is explicitly recorded before freeze. See [fresh qualification preparation](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/FRESH-QUALIFICATION-PREPARATION.md). A new bank and bound allocation require offline validation and explicit execution approval. Fresh within this study does not establish absence of training-data familiarity. Both stopped allocations and the withdrawn proposal remain preserved.
 
 #### 4. Measure errors with explicit denominators
 

@@ -1,4 +1,6 @@
-# Third qualification allocation: proposal for approval
+# Third qualification allocation: withdrawn proposal
+
+**Superseded, 16 September 2026:** the user chose fresh cases. The reuse exception was not accepted and this configuration must not be dispatched. Follow [fresh qualification preparation](FRESH-QUALIFICATION-PREPARATION.md). The original proposal below and its private freezes are preserved as history; its approval instructions are no longer current.
 
 16 September 2026. Prepared, not authorised. No model call occurred during preparation.
 

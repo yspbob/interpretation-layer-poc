@@ -570,8 +570,8 @@ An all-names guard can reject a metadata file even when the installed client doe
 
 **Source:** [Third allocation preparation](development/phase1-harness/NEXT-QUALIFICATION-ALLOCATION.md), 16 September 2026; verified input/configuration comparison and the two frozen collection summaries.
 
-**Status:** Exposure accounting completed; a narrow reuse exception is proposed and awaits explicit approval. No new model result.
+**Status:** Exposure accounting completed. The user chose fresh cases on 16 September; the proposed narrow reuse exception is withdrawn. No new model result.
 
 The profile repair did not change judgement instructions or criteria, but thirteen dispatches on retained families still occurred and five answers were source-scored. Calling the next allocation new does not make its material untouched. Preserve prior failures and investigator exposure, and distinguish a new execution allocation from fresh evidence.
 
-**Practical implication and next action:** State any exception to a predeclared family-retirement rule before another dispatch. Keep the complete bank and order rather than selecting successful items, count only new responses toward the proposed result, and obtain acceptance of the exact proposal. A substantive judgement repair still requires unused families.
+**Practical implication and next action:** Preserve the withdrawn proposal and prior results. Audit unused whole families, prepare source-backed replacements and bind a new allocation before requesting execution approval. Renaming an exposed case does not establish freshness. Separate documented study exposure, necessary investigator preparation and unknown model training familiarity; fresh study material resolves only the first concern. This is a design decision, not evidence that freshness improves model performance.

@@ -1,5 +1,7 @@
 # Astra qualification through the Codex subscription
 
+**Withdrawn proposal, 16 September 2026:** the user selected qualification on unused decision families. The reuse exception and bank-specific allocation below are historical and must not be approved or dispatched. Follow [fresh qualification preparation](FRESH-QUALIFICATION-PREPARATION.md); a new bank, protocol binding and explicit allocation approval are required. The frozen private copy of this proposal remains unchanged.
+
 Version: subscription-qualification-v3-proposal. Prepared 16 September 2026; not approved for dispatch. Both prior allocations and their frozen protocols remain unchanged. The configuration-record schema remains v2.
 
 Post-stop development amendment, 16 September: v2 also stopped and is closed. The current collector now records rejected skill listings and permits the narrowly tested regular `desktop.ini` file described below. This amended working protocol is not a continuation approval. A future allocation must bind its new bytes and collector, disclose prior exposure and receive a separate explicit decision. The original frozen v2 protocol remains preserved privately.

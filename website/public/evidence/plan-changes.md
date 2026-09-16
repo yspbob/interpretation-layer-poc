@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.23**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.24**. Status: working redesign, not a new ratified preregistration.
+
+## Choose unused families and withdraw the reuse exception: 16 September 2026
+
+The user agreed to fresh cases after reviewing prior exposure. The infrastructure-only reuse proposal is withdrawn, not approved. Its original private freezes remain unchanged and its pending configuration must not execute. Exclude Q01/Q05/Q08 from the next qualification bank, retain existing development exclusions and audit Q06 across all study exposure before deciding eligibility. Prepare source-backed replacement families under the existing design and scoring requirements; a new input freeze, rehearsal and explicit bound allocation approval remain necessary. No new model call, packet export or private evidence inspection occurred while recording this decision. Website body comments remain banked and public publication remains blocked.
 
 ## Prepare the third allocation and make reuse explicit: 16 September 2026
 
