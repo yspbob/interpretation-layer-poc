@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.27**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.28**. Status: working redesign, not a new ratified preregistration.
+
+## Complete separate development evidence repairs: 16 September 2026
+
+The user approved repairing the eighteen affected packets. Separate D11 copies preserve Q11 provenance and development status. The copies add the missing dependency and binding, an explicit documentation contract, complete excerpt endings and self-contained observations. Evidence references, identities and development explanations were refreshed; expected labels, candidate wording and scope, role prompts, thresholds and original scores remain unchanged. Final-packet validation covers 76 claim decisions and 24 coverage decisions, twelve observations on two paths, forty path comparisons, four wrong alternatives and thirteen source-excerpt checks. All eighteen packets pass request and synthetic-answer checks; the maximum padded request is 31,903 bytes against the unchanged 32,768 screen. This is not provider token measurement or independent human certification. No model call, execution argument, new qualification bank or allocation approval was produced. The next preparation work is unused families and a bounded credit policy; previous allocations remain closed.
 
 ## Audit final packets and enforce the existing handoff deadline: 16 September 2026
 
