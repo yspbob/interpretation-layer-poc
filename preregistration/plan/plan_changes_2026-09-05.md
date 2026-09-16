@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.32**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.33**. Status: working redesign, not a new ratified preregistration.
+
+## Complete bounded screening preparation: 16 September 2026
+
+The user requested completion of offline preparation. Two fixed tasks and a first-eligible-failure rule now have common executable checks, tested validation scaffolds, baseline regression records and allowlisted input templates. Propose at most two ten-minute screens, then conditionally a five-minute neutral guide and two fresh ten-minute comparisons, with no retry or extra reviewer. Passing the basic path plus a reproducible material failure is required; mere timeout/noncompletion or environment failure is ineligible. The 23 checks pass investigator controls and detect four faulty variants. The unchanged relevant upstream subset passes 199 cases with one skip and two disclosed exclusions. Preserve the initial control/environment failures and input-boundary limitations. Inputs are frozen privately; no experimental result, independent certification or new spending approval exists. The next step is explicit approval of this concrete allocation. Website body updates remain banked.
 
 ## Separate capped failure screening from the comparison: 16 September 2026
 
