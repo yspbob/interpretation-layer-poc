@@ -651,3 +651,13 @@ Both coding attempts passed the same nine acceptance checks and original 104 rel
 **IL-041 preparation follow-up, 16 September:** the [capped screening proposal](exploratory/fresh-task-comparison/SCREENING-PROPOSAL.md) specifies two candidates in fixed order and first-eligible-failure selection. A passing basic path plus a reproducible behavioural error is proposed to distinguish integration difficulty from mere setup failure or noncompletion. The source inspection motivates the shortlist; it does not establish difficulty or guidance value. Suggested ten-minute coding limits remain unvalidated for the larger scope. Next validate the common checks before any screen and retain a no-eligible-failure result rather than expanding the search. No new experimental run or spending approval occurred.
 
 **IL-041 validation follow-up, 16 September:** [Offline readiness](exploratory/fresh-task-comparison/SCREENING-READINESS.md) includes 23 checks passing investigator-authored controls and four faulty variants that pass their basic paths but fail material checks. Baseline testing also found missing optional dependencies, a Windows-specific case and an unavailable fixture; those were separated before any candidate result. One initial control adapter was corrected while retaining the failed output. This improves confidence in these specific checks, not full evaluator validity or task difficulty. Next use the frozen inputs only after bounded execution approval and retain any null or no-eligible-failure outcome.
+
+## IL-042: Accept a capped search that finds no eligible failure
+
+**Source:** the [two-screen outcome](exploratory/fresh-task-comparison/SCREENING-RESULT.md), 16 September 2026, and the previously fixed selection rule.
+
+**Status:** Observed passing results on two explicitly specified study tasks, with finite checks and the disclosed input-boundary limitations. No new guided comparison occurred.
+
+Both ordinary attempts passed all common checks and applicable existing regressions. The proposed integration complexity therefore did not produce the weak unguided result sought in this bounded screen. More modules or requirements alone are not evidence that a task will expose a gap that guidance can address.
+
+**Practical implication and next action:** Stop at the cap and retain the successful screens and costs. A later proposal would need a practical reason for a different task class, not merely continued searching for a favourable result. That is a recommendation for any future design, not an agreed new allocation or proof that guidance cannot help. Do not restart qualification or expand the evaluation machinery automatically.

@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.33**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.34**. Status: working redesign, not a new ratified preregistration.
+
+## Close capped screening with no eligible failure: 16 September 2026
+
+The user approved the prepared schedule within the available-credit ceiling. Both unguided first attempts passed their 11 and 12 common checks and the 199-case original relevant regression subset within the supervised time limits. Neither qualified for task selection. Close the allocation after two sessions, retaining the passing results and all costs; leave the conditional guide and fresh comparison unrun. Preserve the original evaluator/input freeze and FC-01. No new guided effect, qualified assessor, independent certification or representative reliability claim follows. Source access remained instruction-based and audited, with general inherited context and no OS read boundary. No retry, scoring change, new task, top-up, API route or resumed qualification is authorized. Discuss this result before any further proposal. Website body changes remain banked.
 
 ## Complete bounded screening preparation: 16 September 2026
 
