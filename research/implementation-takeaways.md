@@ -578,3 +578,24 @@ The profile repair did not change judgement instructions or criteria, but thirte
 
 
 **IL-035 follow-up, 16 September:** the [fresh allocation preparation](development/phase1-harness/FRESH-QUALIFICATION-ALLOCATION.md) audited Q06 and replaced the exposed families. Distinguish locally materialised packets and simulations from recorded model dispatches; a filename or substring hit alone does not establish exposure. Record the limits of the audit, investigator authorship and source concentration. These preparation checks establish neither absence of training familiarity nor model qualification. Next execute only after approval of the new frozen allocation.
+
+
+## IL-036: Check evidence completeness in the exact model-visible packet
+
+**Source:** [Fresh qualification outcome](development/phase1-harness/FRESH-QUALIFICATION-OUTCOME.md), 16 September 2026; two retained responses and source-based scoring.
+
+**Status:** Supported preparation defect, not an experimental benefit or evidence of general assessor reliability.
+
+The full investigator source archive contained a dependency that the actual packet omitted. Its observation rows also lacked input and setting descriptions. Structural checks, source hashes and successful investigator behaviour tests did not expose this loss of evidence. Two responses correctly withheld a conclusion that the frozen key expected them to accept.
+
+**Practical implication and next action:** Audit each expected decision using only the final allowed packet, including called dependencies and self-contained observation setups. Keep source availability to the investigator separate from source availability to the assessed role. Preserve the original key/result and report sensitivity when a defect is discovered; do not silently mark a defensible response wrong or retroactively certify it. Repair on development material before another frozen evaluation.
+
+## IL-037: Service execution-control requests continuously
+
+**Source:** The same [closed allocation](development/phase1-harness/FRESH-QUALIFICATION-OUTCOME.md), its pending request, observation receipt and stop event.
+
+**Status:** Observed supervisor coordination failure. The next client attempt was not dispatched.
+
+The supervisor prepared an ancillary closure script while the run was active. The next required observation was obtained 120.89 seconds after its request and delivered later, beyond the fixed 120-second guard. The correct stop preserved the allocation, but the missed deadline left 136 positions unrun.
+
+**Practical implication and next action:** Prepare auxiliary work before launch and dedicate active supervision to the control exchange. Validate this with artificial fixtures and retain the existing timeout. This incident does not justify weakening the guard, blaming the assessor or automatically retrying exposed cases.

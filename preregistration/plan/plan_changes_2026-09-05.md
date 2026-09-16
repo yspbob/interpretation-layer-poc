@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.25**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.26**. Status: working redesign, not a new ratified preregistration.
+
+## Close the approved fresh allocation: 16 September 2026
+
+The user approved the bound fresh allocation. The unchanged controller recorded 8 structurally valid responses, 0 failed attempts and 136 unrun positions before closure. The supervising pre-dispatch observation missed its fixed 120-second deadline. The ninth client attempt did not start; this is an operator coordination failure, not an assessor error. No prompt, runtime, scoring or input change occurred. Integrity checks and semantic scoring are complete for the eight collected answers; every position stays in the denominator. No role is qualified, retry or continuation is authorised, or experimental guidance result demonstrated. Public publication remains blocked and website body changes remain banked.
+
+Scoring and the same investigator's second source check found six frozen-criteria passes and two defensible unresolved responses exposing a packet/reference defect. Keep the original keys and results, record the source-consistent sensitivity separately and do not treat defective items as certification. The next pre-dispatch observation arrived after 120 seconds; auxiliary work interrupted supervisor servicing. Prepare that work before launch and validate prompt/evidence packets from the role's actual input boundary. No runtime or prompt repair is authorised by these findings.
 
 ## Freeze fresh cases and prepare a new allocation: 16 September 2026
 

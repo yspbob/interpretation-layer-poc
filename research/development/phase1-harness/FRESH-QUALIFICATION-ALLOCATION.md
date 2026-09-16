@@ -1,4 +1,6 @@
-# Fresh qualification allocation: proposal for approval
+# Fresh qualification allocation: approved and closed
+
+**Status update, 16 September 2026:** the user approved this exact configuration and collection is now closed. Read [the outcome](FRESH-QUALIFICATION-OUTCOME.md). The preparation proposal below is historical; it does not authorise another execution.
 
 16 September 2026. Prepared, not authorised for execution. No live model call occurred.
 
