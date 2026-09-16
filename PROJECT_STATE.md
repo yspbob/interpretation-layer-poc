@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 15 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 16 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -10,9 +10,25 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 
 The redesigned POC is still being prepared. There are **zero experimental guidance runs**. A preliminary familiarity screen has returned 24 subagent answers; it is separate from experimental runs and does not qualify the controlled runner. Component contracts, development references and a controlled subscription runner exist. The first Astra qualification allocation stopped after eleven responses, with no role qualified. The interactive checker and coding judge remain later work.
 
-The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-15.18**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
+The current scope is guidance reconstruction under working plan **pilot-draft-2026-09-16.19**. The first trial itself now has three phases: reconstruct guidance; test its use; test interaction. Coding execution and the interactive checker are later work. Read the functional phase decision below; it supersedes the previous first trial / confirmation / broader use split. The website now opens on one continuous plan: purpose, “How the three phases fit together”, then an in-page station selector with Phase 1 selected. Progress stays separate; older roadmap and method addresses are compatibility routes.
 
-## Laptop setup completed; paused at the user's request
+## Current work: replacement qualification inputs prepared, 16 September 2026
+
+The user asked to proceed after laptop setup. Both repositories synced and all 10,706 original transferred files verified before use. Read [the post-repair readiness record](research/development/astra-preparation/POST-REPAIR-READINESS.md). The exposure review applied the existing whole-family rule: Q07 becomes development for all roles because its failed verifier response informed the repair. Q01, Q05 and Q06 remain complete families, with Q01's earlier Fable evaluation and the stopped Astra exposure disclosed. No original model answer was parsed for this review and no successful scores were selected. Q08 is the distinct replacement; its subject and keys remain private.
+
+The new input bank contains 72 items and 144 scheduled fresh responses, with Q08 replacing Q07 in the original declared order. All 54 retained items preserve source evidence, candidate claims, submitted verdicts and explanations. The conversion updates contract v0.2 identity fields and submitted-review representation. A separate semantic review found ten retained absent-evidence criteria inconsistent with the fixed v3 verifier instruction; these now require unresolved for the verifier and its assessor. Four new-family criteria follow the same rule. Guidance-assessor alternatives and legitimate conflict alternatives remain, as do the four acceptance requirements and seriousness rules. Old keys, answers and the closed run are unchanged. No model prompt or runtime code changed.
+
+Q08's pinned-source and installed-implementation checks passed. Twelve named behaviour observations and 100 finite-grid comparisons matched expectations; four deliberate faults were detected. No upstream suite ran. The investigating assistant checked all eighteen new items and four reference units against evidence, without independent human certification. An initial preparation version is preserved alongside the pre-response provenance and criterion corrections.
+
+All 144 positions completed in an exact subscription-coordinator simulation with artificial client/account records and answers, blocked network and process launches, and no credentials. Collection opened only eighteen permitted input files, with no scoring keys. The subsequent investigator audit checked 72 key/packet correspondences, 301 expected claim decisions, 72 schema witnesses and 72 changed-identity denials. All distinct encoded requests passed the development size screen; maximum including padding was 32,472 of 32,768. The first simulation refused an incorrectly labelled artificial account observation before any attempt; it remains preserved. These are structural/evidence checks, not model reasoning, actual account observations or live client validation. The unchanged runtime's 122-test laptop suite passed during setup; it was not needlessly rerun.
+
+Private input bank: `qualification-v02-bank-2026-09-16`, commitment `571381e8c28557b36105ed35343b62116eddf914c8f75839a0de0684d64ae41d`. Successful simulation: `qualification-v02-rehearsal-v2-2026-09-16`, commitment `6017508d47b07154dd975d3a3ad51934a008e89f8099e217911a98911017ec42`. The compatibility audit and Q08 commitments are listed in the public readiness record. The private helper confirmed publication at **cf6f83e8666e4823da9ca4e551208e9a58eebe25**. Its refreshed transfer manifest verifies 11,658 files (113,449,176 bytes). The previous transfer manifest is preserved under `continuity-2026-09-16`, retaining the home PC exclusion inventory. All four original evidence commitments and their 543 records still verify.
+
+**Exact next step:** validate the laptop's actual Codex client, catalogue, fresh-profile exclusions, exposed tool denials and stop controls using artificial local fixtures. Then bind the exact subscription execution configuration and present it with fresh account evidence for approval. The new input allocation is not dispatch authorisation. Do not reuse the closed allocation's approval or responses. No new model request, Fable export, API spending or experimental guidance run occurred; Astra remains unqualified.
+
+Working plan .19, the change register and implementation takeaway IL-031 record the preparation and criterion amendment. Website body changes remain banked. The Pages build and route/asset checks passed; every installed locked package matched its lockfile version and plan downloads agree. npm was unavailable, so the exact two Node scripts named by build:pages were invoked directly. The rebuilt plan, progress and compatibility routes preserve their prior displayed text. Both primary views still have the previously banked status/route wording updates outstanding; this work did not release those body edits. No visual layout changed intentionally, and no browser visual review was performed. Automatic approval review briefly rejected a private read because its review model was at capacity; the same read-only operation later succeeded through normal approval review.
+
+## Previous work: laptop setup completed; pause on 15 September
 
 On 15 September the first laptop setup followed [START_HERE.md]. The existing clean public checkout fast-forwarded to `6d17a159cc2dbaf86b389d3f9107a9c9f5881c2e`. Git 2.55.0.windows.3, Node.js 24.19.0 and GitHub CLI 2.97.0 were available. Local GitHub access and private repository visibility were confirmed. The private repository was cloned outside the public project at `%USERPROFILE%/Documents/Codex/poc-private`; its sync helper succeeded at evidence commit `e2a342632853ac3a126ecacbbf3fe377471a8f96`.
 
@@ -33,6 +49,8 @@ The home PC rehearsal created a new Python 3.13.12 environment from provider-loc
 Use the separate private sync helper for private work and the existing public helper for this repository. Keep the private checkout outside the public project. On the laptop, use local paths and local sign in; historical absolute paths and approvals stay as evidence. The old qualification allocation remains closed. Current public code is contract v0.2, while older frozen packets retain their original versions. Website body changes remain banked. This move changes storage and setup, not the experimental method; plan revision .18 remains current.
 
 ## Read next
+
+- [Post-repair qualification readiness](research/development/astra-preparation/POST-REPAIR-READINESS.md). Exposure review, Q08 replacement and the exact new input-bank simulation are complete. Next validate the actual laptop client; no live allocation is approved.
 
 - [Verifier repair and interpretation checks](research/development/phase1-harness/VERIFIER-INTERPRETATION.md). Six public development responses met the saved verdict and explanation requirements. No role is qualified. Next review qualification exposure and compatibility.
 
@@ -87,7 +105,7 @@ Use the separate private sync helper for private work and the existing public he
 
 The old NetBox-only preregistration and harness remain for traceability. Do not inherit their four conditions, 25-ticket selection, 300-run schedule or numerical success rules into the redesigned pilot.
 
-## Current work: verifier repair tested, 15 September 2026
+## Previous work: verifier repair tested, 15 September 2026
 
 The user agreed to identify the unchanged claim instead of copying its scope, added interpretation tests and requested execution. The controller supplies the complete draft fingerprint; the verifier returns it with each claim ID, verdict, evidence and explanation. It cannot return a replacement scope. The controller still releases original admitted claims. Correct identity does not prove correct understanding.
 

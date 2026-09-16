@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-15.18**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.19**. Status: working redesign, not a new ratified preregistration.
+
+## Review exposure and prepare the repaired qualification inputs: 16 September 2026
+
+Following the user's request to proceed, the review applied the existing whole-family development rule to Q07, whose failed verifier answer informed the repair. Q01, Q05 and Q06 remain complete families with their recorded exposure disclosed; Q08 is the distinct replacement. The closed allocation and its eleven answers remain unchanged and contribute no responses to the new proposal. This is preparation, not permission to dispatch models.
+
+The interface conversion preserves retained evidence, candidate claims, submitted verdicts and explanations. A semantic compatibility review found ten retained absent-evidence criteria that allowed reject or unresolved despite the fixed v3 verifier instruction requiring unresolved. Those criteria, and four counterparts in the new family, now match that instruction in new versions. Legitimate conflict alternatives and the guidance assessor's separate support labels remain. No original model answer was opened for this review, no prompt was changed, and the four acceptance requirements and seriousness rules are unchanged. Original keys remain preserved.
+
+The new bank has 72 items and 144 positions. Q08's pinned-source checks, 112 behaviour comparisons and four fault detections passed. The full subscription schedule completed with artificial responses and blocked network/process access, reading only eighteen permitted input files during collection. Separate key/schema correspondence checks and 72 changed-identity denials passed. The initial synthetic account-record refusal is retained. These checks establish neither model quality nor the laptop's actual client boundary. Next validate that boundary locally, bind the exact execution configuration and present it for approval. Website body changes remain banked; downloads carry the updated plan.
 
 ## Bind decisions to fixed claims and test interpretation: 15 September 2026
 

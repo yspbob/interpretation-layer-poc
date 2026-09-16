@@ -514,3 +514,15 @@ Test interpretation separately. Include limited observations that cannot support
 All six Astra responses met those criteria, once each on simple invented examples. The investigating assistant prepared and assessed them, without independent human review. For the future drafter, favour explicit conditions and quantifiers and resolve material ambiguity through a new claim version. Its prompt has not been changed here.
 
 **Next action:** Carry the fixed reference requirement and interpretation failure modes into suitable qualification material. Preserve the stopped attempt and do not use these examples as independent qualification.
+
+## IL-031: Recheck verdict meanings when an interface changes
+
+**Source:** The [post-repair compatibility review](development/astra-preparation/POST-REPAIR-READINESS.md), 16 September 2026.
+
+**Status:** An observed mismatch between fixed instructions and older qualification criteria, corrected before new responses. Not evidence of model improvement.
+
+The repaired verifier identifies a claim by fingerprint, but its instructions also distinguish contradictory evidence from absent evidence. A mechanical packet conversion preserved the old claims successfully while leaving criteria that accepted rejection where the new instruction requires an unresolved decision. Format validity did not expose this semantic mismatch.
+
+**Practical implication:** Review the meaning of each permitted verdict, supplied reference and expected answer alongside schema changes. Version justified criterion amendments, preserve old results, and apply the same distinction across affected cases. Retire families that informed a repair; disclose other exposure without selecting material on favourable scores. Do not turn a compatibility change into retrospective success.
+
+**Uncertainty and next action:** The review and replacement checks were performed by the investigating assistant, without independent human certification. A complete synthetic rehearsal proves neither assessor reliability nor actual client isolation. Validate the laptop client and freeze its concrete configuration before seeking approval for new qualification responses.

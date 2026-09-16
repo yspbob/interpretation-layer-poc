@@ -1,7 +1,7 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-15.18**
-Updated: **15 September 2026**
+Plan ID: **pilot-draft-2026-09-16.19**
+Updated: **16 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
 This document incorporates the research review and the subsequent website-design discussion. It is the current planning document for the redesigned POC. The previous ratified v1.2 plan is preserved as a historical record; its NetBox-only four-arm design, 25-ticket sample, 300-run schedule and success rule must not be silently inherited by this pilot.
@@ -565,7 +565,13 @@ Contract phase1-development-v0.2 and assessment instruction version v3 now apply
 
 Read the [development report](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/VERIFIER-INTERPRETATION.md) for evidence and limits.
 
-**Exact next step:** review role and family exposure from the stopped allocation and compatibility with the changed verifier interface. Specify which material can be retained and which needs replacement, then prepare and check the corresponding qualification allocation. Do not resume the closed batch or use these six development examples as qualification evidence. The user authorised these development checks, not an unspecified new reserved batch or paid usage. Coding execution and interaction remain later work.
+**Post-repair preparation, 16 September.** The [exposure and compatibility review](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/astra-preparation/POST-REPAIR-READINESS.md) applies section 9A's existing family rule: Q07 becomes development for all three roles because its failed verifier response informed the repair. Retain complete Q01, Q05 and Q06 with prior Q01/Fable and Q01/Q05/Astra exposure disclosed; retention is not based on successful scores and does not mean wholly unseen material. Q08 supplies one distinct replacement. No original answer was semantically scored or carried forward.
+
+The new input bank uses contract v0.2 and the existing v3 role instructions. All 54 retained items preserve their evidence, claims, submitted verdicts and explanations. Identity fields and submitted-review representations change. Ten retained missing-evidence criteria and four in Q08 now require unresolved for the verifier and its assessor, matching the fixed instruction. Guidance-assessor alternatives and legitimate conflict alternatives remain. The criteria amendment is outcome-blind in this preparation and does not alter original frozen keys or the stopped result. The four acceptance requirements, seriousness rules and two-repetition design stay fixed.
+
+Q08 has four reference units and eighteen items, checked against pinned sources, twelve named observations, 100 finite-grid comparisons and four detected deliberate faults. These are investigator checks, without independent human certification. The combined Q01/Q05/Q06/Q08 bank contains 72 items and 144 scheduled fresh responses. Every request passed the development size screen; all 144 positions completed with artificial subscription responses and blocked network/process access. The collector opened only eighteen permitted input files, with no scoring keys. Separate key/schema checks and 72 changed-identity denials passed. No model or account check occurred and no role qualified.
+
+**Exact next step:** validate the laptop's actual client, catalogue, clean profile, exposed tool denials and stopping with artificial local fixtures. Then bind and present the concrete subscription execution configuration and fresh account evidence for approval. The prepared input allocation is not dispatch authorisation; do not reuse the closed batch's approval or answers. Coding execution and interaction remain later work.
 
 
 | Stage | Required work | Current state |
