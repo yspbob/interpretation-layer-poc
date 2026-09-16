@@ -1,9 +1,12 @@
 """Subscription schedule and stops with artificial material, no model calls."""
 from copy import deepcopy
+from contextlib import redirect_stdout
+import io
 import json
 from pathlib import Path
 import tempfile
 import time
+from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
@@ -155,6 +158,40 @@ class SubscriptionTests(unittest.TestCase):
         folder = self.root / "observations"; folder.mkdir()
         (folder / "S.response.json").write_bytes(wire({"scheduled_id": "S", "observed_at": 0, "raw": {}}))
         with self.assertRaises(ValueError): exchange_observation(folder, {"id": "S"}, lambda: None)
+
+    def test_ninth_handoff_timeout_preserves_eight_and_never_dispatches_ninth(self):
+        b = self.batch()
+        folder = self.root / "observations"
+        clock = [1000.0]
+        pending = [None]
+        observed = []
+        def advance(seconds):
+            clock[0] += seconds
+            if len(observed) <= 8:
+                request = json.loads(pending[0].read_bytes())
+                response = pending[0].with_name(pending[0].name.replace(".request.", ".response."))
+                response.write_bytes(wire({"scheduled_id": request["scheduled_id"],
+                    "observed_at": clock[0], "raw": {
+                        "ordinaryUsageAllowed": True, "accountId": "artificial-account",
+                        "rateLimits": {"limitId": "codex", "primary": {"usedPercent": 20},
+                                       "credits": {"hasCredits": False, "balance": "0"}}}}))
+        def observe(row):
+            observed.append(row["id"])
+            pending[0] = folder / (row["id"] + ".request.json")
+            return exchange_observation(folder, row, b.guard)
+        artificial_time = SimpleNamespace(time=lambda: clock[0], monotonic=lambda: clock[0], sleep=advance)
+        with patch("subscription_batch.time", artificial_time), redirect_stdout(io.StringIO()):
+            result = b.run(observe)
+        self.assertEqual(result["counts"], {"structurally_valid": 8, "not_run": 136})
+        self.assertEqual(result["stop"], "Account observer timeout")
+        self.assertEqual(result["collector_attempts"], 8)
+        self.assertEqual(len(self.calls), 8)
+        self.assertEqual(len(observed), 9)
+        self.assertEqual(sum(e["kind"] == "reserved" for e in b.events), 8)
+        self.assertFalse((b.folder / "attempt-009").exists())
+        self.assertTrue((b.folder / "collection-freeze.json").exists())
+        with self.assertRaises(ValueError):
+            b.run(observe)
 
     def test_collector_rejects_wrong_qualification_permit_before_launch(self):
         from codex_subscription import run_packet

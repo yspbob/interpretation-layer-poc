@@ -203,17 +203,22 @@ def exchange_observation(directory, row, guard):
     """
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
+    deadline = time.monotonic() + 120
     requested_at = time.time()
     request = directory / (row["id"] + ".request.json")
     with request.open("xb") as stream:
         stream.write(wire({"scheduled_id": row["id"], "requested_at": requested_at}))
     print(wire({"account_check_requested": row["id"], "exchange_directory": str(directory)}).decode(), flush=True)
     response = directory / (row["id"] + ".response.json")
-    while not response.exists():
+    while True:
         guard()
-        require(time.time() - requested_at <= 120, "Account observer timeout")
+        require(time.monotonic() <= deadline, "Account observer timeout")
+        if response.exists():
+            break
         time.sleep(.25)
     envelope = strict_json(response.read_bytes())
+    guard()
+    require(time.monotonic() <= deadline, "Account observer timeout")
     require(envelope["scheduled_id"] == row["id"] and requested_at <= envelope["observed_at"] <= time.time(), "Old account receipt")
     observation = account_observation(envelope["raw"], row["id"])
     observation["observed_at"] = envelope["observed_at"]

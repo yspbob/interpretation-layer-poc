@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.26**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.27**. Status: working redesign, not a new ratified preregistration.
+
+## Audit final packets and enforce the existing handoff deadline: 16 September 2026
+
+The user requested continued preparation. The follow-up reviews all eighteen affected family packets and records final-packet evidence requirements for each claim and reference unit. Fifteen support keys lack necessary evidence. Three counterclaim rejections are defensible from visible processing order, but their required explanations still assert an unsupported effect. Original inputs, keys and scores remain frozen. The family becomes development material if repaired using this feedback.
+
+Artificial tests exposed four exchange boundary gaps before the control fix. The unchanged 120-second limit now uses a monotonic clock and is checked before accepting a ready receipt and after reading it, together with the stop/configuration guard. All 144 offline harness tests pass, including 144 sequential handoffs and an integrated eight-completed/ninth-timeout closure. The runbook requires preparing ancillary work before launch and giving control requests priority. This does not prove live supervisor responsiveness. Runtime binding changes; model instructions, scoring thresholds, five-minute attempt deadline and existing payment controls do not. No live model call, new qualification bank, allocation approval or public release occurred.
 
 ## Close the approved fresh allocation: 16 September 2026
 
