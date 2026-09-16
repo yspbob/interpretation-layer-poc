@@ -75,7 +75,7 @@ class SubscriptionTests(unittest.TestCase):
         self.assertEqual(r["collector_attempts"], 1)
 
     def test_stale_or_paid_allowance_stops_before_reservation(self):
-        for field, value in (("observed_at", 0), ("has_credits", True), ("remaining_percent", 10),
+        for field, value in (("observed_at", 0), ("has_credits", True), ("remaining_percent", 5),
                              ("account_id", "wrong"), ("scheduled_id", "wrong")):
             with self.subTest(field=field):
                 target = self.root / field
@@ -90,6 +90,17 @@ class SubscriptionTests(unittest.TestCase):
             return {**self.collector(*a, **kw), "thread_id": "same"}
         r = self.batch(same).run(self.observation)
         self.assertEqual(r["counts"], {"structurally_valid": 1, "failed": 1, "not_run": 142})
+
+    def test_user_selected_five_percent_boundary(self):
+        def reached(*args, **kwargs):
+            raise RuntimeError("Artificial collector reached")
+        for remaining in (4.99, 5, 5.01):
+            target = self.root / str(remaining)
+            config = configuration(self.bank, target, self.exe, self.catalog, "artificial-account")
+            self.assertEqual(config["minimum_remaining_percent"], 5)
+            b = SubscriptionBatch(self.bank, target, config, simulation_collector=reached)
+            result = b.run(lambda row: {**self.observation(row), "remaining_percent": remaining})
+            self.assertEqual(result["collector_attempts"], 1 if remaining > 5 else 0)
 
     def test_wrong_response_identity_stops(self):
         def wrong(*a, **kw):

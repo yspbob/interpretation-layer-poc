@@ -526,3 +526,15 @@ The repaired verifier identifies a claim by fingerprint, but its instructions al
 **Practical implication:** Review the meaning of each permitted verdict, supplied reference and expected answer alongside schema changes. Version justified criterion amendments, preserve old results, and apply the same distinction across affected cases. Retire families that informed a repair; disclose other exposure without selecting material on favourable scores. Do not turn a compatibility change into retrospective success.
 
 **Uncertainty and next action:** The review and replacement checks were performed by the investigating assistant, without independent human certification. A complete synthetic rehearsal proves neither assessor reliability nor actual client isolation. Validate the laptop client and freeze its concrete configuration before seeking approval for new qualification responses.
+
+## IL-032: Test discovered inputs as well as committed files
+
+**Source:** [Laptop client validation](development/phase1-harness/LAPTOP-EXECUTION-READINESS.md), 16 September 2026; artificial request captures from the actual installed client.
+
+**Status:** Observed input-discovery behaviour and tested controls. No model-quality finding.
+
+A fresh profile with an empty workspace reduces accidental context, but the client can still discover instructions or skills inserted into those locations. Hashing only the intended files does not detect those additions. A setting whose name suggested broader exclusion also left a workspace skill visible. Matching client version labels did not imply matching executable hashes.
+
+**Practical implication:** Inventory the inputs the installed client actually discovers. Use canaries and inspect captured requests. Check absent locations as well as fixed file hashes, repeat those checks around execution, pin the executable and retain failed probes. Do not infer a control's coverage from its name.
+
+**Uncertainty and next action:** The guards cover checked locations and can still race with host changes. They do not prove complete operating-system containment or authenticated wire equivalence. Bind these limitations to the next qualification approval and repeat relevant checks if the client, catalogue or profile changes.

@@ -1,10 +1,10 @@
 # Astra qualification through the Codex subscription
 
-Version: subscription-qualification-v1. Fixed before reserved collection. Preparation does not authorise a model run.
+Version: subscription-qualification-v2. Updated 16 September 2026 before new reserved collection. Preparation does not authorise a model run. The closed v1 allocation and its frozen protocol remain unchanged.
 
 ## What this run will establish
 
-We will qualify the verifier, guidance assessor and verifier assessor using the existing Q01, Q05, Q06 and Q07 bank. There are 72 distinct packets, each used twice, giving 144 scheduled responses and 48 per role. Keep their frozen order. The bank, role instructions and [four scoring requirements](SCORING-PROCEDURE.md) do not change.
+We will test qualification of the verifier, guidance assessor and verifier assessor using the replacement Q01, Q05, Q06 and Q08 bank, contract v0.2 and fixed v3 role instructions. The [post-repair readiness record](../astra-preparation/POST-REPAIR-READINESS.md) discloses exposure, whole-family replacement and pre-response criterion amendments. There are 72 distinct packets, each used twice, giving 144 scheduled fresh responses and 48 per role. Keep their frozen order and the unchanged [four scoring requirements](SCORING-PROCEDURE.md). No answer or approval carries over from the closed allocation.
 
 Any qualification applies to the recorded Codex client configuration requesting Astra at High effort. It is not certification of an independently identified backend snapshot. It does not qualify the drafter, coding judge or interactive checker.
 
@@ -14,13 +14,15 @@ The existing allowlisted bank loader reads the input commitment, sources, refere
 
 Each attempt starts with an empty working folder and separate Codex profile. It has no previous conversation. Only the ChatGPT login cache is copied temporarily, then removed. Project instructions, memory, apps, plugins and skills are disabled using the tested configuration. The code execution host is disabled and the inspected hook denies tool use. The client still adds its own instructions and advertises some disabled or denied tools. These are part of the recorded configuration.
 
+The laptop collector additionally checks that the working folder remains empty, the fresh profile contains no AGENTS.md or AGENTS.override.md, and no external skill directory exists at the checked workspace ancestors, user or administrator location. Local canaries showed why these checks are needed: the earlier settings did not exclude instructions inserted into the fresh profile or a newly discovered workspace skill. An experimental skip setting also failed the workspace-skill canary and is not used. These checks detect tested input changes; they do not eliminate every possible race or operating-system exposure.
+
 Pin the client binary, model catalogue, Python environment, collector, batch coordinator, existing validators, role prompts, schemas, this protocol and the scoring procedure. A change prevents the next attempt and invalidates an active collection if detected. Do not alter prompts or cases in response to collected answers.
 
 ## Allocation and payment
 
 The proposed allocation is at most 144 sequential attempts through the existing subscription, with zero additional spending. No API fallback, purchased credits, reset credits or parallel model sessions are permitted. The allocation record binds the input bank, schedule, runtime, output folder and account. It requires an explicit approval reference and expiry before dispatch. The preparation command leaves it unapproved.
 
-Before every attempt, obtain a new account observation for that scheduled position. At dispatch it must be no more than 120 seconds old, match the login account, allow ordinary usage, show more than 10% remaining in every reported core Codex window, and show zero paid credits. Missing or uncertain information stops the batch. The observer records the source of the check; filling a field is not independent evidence that a check occurred.
+Before every attempt, obtain a new account observation for that scheduled position. At dispatch it must be no more than 120 seconds old, match the login account, allow ordinary usage, show more than 5% remaining in every reported core Codex window, and show zero paid credits. The user explicitly selected the 5% threshold on 16 September, replacing the earlier 10% proposal. Missing or uncertain information stops the batch. The observer records the source of the check; filling a field is not independent evidence that a check occurred.
 
 Each attempt has a five minute local deadline and a one megabyte output record limit. At most 144 such attempts are permitted, giving a twelve hour maximum of active collection time before overhead. These are operational limits, not a provider token cap. Record reported input and output tokens cumulatively; do not convert subscription tokens into a fictional API invoice or infer a precise subscription percentage cost from them.
 

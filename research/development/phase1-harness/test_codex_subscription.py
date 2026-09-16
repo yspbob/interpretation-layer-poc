@@ -8,7 +8,7 @@ import time
 from unittest.mock import patch
 
 from harness import CONTRACT, digest, wire
-from codex_subscription import audit_events, load_packet, run_packet, sha
+from codex_subscription import audit_events, load_packet, run_packet, sha, verify_profile
 from test_qualification_batch import synthetic_answer
 
 
@@ -141,6 +141,49 @@ class CollectorTests(unittest.TestCase):
                     run_packet(p, sha(p), self.root / "run", p, p, auth_path=auth, account_observation={**good, **changes})
             launch.assert_not_called()
         self.assertFalse((self.root / "run").exists())
+
+    def test_fresh_profile_rejects_added_instructions_and_workspace_inputs(self):
+        home, work = self.root / "home", self.root / "work"
+        home.mkdir(); work.mkdir()
+        verify_profile(home, work)
+        for path in (home / "AGENTS.md", home / "AGENTS.override.md", work / "unexpected.txt"):
+            path.write_text("Artificial additional input")
+            with self.assertRaises(ValueError): verify_profile(home, work)
+            path.unlink()
+
+    def test_skills_in_workspace_ancestor_prevent_collection(self):
+        home, work = self.root / "home", self.root / "work"
+        home.mkdir(); work.mkdir()
+        skill = self.root / ".agents" / "skills" / "artificial"
+        skill.mkdir(parents=True)
+        (skill / "SKILL.md").write_text("Artificial skill")
+        with self.assertRaisesRegex(ValueError, "Discoverable external skills"):
+            verify_profile(home, work)
+
+    def test_unreviewed_profile_skill_prevents_collection(self):
+        home, work = self.root / "home", self.root / "work"
+        home.mkdir(); work.mkdir()
+        skill = home / "skills" / ".system" / "unreviewed"
+        skill.mkdir(parents=True)
+        with self.assertRaisesRegex(ValueError, "Unreviewed bundled skill"):
+            verify_profile(home, work)
+
+    def test_user_selected_allowance_boundary(self):
+        p = self.root / "packet.json"; p.write_bytes(wire(self.packet))
+        auth = self.root / "auth.json"
+        auth.write_text('{"auth_mode":"chatgpt","tokens":{"account_id":"artificial"}}')
+        observation = {"observed_at": time.time(), "public_probe_only": True, "ordinary_usage_allowed": True,
+            "credits_balance": "0", "has_credits": False, "account_id": "artificial"}
+        with patch("codex_subscription.CLIENT_HASH", sha(p)), patch("subprocess.Popen") as launch:
+            for remaining in (4.99, 5):
+                with self.subTest(remaining=remaining), self.assertRaisesRegex(ValueError, "Included allowance uncertain"):
+                    run_packet(p, sha(p), self.root / str(remaining), p, p, auth_path=auth,
+                        account_observation={**observation, "remaining_percent": remaining})
+            with patch("codex_subscription.shutil.copyfile", side_effect=RuntimeError("past allowance gate")):
+                with self.assertRaisesRegex(RuntimeError, "past allowance gate"):
+                    run_packet(p, sha(p), self.root / "above", p, p, auth_path=auth,
+                        account_observation={**observation, "remaining_percent": 5.01})
+            launch.assert_not_called()
 
 
 if __name__ == "__main__":

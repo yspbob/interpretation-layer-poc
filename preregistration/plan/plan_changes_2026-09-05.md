@@ -1,6 +1,14 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.19**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.20**. Status: working redesign, not a new ratified preregistration.
+
+## Validate the laptop client and bind the next allocation: 16 September 2026
+
+Publication privacy correction: historical account readings in the plan and change register are now omitted from public summaries and preserved privately. Research outcomes, scientific token accounting and protocol limits are unchanged. This addresses automatic publication review; it does not rewrite the original evidence.
+
+The installed client has different bytes from the home PC despite reporting the same version. Local artificial validation retained two unsuccessful probe configurations before the final 24-case check. Profile instructions and workspace skills could enter requests under the earlier settings; an experimental skip setting did not exclude the workspace skill. The collector now checks fresh profile and workspace contents and external skill locations, rejects unknown bundled skills and explicitly disables the six bundled paths. All ten advertised paths were stopped through the denial hook or disabled code host. All 127 offline tests passed. No live model call or new reserved exposure occurred.
+
+Protocol v2 identifies Q01/Q05/Q06/Q08, contract v0.2 and fixed v3 instructions, preserving the acceptance requirements and the closed allocation. The concrete laptop configuration is bound but unapproved. Existing subscription transport, identity, retry and containment limitations remain explicit. The user changed the threshold to 5% and will arrange more allowance. Both dispatch gates and boundary tests use 5%; the earlier 10% proposal is preserved and superseded. No automatic retry/resume or agent credit purchase/redemption is authorised. Next obtain approval for the exact configuration before dispatch. Website body edits remain banked; plan downloads advance to .20.
 
 ## Review exposure and prepare the repaired qualification inputs: 16 September 2026
 
@@ -18,7 +26,7 @@ The verifier must assess the whole claim under its stated conditions. Evidence c
 
 All 122 offline tests passed. All six first Astra High responses matched the expected verdicts. The investigating assistant checked their explanations and cited passages against criteria fixed before dispatch; all met those criteria. These simple invented examples had one attempt each, with no independent human review. They are development checks, not qualification.
 
-The six calls used fresh sessions and included subscription allowance. Usage was 30,396 input and 1,554 output tokens. No reserved packet, operator retry, recorded tool attempt, remaining copied login, paid API route or Fable call was involved. Final allowance was 30% with no paid credits. The original eleven qualification responses and stopped outcome are unchanged. There are still zero experimental guidance runs.
+The six calls used fresh sessions and included subscription allowance. Usage was 30,396 input and 1,554 output tokens. No reserved packet, operator retry, recorded tool attempt, remaining copied login, paid API route or Fable call was involved. Account observations remain in the private audit. The original eleven qualification responses and stopped outcome are unchanged. There are still zero experimental guidance runs.
 
 Contract phase1-development-v0.2 and assessment instruction version v3 now apply to development. Only verifier wording changed; the drafter and other assessment wording are unchanged. Earlier packets retain their original contract. The private frozen bank has not been migrated, retried or automatically replaced.
 
@@ -52,7 +60,7 @@ Next prepare the small subscription launcher and first answer audit using the Fa
 
 ## Use included subscription allowance only: 15 September 2026
 
-The user confirmed that no API account is set up, rejected the conservative $250 API proposal and chose subscription only. No API charges or paid credits are authorised. The priced proposal and offline request preflight are retained as an option that was not adopted. Its larger output allowance is not a change to qualification settings.
+The user rejected the conservative $250 API proposal and chose subscription only. No API charges or paid credits are authorised. The priced proposal and offline request preflight are retained as an option that was not adopted. Its larger output allowance is not a change to qualification settings.
 
 The API recommendation was premature: advertised tools do not prove execution, and payment protection for subscription use need not duplicate an API billing cap. Evidence isolation and fixed execution rules remain requirements. Next test actual tool denial with artificial local inputs. Hooks have documented coverage exceptions and are not sufficient proof by themselves. A subscription protocol amendment is required before qualification. No case, instruction, drafter, response schedule or acceptance requirement changed. Website body changes remain banked.
 
@@ -128,7 +136,7 @@ This changes the planned supplementary scoring role. It does not erase the faile
 
 The user explicitly approved the six revised packets through included Claude Max. All six first responses are preserved from separate Fable High sessions. All 46 individual claim and coverage verdicts were correct. Five complete responses passed the original explanation criterion; the sixth contains a broad statement whose narrower possible reading would yield a pass. Preserve both interpretations. This selected development set cannot qualify the assessor under either reading or establish a general improvement rate.
 
-The single agreed repair cycle is complete. The original qualification and criteria remain unchanged. Revisit the supplementary role before further model work; the investigator's suggestion to use Fable for source checked objections instead of scoring is not an adopted protocol change. Recorded account views settled within the included allowance and showed zero credit spending. The full client audit passed; hidden provider behaviour and the absence of independent human certification remain limitations.
+The single agreed repair cycle is complete. The original qualification and criteria remain unchanged. Revisit the supplementary role before further model work; the investigator's suggestion to use Fable for source checked objections instead of scoring is not an adopted protocol change. Account observations remain in the private audit. The full client audit passed; hidden provider behaviour and the absence of independent human certification remain limitations.
 
 ## Agree one assessor repair cycle: 15 September 2026
 

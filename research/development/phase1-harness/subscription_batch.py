@@ -10,7 +10,7 @@ import sys
 import threading
 import time
 
-from codex_subscription import CLIENT_HASH, load_packet, run_packet, sha
+from codex_subscription import CLIENT_HASH, MINIMUM_REMAINING_PERCENT, load_packet, run_packet, sha
 from harness import digest, require, wire
 from provider import PROMPTS, SCHEMAS, strict_json
 from qualification_batch import QualificationBatch, load_bank, validate_answer
@@ -25,7 +25,7 @@ def configuration(bank, output, exe, catalog, account_id):
     bank.verify()
     require(sha(exe) == CLIENT_HASH, "Unreviewed client")
     require(isinstance(account_id, str) and account_id, "Account identity required")
-    return {"version": "subscription-qualification-v1", "freeze_hash": bank.freeze_hash,
+    return {"version": "subscription-qualification-v2", "freeze_hash": bank.freeze_hash,
         "material_hash": bank.material_hash, "schedule_hash": digest(bank.schedule),
         "output_path": str(Path(output).resolve()), "account_id": account_id,
         "client_path": str(Path(exe).resolve()), "client_hash": sha(exe),
@@ -35,7 +35,7 @@ def configuration(bank, output, exe, catalog, account_id):
         "python": platform.python_version(), "python_path": str(Path(sys.executable).resolve()),
         "dependencies": {n: version(n) for n in ("openai", "httpx2", "jsonschema")},
         "model": "gpt-6-astra", "effort": "high", "max_attempts": 144,
-        "deadline_seconds": 300, "minimum_remaining_percent": 10,
+        "deadline_seconds": 300, "minimum_remaining_percent": MINIMUM_REMAINING_PERCENT,
         "extra_spending": 0, "automatic_retry": False, "automatic_resume": False}
 
 
@@ -137,7 +137,8 @@ class SubscriptionBatch:
                             and time.time() - observation["observed_at"] <= 120, "Fresh observation required")
                     require(observation.get("source") == "codex_app.get_usage_limits"
                             and observation.get("public_probe_only") is False, "Account evidence source required")
-                    require(observation["ordinary_usage_allowed"] is True and observation["remaining_percent"] > 10
+                    require(observation["ordinary_usage_allowed"] is True
+                            and observation["remaining_percent"] > self.config["minimum_remaining_percent"]
                             and observation["has_credits"] is False and observation["credits_balance"] == "0", "Allowance unavailable or uncertain")
                     self.guard()
                     item = self.bank.items[row["item_id"]]

@@ -17,8 +17,10 @@ from harness import digest, ids, refs_valid, require, validate_draft, validate_r
 from provider import Provider, PROMPTS, SCHEMAS, api_schema, strict_json
 from qualification_batch import validate_answer
 
-CLIENT_HASH = "081e4de4be8e38fac6ed4d95e3b1a0b9f6d31c090ddc36e1696b349fe406f575"
+CLIENT_HASH = "960c111d47afd61669954b9df9e56083e302edbfa3ef6962d81dcc14a30051dc"
+MINIMUM_REMAINING_PERCENT = 5
 ROLES = ("verifier", "guidance_assessor", "verifier_assessor")
+SYSTEM_SKILLS = ("imagegen", "openai-docs", "plugin-creator", "review-agent", "skill-creator", "skill-installer")
 WARNINGS = {
     "`--dangerously-bypass-hook-trust` is enabled. Enabled hooks may run without review for this invocation.",
     "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.",
@@ -35,6 +37,24 @@ def toml(value):
     if isinstance(value, list):
         return "[" + ",".join(map(toml, value)) + "]"
     return json.dumps(value)
+
+
+def verify_profile(home, work):
+    """Fresh profiles must not acquire instruction files or workspace inputs."""
+    require(not any(work.iterdir()), "Working folder is no longer empty")
+    require(not any((home / name).exists() for name in ("AGENTS.md", "AGENTS.override.md")),
+            "Unexpected profile instructions")
+    roots = {work, *work.parents, Path.home()}
+    require(not any((root / ".agents" / "skills").exists() for root in roots),
+            "Discoverable external skills")
+    require(not Path("/etc/codex/skills").exists(), "Discoverable administrator skills")
+    skills = home / "skills"
+    if skills.exists():
+        require(all(p.name == ".system" for p in skills.iterdir()), "Unexpected profile skill")
+        system = skills / ".system"
+        if system.exists():
+            require(all(p.name in (*SYSTEM_SKILLS, ".codex-system-skills.marker") for p in system.iterdir()),
+                    "Unreviewed bundled skill")
 
 
 def load_packet(path, expected_hash):
@@ -120,7 +140,7 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
             dispatch_guard()
         require(0 <= time.time() - account_observation["observed_at"] <= 120, "Stale account check")
         require(account_observation.get("ordinary_usage_allowed") is True
-                and account_observation.get("remaining_percent", 0) > 10
+                and account_observation.get("remaining_percent", 0) > MINIMUM_REMAINING_PERCENT
                 and account_observation.get("credits_balance") == "0"
                 and account_observation.get("has_credits") is False, "Included allowance uncertain")
         auth = strict_json(Path(auth_path).read_bytes())
@@ -156,7 +176,7 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
                     "workspace_dependencies tool_suggest shell_snapshot unbounded_connection_retries").split():
         settings["features." + feature] = False
     settings["skills.config"] = [{"path": str(home / "skills/.system" / name / "SKILL.md"), "enabled": False}
-        for name in ("imagegen", "openai-docs", "plugin-creator", "skill-creator", "skill-installer")]
+        for name in SYSTEM_SKILLS]
     if mock_url:
         settings.update({"model_provider": "poc_probe", "features.enable_request_compression": False})
         for k, v in {"name": "Local artificial probe", "base_url": mock_url, "requires_openai_auth": False,
@@ -197,6 +217,7 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
             require(0 <= time.time() - account_observation["observed_at"] <= 120, "Account check expired during preparation")
         if auth_path:
             shutil.copyfile(auth_path, home / "auth.json")
+        verify_profile(home, work)
         with (folder / "events.jsonl").open("xb") as out, (folder / "stderr.txt").open("xb") as err:
             process = subprocess.Popen(args, cwd=work, env=env, stdin=subprocess.PIPE, stdout=out, stderr=err)
             try:
@@ -206,6 +227,7 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
                         dispatch_guard()
                     require(time.monotonic() - started <= deadline, "Deadline reached")
                     require(not (folder / "STOP").exists() and not (folder / "tool-attempt.json").exists(), "Stop or tool attempt")
+                    verify_profile(home, work)
                     require(all(sha(folder / name) == value for name, value in committed.items()), "Input drift")
                     require(sum((folder / name).stat().st_size for name in ("events.jsonl", "stderr.txt")) < 1000000, "Output record limit")
                     time.sleep(.1)
@@ -214,6 +236,7 @@ def run_packet(packet_path, packet_hash, folder, exe, catalog, *, mock_url=None,
                 if process.poll() is None:
                     process.kill(); process.wait(timeout=10)
         require(not (folder / "STOP").exists(), "Stop requested before collection completed")
+        verify_profile(home, work)
         if dispatch_guard:
             dispatch_guard()
         require(sum((folder / name).stat().st_size for name in ("events.jsonl", "stderr.txt", "last-answer.json")
