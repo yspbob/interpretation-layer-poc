@@ -637,3 +637,13 @@ The supervisor prepared an ancillary closure script while the run was active. Th
 Both coding attempts passed the same nine acceptance checks and original 104 relevant regression cases with essentially the same core implementation. Supplying the repository guide produced no observed correctness advantage. Its creation added work, and small elapsed-time differences between concurrent coding sessions cannot establish a speedup. Explicit requirements and a small change may leave little room for generic guidance to help.
 
 **Practical implication and next action:** Retain the null result and its preparation costs. Before another experiment, identify a concrete kind of repository decision where guidance might add value, rather than automatically adding evaluation machinery or choosing a harder task to replace an inconvenient result. Keep any later comparison separate and preserve equal or worse outcomes.
+
+## IL-041: Separate failure screening from the comparison baseline
+
+**Source:** the user's 16 September discussion following the [first fresh-task comparison](exploratory/fresh-task-comparison/README.md), and agreement to capped screening with a fresh comparison.
+
+**Status:** Agreed exploratory design, not a new empirical finding. Numerical limits, cases and selection criteria remain to be specified.
+
+**Practical implication:** Selecting a weak unguided result and comparing only a new guided attempt can favour guidance through ordinary variation between attempts. Use the screening result to select an eligible task, then obtain both a fresh unguided and a fresh guided result. Keep the guide author unaware of the selected task and screening failure. Retain successful screens and all screening and guide costs, including when the cap produces no eligible failure.
+
+**Uncertainty and next action:** This answers a narrower question about tasks selected after earlier unguided difficulty; it cannot establish representative benefit or guarantee that guidance helps. Before screening, define a capped shortlist, stopping and selection rules, source-supported material failure criterion, common checks and budget. Preserve FC-01 and do not search indefinitely for a favourable outcome. No further execution is authorized by this agreement.

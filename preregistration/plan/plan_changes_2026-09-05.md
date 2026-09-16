@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.31**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.32**. Status: working redesign, not a new ratified preregistration.
+
+## Separate capped failure screening from the comparison: 16 September 2026
+
+Following the FC-01 null result, the user agreed to capped unguided screening followed by fresh unguided and guided attempts on a selected material failure. The screening result cannot serve as the comparison baseline; another unguided attempt may improve without guidance. Keep the guide author unaware of the selected task and screening failure. Define the shortlist, numerical cap, stopping/selection rules, source-supported failure criterion, checks and budget before execution; those choices remain open. Preserve every screening outcome, all costs and FC-01. Any conclusion is conditional on earlier unguided difficulty, not representative benefit across tasks. No new execution or spending is authorized, and qualification stays paused. Website body edits remain banked.
 
 ## Complete the first fresh-task exploratory comparison: 16 September 2026
 
