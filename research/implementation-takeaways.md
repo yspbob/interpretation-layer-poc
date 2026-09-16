@@ -564,3 +564,14 @@ An all-names guard can reject a metadata file even when the installed client doe
 **Practical implication:** Justify exceptions with captured-input canaries for the exact installed client. Keep the exception narrow, reject links and uncertain types, and retain the listing that caused any stop. Documentation describes intended discovery; observations establish the tested behaviour.
 
 **Uncertainty and next action:** This is not complete containment or a retrospective explanation of the old failure. Rebind changed execution code before another allocation and preserve earlier exposure and outcomes. Do not treat successful artificial responses as qualification.
+
+
+## IL-035: An infrastructure repair does not erase evaluation exposure
+
+**Source:** [Third allocation preparation](development/phase1-harness/NEXT-QUALIFICATION-ALLOCATION.md), 16 September 2026; verified input/configuration comparison and the two frozen collection summaries.
+
+**Status:** Exposure accounting completed; a narrow reuse exception is proposed and awaits explicit approval. No new model result.
+
+The profile repair did not change judgement instructions or criteria, but thirteen dispatches on retained families still occurred and five answers were source-scored. Calling the next allocation new does not make its material untouched. Preserve prior failures and investigator exposure, and distinguish a new execution allocation from fresh evidence.
+
+**Practical implication and next action:** State any exception to a predeclared family-retirement rule before another dispatch. Keep the complete bank and order rather than selecting successful items, count only new responses toward the proposed result, and obtain acceptance of the exact proposal. A substantive judgement repair still requires unused families.

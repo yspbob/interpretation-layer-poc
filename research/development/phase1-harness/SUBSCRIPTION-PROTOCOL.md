@@ -1,8 +1,16 @@
 # Astra qualification through the Codex subscription
 
-Version: subscription-qualification-v2. Updated 16 September 2026 before new reserved collection. Preparation does not authorise a model run. The closed v1 allocation and its frozen protocol remain unchanged.
+Version: subscription-qualification-v3-proposal. Prepared 16 September 2026; not approved for dispatch. Both prior allocations and their frozen protocols remain unchanged. The configuration-record schema remains v2.
 
 Post-stop development amendment, 16 September: v2 also stopped and is closed. The current collector now records rejected skill listings and permits the narrowly tested regular `desktop.ini` file described below. This amended working protocol is not a continuation approval. A future allocation must bind its new bytes and collector, disclose prior exposure and receive a separate explicit decision. The original frozen v2 protocol remains preserved privately.
+
+## Proposed treatment of prior exposure
+
+The third allocation proposes retaining the whole Q01/Q05/Q06/Q08 bank and its original 144-position order. It collects 144 new first responses, with no earlier answer or successful score carried forward. It is a repeated qualification attempt on previously exposed material, not untouched validation or continuation of the 138 unrun positions.
+
+Working plan section 9A requires a family that informs a revision to move to development. Explicit acceptance of this proposal includes a narrowly stated exception for the content-independent profile guard repair: no model response content changed a role instruction, rubric, reference, key, candidate, model setting or schedule. The repair was developed with artificial filesystem entries and captured artificial requests. The exception does not apply to substantive judgement repairs, and Q02/Q03/Q04/Q07 remain development. Do not infer that the user has accepted this exception merely because preparation was requested.
+
+Retained families have thirteen prior Astra dispatches across both stopped allocations: Q01 ten, Q05 one, Q06 zero and Q08 two. One of those dispatches returned no answer; it still counts as exposed. Q01's earlier Fable exposure also remains disclosed. Five completed second-allocation answers have been source-scored, so investigator exposure cannot be described as absent. No item is retained, removed or reordered based on that favourable result. The future report must preserve every previous stop and limit its reliability claim accordingly. If this proposal is not accepted, specify fresh replacement material before another allocation; do not silently relax the whole-family rule.
 
 ## What this run will establish
 

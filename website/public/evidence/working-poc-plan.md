@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-16.22**
+Plan ID: **pilot-draft-2026-09-16.23**
 Updated: **16 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -427,6 +427,8 @@ Allocate whole families and their variants to development, qualification or expe
 Develop the rubric and input format on development examples. Include correct work, consequential errors, legitimate alternatives, empty or unfinished work, missing evidence and unsupported authority. The suite must include historical violations avoided by a correct agent solution, and apparent compliance improvements that break behaviour. Include misleading citations, instructions embedded in candidate material, repeated grading and harmless presentation changes. Mix authored examples with independently checked natural outputs when available; qualify only the coverage actually represented.
 
 Before opening qualification results, freeze the model/settings, instructions, input builder, checks, verdict-combination rules, split, sample size and acceptance limits. If a failed qualification item informs a revision, move its family into development and use fresh families for the next qualification. Do not repeatedly tune against a nominal holdout.
+
+**Proposed infrastructure-only exception, 16 September; awaiting explicit approval.** The [third allocation proposal](https://github.com/yspbob/interpretation-layer-poc/blob/main/research/development/phase1-harness/NEXT-QUALIFICATION-ALLOCATION.md) would retain the complete unchanged Q01/Q05/Q06/Q08 bank after the content-independent profile guard repair. No model-response content changed role instructions, scoring, evidence, candidates, model settings or order. This is an explicit proposed exception to the preceding family-retirement rule, not a claim that prior exposure disappeared. Thirteen prior Astra dispatches in retained families, Q01's earlier Fable exposure and the investigator's scoring of five responses remain disclosed. Collect all 144 new responses, carry forward no earlier successes, and preserve both stopped allocations. The proposal needs specific acceptance with the new bound allocation; it is not adopted by preparing or publishing this document. Substantive judgement repairs still require unused families.
 
 #### 4. Measure errors with explicit denominators
 

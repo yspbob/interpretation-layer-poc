@@ -1,6 +1,12 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.22**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.23**. Status: working redesign, not a new ratified preregistration.
+
+## Prepare the third allocation and make reuse explicit: 16 September 2026
+
+The user requested preparation, not execution. Both frozen collection summaries were reviewed for exposure. The proposal retains all Q01/Q05/Q06/Q08 items and their order, with thirteen earlier Astra dispatches disclosed, no response carried forward and 144 new first responses. Since section 9A normally retires families informing a revision, the infrastructure-only reuse exception is stated explicitly and remains subject to user acceptance. No judgement instruction, key, evidence, candidate, schema, model setting or scoring gate changed; Q02/Q03/Q04/Q07 remain development.
+
+The new bound configuration uses the repaired collector and amended proposed protocol. Both approval flags are false, the future output folder is absent, and old/pending approval records are rejected. All 144 positions completed in a synthetic rehearsal with eighteen permitted input files, no scoring keys, blocked network/process launches and no credentials. This does not qualify a model or authorise dispatch. Public publication remains separately blocked; website body edits remain banked while downloads advance locally to .23.
 
 ## Diagnose transient profile entries and constrain the exception: 16 September 2026
 
