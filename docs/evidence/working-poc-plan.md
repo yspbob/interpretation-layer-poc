@@ -1,6 +1,6 @@
 # Working pilot plan: interpretation-layer validation
 
-Plan ID: **pilot-draft-2026-09-16.28**
+Plan ID: **pilot-draft-2026-09-16.29**
 Updated: **16 September 2026**
 Status: **Working design for pilot preparation. Not a frozen preregistration, not an implemented experiment, and not a result.**
 
@@ -27,6 +27,8 @@ This first POC is designed to be as self-contained as possible, minimising exter
 There is no maintainer-recruitment dependency. Published project decisions and documented behaviour provide reference evidence, not owner approval of newly generated rules. Unrecorded organisational intent, owner certification, adoption, ongoing renewal and production economics remain outside the technical claim. A positive result would support the layer in the situations tested, not prove its universal necessity or the full playbook loop.
 
 ### 1A. Split the first trial into three functional phases
+
+**Current exploratory checkpoint, agreed 16 September:** after three stopped qualification allocations and no experimental guidance runs, the user asked to reduce the preparation burden and approved one concrete, source-checked worked guide. Assessor qualification, fresh-bank preparation and further infrastructure are paused. The NetBox example in `research/exploratory/netbox-bulk-guide/` packages an already exposed development finding; its author and reviewer are the same investigator with prior case/reference knowledge. Twelve pinned source files and existing runtime records support the guide; no new application run or separate model process occurred. Conversation usage and earlier preparation still count as costs. This is an exploratory usability diagnostic, not blind reconstruction, a qualified assessment or a scored Phase 1 result. The next checkpoint is one small review of a proposed implementation using the guide, checking whether its queue, cleanup and success-path advice is actionable. No benefit is yet demonstrated. Stop or simplify if it adds little; do not automatically resume qualification. The formal comparison requirements below remain unchanged if that programme is resumed by a later decision.
 
 Agreed on 10 September after the user observed that the previous Phase 1 still carried most of the engineering work. These three phases now make up the first trial itself. Confirmation and broader studies come afterwards. This allocation supersedes the earlier first trial / confirmation / broader use roadmap. It changes implementation scope, not just headings. No model calls are authorised by this revision.
 

@@ -1,6 +1,10 @@
 # Working-plan change register
 
-Current plan: **pilot-draft-2026-09-16.28**. Status: working redesign, not a new ratified preregistration.
+Current plan: **pilot-draft-2026-09-16.29**. Status: working redesign, not a new ratified preregistration.
+
+## Pause qualification and produce one useful guide: 16 September 2026
+
+The user questioned the disproportionate preparation effort and agreed to a smaller exploratory checkpoint. Pause assessor qualification, fresh-bank preparation and further infrastructure. One investigator-assisted NetBox bulk-edit guide now connects the documented transaction guarantee to request-context events, scoped cleanup and concrete failure/success checks. Twelve pinned sources were hash-checked and the existing runtime evidence reviewed without rerunning it. Prior investigator exposure and same-investigator review are explicit. This is neither independent discovery nor a controlled guidance run; no role is qualified and no coding, time or economic benefit is established. Next use the guide in one small implementation-review check and decide whether it warrants further work. The formal comparison requirements and all closed qualification records remain unchanged. Website body updates remain banked; public publication remains blocked.
 
 ## Complete separate development evidence repairs: 16 September 2026
 

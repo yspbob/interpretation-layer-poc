@@ -1,0 +1,192 @@
+{
+  "status": "investigator-assisted exploratory worked guide; no blinded or controlled run",
+  "starting_revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+  "source_files": [
+    {
+      "path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/AGENTS.md",
+      "sha256": "4bc76f4ed8331c43ad8f42056cfbea117f2853072641f3d04ae68522113872eb",
+      "bytes": 17810
+    },
+    {
+      "path": "docs/features/event-rules.md",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/docs/features/event-rules.md",
+      "sha256": "8e8e89e58fe68e4a4264aa41820c98cdd5d6288a58504a813016f9252916bf27",
+      "bytes": 1841
+    },
+    {
+      "path": "docs/integrations/rest-api.md",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/docs/integrations/rest-api.md",
+      "sha256": "1e5a0e3a8d01fc62609266717f1f70b87734a0a19f044dcaba47b997ed0e7e0c",
+      "bytes": 40660
+    },
+    {
+      "path": "netbox/core/events.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/core/events.py",
+      "sha256": "b9cde5ea36b2cc7b92c8b574a9413375365eeffca688cae822ea6da40131f75b",
+      "bytes": 404
+    },
+    {
+      "path": "netbox/core/signals.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/core/signals.py",
+      "sha256": "122c2c26d76845d6865ae1c654fbd73a12f373f78e813fe56ac09d92f038b8bc",
+      "bytes": 12684
+    },
+    {
+      "path": "netbox/extras/events.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/extras/events.py",
+      "sha256": "a737f201b5ef51bb24a6f026e3f99b70332349ef12e10541d95516f5e4b5b3f4",
+      "bytes": 11752
+    },
+    {
+      "path": "netbox/netbox/api/viewsets/__init__.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/api/viewsets/__init__.py",
+      "sha256": "10ba40a790f77180c94110932fb2ff97ec5c4fa8b9247f7b809a3d0f088cc716",
+      "bytes": 15551
+    },
+    {
+      "path": "netbox/netbox/api/viewsets/mixins.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/api/viewsets/mixins.py",
+      "sha256": "c2e88ee8d1446a16344115e0e196a39c367911db91ddb78fc8c70536b14476e2",
+      "bytes": 14035
+    },
+    {
+      "path": "netbox/netbox/context.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/context.py",
+      "sha256": "ac74ae4b01d21030831c494d41dc3c3d868bb12dd9ef45084d473b8d3f678d95",
+      "bytes": 288
+    },
+    {
+      "path": "netbox/netbox/context_managers.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/context_managers.py",
+      "sha256": "174c99978ad72b1ce7b949cc63d336091e0b10c15c55a9a51fdbe6d88f3f975d",
+      "bytes": 882
+    },
+    {
+      "path": "netbox/netbox/middleware.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/middleware.py",
+      "sha256": "908ca9e440aeb348a00598dbac5b5a35ce7883a7b28f5fe0c20bcc701f3376b2",
+      "bytes": 12671
+    },
+    {
+      "path": "netbox/netbox/views/generic/bulk_views.py",
+      "url": "https://raw.githubusercontent.com/netbox-community/netbox/d13c98b9ea8c55dafdcdecbf3058a731814a7ead/netbox/netbox/views/generic/bulk_views.py",
+      "sha256": "f7af8f358eaced093e1992b2624142463aa5714c08664101aeb4126c8d3199d5",
+      "bytes": 57890
+    }
+  ],
+  "prior_runtime_records": {
+    "starting": {
+      "file": "research/development/netbox-bulk-error-candidate/results/starting.json",
+      "sha256": "78294fccf592e9effe4b98f7dfbbc02e593afaca69d047ff3bc18addb3772270",
+      "revision": "d13c98b9ea8c55dafdcdecbf3058a731814a7ead",
+      "scenarios": [
+        {
+          "name": "success",
+          "http_status": 200,
+          "changed_rows": 2,
+          "change_log_rows_added": 2,
+          "queued_job_count": 2
+        },
+        {
+          "name": "valid_then_invalid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 1
+        },
+        {
+          "name": "invalid_then_valid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 0
+        },
+        {
+          "name": "both_invalid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 0
+        }
+      ]
+    },
+    "feature": {
+      "file": "research/development/netbox-bulk-error-candidate/results/feature.json",
+      "sha256": "c5c81c25a2de479e7ba4c3f6a63af998940f0cb6b29c8f9fd79e0e4895104aef",
+      "revision": "6068f417876e79b6d588bd8b05a7a4e515378b51",
+      "scenarios": [
+        {
+          "name": "success",
+          "http_status": 200,
+          "changed_rows": 2,
+          "change_log_rows_added": 2,
+          "queued_job_count": 2
+        },
+        {
+          "name": "valid_then_invalid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 1
+        },
+        {
+          "name": "invalid_then_valid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 1
+        },
+        {
+          "name": "both_invalid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 0
+        }
+      ]
+    },
+    "later-qa": {
+      "file": "research/development/netbox-bulk-error-candidate/results/later-qa.json",
+      "sha256": "bfe2d94e6100b23ee22be9a8e0cd9a3bd07784f89169e0d26ef3292e1a41f0ad",
+      "revision": "3793160eba4d54070552eacfc1502027a7e042c1",
+      "scenarios": [
+        {
+          "name": "success",
+          "http_status": 200,
+          "changed_rows": 2,
+          "change_log_rows_added": 2,
+          "queued_job_count": 2
+        },
+        {
+          "name": "valid_then_invalid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 0
+        },
+        {
+          "name": "invalid_then_valid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 0
+        },
+        {
+          "name": "both_invalid",
+          "http_status": 400,
+          "changed_rows": 0,
+          "change_log_rows_added": 0,
+          "queued_job_count": 0
+        }
+      ]
+    }
+  },
+  "new_runtime_execution": false,
+  "separate_model_process_calls": 0,
+  "interactive_turn_usage": "not separately metered; not zero",
+  "guide_word_count": 505,
+  "reviewer_independence": false,
+  "prior_case_and_reference_exposure": true,
+  "qualification_paused": true
+}
