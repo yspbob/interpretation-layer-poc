@@ -1,0 +1,43 @@
+{
+"subsystem": "manage",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "manage",
+"modules": 1,
+"loc_code": 11,
+"loc_data": 0,
+"test_modules": 0
+},
+"modules": [
+{
+"module": "manage",
+"path": "netbox/manage.py",
+"loc": 11,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "manage",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:manage"
+}
+],
+"symbols": [],
+"imports_out": [],
+"imports_in": [],
+"model_refs": [],
+"model_refs_in": [],
+"churn": [
+{
+"path": "netbox/manage.py",
+"module": "manage",
+"commits": 2,
+"authors": 2,
+"first_commit": "2016-03-01",
+"last_commit": "2024-10-23",
+"id": "churn:manage"
+}
+],
+"entrypoints": []
+}

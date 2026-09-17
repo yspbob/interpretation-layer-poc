@@ -1,0 +1,481 @@
+{
+"subsystem": "account",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "account",
+"modules": 6,
+"loc_code": 469,
+"loc_data": 0,
+"test_modules": 0
+},
+"modules": [
+{
+"module": "account",
+"path": "netbox/account/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "account",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:account"
+},
+{
+"module": "account.migrations",
+"path": "netbox/account/migrations/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "account",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:account.migrations"
+},
+{
+"module": "account.migrations.0001_initial",
+"path": "netbox/account/migrations/0001_initial.py",
+"loc": 28,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "account",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:account.migrations.0001_initial"
+},
+{
+"module": "account.models",
+"path": "netbox/account/models.py",
+"loc": 18,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "account",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:account.models"
+},
+{
+"module": "account.tables",
+"path": "netbox/account/tables.py",
+"loc": 58,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "account",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:account.tables"
+},
+{
+"module": "account.urls",
+"path": "netbox/account/urls.py",
+"loc": 21,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "account",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:account.urls"
+},
+{
+"module": "account.views",
+"path": "netbox/account/views.py",
+"loc": 370,
+"classes": 12,
+"functions": 0,
+"parse": "OK",
+"subsystem": "account",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:account.views"
+}
+],
+"symbols": [
+{
+"module": "account.migrations.0001_initial",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/account/migrations/0001_initial.py",
+"id": "symbols:account.migrations.0001_initial:Migration"
+},
+{
+"module": "account.models",
+"kind": "class",
+"name": "UserToken",
+"lineno": 6,
+"bases": "Token",
+"path": "netbox/account/models.py",
+"id": "symbols:account.models:UserToken"
+},
+{
+"module": "account.tables",
+"kind": "class",
+"name": "UserTokenTable",
+"lineno": 22,
+"bases": "NetBoxTable",
+"path": "netbox/account/tables.py",
+"id": "symbols:account.tables:UserTokenTable"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "LoginView",
+"lineno": 40,
+"bases": "View",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:LoginView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "LogoutView",
+"lineno": 162,
+"bases": "View",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:LogoutView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "ProfileView",
+"lineno": 188,
+"bases": "LoginRequiredMixin,View",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:ProfileView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "UserConfigView",
+"lineno": 205,
+"bases": "LoginRequiredMixin,View",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:UserConfigView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "ChangePasswordView",
+"lineno": 246,
+"bases": "LoginRequiredMixin,View",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:ChangePasswordView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "BookmarkListView",
+"lineno": 280,
+"bases": "LoginRequiredMixin,generic.ObjectListView",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:BookmarkListView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "NotificationListView",
+"lineno": 297,
+"bases": "LoginRequiredMixin,generic.ObjectListView",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:NotificationListView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "SubscriptionListView",
+"lineno": 310,
+"bases": "LoginRequiredMixin,generic.ObjectListView",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:SubscriptionListView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "UserTokenListView",
+"lineno": 327,
+"bases": "LoginRequiredMixin,View",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:UserTokenListView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "UserTokenView",
+"lineno": 342,
+"bases": "LoginRequiredMixin,View",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:UserTokenView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "UserTokenEditView",
+"lineno": 355,
+"bases": "generic.ObjectEditView",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:UserTokenEditView"
+},
+{
+"module": "account.views",
+"kind": "class",
+"name": "UserTokenDeleteView",
+"lineno": 367,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/account/views.py",
+"id": "symbols:account.views:UserTokenDeleteView"
+}
+],
+"imports_out": [
+{
+"src": "account.models",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 3,
+"path": "netbox/account/models.py",
+"id": "imports:account.models->users.models"
+},
+{
+"src": "account.tables",
+"dst": "account.models",
+"raw": "account.models",
+"lineno": 3,
+"path": "netbox/account/tables.py",
+"id": "imports:account.tables->account.models"
+},
+{
+"src": "account.tables",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 4,
+"path": "netbox/account/tables.py",
+"id": "imports:account.tables->netbox.tables"
+},
+{
+"src": "account.urls",
+"dst": "account",
+"raw": "account",
+"lineno": 4,
+"path": "netbox/account/urls.py",
+"id": "imports:account.urls->account"
+},
+{
+"src": "account.urls",
+"dst": "utilities.urls",
+"raw": "utilities.urls",
+"lineno": 3,
+"path": "netbox/account/urls.py",
+"id": "imports:account.urls->utilities.urls"
+},
+{
+"src": "account.views",
+"dst": "account.models",
+"raw": "account.models",
+"lineno": 21,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->account.models"
+},
+{
+"src": "account.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 22,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->core.models"
+},
+{
+"src": "account.views",
+"dst": "core.tables",
+"raw": "core.tables",
+"lineno": 23,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->core.tables"
+},
+{
+"src": "account.views",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 24,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->extras.models"
+},
+{
+"src": "account.views",
+"dst": "extras.tables",
+"raw": "extras.tables",
+"lineno": 25,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->extras.tables"
+},
+{
+"src": "account.views",
+"dst": "netbox.authentication",
+"raw": "netbox.authentication",
+"lineno": 26,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->netbox.authentication"
+},
+{
+"src": "account.views",
+"dst": "netbox.config",
+"raw": "netbox.config",
+"lineno": 27,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->netbox.config"
+},
+{
+"src": "account.views",
+"dst": "netbox.views",
+"raw": "netbox.views",
+"lineno": 28,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->netbox.views"
+},
+{
+"src": "account.views",
+"dst": "users",
+"raw": "users",
+"lineno": 29,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->users"
+},
+{
+"src": "account.views",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 30,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->users.models"
+},
+{
+"src": "account.views",
+"dst": "utilities.request",
+"raw": "utilities.request",
+"lineno": 31,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->utilities.request"
+},
+{
+"src": "account.views",
+"dst": "utilities.string",
+"raw": "utilities.string",
+"lineno": 32,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->utilities.string"
+},
+{
+"src": "account.views",
+"dst": "utilities.views",
+"raw": "utilities.views",
+"lineno": 33,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->utilities.views"
+}
+],
+"imports_in": [
+{
+"src": "netbox.urls",
+"dst": "account.views",
+"raw": "account.views",
+"lineno": 7,
+"path": "netbox/netbox/urls.py",
+"id": "imports:netbox.urls->account.views"
+},
+{
+"src": "users.tables",
+"dst": "account.tables",
+"raw": "account.tables",
+"lineno": 4,
+"path": "netbox/users/tables.py",
+"id": "imports:users.tables->account.tables"
+}
+],
+"model_refs": [],
+"model_refs_in": [],
+"churn": [
+{
+"path": "netbox/account/views.py",
+"module": "account.views",
+"commits": 22,
+"authors": 5,
+"first_commit": "2023-07-31",
+"last_commit": "2025-06-03",
+"id": "churn:account.views"
+},
+{
+"path": "netbox/account/migrations/0001_initial.py",
+"module": "account.migrations.0001_initial",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-07-31",
+"last_commit": "2025-03-07",
+"id": "churn:account.migrations.0001_initial"
+},
+{
+"path": "netbox/account/models.py",
+"module": "account.models",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-07-31",
+"last_commit": "2023-11-03",
+"id": "churn:account.models"
+},
+{
+"path": "netbox/account/tables.py",
+"module": "account.tables",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-07-31",
+"last_commit": "2024-04-17",
+"id": "churn:account.tables"
+},
+{
+"path": "netbox/account/urls.py",
+"module": "account.urls",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-07-31",
+"last_commit": "2024-07-15",
+"id": "churn:account.urls"
+},
+{
+"path": "netbox/account/__init__.py",
+"module": "account",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-07-31",
+"last_commit": "2023-07-31",
+"id": "churn:account"
+},
+{
+"path": "netbox/account/migrations/__init__.py",
+"module": "account.migrations",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-07-31",
+"last_commit": "2023-07-31",
+"id": "churn:account.migrations"
+}
+],
+"entrypoints": [
+{
+"kind": "urls",
+"module": "account.urls",
+"detail": "",
+"path": "netbox/account/urls.py",
+"id": "entrypoints:account.urls"
+}
+]
+}

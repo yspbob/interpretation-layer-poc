@@ -1,0 +1,43 @@
+{
+"subsystem": "reports",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "reports",
+"modules": 1,
+"loc_code": 1,
+"loc_data": 0,
+"test_modules": 0
+},
+"modules": [
+{
+"module": "reports",
+"path": "netbox/reports/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "reports",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:reports"
+}
+],
+"symbols": [],
+"imports_out": [],
+"imports_in": [],
+"model_refs": [],
+"model_refs_in": [],
+"churn": [
+{
+"path": "netbox/reports/__init__.py",
+"module": "reports",
+"commits": 3,
+"authors": 1,
+"first_commit": "2017-09-19",
+"last_commit": "2018-08-07",
+"id": "churn:reports"
+}
+],
+"entrypoints": []
+}

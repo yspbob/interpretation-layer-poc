@@ -1,0 +1,32 @@
+{
+ "subsystem": "scripts",
+ "files": {
+  "adrs.md": {
+   "claims_kept": 8,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "map.md": {
+   "claims_kept": 14,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "patterns.md": {
+   "claims_kept": 4,
+   "claims_removed": 0,
+   "citations_dropped": 1,
+   "removed": [],
+   "dropped": [
+    {
+     "line": 5,
+     "cit": "[fg:modules:reports]",
+     "why": "no such row in slice"
+    }
+   ]
+  }
+ }
+}

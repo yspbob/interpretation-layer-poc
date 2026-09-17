@@ -1,0 +1,370 @@
+<title>Gate 3 Sample, Batch 2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#F6F7F4;--ink:#1D2622;--mute:#5B6660;--line:#D9DED9;--card:#FFFFFF;--acc:#1F6F63;--acc-ink:#FFFFFF;--code:#EEF1EE}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#131816;--ink:#E6EBE7;--mute:#9AA69F;--line:#2B3430;--card:#1B2220;--acc:#5FB8A8;--acc-ink:#0F1513;--code:#232C28}}
+:root[data-theme="dark"]{--bg:#131816;--ink:#E6EBE7;--mute:#9AA69F;--line:#2B3430;--card:#1B2220;--acc:#5FB8A8;--acc-ink:#0F1513;--code:#232C28}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.5;padding-inline:16px;padding-block:24px 64px}
+.wrap{max-width:960px;margin:0 auto} h1{font-size:26px;font-weight:600;margin:0 0 6px} p{margin:0 0 10px} .how{color:var(--mute)}
+.claim{display:grid;grid-template-columns:34px 1fr 150px;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px}
+.num{font-family:"IBM Plex Mono",monospace;color:var(--mute)} .src{font-size:12px;color:var(--mute);letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.text{font-weight:500;margin-bottom:8px} .ev{margin-top:8px} .note{font-size:13px;color:var(--mute);margin-top:4px}
+pre{background:var(--code);border-radius:6px;padding:8px 10px;font-family:"IBM Plex Mono",monospace;font-size:12px;overflow-x:auto;margin:6px 0 0;white-space:pre}
+.btn{display:inline-block;background:var(--acc);color:var(--acc-ink);text-decoration:none;padding:5px 10px;border-radius:6px;font-size:13px;font-weight:500} .btn.muted{background:var(--code);color:var(--mute)}
+.side{display:flex;flex-direction:column;gap:6px} .tick{font-size:13px;display:flex;gap:6px;align-items:center}
+.summary{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0} .tile{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;min-width:110px} .tile b{font-size:20px;display:block} .tile span{color:var(--mute);font-size:13px}
+@media (max-width:640px){.claim{grid-template-columns:28px 1fr}.side{grid-column:2;flex-direction:row;flex-wrap:wrap}}
+</style>
+<div class="wrap"><h1>Gate 3 Sample, Batch 2</h1>
+<p>Twenty claims drawn at random (seed 20260918) from the 408 cited claims in this batch of the draft corpus at T0 <code>ea4c205</code>. Under each claim is the evidence it cites, shown inline and linked to the pinned source. The mechanical check already confirmed every citation exists; your judgement is whether the evidence supports what the sentence says. Mark each one, then tell Munin the tally.</p>
+<div class="summary"><div class="tile"><b id="yes">0</b><span>supported</span></div><div class="tile"><b id="no">0</b><span>not supported</span></div><div class="tile"><b id="unsure">0</b><span>unsure</span></div></div>
+<article class="claim" id="c1"><div class="num">1</div><div class="main"><div class="src">account / adrs.md line 9</div><div class="text">**Consequences.** The app is thin: it owns views, one table and one proxy model, but borrows forms from `users` and tables/models from `extras` and `core`, so most changes to a profile tab are cross-app edits  . Other apps couple to it by URL name rather than import: `extras` models and views redirect to `account:notifications`/`account:subscriptions`, the user menu links five `account:` names, and `settings.LOGIN_URL` hard-codes `/login/`    . Renaming a URL name here breaks `extras` and templates without any import edge flagging it  .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L21-L33" target="_blank" rel="noopener">netbox/account/views.py:21-33</a><pre>   21  from account.models import UserToken
+   22  from core.models import ObjectChange
+   23  from core.tables import ObjectChangeTable
+   24  from extras.models import Bookmark
+   25  from extras.tables import BookmarkTable, NotificationTable, SubscriptionTable
+   26  from netbox.authentication import get_auth_backend_display, get_saml_idps
+   27  from netbox.config import get_config
+   28  from netbox.views import generic
+   29  from users import forms, tables
+   30  from users.models import UserConfig
+   31  from utilities.request import safe_for_redirect
+   32  from utilities.string import remove_linebreaks
+  ... (range continues to line 33)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L29" target="_blank" rel="noopener">netbox/account/views.py:29</a><div class="note">Graph row: account.views imports users</div><pre>   29  from users import forms, tables</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/notifications.py#L91-L91" target="_blank" rel="noopener">netbox/extras/models/notifications.py:91</a><pre>   91          return reverse(&#x27;account:notifications&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/views.py#L510-L510" target="_blank" rel="noopener">netbox/extras/views.py:510</a><pre>  510          return redirect(&#x27;account:notifications&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/templates/inc/user_menu.html#L39-L51" target="_blank" rel="noopener">netbox/templates/inc/user_menu.html:39-51</a><pre>   39        &lt;a href=&quot;{% url &#x27;account:profile&#x27; %}&quot; class=&quot;dropdown-item&quot;&gt;
+   40          &lt;i class=&quot;mdi mdi-account&quot;&gt;&lt;/i&gt; {% trans &quot;Profile&quot; %}
+   41        &lt;/a&gt;
+   42        &lt;a href=&quot;{% url &#x27;account:bookmarks&#x27; %}&quot; class=&quot;dropdown-item&quot;&gt;
+   43          &lt;i class=&quot;mdi mdi-bookmark&quot;&gt;&lt;/i&gt; {% trans &quot;Bookmarks&quot; %}
+   44        &lt;/a&gt;
+   45        &lt;a href=&quot;{% url &#x27;account:subscriptions&#x27; %}&quot; class=&quot;dropdown-item&quot;&gt;
+   46          &lt;i class=&quot;mdi mdi-bell&quot;&gt;&lt;/i&gt; {% trans &quot;Subscriptions&quot; %}
+   47        &lt;/a&gt;
+   48        &lt;a href=&quot;{% url &#x27;account:preferences&#x27; %}&quot; class=&quot;dropdown-item&quot;&gt;
+   49          &lt;i class=&quot;mdi mdi-wrench&quot;&gt;&lt;/i&gt; {% trans &quot;Preferences&quot; %}
+   50        &lt;/a&gt;
+  ... (range continues to line 51)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/settings.py#L524-L524" target="_blank" rel="noopener">netbox/netbox/settings.py:524</a><pre>  524  LOGIN_URL = f&#x27;/{BASE_PATH}login/&#x27;</pre></div><div class="ev"><span class="btn muted">subsystem summary</span><div class="note">{&quot;subsystem&quot;: &quot;account&quot;, &quot;modules&quot;: 6, &quot;loc_code&quot;: 469, &quot;loc_data&quot;: 0, &quot;test_modules&quot;: 0}</div></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/tables.py#L4" target="_blank" rel="noopener">netbox/users/tables.py:4</a><div class="note">Graph row: users.tables imports account.tables</div><pre>    4  from account.tables import UserTokenTable</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v1" value="yes" data-id="1"> supported</label><label class="tick"><input type="radio" name="v1" value="no" data-id="1"> not supported</label><label class="tick"><input type="radio" name="v1" value="unsure" data-id="1"> unsure (partly)</label></div></article><article class="claim" id="c2"><div class="num">2</div><div class="main"><div class="src">account / adrs.md line 33</div><div class="text">**Consequences.** The `next` parameter is validated with `safe_for_redirect()` and falls back to `home`; unsafe values are logged with line breaks stripped . The `user_logged_in.disconnect(...)` call is process-global and the only reference to `update_last_login` in the tree is this disconnect (there is no matching `connect`), so once a login occurs during maintenance mode, `last_login` is not updated by later logins in that worker even after maintenance mode is cleared  . `LoginView` is the highest-churn code in the subsystem&#x27;s only high-churn module (22 commits, 5 authors), which is where feature additions to authentication have landed .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L150-L159" target="_blank" rel="noopener">netbox/account/views.py:150-159</a><pre>  150          redirect_url = data.get(&#x27;next&#x27;, settings.LOGIN_REDIRECT_URL)
+  151  
+  152          if redirect_url and safe_for_redirect(redirect_url):
+  153              logger.debug(f&quot;Redirecting user to {remove_linebreaks(redirect_url)}&quot;)
+  154          else:
+  155              if redirect_url:
+  156                  logger.warning(f&quot;Ignoring unsafe &#x27;next&#x27; URL passed to login form: {remove_linebreaks(redirect_url)}&quot;)
+  157              redirect_url = reverse(&#x27;home&#x27;)
+  158  
+  159          return HttpResponseRedirect(redirect_url)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L8-L8" target="_blank" rel="noopener">netbox/account/views.py:8</a><pre>    8  from django.contrib.auth.models import update_last_login</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L111-L113" target="_blank" rel="noopener">netbox/account/views.py:111-113</a><pre>  111              if get_config().MAINTENANCE_MODE:
+  112                  logger.warning(&quot;Maintenance mode enabled: disabling update of most recent login time&quot;)
+  113                  user_logged_in.disconnect(update_last_login, dispatch_uid=&#x27;update_last_login&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/commits/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py" target="_blank" rel="noopener">history of netbox/account/views.py</a><div class="note">Graph row: 22 commits, 5 authors, 2023-07-31 to 2025-06-03</div></div></div><div class="side"><label class="tick"><input type="radio" name="v2" value="yes" data-id="2"> supported</label><label class="tick"><input type="radio" name="v2" value="no" data-id="2"> not supported</label><label class="tick"><input type="radio" name="v2" value="unsure" data-id="2"> unsure (partly)</label></div></article><article class="claim" id="c3"><div class="num">3</div><div class="main"><div class="src">account / map.md line 42</div><div class="text">The tab views mix two mechanisms. `ProfileView`, `UserConfigView`, `ChangePasswordView`, `UserTokenListView` and `UserTokenView` are plain `View`s behind Django&#x27;s `LoginRequiredMixin` and scope data by filtering on `request.user` themselves   .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L188-L194" target="_blank" rel="noopener">netbox/account/views.py:188-194</a><pre>  188  class ProfileView(LoginRequiredMixin, View):
+  189      template_name = &#x27;account/profile.html&#x27;
+  190  
+  191      def get(self, request):
+  192  
+  193          # Compile changelog table
+  194          changelog = ObjectChange.objects.valid_models().restrict(request.user, &#x27;view&#x27;).filter(user=request.user)[:20]</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L327-L331" target="_blank" rel="noopener">netbox/account/views.py:327-331</a><pre>  327  class UserTokenListView(LoginRequiredMixin, View):
+  328  
+  329      def get(self, request):
+  330          tokens = UserToken.objects.filter(user=request.user)
+  331          table = tables.UserTokenTable(tokens)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/account/views.py#L342-L345" target="_blank" rel="noopener">netbox/account/views.py:342-345</a><pre>  342  class UserTokenView(LoginRequiredMixin, View):
+  343  
+  344      def get(self, request, pk):
+  345          token = get_object_or_404(UserToken.objects.filter(user=request.user), pk=pk)</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v3" value="yes" data-id="3"> supported</label><label class="tick"><input type="radio" name="v3" value="no" data-id="3"> not supported</label><label class="tick"><input type="radio" name="v3" value="unsure" data-id="3"> unsure (partly)</label></div></article><article class="claim" id="c4"><div class="num">4</div><div class="main"><div class="src">manage / adrs.md line 15</div><div class="text">**Context.** Upgrades, scheduled housekeeping, background workers and CI all need to run Django operations  .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/upgrade.sh#L97-L128" target="_blank" rel="noopener">upgrade.sh:97-128</a><pre>   97    COMMAND=&quot;python3 netbox/manage.py migrate&quot;
+   98    echo &quot;Applying database migrations ($COMMAND)...&quot;
+   99    eval $COMMAND || exit 1
+  100  fi
+  101  
+  102  # Trace any missing cable paths (not typically needed)
+  103  COMMAND=&quot;python3 netbox/manage.py trace_paths --no-input&quot;
+  104  echo &quot;Checking for missing cable paths ($COMMAND)...&quot;
+  105  eval $COMMAND || exit 1
+  106  
+  107  # Build the local documentation
+  108  COMMAND=&quot;mkdocs build&quot;
+  ... (range continues to line 128)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/contrib/netbox-rq.service#L14-L14" target="_blank" rel="noopener">contrib/netbox-rq.service:14</a><pre>   14  ExecStart=/opt/netbox/venv/bin/python3 /opt/netbox/netbox/manage.py rqworker high default low</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v4" value="yes" data-id="4"> supported</label><label class="tick"><input type="radio" name="v4" value="no" data-id="4"> not supported</label><label class="tick"><input type="radio" name="v4" value="unsure" data-id="4"> unsure (partly)</label></div></article><article class="claim" id="c5"><div class="num">5</div><div class="main"><div class="src">manage / map.md line 11</div><div class="text">There is only one module and it fills only the &quot;entry point / launcher&quot; role; none of the usual roles (models, views, forms, tables, filtersets, API, GraphQL, signals, tests, migrations) are present .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/manage.py" target="_blank" rel="noopener">netbox/manage.py</a><div class="note">Graph row: module manage, 11 lines (store count), 0 classes, 0 functions</div></div></div><div class="side"><label class="tick"><input type="radio" name="v5" value="yes" data-id="5"> supported</label><label class="tick"><input type="radio" name="v5" value="no" data-id="5"> not supported</label><label class="tick"><input type="radio" name="v5" value="unsure" data-id="5"> unsure (partly)</label></div></article><article class="claim" id="c6"><div class="num">6</div><div class="main"><div class="src">manage / map.md line 24</div><div class="text">- The GitHub CI workflow runs `collectstatic`, `makemigrations --check` and the test suite through it ; the translation workflow runs `makemessages` through it .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/.github/workflows/ci.yml#L90-L106" target="_blank" rel="noopener">.github/workflows/ci.yml:90-106</a><pre>   90      - name: Collect static files
+   91        run: python netbox/manage.py collectstatic --no-input
+   92  
+   93      - name: Check for missing migrations
+   94        run: python netbox/manage.py makemigrations --check
+   95  
+   96      - name: Check PEP8 compliance
+   97        run: ruff check netbox/
+   98  
+   99      - name: Check UI ESLint, TypeScript, and Prettier Compliance
+  100        run: yarn --cwd netbox/project-static validate
+  101      
+  ... (range continues to line 106)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/.github/workflows/update-translation-strings.yml#L48-L48" target="_blank" rel="noopener">.github/workflows/update-translation-strings.yml:48</a><pre>   48        run: python netbox/manage.py makemessages -l ${{ env.LOCALE }}</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v6" value="yes" data-id="6"> supported</label><label class="tick"><input type="radio" name="v6" value="no" data-id="6"> not supported</label><label class="tick"><input type="radio" name="v6" value="unsure" data-id="6"> unsure (partly)</label></div></article><article class="claim" id="c7"><div class="num">7</div><div class="main"><div class="src">reports / adrs.md line 5</div><div class="text">**Context.** Reports are deprecated from v4.0 and their functionality merged into custom scripts, yet installations may still have report files on disk and `ScriptModule` rows whose `file_root` is `&#x27;reports&#x27;`  .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/docs/customization/reports.md#L1-L4" target="_blank" rel="noopener">docs/customization/reports.md:1-4</a><pre>    1  # NetBox Reports
+    2  
+    3  !!! warning
+    4      Reports are deprecated beginning with NetBox v4.0, and their functionality has been merged with [custom scripts](./custom-scripts.md). While backward compatibility has been maintained, users are advised to convert legacy reports into custom scripts soon, as support for legacy reports will be removed in a future release.</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/choices.py#L30-L36" target="_blank" rel="noopener">netbox/core/choices.py:30-36</a><pre>   30  class ManagedFileRootPathChoices(ChoiceSet):
+   31      SCRIPTS = &#x27;scripts&#x27;  # settings.SCRIPTS_ROOT
+   32      REPORTS = &#x27;reports&#x27;  # settings.REPORTS_ROOT
+   33  
+   34      CHOICES = (
+   35          (SCRIPTS, _(&#x27;Scripts&#x27;)),
+   36          (REPORTS, _(&#x27;Reports&#x27;)),</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v7" value="yes" data-id="7"> supported</label><label class="tick"><input type="radio" name="v7" value="no" data-id="7"> not supported</label><label class="tick"><input type="radio" name="v7" value="unsure" data-id="7"> unsure (partly)</label></div></article><article class="claim" id="c8"><div class="num">8</div><div class="main"><div class="src">tenancy / adrs.md line 11</div><div class="text">**Consequences.** The &quot;contacts&quot; tab, its view and its permission are registered automatically for every ContactsMixin model, so tenancy has no per-app code; in exchange the assignment table needs a composite `(object_type, object_id)` index, the change log must be told the related object explicitly, and uniqueness is `(object_type, object_id, contact, role)`. Contact inheritance up an MPTT tree comes for free in `get_contacts(inherited=True)`.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L673-L676" target="_blank" rel="noopener">netbox/netbox/models/features.py:673-676</a><pre>  673          if issubclass(model, ContactsMixin):
+  674              register_model_view(model, &#x27;contacts&#x27;, kwargs={&#x27;model&#x27;: model})(
+  675                  &#x27;netbox.views.generic.ObjectContactsView&#x27;
+  676              )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/models/contacts.py#L128-L138" target="_blank" rel="noopener">netbox/tenancy/models/contacts.py:128-138</a><pre>  128      class Meta:
+  129          ordering = (&#x27;contact&#x27;, &#x27;priority&#x27;, &#x27;role&#x27;, &#x27;pk&#x27;)
+  130          indexes = (
+  131              models.Index(fields=(&#x27;object_type&#x27;, &#x27;object_id&#x27;)),
+  132          )
+  133          constraints = (
+  134              models.UniqueConstraint(
+  135                  fields=(&#x27;object_type&#x27;, &#x27;object_id&#x27;, &#x27;contact&#x27;, &#x27;role&#x27;),
+  136                  name=&#x27;%(app_label)s_%(class)s_unique_object_contact_role&#x27;
+  137              ),
+  138          )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/models/contacts.py#L159-L162" target="_blank" rel="noopener">netbox/tenancy/models/contacts.py:159-162</a><pre>  159      def to_objectchange(self, action):
+  160          objectchange = super().to_objectchange(action)
+  161          objectchange.related_object = self.object
+  162          return objectchange</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L375-L395" target="_blank" rel="noopener">netbox/netbox/models/features.py:375-395</a><pre>  375      def get_contacts(self, inherited=True):
+  376          &quot;&quot;&quot;
+  377          Return a `QuerySet` matching all contacts assigned to this object.
+  378  
+  379          Args:
+  380              inherited: If `True`, inherited contacts from parent objects are included.
+  381          &quot;&quot;&quot;
+  382          from tenancy.models import ContactAssignment
+  383          from . import NestedGroupModel
+  384  
+  385          filter = Q(
+  386              object_type=ObjectType.objects.get_for_model(self),
+  ... (range continues to line 395)</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v8" value="yes" data-id="8"> supported</label><label class="tick"><input type="radio" name="v8" value="no" data-id="8"> not supported</label><label class="tick"><input type="radio" name="v8" value="unsure" data-id="8"> unsure (partly)</label></div></article><article class="claim" id="c9"><div class="num">9</div><div class="main"><div class="src">tenancy / adrs.md line 17</div><div class="text">**Context.** Twenty-seven models in six apps need an optional tenant, and every one of them needs the same form fields, filter fields, table columns and GraphQL filter arguments.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/models/sites.py#L173-L176" target="_blank" rel="noopener">netbox/dcim/models/sites.py:173</a><div class="note">Graph row: Site.tenant ForeignKey refers to tenancy.Tenant</div><pre>  173      tenant = models.ForeignKey(
+  174          to=&#x27;tenancy.Tenant&#x27;,
+  175          on_delete=models.PROTECT,
+  176          related_name=&#x27;sites&#x27;,</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/models/vrfs.py#L32-L35" target="_blank" rel="noopener">netbox/ipam/models/vrfs.py:32</a><div class="note">Graph row: VRF.tenant ForeignKey refers to tenancy.Tenant</div><pre>   32      tenant = models.ForeignKey(
+   33          to=&#x27;tenancy.Tenant&#x27;,
+   34          on_delete=models.PROTECT,
+   35          related_name=&#x27;vrfs&#x27;,</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/circuits/models/circuits.py#L72-L75" target="_blank" rel="noopener">netbox/circuits/models/circuits.py:72</a><div class="note">Graph row: Circuit.tenant ForeignKey refers to tenancy.Tenant</div><pre>   72      tenant = models.ForeignKey(
+   73          to=&#x27;tenancy.Tenant&#x27;,
+   74          on_delete=models.PROTECT,
+   75          related_name=&#x27;circuits&#x27;,</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v9" value="yes" data-id="9"> supported</label><label class="tick"><input type="radio" name="v9" value="no" data-id="9"> not supported</label><label class="tick"><input type="radio" name="v9" value="unsure" data-id="9"> unsure (partly)</label></div></article><article class="claim" id="c10"><div class="num">10</div><div class="main"><div class="src">tenancy / map.md line 47</div><div class="text">The six peer-app edges come only from GraphQL: `graphql/types.py` and `graphql/filters.py` declare reverse relations from Tenant to every model that carries a `tenant` FK, using `strawberry.lazy` string references under `TYPE_CHECKING`.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/types.py#L14" target="_blank" rel="noopener">netbox/tenancy/graphql/types.py:14</a><div class="note">Graph row: tenancy.graphql.types imports dcim.graphql.types</div><pre>   14      from dcim.graphql.types import (</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/filters.py#L31" target="_blank" rel="noopener">netbox/tenancy/graphql/filters.py:31</a><div class="note">Graph row: tenancy.graphql.filters imports ipam.graphql.filters</div><pre>   31      from ipam.graphql.filters import (</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/types.py#L12-L38" target="_blank" rel="noopener">netbox/tenancy/graphql/types.py:12-38</a><pre>   12  if TYPE_CHECKING:
+   13      from circuits.graphql.types import CircuitType
+   14      from dcim.graphql.types import (
+   15          CableType,
+   16          DeviceType,
+   17          LocationType,
+   18          PowerFeedType,
+   19          RackType,
+   20          RackReservationType,
+   21          SiteType,
+   22          VirtualDeviceContextType,
+   23      )
+  ... (range continues to line 38)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/filters.py#L18-L47" target="_blank" rel="noopener">netbox/tenancy/graphql/filters.py:18-47</a><pre>   18  if TYPE_CHECKING:
+   19      from core.graphql.filters import ContentTypeFilter
+   20      from circuits.graphql.filters import CircuitFilter, CircuitGroupFilter, VirtualCircuitFilter
+   21      from dcim.graphql.filters import (
+   22          CableFilter,
+   23          DeviceFilter,
+   24          LocationFilter,
+   25          PowerFeedFilter,
+   26          RackFilter,
+   27          RackReservationFilter,
+   28          SiteFilter,
+   29          VirtualDeviceContextFilter,
+  ... (range continues to line 47)</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v10" value="yes" data-id="10"> supported</label><label class="tick"><input type="radio" name="v10" value="no" data-id="10"> not supported</label><label class="tick"><input type="radio" name="v10" value="unsure" data-id="10"> unsure (partly)</label></div></article><article class="claim" id="c11"><div class="num">11</div><div class="main"><div class="src">tenancy / patterns.md line 25</div><div class="text">Tables render group names with `columns.MPTTColumn` and the count with `LinkedCountColumn` pointing at the child list filtered by `group_id`.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/tables/tenants.py#L15-L23" target="_blank" rel="noopener">netbox/tenancy/tables/tenants.py:15-23</a><pre>   15      name = columns.MPTTColumn(
+   16          verbose_name=_(&#x27;Name&#x27;),
+   17          linkify=True
+   18      )
+   19      tenant_count = columns.LinkedCountColumn(
+   20          viewname=&#x27;tenancy:tenant_list&#x27;,
+   21          url_params={&#x27;group_id&#x27;: &#x27;pk&#x27;},
+   22          verbose_name=_(&#x27;Tenants&#x27;)
+   23      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/tables/contacts.py#L18-L26" target="_blank" rel="noopener">netbox/tenancy/tables/contacts.py:18-26</a><pre>   18      name = columns.MPTTColumn(
+   19          verbose_name=_(&#x27;Name&#x27;),
+   20          linkify=True
+   21      )
+   22      contact_count = columns.LinkedCountColumn(
+   23          viewname=&#x27;tenancy:contact_list&#x27;,
+   24          url_params={&#x27;group_id&#x27;: &#x27;pk&#x27;},
+   25          verbose_name=_(&#x27;Contacts&#x27;)
+   26      )</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v11" value="yes" data-id="11"> supported</label><label class="tick"><input type="radio" name="v11" value="no" data-id="11"> not supported</label><label class="tick"><input type="radio" name="v11" value="unsure" data-id="11"> unsure (partly)</label></div></article><article class="claim" id="c12"><div class="num">12</div><div class="main"><div class="src">tenancy / patterns.md line 41</div><div class="text">The contacts feature has the same shape: `ContactModelFilterForm`, `ContactModelFilterSet`, `ContactsColumnMixin`, `ContactFilterMixin`, and the GraphQL `ContactsMixin` living in extras.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/forms/forms.py#L53-L68" target="_blank" rel="noopener">netbox/tenancy/forms/forms.py:53-68</a><pre>   53  class ContactModelFilterForm(forms.Form):
+   54      contact = DynamicModelMultipleChoiceField(
+   55          queryset=Contact.objects.all(),
+   56          required=False,
+   57          label=_(&#x27;Contact&#x27;)
+   58      )
+   59      contact_role = DynamicModelMultipleChoiceField(
+   60          queryset=ContactRole.objects.all(),
+   61          required=False,
+   62          label=_(&#x27;Contact Role&#x27;)
+   63      )
+   64      contact_group = DynamicModelMultipleChoiceField(
+  ... (range continues to line 68)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/filtersets.py#L148-L164" target="_blank" rel="noopener">netbox/tenancy/filtersets.py:148-164</a><pre>  148  class ContactModelFilterSet(django_filters.FilterSet):
+  149      contact = django_filters.ModelMultipleChoiceFilter(
+  150          field_name=&#x27;contacts__contact&#x27;,
+  151          queryset=Contact.objects.all(),
+  152          label=_(&#x27;Contact&#x27;),
+  153      )
+  154      contact_role = django_filters.ModelMultipleChoiceFilter(
+  155          field_name=&#x27;contacts__role&#x27;,
+  156          queryset=ContactRole.objects.all(),
+  157          label=_(&#x27;Contact Role&#x27;)
+  158      )
+  159      contact_group = TreeNodeMultipleChoiceFilter(
+  ... (range continues to line 164)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/tables/columns.py#L53-L58" target="_blank" rel="noopener">netbox/tenancy/tables/columns.py:53-58</a><pre>   53  class ContactsColumnMixin(tables.Table):
+   54      contacts = columns.ManyToManyColumn(
+   55          verbose_name=_(&#x27;Contacts&#x27;),
+   56          linkify_item=True,
+   57          transform=lambda obj: obj.contact.name
+   58      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/filter_mixins.py#L20-L24" target="_blank" rel="noopener">netbox/tenancy/graphql/filter_mixins.py:20-24</a><pre>   20  @dataclass
+   21  class ContactFilterMixin(BaseFilterMixin):
+   22      contacts: Annotated[&#x27;ContactFilter&#x27;, strawberry.lazy(&#x27;tenancy.graphql.filters&#x27;)] | None = (
+   23          strawberry_django.filter_field()
+   24      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/graphql/mixins.py#L59-L61" target="_blank" rel="noopener">netbox/extras/graphql/mixins.py:59-61</a><pre>   59  class ContactsMixin:
+   60  
+   61      contacts: List[Annotated[&quot;ContactAssignmentType&quot;, strawberry.lazy(&#x27;tenancy.graphql.types&#x27;)]]</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v12" value="yes" data-id="12"> supported</label><label class="tick"><input type="radio" name="v12" value="no" data-id="12"> not supported</label><label class="tick"><input type="radio" name="v12" value="unsure" data-id="12"> unsure (partly)</label></div></article><article class="claim" id="c13"><div class="num">13</div><div class="main"><div class="src">tenancy / patterns.md line 59</div><div class="text">Every cross-module type or filter annotation is `Annotated[&#x27;Name&#x27;, strawberry.lazy(&#x27;&lt;module&gt;&#x27;)]`, and the real imports sit under `if TYPE_CHECKING:` so no peer app is imported at runtime.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/types.py#L12-L38" target="_blank" rel="noopener">netbox/tenancy/graphql/types.py:12-38</a><pre>   12  if TYPE_CHECKING:
+   13      from circuits.graphql.types import CircuitType
+   14      from dcim.graphql.types import (
+   15          CableType,
+   16          DeviceType,
+   17          LocationType,
+   18          PowerFeedType,
+   19          RackType,
+   20          RackReservationType,
+   21          SiteType,
+   22          VirtualDeviceContextType,
+   23      )
+  ... (range continues to line 38)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/types.py#L60-L85" target="_blank" rel="noopener">netbox/tenancy/graphql/types.py:60-85</a><pre>   60  class TenantType(ContactsMixin, NetBoxObjectType):
+   61      group: Annotated[&#x27;TenantGroupType&#x27;, strawberry.lazy(&#x27;tenancy.graphql.types&#x27;)] | None
+   62      asns: List[Annotated[&#x27;ASNType&#x27;, strawberry.lazy(&#x27;ipam.graphql.types&#x27;)]]
+   63      circuits: List[Annotated[&#x27;CircuitType&#x27;, strawberry.lazy(&#x27;circuits.graphql.types&#x27;)]]
+   64      sites: List[Annotated[&#x27;SiteType&#x27;, strawberry.lazy(&#x27;dcim.graphql.types&#x27;)]]
+   65      vlans: List[Annotated[&#x27;VLANType&#x27;, strawberry.lazy(&#x27;ipam.graphql.types&#x27;)]]
+   66      wireless_lans: List[Annotated[&#x27;WirelessLANType&#x27;, strawberry.lazy(&#x27;wireless.graphql.types&#x27;)]]
+   67      route_targets: List[Annotated[&#x27;RouteTargetType&#x27;, strawberry.lazy(&#x27;ipam.graphql.types&#x27;)]]
+   68      locations: List[Annotated[&#x27;LocationType&#x27;, strawberry.lazy(&#x27;dcim.graphql.types&#x27;)]]
+   69      ip_ranges: List[Annotated[&#x27;IPRangeType&#x27;, strawberry.lazy(&#x27;ipam.graphql.types&#x27;)]]
+   70      rackreservations: List[Annotated[&#x27;RackReservationType&#x27;, strawberry.lazy(&#x27;dcim.graphql.types&#x27;)]]
+   71      racks: List[Annotated[&#x27;RackType&#x27;, strawberry.lazy(&#x27;dcim.graphql.types&#x27;)]]
+  ... (range continues to line 85)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/filters.py#L18-L47" target="_blank" rel="noopener">netbox/tenancy/graphql/filters.py:18-47</a><pre>   18  if TYPE_CHECKING:
+   19      from core.graphql.filters import ContentTypeFilter
+   20      from circuits.graphql.filters import CircuitFilter, CircuitGroupFilter, VirtualCircuitFilter
+   21      from dcim.graphql.filters import (
+   22          CableFilter,
+   23          DeviceFilter,
+   24          LocationFilter,
+   25          PowerFeedFilter,
+   26          RackFilter,
+   27          RackReservationFilter,
+   28          SiteFilter,
+   29          VirtualDeviceContextFilter,
+  ... (range continues to line 47)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/tenancy/graphql/filter_mixins.py#L10-L12" target="_blank" rel="noopener">netbox/tenancy/graphql/filter_mixins.py:10-12</a><pre>   10  if TYPE_CHECKING:
+   11      from netbox.graphql.filter_lookups import TreeNodeFilter
+   12      from .filters import ContactFilter, TenantFilter, TenantGroupFilter</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v13" value="yes" data-id="13"> supported</label><label class="tick"><input type="radio" name="v13" value="no" data-id="13"> not supported</label><label class="tick"><input type="radio" name="v13" value="unsure" data-id="13"> unsure (partly)</label></div></article><article class="claim" id="c14"><div class="num">14</div><div class="main"><div class="src">users / adrs.md line 20</div><div class="text">- The `$user` token is a cross-subsystem contract: `users.constants` defines it, `utilities.querysets.restrict` and `utilities.permissions.qs_filter_from_constraints` substitute it, the latter resolving `users.User` lazily via `apps.get_model` to avoid a circular import   .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/querysets.py#L3" target="_blank" rel="noopener">netbox/utilities/querysets.py:3</a><div class="note">Graph row: utilities.querysets imports users.constants</div><pre>    3  from users.constants import CONSTRAINT_TOKEN_USER</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/permissions.py#L85-L99" target="_blank" rel="noopener">netbox/utilities/permissions.py:85-99</a><pre>   85  
+   86  def qs_filter_from_constraints(constraints, tokens=None):
+   87      &quot;&quot;&quot;
+   88      Construct a Q filter object from an iterable of ObjectPermission constraints.
+   89  
+   90      Args:
+   91          tokens: A dictionary mapping string tokens to be replaced with a value.
+   92      &quot;&quot;&quot;
+   93      if tokens is None:
+   94          tokens = {}
+   95  
+   96      User = apps.get_model(&#x27;users.User&#x27;)
+  ... (range continues to line 99)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/permissions.py#L96-L99" target="_blank" rel="noopener">netbox/utilities/permissions.py:96</a><div class="note">Graph row: . get_model refers to users.User</div><pre>   96      User = apps.get_model(&#x27;users.User&#x27;)
+   97      for token, value in tokens.items():
+   98          if token == CONSTRAINT_TOKEN_USER and isinstance(value, User):
+   99              tokens[token] = value.id</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v14" value="yes" data-id="14"> supported</label><label class="tick"><input type="radio" name="v14" value="no" data-id="14"> not supported</label><label class="tick"><input type="radio" name="v14" value="unsure" data-id="14"> unsure (partly)</label></div></article><article class="claim" id="c15"><div class="num">15</div><div class="main"><div class="src">users / adrs.md line 54</div><div class="text">**Consequences.** The user detail page shows changes made *by* the user (`ObjectChange.filter(user=instance)`), not changes *to* the user, since none are recorded . Only `User` and `Group` have GraphQL types; Token and ObjectPermission have none, and the API test suite skips the GraphQL mixin for Token with an explicit comment  . All four public models are listed in `EXEMPT_EXCLUDE_MODELS`, so `EXEMPT_VIEW_PERMISSIONS = [&#x27;*&#x27;]` never exposes them . Group/User counts must be annotated per view (`users_count` in the UI, `user_count` in the API) because there is no cached counter field  .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/views.py#L73-L85" target="_blank" rel="noopener">netbox/users/views.py:73-85</a><pre>   73  class UserView(generic.ObjectView):
+   74      queryset = User.objects.all()
+   75      template_name = &#x27;users/user.html&#x27;
+   76  
+   77      def get_extra_context(self, request, instance):
+   78          changelog = ObjectChange.objects.valid_models().restrict(request.user, &#x27;view&#x27;).filter(user=instance)[:20]
+   79          changelog_table = ObjectChangeTable(changelog)
+   80          changelog_table.orderable = False
+   81          changelog_table.configure(request)
+   82  
+   83          return {
+   84              &#x27;changelog_table&#x27;: changelog_table,
+  ... (range continues to line 85)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/graphql/schema.py#L9-L15" target="_blank" rel="noopener">netbox/users/graphql/schema.py:9-15</a><pre>    9  @strawberry.type(name=&quot;Query&quot;)
+   10  class UsersQuery:
+   11      group: GroupType = strawberry_django.field()
+   12      group_list: List[GroupType] = strawberry_django.field()
+   13  
+   14      user: UserType = strawberry_django.field()
+   15      user_list: List[UserType] = strawberry_django.field()</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/tests/test_api.py#L191-L198" target="_blank" rel="noopener">netbox/users/tests/test_api.py:191-198</a><pre>  191  class TokenTest(
+  192      # No GraphQL support for Token
+  193      APIViewTestCases.GetObjectViewTestCase,
+  194      APIViewTestCases.ListObjectsViewTestCase,
+  195      APIViewTestCases.CreateObjectViewTestCase,
+  196      APIViewTestCases.UpdateObjectViewTestCase,
+  197      APIViewTestCases.DeleteObjectViewTestCase
+  198  ):</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/settings.py#L569-L578" target="_blank" rel="noopener">netbox/netbox/settings.py:569-578</a><pre>  569  #
+  570  
+  571  # Exclude potentially sensitive models from wildcard view exemption. These may still be exempted
+  572  # by specifying the model individually in the EXEMPT_VIEW_PERMISSIONS configuration parameter.
+  573  EXEMPT_EXCLUDE_MODELS = (
+  574      (&#x27;extras&#x27;, &#x27;configrevision&#x27;),
+  575      (&#x27;users&#x27;, &#x27;group&#x27;),
+  576      (&#x27;users&#x27;, &#x27;objectpermission&#x27;),
+  577      (&#x27;users&#x27;, &#x27;token&#x27;),
+  578      (&#x27;users&#x27;, &#x27;user&#x27;),</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/views.py#L125-L131" target="_blank" rel="noopener">netbox/users/views.py:125-131</a><pre>  125  @register_model_view(Group, &#x27;list&#x27;, path=&#x27;&#x27;, detail=False)
+  126  class GroupListView(generic.ObjectListView):
+  127      queryset = Group.objects.annotate(users_count=Count(&#x27;user&#x27;)).order_by(&#x27;name&#x27;)
+  128      filterset = filtersets.GroupFilterSet
+  129      filterset_form = forms.GroupFilterForm
+  130      table = tables.GroupTable
+  131  </pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/api/views.py#L39-L42" target="_blank" rel="noopener">netbox/users/api/views.py:39-42</a><pre>   39  class GroupViewSet(NetBoxModelViewSet):
+   40      queryset = Group.objects.annotate(user_count=Count(&#x27;user&#x27;))
+   41      serializer_class = serializers.GroupSerializer
+   42      filterset_class = filtersets.GroupFilterSet</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v15" value="yes" data-id="15"> supported</label><label class="tick"><input type="radio" name="v15" value="no" data-id="15"> not supported</label><label class="tick"><input type="radio" name="v15" value="unsure" data-id="15"> unsure (partly)</label></div></article><article class="claim" id="c16"><div class="num">16</div><div class="main"><div class="src">users / map.md line 17</div><div class="text">**Views** (`views.py`, 27 classes) are the standard NetBox generic CRUD set for Token, User, Group and ObjectPermission, each registered with `@register_model_view`  . `urls.py` contains no explicit routes; it delegates entirely to `get_model_urls` per model  .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/views.py#L15-L57" target="_blank" rel="noopener">netbox/users/views.py:15-57</a><pre>   15  @register_model_view(Token, &#x27;list&#x27;, path=&#x27;&#x27;, detail=False)
+   16  class TokenListView(generic.ObjectListView):
+   17      queryset = Token.objects.all()
+   18      filterset = filtersets.TokenFilterSet
+   19      filterset_form = forms.TokenFilterForm
+   20      table = tables.TokenTable
+   21  
+   22  
+   23  @register_model_view(Token)
+   24  class TokenView(generic.ObjectView):
+   25      queryset = Token.objects.all()
+   26  
+  ... (range continues to line 57)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/views.py" target="_blank" rel="noopener">netbox/users/views.py</a><div class="note">Graph row: module users.views, 215 lines (store count), 27 classes, 0 functions</div></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/urls.py#L9-L19" target="_blank" rel="noopener">netbox/users/urls.py:9-19</a><pre>    9      path(&#x27;tokens/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;token&#x27;, detail=False))),
+   10      path(&#x27;tokens/&lt;int:pk&gt;/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;token&#x27;))),
+   11  
+   12      path(&#x27;users/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;user&#x27;, detail=False))),
+   13      path(&#x27;users/&lt;int:pk&gt;/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;user&#x27;))),
+   14  
+   15      path(&#x27;groups/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;group&#x27;, detail=False))),
+   16      path(&#x27;groups/&lt;int:pk&gt;/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;group&#x27;))),
+   17  
+   18      path(&#x27;permissions/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;objectpermission&#x27;, detail=False))),
+   19      path(&#x27;permissions/&lt;int:pk&gt;/&#x27;, include(get_model_urls(&#x27;users&#x27;, &#x27;objectpermission&#x27;))),</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/urls.py" target="_blank" rel="noopener">netbox/users/urls.py</a><div class="note">Graph row: entry point of kind urls (the file runs without being called directly)</div></div></div><div class="side"><label class="tick"><input type="radio" name="v16" value="yes" data-id="16"> supported</label><label class="tick"><input type="radio" name="v16" value="no" data-id="16"> not supported</label><label class="tick"><input type="radio" name="v16" value="unsure" data-id="16"> unsure (partly)</label></div></article><article class="claim" id="c17"><div class="num">17</div><div class="main"><div class="src">users / patterns.md line 61</div><div class="text">Model `verbose_name`s and form labels are wrapped in `gettext_lazy as _`  . **Exception:** `filtersets.py`, `tables.py` and `forms/bulk_import.py` import the eager `gettext as _` for labels evaluated at class-definition time   .</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/models/users.py#L10-L10" target="_blank" rel="noopener">netbox/users/models/users.py:10</a><pre>   10  from django.utils.translation import gettext_lazy as _</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/forms/model_forms.py#L7-L7" target="_blank" rel="noopener">netbox/users/forms/model_forms.py:7</a><pre>    7  from django.utils.translation import gettext_lazy as _</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/filtersets.py#L4-L4" target="_blank" rel="noopener">netbox/users/filtersets.py:4</a><pre>    4  from django.utils.translation import gettext as _</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/tables.py#L2-L2" target="_blank" rel="noopener">netbox/users/tables.py:2</a><pre>    2  from django.utils.translation import gettext as _</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/users/forms/bulk_import.py#L2-L2" target="_blank" rel="noopener">netbox/users/forms/bulk_import.py:2</a><pre>    2  from django.utils.translation import gettext as _</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v17" value="yes" data-id="17"> supported</label><label class="tick"><input type="radio" name="v17" value="no" data-id="17"> not supported</label><label class="tick"><input type="radio" name="v17" value="unsure" data-id="17"> unsure (partly)</label></div></article><article class="claim" id="c18"><div class="num">18</div><div class="main"><div class="src">wireless / map.md line 10</div><div class="text">- **Choices / constants / utils**: `choices.py` is the largest module (484 LOC) because `WirelessChannelChoices` enumerates every 2.4/5/6/60 GHz channel as an encoded string `band-id-freqMHz-widthMHz`; `constants.py` fixes `SSID_MAX_LENGTH = 32` and `PSK_MAX_LENGTH = 64`; `utils.get_channel_attr` decodes a channel string into band/id/frequency/width.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/choices.py" target="_blank" rel="noopener">netbox/wireless/choices.py</a><div class="note">Graph row: module wireless.choices, 484 lines (store count), 5 classes, 0 functions</div></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/choices.py#L32-L36" target="_blank" rel="noopener">netbox/wireless/choices.py:32-36</a><pre>   32  class WirelessChannelChoices(ChoiceSet):
+   33  
+   34      # 2.4 GHz
+   35      CHANNEL_24G_1 = &#x27;2.4g-1-2412-22&#x27;
+   36      CHANNEL_24G_2 = &#x27;2.4g-2-2417-22&#x27;</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/constants.py#L1-L2" target="_blank" rel="noopener">netbox/wireless/constants.py:1-2</a><pre>    1  SSID_MAX_LENGTH = 32  # Per IEEE 802.11-2007
+    2  PSK_MAX_LENGTH = 64</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/utils.py#L11-L28" target="_blank" rel="noopener">netbox/wireless/utils.py:11-28</a><pre>   11  def get_channel_attr(channel, attr):
+   12      &quot;&quot;&quot;
+   13      Return the specified attribute of a given WirelessChannelChoices value.
+   14      &quot;&quot;&quot;
+   15      if channel not in WirelessChannelChoices.values():
+   16          raise ValueError(_(&quot;Invalid channel value: {channel}&quot;).format(channel=channel))
+   17  
+   18      channel_values = channel.split(&#x27;-&#x27;)
+   19      attrs = {
+   20          &#x27;band&#x27;: channel_values[0],
+   21          &#x27;id&#x27;: int(channel_values[1]),
+   22          &#x27;frequency&#x27;: Decimal(channel_values[2]),
+  ... (range continues to line 28)</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v18" value="yes" data-id="18"> supported</label><label class="tick"><input type="radio" name="v18" value="no" data-id="18"> not supported</label><label class="tick"><input type="radio" name="v18" value="unsure" data-id="18"> unsure (partly)</label></div></article><article class="claim" id="c19"><div class="num">19</div><div class="main"><div class="src">wireless / map.md line 16</div><div class="text">- **GraphQL**: `enums.py` derives five strawberry enums from the choice sets; `filter_mixins.py` has a `WirelessAuthenticationBaseFilterMixin` mirroring the abstract model; `filters.py`, `types.py`, and `schema.py` (`WirelessQuery` with one single and one list field per model).</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/graphql/enums.py#L13-L17" target="_blank" rel="noopener">netbox/wireless/graphql/enums.py:13-17</a><pre>   13  WirelessAuthCipherEnum = strawberry.enum(WirelessAuthCipherChoices.as_enum(prefix=&#x27;cipher&#x27;))
+   14  WirelessAuthTypeEnum = strawberry.enum(WirelessAuthTypeChoices.as_enum(prefix=&#x27;type&#x27;))
+   15  WirelessChannelEnum = strawberry.enum(WirelessChannelChoices.as_enum(prefix=&#x27;channel&#x27;))
+   16  WirelessLANStatusEnum = strawberry.enum(WirelessLANStatusChoices.as_enum(prefix=&#x27;status&#x27;))
+   17  WirelessRoleEnum = strawberry.enum(WirelessRoleChoices.as_enum(prefix=&#x27;role&#x27;))</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/graphql/filter_mixins.py#L19" target="_blank" rel="noopener">netbox/wireless/graphql/filter_mixins.py:19</a><div class="note">Graph row: class <b>WirelessAuthenticationBaseFilterMixin</b>, bases BaseFilterMixin</div><pre>   19  class WirelessAuthenticationBaseFilterMixin(BaseFilterMixin):
+   20      auth_type: Annotated[&#x27;WirelessAuthTypeEnum&#x27;, strawberry.lazy(&#x27;wireless.graphql.enums&#x27;)] | None = (
+   21          strawberry_django.filter_field()</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/graphql/schema.py#L9-L18" target="_blank" rel="noopener">netbox/wireless/graphql/schema.py:9-18</a><pre>    9  @strawberry.type(name=&quot;Query&quot;)
+   10  class WirelessQuery:
+   11      wireless_lan: WirelessLANType = strawberry_django.field()
+   12      wireless_lan_list: List[WirelessLANType] = strawberry_django.field()
+   13  
+   14      wireless_lan_group: WirelessLANGroupType = strawberry_django.field()
+   15      wireless_lan_group_list: List[WirelessLANGroupType] = strawberry_django.field()
+   16  
+   17      wireless_link: WirelessLinkType = strawberry_django.field()
+   18      wireless_link_list: List[WirelessLinkType] = strawberry_django.field()</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v19" value="yes" data-id="19"> supported</label><label class="tick"><input type="radio" name="v19" value="no" data-id="19"> not supported</label><label class="tick"><input type="radio" name="v19" value="unsure" data-id="19"> unsure (partly)</label></div></article><article class="claim" id="c20"><div class="num">20</div><div class="main"><div class="src">wireless / patterns.md line 29</div><div class="text">Exception (bug-shaped): `WirelessLinkFilter.status` in GraphQL is typed as `WirelessLANStatusEnum`, not a link-status enum, so the GraphQL filter vocabulary for links disagrees with the model&#x27;s `LinkStatusChoices`.</div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/graphql/filters.py#L66-L68" target="_blank" rel="noopener">netbox/wireless/graphql/filters.py:66-68</a><pre>   66      status: Annotated[&#x27;WirelessLANStatusEnum&#x27;, strawberry.lazy(&#x27;wireless.graphql.enums&#x27;)] | None = (
+   67          strawberry_django.filter_field()
+   68      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/wireless/models.py#L150-L150" target="_blank" rel="noopener">netbox/wireless/models.py:150</a><pre>  150          choices=LinkStatusChoices,</pre></div></div><div class="side"><label class="tick"><input type="radio" name="v20" value="yes" data-id="20"> supported</label><label class="tick"><input type="radio" name="v20" value="no" data-id="20"> not supported</label><label class="tick"><input type="radio" name="v20" value="unsure" data-id="20"> unsure (partly)</label></div></article>
+</div>
+<script>(function(){var key='gate3_sample_batch2';function load(){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch(e){return {}}}function save(o){try{localStorage.setItem(key,JSON.stringify(o))}catch(e){}}
+var st=load();function tally(){var c={yes:0,no:0,unsure:0};Object.values(st).forEach(function(v){c[v]=(c[v]||0)+1});['yes','no','unsure'].forEach(function(k){document.getElementById(k).textContent=c[k]})}
+document.querySelectorAll('.tick input').forEach(function(r){if(st[r.dataset.id]===r.value)r.checked=true;r.addEventListener('change',function(){st[r.dataset.id]=r.value;save(st);tally()})});tally();})();</script>

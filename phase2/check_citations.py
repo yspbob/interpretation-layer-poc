@@ -10,10 +10,12 @@ Rules, fixed before drafting:
 - [fg:...] must name a row id present in the subsystem's slice (ids: modules:<module>,
   symbols:<module>:<name>, imports:<src>-><dst>, model_refs:<module>:<lineno>, churn:<module>,
   entrypoints:<module>, subsystems:<name>).
-- [code:path:line] must name a file that exists in the T0 tree; the line (or every line of the range)
+- [code:path:line] must name a file (any type) that exists in the T0 tree; the line (or every line of the range)
   must exist and the range must be at most 60 lines.
 - A claim with no citation, or whose every citation fails, is REMOVED and logged. A claim with at least
   one valid citation is kept; its failed citations are dropped and logged.
+Version 2 (17 Sep 2026, after batch 2): the path pattern accepted only .py files, narrower than the
+stated rule; widened to any file in the tree. Rule text unchanged. Both batches re-checked with v2.
 Usage: check_citations.py <subsystem> <draft dir> <out dir>
 """
 import json, os, re, sys
@@ -32,7 +34,7 @@ def load_ids(sub):
 
 
 def check_code(ref):
-    m = re.match(r"^([\w./\-]+\.py):(\d+)(?:-(\d+))?$", ref.strip())
+    m = re.match(r"^([\w./\-]+):(\d+)(?:-(\d+))?$", ref.strip())
     if not m:
         return False, "malformed"
     path, a, b = m.group(1), int(m.group(2)), int(m.group(3) or m.group(2))

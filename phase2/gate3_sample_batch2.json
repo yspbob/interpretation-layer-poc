@@ -1,0 +1,122 @@
+[
+ [
+  "account",
+  "adrs.md",
+  9,
+  "**Consequences.** The app is thin: it owns views, one table and one proxy model, but borrows forms from `users` and tables/models from `extras` and `core`, so most changes to a profile tab are cross-app edits [code:netbox/account/views.py:21-33] [fg:imports:account.views->users]. Other apps couple to it by URL name rather than import: `extras` models and views redirect to `account:notifications`/`account:subscriptions`, the user menu links five `account:` names, and `settings.LOGIN_URL` hard-codes `/login/` [code:netbox/extras/models/notifications.py:91] [code:netbox/extras/views.py:510] [code:netbox/templates/inc/user_menu.html:39-51] [code:netbox/netbox/settings.py:524]. Renaming a URL name here breaks `extras` and templates without any import edge flagging it [fg:subsystems:account] [fg:imports:users.tables->account.tables]."
+ ],
+ [
+  "account",
+  "adrs.md",
+  33,
+  "**Consequences.** The `next` parameter is validated with `safe_for_redirect()` and falls back to `home`; unsafe values are logged with line breaks stripped [code:netbox/account/views.py:150-159]. The `user_logged_in.disconnect(...)` call is process-global and the only reference to `update_last_login` in the tree is this disconnect (there is no matching `connect`), so once a login occurs during maintenance mode, `last_login` is not updated by later logins in that worker even after maintenance mode is cleared [code:netbox/account/views.py:8] [code:netbox/account/views.py:111-113]. `LoginView` is the highest-churn code in the subsystem's only high-churn module (22 commits, 5 authors), which is where feature additions to authentication have landed [fg:churn:account.views]."
+ ],
+ [
+  "account",
+  "map.md",
+  42,
+  "The tab views mix two mechanisms. `ProfileView`, `UserConfigView`, `ChangePasswordView`, `UserTokenListView` and `UserTokenView` are plain `View`s behind Django's `LoginRequiredMixin` and scope data by filtering on `request.user` themselves [code:netbox/account/views.py:188-194] [code:netbox/account/views.py:327-331] [code:netbox/account/views.py:342-345]."
+ ],
+ [
+  "manage",
+  "adrs.md",
+  15,
+  "**Context.** Upgrades, scheduled housekeeping, background workers and CI all need to run Django operations [code:upgrade.sh:97-128] [code:contrib/netbox-rq.service:14]."
+ ],
+ [
+  "manage",
+  "map.md",
+  11,
+  "There is only one module and it fills only the \"entry point / launcher\" role; none of the usual roles (models, views, forms, tables, filtersets, API, GraphQL, signals, tests, migrations) are present [fg:modules:manage]."
+ ],
+ [
+  "manage",
+  "map.md",
+  24,
+  "- The GitHub CI workflow runs `collectstatic`, `makemigrations --check` and the test suite through it [code:.github/workflows/ci.yml:90-106]; the translation workflow runs `makemessages` through it [code:.github/workflows/update-translation-strings.yml:48]."
+ ],
+ [
+  "reports",
+  "adrs.md",
+  5,
+  "**Context.** Reports are deprecated from v4.0 and their functionality merged into custom scripts, yet installations may still have report files on disk and `ScriptModule` rows whose `file_root` is `'reports'` [code:docs/customization/reports.md:1-4] [code:netbox/core/choices.py:30-36]."
+ ],
+ [
+  "tenancy",
+  "adrs.md",
+  11,
+  "**Consequences.** The \"contacts\" tab, its view and its permission are registered automatically for every ContactsMixin model, so tenancy has no per-app code; in exchange the assignment table needs a composite `(object_type, object_id)` index, the change log must be told the related object explicitly, and uniqueness is `(object_type, object_id, contact, role)`. Contact inheritance up an MPTT tree comes for free in `get_contacts(inherited=True)`. [code:netbox/netbox/models/features.py:673-676] [code:netbox/tenancy/models/contacts.py:128-138] [code:netbox/tenancy/models/contacts.py:159-162] [code:netbox/netbox/models/features.py:375-395]"
+ ],
+ [
+  "tenancy",
+  "adrs.md",
+  17,
+  "**Context.** Twenty-seven models in six apps need an optional tenant, and every one of them needs the same form fields, filter fields, table columns and GraphQL filter arguments. [fg:model_refs:dcim.models.sites:173] [fg:model_refs:ipam.models.vrfs:32] [fg:model_refs:circuits.models.circuits:72]"
+ ],
+ [
+  "tenancy",
+  "map.md",
+  47,
+  "The six peer-app edges come only from GraphQL: `graphql/types.py` and `graphql/filters.py` declare reverse relations from Tenant to every model that carries a `tenant` FK, using `strawberry.lazy` string references under `TYPE_CHECKING`. [fg:imports:tenancy.graphql.types->dcim.graphql.types] [fg:imports:tenancy.graphql.filters->ipam.graphql.filters] [code:netbox/tenancy/graphql/types.py:12-38] [code:netbox/tenancy/graphql/filters.py:18-47]"
+ ],
+ [
+  "tenancy",
+  "patterns.md",
+  25,
+  "Tables render group names with `columns.MPTTColumn` and the count with `LinkedCountColumn` pointing at the child list filtered by `group_id`. [code:netbox/tenancy/tables/tenants.py:15-23] [code:netbox/tenancy/tables/contacts.py:18-26]"
+ ],
+ [
+  "tenancy",
+  "patterns.md",
+  41,
+  "The contacts feature has the same shape: `ContactModelFilterForm`, `ContactModelFilterSet`, `ContactsColumnMixin`, `ContactFilterMixin`, and the GraphQL `ContactsMixin` living in extras. [code:netbox/tenancy/forms/forms.py:53-68] [code:netbox/tenancy/filtersets.py:148-164] [code:netbox/tenancy/tables/columns.py:53-58] [code:netbox/tenancy/graphql/filter_mixins.py:20-24] [code:netbox/extras/graphql/mixins.py:59-61]"
+ ],
+ [
+  "tenancy",
+  "patterns.md",
+  59,
+  "Every cross-module type or filter annotation is `Annotated['Name', strawberry.lazy('<module>')]`, and the real imports sit under `if TYPE_CHECKING:` so no peer app is imported at runtime. [code:netbox/tenancy/graphql/types.py:12-38] [code:netbox/tenancy/graphql/types.py:60-85] [code:netbox/tenancy/graphql/filters.py:18-47] [code:netbox/tenancy/graphql/filter_mixins.py:10-12]"
+ ],
+ [
+  "users",
+  "adrs.md",
+  20,
+  "- The `$user` token is a cross-subsystem contract: `users.constants` defines it, `utilities.querysets.restrict` and `utilities.permissions.qs_filter_from_constraints` substitute it, the latter resolving `users.User` lazily via `apps.get_model` to avoid a circular import [fg:imports:utilities.querysets->users.constants] [code:netbox/utilities/permissions.py:85-99] [fg:model_refs:utilities.permissions:96]."
+ ],
+ [
+  "users",
+  "adrs.md",
+  54,
+  "**Consequences.** The user detail page shows changes made *by* the user (`ObjectChange.filter(user=instance)`), not changes *to* the user, since none are recorded [code:netbox/users/views.py:73-85]. Only `User` and `Group` have GraphQL types; Token and ObjectPermission have none, and the API test suite skips the GraphQL mixin for Token with an explicit comment [code:netbox/users/graphql/schema.py:9-15] [code:netbox/users/tests/test_api.py:191-198]. All four public models are listed in `EXEMPT_EXCLUDE_MODELS`, so `EXEMPT_VIEW_PERMISSIONS = ['*']` never exposes them [code:netbox/netbox/settings.py:569-578]. Group/User counts must be annotated per view (`users_count` in the UI, `user_count` in the API) because there is no cached counter field [code:netbox/users/views.py:125-131] [code:netbox/users/api/views.py:39-42]."
+ ],
+ [
+  "users",
+  "map.md",
+  17,
+  "**Views** (`views.py`, 27 classes) are the standard NetBox generic CRUD set for Token, User, Group and ObjectPermission, each registered with `@register_model_view` [code:netbox/users/views.py:15-57] [fg:modules:users.views]. `urls.py` contains no explicit routes; it delegates entirely to `get_model_urls` per model [code:netbox/users/urls.py:9-19] [fg:entrypoints:users.urls]."
+ ],
+ [
+  "users",
+  "patterns.md",
+  61,
+  "Model `verbose_name`s and form labels are wrapped in `gettext_lazy as _` [code:netbox/users/models/users.py:10] [code:netbox/users/forms/model_forms.py:7]. **Exception:** `filtersets.py`, `tables.py` and `forms/bulk_import.py` import the eager `gettext as _` for labels evaluated at class-definition time [code:netbox/users/filtersets.py:4] [code:netbox/users/tables.py:2] [code:netbox/users/forms/bulk_import.py:2]."
+ ],
+ [
+  "wireless",
+  "map.md",
+  10,
+  "- **Choices / constants / utils**: `choices.py` is the largest module (484 LOC) because `WirelessChannelChoices` enumerates every 2.4/5/6/60 GHz channel as an encoded string `band-id-freqMHz-widthMHz`; `constants.py` fixes `SSID_MAX_LENGTH = 32` and `PSK_MAX_LENGTH = 64`; `utils.get_channel_attr` decodes a channel string into band/id/frequency/width. [fg:modules:wireless.choices] [code:netbox/wireless/choices.py:32-36] [code:netbox/wireless/constants.py:1-2] [code:netbox/wireless/utils.py:11-28]"
+ ],
+ [
+  "wireless",
+  "map.md",
+  16,
+  "- **GraphQL**: `enums.py` derives five strawberry enums from the choice sets; `filter_mixins.py` has a `WirelessAuthenticationBaseFilterMixin` mirroring the abstract model; `filters.py`, `types.py`, and `schema.py` (`WirelessQuery` with one single and one list field per model). [code:netbox/wireless/graphql/enums.py:13-17] [fg:symbols:wireless.graphql.filter_mixins:WirelessAuthenticationBaseFilterMixin] [code:netbox/wireless/graphql/schema.py:9-18]"
+ ],
+ [
+  "wireless",
+  "patterns.md",
+  29,
+  "Exception (bug-shaped): `WirelessLinkFilter.status` in GraphQL is typed as `WirelessLANStatusEnum`, not a link-status enum, so the GraphQL filter vocabulary for links disagrees with the model's `LinkStatusChoices`. [code:netbox/wireless/graphql/filters.py:66-68] [code:netbox/wireless/models.py:150]"
+ ]
+]

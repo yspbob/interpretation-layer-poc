@@ -1,0 +1,272 @@
+# Fact-graph digest: subsystem `users` at T0 ea4c205
+
+Summary row [fg:subsystems:users]: {'subsystem': 'users', 'modules': 40, 'loc_code': 3520, 'loc_data': 0, 'test_modules': 6}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- users | netbox/users/__init__.py | 1 | 0 | 0 |  | 
+- users.api | netbox/users/api/__init__.py | 1 | 0 | 0 |  | 
+- users.api.serializers | netbox/users/api/serializers.py | 4 | 0 | 0 |  | 
+- users.api.serializers_ | netbox/users/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- users.api.serializers_.nested | netbox/users/api/serializers_/nested.py | 31 | 2 | 0 |  | 
+- users.api.serializers_.permissions | netbox/users/api/serializers_/permissions.py | 41 | 1 | 0 |  | 
+- users.api.serializers_.tokens | netbox/users/api/serializers_/tokens.py | 94 | 2 | 0 |  | 
+- users.api.serializers_.users | netbox/users/api/serializers_/users.py | 96 | 2 | 0 |  | 
+- users.api.urls | netbox/users/api/urls.py | 28 | 0 | 0 |  | 
+- users.api.views | netbox/users/api/views.py | 124 | 7 | 0 |  | 
+- users.apps | netbox/users/apps.py | 13 | 1 | 0 |  | 
+- users.constants | netbox/users/constants.py | 10 | 0 | 0 |  | 
+- users.filtersets | netbox/users/filtersets.py | 212 | 4 | 0 |  | 
+- users.forms | netbox/users/forms/__init__.py | 5 | 0 | 0 |  | 
+- users.forms.bulk_edit | netbox/users/forms/bulk_edit.py | 132 | 4 | 0 |  | 
+- users.forms.bulk_import | netbox/users/forms/bulk_import.py | 47 | 3 | 0 |  | 
+- users.forms.filtersets | netbox/users/forms/filtersets.py | 144 | 4 | 0 |  | 
+- users.forms.model_forms | netbox/users/forms/model_forms.py | 394 | 7 | 0 |  | 
+- users.graphql | netbox/users/graphql/__init__.py | 1 | 0 | 0 |  | 
+- users.graphql.filters | netbox/users/graphql/filters.py | 35 | 2 | 0 |  | 
+- users.graphql.schema | netbox/users/graphql/schema.py | 16 | 1 | 0 |  | 
+- users.graphql.types | netbox/users/graphql/types.py | 35 | 2 | 0 |  | 
+- users.migrations | netbox/users/migrations/__init__.py | 1 | 0 | 0 |  | 
+- users.migrations.0001_squashed_0011 | netbox/users/migrations/0001_squashed_0011.py | 150 | 1 | 0 |  | migration
+- users.migrations.0002_squashed_0004 | netbox/users/migrations/0002_squashed_0004.py | 63 | 1 | 0 |  | migration
+- users.migrations.0005_alter_user_table | netbox/users/migrations/0005_alter_user_table.py | 53 | 1 | 1 |  | migration
+- users.migrations.0006_custom_group_model | netbox/users/migrations/0006_custom_group_model.py | 74 | 1 | 1 |  | migration
+- users.migrations.0007_objectpermission_update_object_types | netbox/users/migrations/0007_objectpermission_update_object_types.py | 19 | 1 | 0 |  | migration
+- users.migrations.0008_flip_objectpermission_assignments | netbox/users/migrations/0008_flip_objectpermission_assignments.py | 124 | 1 | 0 |  | migration
+- users.migrations.0009_update_group_perms | netbox/users/migrations/0009_update_group_perms.py | 33 | 1 | 1 |  | migration
+- users.models | netbox/users/models/__init__.py | 5 | 0 | 0 |  | 
+- users.models.permissions | netbox/users/models/permissions.py | 82 | 1 | 0 |  | 
+- users.models.preferences | netbox/users/models/preferences.py | 143 | 1 | 0 |  | 
+- users.models.tokens | netbox/users/models/tokens.py | 116 | 1 | 0 |  | 
+- users.models.users | netbox/users/models/users.py | 105 | 4 | 0 |  | 
+- users.preferences | netbox/users/preferences.py | 12 | 1 | 0 |  | 
+- users.signals | netbox/users/signals.py | 34 | 0 | 2 |  | 
+- users.tables | netbox/users/tables.py | 122 | 4 | 0 |  | 
+- users.tests | netbox/users/tests/__init__.py | 1 | 0 | 0 | test | 
+- users.tests.test_api | netbox/users/tests/test_api.py | 427 | 6 | 0 | test | 
+- users.tests.test_filtersets | netbox/users/tests/test_filtersets.py | 334 | 4 | 0 | test | 
+- users.tests.test_models | netbox/users/tests/test_models.py | 107 | 1 | 0 | test | 
+- users.tests.test_preferences | netbox/users/tests/test_preferences.py | 64 | 1 | 0 | test | 
+- users.tests.test_views | netbox/users/tests/test_views.py | 255 | 4 | 0 | test | 
+- users.urls | netbox/users/urls.py | 22 | 0 | 0 |  | 
+- users.utils | netbox/users/utils.py | 10 | 0 | 1 |  | 
+- users.views | netbox/users/views.py | 215 | 27 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'users': 47, 'utilities': 28, 'netbox': 19, 'core': 9, 'ipam': 6, 'dcim': 2, 'extras': 1, 'account': 1}
+Inbound by source subsystem: {'extras': 17, 'dcim': 10, 'netbox': 10, 'core': 9, 'utilities': 6, 'account': 3, 'circuits': 1, 'ipam': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- users.api.serializers_.nested -> netbox.api.serializers [fg:imports:users.api.serializers_.nested->netbox.api.serializers]
+- users.api.serializers_.permissions -> core.models [fg:imports:users.api.serializers_.permissions->core.models]
+- users.api.serializers_.permissions -> netbox.api.fields [fg:imports:users.api.serializers_.permissions->netbox.api.fields]
+- users.api.serializers_.permissions -> netbox.api.serializers [fg:imports:users.api.serializers_.permissions->netbox.api.serializers]
+- users.api.serializers_.tokens -> netbox.api.fields [fg:imports:users.api.serializers_.tokens->netbox.api.fields]
+- users.api.serializers_.tokens -> netbox.api.serializers [fg:imports:users.api.serializers_.tokens->netbox.api.serializers]
+- users.api.serializers_.users -> netbox.api.fields [fg:imports:users.api.serializers_.users->netbox.api.fields]
+- users.api.serializers_.users -> netbox.api.serializers [fg:imports:users.api.serializers_.users->netbox.api.serializers]
+- users.api.urls -> netbox.api.routers [fg:imports:users.api.urls->netbox.api.routers]
+- users.api.views -> netbox.api.viewsets [fg:imports:users.api.views->netbox.api.viewsets]
+- users.api.views -> utilities.data [fg:imports:users.api.views->utilities.data]
+- users.api.views -> utilities.querysets [fg:imports:users.api.views->utilities.querysets]
+- users.apps -> netbox.models.features [fg:imports:users.apps->netbox.models.features]
+- users.filtersets -> core.models [fg:imports:users.filtersets->core.models]
+- users.filtersets -> extras.models [fg:imports:users.filtersets->extras.models]
+- users.filtersets -> netbox.filtersets [fg:imports:users.filtersets->netbox.filtersets]
+- users.filtersets -> utilities.filters [fg:imports:users.filtersets->utilities.filters]
+- users.forms.bulk_edit -> ipam.formfields [fg:imports:users.forms.bulk_edit->ipam.formfields]
+- users.forms.bulk_edit -> ipam.validators [fg:imports:users.forms.bulk_edit->ipam.validators]
+- users.forms.bulk_edit -> utilities.forms [fg:imports:users.forms.bulk_edit->utilities.forms]
+- users.forms.bulk_edit -> utilities.forms.rendering [fg:imports:users.forms.bulk_edit->utilities.forms.rendering]
+- users.forms.bulk_edit -> utilities.forms.widgets [fg:imports:users.forms.bulk_edit->utilities.forms.widgets]
+- users.forms.bulk_import -> utilities.forms [fg:imports:users.forms.bulk_import->utilities.forms]
+- users.forms.filtersets -> netbox.forms [fg:imports:users.forms.filtersets->netbox.forms]
+- users.forms.filtersets -> netbox.forms.mixins [fg:imports:users.forms.filtersets->netbox.forms.mixins]
+- users.forms.filtersets -> utilities.forms [fg:imports:users.forms.filtersets->utilities.forms]
+- users.forms.filtersets -> utilities.forms.fields [fg:imports:users.forms.filtersets->utilities.forms.fields]
+- users.forms.filtersets -> utilities.forms.rendering [fg:imports:users.forms.filtersets->utilities.forms.rendering]
+- users.forms.filtersets -> utilities.forms.widgets [fg:imports:users.forms.filtersets->utilities.forms.widgets]
+- users.forms.model_forms -> core.models [fg:imports:users.forms.model_forms->core.models]
+- users.forms.model_forms -> ipam.formfields [fg:imports:users.forms.model_forms->ipam.formfields]
+- users.forms.model_forms -> ipam.validators [fg:imports:users.forms.model_forms->ipam.validators]
+- users.forms.model_forms -> netbox.preferences [fg:imports:users.forms.model_forms->netbox.preferences]
+- users.forms.model_forms -> utilities.data [fg:imports:users.forms.model_forms->utilities.data]
+- users.forms.model_forms -> utilities.forms.fields [fg:imports:users.forms.model_forms->utilities.forms.fields]
+- users.forms.model_forms -> utilities.forms.rendering [fg:imports:users.forms.model_forms->utilities.forms.rendering]
+- users.forms.model_forms -> utilities.forms.widgets [fg:imports:users.forms.model_forms->utilities.forms.widgets]
+- users.forms.model_forms -> utilities.permissions [fg:imports:users.forms.model_forms->utilities.permissions]
+- users.graphql.filters -> core.graphql.filter_mixins [fg:imports:users.graphql.filters->core.graphql.filter_mixins]
+- users.graphql.types -> netbox.graphql.types [fg:imports:users.graphql.types->netbox.graphql.types]
+- users.migrations.0002_squashed_0004 -> ipam.fields [fg:imports:users.migrations.0002_squashed_0004->ipam.fields]
+- users.models.permissions -> utilities.querysets [fg:imports:users.models.permissions->utilities.querysets]
+- users.models.preferences -> netbox.config [fg:imports:users.models.preferences->netbox.config]
+- users.models.preferences -> utilities.data [fg:imports:users.models.preferences->utilities.data]
+- users.models.tokens -> ipam.fields [fg:imports:users.models.tokens->ipam.fields]
+- users.models.tokens -> utilities.querysets [fg:imports:users.models.tokens->utilities.querysets]
+- users.models.users -> utilities.querysets [fg:imports:users.models.users->utilities.querysets]
+- users.signals -> netbox.config [fg:imports:users.signals->netbox.config]
+- users.signals -> utilities.request [fg:imports:users.signals->utilities.request]
+- users.tables -> account.tables [fg:imports:users.tables->account.tables]
+- users.tables -> netbox.tables [fg:imports:users.tables->netbox.tables]
+- users.tests.test_api -> core.models [fg:imports:users.tests.test_api->core.models]
+- users.tests.test_api -> utilities.data [fg:imports:users.tests.test_api->utilities.data]
+- users.tests.test_api -> utilities.testing [fg:imports:users.tests.test_api->utilities.testing]
+- users.tests.test_filtersets -> core.models [fg:imports:users.tests.test_filtersets->core.models]
+- users.tests.test_filtersets -> utilities.testing [fg:imports:users.tests.test_filtersets->utilities.testing]
+- users.tests.test_preferences -> dcim.models [fg:imports:users.tests.test_preferences->dcim.models]
+- users.tests.test_preferences -> dcim.tables [fg:imports:users.tests.test_preferences->dcim.tables]
+- users.tests.test_preferences -> utilities.testing [fg:imports:users.tests.test_preferences->utilities.testing]
+- users.tests.test_views -> core.models [fg:imports:users.tests.test_views->core.models]
+- users.tests.test_views -> utilities.testing [fg:imports:users.tests.test_views->utilities.testing]
+- users.urls -> utilities.urls [fg:imports:users.urls->utilities.urls]
+- users.views -> core.models [fg:imports:users.views->core.models]
+- users.views -> core.tables [fg:imports:users.views->core.tables]
+- users.views -> netbox.views [fg:imports:users.views->netbox.views]
+- users.views -> utilities.views [fg:imports:users.views->utilities.views]
+
+## Inbound imports from OTHER subsystems (src -> dst)
+- account.models -> users.models [fg:imports:account.models->users.models]
+- account.views -> users [fg:imports:account.views->users]
+- account.views -> users.models [fg:imports:account.views->users.models]
+- circuits.tests.test_views -> users.models [fg:imports:circuits.tests.test_views->users.models]
+- core.api.serializers_.change_logging -> users.api.serializers_.users [fg:imports:core.api.serializers_.change_logging->users.api.serializers_.users]
+- core.api.serializers_.jobs -> users.api.serializers_.users [fg:imports:core.api.serializers_.jobs->users.api.serializers_.users]
+- core.filtersets -> users.models [fg:imports:core.filtersets->users.models]
+- core.forms.filtersets -> users.models [fg:imports:core.forms.filtersets->users.models]
+- core.graphql.filters -> users.graphql.filters [fg:imports:core.graphql.filters->users.graphql.filters]
+- core.management.commands.nbshell -> users.models [fg:imports:core.management.commands.nbshell->users.models]
+- core.tests.test_api -> users.models [fg:imports:core.tests.test_api->users.models]
+- core.tests.test_filtersets -> users.models [fg:imports:core.tests.test_filtersets->users.models]
+- core.tests.test_views -> users.models [fg:imports:core.tests.test_views->users.models]
+- dcim.api.serializers_.racks -> users.api.serializers_.users [fg:imports:dcim.api.serializers_.racks->users.api.serializers_.users]
+- dcim.filtersets -> users.models [fg:imports:dcim.filtersets->users.models]
+- dcim.forms.bulk_edit -> users.models [fg:imports:dcim.forms.bulk_edit->users.models]
+- dcim.forms.filtersets -> users.models [fg:imports:dcim.forms.filtersets->users.models]
+- dcim.forms.model_forms -> users.models [fg:imports:dcim.forms.model_forms->users.models]
+- dcim.graphql.filters -> users.graphql.filters [fg:imports:dcim.graphql.filters->users.graphql.filters]
+- dcim.graphql.types -> users.graphql.types [fg:imports:dcim.graphql.types->users.graphql.types]
+- dcim.tests.test_api -> users.models [fg:imports:dcim.tests.test_api->users.models]
+- dcim.tests.test_filtersets -> users.models [fg:imports:dcim.tests.test_filtersets->users.models]
+- dcim.tests.test_views -> users.models [fg:imports:dcim.tests.test_views->users.models]
+- extras.api.serializers_.bookmarks -> users.api.serializers_.users [fg:imports:extras.api.serializers_.bookmarks->users.api.serializers_.users]
+- extras.api.serializers_.journaling -> users.models [fg:imports:extras.api.serializers_.journaling->users.models]
+- extras.api.serializers_.notifications -> users.api.serializers_.users [fg:imports:extras.api.serializers_.notifications->users.api.serializers_.users]
+- extras.api.serializers_.notifications -> users.models [fg:imports:extras.api.serializers_.notifications->users.models]
+- extras.events -> users.models [fg:imports:extras.events->users.models]
+- extras.filtersets -> users.models [fg:imports:extras.filtersets->users.models]
+- extras.forms.bulk_import -> users.models [fg:imports:extras.forms.bulk_import->users.models]
+- extras.forms.filtersets -> users.models [fg:imports:extras.forms.filtersets->users.models]
+- extras.forms.model_forms -> users.models [fg:imports:extras.forms.model_forms->users.models]
+- extras.graphql.filters -> users.graphql.filters [fg:imports:extras.graphql.filters->users.graphql.filters]
+- extras.graphql.types -> users.graphql.types [fg:imports:extras.graphql.types->users.graphql.types]
+- extras.management.commands.runscript -> users.models [fg:imports:extras.management.commands.runscript->users.models]
+- extras.models.notifications -> users.models [fg:imports:extras.models.notifications->users.models]
+- extras.tests.test_api -> users.models [fg:imports:extras.tests.test_api->users.models]
+- extras.tests.test_customvalidators -> users.models [fg:imports:extras.tests.test_customvalidators->users.models]
+- extras.tests.test_filtersets -> users.models [fg:imports:extras.tests.test_filtersets->users.models]
+- extras.tests.test_views -> users.models [fg:imports:extras.tests.test_views->users.models]
+- ipam.tests.test_views -> users.models [fg:imports:ipam.tests.test_views->users.models]
+- netbox.api.authentication -> users.models [fg:imports:netbox.api.authentication->users.models]
+- netbox.authentication -> users.constants [fg:imports:netbox.authentication->users.constants]
+- netbox.authentication -> users.models [fg:imports:netbox.authentication->users.models]
+- netbox.authentication.misc -> users.models [fg:imports:netbox.authentication.misc->users.models]
+- netbox.graphql.schema -> users.graphql.schema [fg:imports:netbox.graphql.schema->users.graphql.schema]
+- netbox.preferences -> users.preferences [fg:imports:netbox.preferences->users.preferences]
+- netbox.tests.dummy_plugin.preferences -> users.preferences [fg:imports:netbox.tests.dummy_plugin.preferences->users.preferences]
+- netbox.tests.test_authentication -> users.models [fg:imports:netbox.tests.test_authentication->users.models]
+- netbox.tests.test_graphql -> users.models [fg:imports:netbox.tests.test_graphql->users.models]
+- netbox.tests.test_import -> users.models [fg:imports:netbox.tests.test_import->users.models]
+- utilities.permissions -> users.constants [fg:imports:utilities.permissions->users.constants]
+- utilities.querysets -> users.constants [fg:imports:utilities.querysets->users.constants]
+- utilities.testing.api -> users.models [fg:imports:utilities.testing.api->users.models]
+- utilities.testing.base -> users.models [fg:imports:utilities.testing.base->users.models]
+- utilities.testing.utils -> users.models [fg:imports:utilities.testing.utils->users.models]
+- utilities.testing.views -> users.models [fg:imports:utilities.testing.views->users.models]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- users.migrations.0005_alter_user_table | . | get_model | contenttypes.ContentType | cross [fg:model_refs:users.migrations.0005_alter_user_table:5]
+- users.migrations.0005_alter_user_table | . | get_model | extras.CustomField | cross [fg:model_refs:users.migrations.0005_alter_user_table:6]
+- users.migrations.0006_custom_group_model | . | get_model | contenttypes.ContentType | cross [fg:model_refs:users.migrations.0006_custom_group_model:9]
+- users.migrations.0006_custom_group_model | . | get_model | extras.CustomField | cross [fg:model_refs:users.migrations.0006_custom_group_model:10]
+- users.migrations.0006_custom_group_model | . | get_model | users.Group |  [fg:model_refs:users.migrations.0006_custom_group_model:11]
+- users.migrations.0009_update_group_perms | . | get_model | core.ObjectType | cross [fg:model_refs:users.migrations.0009_update_group_perms:5]
+- users.migrations.0009_update_group_perms | . | get_model | users.ObjectPermission |  [fg:model_refs:users.migrations.0009_update_group_perms:6]
+- users.models.permissions | ObjectPermission.object_types | ManyToManyField | core.ObjectType | cross [fg:model_refs:users.models.permissions:31]
+- users.models.preferences | UserConfig.user | OneToOneField | users.User |  [fg:model_refs:users.models.preferences:16]
+- users.models.tokens | Token.user | ForeignKey | users.User |  [fg:model_refs:users.models.tokens:26]
+- users.models.users | Group.object_permissions | ManyToManyField | users.ObjectPermission |  [fg:model_refs:users.models.users:37]
+- users.models.users | User.groups | ManyToManyField | users.Group |  [fg:model_refs:users.models.users:75]
+- users.models.users | User.object_permissions | ManyToManyField | users.ObjectPermission |  [fg:model_refs:users.models.users:82]
+
+## String references INTO this subsystem from others
+- extras.models.dashboard | Dashboard.user | OneToOneField -> users.User [fg:model_refs:extras.models.dashboard:12]
+- extras.models.notifications | NotificationGroup.groups | ManyToManyField -> users.Group [fg:model_refs:extras.models.notifications:135]
+- extras.models.notifications | NotificationGroup.users | ManyToManyField -> users.User [fg:model_refs:extras.models.notifications:141]
+- utilities.permissions | . | get_model -> users.User [fg:model_refs:utilities.permissions:96]
+
+## Churn (id = churn:<module>)
+- users.views | 88 commits | 9 authors | 2016-03-01 .. 2025-06-03 [fg:churn:users.views]
+- users.api.serializers | 40 commits | 9 authors | 2017-03-09 .. 2024-08-14 [fg:churn:users.api.serializers]
+- users.tests.test_api | 35 commits | 4 authors | 2020-06-03 .. 2024-08-30 [fg:churn:users.tests.test_api]
+- users.forms.model_forms | 30 commits | 5 authors | 2023-07-21 .. 2025-06-26 [fg:churn:users.forms.model_forms]
+- users.api.views | 28 commits | 4 authors | 2020-06-03 .. 2024-10-11 [fg:churn:users.api.views]
+- users.urls | 28 commits | 5 authors | 2016-03-01 .. 2024-11-20 [fg:churn:users.urls]
+- users.filtersets | 19 commits | 5 authors | 2021-04-29 .. 2024-07-31 [fg:churn:users.filtersets]
+- users.tests.test_filtersets | 16 commits | 4 authors | 2021-05-03 .. 2024-11-21 [fg:churn:users.tests.test_filtersets]
+- users.tables | 13 commits | 4 authors | 2022-07-11 .. 2024-04-02 [fg:churn:users.tables]
+- users.tests.test_views | 11 commits | 2 authors | 2023-07-21 .. 2024-11-21 [fg:churn:users.tests.test_views]
+- users.api.serializers_.users | 10 commits | 2 authors | 2024-02-27 .. 2024-07-31 [fg:churn:users.api.serializers_.users]
+- users.api.urls | 9 commits | 2 authors | 2020-06-03 .. 2022-07-13 [fg:churn:users.api.urls]
+- users.forms.filtersets | 9 commits | 3 authors | 2023-07-21 .. 2024-07-31 [fg:churn:users.forms.filtersets]
+- users.graphql.types | 9 commits | 3 authors | 2021-06-29 .. 2025-03-20 [fg:churn:users.graphql.types]
+- users.tests.test_models | 9 commits | 3 authors | 2020-04-23 .. 2024-07-31 [fg:churn:users.tests.test_models]
+- users.migrations.0001_squashed_0011 | 8 commits | 3 authors | 2021-07-09 .. 2025-04-03 [fg:churn:users.migrations.0001_squashed_0011]
+- users.api.serializers_.permissions | 7 commits | 2 authors | 2024-02-27 .. 2024-08-14 [fg:churn:users.api.serializers_.permissions]
+- users.graphql.schema | 7 commits | 4 authors | 2021-06-29 .. 2024-08-28 [fg:churn:users.graphql.schema]
+- users.migrations.0005_alter_user_table | 7 commits | 3 authors | 2024-02-05 .. 2025-05-08 [fg:churn:users.migrations.0005_alter_user_table]
+- users.migrations.0006_custom_group_model | 7 commits | 1 authors | 2024-03-04 .. 2025-05-08 [fg:churn:users.migrations.0006_custom_group_model]
+- users.tests.test_preferences | 7 commits | 3 authors | 2021-12-22 .. 2024-10-11 [fg:churn:users.tests.test_preferences]
+- users.forms.bulk_edit | 6 commits | 2 authors | 2023-07-21 .. 2024-04-02 [fg:churn:users.forms.bulk_edit]
+- users.preferences | 6 commits | 3 authors | 2021-12-21 .. 2024-05-14 [fg:churn:users.preferences]
+- users.forms.bulk_import | 5 commits | 2 authors | 2023-07-21 .. 2024-04-02 [fg:churn:users.forms.bulk_import]
+- users.api.serializers_.tokens | 4 commits | 2 authors | 2024-02-27 .. 2024-08-29 [fg:churn:users.api.serializers_.tokens]
+
+## Entry points (id = entrypoints:<module>)
+- urls | users.api.urls | netbox/users/api/urls.py [fg:entrypoints:users.api.urls]
+- api_views | users.api.views | netbox/users/api/views.py [fg:entrypoints:users.api.views]
+- signals | users.signals | netbox/users/signals.py [fg:entrypoints:users.signals]
+- urls | users.urls | netbox/users/urls.py [fg:entrypoints:users.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>)
+- users.api.serializers_.nested: NestedGroupSerializer, NestedUserSerializer
+- users.api.serializers_.permissions: ObjectPermissionSerializer
+- users.api.serializers_.tokens: TokenSerializer, TokenProvisionSerializer
+- users.api.serializers_.users: GroupSerializer, UserSerializer
+- users.api.views: UsersRootView, UserViewSet, GroupViewSet, TokenViewSet, TokenProvisionView, ObjectPermissionViewSet, UserConfigViewSet
+- users.apps: UsersConfig
+- users.filtersets: GroupFilterSet, UserFilterSet, TokenFilterSet, ObjectPermissionFilterSet
+- users.forms.bulk_edit: UserBulkEditForm, GroupBulkEditForm, ObjectPermissionBulkEditForm, TokenBulkEditForm
+- users.forms.bulk_import: GroupImportForm, UserImportForm, TokenImportForm
+- users.forms.filtersets: GroupFilterForm, UserFilterForm, ObjectPermissionFilterForm, TokenFilterForm
+- users.forms.model_forms: UserConfigFormMetaclass, UserConfigForm, UserTokenForm, TokenForm, UserForm, GroupForm, ObjectPermissionForm
+- users.graphql.filters: GroupFilter, UserFilter
+- users.graphql.schema: UsersQuery
+- users.graphql.types: GroupType, UserType
+- users.migrations.0001_squashed_0011: Migration
+- users.migrations.0002_squashed_0004: Migration
+- users.migrations.0005_alter_user_table: Migration
+- users.migrations.0006_custom_group_model: Migration
+- users.migrations.0007_objectpermission_update_object_types: Migration
+- users.migrations.0008_flip_objectpermission_assignments: Migration
+- users.migrations.0009_update_group_perms: Migration
+- users.models.permissions: ObjectPermission
+- users.models.preferences: UserConfig
+- users.models.tokens: Token
+- users.models.users: GroupManager, Group, UserManager, User
+- users.preferences: UserPreference
+- users.tables: TokenTable, UserTable, GroupTable, ObjectPermissionTable
+- users.tests.test_api: AppTest, UserTest, GroupTest, TokenTest, ObjectPermissionTest, UserConfigTest
+- users.tests.test_filtersets: UserTestCase, GroupTestCase, ObjectPermissionTestCase, TokenTestCase
+- users.tests.test_models: UserConfigTest
+- users.tests.test_preferences: UserPreferencesTest
+- users.tests.test_views: UserTestCase, GroupTestCase, ObjectPermissionTestCase, TokenTestCase
+- users.views: TokenListView, TokenView, TokenEditView, TokenDeleteView, TokenBulkImportView, TokenBulkEditView, TokenBulkDeleteView, UserListView, UserView, UserEditView, UserDeleteView, UserBulkImportView, UserBulkEditView, UserBulkDeleteView, GroupListView, GroupView, GroupEditView, GroupDeleteView, GroupBulkImportView, GroupBulkEditView, GroupBulkDeleteView, ObjectPermissionListView, ObjectPermissionView, ObjectPermissionEditView, ObjectPermissionDeleteView, ObjectPermissionBulkEditView, ObjectPermissionBulkDeleteView

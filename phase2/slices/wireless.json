@@ -1,0 +1,3571 @@
+{
+"subsystem": "wireless",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "wireless",
+"modules": 38,
+"loc_code": 3252,
+"loc_data": 0,
+"test_modules": 4
+},
+"modules": [
+{
+"module": "wireless",
+"path": "netbox/wireless/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless"
+},
+{
+"module": "wireless.api",
+"path": "netbox/wireless/api/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api"
+},
+{
+"module": "wireless.api.serializers",
+"path": "netbox/wireless/api/serializers.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api.serializers"
+},
+{
+"module": "wireless.api.serializers_",
+"path": "netbox/wireless/api/serializers_/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api.serializers_"
+},
+{
+"module": "wireless.api.serializers_.nested",
+"path": "netbox/wireless/api/serializers_/nested.py",
+"loc": 30,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api.serializers_.nested"
+},
+{
+"module": "wireless.api.serializers_.wirelesslans",
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"loc": 68,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api.serializers_.wirelesslans"
+},
+{
+"module": "wireless.api.serializers_.wirelesslinks",
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"loc": 32,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api.serializers_.wirelesslinks"
+},
+{
+"module": "wireless.api.urls",
+"path": "netbox/wireless/api/urls.py",
+"loc": 14,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api.urls"
+},
+{
+"module": "wireless.api.views",
+"path": "netbox/wireless/api/views.py",
+"loc": 39,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.api.views"
+},
+{
+"module": "wireless.apps",
+"path": "netbox/wireless/apps.py",
+"loc": 13,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.apps"
+},
+{
+"module": "wireless.choices",
+"path": "netbox/wireless/choices.py",
+"loc": 484,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.choices"
+},
+{
+"module": "wireless.constants",
+"path": "netbox/wireless/constants.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.constants"
+},
+{
+"module": "wireless.filtersets",
+"path": "netbox/wireless/filtersets.py",
+"loc": 119,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.filtersets"
+},
+{
+"module": "wireless.forms",
+"path": "netbox/wireless/forms/__init__.py",
+"loc": 5,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.forms"
+},
+{
+"module": "wireless.forms.bulk_edit",
+"path": "netbox/wireless/forms/bulk_edit.py",
+"loc": 159,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.forms.bulk_edit"
+},
+{
+"module": "wireless.forms.bulk_import",
+"path": "netbox/wireless/forms/bulk_import.py",
+"loc": 190,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.forms.bulk_import"
+},
+{
+"module": "wireless.forms.filtersets",
+"path": "netbox/wireless/forms/filtersets.py",
+"loc": 139,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.forms.filtersets"
+},
+{
+"module": "wireless.forms.model_forms",
+"path": "netbox/wireless/forms/model_forms.py",
+"loc": 196,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.forms.model_forms"
+},
+{
+"module": "wireless.graphql",
+"path": "netbox/wireless/graphql/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.graphql"
+},
+{
+"module": "wireless.graphql.enums",
+"path": "netbox/wireless/graphql/enums.py",
+"loc": 18,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.graphql.enums"
+},
+{
+"module": "wireless.graphql.filter_mixins",
+"path": "netbox/wireless/graphql/filter_mixins.py",
+"loc": 27,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.graphql.filter_mixins"
+},
+{
+"module": "wireless.graphql.filters",
+"path": "netbox/wireless/graphql/filters.py",
+"loc": 69,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.graphql.filters"
+},
+{
+"module": "wireless.graphql.schema",
+"path": "netbox/wireless/graphql/schema.py",
+"loc": 19,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.graphql.schema"
+},
+{
+"module": "wireless.graphql.types",
+"path": "netbox/wireless/graphql/types.py",
+"loc": 70,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.graphql.types"
+},
+{
+"module": "wireless.migrations",
+"path": "netbox/wireless/migrations/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.migrations"
+},
+{
+"module": "wireless.migrations.0001_squashed_0008",
+"path": "netbox/wireless/migrations/0001_squashed_0008.py",
+"loc": 209,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0001_squashed_0008"
+},
+{
+"module": "wireless.migrations.0009_wirelesslink_distance",
+"path": "netbox/wireless/migrations/0009_wirelesslink_distance.py",
+"loc": 28,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0009_wirelesslink_distance"
+},
+{
+"module": "wireless.migrations.0010_charfield_null_choices",
+"path": "netbox/wireless/migrations/0010_charfield_null_choices.py",
+"loc": 52,
+"classes": 1,
+"functions": 1,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0010_charfield_null_choices"
+},
+{
+"module": "wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more",
+"path": "netbox/wireless/migrations/0011_wirelesslan__location_wirelesslan__region_and_more.py",
+"loc": 76,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more"
+},
+{
+"module": "wireless.migrations.0012_alter_wirelesslan__location_and_more",
+"path": "netbox/wireless/migrations/0012_alter_wirelesslan__location_and_more.py",
+"loc": 41,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0012_alter_wirelesslan__location_and_more"
+},
+{
+"module": "wireless.migrations.0013_natural_ordering",
+"path": "netbox/wireless/migrations/0013_natural_ordering.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0013_natural_ordering"
+},
+{
+"module": "wireless.migrations.0014_wirelesslangroup_comments",
+"path": "netbox/wireless/migrations/0014_wirelesslangroup_comments.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0014_wirelesslangroup_comments"
+},
+{
+"module": "wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit",
+"path": "netbox/wireless/migrations/0015_extend_wireless_link_abs_distance_upper_limit.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit"
+},
+{
+"module": "wireless.models",
+"path": "netbox/wireless/models.py",
+"loc": 220,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.models"
+},
+{
+"module": "wireless.search",
+"path": "netbox/wireless/search.py",
+"loc": 39,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.search"
+},
+{
+"module": "wireless.signals",
+"path": "netbox/wireless/signals.py",
+"loc": 62,
+"classes": 0,
+"functions": 2,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.signals"
+},
+{
+"module": "wireless.tables",
+"path": "netbox/wireless/tables/__init__.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.tables"
+},
+{
+"module": "wireless.tables.wirelesslan",
+"path": "netbox/wireless/tables/wirelesslan.py",
+"loc": 96,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.tables.wirelesslan"
+},
+{
+"module": "wireless.tables.wirelesslink",
+"path": "netbox/wireless/tables/wirelesslink.py",
+"loc": 55,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.tables.wirelesslink"
+},
+{
+"module": "wireless.tests",
+"path": "netbox/wireless/tests/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.tests"
+},
+{
+"module": "wireless.tests.test_api",
+"path": "netbox/wireless/tests/test_api.py",
+"loc": 180,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.tests.test_api"
+},
+{
+"module": "wireless.tests.test_filtersets",
+"path": "netbox/wireless/tests/test_filtersets.py",
+"loc": 432,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.tests.test_filtersets"
+},
+{
+"module": "wireless.tests.test_views",
+"path": "netbox/wireless/tests/test_views.py",
+"loc": 219,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.tests.test_views"
+},
+{
+"module": "wireless.urls",
+"path": "netbox/wireless/urls.py",
+"loc": 19,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.urls"
+},
+{
+"module": "wireless.utils",
+"path": "netbox/wireless/utils.py",
+"loc": 29,
+"classes": 0,
+"functions": 1,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.utils"
+},
+{
+"module": "wireless.views",
+"path": "netbox/wireless/views.py",
+"loc": 195,
+"classes": 21,
+"functions": 0,
+"parse": "OK",
+"subsystem": "wireless",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:wireless.views"
+}
+],
+"symbols": [
+{
+"module": "wireless.api.serializers_.nested",
+"kind": "class",
+"name": "NestedWirelessLANGroupSerializer",
+"lineno": 16,
+"bases": "WritableNestedSerializer",
+"path": "netbox/wireless/api/serializers_/nested.py",
+"id": "symbols:wireless.api.serializers_.nested:NestedWirelessLANGroupSerializer"
+},
+{
+"module": "wireless.api.serializers_.nested",
+"kind": "class",
+"name": "NestedWirelessLinkSerializer",
+"lineno": 25,
+"bases": "WritableNestedSerializer",
+"path": "netbox/wireless/api/serializers_/nested.py",
+"id": "symbols:wireless.api.serializers_.nested:NestedWirelessLinkSerializer"
+},
+{
+"module": "wireless.api.serializers_.wirelesslans",
+"kind": "class",
+"name": "WirelessLANGroupSerializer",
+"lineno": 21,
+"bases": "NestedGroupModelSerializer",
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "symbols:wireless.api.serializers_.wirelesslans:WirelessLANGroupSerializer"
+},
+{
+"module": "wireless.api.serializers_.wirelesslans",
+"kind": "class",
+"name": "WirelessLANSerializer",
+"lineno": 34,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "symbols:wireless.api.serializers_.wirelesslans:WirelessLANSerializer"
+},
+{
+"module": "wireless.api.serializers_.wirelesslinks",
+"kind": "class",
+"name": "WirelessLinkSerializer",
+"lineno": 15,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "symbols:wireless.api.serializers_.wirelesslinks:WirelessLinkSerializer"
+},
+{
+"module": "wireless.api.views",
+"kind": "class",
+"name": "WirelessRootView",
+"lineno": 9,
+"bases": "APIRootView",
+"path": "netbox/wireless/api/views.py",
+"id": "symbols:wireless.api.views:WirelessRootView"
+},
+{
+"module": "wireless.api.views",
+"kind": "class",
+"name": "WirelessLANGroupViewSet",
+"lineno": 17,
+"bases": "MPTTLockedMixin,NetBoxModelViewSet",
+"path": "netbox/wireless/api/views.py",
+"id": "symbols:wireless.api.views:WirelessLANGroupViewSet"
+},
+{
+"module": "wireless.api.views",
+"kind": "class",
+"name": "WirelessLANViewSet",
+"lineno": 29,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/wireless/api/views.py",
+"id": "symbols:wireless.api.views:WirelessLANViewSet"
+},
+{
+"module": "wireless.api.views",
+"kind": "class",
+"name": "WirelessLinkViewSet",
+"lineno": 35,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/wireless/api/views.py",
+"id": "symbols:wireless.api.views:WirelessLinkViewSet"
+},
+{
+"module": "wireless.apps",
+"kind": "class",
+"name": "WirelessConfig",
+"lineno": 4,
+"bases": "AppConfig",
+"path": "netbox/wireless/apps.py",
+"id": "symbols:wireless.apps:WirelessConfig"
+},
+{
+"module": "wireless.choices",
+"kind": "class",
+"name": "WirelessRoleChoices",
+"lineno": 6,
+"bases": "ChoiceSet",
+"path": "netbox/wireless/choices.py",
+"id": "symbols:wireless.choices:WirelessRoleChoices"
+},
+{
+"module": "wireless.choices",
+"kind": "class",
+"name": "WirelessLANStatusChoices",
+"lineno": 16,
+"bases": "ChoiceSet",
+"path": "netbox/wireless/choices.py",
+"id": "symbols:wireless.choices:WirelessLANStatusChoices"
+},
+{
+"module": "wireless.choices",
+"kind": "class",
+"name": "WirelessChannelChoices",
+"lineno": 32,
+"bases": "ChoiceSet",
+"path": "netbox/wireless/choices.py",
+"id": "symbols:wireless.choices:WirelessChannelChoices"
+},
+{
+"module": "wireless.choices",
+"kind": "class",
+"name": "WirelessAuthTypeChoices",
+"lineno": 460,
+"bases": "ChoiceSet",
+"path": "netbox/wireless/choices.py",
+"id": "symbols:wireless.choices:WirelessAuthTypeChoices"
+},
+{
+"module": "wireless.choices",
+"kind": "class",
+"name": "WirelessAuthCipherChoices",
+"lineno": 474,
+"bases": "ChoiceSet",
+"path": "netbox/wireless/choices.py",
+"id": "symbols:wireless.choices:WirelessAuthCipherChoices"
+},
+{
+"module": "wireless.filtersets",
+"kind": "class",
+"name": "WirelessLANGroupFilterSet",
+"lineno": 21,
+"bases": "NestedGroupModelFilterSet",
+"path": "netbox/wireless/filtersets.py",
+"id": "symbols:wireless.filtersets:WirelessLANGroupFilterSet"
+},
+{
+"module": "wireless.filtersets",
+"kind": "class",
+"name": "WirelessLANFilterSet",
+"lineno": 47,
+"bases": "NetBoxModelFilterSet,ScopedFilterSet,TenancyFilterSet",
+"path": "netbox/wireless/filtersets.py",
+"id": "symbols:wireless.filtersets:WirelessLANFilterSet"
+},
+{
+"module": "wireless.filtersets",
+"kind": "class",
+"name": "WirelessLinkFilterSet",
+"lineno": 90,
+"bases": "NetBoxModelFilterSet,TenancyFilterSet",
+"path": "netbox/wireless/filtersets.py",
+"id": "symbols:wireless.filtersets:WirelessLinkFilterSet"
+},
+{
+"module": "wireless.forms.bulk_edit",
+"kind": "class",
+"name": "WirelessLANGroupBulkEditForm",
+"lineno": 24,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "symbols:wireless.forms.bulk_edit:WirelessLANGroupBulkEditForm"
+},
+{
+"module": "wireless.forms.bulk_edit",
+"kind": "class",
+"name": "WirelessLANBulkEditForm",
+"lineno": 44,
+"bases": "ScopedBulkEditForm,NetBoxModelBulkEditForm",
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "symbols:wireless.forms.bulk_edit:WirelessLANBulkEditForm"
+},
+{
+"module": "wireless.forms.bulk_edit",
+"kind": "class",
+"name": "WirelessLinkBulkEditForm",
+"lineno": 102,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "symbols:wireless.forms.bulk_edit:WirelessLinkBulkEditForm"
+},
+{
+"module": "wireless.forms.bulk_import",
+"kind": "class",
+"name": "WirelessLANGroupImportForm",
+"lineno": 21,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "symbols:wireless.forms.bulk_import:WirelessLANGroupImportForm"
+},
+{
+"module": "wireless.forms.bulk_import",
+"kind": "class",
+"name": "WirelessLANImportForm",
+"lineno": 36,
+"bases": "ScopedImportForm,NetBoxModelImportForm",
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "symbols:wireless.forms.bulk_import:WirelessLANImportForm"
+},
+{
+"module": "wireless.forms.bulk_import",
+"kind": "class",
+"name": "WirelessLinkImportForm",
+"lineno": 87,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "symbols:wireless.forms.bulk_import:WirelessLinkImportForm"
+},
+{
+"module": "wireless.forms.filtersets",
+"kind": "class",
+"name": "WirelessLANGroupFilterForm",
+"lineno": 22,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "symbols:wireless.forms.filtersets:WirelessLANGroupFilterForm"
+},
+{
+"module": "wireless.forms.filtersets",
+"kind": "class",
+"name": "WirelessLANFilterForm",
+"lineno": 32,
+"bases": "TenancyFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "symbols:wireless.forms.filtersets:WirelessLANFilterForm"
+},
+{
+"module": "wireless.forms.filtersets",
+"kind": "class",
+"name": "WirelessLinkFilterForm",
+"lineno": 98,
+"bases": "TenancyFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "symbols:wireless.forms.filtersets:WirelessLinkFilterForm"
+},
+{
+"module": "wireless.forms.model_forms",
+"kind": "class",
+"name": "WirelessLANGroupForm",
+"lineno": 21,
+"bases": "NetBoxModelForm",
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "symbols:wireless.forms.model_forms:WirelessLANGroupForm"
+},
+{
+"module": "wireless.forms.model_forms",
+"kind": "class",
+"name": "WirelessLANForm",
+"lineno": 41,
+"bases": "ScopedForm,TenancyForm,NetBoxModelForm",
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "symbols:wireless.forms.model_forms:WirelessLANForm"
+},
+{
+"module": "wireless.forms.model_forms",
+"kind": "class",
+"name": "WirelessLinkForm",
+"lineno": 77,
+"bases": "DistanceValidationMixin,TenancyForm,NetBoxModelForm",
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "symbols:wireless.forms.model_forms:WirelessLinkForm"
+},
+{
+"module": "wireless.graphql.filter_mixins",
+"kind": "class",
+"name": "WirelessAuthenticationBaseFilterMixin",
+"lineno": 19,
+"bases": "BaseFilterMixin",
+"path": "netbox/wireless/graphql/filter_mixins.py",
+"id": "symbols:wireless.graphql.filter_mixins:WirelessAuthenticationBaseFilterMixin"
+},
+{
+"module": "wireless.graphql.filters",
+"kind": "class",
+"name": "WirelessLANGroupFilter",
+"lineno": 27,
+"bases": "NestedGroupModelFilterMixin",
+"path": "netbox/wireless/graphql/filters.py",
+"id": "symbols:wireless.graphql.filters:WirelessLANGroupFilter"
+},
+{
+"module": "wireless.graphql.filters",
+"kind": "class",
+"name": "WirelessLANFilter",
+"lineno": 32,
+"bases": "WirelessAuthenticationBaseFilterMixin,ScopedFilterMixin,TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/wireless/graphql/filters.py",
+"id": "symbols:wireless.graphql.filters:WirelessLANFilter"
+},
+{
+"module": "wireless.graphql.filters",
+"kind": "class",
+"name": "WirelessLinkFilter",
+"lineno": 51,
+"bases": "WirelessAuthenticationBaseFilterMixin,DistanceFilterMixin,TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/wireless/graphql/filters.py",
+"id": "symbols:wireless.graphql.filters:WirelessLinkFilter"
+},
+{
+"module": "wireless.graphql.schema",
+"kind": "class",
+"name": "WirelessQuery",
+"lineno": 10,
+"bases": "",
+"path": "netbox/wireless/graphql/schema.py",
+"id": "symbols:wireless.graphql.schema:WirelessQuery"
+},
+{
+"module": "wireless.graphql.types",
+"kind": "class",
+"name": "WirelessLANGroupType",
+"lineno": 28,
+"bases": "OrganizationalObjectType",
+"path": "netbox/wireless/graphql/types.py",
+"id": "symbols:wireless.graphql.types:WirelessLANGroupType"
+},
+{
+"module": "wireless.graphql.types",
+"kind": "class",
+"name": "WirelessLANType",
+"lineno": 41,
+"bases": "NetBoxObjectType",
+"path": "netbox/wireless/graphql/types.py",
+"id": "symbols:wireless.graphql.types:WirelessLANType"
+},
+{
+"module": "wireless.graphql.types",
+"kind": "class",
+"name": "WirelessLinkType",
+"lineno": 64,
+"bases": "NetBoxObjectType",
+"path": "netbox/wireless/graphql/types.py",
+"id": "symbols:wireless.graphql.types:WirelessLinkType"
+},
+{
+"module": "wireless.migrations.0001_squashed_0008",
+"kind": "class",
+"name": "Migration",
+"lineno": 9,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0001_squashed_0008.py",
+"id": "symbols:wireless.migrations.0001_squashed_0008:Migration"
+},
+{
+"module": "wireless.migrations.0009_wirelesslink_distance",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0009_wirelesslink_distance.py",
+"id": "symbols:wireless.migrations.0009_wirelesslink_distance:Migration"
+},
+{
+"module": "wireless.migrations.0010_charfield_null_choices",
+"kind": "function",
+"name": "set_null_values",
+"lineno": 4,
+"bases": "",
+"path": "netbox/wireless/migrations/0010_charfield_null_choices.py",
+"id": "symbols:wireless.migrations.0010_charfield_null_choices:set_null_values"
+},
+{
+"module": "wireless.migrations.0010_charfield_null_choices",
+"kind": "class",
+"name": "Migration",
+"lineno": 19,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0010_charfield_null_choices.py",
+"id": "symbols:wireless.migrations.0010_charfield_null_choices:Migration"
+},
+{
+"module": "wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0011_wirelesslan__location_wirelesslan__region_and_more.py",
+"id": "symbols:wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more:Migration"
+},
+{
+"module": "wireless.migrations.0012_alter_wirelesslan__location_and_more",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0012_alter_wirelesslan__location_and_more.py",
+"id": "symbols:wireless.migrations.0012_alter_wirelesslan__location_and_more:Migration"
+},
+{
+"module": "wireless.migrations.0013_natural_ordering",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0013_natural_ordering.py",
+"id": "symbols:wireless.migrations.0013_natural_ordering:Migration"
+},
+{
+"module": "wireless.migrations.0014_wirelesslangroup_comments",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0014_wirelesslangroup_comments.py",
+"id": "symbols:wireless.migrations.0014_wirelesslangroup_comments:Migration"
+},
+{
+"module": "wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/wireless/migrations/0015_extend_wireless_link_abs_distance_upper_limit.py",
+"id": "symbols:wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit:Migration"
+},
+{
+"module": "wireless.models",
+"kind": "class",
+"name": "WirelessAuthenticationBase",
+"lineno": 20,
+"bases": "models.Model",
+"path": "netbox/wireless/models.py",
+"id": "symbols:wireless.models:WirelessAuthenticationBase"
+},
+{
+"module": "wireless.models",
+"kind": "class",
+"name": "WirelessLANGroup",
+"lineno": 48,
+"bases": "NestedGroupModel",
+"path": "netbox/wireless/models.py",
+"id": "symbols:wireless.models:WirelessLANGroup"
+},
+{
+"module": "wireless.models",
+"kind": "class",
+"name": "WirelessLAN",
+"lineno": 76,
+"bases": "WirelessAuthenticationBase,CachedScopeMixin,PrimaryModel",
+"path": "netbox/wireless/models.py",
+"id": "symbols:wireless.models:WirelessLAN"
+},
+{
+"module": "wireless.models",
+"kind": "class",
+"name": "WirelessLink",
+"lineno": 126,
+"bases": "WirelessAuthenticationBase,DistanceMixin,PrimaryModel",
+"path": "netbox/wireless/models.py",
+"id": "symbols:wireless.models:WirelessLink"
+},
+{
+"module": "wireless.search",
+"kind": "class",
+"name": "WirelessLANIndex",
+"lineno": 6,
+"bases": "SearchIndex",
+"path": "netbox/wireless/search.py",
+"id": "symbols:wireless.search:WirelessLANIndex"
+},
+{
+"module": "wireless.search",
+"kind": "class",
+"name": "WirelessLANGroupIndex",
+"lineno": 18,
+"bases": "SearchIndex",
+"path": "netbox/wireless/search.py",
+"id": "symbols:wireless.search:WirelessLANGroupIndex"
+},
+{
+"module": "wireless.search",
+"kind": "class",
+"name": "WirelessLinkIndex",
+"lineno": 30,
+"bases": "SearchIndex",
+"path": "netbox/wireless/search.py",
+"id": "symbols:wireless.search:WirelessLinkIndex"
+},
+{
+"module": "wireless.signals",
+"kind": "function",
+"name": "update_connected_interfaces",
+"lineno": 18,
+"bases": "",
+"path": "netbox/wireless/signals.py",
+"id": "symbols:wireless.signals:update_connected_interfaces"
+},
+{
+"module": "wireless.signals",
+"kind": "function",
+"name": "nullify_connected_interfaces",
+"lineno": 46,
+"bases": "",
+"path": "netbox/wireless/signals.py",
+"id": "symbols:wireless.signals:nullify_connected_interfaces"
+},
+{
+"module": "wireless.tables.wirelesslan",
+"kind": "class",
+"name": "WirelessLANGroupTable",
+"lineno": 16,
+"bases": "NetBoxTable",
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "symbols:wireless.tables.wirelesslan:WirelessLANGroupTable"
+},
+{
+"module": "wireless.tables.wirelesslan",
+"kind": "class",
+"name": "WirelessLANTable",
+"lineno": 42,
+"bases": "TenancyColumnsMixin,NetBoxTable",
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "symbols:wireless.tables.wirelesslan:WirelessLANTable"
+},
+{
+"module": "wireless.tables.wirelesslan",
+"kind": "class",
+"name": "WirelessLANInterfacesTable",
+"lineno": 82,
+"bases": "NetBoxTable",
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "symbols:wireless.tables.wirelesslan:WirelessLANInterfacesTable"
+},
+{
+"module": "wireless.tables.wirelesslink",
+"kind": "class",
+"name": "WirelessLinkTable",
+"lineno": 13,
+"bases": "TenancyColumnsMixin,NetBoxTable",
+"path": "netbox/wireless/tables/wirelesslink.py",
+"id": "symbols:wireless.tables.wirelesslink:WirelessLinkTable"
+},
+{
+"module": "wireless.tests.test_api",
+"kind": "class",
+"name": "AppTest",
+"lineno": 11,
+"bases": "APITestCase",
+"path": "netbox/wireless/tests/test_api.py",
+"id": "symbols:wireless.tests.test_api:AppTest"
+},
+{
+"module": "wireless.tests.test_api",
+"kind": "class",
+"name": "WirelessLANGroupTest",
+"lineno": 20,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/wireless/tests/test_api.py",
+"id": "symbols:wireless.tests.test_api:WirelessLANGroupTest"
+},
+{
+"module": "wireless.tests.test_api",
+"kind": "class",
+"name": "WirelessLANTest",
+"lineno": 52,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/wireless/tests/test_api.py",
+"id": "symbols:wireless.tests.test_api:WirelessLANTest"
+},
+{
+"module": "wireless.tests.test_api",
+"kind": "class",
+"name": "WirelessLinkTest",
+"lineno": 122,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/wireless/tests/test_api.py",
+"id": "symbols:wireless.tests.test_api:WirelessLinkTest"
+},
+{
+"module": "wireless.tests.test_filtersets",
+"kind": "class",
+"name": "WirelessLANGroupTestCase",
+"lineno": 14,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "symbols:wireless.tests.test_filtersets:WirelessLANGroupTestCase"
+},
+{
+"module": "wireless.tests.test_filtersets",
+"kind": "class",
+"name": "WirelessLANTestCase",
+"lineno": 107,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "symbols:wireless.tests.test_filtersets:WirelessLANTestCase"
+},
+{
+"module": "wireless.tests.test_filtersets",
+"kind": "class",
+"name": "WirelessLinkTestCase",
+"lineno": 312,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "symbols:wireless.tests.test_filtersets:WirelessLinkTestCase"
+},
+{
+"module": "wireless.tests.test_views",
+"kind": "class",
+"name": "WirelessLANGroupTestCase",
+"lineno": 11,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/wireless/tests/test_views.py",
+"id": "symbols:wireless.tests.test_views:WirelessLANGroupTestCase"
+},
+{
+"module": "wireless.tests.test_views",
+"kind": "class",
+"name": "WirelessLANTestCase",
+"lineno": 58,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/wireless/tests/test_views.py",
+"id": "symbols:wireless.tests.test_views:WirelessLANTestCase"
+},
+{
+"module": "wireless.tests.test_views",
+"kind": "class",
+"name": "WirelessLinkTestCase",
+"lineno": 149,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/wireless/tests/test_views.py",
+"id": "symbols:wireless.tests.test_views:WirelessLinkTestCase"
+},
+{
+"module": "wireless.utils",
+"kind": "function",
+"name": "get_channel_attr",
+"lineno": 11,
+"bases": "",
+"path": "netbox/wireless/utils.py",
+"id": "symbols:wireless.utils:get_channel_attr"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANGroupListView",
+"lineno": 14,
+"bases": "generic.ObjectListView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANGroupListView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANGroupView",
+"lineno": 28,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANGroupView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANGroupEditView",
+"lineno": 41,
+"bases": "generic.ObjectEditView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANGroupEditView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANGroupDeleteView",
+"lineno": 47,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANGroupDeleteView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANGroupBulkImportView",
+"lineno": 52,
+"bases": "generic.BulkImportView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANGroupBulkImportView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANGroupBulkEditView",
+"lineno": 58,
+"bases": "generic.BulkEditView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANGroupBulkEditView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANGroupBulkDeleteView",
+"lineno": 72,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANGroupBulkDeleteView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANListView",
+"lineno": 89,
+"bases": "generic.ObjectListView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANListView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANView",
+"lineno": 99,
+"bases": "generic.ObjectView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANEditView",
+"lineno": 116,
+"bases": "generic.ObjectEditView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANEditView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANDeleteView",
+"lineno": 122,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANDeleteView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANBulkImportView",
+"lineno": 127,
+"bases": "generic.BulkImportView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANBulkImportView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANBulkEditView",
+"lineno": 133,
+"bases": "generic.BulkEditView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANBulkEditView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLANBulkDeleteView",
+"lineno": 141,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLANBulkDeleteView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLinkListView",
+"lineno": 152,
+"bases": "generic.ObjectListView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLinkListView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLinkView",
+"lineno": 160,
+"bases": "generic.ObjectView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLinkView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLinkEditView",
+"lineno": 166,
+"bases": "generic.ObjectEditView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLinkEditView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLinkDeleteView",
+"lineno": 172,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLinkDeleteView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLinkBulkImportView",
+"lineno": 177,
+"bases": "generic.BulkImportView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLinkBulkImportView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLinkBulkEditView",
+"lineno": 183,
+"bases": "generic.BulkEditView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLinkBulkEditView"
+},
+{
+"module": "wireless.views",
+"kind": "class",
+"name": "WirelessLinkBulkDeleteView",
+"lineno": 191,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/wireless/views.py",
+"id": "symbols:wireless.views:WirelessLinkBulkDeleteView"
+}
+],
+"imports_out": [
+{
+"src": "wireless.api.serializers",
+"dst": "wireless.api.serializers_.wirelesslans",
+"raw": "wireless.api.serializers_.wirelesslans",
+"lineno": 1,
+"path": "netbox/wireless/api/serializers.py",
+"id": "imports:wireless.api.serializers->wireless.api.serializers_.wirelesslans"
+},
+{
+"src": "wireless.api.serializers",
+"dst": "wireless.api.serializers_.wirelesslinks",
+"raw": "wireless.api.serializers_.wirelesslinks",
+"lineno": 2,
+"path": "netbox/wireless/api/serializers.py",
+"id": "imports:wireless.api.serializers->wireless.api.serializers_.wirelesslinks"
+},
+{
+"src": "wireless.api.serializers_.nested",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 4,
+"path": "netbox/wireless/api/serializers_/nested.py",
+"id": "imports:wireless.api.serializers_.nested->netbox.api.serializers"
+},
+{
+"src": "wireless.api.serializers_.nested",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 5,
+"path": "netbox/wireless/api/serializers_/nested.py",
+"id": "imports:wireless.api.serializers_.nested->wireless"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "dcim.constants",
+"raw": "dcim.constants",
+"lineno": 3,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->dcim.constants"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "ipam.api.serializers_.vlans",
+"raw": "ipam.api.serializers_.vlans",
+"lineno": 6,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->ipam.api.serializers_.vlans"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 7,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->netbox.api.fields"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 8,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->netbox.api.serializers"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 9,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->tenancy.api.serializers_.tenants"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "utilities.api",
+"raw": "utilities.api",
+"lineno": 10,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->utilities.api"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "wireless.api.serializers_.nested",
+"raw": "wireless.api.serializers_.nested",
+"lineno": 13,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->wireless.api.serializers_.nested"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 11,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->wireless.choices"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 12,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->wireless.models"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "dcim.api.serializers_.device_components",
+"raw": "dcim.api.serializers_.device_components",
+"lineno": 1,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->dcim.api.serializers_.device_components"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 2,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->dcim.choices"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 3,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->netbox.api.fields"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 4,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->netbox.api.serializers"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 5,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->netbox.choices"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 6,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->tenancy.api.serializers_.tenants"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 7,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->wireless.choices"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 8,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->wireless.models"
+},
+{
+"src": "wireless.api.urls",
+"dst": "netbox.api.routers",
+"raw": "netbox.api.routers",
+"lineno": 1,
+"path": "netbox/wireless/api/urls.py",
+"id": "imports:wireless.api.urls->netbox.api.routers"
+},
+{
+"src": "wireless.api.urls",
+"dst": "wireless.api",
+"raw": "wireless.api",
+"lineno": 2,
+"path": "netbox/wireless/api/urls.py",
+"id": "imports:wireless.api.urls->wireless.api"
+},
+{
+"src": "wireless.api.views",
+"dst": "netbox.api.viewsets",
+"raw": "netbox.api.viewsets",
+"lineno": 3,
+"path": "netbox/wireless/api/views.py",
+"id": "imports:wireless.api.views->netbox.api.viewsets"
+},
+{
+"src": "wireless.api.views",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 4,
+"path": "netbox/wireless/api/views.py",
+"id": "imports:wireless.api.views->wireless"
+},
+{
+"src": "wireless.api.views",
+"dst": "wireless.api",
+"raw": "wireless.api",
+"lineno": 6,
+"path": "netbox/wireless/api/views.py",
+"id": "imports:wireless.api.views->wireless.api"
+},
+{
+"src": "wireless.api.views",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 5,
+"path": "netbox/wireless/api/views.py",
+"id": "imports:wireless.api.views->wireless.models"
+},
+{
+"src": "wireless.apps",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 8,
+"path": "netbox/wireless/apps.py",
+"id": "imports:wireless.apps->netbox.models.features"
+},
+{
+"src": "wireless.apps",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 9,
+"path": "netbox/wireless/apps.py",
+"id": "imports:wireless.apps->wireless"
+},
+{
+"src": "wireless.choices",
+"dst": "utilities.choices",
+"raw": "utilities.choices",
+"lineno": 3,
+"path": "netbox/wireless/choices.py",
+"id": "imports:wireless.choices->utilities.choices"
+},
+{
+"src": "wireless.filtersets",
+"dst": "dcim.base_filtersets",
+"raw": "dcim.base_filtersets",
+"lineno": 5,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->dcim.base_filtersets"
+},
+{
+"src": "wireless.filtersets",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 4,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->dcim.choices"
+},
+{
+"src": "wireless.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 6,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->dcim.models"
+},
+{
+"src": "wireless.filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 7,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->ipam.models"
+},
+{
+"src": "wireless.filtersets",
+"dst": "netbox.filtersets",
+"raw": "netbox.filtersets",
+"lineno": 8,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->netbox.filtersets"
+},
+{
+"src": "wireless.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 9,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->tenancy.filtersets"
+},
+{
+"src": "wireless.filtersets",
+"dst": "utilities.filters",
+"raw": "utilities.filters",
+"lineno": 10,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->utilities.filters"
+},
+{
+"src": "wireless.filtersets",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 11,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->wireless.choices"
+},
+{
+"src": "wireless.filtersets",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 12,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->wireless.models"
+},
+{
+"src": "wireless.forms",
+"dst": "wireless.forms.bulk_edit",
+"raw": "wireless.forms.bulk_edit",
+"lineno": 3,
+"path": "netbox/wireless/forms/__init__.py",
+"id": "imports:wireless.forms->wireless.forms.bulk_edit"
+},
+{
+"src": "wireless.forms",
+"dst": "wireless.forms.bulk_import",
+"raw": "wireless.forms.bulk_import",
+"lineno": 4,
+"path": "netbox/wireless/forms/__init__.py",
+"id": "imports:wireless.forms->wireless.forms.bulk_import"
+},
+{
+"src": "wireless.forms",
+"dst": "wireless.forms.filtersets",
+"raw": "wireless.forms.filtersets",
+"lineno": 2,
+"path": "netbox/wireless/forms/__init__.py",
+"id": "imports:wireless.forms->wireless.forms.filtersets"
+},
+{
+"src": "wireless.forms",
+"dst": "wireless.forms.model_forms",
+"raw": "wireless.forms.model_forms",
+"lineno": 1,
+"path": "netbox/wireless/forms/__init__.py",
+"id": "imports:wireless.forms->wireless.forms.model_forms"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 4,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->dcim.choices"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "dcim.forms.mixins",
+"raw": "dcim.forms.mixins",
+"lineno": 5,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->dcim.forms.mixins"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->ipam.models"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 7,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->netbox.choices"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 8,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->netbox.forms"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 10,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->utilities.forms"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 11,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->utilities.forms.fields"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 12,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->utilities.forms.rendering"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 13,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->wireless.choices"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "wireless.constants",
+"raw": "wireless.constants",
+"lineno": 14,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->wireless.constants"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 15,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->wireless.models"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 3,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->dcim.choices"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "dcim.forms.mixins",
+"raw": "dcim.forms.mixins",
+"lineno": 4,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->dcim.forms.mixins"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->dcim.models"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->ipam.models"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 7,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->netbox.choices"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 8,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->netbox.forms"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->tenancy.models"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 10,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->utilities.forms.fields"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 11,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->wireless.choices"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 12,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->wireless.models"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 4,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->dcim.choices"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->dcim.models"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 6,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->netbox.choices"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 7,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->netbox.forms"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->tenancy.forms"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 9,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->utilities.forms"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 10,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->utilities.forms.fields"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 11,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->utilities.forms.rendering"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 12,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->wireless.choices"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 13,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->wireless.models"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "dcim.forms.mixins",
+"raw": "dcim.forms.mixins",
+"lineno": 5,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->dcim.forms.mixins"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->dcim.models"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->ipam.models"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 7,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->netbox.forms"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->tenancy.forms"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 9,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->utilities.forms.fields"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "utilities.forms.mixins",
+"raw": "utilities.forms.mixins",
+"lineno": 10,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->utilities.forms.mixins"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 11,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->utilities.forms.rendering"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 12,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->wireless.models"
+},
+{
+"src": "wireless.graphql.enums",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 3,
+"path": "netbox/wireless/graphql/enums.py",
+"id": "imports:wireless.graphql.enums->wireless.choices"
+},
+{
+"src": "wireless.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/wireless/graphql/filter_mixins.py",
+"id": "imports:wireless.graphql.filter_mixins->core.graphql.filter_mixins"
+},
+{
+"src": "wireless.graphql.filter_mixins",
+"dst": "wireless.graphql.enums",
+"raw": "wireless.graphql.enums",
+"lineno": 11,
+"path": "netbox/wireless/graphql/filter_mixins.py",
+"id": "imports:wireless.graphql.filter_mixins->wireless.graphql.enums"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "dcim.graphql.filter_mixins",
+"raw": "dcim.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->dcim.graphql.filter_mixins"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "dcim.graphql.filters",
+"raw": "dcim.graphql.filters",
+"lineno": 15,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->dcim.graphql.filters"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "ipam.graphql.filters",
+"raw": "ipam.graphql.filters",
+"lineno": 16,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->ipam.graphql.filters"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 9,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->netbox.graphql.filter_mixins"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 11,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->wireless"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "wireless.graphql.enums",
+"raw": "wireless.graphql.enums",
+"lineno": 17,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->wireless.graphql.enums"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "wireless.graphql.filter_mixins",
+"raw": "wireless.graphql.filter_mixins",
+"lineno": 12,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->wireless.graphql.filter_mixins"
+},
+{
+"src": "wireless.graphql.schema",
+"dst": "wireless.graphql.types",
+"raw": "wireless.graphql.types",
+"lineno": 6,
+"path": "netbox/wireless/graphql/schema.py",
+"id": "imports:wireless.graphql.schema->wireless.graphql.types"
+},
+{
+"src": "wireless.graphql.types",
+"dst": "dcim.graphql.types",
+"raw": "dcim.graphql.types",
+"lineno": 11,
+"path": "netbox/wireless/graphql/types.py",
+"id": "imports:wireless.graphql.types->dcim.graphql.types"
+},
+{
+"src": "wireless.graphql.types",
+"dst": "ipam.graphql.types",
+"raw": "ipam.graphql.types",
+"lineno": 12,
+"path": "netbox/wireless/graphql/types.py",
+"id": "imports:wireless.graphql.types->ipam.graphql.types"
+},
+{
+"src": "wireless.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 6,
+"path": "netbox/wireless/graphql/types.py",
+"id": "imports:wireless.graphql.types->netbox.graphql.types"
+},
+{
+"src": "wireless.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 13,
+"path": "netbox/wireless/graphql/types.py",
+"id": "imports:wireless.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "wireless.graphql.types",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 7,
+"path": "netbox/wireless/graphql/types.py",
+"id": "imports:wireless.graphql.types->wireless"
+},
+{
+"src": "wireless.graphql.types",
+"dst": "wireless.graphql.filters",
+"raw": "wireless.graphql.filters",
+"lineno": 8,
+"path": "netbox/wireless/graphql/types.py",
+"id": "imports:wireless.graphql.types->wireless.graphql.filters"
+},
+{
+"src": "wireless.migrations.0001_squashed_0008",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 6,
+"path": "netbox/wireless/migrations/0001_squashed_0008.py",
+"id": "imports:wireless.migrations.0001_squashed_0008->utilities.json"
+},
+{
+"src": "wireless.models",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 5,
+"path": "netbox/wireless/models.py",
+"id": "imports:wireless.models->dcim.choices"
+},
+{
+"src": "wireless.models",
+"dst": "dcim.constants",
+"raw": "dcim.constants",
+"lineno": 6,
+"path": "netbox/wireless/models.py",
+"id": "imports:wireless.models->dcim.constants"
+},
+{
+"src": "wireless.models",
+"dst": "dcim.models.mixins",
+"raw": "dcim.models.mixins",
+"lineno": 7,
+"path": "netbox/wireless/models.py",
+"id": "imports:wireless.models->dcim.models.mixins"
+},
+{
+"src": "wireless.models",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 8,
+"path": "netbox/wireless/models.py",
+"id": "imports:wireless.models->netbox.models"
+},
+{
+"src": "wireless.models",
+"dst": "netbox.models.mixins",
+"raw": "netbox.models.mixins",
+"lineno": 9,
+"path": "netbox/wireless/models.py",
+"id": "imports:wireless.models->netbox.models.mixins"
+},
+{
+"src": "wireless.models",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 10,
+"path": "netbox/wireless/models.py",
+"id": "imports:wireless.models->wireless.choices"
+},
+{
+"src": "wireless.models",
+"dst": "wireless.constants",
+"raw": "wireless.constants",
+"lineno": 11,
+"path": "netbox/wireless/models.py",
+"id": "imports:wireless.models->wireless.constants"
+},
+{
+"src": "wireless.search",
+"dst": "netbox.search",
+"raw": "netbox.search",
+"lineno": 1,
+"path": "netbox/wireless/search.py",
+"id": "imports:wireless.search->netbox.search"
+},
+{
+"src": "wireless.search",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 2,
+"path": "netbox/wireless/search.py",
+"id": "imports:wireless.search->wireless"
+},
+{
+"src": "wireless.signals",
+"dst": "dcim.exceptions",
+"raw": "dcim.exceptions",
+"lineno": 6,
+"path": "netbox/wireless/signals.py",
+"id": "imports:wireless.signals->dcim.exceptions"
+},
+{
+"src": "wireless.signals",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 7,
+"path": "netbox/wireless/signals.py",
+"id": "imports:wireless.signals->dcim.models"
+},
+{
+"src": "wireless.signals",
+"dst": "dcim.utils",
+"raw": "dcim.utils",
+"lineno": 8,
+"path": "netbox/wireless/signals.py",
+"id": "imports:wireless.signals->dcim.utils"
+},
+{
+"src": "wireless.signals",
+"dst": "utilities.exceptions",
+"raw": "utilities.exceptions",
+"lineno": 9,
+"path": "netbox/wireless/signals.py",
+"id": "imports:wireless.signals->utilities.exceptions"
+},
+{
+"src": "wireless.signals",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 10,
+"path": "netbox/wireless/signals.py",
+"id": "imports:wireless.signals->wireless.models"
+},
+{
+"src": "wireless.tables",
+"dst": "wireless.tables.wirelesslan",
+"raw": "wireless.tables.wirelesslan",
+"lineno": 1,
+"path": "netbox/wireless/tables/__init__.py",
+"id": "imports:wireless.tables->wireless.tables.wirelesslan"
+},
+{
+"src": "wireless.tables",
+"dst": "wireless.tables.wirelesslink",
+"raw": "wireless.tables.wirelesslink",
+"lineno": 2,
+"path": "netbox/wireless/tables/__init__.py",
+"id": "imports:wireless.tables->wireless.tables.wirelesslink"
+},
+{
+"src": "wireless.tables.wirelesslan",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "imports:wireless.tables.wirelesslan->dcim.models"
+},
+{
+"src": "wireless.tables.wirelesslan",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 5,
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "imports:wireless.tables.wirelesslan->netbox.tables"
+},
+{
+"src": "wireless.tables.wirelesslan",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "imports:wireless.tables.wirelesslan->tenancy.tables"
+},
+{
+"src": "wireless.tables.wirelesslan",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 7,
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "imports:wireless.tables.wirelesslan->wireless.models"
+},
+{
+"src": "wireless.tables.wirelesslink",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 4,
+"path": "netbox/wireless/tables/wirelesslink.py",
+"id": "imports:wireless.tables.wirelesslink->netbox.tables"
+},
+{
+"src": "wireless.tables.wirelesslink",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/wireless/tables/wirelesslink.py",
+"id": "imports:wireless.tables.wirelesslink->tenancy.tables"
+},
+{
+"src": "wireless.tables.wirelesslink",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 6,
+"path": "netbox/wireless/tables/wirelesslink.py",
+"id": "imports:wireless.tables.wirelesslink->wireless.models"
+},
+{
+"src": "wireless.tests.test_api",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 3,
+"path": "netbox/wireless/tests/test_api.py",
+"id": "imports:wireless.tests.test_api->dcim.choices"
+},
+{
+"src": "wireless.tests.test_api",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/wireless/tests/test_api.py",
+"id": "imports:wireless.tests.test_api->dcim.models"
+},
+{
+"src": "wireless.tests.test_api",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/wireless/tests/test_api.py",
+"id": "imports:wireless.tests.test_api->tenancy.models"
+},
+{
+"src": "wireless.tests.test_api",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 6,
+"path": "netbox/wireless/tests/test_api.py",
+"id": "imports:wireless.tests.test_api->utilities.testing"
+},
+{
+"src": "wireless.tests.test_api",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 7,
+"path": "netbox/wireless/tests/test_api.py",
+"id": "imports:wireless.tests.test_api->wireless.choices"
+},
+{
+"src": "wireless.tests.test_api",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 8,
+"path": "netbox/wireless/tests/test_api.py",
+"id": "imports:wireless.tests.test_api->wireless.models"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 3,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->dcim.choices"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->dcim.models"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 5,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->ipam.models"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 6,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->netbox.choices"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 11,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->utilities.testing"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 8,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->wireless.choices"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "wireless.filtersets",
+"raw": "wireless.filtersets",
+"lineno": 9,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->wireless.filtersets"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 10,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->wireless.models"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 4,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->dcim.choices"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->dcim.models"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 6,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->netbox.choices"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->tenancy.models"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 8,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->utilities.testing"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 2,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->wireless.choices"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 3,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->wireless.models"
+},
+{
+"src": "wireless.urls",
+"dst": "utilities.urls",
+"raw": "utilities.urls",
+"lineno": 3,
+"path": "netbox/wireless/urls.py",
+"id": "imports:wireless.urls->utilities.urls"
+},
+{
+"src": "wireless.urls",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 4,
+"path": "netbox/wireless/urls.py",
+"id": "imports:wireless.urls->wireless"
+},
+{
+"src": "wireless.utils",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 4,
+"path": "netbox/wireless/utils.py",
+"id": "imports:wireless.utils->wireless.choices"
+},
+{
+"src": "wireless.views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 1,
+"path": "netbox/wireless/views.py",
+"id": "imports:wireless.views->dcim.models"
+},
+{
+"src": "wireless.views",
+"dst": "netbox.views",
+"raw": "netbox.views",
+"lineno": 2,
+"path": "netbox/wireless/views.py",
+"id": "imports:wireless.views->netbox.views"
+},
+{
+"src": "wireless.views",
+"dst": "utilities.query",
+"raw": "utilities.query",
+"lineno": 3,
+"path": "netbox/wireless/views.py",
+"id": "imports:wireless.views->utilities.query"
+},
+{
+"src": "wireless.views",
+"dst": "utilities.views",
+"raw": "utilities.views",
+"lineno": 4,
+"path": "netbox/wireless/views.py",
+"id": "imports:wireless.views->utilities.views"
+},
+{
+"src": "wireless.views",
+"dst": "wireless",
+"raw": "wireless",
+"lineno": 5,
+"path": "netbox/wireless/views.py",
+"id": "imports:wireless.views->wireless"
+},
+{
+"src": "wireless.views",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 6,
+"path": "netbox/wireless/views.py",
+"id": "imports:wireless.views->wireless.models"
+}
+],
+"imports_in": [
+{
+"src": "dcim.api.serializers_.device_components",
+"dst": "wireless.api.serializers_.nested",
+"raw": "wireless.api.serializers_.nested",
+"lineno": 19,
+"path": "netbox/dcim/api/serializers_/device_components.py",
+"id": "imports:dcim.api.serializers_.device_components->wireless.api.serializers_.nested"
+},
+{
+"src": "dcim.api.serializers_.device_components",
+"dst": "wireless.api.serializers_.wirelesslans",
+"raw": "wireless.api.serializers_.wirelesslans",
+"lineno": 20,
+"path": "netbox/dcim/api/serializers_/device_components.py",
+"id": "imports:dcim.api.serializers_.device_components->wireless.api.serializers_.wirelesslans"
+},
+{
+"src": "dcim.api.serializers_.device_components",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 21,
+"path": "netbox/dcim/api/serializers_/device_components.py",
+"id": "imports:dcim.api.serializers_.device_components->wireless.choices"
+},
+{
+"src": "dcim.api.serializers_.device_components",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 22,
+"path": "netbox/dcim/api/serializers_/device_components.py",
+"id": "imports:dcim.api.serializers_.device_components->wireless.models"
+},
+{
+"src": "dcim.api.serializers_.devicetype_components",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 14,
+"path": "netbox/dcim/api/serializers_/devicetype_components.py",
+"id": "imports:dcim.api.serializers_.devicetype_components->wireless.choices"
+},
+{
+"src": "dcim.filtersets",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 26,
+"path": "netbox/dcim/filtersets.py",
+"id": "imports:dcim.filtersets->wireless.choices"
+},
+{
+"src": "dcim.filtersets",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 27,
+"path": "netbox/dcim/filtersets.py",
+"id": "imports:dcim.filtersets->wireless.models"
+},
+{
+"src": "dcim.forms.bulk_edit",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 23,
+"path": "netbox/dcim/forms/bulk_edit.py",
+"id": "imports:dcim.forms.bulk_edit->wireless.choices"
+},
+{
+"src": "dcim.forms.bulk_edit",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 24,
+"path": "netbox/dcim/forms/bulk_edit.py",
+"id": "imports:dcim.forms.bulk_edit->wireless.models"
+},
+{
+"src": "dcim.forms.bulk_import",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 21,
+"path": "netbox/dcim/forms/bulk_import.py",
+"id": "imports:dcim.forms.bulk_import->wireless.choices"
+},
+{
+"src": "dcim.forms.filtersets",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 20,
+"path": "netbox/dcim/forms/filtersets.py",
+"id": "imports:dcim.forms.filtersets->wireless.choices"
+},
+{
+"src": "dcim.forms.model_forms",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 24,
+"path": "netbox/dcim/forms/model_forms.py",
+"id": "imports:dcim.forms.model_forms->wireless.models"
+},
+{
+"src": "dcim.forms.object_import",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 6,
+"path": "netbox/dcim/forms/object_import.py",
+"id": "imports:dcim.forms.object_import->wireless.choices"
+},
+{
+"src": "dcim.graphql.filters",
+"dst": "wireless.graphql.enums",
+"raw": "wireless.graphql.enums",
+"lineno": 41,
+"path": "netbox/dcim/graphql/filters.py",
+"id": "imports:dcim.graphql.filters->wireless.graphql.enums"
+},
+{
+"src": "dcim.graphql.filters",
+"dst": "wireless.graphql.filters",
+"raw": "wireless.graphql.filters",
+"lineno": 42,
+"path": "netbox/dcim/graphql/filters.py",
+"id": "imports:dcim.graphql.filters->wireless.graphql.filters"
+},
+{
+"src": "dcim.graphql.types",
+"dst": "wireless.graphql.types",
+"raw": "wireless.graphql.types",
+"lineno": 36,
+"path": "netbox/dcim/graphql/types.py",
+"id": "imports:dcim.graphql.types->wireless.graphql.types"
+},
+{
+"src": "dcim.models.cables",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 19,
+"path": "netbox/dcim/models/cables.py",
+"id": "imports:dcim.models.cables->wireless.models"
+},
+{
+"src": "dcim.models.device_component_templates",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 15,
+"path": "netbox/dcim/models/device_component_templates.py",
+"id": "imports:dcim.models.device_component_templates->wireless.choices"
+},
+{
+"src": "dcim.models.device_components",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 21,
+"path": "netbox/dcim/models/device_components.py",
+"id": "imports:dcim.models.device_components->wireless.choices"
+},
+{
+"src": "dcim.models.device_components",
+"dst": "wireless.utils",
+"raw": "wireless.utils",
+"lineno": 22,
+"path": "netbox/dcim/models/device_components.py",
+"id": "imports:dcim.models.device_components->wireless.utils"
+},
+{
+"src": "dcim.svg.cables",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 343,
+"path": "netbox/dcim/svg/cables.py",
+"id": "imports:dcim.svg.cables->wireless.models"
+},
+{
+"src": "dcim.tests.test_api",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 19,
+"path": "netbox/dcim/tests/test_api.py",
+"id": "imports:dcim.tests.test_api->wireless.choices"
+},
+{
+"src": "dcim.tests.test_api",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 20,
+"path": "netbox/dcim/tests/test_api.py",
+"id": "imports:dcim.tests.test_api->wireless.models"
+},
+{
+"src": "dcim.tests.test_filtersets",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 14,
+"path": "netbox/dcim/tests/test_filtersets.py",
+"id": "imports:dcim.tests.test_filtersets->wireless.choices"
+},
+{
+"src": "dcim.tests.test_filtersets",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 15,
+"path": "netbox/dcim/tests/test_filtersets.py",
+"id": "imports:dcim.tests.test_filtersets->wireless.models"
+},
+{
+"src": "dcim.tests.test_views",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 18,
+"path": "netbox/dcim/tests/test_views.py",
+"id": "imports:dcim.tests.test_views->wireless.models"
+},
+{
+"src": "dcim.views",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 33,
+"path": "netbox/dcim/views.py",
+"id": "imports:dcim.views->wireless.models"
+},
+{
+"src": "extras.tests.test_utils",
+"dst": "wireless.models",
+"raw": "wireless.models",
+"lineno": 6,
+"path": "netbox/extras/tests/test_utils.py",
+"id": "imports:extras.tests.test_utils->wireless.models"
+},
+{
+"src": "ipam.graphql.types",
+"dst": "wireless.graphql.types",
+"raw": "wireless.graphql.types",
+"lineno": 28,
+"path": "netbox/ipam/graphql/types.py",
+"id": "imports:ipam.graphql.types->wireless.graphql.types"
+},
+{
+"src": "netbox.graphql.schema",
+"dst": "wireless.graphql.schema",
+"raw": "wireless.graphql.schema",
+"lineno": 17,
+"path": "netbox/netbox/graphql/schema.py",
+"id": "imports:netbox.graphql.schema->wireless.graphql.schema"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "wireless.graphql.filters",
+"raw": "wireless.graphql.filters",
+"lineno": 44,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->wireless.graphql.filters"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "wireless.graphql.types",
+"raw": "wireless.graphql.types",
+"lineno": 36,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->wireless.graphql.types"
+},
+{
+"src": "utilities.tests.test_filters",
+"dst": "wireless.choices",
+"raw": "wireless.choices",
+"lineno": 19,
+"path": "netbox/utilities/tests/test_filters.py",
+"id": "imports:utilities.tests.test_filters->wireless.choices"
+}
+],
+"model_refs": [
+{
+"module": "wireless.migrations.0010_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "wireless.WirelessLAN",
+"ref_app": "wireless",
+"ref_model": "WirelessLAN",
+"cross_app": 0,
+"lineno": 8,
+"path": "netbox/wireless/migrations/0010_charfield_null_choices.py",
+"id": "model_refs:wireless.migrations.0010_charfield_null_choices:8"
+},
+{
+"module": "wireless.migrations.0010_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "wireless.WirelessLink",
+"ref_app": "wireless",
+"ref_model": "WirelessLink",
+"cross_app": 0,
+"lineno": 9,
+"path": "netbox/wireless/migrations/0010_charfield_null_choices.py",
+"id": "model_refs:wireless.migrations.0010_charfield_null_choices:9"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLAN",
+"field": "group",
+"kind": "ForeignKey",
+"raw": "wireless.WirelessLANGroup",
+"ref_app": "wireless",
+"ref_model": "WirelessLANGroup",
+"cross_app": 0,
+"lineno": 84,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:84"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLAN",
+"field": "vlan",
+"kind": "ForeignKey",
+"raw": "ipam.VLAN",
+"ref_app": "ipam",
+"ref_model": "VLAN",
+"cross_app": 1,
+"lineno": 97,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:97"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLAN",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 104,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:104"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLink",
+"field": "interface_a",
+"kind": "ForeignKey",
+"raw": "dcim.Interface",
+"ref_app": "dcim",
+"ref_model": "Interface",
+"cross_app": 1,
+"lineno": 130,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:130"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLink",
+"field": "interface_b",
+"kind": "ForeignKey",
+"raw": "dcim.Interface",
+"ref_app": "dcim",
+"ref_model": "Interface",
+"cross_app": 1,
+"lineno": 136,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:136"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLink",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 153,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:153"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLink",
+"field": "_interface_a_device",
+"kind": "ForeignKey",
+"raw": "dcim.Device",
+"ref_app": "dcim",
+"ref_model": "Device",
+"cross_app": 1,
+"lineno": 163,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:163"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLink",
+"field": "_interface_b_device",
+"kind": "ForeignKey",
+"raw": "dcim.Device",
+"ref_app": "dcim",
+"ref_model": "Device",
+"cross_app": 1,
+"lineno": 170,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:170"
+}
+],
+"model_refs_in": [
+{
+"module": "dcim.models.device_components",
+"class": "Interface",
+"field": "wireless_link",
+"kind": "ForeignKey",
+"raw": "wireless.WirelessLink",
+"ref_app": "wireless",
+"ref_model": "WirelessLink",
+"cross_app": 1,
+"lineno": 742,
+"path": "netbox/dcim/models/device_components.py",
+"id": "model_refs:dcim.models.device_components:742"
+},
+{
+"module": "dcim.models.device_components",
+"class": "Interface",
+"field": "wireless_lans",
+"kind": "ManyToManyField",
+"raw": "wireless.WirelessLAN",
+"ref_app": "wireless",
+"ref_model": "WirelessLAN",
+"cross_app": 1,
+"lineno": 749,
+"path": "netbox/dcim/models/device_components.py",
+"id": "model_refs:dcim.models.device_components:749"
+}
+],
+"churn": [
+{
+"path": "netbox/wireless/models.py",
+"module": "wireless.models",
+"commits": 45,
+"authors": 6,
+"first_commit": "2021-10-12",
+"last_commit": "2025-06-16",
+"id": "churn:wireless.models"
+},
+{
+"path": "netbox/wireless/forms/bulk_edit.py",
+"module": "wireless.forms.bulk_edit",
+"commits": 28,
+"authors": 6,
+"first_commit": "2021-10-12",
+"last_commit": "2025-03-11",
+"id": "churn:wireless.forms.bulk_edit"
+},
+{
+"path": "netbox/wireless/filtersets.py",
+"module": "wireless.filtersets",
+"commits": 27,
+"authors": 5,
+"first_commit": "2021-10-12",
+"last_commit": "2025-03-13",
+"id": "churn:wireless.filtersets"
+},
+{
+"path": "netbox/wireless/forms/filtersets.py",
+"module": "wireless.forms.filtersets",
+"commits": 25,
+"authors": 4,
+"first_commit": "2021-10-12",
+"last_commit": "2024-11-07",
+"id": "churn:wireless.forms.filtersets"
+},
+{
+"path": "netbox/wireless/forms/bulk_import.py",
+"module": "wireless.forms.bulk_import",
+"commits": 24,
+"authors": 6,
+"first_commit": "2021-10-12",
+"last_commit": "2025-06-16",
+"id": "churn:wireless.forms.bulk_import"
+},
+{
+"path": "netbox/wireless/views.py",
+"module": "wireless.views",
+"commits": 22,
+"authors": 3,
+"first_commit": "2021-10-12",
+"last_commit": "2025-04-25",
+"id": "churn:wireless.views"
+},
+{
+"path": "netbox/wireless/api/serializers.py",
+"module": "wireless.api.serializers",
+"commits": 20,
+"authors": 2,
+"first_commit": "2021-10-12",
+"last_commit": "2024-08-14",
+"id": "churn:wireless.api.serializers"
+},
+{
+"path": "netbox/wireless/forms/model_forms.py",
+"module": "wireless.forms.model_forms",
+"commits": 18,
+"authors": 6,
+"first_commit": "2022-10-25",
+"last_commit": "2025-05-19",
+"id": "churn:wireless.forms.model_forms"
+},
+{
+"path": "netbox/wireless/choices.py",
+"module": "wireless.choices",
+"commits": 13,
+"authors": 4,
+"first_commit": "2021-10-15",
+"last_commit": "2024-10-10",
+"id": "churn:wireless.choices"
+},
+{
+"path": "netbox/wireless/graphql/types.py",
+"module": "wireless.graphql.types",
+"commits": 13,
+"authors": 4,
+"first_commit": "2021-10-12",
+"last_commit": "2025-03-20",
+"id": "churn:wireless.graphql.types"
+},
+{
+"path": "netbox/wireless/tests/test_views.py",
+"module": "wireless.tests.test_views",
+"commits": 13,
+"authors": 5,
+"first_commit": "2021-10-20",
+"last_commit": "2025-06-16",
+"id": "churn:wireless.tests.test_views"
+},
+{
+"path": "netbox/wireless/tests/test_filtersets.py",
+"module": "wireless.tests.test_filtersets",
+"commits": 12,
+"authors": 5,
+"first_commit": "2021-10-20",
+"last_commit": "2025-03-11",
+"id": "churn:wireless.tests.test_filtersets"
+},
+{
+"path": "netbox/wireless/tables/wirelesslan.py",
+"module": "wireless.tables.wirelesslan",
+"commits": 9,
+"authors": 4,
+"first_commit": "2022-03-03",
+"last_commit": "2025-01-16",
+"id": "churn:wireless.tables.wirelesslan"
+},
+{
+"path": "netbox/wireless/tests/test_api.py",
+"module": "wireless.tests.test_api",
+"commits": 9,
+"authors": 5,
+"first_commit": "2021-10-20",
+"last_commit": "2025-03-11",
+"id": "churn:wireless.tests.test_api"
+},
+{
+"path": "netbox/wireless/api/views.py",
+"module": "wireless.api.views",
+"commits": 8,
+"authors": 3,
+"first_commit": "2021-10-12",
+"last_commit": "2024-02-14",
+"id": "churn:wireless.api.views"
+},
+{
+"path": "netbox/wireless/signals.py",
+"module": "wireless.signals",
+"commits": 8,
+"authors": 2,
+"first_commit": "2021-10-13",
+"last_commit": "2025-03-04",
+"id": "churn:wireless.signals"
+},
+{
+"path": "netbox/wireless/urls.py",
+"module": "wireless.urls",
+"commits": 8,
+"authors": 2,
+"first_commit": "2021-10-12",
+"last_commit": "2024-11-20",
+"id": "churn:wireless.urls"
+},
+{
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"module": "wireless.api.serializers_.wirelesslans",
+"commits": 7,
+"authors": 3,
+"first_commit": "2024-02-27",
+"last_commit": "2025-03-11",
+"id": "churn:wireless.api.serializers_.wirelesslans"
+},
+{
+"path": "netbox/wireless/api/urls.py",
+"module": "wireless.api.urls",
+"commits": 7,
+"authors": 1,
+"first_commit": "2021-10-12",
+"last_commit": "2022-07-13",
+"id": "churn:wireless.api.urls"
+},
+{
+"path": "netbox/wireless/graphql/schema.py",
+"module": "wireless.graphql.schema",
+"commits": 7,
+"authors": 3,
+"first_commit": "2021-10-12",
+"last_commit": "2024-08-28",
+"id": "churn:wireless.graphql.schema"
+},
+{
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"module": "wireless.api.serializers_.wirelesslinks",
+"commits": 6,
+"authors": 2,
+"first_commit": "2024-02-27",
+"last_commit": "2024-10-11",
+"id": "churn:wireless.api.serializers_.wirelesslinks"
+},
+{
+"path": "netbox/wireless/search.py",
+"module": "wireless.search",
+"commits": 6,
+"authors": 5,
+"first_commit": "2022-10-10",
+"last_commit": "2025-03-11",
+"id": "churn:wireless.search"
+},
+{
+"path": "netbox/wireless/tables/wirelesslink.py",
+"module": "wireless.tables.wirelesslink",
+"commits": 6,
+"authors": 2,
+"first_commit": "2022-03-03",
+"last_commit": "2024-10-10",
+"id": "churn:wireless.tables.wirelesslink"
+},
+{
+"path": "netbox/wireless/apps.py",
+"module": "wireless.apps",
+"commits": 5,
+"authors": 3,
+"first_commit": "2021-10-12",
+"last_commit": "2024-10-10",
+"id": "churn:wireless.apps"
+},
+{
+"path": "netbox/wireless/migrations/0001_squashed_0008.py",
+"module": "wireless.migrations.0001_squashed_0008",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-01-24",
+"last_commit": "2025-04-03",
+"id": "churn:wireless.migrations.0001_squashed_0008"
+},
+{
+"path": "netbox/wireless/graphql/filters.py",
+"module": "wireless.graphql.filters",
+"commits": 3,
+"authors": 2,
+"first_commit": "2024-03-22",
+"last_commit": "2025-05-14",
+"id": "churn:wireless.graphql.filters"
+},
+{
+"path": "netbox/wireless/migrations/0010_charfield_null_choices.py",
+"module": "wireless.migrations.0010_charfield_null_choices",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-10-18",
+"last_commit": "2025-05-08",
+"id": "churn:wireless.migrations.0010_charfield_null_choices"
+},
+{
+"path": "netbox/wireless/migrations/0011_wirelesslan__location_wirelesslan__region_and_more.py",
+"module": "wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more",
+"commits": 3,
+"authors": 2,
+"first_commit": "2024-11-07",
+"last_commit": "2025-04-03",
+"id": "churn:wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more"
+},
+{
+"path": "netbox/wireless/constants.py",
+"module": "wireless.constants",
+"commits": 2,
+"authors": 1,
+"first_commit": "2021-10-12",
+"last_commit": "2021-10-20",
+"id": "churn:wireless.constants"
+},
+{
+"path": "netbox/wireless/forms/__init__.py",
+"module": "wireless.forms",
+"commits": 2,
+"authors": 1,
+"first_commit": "2021-10-12",
+"last_commit": "2022-10-25",
+"id": "churn:wireless.forms"
+},
+{
+"path": "netbox/wireless/graphql/enums.py",
+"module": "wireless.graphql.enums",
+"commits": 2,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-04-17",
+"id": "churn:wireless.graphql.enums"
+},
+{
+"path": "netbox/wireless/migrations/0009_wirelesslink_distance.py",
+"module": "wireless.migrations.0009_wirelesslink_distance",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-06-17",
+"last_commit": "2024-11-21",
+"id": "churn:wireless.migrations.0009_wirelesslink_distance"
+},
+{
+"path": "netbox/wireless/migrations/0012_alter_wirelesslan__location_and_more.py",
+"module": "wireless.migrations.0012_alter_wirelesslan__location_and_more",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-11-15",
+"last_commit": "2024-11-21",
+"id": "churn:wireless.migrations.0012_alter_wirelesslan__location_and_more"
+},
+{
+"path": "netbox/wireless/migrations/0013_natural_ordering.py",
+"module": "wireless.migrations.0013_natural_ordering",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-11-15",
+"last_commit": "2024-11-21",
+"id": "churn:wireless.migrations.0013_natural_ordering"
+},
+{
+"path": "netbox/wireless/migrations/0014_wirelesslangroup_comments.py",
+"module": "wireless.migrations.0014_wirelesslangroup_comments",
+"commits": 2,
+"authors": 1,
+"first_commit": "2025-03-10",
+"last_commit": "2025-03-13",
+"id": "churn:wireless.migrations.0014_wirelesslangroup_comments"
+},
+{
+"path": "netbox/wireless/utils.py",
+"module": "wireless.utils",
+"commits": 2,
+"authors": 2,
+"first_commit": "2021-10-15",
+"last_commit": "2024-02-20",
+"id": "churn:wireless.utils"
+},
+{
+"path": "netbox/wireless/__init__.py",
+"module": "wireless",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-10-12",
+"last_commit": "2021-10-12",
+"id": "churn:wireless"
+},
+{
+"path": "netbox/wireless/api/__init__.py",
+"module": "wireless.api",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-10-12",
+"last_commit": "2021-10-12",
+"id": "churn:wireless.api"
+},
+{
+"path": "netbox/wireless/api/serializers_/__init__.py",
+"module": "wireless.api.serializers_",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-02-27",
+"last_commit": "2024-02-27",
+"id": "churn:wireless.api.serializers_"
+},
+{
+"path": "netbox/wireless/api/serializers_/nested.py",
+"module": "wireless.api.serializers_.nested",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-08-14",
+"last_commit": "2024-08-14",
+"id": "churn:wireless.api.serializers_.nested"
+},
+{
+"path": "netbox/wireless/graphql/__init__.py",
+"module": "wireless.graphql",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-10-12",
+"last_commit": "2021-10-12",
+"id": "churn:wireless.graphql"
+},
+{
+"path": "netbox/wireless/graphql/filter_mixins.py",
+"module": "wireless.graphql.filter_mixins",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-03-07",
+"id": "churn:wireless.graphql.filter_mixins"
+},
+{
+"path": "netbox/wireless/migrations/0015_extend_wireless_link_abs_distance_upper_limit.py",
+"module": "wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-05-19",
+"last_commit": "2025-05-19",
+"id": "churn:wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit"
+},
+{
+"path": "netbox/wireless/migrations/__init__.py",
+"module": "wireless.migrations",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-10-12",
+"last_commit": "2021-10-12",
+"id": "churn:wireless.migrations"
+},
+{
+"path": "netbox/wireless/tables/__init__.py",
+"module": "wireless.tables",
+"commits": 1,
+"authors": 1,
+"first_commit": "2022-03-03",
+"last_commit": "2022-03-03",
+"id": "churn:wireless.tables"
+},
+{
+"path": "netbox/wireless/tests/__init__.py",
+"module": "wireless.tests",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-10-20",
+"last_commit": "2021-10-20",
+"id": "churn:wireless.tests"
+}
+],
+"entrypoints": [
+{
+"kind": "urls",
+"module": "wireless.api.urls",
+"detail": "",
+"path": "netbox/wireless/api/urls.py",
+"id": "entrypoints:wireless.api.urls"
+},
+{
+"kind": "api_views",
+"module": "wireless.api.views",
+"detail": "",
+"path": "netbox/wireless/api/views.py",
+"id": "entrypoints:wireless.api.views"
+},
+{
+"kind": "signals",
+"module": "wireless.signals",
+"detail": "",
+"path": "netbox/wireless/signals.py",
+"id": "entrypoints:wireless.signals"
+},
+{
+"kind": "urls",
+"module": "wireless.urls",
+"detail": "",
+"path": "netbox/wireless/urls.py",
+"id": "entrypoints:wireless.urls"
+}
+]
+}

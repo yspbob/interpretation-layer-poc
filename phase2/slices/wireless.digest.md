@@ -1,0 +1,277 @@
+# Fact-graph digest: subsystem `wireless` at T0 ea4c205
+
+Summary row [fg:subsystems:wireless]: {'subsystem': 'wireless', 'modules': 38, 'loc_code': 3252, 'loc_data': 0, 'test_modules': 4}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- wireless | netbox/wireless/__init__.py | 1 | 0 | 0 |  | 
+- wireless.api | netbox/wireless/api/__init__.py | 1 | 0 | 0 |  | 
+- wireless.api.serializers | netbox/wireless/api/serializers.py | 3 | 0 | 0 |  | 
+- wireless.api.serializers_ | netbox/wireless/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- wireless.api.serializers_.nested | netbox/wireless/api/serializers_/nested.py | 30 | 2 | 0 |  | 
+- wireless.api.serializers_.wirelesslans | netbox/wireless/api/serializers_/wirelesslans.py | 68 | 2 | 0 |  | 
+- wireless.api.serializers_.wirelesslinks | netbox/wireless/api/serializers_/wirelesslinks.py | 32 | 1 | 0 |  | 
+- wireless.api.urls | netbox/wireless/api/urls.py | 14 | 0 | 0 |  | 
+- wireless.api.views | netbox/wireless/api/views.py | 39 | 4 | 0 |  | 
+- wireless.apps | netbox/wireless/apps.py | 13 | 1 | 0 |  | 
+- wireless.choices | netbox/wireless/choices.py | 484 | 5 | 0 |  | 
+- wireless.constants | netbox/wireless/constants.py | 3 | 0 | 0 |  | 
+- wireless.filtersets | netbox/wireless/filtersets.py | 119 | 3 | 0 |  | 
+- wireless.forms | netbox/wireless/forms/__init__.py | 5 | 0 | 0 |  | 
+- wireless.forms.bulk_edit | netbox/wireless/forms/bulk_edit.py | 159 | 3 | 0 |  | 
+- wireless.forms.bulk_import | netbox/wireless/forms/bulk_import.py | 190 | 3 | 0 |  | 
+- wireless.forms.filtersets | netbox/wireless/forms/filtersets.py | 139 | 3 | 0 |  | 
+- wireless.forms.model_forms | netbox/wireless/forms/model_forms.py | 196 | 3 | 0 |  | 
+- wireless.graphql | netbox/wireless/graphql/__init__.py | 1 | 0 | 0 |  | 
+- wireless.graphql.enums | netbox/wireless/graphql/enums.py | 18 | 0 | 0 |  | 
+- wireless.graphql.filter_mixins | netbox/wireless/graphql/filter_mixins.py | 27 | 1 | 0 |  | 
+- wireless.graphql.filters | netbox/wireless/graphql/filters.py | 69 | 3 | 0 |  | 
+- wireless.graphql.schema | netbox/wireless/graphql/schema.py | 19 | 1 | 0 |  | 
+- wireless.graphql.types | netbox/wireless/graphql/types.py | 70 | 3 | 0 |  | 
+- wireless.migrations | netbox/wireless/migrations/__init__.py | 1 | 0 | 0 |  | 
+- wireless.migrations.0001_squashed_0008 | netbox/wireless/migrations/0001_squashed_0008.py | 209 | 1 | 0 |  | migration
+- wireless.migrations.0009_wirelesslink_distance | netbox/wireless/migrations/0009_wirelesslink_distance.py | 28 | 1 | 0 |  | migration
+- wireless.migrations.0010_charfield_null_choices | netbox/wireless/migrations/0010_charfield_null_choices.py | 52 | 1 | 1 |  | migration
+- wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more | netbox/wireless/migrations/0011_wirelesslan__location_wirelesslan__region_and_more.py | 76 | 1 | 0 |  | migration
+- wireless.migrations.0012_alter_wirelesslan__location_and_more | netbox/wireless/migrations/0012_alter_wirelesslan__location_and_more.py | 41 | 1 | 0 |  | migration
+- wireless.migrations.0013_natural_ordering | netbox/wireless/migrations/0013_natural_ordering.py | 17 | 1 | 0 |  | migration
+- wireless.migrations.0014_wirelesslangroup_comments | netbox/wireless/migrations/0014_wirelesslangroup_comments.py | 17 | 1 | 0 |  | migration
+- wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit | netbox/wireless/migrations/0015_extend_wireless_link_abs_distance_upper_limit.py | 17 | 1 | 0 |  | migration
+- wireless.models | netbox/wireless/models.py | 220 | 4 | 0 |  | 
+- wireless.search | netbox/wireless/search.py | 39 | 3 | 0 |  | 
+- wireless.signals | netbox/wireless/signals.py | 62 | 0 | 2 |  | 
+- wireless.tables | netbox/wireless/tables/__init__.py | 3 | 0 | 0 |  | 
+- wireless.tables.wirelesslan | netbox/wireless/tables/wirelesslan.py | 96 | 3 | 0 |  | 
+- wireless.tables.wirelesslink | netbox/wireless/tables/wirelesslink.py | 55 | 1 | 0 |  | 
+- wireless.tests | netbox/wireless/tests/__init__.py | 1 | 0 | 0 | test | 
+- wireless.tests.test_api | netbox/wireless/tests/test_api.py | 180 | 4 | 0 | test | 
+- wireless.tests.test_filtersets | netbox/wireless/tests/test_filtersets.py | 432 | 3 | 0 | test | 
+- wireless.tests.test_views | netbox/wireless/tests/test_views.py | 219 | 3 | 0 | test | 
+- wireless.urls | netbox/wireless/urls.py | 19 | 0 | 0 |  | 
+- wireless.utils | netbox/wireless/utils.py | 29 | 0 | 1 |  | 
+- wireless.views | netbox/wireless/views.py | 195 | 21 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'wireless': 54, 'dcim': 32, 'netbox': 27, 'utilities': 21, 'tenancy': 14, 'ipam': 8, 'core': 1}
+Inbound by source subsystem: {'dcim': 27, 'tenancy': 2, 'extras': 1, 'ipam': 1, 'netbox': 1, 'utilities': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- wireless.api.serializers_.nested -> netbox.api.serializers [fg:imports:wireless.api.serializers_.nested->netbox.api.serializers]
+- wireless.api.serializers_.wirelesslans -> dcim.constants [fg:imports:wireless.api.serializers_.wirelesslans->dcim.constants]
+- wireless.api.serializers_.wirelesslans -> ipam.api.serializers_.vlans [fg:imports:wireless.api.serializers_.wirelesslans->ipam.api.serializers_.vlans]
+- wireless.api.serializers_.wirelesslans -> netbox.api.fields [fg:imports:wireless.api.serializers_.wirelesslans->netbox.api.fields]
+- wireless.api.serializers_.wirelesslans -> netbox.api.serializers [fg:imports:wireless.api.serializers_.wirelesslans->netbox.api.serializers]
+- wireless.api.serializers_.wirelesslans -> tenancy.api.serializers_.tenants [fg:imports:wireless.api.serializers_.wirelesslans->tenancy.api.serializers_.tenants]
+- wireless.api.serializers_.wirelesslans -> utilities.api [fg:imports:wireless.api.serializers_.wirelesslans->utilities.api]
+- wireless.api.serializers_.wirelesslinks -> dcim.api.serializers_.device_components [fg:imports:wireless.api.serializers_.wirelesslinks->dcim.api.serializers_.device_components]
+- wireless.api.serializers_.wirelesslinks -> dcim.choices [fg:imports:wireless.api.serializers_.wirelesslinks->dcim.choices]
+- wireless.api.serializers_.wirelesslinks -> netbox.api.fields [fg:imports:wireless.api.serializers_.wirelesslinks->netbox.api.fields]
+- wireless.api.serializers_.wirelesslinks -> netbox.api.serializers [fg:imports:wireless.api.serializers_.wirelesslinks->netbox.api.serializers]
+- wireless.api.serializers_.wirelesslinks -> netbox.choices [fg:imports:wireless.api.serializers_.wirelesslinks->netbox.choices]
+- wireless.api.serializers_.wirelesslinks -> tenancy.api.serializers_.tenants [fg:imports:wireless.api.serializers_.wirelesslinks->tenancy.api.serializers_.tenants]
+- wireless.api.urls -> netbox.api.routers [fg:imports:wireless.api.urls->netbox.api.routers]
+- wireless.api.views -> netbox.api.viewsets [fg:imports:wireless.api.views->netbox.api.viewsets]
+- wireless.apps -> netbox.models.features [fg:imports:wireless.apps->netbox.models.features]
+- wireless.choices -> utilities.choices [fg:imports:wireless.choices->utilities.choices]
+- wireless.filtersets -> dcim.base_filtersets [fg:imports:wireless.filtersets->dcim.base_filtersets]
+- wireless.filtersets -> dcim.choices [fg:imports:wireless.filtersets->dcim.choices]
+- wireless.filtersets -> dcim.models [fg:imports:wireless.filtersets->dcim.models]
+- wireless.filtersets -> ipam.models [fg:imports:wireless.filtersets->ipam.models]
+- wireless.filtersets -> netbox.filtersets [fg:imports:wireless.filtersets->netbox.filtersets]
+- wireless.filtersets -> tenancy.filtersets [fg:imports:wireless.filtersets->tenancy.filtersets]
+- wireless.filtersets -> utilities.filters [fg:imports:wireless.filtersets->utilities.filters]
+- wireless.forms.bulk_edit -> dcim.choices [fg:imports:wireless.forms.bulk_edit->dcim.choices]
+- wireless.forms.bulk_edit -> dcim.forms.mixins [fg:imports:wireless.forms.bulk_edit->dcim.forms.mixins]
+- wireless.forms.bulk_edit -> ipam.models [fg:imports:wireless.forms.bulk_edit->ipam.models]
+- wireless.forms.bulk_edit -> netbox.choices [fg:imports:wireless.forms.bulk_edit->netbox.choices]
+- wireless.forms.bulk_edit -> netbox.forms [fg:imports:wireless.forms.bulk_edit->netbox.forms]
+- wireless.forms.bulk_edit -> tenancy.models [fg:imports:wireless.forms.bulk_edit->tenancy.models]
+- wireless.forms.bulk_edit -> utilities.forms [fg:imports:wireless.forms.bulk_edit->utilities.forms]
+- wireless.forms.bulk_edit -> utilities.forms.fields [fg:imports:wireless.forms.bulk_edit->utilities.forms.fields]
+- wireless.forms.bulk_edit -> utilities.forms.rendering [fg:imports:wireless.forms.bulk_edit->utilities.forms.rendering]
+- wireless.forms.bulk_import -> dcim.choices [fg:imports:wireless.forms.bulk_import->dcim.choices]
+- wireless.forms.bulk_import -> dcim.forms.mixins [fg:imports:wireless.forms.bulk_import->dcim.forms.mixins]
+- wireless.forms.bulk_import -> dcim.models [fg:imports:wireless.forms.bulk_import->dcim.models]
+- wireless.forms.bulk_import -> ipam.models [fg:imports:wireless.forms.bulk_import->ipam.models]
+- wireless.forms.bulk_import -> netbox.choices [fg:imports:wireless.forms.bulk_import->netbox.choices]
+- wireless.forms.bulk_import -> netbox.forms [fg:imports:wireless.forms.bulk_import->netbox.forms]
+- wireless.forms.bulk_import -> tenancy.models [fg:imports:wireless.forms.bulk_import->tenancy.models]
+- wireless.forms.bulk_import -> utilities.forms.fields [fg:imports:wireless.forms.bulk_import->utilities.forms.fields]
+- wireless.forms.filtersets -> dcim.choices [fg:imports:wireless.forms.filtersets->dcim.choices]
+- wireless.forms.filtersets -> dcim.models [fg:imports:wireless.forms.filtersets->dcim.models]
+- wireless.forms.filtersets -> netbox.choices [fg:imports:wireless.forms.filtersets->netbox.choices]
+- wireless.forms.filtersets -> netbox.forms [fg:imports:wireless.forms.filtersets->netbox.forms]
+- wireless.forms.filtersets -> tenancy.forms [fg:imports:wireless.forms.filtersets->tenancy.forms]
+- wireless.forms.filtersets -> utilities.forms [fg:imports:wireless.forms.filtersets->utilities.forms]
+- wireless.forms.filtersets -> utilities.forms.fields [fg:imports:wireless.forms.filtersets->utilities.forms.fields]
+- wireless.forms.filtersets -> utilities.forms.rendering [fg:imports:wireless.forms.filtersets->utilities.forms.rendering]
+- wireless.forms.model_forms -> dcim.forms.mixins [fg:imports:wireless.forms.model_forms->dcim.forms.mixins]
+- wireless.forms.model_forms -> dcim.models [fg:imports:wireless.forms.model_forms->dcim.models]
+- wireless.forms.model_forms -> ipam.models [fg:imports:wireless.forms.model_forms->ipam.models]
+- wireless.forms.model_forms -> netbox.forms [fg:imports:wireless.forms.model_forms->netbox.forms]
+- wireless.forms.model_forms -> tenancy.forms [fg:imports:wireless.forms.model_forms->tenancy.forms]
+- wireless.forms.model_forms -> utilities.forms.fields [fg:imports:wireless.forms.model_forms->utilities.forms.fields]
+- wireless.forms.model_forms -> utilities.forms.mixins [fg:imports:wireless.forms.model_forms->utilities.forms.mixins]
+- wireless.forms.model_forms -> utilities.forms.rendering [fg:imports:wireless.forms.model_forms->utilities.forms.rendering]
+- wireless.graphql.filter_mixins -> core.graphql.filter_mixins [fg:imports:wireless.graphql.filter_mixins->core.graphql.filter_mixins]
+- wireless.graphql.filters -> dcim.graphql.filter_mixins [fg:imports:wireless.graphql.filters->dcim.graphql.filter_mixins]
+- wireless.graphql.filters -> dcim.graphql.filters [fg:imports:wireless.graphql.filters->dcim.graphql.filters]
+- wireless.graphql.filters -> ipam.graphql.filters [fg:imports:wireless.graphql.filters->ipam.graphql.filters]
+- wireless.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:wireless.graphql.filters->netbox.graphql.filter_mixins]
+- wireless.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:wireless.graphql.filters->tenancy.graphql.filter_mixins]
+- wireless.graphql.types -> dcim.graphql.types [fg:imports:wireless.graphql.types->dcim.graphql.types]
+- wireless.graphql.types -> ipam.graphql.types [fg:imports:wireless.graphql.types->ipam.graphql.types]
+- wireless.graphql.types -> netbox.graphql.types [fg:imports:wireless.graphql.types->netbox.graphql.types]
+- wireless.graphql.types -> tenancy.graphql.types [fg:imports:wireless.graphql.types->tenancy.graphql.types]
+- wireless.migrations.0001_squashed_0008 -> utilities.json [fg:imports:wireless.migrations.0001_squashed_0008->utilities.json]
+- wireless.models -> dcim.choices [fg:imports:wireless.models->dcim.choices]
+- wireless.models -> dcim.constants [fg:imports:wireless.models->dcim.constants]
+- wireless.models -> dcim.models.mixins [fg:imports:wireless.models->dcim.models.mixins]
+- wireless.models -> netbox.models [fg:imports:wireless.models->netbox.models]
+- wireless.models -> netbox.models.mixins [fg:imports:wireless.models->netbox.models.mixins]
+- wireless.search -> netbox.search [fg:imports:wireless.search->netbox.search]
+- wireless.signals -> dcim.exceptions [fg:imports:wireless.signals->dcim.exceptions]
+- wireless.signals -> dcim.models [fg:imports:wireless.signals->dcim.models]
+- wireless.signals -> dcim.utils [fg:imports:wireless.signals->dcim.utils]
+- wireless.signals -> utilities.exceptions [fg:imports:wireless.signals->utilities.exceptions]
+- wireless.tables.wirelesslan -> dcim.models [fg:imports:wireless.tables.wirelesslan->dcim.models]
+- wireless.tables.wirelesslan -> netbox.tables [fg:imports:wireless.tables.wirelesslan->netbox.tables]
+- wireless.tables.wirelesslan -> tenancy.tables [fg:imports:wireless.tables.wirelesslan->tenancy.tables]
+- wireless.tables.wirelesslink -> netbox.tables [fg:imports:wireless.tables.wirelesslink->netbox.tables]
+- wireless.tables.wirelesslink -> tenancy.tables [fg:imports:wireless.tables.wirelesslink->tenancy.tables]
+- wireless.tests.test_api -> dcim.choices [fg:imports:wireless.tests.test_api->dcim.choices]
+- wireless.tests.test_api -> dcim.models [fg:imports:wireless.tests.test_api->dcim.models]
+- wireless.tests.test_api -> tenancy.models [fg:imports:wireless.tests.test_api->tenancy.models]
+- wireless.tests.test_api -> utilities.testing [fg:imports:wireless.tests.test_api->utilities.testing]
+- wireless.tests.test_filtersets -> dcim.choices [fg:imports:wireless.tests.test_filtersets->dcim.choices]
+- wireless.tests.test_filtersets -> dcim.models [fg:imports:wireless.tests.test_filtersets->dcim.models]
+- wireless.tests.test_filtersets -> ipam.models [fg:imports:wireless.tests.test_filtersets->ipam.models]
+- wireless.tests.test_filtersets -> netbox.choices [fg:imports:wireless.tests.test_filtersets->netbox.choices]
+- wireless.tests.test_filtersets -> tenancy.models [fg:imports:wireless.tests.test_filtersets->tenancy.models]
+- wireless.tests.test_filtersets -> utilities.testing [fg:imports:wireless.tests.test_filtersets->utilities.testing]
+- wireless.tests.test_views -> dcim.choices [fg:imports:wireless.tests.test_views->dcim.choices]
+- wireless.tests.test_views -> dcim.models [fg:imports:wireless.tests.test_views->dcim.models]
+- wireless.tests.test_views -> netbox.choices [fg:imports:wireless.tests.test_views->netbox.choices]
+- wireless.tests.test_views -> tenancy.models [fg:imports:wireless.tests.test_views->tenancy.models]
+- wireless.tests.test_views -> utilities.testing [fg:imports:wireless.tests.test_views->utilities.testing]
+- wireless.urls -> utilities.urls [fg:imports:wireless.urls->utilities.urls]
+- wireless.views -> dcim.models [fg:imports:wireless.views->dcim.models]
+- wireless.views -> netbox.views [fg:imports:wireless.views->netbox.views]
+- wireless.views -> utilities.query [fg:imports:wireless.views->utilities.query]
+- wireless.views -> utilities.views [fg:imports:wireless.views->utilities.views]
+
+## Inbound imports from OTHER subsystems (src -> dst)
+- dcim.api.serializers_.device_components -> wireless.api.serializers_.nested [fg:imports:dcim.api.serializers_.device_components->wireless.api.serializers_.nested]
+- dcim.api.serializers_.device_components -> wireless.api.serializers_.wirelesslans [fg:imports:dcim.api.serializers_.device_components->wireless.api.serializers_.wirelesslans]
+- dcim.api.serializers_.device_components -> wireless.choices [fg:imports:dcim.api.serializers_.device_components->wireless.choices]
+- dcim.api.serializers_.device_components -> wireless.models [fg:imports:dcim.api.serializers_.device_components->wireless.models]
+- dcim.api.serializers_.devicetype_components -> wireless.choices [fg:imports:dcim.api.serializers_.devicetype_components->wireless.choices]
+- dcim.filtersets -> wireless.choices [fg:imports:dcim.filtersets->wireless.choices]
+- dcim.filtersets -> wireless.models [fg:imports:dcim.filtersets->wireless.models]
+- dcim.forms.bulk_edit -> wireless.choices [fg:imports:dcim.forms.bulk_edit->wireless.choices]
+- dcim.forms.bulk_edit -> wireless.models [fg:imports:dcim.forms.bulk_edit->wireless.models]
+- dcim.forms.bulk_import -> wireless.choices [fg:imports:dcim.forms.bulk_import->wireless.choices]
+- dcim.forms.filtersets -> wireless.choices [fg:imports:dcim.forms.filtersets->wireless.choices]
+- dcim.forms.model_forms -> wireless.models [fg:imports:dcim.forms.model_forms->wireless.models]
+- dcim.forms.object_import -> wireless.choices [fg:imports:dcim.forms.object_import->wireless.choices]
+- dcim.graphql.filters -> wireless.graphql.enums [fg:imports:dcim.graphql.filters->wireless.graphql.enums]
+- dcim.graphql.filters -> wireless.graphql.filters [fg:imports:dcim.graphql.filters->wireless.graphql.filters]
+- dcim.graphql.types -> wireless.graphql.types [fg:imports:dcim.graphql.types->wireless.graphql.types]
+- dcim.models.cables -> wireless.models [fg:imports:dcim.models.cables->wireless.models]
+- dcim.models.device_component_templates -> wireless.choices [fg:imports:dcim.models.device_component_templates->wireless.choices]
+- dcim.models.device_components -> wireless.choices [fg:imports:dcim.models.device_components->wireless.choices]
+- dcim.models.device_components -> wireless.utils [fg:imports:dcim.models.device_components->wireless.utils]
+- dcim.svg.cables -> wireless.models [fg:imports:dcim.svg.cables->wireless.models]
+- dcim.tests.test_api -> wireless.choices [fg:imports:dcim.tests.test_api->wireless.choices]
+- dcim.tests.test_api -> wireless.models [fg:imports:dcim.tests.test_api->wireless.models]
+- dcim.tests.test_filtersets -> wireless.choices [fg:imports:dcim.tests.test_filtersets->wireless.choices]
+- dcim.tests.test_filtersets -> wireless.models [fg:imports:dcim.tests.test_filtersets->wireless.models]
+- dcim.tests.test_views -> wireless.models [fg:imports:dcim.tests.test_views->wireless.models]
+- dcim.views -> wireless.models [fg:imports:dcim.views->wireless.models]
+- extras.tests.test_utils -> wireless.models [fg:imports:extras.tests.test_utils->wireless.models]
+- ipam.graphql.types -> wireless.graphql.types [fg:imports:ipam.graphql.types->wireless.graphql.types]
+- netbox.graphql.schema -> wireless.graphql.schema [fg:imports:netbox.graphql.schema->wireless.graphql.schema]
+- tenancy.graphql.filters -> wireless.graphql.filters [fg:imports:tenancy.graphql.filters->wireless.graphql.filters]
+- tenancy.graphql.types -> wireless.graphql.types [fg:imports:tenancy.graphql.types->wireless.graphql.types]
+- utilities.tests.test_filters -> wireless.choices [fg:imports:utilities.tests.test_filters->wireless.choices]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- wireless.migrations.0010_charfield_null_choices | . | get_model | wireless.WirelessLAN |  [fg:model_refs:wireless.migrations.0010_charfield_null_choices:8]
+- wireless.migrations.0010_charfield_null_choices | . | get_model | wireless.WirelessLink |  [fg:model_refs:wireless.migrations.0010_charfield_null_choices:9]
+- wireless.models | WirelessLAN.group | ForeignKey | wireless.WirelessLANGroup |  [fg:model_refs:wireless.models:84]
+- wireless.models | WirelessLAN.vlan | ForeignKey | ipam.VLAN | cross [fg:model_refs:wireless.models:97]
+- wireless.models | WirelessLAN.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:wireless.models:104]
+- wireless.models | WirelessLink.interface_a | ForeignKey | dcim.Interface | cross [fg:model_refs:wireless.models:130]
+- wireless.models | WirelessLink.interface_b | ForeignKey | dcim.Interface | cross [fg:model_refs:wireless.models:136]
+- wireless.models | WirelessLink.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:wireless.models:153]
+- wireless.models | WirelessLink._interface_a_device | ForeignKey | dcim.Device | cross [fg:model_refs:wireless.models:163]
+- wireless.models | WirelessLink._interface_b_device | ForeignKey | dcim.Device | cross [fg:model_refs:wireless.models:170]
+
+## String references INTO this subsystem from others
+- dcim.models.device_components | Interface.wireless_link | ForeignKey -> wireless.WirelessLink [fg:model_refs:dcim.models.device_components:742]
+- dcim.models.device_components | Interface.wireless_lans | ManyToManyField -> wireless.WirelessLAN [fg:model_refs:dcim.models.device_components:749]
+
+## Churn (id = churn:<module>)
+- wireless.models | 45 commits | 6 authors | 2021-10-12 .. 2025-06-16 [fg:churn:wireless.models]
+- wireless.forms.bulk_edit | 28 commits | 6 authors | 2021-10-12 .. 2025-03-11 [fg:churn:wireless.forms.bulk_edit]
+- wireless.filtersets | 27 commits | 5 authors | 2021-10-12 .. 2025-03-13 [fg:churn:wireless.filtersets]
+- wireless.forms.filtersets | 25 commits | 4 authors | 2021-10-12 .. 2024-11-07 [fg:churn:wireless.forms.filtersets]
+- wireless.forms.bulk_import | 24 commits | 6 authors | 2021-10-12 .. 2025-06-16 [fg:churn:wireless.forms.bulk_import]
+- wireless.views | 22 commits | 3 authors | 2021-10-12 .. 2025-04-25 [fg:churn:wireless.views]
+- wireless.api.serializers | 20 commits | 2 authors | 2021-10-12 .. 2024-08-14 [fg:churn:wireless.api.serializers]
+- wireless.forms.model_forms | 18 commits | 6 authors | 2022-10-25 .. 2025-05-19 [fg:churn:wireless.forms.model_forms]
+- wireless.choices | 13 commits | 4 authors | 2021-10-15 .. 2024-10-10 [fg:churn:wireless.choices]
+- wireless.graphql.types | 13 commits | 4 authors | 2021-10-12 .. 2025-03-20 [fg:churn:wireless.graphql.types]
+- wireless.tests.test_views | 13 commits | 5 authors | 2021-10-20 .. 2025-06-16 [fg:churn:wireless.tests.test_views]
+- wireless.tests.test_filtersets | 12 commits | 5 authors | 2021-10-20 .. 2025-03-11 [fg:churn:wireless.tests.test_filtersets]
+- wireless.tables.wirelesslan | 9 commits | 4 authors | 2022-03-03 .. 2025-01-16 [fg:churn:wireless.tables.wirelesslan]
+- wireless.tests.test_api | 9 commits | 5 authors | 2021-10-20 .. 2025-03-11 [fg:churn:wireless.tests.test_api]
+- wireless.api.views | 8 commits | 3 authors | 2021-10-12 .. 2024-02-14 [fg:churn:wireless.api.views]
+- wireless.signals | 8 commits | 2 authors | 2021-10-13 .. 2025-03-04 [fg:churn:wireless.signals]
+- wireless.urls | 8 commits | 2 authors | 2021-10-12 .. 2024-11-20 [fg:churn:wireless.urls]
+- wireless.api.serializers_.wirelesslans | 7 commits | 3 authors | 2024-02-27 .. 2025-03-11 [fg:churn:wireless.api.serializers_.wirelesslans]
+- wireless.api.urls | 7 commits | 1 authors | 2021-10-12 .. 2022-07-13 [fg:churn:wireless.api.urls]
+- wireless.graphql.schema | 7 commits | 3 authors | 2021-10-12 .. 2024-08-28 [fg:churn:wireless.graphql.schema]
+- wireless.api.serializers_.wirelesslinks | 6 commits | 2 authors | 2024-02-27 .. 2024-10-11 [fg:churn:wireless.api.serializers_.wirelesslinks]
+- wireless.search | 6 commits | 5 authors | 2022-10-10 .. 2025-03-11 [fg:churn:wireless.search]
+- wireless.tables.wirelesslink | 6 commits | 2 authors | 2022-03-03 .. 2024-10-10 [fg:churn:wireless.tables.wirelesslink]
+- wireless.apps | 5 commits | 3 authors | 2021-10-12 .. 2024-10-10 [fg:churn:wireless.apps]
+- wireless.migrations.0001_squashed_0008 | 4 commits | 2 authors | 2024-01-24 .. 2025-04-03 [fg:churn:wireless.migrations.0001_squashed_0008]
+
+## Entry points (id = entrypoints:<module>)
+- urls | wireless.api.urls | netbox/wireless/api/urls.py [fg:entrypoints:wireless.api.urls]
+- api_views | wireless.api.views | netbox/wireless/api/views.py [fg:entrypoints:wireless.api.views]
+- signals | wireless.signals | netbox/wireless/signals.py [fg:entrypoints:wireless.signals]
+- urls | wireless.urls | netbox/wireless/urls.py [fg:entrypoints:wireless.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>)
+- wireless.api.serializers_.nested: NestedWirelessLANGroupSerializer, NestedWirelessLinkSerializer
+- wireless.api.serializers_.wirelesslans: WirelessLANGroupSerializer, WirelessLANSerializer
+- wireless.api.serializers_.wirelesslinks: WirelessLinkSerializer
+- wireless.api.views: WirelessRootView, WirelessLANGroupViewSet, WirelessLANViewSet, WirelessLinkViewSet
+- wireless.apps: WirelessConfig
+- wireless.choices: WirelessRoleChoices, WirelessLANStatusChoices, WirelessChannelChoices, WirelessAuthTypeChoices, WirelessAuthCipherChoices
+- wireless.filtersets: WirelessLANGroupFilterSet, WirelessLANFilterSet, WirelessLinkFilterSet
+- wireless.forms.bulk_edit: WirelessLANGroupBulkEditForm, WirelessLANBulkEditForm, WirelessLinkBulkEditForm
+- wireless.forms.bulk_import: WirelessLANGroupImportForm, WirelessLANImportForm, WirelessLinkImportForm
+- wireless.forms.filtersets: WirelessLANGroupFilterForm, WirelessLANFilterForm, WirelessLinkFilterForm
+- wireless.forms.model_forms: WirelessLANGroupForm, WirelessLANForm, WirelessLinkForm
+- wireless.graphql.filter_mixins: WirelessAuthenticationBaseFilterMixin
+- wireless.graphql.filters: WirelessLANGroupFilter, WirelessLANFilter, WirelessLinkFilter
+- wireless.graphql.schema: WirelessQuery
+- wireless.graphql.types: WirelessLANGroupType, WirelessLANType, WirelessLinkType
+- wireless.migrations.0001_squashed_0008: Migration
+- wireless.migrations.0009_wirelesslink_distance: Migration
+- wireless.migrations.0010_charfield_null_choices: Migration
+- wireless.migrations.0011_wirelesslan__location_wirelesslan__region_and_more: Migration
+- wireless.migrations.0012_alter_wirelesslan__location_and_more: Migration
+- wireless.migrations.0013_natural_ordering: Migration
+- wireless.migrations.0014_wirelesslangroup_comments: Migration
+- wireless.migrations.0015_extend_wireless_link_abs_distance_upper_limit: Migration
+- wireless.models: WirelessAuthenticationBase, WirelessLANGroup, WirelessLAN, WirelessLink
+- wireless.search: WirelessLANIndex, WirelessLANGroupIndex, WirelessLinkIndex
+- wireless.tables.wirelesslan: WirelessLANGroupTable, WirelessLANTable, WirelessLANInterfacesTable
+- wireless.tables.wirelesslink: WirelessLinkTable
+- wireless.tests.test_api: AppTest, WirelessLANGroupTest, WirelessLANTest, WirelessLinkTest
+- wireless.tests.test_filtersets: WirelessLANGroupTestCase, WirelessLANTestCase, WirelessLinkTestCase
+- wireless.tests.test_views: WirelessLANGroupTestCase, WirelessLANTestCase, WirelessLinkTestCase
+- wireless.views: WirelessLANGroupListView, WirelessLANGroupView, WirelessLANGroupEditView, WirelessLANGroupDeleteView, WirelessLANGroupBulkImportView, WirelessLANGroupBulkEditView, WirelessLANGroupBulkDeleteView, WirelessLANListView, WirelessLANView, WirelessLANEditView, WirelessLANDeleteView, WirelessLANBulkImportView, WirelessLANBulkEditView, WirelessLANBulkDeleteView, WirelessLinkListView, WirelessLinkView, WirelessLinkEditView, WirelessLinkDeleteView, WirelessLinkBulkImportView, WirelessLinkBulkEditView, WirelessLinkBulkDeleteView

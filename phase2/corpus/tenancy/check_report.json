@@ -1,0 +1,26 @@
+{
+ "subsystem": "tenancy",
+ "files": {
+  "adrs.md": {
+   "claims_kept": 29,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "map.md": {
+   "claims_kept": 42,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "patterns.md": {
+   "claims_kept": 33,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  }
+ }
+}

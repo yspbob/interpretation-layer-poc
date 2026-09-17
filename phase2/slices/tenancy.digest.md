@@ -1,0 +1,358 @@
+# Fact-graph digest: subsystem `tenancy` at T0 ea4c205
+
+Summary row [fg:subsystems:tenancy]: {'subsystem': 'tenancy', 'modules': 41, 'loc_code': 3688, 'loc_data': 0, 'test_modules': 4}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- tenancy | netbox/tenancy/__init__.py | 1 | 0 | 0 |  | 
+- tenancy.api | netbox/tenancy/api/__init__.py | 1 | 0 | 0 |  | 
+- tenancy.api.serializers | netbox/tenancy/api/serializers.py | 3 | 0 | 0 |  | 
+- tenancy.api.serializers_ | netbox/tenancy/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- tenancy.api.serializers_.contacts | netbox/tenancy/api/serializers_/contacts.py | 85 | 4 | 0 |  | 
+- tenancy.api.serializers_.nested | netbox/tenancy/api/serializers_/nested.py | 35 | 2 | 0 |  | 
+- tenancy.api.serializers_.tenants | netbox/tenancy/api/serializers_/tenants.py | 51 | 2 | 0 |  | 
+- tenancy.api.urls | netbox/tenancy/api/urls.py | 20 | 0 | 0 |  | 
+- tenancy.api.views | netbox/tenancy/api/views.py | 71 | 7 | 0 |  | 
+- tenancy.apps | netbox/tenancy/apps.py | 13 | 1 | 0 |  | 
+- tenancy.choices | netbox/tenancy/choices.py | 22 | 1 | 0 |  | 
+- tenancy.filtersets | netbox/tenancy/filtersets.py | 258 | 8 | 0 |  | 
+- tenancy.forms | netbox/tenancy/forms/__init__.py | 6 | 0 | 0 |  | 
+- tenancy.forms.bulk_edit | netbox/tenancy/forms/bulk_edit.py | 169 | 6 | 0 |  | 
+- tenancy.forms.bulk_import | netbox/tenancy/forms/bulk_import.py | 111 | 6 | 0 |  | 
+- tenancy.forms.filtersets | netbox/tenancy/forms/filtersets.py | 115 | 6 | 0 |  | 
+- tenancy.forms.forms | netbox/tenancy/forms/forms.py | 69 | 3 | 0 |  | 
+- tenancy.forms.model_forms | netbox/tenancy/forms/model_forms.py | 156 | 6 | 0 |  | 
+- tenancy.graphql | netbox/tenancy/graphql/__init__.py | 1 | 0 | 0 |  | 
+- tenancy.graphql.enums | netbox/tenancy/graphql/enums.py | 10 | 0 | 0 |  | 
+- tenancy.graphql.filter_mixins | netbox/tenancy/graphql/filter_mixins.py | 39 | 2 | 0 |  | 
+- tenancy.graphql.filters | netbox/tenancy/graphql/filters.py | 197 | 6 | 0 |  | 
+- tenancy.graphql.mixins | netbox/tenancy/graphql/mixins.py | 13 | 1 | 0 |  | 
+- tenancy.graphql.schema | netbox/tenancy/graphql/schema.py | 28 | 1 | 0 |  | 
+- tenancy.graphql.types | netbox/tenancy/graphql/types.py | 148 | 6 | 0 |  | 
+- tenancy.migrations | netbox/tenancy/migrations/__init__.py | 1 | 0 | 0 |  | 
+- tenancy.migrations.0001_squashed_0012 | netbox/tenancy/migrations/0001_squashed_0012.py | 88 | 1 | 0 |  | migration
+- tenancy.migrations.0002_squashed_0011 | netbox/tenancy/migrations/0002_squashed_0011.py | 244 | 1 | 0 |  | migration
+- tenancy.migrations.0012_contactassignment_custom_fields | netbox/tenancy/migrations/0012_contactassignment_custom_fields.py | 19 | 1 | 0 |  | migration
+- tenancy.migrations.0013_gfk_indexes | netbox/tenancy/migrations/0013_gfk_indexes.py | 17 | 1 | 0 |  | migration
+- tenancy.migrations.0014_contactassignment_ordering | netbox/tenancy/migrations/0014_contactassignment_ordering.py | 17 | 1 | 0 |  | migration
+- tenancy.migrations.0015_contactassignment_rename_content_type | netbox/tenancy/migrations/0015_contactassignment_rename_content_type.py | 37 | 1 | 0 |  | migration
+- tenancy.migrations.0016_charfield_null_choices | netbox/tenancy/migrations/0016_charfield_null_choices.py | 27 | 1 | 1 |  | migration
+- tenancy.migrations.0017_natural_ordering | netbox/tenancy/migrations/0017_natural_ordering.py | 27 | 1 | 0 |  | migration
+- tenancy.migrations.0018_contact_groups | netbox/tenancy/migrations/0018_contact_groups.py | 83 | 1 | 2 |  | migration
+- tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments | netbox/tenancy/migrations/0019_contactgroup_comments_tenantgroup_comments.py | 22 | 1 | 0 |  | migration
+- tenancy.migrations.0020_remove_contactgroupmembership | netbox/tenancy/migrations/0020_remove_contactgroupmembership.py | 72 | 1 | 0 |  | migration
+- tenancy.models | netbox/tenancy/models/__init__.py | 3 | 0 | 0 |  | 
+- tenancy.models.contacts | netbox/tenancy/models/contacts.py | 163 | 4 | 0 |  | 
+- tenancy.models.tenants | netbox/tenancy/models/tenants.py | 91 | 2 | 0 |  | 
+- tenancy.search | netbox/tenancy/search.py | 66 | 5 | 0 |  | 
+- tenancy.tables | netbox/tenancy/tables/__init__.py | 4 | 0 | 0 |  | 
+- tenancy.tables.columns | netbox/tenancy/tables/columns.py | 59 | 4 | 0 |  | 
+- tenancy.tables.contacts | netbox/tenancy/tables/contacts.py | 157 | 4 | 0 |  | 
+- tenancy.tables.template_code | netbox/tenancy/tables/template_code.py | 20 | 0 | 0 |  | 
+- tenancy.tables.tenants | netbox/tenancy/tables/tenants.py | 63 | 2 | 0 |  | 
+- tenancy.tests | netbox/tenancy/tests/__init__.py | 1 | 0 | 0 | test | 
+- tenancy.tests.test_api | netbox/tenancy/tests/test_api.py | 302 | 7 | 0 | test | 
+- tenancy.tests.test_filtersets | netbox/tenancy/tests/test_filtersets.py | 379 | 6 | 0 | test | 
+- tenancy.tests.test_views | netbox/tenancy/tests/test_views.py | 324 | 6 | 0 | test | 
+- tenancy.urls | netbox/tenancy/urls.py | 28 | 0 | 0 |  | 
+- tenancy.views | netbox/tenancy/views.py | 404 | 41 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'tenancy': 56, 'netbox': 27, 'utilities': 22, 'core': 6, 'dcim': 5, 'circuits': 2, 'extras': 2, 'ipam': 2, 'virtualization': 2, 'vpn': 2, 'wireless': 2}
+Inbound by source subsystem: {'dcim': 23, 'ipam': 18, 'wireless': 14, 'virtualization': 13, 'circuits': 12, 'extras': 11, 'vpn': 11, 'netbox': 6}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- tenancy.api.serializers_.contacts -> netbox.api.fields [fg:imports:tenancy.api.serializers_.contacts->netbox.api.fields]
+- tenancy.api.serializers_.contacts -> netbox.api.serializers [fg:imports:tenancy.api.serializers_.contacts->netbox.api.serializers]
+- tenancy.api.serializers_.contacts -> utilities.api [fg:imports:tenancy.api.serializers_.contacts->utilities.api]
+- tenancy.api.serializers_.nested -> netbox.api.serializers [fg:imports:tenancy.api.serializers_.nested->netbox.api.serializers]
+- tenancy.api.serializers_.tenants -> netbox.api.fields [fg:imports:tenancy.api.serializers_.tenants->netbox.api.fields]
+- tenancy.api.serializers_.tenants -> netbox.api.serializers [fg:imports:tenancy.api.serializers_.tenants->netbox.api.serializers]
+- tenancy.api.urls -> netbox.api.routers [fg:imports:tenancy.api.urls->netbox.api.routers]
+- tenancy.api.views -> netbox.api.viewsets [fg:imports:tenancy.api.views->netbox.api.viewsets]
+- tenancy.apps -> netbox.models.features [fg:imports:tenancy.apps->netbox.models.features]
+- tenancy.choices -> utilities.choices [fg:imports:tenancy.choices->utilities.choices]
+- tenancy.filtersets -> netbox.filtersets [fg:imports:tenancy.filtersets->netbox.filtersets]
+- tenancy.filtersets -> utilities.filters [fg:imports:tenancy.filtersets->utilities.filters]
+- tenancy.forms.bulk_edit -> netbox.forms [fg:imports:tenancy.forms.bulk_edit->netbox.forms]
+- tenancy.forms.bulk_edit -> utilities.forms [fg:imports:tenancy.forms.bulk_edit->utilities.forms]
+- tenancy.forms.bulk_edit -> utilities.forms.fields [fg:imports:tenancy.forms.bulk_edit->utilities.forms.fields]
+- tenancy.forms.bulk_edit -> utilities.forms.rendering [fg:imports:tenancy.forms.bulk_edit->utilities.forms.rendering]
+- tenancy.forms.bulk_import -> netbox.forms [fg:imports:tenancy.forms.bulk_import->netbox.forms]
+- tenancy.forms.bulk_import -> utilities.forms.fields [fg:imports:tenancy.forms.bulk_import->utilities.forms.fields]
+- tenancy.forms.filtersets -> core.models [fg:imports:tenancy.forms.filtersets->core.models]
+- tenancy.forms.filtersets -> netbox.forms [fg:imports:tenancy.forms.filtersets->netbox.forms]
+- tenancy.forms.filtersets -> utilities.forms.fields [fg:imports:tenancy.forms.filtersets->utilities.forms.fields]
+- tenancy.forms.filtersets -> utilities.forms.rendering [fg:imports:tenancy.forms.filtersets->utilities.forms.rendering]
+- tenancy.forms.forms -> utilities.forms.fields [fg:imports:tenancy.forms.forms->utilities.forms.fields]
+- tenancy.forms.model_forms -> netbox.forms [fg:imports:tenancy.forms.model_forms->netbox.forms]
+- tenancy.forms.model_forms -> utilities.forms.fields [fg:imports:tenancy.forms.model_forms->utilities.forms.fields]
+- tenancy.forms.model_forms -> utilities.forms.rendering [fg:imports:tenancy.forms.model_forms->utilities.forms.rendering]
+- tenancy.graphql.filter_mixins -> core.graphql.filter_mixins [fg:imports:tenancy.graphql.filter_mixins->core.graphql.filter_mixins]
+- tenancy.graphql.filter_mixins -> netbox.graphql.filter_lookups [fg:imports:tenancy.graphql.filter_mixins->netbox.graphql.filter_lookups]
+- tenancy.graphql.filters -> circuits.graphql.filters [fg:imports:tenancy.graphql.filters->circuits.graphql.filters]
+- tenancy.graphql.filters -> core.graphql.filter_mixins [fg:imports:tenancy.graphql.filters->core.graphql.filter_mixins]
+- tenancy.graphql.filters -> core.graphql.filters [fg:imports:tenancy.graphql.filters->core.graphql.filters]
+- tenancy.graphql.filters -> dcim.graphql.filters [fg:imports:tenancy.graphql.filters->dcim.graphql.filters]
+- tenancy.graphql.filters -> extras.graphql.filter_mixins [fg:imports:tenancy.graphql.filters->extras.graphql.filter_mixins]
+- tenancy.graphql.filters -> ipam.graphql.filters [fg:imports:tenancy.graphql.filters->ipam.graphql.filters]
+- tenancy.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:tenancy.graphql.filters->netbox.graphql.filter_lookups]
+- tenancy.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:tenancy.graphql.filters->netbox.graphql.filter_mixins]
+- tenancy.graphql.filters -> virtualization.graphql.filters [fg:imports:tenancy.graphql.filters->virtualization.graphql.filters]
+- tenancy.graphql.filters -> vpn.graphql.filters [fg:imports:tenancy.graphql.filters->vpn.graphql.filters]
+- tenancy.graphql.filters -> wireless.graphql.filters [fg:imports:tenancy.graphql.filters->wireless.graphql.filters]
+- tenancy.graphql.types -> circuits.graphql.types [fg:imports:tenancy.graphql.types->circuits.graphql.types]
+- tenancy.graphql.types -> dcim.graphql.types [fg:imports:tenancy.graphql.types->dcim.graphql.types]
+- tenancy.graphql.types -> extras.graphql.mixins [fg:imports:tenancy.graphql.types->extras.graphql.mixins]
+- tenancy.graphql.types -> ipam.graphql.types [fg:imports:tenancy.graphql.types->ipam.graphql.types]
+- tenancy.graphql.types -> netbox.graphql.types [fg:imports:tenancy.graphql.types->netbox.graphql.types]
+- tenancy.graphql.types -> netbox.graphql.types [fg:imports:tenancy.graphql.types->netbox.graphql.types]
+- tenancy.graphql.types -> virtualization.graphql.types [fg:imports:tenancy.graphql.types->virtualization.graphql.types]
+- tenancy.graphql.types -> vpn.graphql.types [fg:imports:tenancy.graphql.types->vpn.graphql.types]
+- tenancy.graphql.types -> wireless.graphql.types [fg:imports:tenancy.graphql.types->wireless.graphql.types]
+- tenancy.migrations.0001_squashed_0012 -> utilities.json [fg:imports:tenancy.migrations.0001_squashed_0012->utilities.json]
+- tenancy.migrations.0002_squashed_0011 -> utilities.json [fg:imports:tenancy.migrations.0002_squashed_0011->utilities.json]
+- tenancy.migrations.0012_contactassignment_custom_fields -> utilities.json [fg:imports:tenancy.migrations.0012_contactassignment_custom_fields->utilities.json]
+- tenancy.models.contacts -> core.models [fg:imports:tenancy.models.contacts->core.models]
+- tenancy.models.contacts -> netbox.models [fg:imports:tenancy.models.contacts->netbox.models]
+- tenancy.models.contacts -> netbox.models.features [fg:imports:tenancy.models.contacts->netbox.models.features]
+- tenancy.models.tenants -> netbox.models [fg:imports:tenancy.models.tenants->netbox.models]
+- tenancy.models.tenants -> netbox.models.features [fg:imports:tenancy.models.tenants->netbox.models.features]
+- tenancy.search -> netbox.search [fg:imports:tenancy.search->netbox.search]
+- tenancy.tables.columns -> netbox.tables [fg:imports:tenancy.tables.columns->netbox.tables]
+- tenancy.tables.contacts -> netbox.tables [fg:imports:tenancy.tables.contacts->netbox.tables]
+- tenancy.tables.contacts -> utilities.tables [fg:imports:tenancy.tables.contacts->utilities.tables]
+- tenancy.tables.tenants -> netbox.tables [fg:imports:tenancy.tables.tenants->netbox.tables]
+- tenancy.tests.test_api -> dcim.models [fg:imports:tenancy.tests.test_api->dcim.models]
+- tenancy.tests.test_api -> utilities.testing [fg:imports:tenancy.tests.test_api->utilities.testing]
+- tenancy.tests.test_filtersets -> core.models [fg:imports:tenancy.tests.test_filtersets->core.models]
+- tenancy.tests.test_filtersets -> dcim.models [fg:imports:tenancy.tests.test_filtersets->dcim.models]
+- tenancy.tests.test_filtersets -> utilities.testing [fg:imports:tenancy.tests.test_filtersets->utilities.testing]
+- tenancy.tests.test_views -> dcim.models [fg:imports:tenancy.tests.test_views->dcim.models]
+- tenancy.tests.test_views -> utilities.testing [fg:imports:tenancy.tests.test_views->utilities.testing]
+- tenancy.urls -> utilities.urls [fg:imports:tenancy.urls->utilities.urls]
+- tenancy.views -> netbox.views [fg:imports:tenancy.views->netbox.views]
+- tenancy.views -> utilities.query [fg:imports:tenancy.views->utilities.query]
+- tenancy.views -> utilities.views [fg:imports:tenancy.views->utilities.views]
+
+## Inbound imports from OTHER subsystems (src -> dst)
+- circuits.api.serializers_.circuits -> tenancy.api.serializers_.tenants [fg:imports:circuits.api.serializers_.circuits->tenancy.api.serializers_.tenants]
+- circuits.filtersets -> tenancy.filtersets [fg:imports:circuits.filtersets->tenancy.filtersets]
+- circuits.forms.bulk_edit -> tenancy.models [fg:imports:circuits.forms.bulk_edit->tenancy.models]
+- circuits.forms.bulk_import -> tenancy.models [fg:imports:circuits.forms.bulk_import->tenancy.models]
+- circuits.forms.filtersets -> tenancy.forms [fg:imports:circuits.forms.filtersets->tenancy.forms]
+- circuits.forms.model_forms -> tenancy.forms [fg:imports:circuits.forms.model_forms->tenancy.forms]
+- circuits.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:circuits.graphql.filters->tenancy.graphql.filter_mixins]
+- circuits.graphql.types -> tenancy.graphql.types [fg:imports:circuits.graphql.types->tenancy.graphql.types]
+- circuits.tables.circuits -> tenancy.tables [fg:imports:circuits.tables.circuits->tenancy.tables]
+- circuits.tables.providers -> tenancy.tables [fg:imports:circuits.tables.providers->tenancy.tables]
+- circuits.tables.virtual_circuits -> tenancy.tables [fg:imports:circuits.tables.virtual_circuits->tenancy.tables]
+- circuits.tests.test_filtersets -> tenancy.models [fg:imports:circuits.tests.test_filtersets->tenancy.models]
+- dcim.api.serializers_.cables -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.cables->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.devices -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.devices->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.power -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.power->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.racks -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.racks->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.sites -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.sites->tenancy.api.serializers_.tenants]
+- dcim.filtersets -> tenancy.filtersets [fg:imports:dcim.filtersets->tenancy.filtersets]
+- dcim.filtersets -> tenancy.models [fg:imports:dcim.filtersets->tenancy.models]
+- dcim.forms.bulk_edit -> tenancy.models [fg:imports:dcim.forms.bulk_edit->tenancy.models]
+- dcim.forms.bulk_import -> tenancy.models [fg:imports:dcim.forms.bulk_import->tenancy.models]
+- dcim.forms.filtersets -> tenancy.forms [fg:imports:dcim.forms.filtersets->tenancy.forms]
+- dcim.forms.model_forms -> tenancy.forms [fg:imports:dcim.forms.model_forms->tenancy.forms]
+- dcim.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:dcim.graphql.filters->tenancy.graphql.filter_mixins]
+- dcim.graphql.types -> tenancy.graphql.types [fg:imports:dcim.graphql.types->tenancy.graphql.types]
+- dcim.tables.cables -> tenancy.tables [fg:imports:dcim.tables.cables->tenancy.tables]
+- dcim.tables.devices -> tenancy.tables [fg:imports:dcim.tables.devices->tenancy.tables]
+- dcim.tables.devicetypes -> tenancy.tables [fg:imports:dcim.tables.devicetypes->tenancy.tables]
+- dcim.tables.power -> tenancy.tables [fg:imports:dcim.tables.power->tenancy.tables]
+- dcim.tables.racks -> tenancy.tables [fg:imports:dcim.tables.racks->tenancy.tables]
+- dcim.tables.sites -> tenancy.tables [fg:imports:dcim.tables.sites->tenancy.tables]
+- dcim.tests.test_api -> tenancy.models [fg:imports:dcim.tests.test_api->tenancy.models]
+- dcim.tests.test_filtersets -> tenancy.models [fg:imports:dcim.tests.test_filtersets->tenancy.models]
+- dcim.tests.test_models -> tenancy.models [fg:imports:dcim.tests.test_models->tenancy.models]
+- dcim.tests.test_views -> tenancy.models [fg:imports:dcim.tests.test_views->tenancy.models]
+- extras.api.serializers_.configcontexts -> tenancy.api.serializers_.tenants [fg:imports:extras.api.serializers_.configcontexts->tenancy.api.serializers_.tenants]
+- extras.api.serializers_.configcontexts -> tenancy.models [fg:imports:extras.api.serializers_.configcontexts->tenancy.models]
+- extras.filtersets -> tenancy.models [fg:imports:extras.filtersets->tenancy.models]
+- extras.forms.filtersets -> tenancy.models [fg:imports:extras.forms.filtersets->tenancy.models]
+- extras.forms.model_forms -> tenancy.models [fg:imports:extras.forms.model_forms->tenancy.models]
+- extras.graphql.filters -> tenancy.graphql.filters [fg:imports:extras.graphql.filters->tenancy.graphql.filters]
+- extras.graphql.mixins -> tenancy.graphql.types [fg:imports:extras.graphql.mixins->tenancy.graphql.types]
+- extras.graphql.types -> tenancy.graphql.types [fg:imports:extras.graphql.types->tenancy.graphql.types]
+- extras.tests.test_filtersets -> tenancy.models [fg:imports:extras.tests.test_filtersets->tenancy.models]
+- extras.tests.test_models -> tenancy.models [fg:imports:extras.tests.test_models->tenancy.models]
+- extras.tests.test_utils -> tenancy.models [fg:imports:extras.tests.test_utils->tenancy.models]
+- ipam.api.serializers_.asns -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.asns->tenancy.api.serializers_.tenants]
+- ipam.api.serializers_.ip -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.ip->tenancy.api.serializers_.tenants]
+- ipam.api.serializers_.vlans -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.vlans->tenancy.api.serializers_.tenants]
+- ipam.api.serializers_.vrfs -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.vrfs->tenancy.api.serializers_.tenants]
+- ipam.filtersets -> tenancy.filtersets [fg:imports:ipam.filtersets->tenancy.filtersets]
+- ipam.forms.bulk_edit -> tenancy.models [fg:imports:ipam.forms.bulk_edit->tenancy.models]
+- ipam.forms.bulk_import -> tenancy.models [fg:imports:ipam.forms.bulk_import->tenancy.models]
+- ipam.forms.filtersets -> tenancy.forms [fg:imports:ipam.forms.filtersets->tenancy.forms]
+- ipam.forms.model_forms -> tenancy.forms [fg:imports:ipam.forms.model_forms->tenancy.forms]
+- ipam.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:ipam.graphql.filters->tenancy.graphql.filter_mixins]
+- ipam.graphql.types -> tenancy.graphql.types [fg:imports:ipam.graphql.types->tenancy.graphql.types]
+- ipam.tables.asn -> tenancy.tables [fg:imports:ipam.tables.asn->tenancy.tables]
+- ipam.tables.ip -> tenancy.tables [fg:imports:ipam.tables.ip->tenancy.tables]
+- ipam.tables.vlans -> tenancy.tables [fg:imports:ipam.tables.vlans->tenancy.tables]
+- ipam.tables.vrfs -> tenancy.tables [fg:imports:ipam.tables.vrfs->tenancy.tables]
+- ipam.tests.test_api -> tenancy.models [fg:imports:ipam.tests.test_api->tenancy.models]
+- ipam.tests.test_filtersets -> tenancy.models [fg:imports:ipam.tests.test_filtersets->tenancy.models]
+- ipam.tests.test_views -> tenancy.models [fg:imports:ipam.tests.test_views->tenancy.models]
+- netbox.graphql.schema -> tenancy.graphql.schema [fg:imports:netbox.graphql.schema->tenancy.graphql.schema]
+- netbox.models.features -> tenancy.models [fg:imports:netbox.models.features->tenancy.models]
+- netbox.views.generic.feature_views -> tenancy.filtersets [fg:imports:netbox.views.generic.feature_views->tenancy.filtersets]
+- netbox.views.generic.feature_views -> tenancy.forms [fg:imports:netbox.views.generic.feature_views->tenancy.forms]
+- netbox.views.generic.feature_views -> tenancy.models [fg:imports:netbox.views.generic.feature_views->tenancy.models]
+- netbox.views.generic.feature_views -> tenancy.tables [fg:imports:netbox.views.generic.feature_views->tenancy.tables]
+- virtualization.api.serializers_.clusters -> tenancy.api.serializers_.tenants [fg:imports:virtualization.api.serializers_.clusters->tenancy.api.serializers_.tenants]
+- virtualization.api.serializers_.virtualmachines -> tenancy.api.serializers_.tenants [fg:imports:virtualization.api.serializers_.virtualmachines->tenancy.api.serializers_.tenants]
+- virtualization.filtersets -> tenancy.filtersets [fg:imports:virtualization.filtersets->tenancy.filtersets]
+- virtualization.forms.bulk_edit -> tenancy.models [fg:imports:virtualization.forms.bulk_edit->tenancy.models]
+- virtualization.forms.bulk_import -> tenancy.models [fg:imports:virtualization.forms.bulk_import->tenancy.models]
+- virtualization.forms.filtersets -> tenancy.forms [fg:imports:virtualization.forms.filtersets->tenancy.forms]
+- virtualization.forms.model_forms -> tenancy.forms [fg:imports:virtualization.forms.model_forms->tenancy.forms]
+- virtualization.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:virtualization.graphql.filters->tenancy.graphql.filter_mixins]
+- virtualization.graphql.types -> tenancy.graphql.types [fg:imports:virtualization.graphql.types->tenancy.graphql.types]
+- virtualization.tables.clusters -> tenancy.tables [fg:imports:virtualization.tables.clusters->tenancy.tables]
+- virtualization.tables.virtualmachines -> tenancy.tables [fg:imports:virtualization.tables.virtualmachines->tenancy.tables]
+- virtualization.tests.test_filtersets -> tenancy.models [fg:imports:virtualization.tests.test_filtersets->tenancy.models]
+- virtualization.tests.test_models -> tenancy.models [fg:imports:virtualization.tests.test_models->tenancy.models]
+- vpn.api.serializers_.l2vpn -> tenancy.api.serializers_.tenants [fg:imports:vpn.api.serializers_.l2vpn->tenancy.api.serializers_.tenants]
+- vpn.api.serializers_.tunnels -> tenancy.api.serializers_.tenants [fg:imports:vpn.api.serializers_.tunnels->tenancy.api.serializers_.tenants]
+- vpn.filtersets -> tenancy.filtersets [fg:imports:vpn.filtersets->tenancy.filtersets]
+- vpn.forms.bulk_edit -> tenancy.models [fg:imports:vpn.forms.bulk_edit->tenancy.models]
+- vpn.forms.bulk_import -> tenancy.models [fg:imports:vpn.forms.bulk_import->tenancy.models]
+- vpn.forms.filtersets -> tenancy.forms [fg:imports:vpn.forms.filtersets->tenancy.forms]
+- vpn.forms.model_forms -> tenancy.forms [fg:imports:vpn.forms.model_forms->tenancy.forms]
+- vpn.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:vpn.graphql.filters->tenancy.graphql.filter_mixins]
+- vpn.graphql.types -> tenancy.graphql.types [fg:imports:vpn.graphql.types->tenancy.graphql.types]
+- vpn.tables.l2vpn -> tenancy.tables [fg:imports:vpn.tables.l2vpn->tenancy.tables]
+- vpn.tables.tunnels -> tenancy.tables [fg:imports:vpn.tables.tunnels->tenancy.tables]
+- wireless.api.serializers_.wirelesslans -> tenancy.api.serializers_.tenants [fg:imports:wireless.api.serializers_.wirelesslans->tenancy.api.serializers_.tenants]
+- wireless.api.serializers_.wirelesslinks -> tenancy.api.serializers_.tenants [fg:imports:wireless.api.serializers_.wirelesslinks->tenancy.api.serializers_.tenants]
+- wireless.filtersets -> tenancy.filtersets [fg:imports:wireless.filtersets->tenancy.filtersets]
+- wireless.forms.bulk_edit -> tenancy.models [fg:imports:wireless.forms.bulk_edit->tenancy.models]
+- wireless.forms.bulk_import -> tenancy.models [fg:imports:wireless.forms.bulk_import->tenancy.models]
+- wireless.forms.filtersets -> tenancy.forms [fg:imports:wireless.forms.filtersets->tenancy.forms]
+- wireless.forms.model_forms -> tenancy.forms [fg:imports:wireless.forms.model_forms->tenancy.forms]
+- wireless.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:wireless.graphql.filters->tenancy.graphql.filter_mixins]
+- wireless.graphql.types -> tenancy.graphql.types [fg:imports:wireless.graphql.types->tenancy.graphql.types]
+- wireless.tables.wirelesslan -> tenancy.tables [fg:imports:wireless.tables.wirelesslan->tenancy.tables]
+- wireless.tables.wirelesslink -> tenancy.tables [fg:imports:wireless.tables.wirelesslink->tenancy.tables]
+- wireless.tests.test_api -> tenancy.models [fg:imports:wireless.tests.test_api->tenancy.models]
+- wireless.tests.test_filtersets -> tenancy.models [fg:imports:wireless.tests.test_filtersets->tenancy.models]
+- wireless.tests.test_views -> tenancy.models [fg:imports:wireless.tests.test_views->tenancy.models]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- tenancy.migrations.0016_charfield_null_choices | . | get_model | tenancy.ContactAssignment |  [fg:model_refs:tenancy.migrations.0016_charfield_null_choices:8]
+- tenancy.migrations.0018_contact_groups | . | get_model | tenancy.Contact |  [fg:model_refs:tenancy.migrations.0018_contact_groups:6]
+- tenancy.models.contacts | Contact.groups | ManyToManyField | tenancy.ContactGroup |  [fg:model_refs:tenancy.models.contacts:50]
+- tenancy.models.contacts | ContactAssignment.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:tenancy.models.contacts:99]
+- tenancy.models.contacts | ContactAssignment.contact | ForeignKey | tenancy.Contact |  [fg:model_refs:tenancy.models.contacts:108]
+- tenancy.models.contacts | ContactAssignment.role | ForeignKey | tenancy.ContactRole |  [fg:model_refs:tenancy.models.contacts:113]
+- tenancy.models.tenants | Tenant.group | ForeignKey | tenancy.TenantGroup |  [fg:model_refs:tenancy.models.tenants:50]
+
+## String references INTO this subsystem from others
+- circuits.models.circuits | Circuit.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:circuits.models.circuits:72]
+- circuits.models.circuits | CircuitGroup.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:circuits.models.circuits:162]
+- circuits.models.virtual_circuits | VirtualCircuit.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:circuits.models.virtual_circuits:64]
+- dcim.models.cables | Cable.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.cables:54]
+- dcim.models.devices | Device.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.devices:462]
+- dcim.models.devices | VirtualDeviceContext.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.devices:1164]
+- dcim.models.power | PowerFeed.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.power:138]
+- dcim.models.racks | Rack.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.racks:286]
+- dcim.models.racks | RackReservation.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.racks:676]
+- dcim.models.sites | Site.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.sites:173]
+- dcim.models.sites | Location.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:dcim.models.sites:275]
+- extras.models.configs | ConfigContext.tenant_groups | ManyToManyField -> tenancy.TenantGroup [fg:model_refs:extras.models.configs:100]
+- extras.models.configs | ConfigContext.tenants | ManyToManyField -> tenancy.Tenant [fg:model_refs:extras.models.configs:105]
+- ipam.models.asns | ASNRange.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.asns:39]
+- ipam.models.asns | ASN.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.asns:108]
+- ipam.models.ip | Aggregate.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.ip:90]
+- ipam.models.ip | Prefix.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.ip:219]
+- ipam.models.ip | IPRange.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.ip:503]
+- ipam.models.ip | IPAddress.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.ip:732]
+- ipam.models.vlans | VLANGroup.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.vlans:65]
+- ipam.models.vlans | VLAN.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.vlans:209]
+- ipam.models.vrfs | VRF.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.vrfs:32]
+- ipam.models.vrfs | RouteTarget.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:ipam.models.vrfs:81]
+- netbox.models.features | ContactsMixin.contacts | GenericRelation -> tenancy.ContactAssignment [fg:model_refs:netbox.models.features:366]
+- virtualization.models.clusters | Cluster.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:virtualization.models.clusters:75]
+- virtualization.models.virtualmachines | VirtualMachine.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:virtualization.models.virtualmachines:56]
+- vpn.models.l2vpn | L2VPN.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:vpn.models.l2vpn:56]
+- vpn.models.tunnels | Tunnel.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:vpn.models.tunnels:62]
+- wireless.models | WirelessLAN.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:wireless.models:104]
+- wireless.models | WirelessLink.tenant | ForeignKey -> tenancy.Tenant [fg:model_refs:wireless.models:153]
+
+## Churn (id = churn:<module>)
+- tenancy.views | 144 commits | 16 authors | 2016-07-26 .. 2025-05-01 [fg:churn:tenancy.views]
+- tenancy.api.serializers | 58 commits | 8 authors | 2016-07-26 .. 2024-08-14 [fg:churn:tenancy.api.serializers]
+- tenancy.api.views | 42 commits | 6 authors | 2016-07-26 .. 2025-03-18 [fg:churn:tenancy.api.views]
+- tenancy.filtersets | 38 commits | 10 authors | 2019-05-09 .. 2025-03-19 [fg:churn:tenancy.filtersets]
+- tenancy.tests.test_api | 34 commits | 6 authors | 2017-03-16 .. 2025-03-19 [fg:churn:tenancy.tests.test_api]
+- tenancy.models.contacts | 33 commits | 6 authors | 2021-10-21 .. 2025-05-09 [fg:churn:tenancy.models.contacts]
+- tenancy.urls | 31 commits | 5 authors | 2016-07-26 .. 2024-11-20 [fg:churn:tenancy.urls]
+- tenancy.forms.bulk_edit | 25 commits | 6 authors | 2021-09-27 .. 2025-04-10 [fg:churn:tenancy.forms.bulk_edit]
+- tenancy.forms.filtersets | 25 commits | 6 authors | 2021-09-27 .. 2025-03-18 [fg:churn:tenancy.forms.filtersets]
+- tenancy.tests.test_views | 24 commits | 5 authors | 2019-02-15 .. 2025-03-19 [fg:churn:tenancy.tests.test_views]
+- tenancy.api.urls | 20 commits | 2 authors | 2016-07-26 .. 2022-07-13 [fg:churn:tenancy.api.urls]
+- tenancy.tables.contacts | 20 commits | 6 authors | 2022-03-03 .. 2025-04-10 [fg:churn:tenancy.tables.contacts]
+- tenancy.forms.bulk_import | 18 commits | 7 authors | 2021-09-27 .. 2025-03-19 [fg:churn:tenancy.forms.bulk_import]
+- tenancy.forms.model_forms | 16 commits | 7 authors | 2022-10-25 .. 2025-03-19 [fg:churn:tenancy.forms.model_forms]
+- tenancy.graphql.types | 16 commits | 5 authors | 2021-06-25 .. 2025-04-10 [fg:churn:tenancy.graphql.types]
+- tenancy.models.tenants | 14 commits | 3 authors | 2021-10-21 .. 2024-11-15 [fg:churn:tenancy.models.tenants]
+- tenancy.tests.test_filtersets | 14 commits | 6 authors | 2021-05-03 .. 2025-03-19 [fg:churn:tenancy.tests.test_filtersets]
+- tenancy.api.serializers_.contacts | 10 commits | 5 authors | 2024-02-27 .. 2025-04-11 [fg:churn:tenancy.api.serializers_.contacts]
+- tenancy.forms.forms | 9 commits | 5 authors | 2021-09-27 .. 2024-11-18 [fg:churn:tenancy.forms.forms]
+- tenancy.tables.tenants | 9 commits | 3 authors | 2022-03-03 .. 2025-03-11 [fg:churn:tenancy.tables.tenants]
+- tenancy.search | 7 commits | 4 authors | 2022-10-10 .. 2025-05-02 [fg:churn:tenancy.search]
+- tenancy.tables.columns | 7 commits | 4 authors | 2022-03-03 .. 2024-11-21 [fg:churn:tenancy.tables.columns]
+- tenancy.api.serializers_.tenants | 6 commits | 3 authors | 2024-02-27 .. 2025-03-11 [fg:churn:tenancy.api.serializers_.tenants]
+- tenancy.apps | 6 commits | 2 authors | 2016-07-26 .. 2024-10-10 [fg:churn:tenancy.apps]
+- tenancy.graphql.schema | 6 commits | 3 authors | 2021-06-25 .. 2024-08-28 [fg:churn:tenancy.graphql.schema]
+
+## Entry points (id = entrypoints:<module>)
+- urls | tenancy.api.urls | netbox/tenancy/api/urls.py [fg:entrypoints:tenancy.api.urls]
+- api_views | tenancy.api.views | netbox/tenancy/api/views.py [fg:entrypoints:tenancy.api.views]
+- urls | tenancy.urls | netbox/tenancy/urls.py [fg:entrypoints:tenancy.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>)
+- tenancy.api.serializers_.contacts: ContactGroupSerializer, ContactRoleSerializer, ContactSerializer, ContactAssignmentSerializer
+- tenancy.api.serializers_.nested: NestedContactGroupSerializer, NestedTenantGroupSerializer
+- tenancy.api.serializers_.tenants: TenantGroupSerializer, TenantSerializer
+- tenancy.api.views: TenancyRootView, TenantGroupViewSet, TenantViewSet, ContactGroupViewSet, ContactRoleViewSet, ContactViewSet, ContactAssignmentViewSet
+- tenancy.apps: TenancyConfig
+- tenancy.choices: ContactPriorityChoices
+- tenancy.filtersets: ContactGroupFilterSet, ContactRoleFilterSet, ContactFilterSet, ContactAssignmentFilterSet, ContactModelFilterSet, TenantGroupFilterSet, TenantFilterSet, TenancyFilterSet
+- tenancy.forms.bulk_edit: TenantGroupBulkEditForm, TenantBulkEditForm, ContactGroupBulkEditForm, ContactRoleBulkEditForm, ContactBulkEditForm, ContactAssignmentBulkEditForm
+- tenancy.forms.bulk_import: TenantGroupImportForm, TenantImportForm, ContactGroupImportForm, ContactRoleImportForm, ContactImportForm, ContactAssignmentImportForm
+- tenancy.forms.filtersets: TenantGroupFilterForm, TenantFilterForm, ContactGroupFilterForm, ContactRoleFilterForm, ContactFilterForm, ContactAssignmentFilterForm
+- tenancy.forms.forms: TenancyForm, TenancyFilterForm, ContactModelFilterForm
+- tenancy.forms.model_forms: TenantGroupForm, TenantForm, ContactGroupForm, ContactRoleForm, ContactForm, ContactAssignmentForm
+- tenancy.graphql.filter_mixins: ContactFilterMixin, TenancyFilterMixin
+- tenancy.graphql.filters: TenantFilter, TenantGroupFilter, ContactFilter, ContactRoleFilter, ContactGroupFilter, ContactAssignmentFilter
+- tenancy.graphql.mixins: ContactAssignmentsMixin
+- tenancy.graphql.schema: TenancyQuery
+- tenancy.graphql.types: TenantType, TenantGroupType, ContactType, ContactRoleType, ContactGroupType, ContactAssignmentType
+- tenancy.migrations.0001_squashed_0012: Migration
+- tenancy.migrations.0002_squashed_0011: Migration
+- tenancy.migrations.0012_contactassignment_custom_fields: Migration
+- tenancy.migrations.0013_gfk_indexes: Migration
+- tenancy.migrations.0014_contactassignment_ordering: Migration
+- tenancy.migrations.0015_contactassignment_rename_content_type: Migration
+- tenancy.migrations.0016_charfield_null_choices: Migration
+- tenancy.migrations.0017_natural_ordering: Migration
+- tenancy.migrations.0018_contact_groups: Migration
+- tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments: Migration
+- tenancy.migrations.0020_remove_contactgroupmembership: Migration
+- tenancy.models.contacts: ContactGroup, ContactRole, Contact, ContactAssignment
+- tenancy.models.tenants: TenantGroup, Tenant
+- tenancy.search: ContactIndex, ContactGroupIndex, ContactRoleIndex, TenantIndex, TenantGroupIndex
+- tenancy.tables.columns: TenantColumn, TenantGroupColumn, TenancyColumnsMixin, ContactsColumnMixin
+- tenancy.tables.contacts: ContactGroupTable, ContactRoleTable, ContactTable, ContactAssignmentTable
+- tenancy.tables.tenants: TenantGroupTable, TenantTable
+- tenancy.tests.test_api: AppTest, TenantGroupTest, TenantTest, ContactGroupTest, ContactRoleTest, ContactTest, ContactAssignmentTest
+- tenancy.tests.test_filtersets: TenantGroupTestCase, TenantTestCase, ContactGroupTestCase, ContactRoleTestCase, ContactTestCase, ContactAssignmentTestCase
+- tenancy.tests.test_views: TenantGroupTestCase, TenantTestCase, ContactGroupTestCase, ContactRoleTestCase, ContactTestCase, ContactAssignmentTestCase
+- tenancy.views: TenantGroupListView, TenantGroupView, TenantGroupEditView, TenantGroupDeleteView, TenantGroupBulkImportView, TenantGroupBulkEditView, TenantGroupBulkDeleteView, TenantListView, TenantView, TenantEditView, TenantDeleteView, TenantBulkImportView, TenantBulkEditView, TenantBulkDeleteView, ContactGroupListView, ContactGroupView, ContactGroupEditView, ContactGroupDeleteView, ContactGroupBulkImportView, ContactGroupBulkEditView, ContactGroupBulkDeleteView, ContactRoleListView, ContactRoleView, ContactRoleEditView, ContactRoleDeleteView, ContactRoleBulkImportView, ContactRoleBulkEditView, ContactRoleBulkDeleteView, ContactListView, ContactView, ContactEditView, ContactDeleteView, ContactBulkImportView, ContactBulkEditView, ContactBulkDeleteView, ContactAssignmentListView, ContactAssignmentEditView, ContactAssignmentBulkImportView, ContactAssignmentBulkEditView, ContactAssignmentBulkDeleteView, ContactAssignmentDeleteView

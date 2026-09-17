@@ -1,0 +1,5028 @@
+{
+"subsystem": "tenancy",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "tenancy",
+"modules": 41,
+"loc_code": 3688,
+"loc_data": 0,
+"test_modules": 4
+},
+"modules": [
+{
+"module": "tenancy",
+"path": "netbox/tenancy/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy"
+},
+{
+"module": "tenancy.api",
+"path": "netbox/tenancy/api/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api"
+},
+{
+"module": "tenancy.api.serializers",
+"path": "netbox/tenancy/api/serializers.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api.serializers"
+},
+{
+"module": "tenancy.api.serializers_",
+"path": "netbox/tenancy/api/serializers_/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api.serializers_"
+},
+{
+"module": "tenancy.api.serializers_.contacts",
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"loc": 85,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api.serializers_.contacts"
+},
+{
+"module": "tenancy.api.serializers_.nested",
+"path": "netbox/tenancy/api/serializers_/nested.py",
+"loc": 35,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api.serializers_.nested"
+},
+{
+"module": "tenancy.api.serializers_.tenants",
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"loc": 51,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api.serializers_.tenants"
+},
+{
+"module": "tenancy.api.urls",
+"path": "netbox/tenancy/api/urls.py",
+"loc": 20,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api.urls"
+},
+{
+"module": "tenancy.api.views",
+"path": "netbox/tenancy/api/views.py",
+"loc": 71,
+"classes": 7,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.api.views"
+},
+{
+"module": "tenancy.apps",
+"path": "netbox/tenancy/apps.py",
+"loc": 13,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.apps"
+},
+{
+"module": "tenancy.choices",
+"path": "netbox/tenancy/choices.py",
+"loc": 22,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.choices"
+},
+{
+"module": "tenancy.filtersets",
+"path": "netbox/tenancy/filtersets.py",
+"loc": 258,
+"classes": 8,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.filtersets"
+},
+{
+"module": "tenancy.forms",
+"path": "netbox/tenancy/forms/__init__.py",
+"loc": 6,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.forms"
+},
+{
+"module": "tenancy.forms.bulk_edit",
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"loc": 169,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.forms.bulk_edit"
+},
+{
+"module": "tenancy.forms.bulk_import",
+"path": "netbox/tenancy/forms/bulk_import.py",
+"loc": 111,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.forms.bulk_import"
+},
+{
+"module": "tenancy.forms.filtersets",
+"path": "netbox/tenancy/forms/filtersets.py",
+"loc": 115,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.forms.filtersets"
+},
+{
+"module": "tenancy.forms.forms",
+"path": "netbox/tenancy/forms/forms.py",
+"loc": 69,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.forms.forms"
+},
+{
+"module": "tenancy.forms.model_forms",
+"path": "netbox/tenancy/forms/model_forms.py",
+"loc": 156,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.forms.model_forms"
+},
+{
+"module": "tenancy.graphql",
+"path": "netbox/tenancy/graphql/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.graphql"
+},
+{
+"module": "tenancy.graphql.enums",
+"path": "netbox/tenancy/graphql/enums.py",
+"loc": 10,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.graphql.enums"
+},
+{
+"module": "tenancy.graphql.filter_mixins",
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"loc": 39,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.graphql.filter_mixins"
+},
+{
+"module": "tenancy.graphql.filters",
+"path": "netbox/tenancy/graphql/filters.py",
+"loc": 197,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.graphql.filters"
+},
+{
+"module": "tenancy.graphql.mixins",
+"path": "netbox/tenancy/graphql/mixins.py",
+"loc": 13,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.graphql.mixins"
+},
+{
+"module": "tenancy.graphql.schema",
+"path": "netbox/tenancy/graphql/schema.py",
+"loc": 28,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.graphql.schema"
+},
+{
+"module": "tenancy.graphql.types",
+"path": "netbox/tenancy/graphql/types.py",
+"loc": 148,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.graphql.types"
+},
+{
+"module": "tenancy.migrations",
+"path": "netbox/tenancy/migrations/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.migrations"
+},
+{
+"module": "tenancy.migrations.0001_squashed_0012",
+"path": "netbox/tenancy/migrations/0001_squashed_0012.py",
+"loc": 88,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0001_squashed_0012"
+},
+{
+"module": "tenancy.migrations.0002_squashed_0011",
+"path": "netbox/tenancy/migrations/0002_squashed_0011.py",
+"loc": 244,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0002_squashed_0011"
+},
+{
+"module": "tenancy.migrations.0012_contactassignment_custom_fields",
+"path": "netbox/tenancy/migrations/0012_contactassignment_custom_fields.py",
+"loc": 19,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0012_contactassignment_custom_fields"
+},
+{
+"module": "tenancy.migrations.0013_gfk_indexes",
+"path": "netbox/tenancy/migrations/0013_gfk_indexes.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0013_gfk_indexes"
+},
+{
+"module": "tenancy.migrations.0014_contactassignment_ordering",
+"path": "netbox/tenancy/migrations/0014_contactassignment_ordering.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0014_contactassignment_ordering"
+},
+{
+"module": "tenancy.migrations.0015_contactassignment_rename_content_type",
+"path": "netbox/tenancy/migrations/0015_contactassignment_rename_content_type.py",
+"loc": 37,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0015_contactassignment_rename_content_type"
+},
+{
+"module": "tenancy.migrations.0016_charfield_null_choices",
+"path": "netbox/tenancy/migrations/0016_charfield_null_choices.py",
+"loc": 27,
+"classes": 1,
+"functions": 1,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0016_charfield_null_choices"
+},
+{
+"module": "tenancy.migrations.0017_natural_ordering",
+"path": "netbox/tenancy/migrations/0017_natural_ordering.py",
+"loc": 27,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0017_natural_ordering"
+},
+{
+"module": "tenancy.migrations.0018_contact_groups",
+"path": "netbox/tenancy/migrations/0018_contact_groups.py",
+"loc": 83,
+"classes": 1,
+"functions": 2,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0018_contact_groups"
+},
+{
+"module": "tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments",
+"path": "netbox/tenancy/migrations/0019_contactgroup_comments_tenantgroup_comments.py",
+"loc": 22,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments"
+},
+{
+"module": "tenancy.migrations.0020_remove_contactgroupmembership",
+"path": "netbox/tenancy/migrations/0020_remove_contactgroupmembership.py",
+"loc": 72,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:tenancy.migrations.0020_remove_contactgroupmembership"
+},
+{
+"module": "tenancy.models",
+"path": "netbox/tenancy/models/__init__.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.models"
+},
+{
+"module": "tenancy.models.contacts",
+"path": "netbox/tenancy/models/contacts.py",
+"loc": 163,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.models.contacts"
+},
+{
+"module": "tenancy.models.tenants",
+"path": "netbox/tenancy/models/tenants.py",
+"loc": 91,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.models.tenants"
+},
+{
+"module": "tenancy.search",
+"path": "netbox/tenancy/search.py",
+"loc": 66,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.search"
+},
+{
+"module": "tenancy.tables",
+"path": "netbox/tenancy/tables/__init__.py",
+"loc": 4,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tables"
+},
+{
+"module": "tenancy.tables.columns",
+"path": "netbox/tenancy/tables/columns.py",
+"loc": 59,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tables.columns"
+},
+{
+"module": "tenancy.tables.contacts",
+"path": "netbox/tenancy/tables/contacts.py",
+"loc": 157,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tables.contacts"
+},
+{
+"module": "tenancy.tables.template_code",
+"path": "netbox/tenancy/tables/template_code.py",
+"loc": 20,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tables.template_code"
+},
+{
+"module": "tenancy.tables.tenants",
+"path": "netbox/tenancy/tables/tenants.py",
+"loc": 63,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tables.tenants"
+},
+{
+"module": "tenancy.tests",
+"path": "netbox/tenancy/tests/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tests"
+},
+{
+"module": "tenancy.tests.test_api",
+"path": "netbox/tenancy/tests/test_api.py",
+"loc": 302,
+"classes": 7,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tests.test_api"
+},
+{
+"module": "tenancy.tests.test_filtersets",
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"loc": 379,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tests.test_filtersets"
+},
+{
+"module": "tenancy.tests.test_views",
+"path": "netbox/tenancy/tests/test_views.py",
+"loc": 324,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.tests.test_views"
+},
+{
+"module": "tenancy.urls",
+"path": "netbox/tenancy/urls.py",
+"loc": 28,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.urls"
+},
+{
+"module": "tenancy.views",
+"path": "netbox/tenancy/views.py",
+"loc": 404,
+"classes": 41,
+"functions": 0,
+"parse": "OK",
+"subsystem": "tenancy",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:tenancy.views"
+}
+],
+"symbols": [
+{
+"module": "tenancy.api.serializers_.contacts",
+"kind": "class",
+"name": "ContactGroupSerializer",
+"lineno": 21,
+"bases": "NestedGroupModelSerializer",
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "symbols:tenancy.api.serializers_.contacts:ContactGroupSerializer"
+},
+{
+"module": "tenancy.api.serializers_.contacts",
+"kind": "class",
+"name": "ContactRoleSerializer",
+"lineno": 34,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "symbols:tenancy.api.serializers_.contacts:ContactRoleSerializer"
+},
+{
+"module": "tenancy.api.serializers_.contacts",
+"kind": "class",
+"name": "ContactSerializer",
+"lineno": 45,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "symbols:tenancy.api.serializers_.contacts:ContactSerializer"
+},
+{
+"module": "tenancy.api.serializers_.contacts",
+"kind": "class",
+"name": "ContactAssignmentSerializer",
+"lineno": 63,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "symbols:tenancy.api.serializers_.contacts:ContactAssignmentSerializer"
+},
+{
+"module": "tenancy.api.serializers_.nested",
+"kind": "class",
+"name": "NestedContactGroupSerializer",
+"lineno": 16,
+"bases": "WritableNestedSerializer",
+"path": "netbox/tenancy/api/serializers_/nested.py",
+"id": "symbols:tenancy.api.serializers_.nested:NestedContactGroupSerializer"
+},
+{
+"module": "tenancy.api.serializers_.nested",
+"kind": "class",
+"name": "NestedTenantGroupSerializer",
+"lineno": 28,
+"bases": "WritableNestedSerializer",
+"path": "netbox/tenancy/api/serializers_/nested.py",
+"id": "symbols:tenancy.api.serializers_.nested:NestedTenantGroupSerializer"
+},
+{
+"module": "tenancy.api.serializers_.tenants",
+"kind": "class",
+"name": "TenantGroupSerializer",
+"lineno": 14,
+"bases": "NestedGroupModelSerializer",
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"id": "symbols:tenancy.api.serializers_.tenants:TenantGroupSerializer"
+},
+{
+"module": "tenancy.api.serializers_.tenants",
+"kind": "class",
+"name": "TenantSerializer",
+"lineno": 27,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"id": "symbols:tenancy.api.serializers_.tenants:TenantSerializer"
+},
+{
+"module": "tenancy.api.views",
+"kind": "class",
+"name": "TenancyRootView",
+"lineno": 9,
+"bases": "APIRootView",
+"path": "netbox/tenancy/api/views.py",
+"id": "symbols:tenancy.api.views:TenancyRootView"
+},
+{
+"module": "tenancy.api.views",
+"kind": "class",
+"name": "TenantGroupViewSet",
+"lineno": 21,
+"bases": "MPTTLockedMixin,NetBoxModelViewSet",
+"path": "netbox/tenancy/api/views.py",
+"id": "symbols:tenancy.api.views:TenantGroupViewSet"
+},
+{
+"module": "tenancy.api.views",
+"kind": "class",
+"name": "TenantViewSet",
+"lineno": 33,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/tenancy/api/views.py",
+"id": "symbols:tenancy.api.views:TenantViewSet"
+},
+{
+"module": "tenancy.api.views",
+"kind": "class",
+"name": "ContactGroupViewSet",
+"lineno": 43,
+"bases": "MPTTLockedMixin,NetBoxModelViewSet",
+"path": "netbox/tenancy/api/views.py",
+"id": "symbols:tenancy.api.views:ContactGroupViewSet"
+},
+{
+"module": "tenancy.api.views",
+"kind": "class",
+"name": "ContactRoleViewSet",
+"lineno": 55,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/tenancy/api/views.py",
+"id": "symbols:tenancy.api.views:ContactRoleViewSet"
+},
+{
+"module": "tenancy.api.views",
+"kind": "class",
+"name": "ContactViewSet",
+"lineno": 61,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/tenancy/api/views.py",
+"id": "symbols:tenancy.api.views:ContactViewSet"
+},
+{
+"module": "tenancy.api.views",
+"kind": "class",
+"name": "ContactAssignmentViewSet",
+"lineno": 67,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/tenancy/api/views.py",
+"id": "symbols:tenancy.api.views:ContactAssignmentViewSet"
+},
+{
+"module": "tenancy.apps",
+"kind": "class",
+"name": "TenancyConfig",
+"lineno": 4,
+"bases": "AppConfig",
+"path": "netbox/tenancy/apps.py",
+"id": "symbols:tenancy.apps:TenancyConfig"
+},
+{
+"module": "tenancy.choices",
+"kind": "class",
+"name": "ContactPriorityChoices",
+"lineno": 10,
+"bases": "ChoiceSet",
+"path": "netbox/tenancy/choices.py",
+"id": "symbols:tenancy.choices:ContactPriorityChoices"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "ContactGroupFilterSet",
+"lineno": 25,
+"bases": "NestedGroupModelFilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:ContactGroupFilterSet"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "ContactRoleFilterSet",
+"lineno": 60,
+"bases": "OrganizationalModelFilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:ContactRoleFilterSet"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "ContactFilterSet",
+"lineno": 67,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:ContactFilterSet"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "ContactAssignmentFilterSet",
+"lineno": 101,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:ContactAssignmentFilterSet"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "ContactModelFilterSet",
+"lineno": 148,
+"bases": "django_filters.FilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:ContactModelFilterSet"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "TenantGroupFilterSet",
+"lineno": 171,
+"bases": "NestedGroupModelFilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:TenantGroupFilterSet"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "TenantFilterSet",
+"lineno": 201,
+"bases": "NetBoxModelFilterSet,ContactModelFilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:TenantFilterSet"
+},
+{
+"module": "tenancy.filtersets",
+"kind": "class",
+"name": "TenancyFilterSet",
+"lineno": 231,
+"bases": "django_filters.FilterSet",
+"path": "netbox/tenancy/filtersets.py",
+"id": "symbols:tenancy.filtersets:TenancyFilterSet"
+},
+{
+"module": "tenancy.forms.bulk_edit",
+"kind": "class",
+"name": "TenantGroupBulkEditForm",
+"lineno": 25,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "symbols:tenancy.forms.bulk_edit:TenantGroupBulkEditForm"
+},
+{
+"module": "tenancy.forms.bulk_edit",
+"kind": "class",
+"name": "TenantBulkEditForm",
+"lineno": 42,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "symbols:tenancy.forms.bulk_edit:TenantBulkEditForm"
+},
+{
+"module": "tenancy.forms.bulk_edit",
+"kind": "class",
+"name": "ContactGroupBulkEditForm",
+"lineno": 60,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "symbols:tenancy.forms.bulk_edit:ContactGroupBulkEditForm"
+},
+{
+"module": "tenancy.forms.bulk_edit",
+"kind": "class",
+"name": "ContactRoleBulkEditForm",
+"lineno": 80,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "symbols:tenancy.forms.bulk_edit:ContactRoleBulkEditForm"
+},
+{
+"module": "tenancy.forms.bulk_edit",
+"kind": "class",
+"name": "ContactBulkEditForm",
+"lineno": 94,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "symbols:tenancy.forms.bulk_edit:ContactBulkEditForm"
+},
+{
+"module": "tenancy.forms.bulk_edit",
+"kind": "class",
+"name": "ContactAssignmentBulkEditForm",
+"lineno": 147,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "symbols:tenancy.forms.bulk_edit:ContactAssignmentBulkEditForm"
+},
+{
+"module": "tenancy.forms.bulk_import",
+"kind": "class",
+"name": "TenantGroupImportForm",
+"lineno": 22,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "symbols:tenancy.forms.bulk_import:TenantGroupImportForm"
+},
+{
+"module": "tenancy.forms.bulk_import",
+"kind": "class",
+"name": "TenantImportForm",
+"lineno": 37,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "symbols:tenancy.forms.bulk_import:TenantImportForm"
+},
+{
+"module": "tenancy.forms.bulk_import",
+"kind": "class",
+"name": "ContactGroupImportForm",
+"lineno": 56,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "symbols:tenancy.forms.bulk_import:ContactGroupImportForm"
+},
+{
+"module": "tenancy.forms.bulk_import",
+"kind": "class",
+"name": "ContactRoleImportForm",
+"lineno": 71,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "symbols:tenancy.forms.bulk_import:ContactRoleImportForm"
+},
+{
+"module": "tenancy.forms.bulk_import",
+"kind": "class",
+"name": "ContactImportForm",
+"lineno": 79,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "symbols:tenancy.forms.bulk_import:ContactImportForm"
+},
+{
+"module": "tenancy.forms.bulk_import",
+"kind": "class",
+"name": "ContactAssignmentImportForm",
+"lineno": 92,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "symbols:tenancy.forms.bulk_import:ContactAssignmentImportForm"
+},
+{
+"module": "tenancy.forms.filtersets",
+"kind": "class",
+"name": "TenantGroupFilterForm",
+"lineno": 28,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "symbols:tenancy.forms.filtersets:TenantGroupFilterForm"
+},
+{
+"module": "tenancy.forms.filtersets",
+"kind": "class",
+"name": "TenantFilterForm",
+"lineno": 38,
+"bases": "ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "symbols:tenancy.forms.filtersets:TenantFilterForm"
+},
+{
+"module": "tenancy.forms.filtersets",
+"kind": "class",
+"name": "ContactGroupFilterForm",
+"lineno": 57,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "symbols:tenancy.forms.filtersets:ContactGroupFilterForm"
+},
+{
+"module": "tenancy.forms.filtersets",
+"kind": "class",
+"name": "ContactRoleFilterForm",
+"lineno": 67,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "symbols:tenancy.forms.filtersets:ContactRoleFilterForm"
+},
+{
+"module": "tenancy.forms.filtersets",
+"kind": "class",
+"name": "ContactFilterForm",
+"lineno": 72,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "symbols:tenancy.forms.filtersets:ContactFilterForm"
+},
+{
+"module": "tenancy.forms.filtersets",
+"kind": "class",
+"name": "ContactAssignmentFilterForm",
+"lineno": 83,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "symbols:tenancy.forms.filtersets:ContactAssignmentFilterForm"
+},
+{
+"module": "tenancy.forms.forms",
+"kind": "class",
+"name": "TenancyForm",
+"lineno": 14,
+"bases": "forms.Form",
+"path": "netbox/tenancy/forms/forms.py",
+"id": "symbols:tenancy.forms.forms:TenancyForm"
+},
+{
+"module": "tenancy.forms.forms",
+"kind": "class",
+"name": "TenancyFilterForm",
+"lineno": 35,
+"bases": "forms.Form",
+"path": "netbox/tenancy/forms/forms.py",
+"id": "symbols:tenancy.forms.forms:TenancyFilterForm"
+},
+{
+"module": "tenancy.forms.forms",
+"kind": "class",
+"name": "ContactModelFilterForm",
+"lineno": 53,
+"bases": "forms.Form",
+"path": "netbox/tenancy/forms/forms.py",
+"id": "symbols:tenancy.forms.forms:ContactModelFilterForm"
+},
+{
+"module": "tenancy.forms.model_forms",
+"kind": "class",
+"name": "TenantGroupForm",
+"lineno": 23,
+"bases": "NetBoxModelForm",
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "symbols:tenancy.forms.model_forms:TenantGroupForm"
+},
+{
+"module": "tenancy.forms.model_forms",
+"kind": "class",
+"name": "TenantForm",
+"lineno": 43,
+"bases": "NetBoxModelForm",
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "symbols:tenancy.forms.model_forms:TenantForm"
+},
+{
+"module": "tenancy.forms.model_forms",
+"kind": "class",
+"name": "ContactGroupForm",
+"lineno": 67,
+"bases": "NetBoxModelForm",
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "symbols:tenancy.forms.model_forms:ContactGroupForm"
+},
+{
+"module": "tenancy.forms.model_forms",
+"kind": "class",
+"name": "ContactRoleForm",
+"lineno": 85,
+"bases": "NetBoxModelForm",
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "symbols:tenancy.forms.model_forms:ContactRoleForm"
+},
+{
+"module": "tenancy.forms.model_forms",
+"kind": "class",
+"name": "ContactForm",
+"lineno": 97,
+"bases": "NetBoxModelForm",
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "symbols:tenancy.forms.model_forms:ContactForm"
+},
+{
+"module": "tenancy.forms.model_forms",
+"kind": "class",
+"name": "ContactAssignmentForm",
+"lineno": 122,
+"bases": "NetBoxModelForm",
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "symbols:tenancy.forms.model_forms:ContactAssignmentForm"
+},
+{
+"module": "tenancy.graphql.filter_mixins",
+"kind": "class",
+"name": "ContactFilterMixin",
+"lineno": 21,
+"bases": "BaseFilterMixin",
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"id": "symbols:tenancy.graphql.filter_mixins:ContactFilterMixin"
+},
+{
+"module": "tenancy.graphql.filter_mixins",
+"kind": "class",
+"name": "TenancyFilterMixin",
+"lineno": 28,
+"bases": "BaseFilterMixin",
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"id": "symbols:tenancy.graphql.filter_mixins:TenancyFilterMixin"
+},
+{
+"module": "tenancy.graphql.filters",
+"kind": "class",
+"name": "TenantFilter",
+"lineno": 60,
+"bases": "PrimaryModelFilterMixin,ContactFilterMixin",
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "symbols:tenancy.graphql.filters:TenantFilter"
+},
+{
+"module": "tenancy.graphql.filters",
+"kind": "class",
+"name": "TenantGroupFilter",
+"lineno": 139,
+"bases": "OrganizationalModelFilterMixin",
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "symbols:tenancy.graphql.filters:TenantGroupFilter"
+},
+{
+"module": "tenancy.graphql.filters",
+"kind": "class",
+"name": "ContactFilter",
+"lineno": 153,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "symbols:tenancy.graphql.filters:ContactFilter"
+},
+{
+"module": "tenancy.graphql.filters",
+"kind": "class",
+"name": "ContactRoleFilter",
+"lineno": 169,
+"bases": "OrganizationalModelFilterMixin",
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "symbols:tenancy.graphql.filters:ContactRoleFilter"
+},
+{
+"module": "tenancy.graphql.filters",
+"kind": "class",
+"name": "ContactGroupFilter",
+"lineno": 174,
+"bases": "NestedGroupModelFilterMixin",
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "symbols:tenancy.graphql.filters:ContactGroupFilter"
+},
+{
+"module": "tenancy.graphql.filters",
+"kind": "class",
+"name": "ContactAssignmentFilter",
+"lineno": 181,
+"bases": "CustomFieldsFilterMixin,TagsFilterMixin,ChangeLogFilterMixin",
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "symbols:tenancy.graphql.filters:ContactAssignmentFilter"
+},
+{
+"module": "tenancy.graphql.mixins",
+"kind": "class",
+"name": "ContactAssignmentsMixin",
+"lineno": 11,
+"bases": "",
+"path": "netbox/tenancy/graphql/mixins.py",
+"id": "symbols:tenancy.graphql.mixins:ContactAssignmentsMixin"
+},
+{
+"module": "tenancy.graphql.schema",
+"kind": "class",
+"name": "TenancyQuery",
+"lineno": 10,
+"bases": "",
+"path": "netbox/tenancy/graphql/schema.py",
+"id": "symbols:tenancy.graphql.schema:TenancyQuery"
+},
+{
+"module": "tenancy.graphql.types",
+"kind": "class",
+"name": "TenantType",
+"lineno": 60,
+"bases": "ContactsMixin,NetBoxObjectType",
+"path": "netbox/tenancy/graphql/types.py",
+"id": "symbols:tenancy.graphql.types:TenantType"
+},
+{
+"module": "tenancy.graphql.types",
+"kind": "class",
+"name": "TenantGroupType",
+"lineno": 94,
+"bases": "OrganizationalObjectType",
+"path": "netbox/tenancy/graphql/types.py",
+"id": "symbols:tenancy.graphql.types:TenantGroupType"
+},
+{
+"module": "tenancy.graphql.types",
+"kind": "class",
+"name": "ContactType",
+"lineno": 111,
+"bases": "ContactAssignmentsMixin,NetBoxObjectType",
+"path": "netbox/tenancy/graphql/types.py",
+"id": "symbols:tenancy.graphql.types:ContactType"
+},
+{
+"module": "tenancy.graphql.types",
+"kind": "class",
+"name": "ContactRoleType",
+"lineno": 121,
+"bases": "ContactAssignmentsMixin,OrganizationalObjectType",
+"path": "netbox/tenancy/graphql/types.py",
+"id": "symbols:tenancy.graphql.types:ContactRoleType"
+},
+{
+"module": "tenancy.graphql.types",
+"kind": "class",
+"name": "ContactGroupType",
+"lineno": 131,
+"bases": "OrganizationalObjectType",
+"path": "netbox/tenancy/graphql/types.py",
+"id": "symbols:tenancy.graphql.types:ContactGroupType"
+},
+{
+"module": "tenancy.graphql.types",
+"kind": "class",
+"name": "ContactAssignmentType",
+"lineno": 144,
+"bases": "CustomFieldsMixin,TagsMixin,BaseObjectType",
+"path": "netbox/tenancy/graphql/types.py",
+"id": "symbols:tenancy.graphql.types:ContactAssignmentType"
+},
+{
+"module": "tenancy.migrations.0001_squashed_0012",
+"kind": "class",
+"name": "Migration",
+"lineno": 8,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0001_squashed_0012.py",
+"id": "symbols:tenancy.migrations.0001_squashed_0012:Migration"
+},
+{
+"module": "tenancy.migrations.0002_squashed_0011",
+"kind": "class",
+"name": "Migration",
+"lineno": 9,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0002_squashed_0011.py",
+"id": "symbols:tenancy.migrations.0002_squashed_0011:Migration"
+},
+{
+"module": "tenancy.migrations.0012_contactassignment_custom_fields",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0012_contactassignment_custom_fields.py",
+"id": "symbols:tenancy.migrations.0012_contactassignment_custom_fields:Migration"
+},
+{
+"module": "tenancy.migrations.0013_gfk_indexes",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0013_gfk_indexes.py",
+"id": "symbols:tenancy.migrations.0013_gfk_indexes:Migration"
+},
+{
+"module": "tenancy.migrations.0014_contactassignment_ordering",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0014_contactassignment_ordering.py",
+"id": "symbols:tenancy.migrations.0014_contactassignment_ordering:Migration"
+},
+{
+"module": "tenancy.migrations.0015_contactassignment_rename_content_type",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0015_contactassignment_rename_content_type.py",
+"id": "symbols:tenancy.migrations.0015_contactassignment_rename_content_type:Migration"
+},
+{
+"module": "tenancy.migrations.0016_charfield_null_choices",
+"kind": "function",
+"name": "set_null_values",
+"lineno": 4,
+"bases": "",
+"path": "netbox/tenancy/migrations/0016_charfield_null_choices.py",
+"id": "symbols:tenancy.migrations.0016_charfield_null_choices:set_null_values"
+},
+{
+"module": "tenancy.migrations.0016_charfield_null_choices",
+"kind": "class",
+"name": "Migration",
+"lineno": 14,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0016_charfield_null_choices.py",
+"id": "symbols:tenancy.migrations.0016_charfield_null_choices:Migration"
+},
+{
+"module": "tenancy.migrations.0017_natural_ordering",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0017_natural_ordering.py",
+"id": "symbols:tenancy.migrations.0017_natural_ordering:Migration"
+},
+{
+"module": "tenancy.migrations.0018_contact_groups",
+"kind": "function",
+"name": "migrate_contact_groups",
+"lineno": 5,
+"bases": "",
+"path": "netbox/tenancy/migrations/0018_contact_groups.py",
+"id": "symbols:tenancy.migrations.0018_contact_groups:migrate_contact_groups"
+},
+{
+"module": "tenancy.migrations.0018_contact_groups",
+"kind": "class",
+"name": "Migration",
+"lineno": 13,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0018_contact_groups.py",
+"id": "symbols:tenancy.migrations.0018_contact_groups:Migration"
+},
+{
+"module": "tenancy.migrations.0018_contact_groups",
+"kind": "function",
+"name": "oc_contact_groups",
+"lineno": 71,
+"bases": "",
+"path": "netbox/tenancy/migrations/0018_contact_groups.py",
+"id": "symbols:tenancy.migrations.0018_contact_groups:oc_contact_groups"
+},
+{
+"module": "tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0019_contactgroup_comments_tenantgroup_comments.py",
+"id": "symbols:tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments:Migration"
+},
+{
+"module": "tenancy.migrations.0020_remove_contactgroupmembership",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/tenancy/migrations/0020_remove_contactgroupmembership.py",
+"id": "symbols:tenancy.migrations.0020_remove_contactgroupmembership:Migration"
+},
+{
+"module": "tenancy.models.contacts",
+"kind": "class",
+"name": "ContactGroup",
+"lineno": 20,
+"bases": "NestedGroupModel",
+"path": "netbox/tenancy/models/contacts.py",
+"id": "symbols:tenancy.models.contacts:ContactGroup"
+},
+{
+"module": "tenancy.models.contacts",
+"kind": "class",
+"name": "ContactRole",
+"lineno": 36,
+"bases": "OrganizationalModel",
+"path": "netbox/tenancy/models/contacts.py",
+"id": "symbols:tenancy.models.contacts:ContactRole"
+},
+{
+"module": "tenancy.models.contacts",
+"kind": "class",
+"name": "Contact",
+"lineno": 46,
+"bases": "PrimaryModel",
+"path": "netbox/tenancy/models/contacts.py",
+"id": "symbols:tenancy.models.contacts:Contact"
+},
+{
+"module": "tenancy.models.contacts",
+"kind": "class",
+"name": "ContactAssignment",
+"lineno": 98,
+"bases": "CustomFieldsMixin,ExportTemplatesMixin,TagsMixin,ChangeLoggedModel",
+"path": "netbox/tenancy/models/contacts.py",
+"id": "symbols:tenancy.models.contacts:ContactAssignment"
+},
+{
+"module": "tenancy.models.tenants",
+"kind": "class",
+"name": "TenantGroup",
+"lineno": 14,
+"bases": "NestedGroupModel",
+"path": "netbox/tenancy/models/tenants.py",
+"id": "symbols:tenancy.models.tenants:TenantGroup"
+},
+{
+"module": "tenancy.models.tenants",
+"kind": "class",
+"name": "Tenant",
+"lineno": 36,
+"bases": "ContactsMixin,PrimaryModel",
+"path": "netbox/tenancy/models/tenants.py",
+"id": "symbols:tenancy.models.tenants:Tenant"
+},
+{
+"module": "tenancy.search",
+"kind": "class",
+"name": "ContactIndex",
+"lineno": 6,
+"bases": "SearchIndex",
+"path": "netbox/tenancy/search.py",
+"id": "symbols:tenancy.search:ContactIndex"
+},
+{
+"module": "tenancy.search",
+"kind": "class",
+"name": "ContactGroupIndex",
+"lineno": 22,
+"bases": "SearchIndex",
+"path": "netbox/tenancy/search.py",
+"id": "symbols:tenancy.search:ContactGroupIndex"
+},
+{
+"module": "tenancy.search",
+"kind": "class",
+"name": "ContactRoleIndex",
+"lineno": 34,
+"bases": "SearchIndex",
+"path": "netbox/tenancy/search.py",
+"id": "symbols:tenancy.search:ContactRoleIndex"
+},
+{
+"module": "tenancy.search",
+"kind": "class",
+"name": "TenantIndex",
+"lineno": 45,
+"bases": "SearchIndex",
+"path": "netbox/tenancy/search.py",
+"id": "symbols:tenancy.search:TenantIndex"
+},
+{
+"module": "tenancy.search",
+"kind": "class",
+"name": "TenantGroupIndex",
+"lineno": 57,
+"bases": "SearchIndex",
+"path": "netbox/tenancy/search.py",
+"id": "symbols:tenancy.search:TenantGroupIndex"
+},
+{
+"module": "tenancy.tables.columns",
+"kind": "class",
+"name": "TenantColumn",
+"lineno": 15,
+"bases": "tables.TemplateColumn",
+"path": "netbox/tenancy/tables/columns.py",
+"id": "symbols:tenancy.tables.columns:TenantColumn"
+},
+{
+"module": "tenancy.tables.columns",
+"kind": "class",
+"name": "TenantGroupColumn",
+"lineno": 28,
+"bases": "tables.TemplateColumn",
+"path": "netbox/tenancy/tables/columns.py",
+"id": "symbols:tenancy.tables.columns:TenantGroupColumn"
+},
+{
+"module": "tenancy.tables.columns",
+"kind": "class",
+"name": "TenancyColumnsMixin",
+"lineno": 44,
+"bases": "tables.Table",
+"path": "netbox/tenancy/tables/columns.py",
+"id": "symbols:tenancy.tables.columns:TenancyColumnsMixin"
+},
+{
+"module": "tenancy.tables.columns",
+"kind": "class",
+"name": "ContactsColumnMixin",
+"lineno": 53,
+"bases": "tables.Table",
+"path": "netbox/tenancy/tables/columns.py",
+"id": "symbols:tenancy.tables.columns:ContactsColumnMixin"
+},
+{
+"module": "tenancy.tables.contacts",
+"kind": "class",
+"name": "ContactGroupTable",
+"lineno": 17,
+"bases": "NetBoxTable",
+"path": "netbox/tenancy/tables/contacts.py",
+"id": "symbols:tenancy.tables.contacts:ContactGroupTable"
+},
+{
+"module": "tenancy.tables.contacts",
+"kind": "class",
+"name": "ContactRoleTable",
+"lineno": 43,
+"bases": "NetBoxTable",
+"path": "netbox/tenancy/tables/contacts.py",
+"id": "symbols:tenancy.tables.contacts:ContactRoleTable"
+},
+{
+"module": "tenancy.tables.contacts",
+"kind": "class",
+"name": "ContactTable",
+"lineno": 58,
+"bases": "NetBoxTable",
+"path": "netbox/tenancy/tables/contacts.py",
+"id": "symbols:tenancy.tables.contacts:ContactTable"
+},
+{
+"module": "tenancy.tables.contacts",
+"kind": "class",
+"name": "ContactAssignmentTable",
+"lineno": 92,
+"bases": "NetBoxTable",
+"path": "netbox/tenancy/tables/contacts.py",
+"id": "symbols:tenancy.tables.contacts:ContactAssignmentTable"
+},
+{
+"module": "tenancy.tables.tenants",
+"kind": "class",
+"name": "TenantGroupTable",
+"lineno": 14,
+"bases": "NetBoxTable",
+"path": "netbox/tenancy/tables/tenants.py",
+"id": "symbols:tenancy.tables.tenants:TenantGroupTable"
+},
+{
+"module": "tenancy.tables.tenants",
+"kind": "class",
+"name": "TenantTable",
+"lineno": 40,
+"bases": "ContactsColumnMixin,NetBoxTable",
+"path": "netbox/tenancy/tables/tenants.py",
+"id": "symbols:tenancy.tables.tenants:TenantTable"
+},
+{
+"module": "tenancy.tests.test_api",
+"kind": "class",
+"name": "AppTest",
+"lineno": 9,
+"bases": "APITestCase",
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "symbols:tenancy.tests.test_api:AppTest"
+},
+{
+"module": "tenancy.tests.test_api",
+"kind": "class",
+"name": "TenantGroupTest",
+"lineno": 19,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "symbols:tenancy.tests.test_api:TenantGroupTest"
+},
+{
+"module": "tenancy.tests.test_api",
+"kind": "class",
+"name": "TenantTest",
+"lineno": 64,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "symbols:tenancy.tests.test_api:TenantTest"
+},
+{
+"module": "tenancy.tests.test_api",
+"kind": "class",
+"name": "ContactGroupTest",
+"lineno": 106,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "symbols:tenancy.tests.test_api:ContactGroupTest"
+},
+{
+"module": "tenancy.tests.test_api",
+"kind": "class",
+"name": "ContactRoleTest",
+"lineno": 151,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "symbols:tenancy.tests.test_api:ContactRoleTest"
+},
+{
+"module": "tenancy.tests.test_api",
+"kind": "class",
+"name": "ContactTest",
+"lineno": 183,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "symbols:tenancy.tests.test_api:ContactTest"
+},
+{
+"module": "tenancy.tests.test_api",
+"kind": "class",
+"name": "ContactAssignmentTest",
+"lineno": 223,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "symbols:tenancy.tests.test_api:ContactAssignmentTest"
+},
+{
+"module": "tenancy.tests.test_filtersets",
+"kind": "class",
+"name": "TenantGroupTestCase",
+"lineno": 10,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "symbols:tenancy.tests.test_filtersets:TenantGroupTestCase"
+},
+{
+"module": "tenancy.tests.test_filtersets",
+"kind": "class",
+"name": "TenantTestCase",
+"lineno": 98,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "symbols:tenancy.tests.test_filtersets:TenantTestCase"
+},
+{
+"module": "tenancy.tests.test_filtersets",
+"kind": "class",
+"name": "ContactGroupTestCase",
+"lineno": 144,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "symbols:tenancy.tests.test_filtersets:ContactGroupTestCase"
+},
+{
+"module": "tenancy.tests.test_filtersets",
+"kind": "class",
+"name": "ContactRoleTestCase",
+"lineno": 232,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "symbols:tenancy.tests.test_filtersets:ContactRoleTestCase"
+},
+{
+"module": "tenancy.tests.test_filtersets",
+"kind": "class",
+"name": "ContactTestCase",
+"lineno": 263,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "symbols:tenancy.tests.test_filtersets:ContactTestCase"
+},
+{
+"module": "tenancy.tests.test_filtersets",
+"kind": "class",
+"name": "ContactAssignmentTestCase",
+"lineno": 309,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "symbols:tenancy.tests.test_filtersets:ContactAssignmentTestCase"
+},
+{
+"module": "tenancy.tests.test_views",
+"kind": "class",
+"name": "TenantGroupTestCase",
+"lineno": 10,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "symbols:tenancy.tests.test_views:TenantGroupTestCase"
+},
+{
+"module": "tenancy.tests.test_views",
+"kind": "class",
+"name": "TenantTestCase",
+"lineno": 54,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "symbols:tenancy.tests.test_views:TenantTestCase"
+},
+{
+"module": "tenancy.tests.test_views",
+"kind": "class",
+"name": "ContactGroupTestCase",
+"lineno": 104,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "symbols:tenancy.tests.test_views:ContactGroupTestCase"
+},
+{
+"module": "tenancy.tests.test_views",
+"kind": "class",
+"name": "ContactRoleTestCase",
+"lineno": 148,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "symbols:tenancy.tests.test_views:ContactRoleTestCase"
+},
+{
+"module": "tenancy.tests.test_views",
+"kind": "class",
+"name": "ContactTestCase",
+"lineno": 189,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "symbols:tenancy.tests.test_views:ContactTestCase"
+},
+{
+"module": "tenancy.tests.test_views",
+"kind": "class",
+"name": "ContactAssignmentTestCase",
+"lineno": 240,
+"bases": "ViewTestCases.CreateObjectViewTestCase,ViewTestCases.EditObjectViewTestCase,ViewTestCases.DeleteObjectViewTestCase,ViewTestCases.ListObjectsViewTestCase,ViewTestCases.BulkEditObjectsViewTestCase,ViewT",
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "symbols:tenancy.tests.test_views:ContactAssignmentTestCase"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantGroupListView",
+"lineno": 16,
+"bases": "generic.ObjectListView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantGroupListView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantGroupView",
+"lineno": 30,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantGroupView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantGroupEditView",
+"lineno": 43,
+"bases": "generic.ObjectEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantGroupEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantGroupDeleteView",
+"lineno": 49,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantGroupDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantGroupBulkImportView",
+"lineno": 54,
+"bases": "generic.BulkImportView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantGroupBulkImportView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantGroupBulkEditView",
+"lineno": 60,
+"bases": "generic.BulkEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantGroupBulkEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantGroupBulkDeleteView",
+"lineno": 74,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantGroupBulkDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantListView",
+"lineno": 91,
+"bases": "generic.ObjectListView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantListView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantView",
+"lineno": 99,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantEditView",
+"lineno": 110,
+"bases": "generic.ObjectEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantDeleteView",
+"lineno": 116,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantBulkImportView",
+"lineno": 121,
+"bases": "generic.BulkImportView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantBulkImportView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantBulkEditView",
+"lineno": 127,
+"bases": "generic.BulkEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantBulkEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "TenantBulkDeleteView",
+"lineno": 135,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:TenantBulkDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactGroupListView",
+"lineno": 146,
+"bases": "generic.ObjectListView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactGroupListView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactGroupView",
+"lineno": 160,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactGroupView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactGroupEditView",
+"lineno": 179,
+"bases": "generic.ObjectEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactGroupEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactGroupDeleteView",
+"lineno": 185,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactGroupDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactGroupBulkImportView",
+"lineno": 190,
+"bases": "generic.BulkImportView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactGroupBulkImportView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactGroupBulkEditView",
+"lineno": 196,
+"bases": "generic.BulkEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactGroupBulkEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactGroupBulkDeleteView",
+"lineno": 210,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactGroupBulkDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactRoleListView",
+"lineno": 227,
+"bases": "generic.ObjectListView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactRoleListView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactRoleView",
+"lineno": 235,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactRoleView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactRoleEditView",
+"lineno": 246,
+"bases": "generic.ObjectEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactRoleEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactRoleDeleteView",
+"lineno": 252,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactRoleDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactRoleBulkImportView",
+"lineno": 257,
+"bases": "generic.BulkImportView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactRoleBulkImportView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactRoleBulkEditView",
+"lineno": 263,
+"bases": "generic.BulkEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactRoleBulkEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactRoleBulkDeleteView",
+"lineno": 271,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactRoleBulkDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactListView",
+"lineno": 282,
+"bases": "generic.ObjectListView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactListView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactView",
+"lineno": 292,
+"bases": "generic.ObjectView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactEditView",
+"lineno": 298,
+"bases": "generic.ObjectEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactDeleteView",
+"lineno": 304,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactBulkImportView",
+"lineno": 309,
+"bases": "generic.BulkImportView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactBulkImportView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactBulkEditView",
+"lineno": 315,
+"bases": "generic.BulkEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactBulkEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactBulkDeleteView",
+"lineno": 334,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactBulkDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactAssignmentListView",
+"lineno": 347,
+"bases": "generic.ObjectListView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactAssignmentListView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactAssignmentEditView",
+"lineno": 362,
+"bases": "generic.ObjectEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactAssignmentEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactAssignmentBulkImportView",
+"lineno": 381,
+"bases": "generic.BulkImportView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactAssignmentBulkImportView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactAssignmentBulkEditView",
+"lineno": 387,
+"bases": "generic.BulkEditView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactAssignmentBulkEditView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactAssignmentBulkDeleteView",
+"lineno": 395,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactAssignmentBulkDeleteView"
+},
+{
+"module": "tenancy.views",
+"kind": "class",
+"name": "ContactAssignmentDeleteView",
+"lineno": 402,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/tenancy/views.py",
+"id": "symbols:tenancy.views:ContactAssignmentDeleteView"
+}
+],
+"imports_out": [
+{
+"src": "tenancy.api.serializers",
+"dst": "tenancy.api.serializers_.contacts",
+"raw": "tenancy.api.serializers_.contacts",
+"lineno": 2,
+"path": "netbox/tenancy/api/serializers.py",
+"id": "imports:tenancy.api.serializers->tenancy.api.serializers_.contacts"
+},
+{
+"src": "tenancy.api.serializers",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 1,
+"path": "netbox/tenancy/api/serializers.py",
+"id": "imports:tenancy.api.serializers->tenancy.api.serializers_.tenants"
+},
+{
+"src": "tenancy.api.serializers_.contacts",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 6,
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "imports:tenancy.api.serializers_.contacts->netbox.api.fields"
+},
+{
+"src": "tenancy.api.serializers_.contacts",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 7,
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "imports:tenancy.api.serializers_.contacts->netbox.api.serializers"
+},
+{
+"src": "tenancy.api.serializers_.contacts",
+"dst": "tenancy.api.serializers_.nested",
+"raw": "tenancy.api.serializers_.nested",
+"lineno": 11,
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "imports:tenancy.api.serializers_.contacts->tenancy.api.serializers_.nested"
+},
+{
+"src": "tenancy.api.serializers_.contacts",
+"dst": "tenancy.choices",
+"raw": "tenancy.choices",
+"lineno": 8,
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "imports:tenancy.api.serializers_.contacts->tenancy.choices"
+},
+{
+"src": "tenancy.api.serializers_.contacts",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "imports:tenancy.api.serializers_.contacts->tenancy.models"
+},
+{
+"src": "tenancy.api.serializers_.contacts",
+"dst": "utilities.api",
+"raw": "utilities.api",
+"lineno": 10,
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"id": "imports:tenancy.api.serializers_.contacts->utilities.api"
+},
+{
+"src": "tenancy.api.serializers_.nested",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 4,
+"path": "netbox/tenancy/api/serializers_/nested.py",
+"id": "imports:tenancy.api.serializers_.nested->netbox.api.serializers"
+},
+{
+"src": "tenancy.api.serializers_.nested",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 5,
+"path": "netbox/tenancy/api/serializers_/nested.py",
+"id": "imports:tenancy.api.serializers_.nested->tenancy"
+},
+{
+"src": "tenancy.api.serializers_.tenants",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 3,
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"id": "imports:tenancy.api.serializers_.tenants->netbox.api.fields"
+},
+{
+"src": "tenancy.api.serializers_.tenants",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 4,
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"id": "imports:tenancy.api.serializers_.tenants->netbox.api.serializers"
+},
+{
+"src": "tenancy.api.serializers_.tenants",
+"dst": "tenancy.api.serializers_.nested",
+"raw": "tenancy.api.serializers_.nested",
+"lineno": 6,
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"id": "imports:tenancy.api.serializers_.tenants->tenancy.api.serializers_.nested"
+},
+{
+"src": "tenancy.api.serializers_.tenants",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"id": "imports:tenancy.api.serializers_.tenants->tenancy.models"
+},
+{
+"src": "tenancy.api.urls",
+"dst": "netbox.api.routers",
+"raw": "netbox.api.routers",
+"lineno": 1,
+"path": "netbox/tenancy/api/urls.py",
+"id": "imports:tenancy.api.urls->netbox.api.routers"
+},
+{
+"src": "tenancy.api.urls",
+"dst": "tenancy.api",
+"raw": "tenancy.api",
+"lineno": 2,
+"path": "netbox/tenancy/api/urls.py",
+"id": "imports:tenancy.api.urls->tenancy.api"
+},
+{
+"src": "tenancy.api.views",
+"dst": "netbox.api.viewsets",
+"raw": "netbox.api.viewsets",
+"lineno": 3,
+"path": "netbox/tenancy/api/views.py",
+"id": "imports:tenancy.api.views->netbox.api.viewsets"
+},
+{
+"src": "tenancy.api.views",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 4,
+"path": "netbox/tenancy/api/views.py",
+"id": "imports:tenancy.api.views->tenancy"
+},
+{
+"src": "tenancy.api.views",
+"dst": "tenancy.api",
+"raw": "tenancy.api",
+"lineno": 6,
+"path": "netbox/tenancy/api/views.py",
+"id": "imports:tenancy.api.views->tenancy.api"
+},
+{
+"src": "tenancy.api.views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/tenancy/api/views.py",
+"id": "imports:tenancy.api.views->tenancy.models"
+},
+{
+"src": "tenancy.apps",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 8,
+"path": "netbox/tenancy/apps.py",
+"id": "imports:tenancy.apps->netbox.models.features"
+},
+{
+"src": "tenancy.apps",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 9,
+"path": "netbox/tenancy/apps.py",
+"id": "imports:tenancy.apps->tenancy"
+},
+{
+"src": "tenancy.choices",
+"dst": "utilities.choices",
+"raw": "utilities.choices",
+"lineno": 3,
+"path": "netbox/tenancy/choices.py",
+"id": "imports:tenancy.choices->utilities.choices"
+},
+{
+"src": "tenancy.filtersets",
+"dst": "netbox.filtersets",
+"raw": "netbox.filtersets",
+"lineno": 5,
+"path": "netbox/tenancy/filtersets.py",
+"id": "imports:tenancy.filtersets->netbox.filtersets"
+},
+{
+"src": "tenancy.filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/tenancy/filtersets.py",
+"id": "imports:tenancy.filtersets->tenancy.models"
+},
+{
+"src": "tenancy.filtersets",
+"dst": "utilities.filters",
+"raw": "utilities.filters",
+"lineno": 6,
+"path": "netbox/tenancy/filtersets.py",
+"id": "imports:tenancy.filtersets->utilities.filters"
+},
+{
+"src": "tenancy.forms",
+"dst": "tenancy.forms.bulk_edit",
+"raw": "tenancy.forms.bulk_edit",
+"lineno": 4,
+"path": "netbox/tenancy/forms/__init__.py",
+"id": "imports:tenancy.forms->tenancy.forms.bulk_edit"
+},
+{
+"src": "tenancy.forms",
+"dst": "tenancy.forms.bulk_import",
+"raw": "tenancy.forms.bulk_import",
+"lineno": 5,
+"path": "netbox/tenancy/forms/__init__.py",
+"id": "imports:tenancy.forms->tenancy.forms.bulk_import"
+},
+{
+"src": "tenancy.forms",
+"dst": "tenancy.forms.filtersets",
+"raw": "tenancy.forms.filtersets",
+"lineno": 3,
+"path": "netbox/tenancy/forms/__init__.py",
+"id": "imports:tenancy.forms->tenancy.forms.filtersets"
+},
+{
+"src": "tenancy.forms",
+"dst": "tenancy.forms.forms",
+"raw": "tenancy.forms.forms",
+"lineno": 1,
+"path": "netbox/tenancy/forms/__init__.py",
+"id": "imports:tenancy.forms->tenancy.forms.forms"
+},
+{
+"src": "tenancy.forms",
+"dst": "tenancy.forms.model_forms",
+"raw": "tenancy.forms.model_forms",
+"lineno": 2,
+"path": "netbox/tenancy/forms/__init__.py",
+"id": "imports:tenancy.forms->tenancy.forms.model_forms"
+},
+{
+"src": "tenancy.forms.bulk_edit",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 4,
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "imports:tenancy.forms.bulk_edit->netbox.forms"
+},
+{
+"src": "tenancy.forms.bulk_edit",
+"dst": "tenancy.choices",
+"raw": "tenancy.choices",
+"lineno": 5,
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "imports:tenancy.forms.bulk_edit->tenancy.choices"
+},
+{
+"src": "tenancy.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 6,
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "imports:tenancy.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "tenancy.forms.bulk_edit",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 7,
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "imports:tenancy.forms.bulk_edit->utilities.forms"
+},
+{
+"src": "tenancy.forms.bulk_edit",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 8,
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "imports:tenancy.forms.bulk_edit->utilities.forms.fields"
+},
+{
+"src": "tenancy.forms.bulk_edit",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 9,
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"id": "imports:tenancy.forms.bulk_edit->utilities.forms.rendering"
+},
+{
+"src": "tenancy.forms.bulk_import",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 4,
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "imports:tenancy.forms.bulk_import->netbox.forms"
+},
+{
+"src": "tenancy.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "imports:tenancy.forms.bulk_import->tenancy.models"
+},
+{
+"src": "tenancy.forms.bulk_import",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 6,
+"path": "netbox/tenancy/forms/bulk_import.py",
+"id": "imports:tenancy.forms.bulk_import->utilities.forms.fields"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->core.models"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 5,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->netbox.forms"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "tenancy.choices",
+"raw": "tenancy.choices",
+"lineno": 6,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->tenancy.choices"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->tenancy.forms"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->tenancy.models"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 9,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->utilities.forms.fields"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 12,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->utilities.forms.rendering"
+},
+{
+"src": "tenancy.forms.forms",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 4,
+"path": "netbox/tenancy/forms/forms.py",
+"id": "imports:tenancy.forms.forms->tenancy.models"
+},
+{
+"src": "tenancy.forms.forms",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 5,
+"path": "netbox/tenancy/forms/forms.py",
+"id": "imports:tenancy.forms.forms->utilities.forms.fields"
+},
+{
+"src": "tenancy.forms.model_forms",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 4,
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "imports:tenancy.forms.model_forms->netbox.forms"
+},
+{
+"src": "tenancy.forms.model_forms",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "imports:tenancy.forms.model_forms->tenancy.models"
+},
+{
+"src": "tenancy.forms.model_forms",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 6,
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "imports:tenancy.forms.model_forms->utilities.forms.fields"
+},
+{
+"src": "tenancy.forms.model_forms",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 7,
+"path": "netbox/tenancy/forms/model_forms.py",
+"id": "imports:tenancy.forms.model_forms->utilities.forms.rendering"
+},
+{
+"src": "tenancy.graphql.enums",
+"dst": "tenancy.choices",
+"raw": "tenancy.choices",
+"lineno": 3,
+"path": "netbox/tenancy/graphql/enums.py",
+"id": "imports:tenancy.graphql.enums->tenancy.choices"
+},
+{
+"src": "tenancy.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"id": "imports:tenancy.graphql.filter_mixins->core.graphql.filter_mixins"
+},
+{
+"src": "tenancy.graphql.filter_mixins",
+"dst": "netbox.graphql.filter_lookups",
+"raw": "netbox.graphql.filter_lookups",
+"lineno": 11,
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"id": "imports:tenancy.graphql.filter_mixins->netbox.graphql.filter_lookups"
+},
+{
+"src": "tenancy.graphql.filter_mixins",
+"dst": "tenancy.graphql.filters",
+"raw": "tenancy.graphql.filters",
+"lineno": 12,
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"id": "imports:tenancy.graphql.filter_mixins->tenancy.graphql.filters"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "circuits.graphql.filters",
+"raw": "circuits.graphql.filters",
+"lineno": 20,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->circuits.graphql.filters"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 19,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->core.graphql.filters"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "dcim.graphql.filters",
+"raw": "dcim.graphql.filters",
+"lineno": 21,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->dcim.graphql.filters"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "extras.graphql.filter_mixins",
+"raw": "extras.graphql.filter_mixins",
+"lineno": 9,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->extras.graphql.filter_mixins"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "ipam.graphql.filters",
+"raw": "ipam.graphql.filters",
+"lineno": 31,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->ipam.graphql.filters"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "netbox.graphql.filter_lookups",
+"raw": "netbox.graphql.filter_lookups",
+"lineno": 43,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->netbox.graphql.filter_lookups"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->netbox.graphql.filter_mixins"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 15,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->tenancy"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "tenancy.graphql.enums",
+"raw": "tenancy.graphql.enums",
+"lineno": 47,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->tenancy.graphql.enums"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 16,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "virtualization.graphql.filters",
+"raw": "virtualization.graphql.filters",
+"lineno": 45,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->virtualization.graphql.filters"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "vpn.graphql.filters",
+"raw": "vpn.graphql.filters",
+"lineno": 46,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->vpn.graphql.filters"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "wireless.graphql.filters",
+"raw": "wireless.graphql.filters",
+"lineno": 44,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->wireless.graphql.filters"
+},
+{
+"src": "tenancy.graphql.schema",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 6,
+"path": "netbox/tenancy/graphql/schema.py",
+"id": "imports:tenancy.graphql.schema->tenancy.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "circuits.graphql.types",
+"raw": "circuits.graphql.types",
+"lineno": 13,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->circuits.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "dcim.graphql.types",
+"raw": "dcim.graphql.types",
+"lineno": 14,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->dcim.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "extras.graphql.mixins",
+"raw": "extras.graphql.mixins",
+"lineno": 6,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->extras.graphql.mixins"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "ipam.graphql.types",
+"raw": "ipam.graphql.types",
+"lineno": 24,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->ipam.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 7,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->netbox.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 35,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->netbox.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 8,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->tenancy"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "tenancy.graphql.filters",
+"raw": "tenancy.graphql.filters",
+"lineno": 9,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->tenancy.graphql.filters"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "tenancy.graphql.mixins",
+"raw": "tenancy.graphql.mixins",
+"lineno": 10,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->tenancy.graphql.mixins"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 37,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->virtualization.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "vpn.graphql.types",
+"raw": "vpn.graphql.types",
+"lineno": 38,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->vpn.graphql.types"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "wireless.graphql.types",
+"raw": "wireless.graphql.types",
+"lineno": 36,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->wireless.graphql.types"
+},
+{
+"src": "tenancy.migrations.0001_squashed_0012",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 1,
+"path": "netbox/tenancy/migrations/0001_squashed_0012.py",
+"id": "imports:tenancy.migrations.0001_squashed_0012->utilities.json"
+},
+{
+"src": "tenancy.migrations.0002_squashed_0011",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 6,
+"path": "netbox/tenancy/migrations/0002_squashed_0011.py",
+"id": "imports:tenancy.migrations.0002_squashed_0011->utilities.json"
+},
+{
+"src": "tenancy.migrations.0012_contactassignment_custom_fields",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 4,
+"path": "netbox/tenancy/migrations/0012_contactassignment_custom_fields.py",
+"id": "imports:tenancy.migrations.0012_contactassignment_custom_fields->utilities.json"
+},
+{
+"src": "tenancy.models",
+"dst": "tenancy.models.contacts",
+"raw": "tenancy.models.contacts",
+"lineno": 1,
+"path": "netbox/tenancy/models/__init__.py",
+"id": "imports:tenancy.models->tenancy.models.contacts"
+},
+{
+"src": "tenancy.models",
+"dst": "tenancy.models.tenants",
+"raw": "tenancy.models.tenants",
+"lineno": 2,
+"path": "netbox/tenancy/models/__init__.py",
+"id": "imports:tenancy.models->tenancy.models.tenants"
+},
+{
+"src": "tenancy.models.contacts",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "imports:tenancy.models.contacts->core.models"
+},
+{
+"src": "tenancy.models.contacts",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 8,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "imports:tenancy.models.contacts->netbox.models"
+},
+{
+"src": "tenancy.models.contacts",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 9,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "imports:tenancy.models.contacts->netbox.models.features"
+},
+{
+"src": "tenancy.models.contacts",
+"dst": "tenancy.choices",
+"raw": "tenancy.choices",
+"lineno": 10,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "imports:tenancy.models.contacts->tenancy.choices"
+},
+{
+"src": "tenancy.models.tenants",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 5,
+"path": "netbox/tenancy/models/tenants.py",
+"id": "imports:tenancy.models.tenants->netbox.models"
+},
+{
+"src": "tenancy.models.tenants",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 6,
+"path": "netbox/tenancy/models/tenants.py",
+"id": "imports:tenancy.models.tenants->netbox.models.features"
+},
+{
+"src": "tenancy.search",
+"dst": "netbox.search",
+"raw": "netbox.search",
+"lineno": 1,
+"path": "netbox/tenancy/search.py",
+"id": "imports:tenancy.search->netbox.search"
+},
+{
+"src": "tenancy.search",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 2,
+"path": "netbox/tenancy/search.py",
+"id": "imports:tenancy.search->tenancy"
+},
+{
+"src": "tenancy.tables",
+"dst": "tenancy.tables.columns",
+"raw": "tenancy.tables.columns",
+"lineno": 1,
+"path": "netbox/tenancy/tables/__init__.py",
+"id": "imports:tenancy.tables->tenancy.tables.columns"
+},
+{
+"src": "tenancy.tables",
+"dst": "tenancy.tables.contacts",
+"raw": "tenancy.tables.contacts",
+"lineno": 2,
+"path": "netbox/tenancy/tables/__init__.py",
+"id": "imports:tenancy.tables->tenancy.tables.contacts"
+},
+{
+"src": "tenancy.tables",
+"dst": "tenancy.tables.tenants",
+"raw": "tenancy.tables.tenants",
+"lineno": 3,
+"path": "netbox/tenancy/tables/__init__.py",
+"id": "imports:tenancy.tables->tenancy.tables.tenants"
+},
+{
+"src": "tenancy.tables.columns",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 4,
+"path": "netbox/tenancy/tables/columns.py",
+"id": "imports:tenancy.tables.columns->netbox.tables"
+},
+{
+"src": "tenancy.tables.columns",
+"dst": "tenancy.tables.template_code",
+"raw": "tenancy.tables.template_code",
+"lineno": 5,
+"path": "netbox/tenancy/tables/columns.py",
+"id": "imports:tenancy.tables.columns->tenancy.tables.template_code"
+},
+{
+"src": "tenancy.tables.contacts",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 5,
+"path": "netbox/tenancy/tables/contacts.py",
+"id": "imports:tenancy.tables.contacts->netbox.tables"
+},
+{
+"src": "tenancy.tables.contacts",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 6,
+"path": "netbox/tenancy/tables/contacts.py",
+"id": "imports:tenancy.tables.contacts->tenancy.models"
+},
+{
+"src": "tenancy.tables.contacts",
+"dst": "utilities.tables",
+"raw": "utilities.tables",
+"lineno": 7,
+"path": "netbox/tenancy/tables/contacts.py",
+"id": "imports:tenancy.tables.contacts->utilities.tables"
+},
+{
+"src": "tenancy.tables.tenants",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 6,
+"path": "netbox/tenancy/tables/tenants.py",
+"id": "imports:tenancy.tables.tenants->netbox.tables"
+},
+{
+"src": "tenancy.tables.tenants",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 3,
+"path": "netbox/tenancy/tables/tenants.py",
+"id": "imports:tenancy.tables.tenants->tenancy.models"
+},
+{
+"src": "tenancy.tables.tenants",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 4,
+"path": "netbox/tenancy/tables/tenants.py",
+"id": "imports:tenancy.tables.tenants->tenancy.tables"
+},
+{
+"src": "tenancy.tests.test_api",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 3,
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "imports:tenancy.tests.test_api->dcim.models"
+},
+{
+"src": "tenancy.tests.test_api",
+"dst": "tenancy.choices",
+"raw": "tenancy.choices",
+"lineno": 4,
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "imports:tenancy.tests.test_api->tenancy.choices"
+},
+{
+"src": "tenancy.tests.test_api",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "imports:tenancy.tests.test_api->tenancy.models"
+},
+{
+"src": "tenancy.tests.test_api",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 6,
+"path": "netbox/tenancy/tests/test_api.py",
+"id": "imports:tenancy.tests.test_api->utilities.testing"
+},
+{
+"src": "tenancy.tests.test_filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "imports:tenancy.tests.test_filtersets->core.models"
+},
+{
+"src": "tenancy.tests.test_filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "imports:tenancy.tests.test_filtersets->dcim.models"
+},
+{
+"src": "tenancy.tests.test_filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 5,
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "imports:tenancy.tests.test_filtersets->tenancy.filtersets"
+},
+{
+"src": "tenancy.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 6,
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "imports:tenancy.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "tenancy.tests.test_filtersets",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 7,
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "imports:tenancy.tests.test_filtersets->utilities.testing"
+},
+{
+"src": "tenancy.tests.test_views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "imports:tenancy.tests.test_views->dcim.models"
+},
+{
+"src": "tenancy.tests.test_views",
+"dst": "tenancy.choices",
+"raw": "tenancy.choices",
+"lineno": 5,
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "imports:tenancy.tests.test_views->tenancy.choices"
+},
+{
+"src": "tenancy.tests.test_views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 6,
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "imports:tenancy.tests.test_views->tenancy.models"
+},
+{
+"src": "tenancy.tests.test_views",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 7,
+"path": "netbox/tenancy/tests/test_views.py",
+"id": "imports:tenancy.tests.test_views->utilities.testing"
+},
+{
+"src": "tenancy.urls",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 4,
+"path": "netbox/tenancy/urls.py",
+"id": "imports:tenancy.urls->tenancy"
+},
+{
+"src": "tenancy.urls",
+"dst": "utilities.urls",
+"raw": "utilities.urls",
+"lineno": 3,
+"path": "netbox/tenancy/urls.py",
+"id": "imports:tenancy.urls->utilities.urls"
+},
+{
+"src": "tenancy.views",
+"dst": "netbox.views",
+"raw": "netbox.views",
+"lineno": 4,
+"path": "netbox/tenancy/views.py",
+"id": "imports:tenancy.views->netbox.views"
+},
+{
+"src": "tenancy.views",
+"dst": "tenancy",
+"raw": "tenancy",
+"lineno": 7,
+"path": "netbox/tenancy/views.py",
+"id": "imports:tenancy.views->tenancy"
+},
+{
+"src": "tenancy.views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 8,
+"path": "netbox/tenancy/views.py",
+"id": "imports:tenancy.views->tenancy.models"
+},
+{
+"src": "tenancy.views",
+"dst": "utilities.query",
+"raw": "utilities.query",
+"lineno": 5,
+"path": "netbox/tenancy/views.py",
+"id": "imports:tenancy.views->utilities.query"
+},
+{
+"src": "tenancy.views",
+"dst": "utilities.views",
+"raw": "utilities.views",
+"lineno": 6,
+"path": "netbox/tenancy/views.py",
+"id": "imports:tenancy.views->utilities.views"
+}
+],
+"imports_in": [
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 16,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->tenancy.api.serializers_.tenants"
+},
+{
+"src": "circuits.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 10,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->tenancy.filtersets"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 15,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 11,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->tenancy.models"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 13,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->tenancy.forms"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 14,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->tenancy.forms"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 19,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 10,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "circuits.tables.circuits",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/circuits/tables/circuits.py",
+"id": "imports:circuits.tables.circuits->tenancy.tables"
+},
+{
+"src": "circuits.tables.providers",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/circuits/tables/providers.py",
+"id": "imports:circuits.tables.providers->tenancy.tables"
+},
+{
+"src": "circuits.tables.virtual_circuits",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"id": "imports:circuits.tables.virtual_circuits->tenancy.tables"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 12,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "dcim.api.serializers_.cables",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 11,
+"path": "netbox/dcim/api/serializers_/cables.py",
+"id": "imports:dcim.api.serializers_.cables->tenancy.api.serializers_.tenants"
+},
+{
+"src": "dcim.api.serializers_.devices",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 15,
+"path": "netbox/dcim/api/serializers_/devices.py",
+"id": "imports:dcim.api.serializers_.devices->tenancy.api.serializers_.tenants"
+},
+{
+"src": "dcim.api.serializers_.power",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 5,
+"path": "netbox/dcim/api/serializers_/power.py",
+"id": "imports:dcim.api.serializers_.power->tenancy.api.serializers_.tenants"
+},
+{
+"src": "dcim.api.serializers_.racks",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 11,
+"path": "netbox/dcim/api/serializers_/racks.py",
+"id": "imports:dcim.api.serializers_.racks->tenancy.api.serializers_.tenants"
+},
+{
+"src": "dcim.api.serializers_.sites",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 10,
+"path": "netbox/dcim/api/serializers_/sites.py",
+"id": "imports:dcim.api.serializers_.sites->tenancy.api.serializers_.tenants"
+},
+{
+"src": "dcim.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 17,
+"path": "netbox/dcim/filtersets.py",
+"id": "imports:dcim.filtersets->tenancy.filtersets"
+},
+{
+"src": "dcim.filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 18,
+"path": "netbox/dcim/filtersets.py",
+"id": "imports:dcim.filtersets->tenancy.models"
+},
+{
+"src": "dcim.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 14,
+"path": "netbox/dcim/forms/bulk_edit.py",
+"id": "imports:dcim.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "dcim.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 15,
+"path": "netbox/dcim/forms/bulk_import.py",
+"id": "imports:dcim.forms.bulk_import->tenancy.models"
+},
+{
+"src": "dcim.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 12,
+"path": "netbox/dcim/forms/filtersets.py",
+"id": "imports:dcim.forms.filtersets->tenancy.forms"
+},
+{
+"src": "dcim.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 14,
+"path": "netbox/dcim/forms/model_forms.py",
+"id": "imports:dcim.forms.model_forms->tenancy.forms"
+},
+{
+"src": "dcim.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 18,
+"path": "netbox/dcim/graphql/filters.py",
+"id": "imports:dcim.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "dcim.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 33,
+"path": "netbox/dcim/graphql/types.py",
+"id": "imports:dcim.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "dcim.tables.cables",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 9,
+"path": "netbox/dcim/tables/cables.py",
+"id": "imports:dcim.tables.cables->tenancy.tables"
+},
+{
+"src": "dcim.tables.devices",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 7,
+"path": "netbox/dcim/tables/devices.py",
+"id": "imports:dcim.tables.devices->tenancy.tables"
+},
+{
+"src": "dcim.tables.devicetypes",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/dcim/tables/devicetypes.py",
+"id": "imports:dcim.tables.devicetypes->tenancy.tables"
+},
+{
+"src": "dcim.tables.power",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 4,
+"path": "netbox/dcim/tables/power.py",
+"id": "imports:dcim.tables.power->tenancy.tables"
+},
+{
+"src": "dcim.tables.racks",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 7,
+"path": "netbox/dcim/tables/racks.py",
+"id": "imports:dcim.tables.racks->tenancy.tables"
+},
+{
+"src": "dcim.tables.sites",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 4,
+"path": "netbox/dcim/tables/sites.py",
+"id": "imports:dcim.tables.sites->tenancy.tables"
+},
+{
+"src": "dcim.tests.test_api",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 15,
+"path": "netbox/dcim/tests/test_api.py",
+"id": "imports:dcim.tests.test_api->tenancy.models"
+},
+{
+"src": "dcim.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 10,
+"path": "netbox/dcim/tests/test_filtersets.py",
+"id": "imports:dcim.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "dcim.tests.test_models",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 10,
+"path": "netbox/dcim/tests/test_models.py",
+"id": "imports:dcim.tests.test_models->tenancy.models"
+},
+{
+"src": "dcim.tests.test_views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 15,
+"path": "netbox/dcim/tests/test_views.py",
+"id": "imports:dcim.tests.test_views->tenancy.models"
+},
+{
+"src": "extras.api.serializers_.configcontexts",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 12,
+"path": "netbox/extras/api/serializers_/configcontexts.py",
+"id": "imports:extras.api.serializers_.configcontexts->tenancy.api.serializers_.tenants"
+},
+{
+"src": "extras.api.serializers_.configcontexts",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 13,
+"path": "netbox/extras/api/serializers_/configcontexts.py",
+"id": "imports:extras.api.serializers_.configcontexts->tenancy.models"
+},
+{
+"src": "extras.filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/extras/filtersets.py",
+"id": "imports:extras.filtersets->tenancy.models"
+},
+{
+"src": "extras.forms.filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 11,
+"path": "netbox/extras/forms/filtersets.py",
+"id": "imports:extras.forms.filtersets->tenancy.models"
+},
+{
+"src": "extras.forms.model_forms",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 16,
+"path": "netbox/extras/forms/model_forms.py",
+"id": "imports:extras.forms.model_forms->tenancy.models"
+},
+{
+"src": "extras.graphql.filters",
+"dst": "tenancy.graphql.filters",
+"raw": "tenancy.graphql.filters",
+"lineno": 18,
+"path": "netbox/extras/graphql/filters.py",
+"id": "imports:extras.graphql.filters->tenancy.graphql.filters"
+},
+{
+"src": "extras.graphql.mixins",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 17,
+"path": "netbox/extras/graphql/mixins.py",
+"id": "imports:extras.graphql.mixins->tenancy.graphql.types"
+},
+{
+"src": "extras.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 23,
+"path": "netbox/extras/graphql/types.py",
+"id": "imports:extras.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "extras.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 17,
+"path": "netbox/extras/tests/test_filtersets.py",
+"id": "imports:extras.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "extras.tests.test_models",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 10,
+"path": "netbox/extras/tests/test_models.py",
+"id": "imports:extras.tests.test_models->tenancy.models"
+},
+{
+"src": "extras.tests.test_utils",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/extras/tests/test_utils.py",
+"id": "imports:extras.tests.test_utils->tenancy.models"
+},
+{
+"src": "ipam.api.serializers_.asns",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 6,
+"path": "netbox/ipam/api/serializers_/asns.py",
+"id": "imports:ipam.api.serializers_.asns->tenancy.api.serializers_.tenants"
+},
+{
+"src": "ipam.api.serializers_.ip",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 11,
+"path": "netbox/ipam/api/serializers_/ip.py",
+"id": "imports:ipam.api.serializers_.ip->tenancy.api.serializers_.tenants"
+},
+{
+"src": "ipam.api.serializers_.vlans",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 11,
+"path": "netbox/ipam/api/serializers_/vlans.py",
+"id": "imports:ipam.api.serializers_.vlans->tenancy.api.serializers_.tenants"
+},
+{
+"src": "ipam.api.serializers_.vrfs",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 4,
+"path": "netbox/ipam/api/serializers_/vrfs.py",
+"id": "imports:ipam.api.serializers_.vrfs->tenancy.api.serializers_.tenants"
+},
+{
+"src": "ipam.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 15,
+"path": "netbox/ipam/filtersets.py",
+"id": "imports:ipam.filtersets->tenancy.filtersets"
+},
+{
+"src": "ipam.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 13,
+"path": "netbox/ipam/forms/bulk_edit.py",
+"id": "imports:ipam.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "ipam.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 11,
+"path": "netbox/ipam/forms/bulk_import.py",
+"id": "imports:ipam.forms.bulk_import->tenancy.models"
+},
+{
+"src": "ipam.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 9,
+"path": "netbox/ipam/forms/filtersets.py",
+"id": "imports:ipam.forms.filtersets->tenancy.forms"
+},
+{
+"src": "ipam.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 13,
+"path": "netbox/ipam/forms/model_forms.py",
+"id": "imports:ipam.forms.model_forms->tenancy.forms"
+},
+{
+"src": "ipam.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 18,
+"path": "netbox/ipam/graphql/filters.py",
+"id": "imports:ipam.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "ipam.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 25,
+"path": "netbox/ipam/graphql/types.py",
+"id": "imports:ipam.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "ipam.tables.asn",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/ipam/tables/asn.py",
+"id": "imports:ipam.tables.asn->tenancy.tables"
+},
+{
+"src": "ipam.tables.ip",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 8,
+"path": "netbox/ipam/tables/ip.py",
+"id": "imports:ipam.tables.ip->tenancy.tables"
+},
+{
+"src": "ipam.tables.vlans",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 9,
+"path": "netbox/ipam/tables/vlans.py",
+"id": "imports:ipam.tables.vlans->tenancy.tables"
+},
+{
+"src": "ipam.tables.vrfs",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/ipam/tables/vrfs.py",
+"id": "imports:ipam.tables.vrfs->tenancy.tables"
+},
+{
+"src": "ipam.tests.test_api",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 12,
+"path": "netbox/ipam/tests/test_api.py",
+"id": "imports:ipam.tests.test_api->tenancy.models"
+},
+{
+"src": "ipam.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 12,
+"path": "netbox/ipam/tests/test_filtersets.py",
+"id": "imports:ipam.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "ipam.tests.test_views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 14,
+"path": "netbox/ipam/tests/test_views.py",
+"id": "imports:ipam.tests.test_views->tenancy.models"
+},
+{
+"src": "netbox.graphql.schema",
+"dst": "tenancy.graphql.schema",
+"raw": "tenancy.graphql.schema",
+"lineno": 13,
+"path": "netbox/netbox/graphql/schema.py",
+"id": "imports:netbox.graphql.schema->tenancy.graphql.schema"
+},
+{
+"src": "netbox.models.features",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 382,
+"path": "netbox/netbox/models/features.py",
+"id": "imports:netbox.models.features->tenancy.models"
+},
+{
+"src": "netbox.views.generic.feature_views",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 17,
+"path": "netbox/netbox/views/generic/feature_views.py",
+"id": "imports:netbox.views.generic.feature_views->tenancy.filtersets"
+},
+{
+"src": "netbox.views.generic.feature_views",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 18,
+"path": "netbox/netbox/views/generic/feature_views.py",
+"id": "imports:netbox.views.generic.feature_views->tenancy.forms"
+},
+{
+"src": "netbox.views.generic.feature_views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 15,
+"path": "netbox/netbox/views/generic/feature_views.py",
+"id": "imports:netbox.views.generic.feature_views->tenancy.models"
+},
+{
+"src": "netbox.views.generic.feature_views",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 16,
+"path": "netbox/netbox/views/generic/feature_views.py",
+"id": "imports:netbox.views.generic.feature_views->tenancy.tables"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 7,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->tenancy.api.serializers_.tenants"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 17,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->tenancy.api.serializers_.tenants"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 13,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->tenancy.filtersets"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 11,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->tenancy.models"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 10,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->tenancy.forms"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 14,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->tenancy.forms"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 15,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 26,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "virtualization.tables.clusters",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 3,
+"path": "netbox/virtualization/tables/clusters.py",
+"id": "imports:virtualization.tables.clusters->tenancy.tables"
+},
+{
+"src": "virtualization.tables.virtualmachines",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "imports:virtualization.tables.virtualmachines->tenancy.tables"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "virtualization.tests.test_models",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 6,
+"path": "netbox/virtualization/tests/test_models.py",
+"id": "imports:virtualization.tests.test_models->tenancy.models"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 9,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->tenancy.api.serializers_.tenants"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 8,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->tenancy.api.serializers_.tenants"
+},
+{
+"src": "vpn.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 8,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->tenancy.filtersets"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->tenancy.models"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->tenancy.forms"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->tenancy.forms"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 11,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 15,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "vpn.tables.l2vpn",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/vpn/tables/l2vpn.py",
+"id": "imports:vpn.tables.l2vpn->tenancy.tables"
+},
+{
+"src": "vpn.tables.tunnels",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/vpn/tables/tunnels.py",
+"id": "imports:vpn.tables.tunnels->tenancy.tables"
+},
+{
+"src": "wireless.api.serializers_.wirelesslans",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 9,
+"path": "netbox/wireless/api/serializers_/wirelesslans.py",
+"id": "imports:wireless.api.serializers_.wirelesslans->tenancy.api.serializers_.tenants"
+},
+{
+"src": "wireless.api.serializers_.wirelesslinks",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 6,
+"path": "netbox/wireless/api/serializers_/wirelesslinks.py",
+"id": "imports:wireless.api.serializers_.wirelesslinks->tenancy.api.serializers_.tenants"
+},
+{
+"src": "wireless.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 9,
+"path": "netbox/wireless/filtersets.py",
+"id": "imports:wireless.filtersets->tenancy.filtersets"
+},
+{
+"src": "wireless.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/wireless/forms/bulk_edit.py",
+"id": "imports:wireless.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "wireless.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/wireless/forms/bulk_import.py",
+"id": "imports:wireless.forms.bulk_import->tenancy.models"
+},
+{
+"src": "wireless.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/wireless/forms/filtersets.py",
+"id": "imports:wireless.forms.filtersets->tenancy.forms"
+},
+{
+"src": "wireless.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/wireless/forms/model_forms.py",
+"id": "imports:wireless.forms.model_forms->tenancy.forms"
+},
+{
+"src": "wireless.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/wireless/graphql/filters.py",
+"id": "imports:wireless.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "wireless.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 13,
+"path": "netbox/wireless/graphql/types.py",
+"id": "imports:wireless.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "wireless.tables.wirelesslan",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/wireless/tables/wirelesslan.py",
+"id": "imports:wireless.tables.wirelesslan->tenancy.tables"
+},
+{
+"src": "wireless.tables.wirelesslink",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/wireless/tables/wirelesslink.py",
+"id": "imports:wireless.tables.wirelesslink->tenancy.tables"
+},
+{
+"src": "wireless.tests.test_api",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/wireless/tests/test_api.py",
+"id": "imports:wireless.tests.test_api->tenancy.models"
+},
+{
+"src": "wireless.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/wireless/tests/test_filtersets.py",
+"id": "imports:wireless.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "wireless.tests.test_views",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/wireless/tests/test_views.py",
+"id": "imports:wireless.tests.test_views->tenancy.models"
+}
+],
+"model_refs": [
+{
+"module": "tenancy.migrations.0016_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "tenancy.ContactAssignment",
+"ref_app": "tenancy",
+"ref_model": "ContactAssignment",
+"cross_app": 0,
+"lineno": 8,
+"path": "netbox/tenancy/migrations/0016_charfield_null_choices.py",
+"id": "model_refs:tenancy.migrations.0016_charfield_null_choices:8"
+},
+{
+"module": "tenancy.migrations.0018_contact_groups",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "tenancy.Contact",
+"ref_app": "tenancy",
+"ref_model": "Contact",
+"cross_app": 0,
+"lineno": 6,
+"path": "netbox/tenancy/migrations/0018_contact_groups.py",
+"id": "model_refs:tenancy.migrations.0018_contact_groups:6"
+},
+{
+"module": "tenancy.models.contacts",
+"class": "Contact",
+"field": "groups",
+"kind": "ManyToManyField",
+"raw": "tenancy.ContactGroup",
+"ref_app": "tenancy",
+"ref_model": "ContactGroup",
+"cross_app": 0,
+"lineno": 50,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "model_refs:tenancy.models.contacts:50"
+},
+{
+"module": "tenancy.models.contacts",
+"class": "ContactAssignment",
+"field": "object_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 99,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "model_refs:tenancy.models.contacts:99"
+},
+{
+"module": "tenancy.models.contacts",
+"class": "ContactAssignment",
+"field": "contact",
+"kind": "ForeignKey",
+"raw": "tenancy.Contact",
+"ref_app": "tenancy",
+"ref_model": "Contact",
+"cross_app": 0,
+"lineno": 108,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "model_refs:tenancy.models.contacts:108"
+},
+{
+"module": "tenancy.models.contacts",
+"class": "ContactAssignment",
+"field": "role",
+"kind": "ForeignKey",
+"raw": "tenancy.ContactRole",
+"ref_app": "tenancy",
+"ref_model": "ContactRole",
+"cross_app": 0,
+"lineno": 113,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "model_refs:tenancy.models.contacts:113"
+},
+{
+"module": "tenancy.models.tenants",
+"class": "Tenant",
+"field": "group",
+"kind": "ForeignKey",
+"raw": "tenancy.TenantGroup",
+"ref_app": "tenancy",
+"ref_model": "TenantGroup",
+"cross_app": 0,
+"lineno": 50,
+"path": "netbox/tenancy/models/tenants.py",
+"id": "model_refs:tenancy.models.tenants:50"
+}
+],
+"model_refs_in": [
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 72,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:72"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitGroup",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 162,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:162"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuit",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 64,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:64"
+},
+{
+"module": "dcim.models.cables",
+"class": "Cable",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 54,
+"path": "netbox/dcim/models/cables.py",
+"id": "model_refs:dcim.models.cables:54"
+},
+{
+"module": "dcim.models.devices",
+"class": "Device",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 462,
+"path": "netbox/dcim/models/devices.py",
+"id": "model_refs:dcim.models.devices:462"
+},
+{
+"module": "dcim.models.devices",
+"class": "VirtualDeviceContext",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 1164,
+"path": "netbox/dcim/models/devices.py",
+"id": "model_refs:dcim.models.devices:1164"
+},
+{
+"module": "dcim.models.power",
+"class": "PowerFeed",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 138,
+"path": "netbox/dcim/models/power.py",
+"id": "model_refs:dcim.models.power:138"
+},
+{
+"module": "dcim.models.racks",
+"class": "Rack",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 286,
+"path": "netbox/dcim/models/racks.py",
+"id": "model_refs:dcim.models.racks:286"
+},
+{
+"module": "dcim.models.racks",
+"class": "RackReservation",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 676,
+"path": "netbox/dcim/models/racks.py",
+"id": "model_refs:dcim.models.racks:676"
+},
+{
+"module": "dcim.models.sites",
+"class": "Site",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 173,
+"path": "netbox/dcim/models/sites.py",
+"id": "model_refs:dcim.models.sites:173"
+},
+{
+"module": "dcim.models.sites",
+"class": "Location",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 275,
+"path": "netbox/dcim/models/sites.py",
+"id": "model_refs:dcim.models.sites:275"
+},
+{
+"module": "extras.models.configs",
+"class": "ConfigContext",
+"field": "tenant_groups",
+"kind": "ManyToManyField",
+"raw": "tenancy.TenantGroup",
+"ref_app": "tenancy",
+"ref_model": "TenantGroup",
+"cross_app": 1,
+"lineno": 100,
+"path": "netbox/extras/models/configs.py",
+"id": "model_refs:extras.models.configs:100"
+},
+{
+"module": "extras.models.configs",
+"class": "ConfigContext",
+"field": "tenants",
+"kind": "ManyToManyField",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 105,
+"path": "netbox/extras/models/configs.py",
+"id": "model_refs:extras.models.configs:105"
+},
+{
+"module": "ipam.models.asns",
+"class": "ASNRange",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 39,
+"path": "netbox/ipam/models/asns.py",
+"id": "model_refs:ipam.models.asns:39"
+},
+{
+"module": "ipam.models.asns",
+"class": "ASN",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 108,
+"path": "netbox/ipam/models/asns.py",
+"id": "model_refs:ipam.models.asns:108"
+},
+{
+"module": "ipam.models.ip",
+"class": "Aggregate",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 90,
+"path": "netbox/ipam/models/ip.py",
+"id": "model_refs:ipam.models.ip:90"
+},
+{
+"module": "ipam.models.ip",
+"class": "Prefix",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 219,
+"path": "netbox/ipam/models/ip.py",
+"id": "model_refs:ipam.models.ip:219"
+},
+{
+"module": "ipam.models.ip",
+"class": "IPRange",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 503,
+"path": "netbox/ipam/models/ip.py",
+"id": "model_refs:ipam.models.ip:503"
+},
+{
+"module": "ipam.models.ip",
+"class": "IPAddress",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 732,
+"path": "netbox/ipam/models/ip.py",
+"id": "model_refs:ipam.models.ip:732"
+},
+{
+"module": "ipam.models.vlans",
+"class": "VLANGroup",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 65,
+"path": "netbox/ipam/models/vlans.py",
+"id": "model_refs:ipam.models.vlans:65"
+},
+{
+"module": "ipam.models.vlans",
+"class": "VLAN",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 209,
+"path": "netbox/ipam/models/vlans.py",
+"id": "model_refs:ipam.models.vlans:209"
+},
+{
+"module": "ipam.models.vrfs",
+"class": "VRF",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 32,
+"path": "netbox/ipam/models/vrfs.py",
+"id": "model_refs:ipam.models.vrfs:32"
+},
+{
+"module": "ipam.models.vrfs",
+"class": "RouteTarget",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 81,
+"path": "netbox/ipam/models/vrfs.py",
+"id": "model_refs:ipam.models.vrfs:81"
+},
+{
+"module": "netbox.models.features",
+"class": "ContactsMixin",
+"field": "contacts",
+"kind": "GenericRelation",
+"raw": "tenancy.ContactAssignment",
+"ref_app": "tenancy",
+"ref_model": "ContactAssignment",
+"cross_app": 1,
+"lineno": 366,
+"path": "netbox/netbox/models/features.py",
+"id": "model_refs:netbox.models.features:366"
+},
+{
+"module": "virtualization.models.clusters",
+"class": "Cluster",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 75,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "model_refs:virtualization.models.clusters:75"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 56,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:56"
+},
+{
+"module": "vpn.models.l2vpn",
+"class": "L2VPN",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 56,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "model_refs:vpn.models.l2vpn:56"
+},
+{
+"module": "vpn.models.tunnels",
+"class": "Tunnel",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 62,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "model_refs:vpn.models.tunnels:62"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLAN",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 104,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:104"
+},
+{
+"module": "wireless.models",
+"class": "WirelessLink",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 153,
+"path": "netbox/wireless/models.py",
+"id": "model_refs:wireless.models:153"
+}
+],
+"churn": [
+{
+"path": "netbox/tenancy/views.py",
+"module": "tenancy.views",
+"commits": 144,
+"authors": 16,
+"first_commit": "2016-07-26",
+"last_commit": "2025-05-01",
+"id": "churn:tenancy.views"
+},
+{
+"path": "netbox/tenancy/api/serializers.py",
+"module": "tenancy.api.serializers",
+"commits": 58,
+"authors": 8,
+"first_commit": "2016-07-26",
+"last_commit": "2024-08-14",
+"id": "churn:tenancy.api.serializers"
+},
+{
+"path": "netbox/tenancy/api/views.py",
+"module": "tenancy.api.views",
+"commits": 42,
+"authors": 6,
+"first_commit": "2016-07-26",
+"last_commit": "2025-03-18",
+"id": "churn:tenancy.api.views"
+},
+{
+"path": "netbox/tenancy/filtersets.py",
+"module": "tenancy.filtersets",
+"commits": 38,
+"authors": 10,
+"first_commit": "2019-05-09",
+"last_commit": "2025-03-19",
+"id": "churn:tenancy.filtersets"
+},
+{
+"path": "netbox/tenancy/tests/test_api.py",
+"module": "tenancy.tests.test_api",
+"commits": 34,
+"authors": 6,
+"first_commit": "2017-03-16",
+"last_commit": "2025-03-19",
+"id": "churn:tenancy.tests.test_api"
+},
+{
+"path": "netbox/tenancy/models/contacts.py",
+"module": "tenancy.models.contacts",
+"commits": 33,
+"authors": 6,
+"first_commit": "2021-10-21",
+"last_commit": "2025-05-09",
+"id": "churn:tenancy.models.contacts"
+},
+{
+"path": "netbox/tenancy/urls.py",
+"module": "tenancy.urls",
+"commits": 31,
+"authors": 5,
+"first_commit": "2016-07-26",
+"last_commit": "2024-11-20",
+"id": "churn:tenancy.urls"
+},
+{
+"path": "netbox/tenancy/forms/bulk_edit.py",
+"module": "tenancy.forms.bulk_edit",
+"commits": 25,
+"authors": 6,
+"first_commit": "2021-09-27",
+"last_commit": "2025-04-10",
+"id": "churn:tenancy.forms.bulk_edit"
+},
+{
+"path": "netbox/tenancy/forms/filtersets.py",
+"module": "tenancy.forms.filtersets",
+"commits": 25,
+"authors": 6,
+"first_commit": "2021-09-27",
+"last_commit": "2025-03-18",
+"id": "churn:tenancy.forms.filtersets"
+},
+{
+"path": "netbox/tenancy/tests/test_views.py",
+"module": "tenancy.tests.test_views",
+"commits": 24,
+"authors": 5,
+"first_commit": "2019-02-15",
+"last_commit": "2025-03-19",
+"id": "churn:tenancy.tests.test_views"
+},
+{
+"path": "netbox/tenancy/api/urls.py",
+"module": "tenancy.api.urls",
+"commits": 20,
+"authors": 2,
+"first_commit": "2016-07-26",
+"last_commit": "2022-07-13",
+"id": "churn:tenancy.api.urls"
+},
+{
+"path": "netbox/tenancy/tables/contacts.py",
+"module": "tenancy.tables.contacts",
+"commits": 20,
+"authors": 6,
+"first_commit": "2022-03-03",
+"last_commit": "2025-04-10",
+"id": "churn:tenancy.tables.contacts"
+},
+{
+"path": "netbox/tenancy/forms/bulk_import.py",
+"module": "tenancy.forms.bulk_import",
+"commits": 18,
+"authors": 7,
+"first_commit": "2021-09-27",
+"last_commit": "2025-03-19",
+"id": "churn:tenancy.forms.bulk_import"
+},
+{
+"path": "netbox/tenancy/forms/model_forms.py",
+"module": "tenancy.forms.model_forms",
+"commits": 16,
+"authors": 7,
+"first_commit": "2022-10-25",
+"last_commit": "2025-03-19",
+"id": "churn:tenancy.forms.model_forms"
+},
+{
+"path": "netbox/tenancy/graphql/types.py",
+"module": "tenancy.graphql.types",
+"commits": 16,
+"authors": 5,
+"first_commit": "2021-06-25",
+"last_commit": "2025-04-10",
+"id": "churn:tenancy.graphql.types"
+},
+{
+"path": "netbox/tenancy/models/tenants.py",
+"module": "tenancy.models.tenants",
+"commits": 14,
+"authors": 3,
+"first_commit": "2021-10-21",
+"last_commit": "2024-11-15",
+"id": "churn:tenancy.models.tenants"
+},
+{
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"module": "tenancy.tests.test_filtersets",
+"commits": 14,
+"authors": 6,
+"first_commit": "2021-05-03",
+"last_commit": "2025-03-19",
+"id": "churn:tenancy.tests.test_filtersets"
+},
+{
+"path": "netbox/tenancy/api/serializers_/contacts.py",
+"module": "tenancy.api.serializers_.contacts",
+"commits": 10,
+"authors": 5,
+"first_commit": "2024-02-27",
+"last_commit": "2025-04-11",
+"id": "churn:tenancy.api.serializers_.contacts"
+},
+{
+"path": "netbox/tenancy/forms/forms.py",
+"module": "tenancy.forms.forms",
+"commits": 9,
+"authors": 5,
+"first_commit": "2021-09-27",
+"last_commit": "2024-11-18",
+"id": "churn:tenancy.forms.forms"
+},
+{
+"path": "netbox/tenancy/tables/tenants.py",
+"module": "tenancy.tables.tenants",
+"commits": 9,
+"authors": 3,
+"first_commit": "2022-03-03",
+"last_commit": "2025-03-11",
+"id": "churn:tenancy.tables.tenants"
+},
+{
+"path": "netbox/tenancy/search.py",
+"module": "tenancy.search",
+"commits": 7,
+"authors": 4,
+"first_commit": "2022-10-10",
+"last_commit": "2025-05-02",
+"id": "churn:tenancy.search"
+},
+{
+"path": "netbox/tenancy/tables/columns.py",
+"module": "tenancy.tables.columns",
+"commits": 7,
+"authors": 4,
+"first_commit": "2022-03-03",
+"last_commit": "2024-11-21",
+"id": "churn:tenancy.tables.columns"
+},
+{
+"path": "netbox/tenancy/api/serializers_/tenants.py",
+"module": "tenancy.api.serializers_.tenants",
+"commits": 6,
+"authors": 3,
+"first_commit": "2024-02-27",
+"last_commit": "2025-03-11",
+"id": "churn:tenancy.api.serializers_.tenants"
+},
+{
+"path": "netbox/tenancy/apps.py",
+"module": "tenancy.apps",
+"commits": 6,
+"authors": 2,
+"first_commit": "2016-07-26",
+"last_commit": "2024-10-10",
+"id": "churn:tenancy.apps"
+},
+{
+"path": "netbox/tenancy/graphql/schema.py",
+"module": "tenancy.graphql.schema",
+"commits": 6,
+"authors": 3,
+"first_commit": "2021-06-25",
+"last_commit": "2024-08-28",
+"id": "churn:tenancy.graphql.schema"
+},
+{
+"path": "netbox/tenancy/graphql/mixins.py",
+"module": "tenancy.graphql.mixins",
+"commits": 5,
+"authors": 2,
+"first_commit": "2024-03-22",
+"last_commit": "2025-03-07",
+"id": "churn:tenancy.graphql.mixins"
+},
+{
+"path": "netbox/tenancy/graphql/filters.py",
+"module": "tenancy.graphql.filters",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-03-22",
+"last_commit": "2025-05-14",
+"id": "churn:tenancy.graphql.filters"
+},
+{
+"path": "netbox/tenancy/migrations/0001_squashed_0012.py",
+"module": "tenancy.migrations.0001_squashed_0012",
+"commits": 4,
+"authors": 4,
+"first_commit": "2021-07-09",
+"last_commit": "2025-03-07",
+"id": "churn:tenancy.migrations.0001_squashed_0012"
+},
+{
+"path": "netbox/tenancy/migrations/0012_contactassignment_custom_fields.py",
+"module": "tenancy.migrations.0012_contactassignment_custom_fields",
+"commits": 3,
+"authors": 2,
+"first_commit": "2023-11-06",
+"last_commit": "2025-03-07",
+"id": "churn:tenancy.migrations.0012_contactassignment_custom_fields"
+},
+{
+"path": "netbox/tenancy/migrations/0016_charfield_null_choices.py",
+"module": "tenancy.migrations.0016_charfield_null_choices",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-10-18",
+"last_commit": "2025-05-08",
+"id": "churn:tenancy.migrations.0016_charfield_null_choices"
+},
+{
+"path": "netbox/tenancy/migrations/0018_contact_groups.py",
+"module": "tenancy.migrations.0018_contact_groups",
+"commits": 3,
+"authors": 2,
+"first_commit": "2025-03-18",
+"last_commit": "2025-06-05",
+"id": "churn:tenancy.migrations.0018_contact_groups"
+},
+{
+"path": "netbox/tenancy/choices.py",
+"module": "tenancy.choices",
+"commits": 2,
+"authors": 2,
+"first_commit": "2021-10-18",
+"last_commit": "2023-08-01",
+"id": "churn:tenancy.choices"
+},
+{
+"path": "netbox/tenancy/forms/__init__.py",
+"module": "tenancy.forms",
+"commits": 2,
+"authors": 1,
+"first_commit": "2021-09-27",
+"last_commit": "2022-10-25",
+"id": "churn:tenancy.forms"
+},
+{
+"path": "netbox/tenancy/graphql/enums.py",
+"module": "tenancy.graphql.enums",
+"commits": 2,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-04-17",
+"id": "churn:tenancy.graphql.enums"
+},
+{
+"path": "netbox/tenancy/migrations/0002_squashed_0011.py",
+"module": "tenancy.migrations.0002_squashed_0011",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-01-24",
+"last_commit": "2024-11-21",
+"id": "churn:tenancy.migrations.0002_squashed_0011"
+},
+{
+"path": "netbox/tenancy/migrations/0013_gfk_indexes.py",
+"module": "tenancy.migrations.0013_gfk_indexes",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-12-07",
+"last_commit": "2024-11-21",
+"id": "churn:tenancy.migrations.0013_gfk_indexes"
+},
+{
+"path": "netbox/tenancy/migrations/0014_contactassignment_ordering.py",
+"module": "tenancy.migrations.0014_contactassignment_ordering",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-01-17",
+"last_commit": "2024-11-21",
+"id": "churn:tenancy.migrations.0014_contactassignment_ordering"
+},
+{
+"path": "netbox/tenancy/migrations/0015_contactassignment_rename_content_type.py",
+"module": "tenancy.migrations.0015_contactassignment_rename_content_type",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-03-01",
+"last_commit": "2024-11-21",
+"id": "churn:tenancy.migrations.0015_contactassignment_rename_content_type"
+},
+{
+"path": "netbox/tenancy/migrations/0017_natural_ordering.py",
+"module": "tenancy.migrations.0017_natural_ordering",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-11-15",
+"last_commit": "2024-11-21",
+"id": "churn:tenancy.migrations.0017_natural_ordering"
+},
+{
+"path": "netbox/tenancy/__init__.py",
+"module": "tenancy",
+"commits": 1,
+"authors": 1,
+"first_commit": "2016-07-26",
+"last_commit": "2016-07-26",
+"id": "churn:tenancy"
+},
+{
+"path": "netbox/tenancy/api/__init__.py",
+"module": "tenancy.api",
+"commits": 1,
+"authors": 1,
+"first_commit": "2016-07-26",
+"last_commit": "2016-07-26",
+"id": "churn:tenancy.api"
+},
+{
+"path": "netbox/tenancy/api/serializers_/__init__.py",
+"module": "tenancy.api.serializers_",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-02-27",
+"last_commit": "2024-02-27",
+"id": "churn:tenancy.api.serializers_"
+},
+{
+"path": "netbox/tenancy/api/serializers_/nested.py",
+"module": "tenancy.api.serializers_.nested",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-08-14",
+"last_commit": "2024-08-14",
+"id": "churn:tenancy.api.serializers_.nested"
+},
+{
+"path": "netbox/tenancy/graphql/__init__.py",
+"module": "tenancy.graphql",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-06-25",
+"last_commit": "2021-06-25",
+"id": "churn:tenancy.graphql"
+},
+{
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"module": "tenancy.graphql.filter_mixins",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-03-07",
+"id": "churn:tenancy.graphql.filter_mixins"
+},
+{
+"path": "netbox/tenancy/migrations/0019_contactgroup_comments_tenantgroup_comments.py",
+"module": "tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-03-19",
+"last_commit": "2025-03-19",
+"id": "churn:tenancy.migrations.0019_contactgroup_comments_tenantgroup_comments"
+},
+{
+"path": "netbox/tenancy/migrations/0020_remove_contactgroupmembership.py",
+"module": "tenancy.migrations.0020_remove_contactgroupmembership",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-05-09",
+"last_commit": "2025-05-09",
+"id": "churn:tenancy.migrations.0020_remove_contactgroupmembership"
+},
+{
+"path": "netbox/tenancy/migrations/__init__.py",
+"module": "tenancy.migrations",
+"commits": 1,
+"authors": 1,
+"first_commit": "2016-07-26",
+"last_commit": "2016-07-26",
+"id": "churn:tenancy.migrations"
+},
+{
+"path": "netbox/tenancy/models/__init__.py",
+"module": "tenancy.models",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-10-21",
+"last_commit": "2021-10-21",
+"id": "churn:tenancy.models"
+},
+{
+"path": "netbox/tenancy/tables/__init__.py",
+"module": "tenancy.tables",
+"commits": 1,
+"authors": 1,
+"first_commit": "2022-03-03",
+"last_commit": "2022-03-03",
+"id": "churn:tenancy.tables"
+},
+{
+"path": "netbox/tenancy/tables/template_code.py",
+"module": "tenancy.tables.template_code",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-11-21",
+"last_commit": "2024-11-21",
+"id": "churn:tenancy.tables.template_code"
+},
+{
+"path": "netbox/tenancy/tests/__init__.py",
+"module": "tenancy.tests",
+"commits": 1,
+"authors": 1,
+"first_commit": "2017-03-16",
+"last_commit": "2017-03-16",
+"id": "churn:tenancy.tests"
+}
+],
+"entrypoints": [
+{
+"kind": "urls",
+"module": "tenancy.api.urls",
+"detail": "",
+"path": "netbox/tenancy/api/urls.py",
+"id": "entrypoints:tenancy.api.urls"
+},
+{
+"kind": "api_views",
+"module": "tenancy.api.views",
+"detail": "",
+"path": "netbox/tenancy/api/views.py",
+"id": "entrypoints:tenancy.api.views"
+},
+{
+"kind": "urls",
+"module": "tenancy.urls",
+"detail": "",
+"path": "netbox/tenancy/urls.py",
+"id": "entrypoints:tenancy.urls"
+}
+]
+}

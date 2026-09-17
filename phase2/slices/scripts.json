@@ -1,0 +1,43 @@
+{
+"subsystem": "scripts",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "scripts",
+"modules": 1,
+"loc_code": 1,
+"loc_data": 0,
+"test_modules": 0
+},
+"modules": [
+{
+"module": "scripts",
+"path": "netbox/scripts/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "scripts",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:scripts"
+}
+],
+"symbols": [],
+"imports_out": [],
+"imports_in": [],
+"model_refs": [],
+"model_refs_in": [],
+"churn": [
+{
+"path": "netbox/scripts/__init__.py",
+"module": "scripts",
+"commits": 1,
+"authors": 1,
+"first_commit": "2019-08-09",
+"last_commit": "2019-08-09",
+"id": "churn:scripts"
+}
+],
+"entrypoints": []
+}
