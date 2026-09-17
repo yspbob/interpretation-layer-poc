@@ -1,6 +1,6 @@
 # Current project state
 
-Updated: 16 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
+Updated: 17 September 2026. This record is maintained by Codex during normal work; the user does not need to prepare a handover.
 
 ## Purpose and current position
 
@@ -11,6 +11,12 @@ The agreed first pilot compares the methods on evidence-backed historical tasks 
 The formal redesigned POC is still being prepared, with **zero qualified controlled pilot guidance runs**. Separately, **one exploratory guide generation, one two-attempt coding comparison and two further unguided screens have completed**. The earlier 24 familiarity answers and three closed qualification allocations remain separate; no model role is qualified. The interactive checker and formal coding judge remain later work. Read the current result below rather than treating older zero-run statements as current exploratory status.
 
 The current scope is the closed capped screening allocation under working plan **pilot-draft-2026-09-16.34**, with no eligible material failure and the earlier fresh-task null result preserved; formal assessor qualification and fresh-bank preparation are paused. The formal first trial retains three phases: reconstruct guidance; test its use; test interaction. The exploratory comparison is separate from that qualified trial. Read the latest decision below before following historical next steps. Website body updates remain banked; progress stays separate and older addresses are compatibility routes.
+
+## Handover prepared for Claude, 17 September 2026
+
+At the user's request, [CLAUDE_HANDOVER.md](CLAUDE_HANDOVER.md) consolidates the research objective, completed exploratory results, current case-selection blocker, standalone research assignment, optional NetBox lead, authorization limits and repository continuity. This is investigator context and must not be fed to a blinded guide author or experimental coder. No candidate was selected, no model experiment was dispatched and no method changed. The exact next step remains candidate research or review of the user's returned Fable research, followed by source and runtime feasibility checks before another experiment is proposed.
+
+Freshness check found eighteen unpublished public commits and no incoming changes before this handover. Public publication remains blocked by automatic approval review over historical account/credit metadata; the handover and state update are saved locally only. Private records and website downloads are unchanged. Private freshness and runtime readiness were not rechecked for this document-only task.
 
 ## Current discussion: identify a suitable case, 16 September 2026
 
