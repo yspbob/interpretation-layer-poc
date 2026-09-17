@@ -1,0 +1,26 @@
+{
+ "subsystem": "circuits",
+ "files": {
+  "adrs.md": {
+   "claims_kept": 25,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "map.md": {
+   "claims_kept": 36,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "patterns.md": {
+   "claims_kept": 34,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  }
+ }
+}

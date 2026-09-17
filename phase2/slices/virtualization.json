@@ -1,0 +1,5805 @@
+{
+"subsystem": "virtualization",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "virtualization",
+"modules": 42,
+"loc_code": 6077,
+"loc_data": 0,
+"test_modules": 5
+},
+"modules": [
+{
+"module": "virtualization",
+"path": "netbox/virtualization/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization"
+},
+{
+"module": "virtualization.api",
+"path": "netbox/virtualization/api/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api"
+},
+{
+"module": "virtualization.api.serializers",
+"path": "netbox/virtualization/api/serializers.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api.serializers"
+},
+{
+"module": "virtualization.api.serializers_",
+"path": "netbox/virtualization/api/serializers_/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api.serializers_"
+},
+{
+"module": "virtualization.api.serializers_.clusters",
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"loc": 91,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api.serializers_.clusters"
+},
+{
+"module": "virtualization.api.serializers_.nested",
+"path": "netbox/virtualization/api/serializers_/nested.py",
+"loc": 23,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api.serializers_.nested"
+},
+{
+"module": "virtualization.api.serializers_.virtualmachines",
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"loc": 159,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api.serializers_.virtualmachines"
+},
+{
+"module": "virtualization.api.urls",
+"path": "netbox/virtualization/api/urls.py",
+"loc": 20,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api.urls"
+},
+{
+"module": "virtualization.api.views",
+"path": "netbox/virtualization/api/views.py",
+"loc": 89,
+"classes": 7,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.api.views"
+},
+{
+"module": "virtualization.apps",
+"path": "netbox/virtualization/apps.py",
+"loc": 18,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.apps"
+},
+{
+"module": "virtualization.choices",
+"path": "netbox/virtualization/choices.py",
+"loc": 52,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.choices"
+},
+{
+"module": "virtualization.filtersets",
+"path": "netbox/virtualization/filtersets.py",
+"loc": 321,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.filtersets"
+},
+{
+"module": "virtualization.forms",
+"path": "netbox/virtualization/forms/__init__.py",
+"loc": 7,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.forms"
+},
+{
+"module": "virtualization.forms.bulk_create",
+"path": "netbox/virtualization/forms/bulk_create.py",
+"loc": 41,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.forms.bulk_create"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"loc": 344,
+"classes": 8,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.forms.bulk_edit"
+},
+{
+"module": "virtualization.forms.bulk_import",
+"path": "netbox/virtualization/forms/bulk_import.py",
+"loc": 223,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.forms.bulk_import"
+},
+{
+"module": "virtualization.forms.filtersets",
+"path": "netbox/virtualization/forms/filtersets.py",
+"loc": 274,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.forms.filtersets"
+},
+{
+"module": "virtualization.forms.model_forms",
+"path": "netbox/virtualization/forms/model_forms.py",
+"loc": 413,
+"classes": 9,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.forms.model_forms"
+},
+{
+"module": "virtualization.forms.object_create",
+"path": "netbox/virtualization/forms/object_create.py",
+"loc": 29,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.forms.object_create"
+},
+{
+"module": "virtualization.graphql",
+"path": "netbox/virtualization/graphql/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.graphql"
+},
+{
+"module": "virtualization.graphql.enums",
+"path": "netbox/virtualization/graphql/enums.py",
+"loc": 12,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.graphql.enums"
+},
+{
+"module": "virtualization.graphql.filter_mixins",
+"path": "netbox/virtualization/graphql/filter_mixins.py",
+"loc": 27,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.graphql.filter_mixins"
+},
+{
+"module": "virtualization.graphql.filters",
+"path": "netbox/virtualization/graphql/filters.py",
+"loc": 163,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.graphql.filters"
+},
+{
+"module": "virtualization.graphql.schema",
+"path": "netbox/virtualization/graphql/schema.py",
+"loc": 28,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.graphql.schema"
+},
+{
+"module": "virtualization.graphql.types",
+"path": "netbox/virtualization/graphql/types.py",
+"loc": 147,
+"classes": 7,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.graphql.types"
+},
+{
+"module": "virtualization.migrations",
+"path": "netbox/virtualization/migrations/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.migrations"
+},
+{
+"module": "virtualization.migrations.0001_squashed_0022",
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"loc": 295,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0001_squashed_0022"
+},
+{
+"module": "virtualization.migrations.0023_squashed_0036",
+"path": "netbox/virtualization/migrations/0023_squashed_0036.py",
+"loc": 251,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0023_squashed_0036"
+},
+{
+"module": "virtualization.migrations.0037_protect_child_interfaces",
+"path": "netbox/virtualization/migrations/0037_protect_child_interfaces.py",
+"loc": 25,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0037_protect_child_interfaces"
+},
+{
+"module": "virtualization.migrations.0038_virtualdisk",
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"loc": 69,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0038_virtualdisk"
+},
+{
+"module": "virtualization.migrations.0039_virtualmachine_serial_number",
+"path": "netbox/virtualization/migrations/0039_virtualmachine_serial_number.py",
+"loc": 16,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0039_virtualmachine_serial_number"
+},
+{
+"module": "virtualization.migrations.0040_convert_disk_size",
+"path": "netbox/virtualization/migrations/0040_convert_disk_size.py",
+"loc": 30,
+"classes": 1,
+"functions": 1,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0040_convert_disk_size"
+},
+{
+"module": "virtualization.migrations.0041_charfield_null_choices",
+"path": "netbox/virtualization/migrations/0041_charfield_null_choices.py",
+"loc": 27,
+"classes": 1,
+"functions": 1,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0041_charfield_null_choices"
+},
+{
+"module": "virtualization.migrations.0042_vminterface_vlan_translation_policy",
+"path": "netbox/virtualization/migrations/0042_vminterface_vlan_translation_policy.py",
+"loc": 20,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0042_vminterface_vlan_translation_policy"
+},
+{
+"module": "virtualization.migrations.0043_qinq_svlan",
+"path": "netbox/virtualization/migrations/0043_qinq_svlan.py",
+"loc": 40,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0043_qinq_svlan"
+},
+{
+"module": "virtualization.migrations.0044_cluster_scope",
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"loc": 64,
+"classes": 1,
+"functions": 2,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0044_cluster_scope"
+},
+{
+"module": "virtualization.migrations.0045_clusters_cached_relations",
+"path": "netbox/virtualization/migrations/0045_clusters_cached_relations.py",
+"loc": 101,
+"classes": 1,
+"functions": 2,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0045_clusters_cached_relations"
+},
+{
+"module": "virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more",
+"path": "netbox/virtualization/migrations/0046_alter_cluster__location_alter_cluster__region_and_more.py",
+"loc": 41,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more"
+},
+{
+"module": "virtualization.migrations.0047_natural_ordering",
+"path": "netbox/virtualization/migrations/0047_natural_ordering.py",
+"loc": 43,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0047_natural_ordering"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"loc": 95,
+"classes": 1,
+"functions": 2,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:virtualization.migrations.0048_populate_mac_addresses"
+},
+{
+"module": "virtualization.models",
+"path": "netbox/virtualization/models/__init__.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.models"
+},
+{
+"module": "virtualization.models.clusters",
+"path": "netbox/virtualization/models/clusters.py",
+"loc": 147,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.models.clusters"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"path": "netbox/virtualization/models/virtualmachines.py",
+"loc": 426,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.models.virtualmachines"
+},
+{
+"module": "virtualization.search",
+"path": "netbox/virtualization/search.py",
+"loc": 69,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.search"
+},
+{
+"module": "virtualization.signals",
+"path": "netbox/virtualization/signals.py",
+"loc": 26,
+"classes": 0,
+"functions": 2,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.signals"
+},
+{
+"module": "virtualization.tables",
+"path": "netbox/virtualization/tables/__init__.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tables"
+},
+{
+"module": "virtualization.tables.clusters",
+"path": "netbox/virtualization/tables/clusters.py",
+"loc": 108,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tables.clusters"
+},
+{
+"module": "virtualization.tables.template_code",
+"path": "netbox/virtualization/tables/template_code.py",
+"loc": 33,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tables.template_code"
+},
+{
+"module": "virtualization.tables.virtualmachines",
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"loc": 199,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tables.virtualmachines"
+},
+{
+"module": "virtualization.tests",
+"path": "netbox/virtualization/tests/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tests"
+},
+{
+"module": "virtualization.tests.test_api",
+"path": "netbox/virtualization/tests/test_api.py",
+"loc": 459,
+"classes": 7,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tests.test_api"
+},
+{
+"module": "virtualization.tests.test_filtersets",
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"loc": 777,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tests.test_filtersets"
+},
+{
+"module": "virtualization.tests.test_models",
+"path": "netbox/virtualization/tests/test_models.py",
+"loc": 122,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tests.test_models"
+},
+{
+"module": "virtualization.tests.test_views",
+"path": "netbox/virtualization/tests/test_views.py",
+"loc": 498,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.tests.test_views"
+},
+{
+"module": "virtualization.urls",
+"path": "netbox/virtualization/urls.py",
+"loc": 37,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.urls"
+},
+{
+"module": "virtualization.views",
+"path": "netbox/virtualization/views.py",
+"loc": 680,
+"classes": 56,
+"functions": 0,
+"parse": "OK",
+"subsystem": "virtualization",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:virtualization.views"
+}
+],
+"symbols": [
+{
+"module": "virtualization.api.serializers_.clusters",
+"kind": "class",
+"name": "ClusterTypeSerializer",
+"lineno": 19,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "symbols:virtualization.api.serializers_.clusters:ClusterTypeSerializer"
+},
+{
+"module": "virtualization.api.serializers_.clusters",
+"kind": "class",
+"name": "ClusterGroupSerializer",
+"lineno": 33,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "symbols:virtualization.api.serializers_.clusters:ClusterGroupSerializer"
+},
+{
+"module": "virtualization.api.serializers_.clusters",
+"kind": "class",
+"name": "ClusterSerializer",
+"lineno": 47,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "symbols:virtualization.api.serializers_.clusters:ClusterSerializer"
+},
+{
+"module": "virtualization.api.serializers_.nested",
+"kind": "class",
+"name": "NestedVirtualMachineSerializer",
+"lineno": 10,
+"bases": "WritableNestedSerializer",
+"path": "netbox/virtualization/api/serializers_/nested.py",
+"id": "symbols:virtualization.api.serializers_.nested:NestedVirtualMachineSerializer"
+},
+{
+"module": "virtualization.api.serializers_.nested",
+"kind": "class",
+"name": "NestedVMInterfaceSerializer",
+"lineno": 17,
+"bases": "WritableNestedSerializer",
+"path": "netbox/virtualization/api/serializers_/nested.py",
+"id": "symbols:virtualization.api.serializers_.nested:NestedVMInterfaceSerializer"
+},
+{
+"module": "virtualization.api.serializers_.virtualmachines",
+"kind": "class",
+"name": "VirtualMachineSerializer",
+"lineno": 32,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "symbols:virtualization.api.serializers_.virtualmachines:VirtualMachineSerializer"
+},
+{
+"module": "virtualization.api.serializers_.virtualmachines",
+"kind": "class",
+"name": "VirtualMachineWithConfigContextSerializer",
+"lineno": 60,
+"bases": "VirtualMachineSerializer",
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "symbols:virtualization.api.serializers_.virtualmachines:VirtualMachineWithConfigContextSerializer"
+},
+{
+"module": "virtualization.api.serializers_.virtualmachines",
+"kind": "class",
+"name": "VMInterfaceSerializer",
+"lineno": 80,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "symbols:virtualization.api.serializers_.virtualmachines:VMInterfaceSerializer"
+},
+{
+"module": "virtualization.api.serializers_.virtualmachines",
+"kind": "class",
+"name": "VirtualDiskSerializer",
+"lineno": 149,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "symbols:virtualization.api.serializers_.virtualmachines:VirtualDiskSerializer"
+},
+{
+"module": "virtualization.api.views",
+"kind": "class",
+"name": "VirtualizationRootView",
+"lineno": 12,
+"bases": "APIRootView",
+"path": "netbox/virtualization/api/views.py",
+"id": "symbols:virtualization.api.views:VirtualizationRootView"
+},
+{
+"module": "virtualization.api.views",
+"kind": "class",
+"name": "ClusterTypeViewSet",
+"lineno": 24,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/virtualization/api/views.py",
+"id": "symbols:virtualization.api.views:ClusterTypeViewSet"
+},
+{
+"module": "virtualization.api.views",
+"kind": "class",
+"name": "ClusterGroupViewSet",
+"lineno": 30,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/virtualization/api/views.py",
+"id": "symbols:virtualization.api.views:ClusterGroupViewSet"
+},
+{
+"module": "virtualization.api.views",
+"kind": "class",
+"name": "ClusterViewSet",
+"lineno": 36,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/virtualization/api/views.py",
+"id": "symbols:virtualization.api.views:ClusterViewSet"
+},
+{
+"module": "virtualization.api.views",
+"kind": "class",
+"name": "VirtualMachineViewSet",
+"lineno": 50,
+"bases": "ConfigContextQuerySetMixin,RenderConfigMixin,NetBoxModelViewSet",
+"path": "netbox/virtualization/api/views.py",
+"id": "symbols:virtualization.api.views:VirtualMachineViewSet"
+},
+{
+"module": "virtualization.api.views",
+"kind": "class",
+"name": "VMInterfaceViewSet",
+"lineno": 71,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/virtualization/api/views.py",
+"id": "symbols:virtualization.api.views:VMInterfaceViewSet"
+},
+{
+"module": "virtualization.api.views",
+"kind": "class",
+"name": "VirtualDiskViewSet",
+"lineno": 85,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/virtualization/api/views.py",
+"id": "symbols:virtualization.api.views:VirtualDiskViewSet"
+},
+{
+"module": "virtualization.apps",
+"kind": "class",
+"name": "VirtualizationConfig",
+"lineno": 4,
+"bases": "AppConfig",
+"path": "netbox/virtualization/apps.py",
+"id": "symbols:virtualization.apps:VirtualizationConfig"
+},
+{
+"module": "virtualization.choices",
+"kind": "class",
+"name": "ClusterStatusChoices",
+"lineno": 10,
+"bases": "ChoiceSet",
+"path": "netbox/virtualization/choices.py",
+"id": "symbols:virtualization.choices:ClusterStatusChoices"
+},
+{
+"module": "virtualization.choices",
+"kind": "class",
+"name": "VirtualMachineStatusChoices",
+"lineno": 32,
+"bases": "ChoiceSet",
+"path": "netbox/virtualization/choices.py",
+"id": "symbols:virtualization.choices:VirtualMachineStatusChoices"
+},
+{
+"module": "virtualization.filtersets",
+"kind": "class",
+"name": "ClusterTypeFilterSet",
+"lineno": 28,
+"bases": "OrganizationalModelFilterSet",
+"path": "netbox/virtualization/filtersets.py",
+"id": "symbols:virtualization.filtersets:ClusterTypeFilterSet"
+},
+{
+"module": "virtualization.filtersets",
+"kind": "class",
+"name": "ClusterGroupFilterSet",
+"lineno": 35,
+"bases": "OrganizationalModelFilterSet,ContactModelFilterSet",
+"path": "netbox/virtualization/filtersets.py",
+"id": "symbols:virtualization.filtersets:ClusterGroupFilterSet"
+},
+{
+"module": "virtualization.filtersets",
+"kind": "class",
+"name": "ClusterFilterSet",
+"lineno": 42,
+"bases": "NetBoxModelFilterSet,TenancyFilterSet,ScopedFilterSet,ContactModelFilterSet",
+"path": "netbox/virtualization/filtersets.py",
+"id": "symbols:virtualization.filtersets:ClusterFilterSet"
+},
+{
+"module": "virtualization.filtersets",
+"kind": "class",
+"name": "VirtualMachineFilterSet",
+"lineno": 82,
+"bases": "NetBoxModelFilterSet,TenancyFilterSet,ContactModelFilterSet,LocalConfigContextFilterSet,PrimaryIPFilterSet",
+"path": "netbox/virtualization/filtersets.py",
+"id": "symbols:virtualization.filtersets:VirtualMachineFilterSet"
+},
+{
+"module": "virtualization.filtersets",
+"kind": "class",
+"name": "VMInterfaceFilterSet",
+"lineno": 235,
+"bases": "NetBoxModelFilterSet,CommonInterfaceFilterSet",
+"path": "netbox/virtualization/filtersets.py",
+"id": "symbols:virtualization.filtersets:VMInterfaceFilterSet"
+},
+{
+"module": "virtualization.filtersets",
+"kind": "class",
+"name": "VirtualDiskFilterSet",
+"lineno": 297,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/virtualization/filtersets.py",
+"id": "symbols:virtualization.filtersets:VirtualDiskFilterSet"
+},
+{
+"module": "virtualization.forms.bulk_create",
+"kind": "class",
+"name": "VirtualMachineBulkAddComponentForm",
+"lineno": 14,
+"bases": "forms.Form",
+"path": "netbox/virtualization/forms/bulk_create.py",
+"id": "symbols:virtualization.forms.bulk_create:VirtualMachineBulkAddComponentForm"
+},
+{
+"module": "virtualization.forms.bulk_create",
+"kind": "class",
+"name": "VMInterfaceBulkCreateForm",
+"lineno": 29,
+"bases": "form_from_model(VMInterface, ['enabled', 'mtu', 'description', 'tags']),VirtualMachineBulkAddComponentForm",
+"path": "netbox/virtualization/forms/bulk_create.py",
+"id": "symbols:virtualization.forms.bulk_create:VMInterfaceBulkCreateForm"
+},
+{
+"module": "virtualization.forms.bulk_create",
+"kind": "class",
+"name": "VirtualDiskBulkCreateForm",
+"lineno": 36,
+"bases": "form_from_model(VirtualDisk, ['size', 'description', 'tags']),VirtualMachineBulkAddComponentForm",
+"path": "netbox/virtualization/forms/bulk_create.py",
+"id": "symbols:virtualization.forms.bulk_create:VirtualDiskBulkCreateForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "ClusterTypeBulkEditForm",
+"lineno": 31,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:ClusterTypeBulkEditForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "ClusterGroupBulkEditForm",
+"lineno": 45,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:ClusterGroupBulkEditForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "ClusterBulkEditForm",
+"lineno": 59,
+"bases": "ScopedBulkEditForm,NetBoxModelBulkEditForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:ClusterBulkEditForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "VirtualMachineBulkEditForm",
+"lineno": 98,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:VirtualMachineBulkEditForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "VMInterfaceBulkEditForm",
+"lineno": 180,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:VMInterfaceBulkEditForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "VMInterfaceBulkRenameForm",
+"lineno": 307,
+"bases": "BulkRenameForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:VMInterfaceBulkRenameForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "VirtualDiskBulkEditForm",
+"lineno": 314,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:VirtualDiskBulkEditForm"
+},
+{
+"module": "virtualization.forms.bulk_edit",
+"kind": "class",
+"name": "VirtualDiskBulkRenameForm",
+"lineno": 339,
+"bases": "BulkRenameForm",
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "symbols:virtualization.forms.bulk_edit:VirtualDiskBulkRenameForm"
+},
+{
+"module": "virtualization.forms.bulk_import",
+"kind": "class",
+"name": "ClusterTypeImportForm",
+"lineno": 24,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "symbols:virtualization.forms.bulk_import:ClusterTypeImportForm"
+},
+{
+"module": "virtualization.forms.bulk_import",
+"kind": "class",
+"name": "ClusterGroupImportForm",
+"lineno": 32,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "symbols:virtualization.forms.bulk_import:ClusterGroupImportForm"
+},
+{
+"module": "virtualization.forms.bulk_import",
+"kind": "class",
+"name": "ClusterImportForm",
+"lineno": 40,
+"bases": "ScopedImportForm,NetBoxModelImportForm",
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "symbols:virtualization.forms.bulk_import:ClusterImportForm"
+},
+{
+"module": "virtualization.forms.bulk_import",
+"kind": "class",
+"name": "VirtualMachineImportForm",
+"lineno": 84,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "symbols:virtualization.forms.bulk_import:VirtualMachineImportForm"
+},
+{
+"module": "virtualization.forms.bulk_import",
+"kind": "class",
+"name": "VMInterfaceImportForm",
+"lineno": 150,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "symbols:virtualization.forms.bulk_import:VMInterfaceImportForm"
+},
+{
+"module": "virtualization.forms.bulk_import",
+"kind": "class",
+"name": "VirtualDiskImportForm",
+"lineno": 211,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "symbols:virtualization.forms.bulk_import:VirtualDiskImportForm"
+},
+{
+"module": "virtualization.forms.filtersets",
+"kind": "class",
+"name": "ClusterTypeFilterForm",
+"lineno": 28,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "symbols:virtualization.forms.filtersets:ClusterTypeFilterForm"
+},
+{
+"module": "virtualization.forms.filtersets",
+"kind": "class",
+"name": "ClusterGroupFilterForm",
+"lineno": 33,
+"bases": "ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "symbols:virtualization.forms.filtersets:ClusterGroupFilterForm"
+},
+{
+"module": "virtualization.forms.filtersets",
+"kind": "class",
+"name": "ClusterFilterForm",
+"lineno": 42,
+"bases": "TenancyFilterForm,ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "symbols:virtualization.forms.filtersets:ClusterFilterForm"
+},
+{
+"module": "virtualization.forms.filtersets",
+"kind": "class",
+"name": "VirtualMachineFilterForm",
+"lineno": 96,
+"bases": "LocalConfigContextFilterForm,TenancyFilterForm,ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "symbols:virtualization.forms.filtersets:VirtualMachineFilterForm"
+},
+{
+"module": "virtualization.forms.filtersets",
+"kind": "class",
+"name": "VMInterfaceFilterForm",
+"lineno": 199,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "symbols:virtualization.forms.filtersets:VMInterfaceFilterForm"
+},
+{
+"module": "virtualization.forms.filtersets",
+"kind": "class",
+"name": "VirtualDiskFilterForm",
+"lineno": 256,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "symbols:virtualization.forms.filtersets:VirtualDiskFilterForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "ClusterTypeForm",
+"lineno": 35,
+"bases": "NetBoxModelForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:ClusterTypeForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "ClusterGroupForm",
+"lineno": 49,
+"bases": "NetBoxModelForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:ClusterGroupForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "ClusterForm",
+"lineno": 63,
+"bases": "TenancyForm,ScopedForm,NetBoxModelForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:ClusterForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "ClusterAddDevicesForm",
+"lineno": 90,
+"bases": "forms.Form",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:ClusterAddDevicesForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "ClusterRemoveDevicesForm",
+"lineno": 169,
+"bases": "ConfirmationForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:ClusterRemoveDevicesForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "VirtualMachineForm",
+"lineno": 176,
+"bases": "TenancyForm,NetBoxModelForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:VirtualMachineForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "VMComponentForm",
+"lineno": 293,
+"bases": "NetBoxModelForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:VMComponentForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "VMInterfaceForm",
+"lineno": 308,
+"bases": "InterfaceCommonForm,VMComponentForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:VMInterfaceForm"
+},
+{
+"module": "virtualization.forms.model_forms",
+"kind": "class",
+"name": "VirtualDiskForm",
+"lineno": 402,
+"bases": "VMComponentForm",
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "symbols:virtualization.forms.model_forms:VirtualDiskForm"
+},
+{
+"module": "virtualization.forms.object_create",
+"kind": "class",
+"name": "VMInterfaceCreateForm",
+"lineno": 11,
+"bases": "VMInterfaceForm",
+"path": "netbox/virtualization/forms/object_create.py",
+"id": "symbols:virtualization.forms.object_create:VMInterfaceCreateForm"
+},
+{
+"module": "virtualization.forms.object_create",
+"kind": "class",
+"name": "VirtualDiskCreateForm",
+"lineno": 21,
+"bases": "VirtualDiskForm",
+"path": "netbox/virtualization/forms/object_create.py",
+"id": "symbols:virtualization.forms.object_create:VirtualDiskCreateForm"
+},
+{
+"module": "virtualization.graphql.filter_mixins",
+"kind": "class",
+"name": "VMComponentFilterMixin",
+"lineno": 20,
+"bases": "NetBoxModelFilterMixin",
+"path": "netbox/virtualization/graphql/filter_mixins.py",
+"id": "symbols:virtualization.graphql.filter_mixins:VMComponentFilterMixin"
+},
+{
+"module": "virtualization.graphql.filters",
+"kind": "class",
+"name": "ClusterFilter",
+"lineno": 43,
+"bases": "ContactFilterMixin,ScopedFilterMixin,TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "symbols:virtualization.graphql.filters:ClusterFilter"
+},
+{
+"module": "virtualization.graphql.filters",
+"kind": "class",
+"name": "ClusterGroupFilter",
+"lineno": 62,
+"bases": "ContactFilterMixin,OrganizationalModelFilterMixin",
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "symbols:virtualization.graphql.filters:ClusterGroupFilter"
+},
+{
+"module": "virtualization.graphql.filters",
+"kind": "class",
+"name": "ClusterTypeFilter",
+"lineno": 69,
+"bases": "OrganizationalModelFilterMixin",
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "symbols:virtualization.graphql.filters:ClusterTypeFilter"
+},
+{
+"module": "virtualization.graphql.filters",
+"kind": "class",
+"name": "VirtualMachineFilter",
+"lineno": 74,
+"bases": "ContactFilterMixin,ImageAttachmentFilterMixin,RenderConfigFilterMixin,ConfigContextFilterMixin,TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "symbols:virtualization.graphql.filters:VirtualMachineFilter"
+},
+{
+"module": "virtualization.graphql.filters",
+"kind": "class",
+"name": "VMInterfaceFilter",
+"lineno": 134,
+"bases": "VMComponentFilterMixin,InterfaceBaseFilterMixin",
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "symbols:virtualization.graphql.filters:VMInterfaceFilter"
+},
+{
+"module": "virtualization.graphql.filters",
+"kind": "class",
+"name": "VirtualDiskFilter",
+"lineno": 159,
+"bases": "VMComponentFilterMixin",
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "symbols:virtualization.graphql.filters:VirtualDiskFilter"
+},
+{
+"module": "virtualization.graphql.schema",
+"kind": "class",
+"name": "VirtualizationQuery",
+"lineno": 10,
+"bases": "",
+"path": "netbox/virtualization/graphql/schema.py",
+"id": "symbols:virtualization.graphql.schema:VirtualizationQuery"
+},
+{
+"module": "virtualization.graphql.types",
+"kind": "class",
+"name": "ComponentType",
+"lineno": 39,
+"bases": "NetBoxObjectType",
+"path": "netbox/virtualization/graphql/types.py",
+"id": "symbols:virtualization.graphql.types:ComponentType"
+},
+{
+"module": "virtualization.graphql.types",
+"kind": "class",
+"name": "ClusterType",
+"lineno": 52,
+"bases": "ContactsMixin,VLANGroupsMixin,NetBoxObjectType",
+"path": "netbox/virtualization/graphql/types.py",
+"id": "symbols:virtualization.graphql.types:ClusterType"
+},
+{
+"module": "virtualization.graphql.types",
+"kind": "class",
+"name": "ClusterGroupType",
+"lineno": 75,
+"bases": "ContactsMixin,VLANGroupsMixin,OrganizationalObjectType",
+"path": "netbox/virtualization/graphql/types.py",
+"id": "symbols:virtualization.graphql.types:ClusterGroupType"
+},
+{
+"module": "virtualization.graphql.types",
+"kind": "class",
+"name": "ClusterTypeType",
+"lineno": 86,
+"bases": "OrganizationalObjectType",
+"path": "netbox/virtualization/graphql/types.py",
+"id": "symbols:virtualization.graphql.types:ClusterTypeType"
+},
+{
+"module": "virtualization.graphql.types",
+"kind": "class",
+"name": "VirtualMachineType",
+"lineno": 97,
+"bases": "ConfigContextMixin,ContactsMixin,NetBoxObjectType",
+"path": "netbox/virtualization/graphql/types.py",
+"id": "symbols:virtualization.graphql.types:VirtualMachineType"
+},
+{
+"module": "virtualization.graphql.types",
+"kind": "class",
+"name": "VMInterfaceType",
+"lineno": 122,
+"bases": "IPAddressesMixin,ComponentType",
+"path": "netbox/virtualization/graphql/types.py",
+"id": "symbols:virtualization.graphql.types:VMInterfaceType"
+},
+{
+"module": "virtualization.graphql.types",
+"kind": "class",
+"name": "VirtualDiskType",
+"lineno": 145,
+"bases": "ComponentType",
+"path": "netbox/virtualization/graphql/types.py",
+"id": "symbols:virtualization.graphql.types:VirtualDiskType"
+},
+{
+"module": "virtualization.migrations.0001_squashed_0022",
+"kind": "class",
+"name": "Migration",
+"lineno": 12,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"id": "symbols:virtualization.migrations.0001_squashed_0022:Migration"
+},
+{
+"module": "virtualization.migrations.0023_squashed_0036",
+"kind": "class",
+"name": "Migration",
+"lineno": 9,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0023_squashed_0036.py",
+"id": "symbols:virtualization.migrations.0023_squashed_0036:Migration"
+},
+{
+"module": "virtualization.migrations.0037_protect_child_interfaces",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0037_protect_child_interfaces.py",
+"id": "symbols:virtualization.migrations.0037_protect_child_interfaces:Migration"
+},
+{
+"module": "virtualization.migrations.0038_virtualdisk",
+"kind": "class",
+"name": "Migration",
+"lineno": 11,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"id": "symbols:virtualization.migrations.0038_virtualdisk:Migration"
+},
+{
+"module": "virtualization.migrations.0039_virtualmachine_serial_number",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0039_virtualmachine_serial_number.py",
+"id": "symbols:virtualization.migrations.0039_virtualmachine_serial_number:Migration"
+},
+{
+"module": "virtualization.migrations.0040_convert_disk_size",
+"kind": "function",
+"name": "convert_disk_size",
+"lineno": 6,
+"bases": "",
+"path": "netbox/virtualization/migrations/0040_convert_disk_size.py",
+"id": "symbols:virtualization.migrations.0040_convert_disk_size:convert_disk_size"
+},
+{
+"module": "virtualization.migrations.0040_convert_disk_size",
+"kind": "class",
+"name": "Migration",
+"lineno": 22,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0040_convert_disk_size.py",
+"id": "symbols:virtualization.migrations.0040_convert_disk_size:Migration"
+},
+{
+"module": "virtualization.migrations.0041_charfield_null_choices",
+"kind": "function",
+"name": "set_null_values",
+"lineno": 4,
+"bases": "",
+"path": "netbox/virtualization/migrations/0041_charfield_null_choices.py",
+"id": "symbols:virtualization.migrations.0041_charfield_null_choices:set_null_values"
+},
+{
+"module": "virtualization.migrations.0041_charfield_null_choices",
+"kind": "class",
+"name": "Migration",
+"lineno": 14,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0041_charfield_null_choices.py",
+"id": "symbols:virtualization.migrations.0041_charfield_null_choices:Migration"
+},
+{
+"module": "virtualization.migrations.0042_vminterface_vlan_translation_policy",
+"kind": "class",
+"name": "Migration",
+"lineno": 5,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0042_vminterface_vlan_translation_policy.py",
+"id": "symbols:virtualization.migrations.0042_vminterface_vlan_translation_policy:Migration"
+},
+{
+"module": "virtualization.migrations.0043_qinq_svlan",
+"kind": "class",
+"name": "Migration",
+"lineno": 5,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0043_qinq_svlan.py",
+"id": "symbols:virtualization.migrations.0043_qinq_svlan:Migration"
+},
+{
+"module": "virtualization.migrations.0044_cluster_scope",
+"kind": "function",
+"name": "copy_site_assignments",
+"lineno": 6,
+"bases": "",
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"id": "symbols:virtualization.migrations.0044_cluster_scope:copy_site_assignments"
+},
+{
+"module": "virtualization.migrations.0044_cluster_scope",
+"kind": "class",
+"name": "Migration",
+"lineno": 21,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"id": "symbols:virtualization.migrations.0044_cluster_scope:Migration"
+},
+{
+"module": "virtualization.migrations.0044_cluster_scope",
+"kind": "function",
+"name": "oc_cluster_scope",
+"lineno": 49,
+"bases": "",
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"id": "symbols:virtualization.migrations.0044_cluster_scope:oc_cluster_scope"
+},
+{
+"module": "virtualization.migrations.0045_clusters_cached_relations",
+"kind": "function",
+"name": "populate_denormalized_fields",
+"lineno": 5,
+"bases": "",
+"path": "netbox/virtualization/migrations/0045_clusters_cached_relations.py",
+"id": "symbols:virtualization.migrations.0045_clusters_cached_relations:populate_denormalized_fields"
+},
+{
+"module": "virtualization.migrations.0045_clusters_cached_relations",
+"kind": "class",
+"name": "Migration",
+"lineno": 22,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0045_clusters_cached_relations.py",
+"id": "symbols:virtualization.migrations.0045_clusters_cached_relations:Migration"
+},
+{
+"module": "virtualization.migrations.0045_clusters_cached_relations",
+"kind": "function",
+"name": "oc_cluster_remove_site",
+"lineno": 92,
+"bases": "",
+"path": "netbox/virtualization/migrations/0045_clusters_cached_relations.py",
+"id": "symbols:virtualization.migrations.0045_clusters_cached_relations:oc_cluster_remove_site"
+},
+{
+"module": "virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0046_alter_cluster__location_alter_cluster__region_and_more.py",
+"id": "symbols:virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more:Migration"
+},
+{
+"module": "virtualization.migrations.0047_natural_ordering",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0047_natural_ordering.py",
+"id": "symbols:virtualization.migrations.0047_natural_ordering:Migration"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"kind": "function",
+"name": "populate_mac_addresses",
+"lineno": 7,
+"bases": "",
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"id": "symbols:virtualization.migrations.0048_populate_mac_addresses:populate_mac_addresses"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"kind": "class",
+"name": "Migration",
+"lineno": 31,
+"bases": "migrations.Migration",
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"id": "symbols:virtualization.migrations.0048_populate_mac_addresses:Migration"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"kind": "function",
+"name": "oc_vminterface_primary_mac_address",
+"lineno": 58,
+"bases": "",
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"id": "symbols:virtualization.migrations.0048_populate_mac_addresses:oc_vminterface_primary_mac_address"
+},
+{
+"module": "virtualization.models.clusters",
+"kind": "class",
+"name": "ClusterType",
+"lineno": 20,
+"bases": "OrganizationalModel",
+"path": "netbox/virtualization/models/clusters.py",
+"id": "symbols:virtualization.models.clusters:ClusterType"
+},
+{
+"module": "virtualization.models.clusters",
+"kind": "class",
+"name": "ClusterGroup",
+"lineno": 30,
+"bases": "ContactsMixin,OrganizationalModel",
+"path": "netbox/virtualization/models/clusters.py",
+"id": "symbols:virtualization.models.clusters:ClusterGroup"
+},
+{
+"module": "virtualization.models.clusters",
+"kind": "class",
+"name": "Cluster",
+"lineno": 47,
+"bases": "ContactsMixin,CachedScopeMixin,PrimaryModel",
+"path": "netbox/virtualization/models/clusters.py",
+"id": "symbols:virtualization.models.clusters:Cluster"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"kind": "class",
+"name": "VirtualMachine",
+"lineno": 31,
+"bases": "ContactsMixin,ImageAttachmentsMixin,RenderConfigMixin,ConfigContextModel,PrimaryModel",
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "symbols:virtualization.models.virtualmachines:VirtualMachine"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"kind": "class",
+"name": "ComponentModel",
+"lineno": 266,
+"bases": "NetBoxModel",
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "symbols:virtualization.models.virtualmachines:ComponentModel"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"kind": "class",
+"name": "VMInterface",
+"lineno": 308,
+"bases": "ComponentModel,BaseInterface,TrackingModelMixin",
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "symbols:virtualization.models.virtualmachines:VMInterface"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"kind": "class",
+"name": "VirtualDisk",
+"lineno": 417,
+"bases": "ComponentModel,TrackingModelMixin",
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "symbols:virtualization.models.virtualmachines:VirtualDisk"
+},
+{
+"module": "virtualization.search",
+"kind": "class",
+"name": "ClusterIndex",
+"lineno": 6,
+"bases": "SearchIndex",
+"path": "netbox/virtualization/search.py",
+"id": "symbols:virtualization.search:ClusterIndex"
+},
+{
+"module": "virtualization.search",
+"kind": "class",
+"name": "ClusterGroupIndex",
+"lineno": 17,
+"bases": "SearchIndex",
+"path": "netbox/virtualization/search.py",
+"id": "symbols:virtualization.search:ClusterGroupIndex"
+},
+{
+"module": "virtualization.search",
+"kind": "class",
+"name": "ClusterTypeIndex",
+"lineno": 28,
+"bases": "SearchIndex",
+"path": "netbox/virtualization/search.py",
+"id": "symbols:virtualization.search:ClusterTypeIndex"
+},
+{
+"module": "virtualization.search",
+"kind": "class",
+"name": "VirtualMachineIndex",
+"lineno": 39,
+"bases": "SearchIndex",
+"path": "netbox/virtualization/search.py",
+"id": "symbols:virtualization.search:VirtualMachineIndex"
+},
+{
+"module": "virtualization.search",
+"kind": "class",
+"name": "VMInterfaceIndex",
+"lineno": 51,
+"bases": "SearchIndex",
+"path": "netbox/virtualization/search.py",
+"id": "symbols:virtualization.search:VMInterfaceIndex"
+},
+{
+"module": "virtualization.search",
+"kind": "class",
+"name": "VirtualDiskIndex",
+"lineno": 62,
+"bases": "SearchIndex",
+"path": "netbox/virtualization/search.py",
+"id": "symbols:virtualization.search:VirtualDiskIndex"
+},
+{
+"module": "virtualization.signals",
+"kind": "function",
+"name": "update_virtualmachine_disk",
+"lineno": 9,
+"bases": "",
+"path": "netbox/virtualization/signals.py",
+"id": "symbols:virtualization.signals:update_virtualmachine_disk"
+},
+{
+"module": "virtualization.signals",
+"kind": "function",
+"name": "update_virtualmachine_site",
+"lineno": 20,
+"bases": "",
+"path": "netbox/virtualization/signals.py",
+"id": "symbols:virtualization.signals:update_virtualmachine_site"
+},
+{
+"module": "virtualization.tables.clusters",
+"kind": "class",
+"name": "ClusterTypeTable",
+"lineno": 15,
+"bases": "NetBoxTable",
+"path": "netbox/virtualization/tables/clusters.py",
+"id": "symbols:virtualization.tables.clusters:ClusterTypeTable"
+},
+{
+"module": "virtualization.tables.clusters",
+"kind": "class",
+"name": "ClusterGroupTable",
+"lineno": 37,
+"bases": "ContactsColumnMixin,NetBoxTable",
+"path": "netbox/virtualization/tables/clusters.py",
+"id": "symbols:virtualization.tables.clusters:ClusterGroupTable"
+},
+{
+"module": "virtualization.tables.clusters",
+"kind": "class",
+"name": "ClusterTable",
+"lineno": 60,
+"bases": "TenancyColumnsMixin,ContactsColumnMixin,NetBoxTable",
+"path": "netbox/virtualization/tables/clusters.py",
+"id": "symbols:virtualization.tables.clusters:ClusterTable"
+},
+{
+"module": "virtualization.tables.virtualmachines",
+"kind": "class",
+"name": "VirtualMachineTable",
+"lineno": 24,
+"bases": "TenancyColumnsMixin,ContactsColumnMixin,NetBoxTable",
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "symbols:virtualization.tables.virtualmachines:VirtualMachineTable"
+},
+{
+"module": "virtualization.tables.virtualmachines",
+"kind": "class",
+"name": "VMInterfaceTable",
+"lineno": 103,
+"bases": "BaseInterfaceTable",
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "symbols:virtualization.tables.virtualmachines:VMInterfaceTable"
+},
+{
+"module": "virtualization.tables.virtualmachines",
+"kind": "class",
+"name": "VirtualMachineVMInterfaceTable",
+"lineno": 130,
+"bases": "VMInterfaceTable",
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "symbols:virtualization.tables.virtualmachines:VirtualMachineVMInterfaceTable"
+},
+{
+"module": "virtualization.tables.virtualmachines",
+"kind": "class",
+"name": "VirtualDiskTable",
+"lineno": 159,
+"bases": "NetBoxTable",
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "symbols:virtualization.tables.virtualmachines:VirtualDiskTable"
+},
+{
+"module": "virtualization.tables.virtualmachines",
+"kind": "class",
+"name": "VirtualMachineVirtualDiskTable",
+"lineno": 189,
+"bases": "VirtualDiskTable",
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "symbols:virtualization.tables.virtualmachines:VirtualMachineVirtualDiskTable"
+},
+{
+"module": "virtualization.tests.test_api",
+"kind": "class",
+"name": "AppTest",
+"lineno": 22,
+"bases": "APITestCase",
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "symbols:virtualization.tests.test_api:AppTest"
+},
+{
+"module": "virtualization.tests.test_api",
+"kind": "class",
+"name": "ClusterTypeTest",
+"lineno": 32,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "symbols:virtualization.tests.test_api:ClusterTypeTest"
+},
+{
+"module": "virtualization.tests.test_api",
+"kind": "class",
+"name": "ClusterGroupTest",
+"lineno": 64,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "symbols:virtualization.tests.test_api:ClusterGroupTest"
+},
+{
+"module": "virtualization.tests.test_api",
+"kind": "class",
+"name": "ClusterTest",
+"lineno": 96,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "symbols:virtualization.tests.test_api:ClusterTest"
+},
+{
+"module": "virtualization.tests.test_api",
+"kind": "class",
+"name": "VirtualMachineTest",
+"lineno": 164,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "symbols:virtualization.tests.test_api:VirtualMachineTest"
+},
+{
+"module": "virtualization.tests.test_api",
+"kind": "class",
+"name": "VMInterfaceTest",
+"lineno": 291,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "symbols:virtualization.tests.test_api:VMInterfaceTest"
+},
+{
+"module": "virtualization.tests.test_api",
+"kind": "class",
+"name": "VirtualDiskTest",
+"lineno": 422,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "symbols:virtualization.tests.test_api:VirtualDiskTest"
+},
+{
+"module": "virtualization.tests.test_filtersets",
+"kind": "class",
+"name": "ClusterTypeTestCase",
+"lineno": 14,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "symbols:virtualization.tests.test_filtersets:ClusterTypeTestCase"
+},
+{
+"module": "virtualization.tests.test_filtersets",
+"kind": "class",
+"name": "ClusterGroupTestCase",
+"lineno": 45,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "symbols:virtualization.tests.test_filtersets:ClusterGroupTestCase"
+},
+{
+"module": "virtualization.tests.test_filtersets",
+"kind": "class",
+"name": "ClusterTestCase",
+"lineno": 76,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "symbols:virtualization.tests.test_filtersets:ClusterTestCase"
+},
+{
+"module": "virtualization.tests.test_filtersets",
+"kind": "class",
+"name": "VirtualMachineTestCase",
+"lineno": 233,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "symbols:virtualization.tests.test_filtersets:VirtualMachineTestCase"
+},
+{
+"module": "virtualization.tests.test_filtersets",
+"kind": "class",
+"name": "VMInterfaceTestCase",
+"lineno": 552,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "symbols:virtualization.tests.test_filtersets:VMInterfaceTestCase"
+},
+{
+"module": "virtualization.tests.test_filtersets",
+"kind": "class",
+"name": "VirtualDiskTestCase",
+"lineno": 732,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "symbols:virtualization.tests.test_filtersets:VirtualDiskTestCase"
+},
+{
+"module": "virtualization.tests.test_models",
+"kind": "class",
+"name": "VirtualMachineTestCase",
+"lineno": 9,
+"bases": "TestCase",
+"path": "netbox/virtualization/tests/test_models.py",
+"id": "symbols:virtualization.tests.test_models:VirtualMachineTestCase"
+},
+{
+"module": "virtualization.tests.test_views",
+"kind": "class",
+"name": "ClusterGroupTestCase",
+"lineno": 13,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "symbols:virtualization.tests.test_views:ClusterGroupTestCase"
+},
+{
+"module": "virtualization.tests.test_views",
+"kind": "class",
+"name": "ClusterTypeTestCase",
+"lineno": 54,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "symbols:virtualization.tests.test_views:ClusterTypeTestCase"
+},
+{
+"module": "virtualization.tests.test_views",
+"kind": "class",
+"name": "ClusterTestCase",
+"lineno": 95,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "symbols:virtualization.tests.test_views:ClusterTestCase"
+},
+{
+"module": "virtualization.tests.test_views",
+"kind": "class",
+"name": "VirtualMachineTestCase",
+"lineno": 196,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "symbols:virtualization.tests.test_views:VirtualMachineTestCase"
+},
+{
+"module": "virtualization.tests.test_views",
+"kind": "class",
+"name": "VMInterfaceTestCase",
+"lineno": 327,
+"bases": "ViewTestCases.DeviceComponentViewTestCase",
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "symbols:virtualization.tests.test_views:VMInterfaceTestCase"
+},
+{
+"module": "virtualization.tests.test_views",
+"kind": "class",
+"name": "VirtualDiskTestCase",
+"lineno": 449,
+"bases": "ViewTestCases.DeviceComponentViewTestCase",
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "symbols:virtualization.tests.test_views:VirtualDiskTestCase"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterTypeListView",
+"lineno": 30,
+"bases": "generic.ObjectListView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterTypeListView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterTypeView",
+"lineno": 40,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterTypeView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterTypeEditView",
+"lineno": 51,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterTypeEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterTypeDeleteView",
+"lineno": 57,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterTypeDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterTypeBulkImportView",
+"lineno": 62,
+"bases": "generic.BulkImportView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterTypeBulkImportView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterTypeBulkEditView",
+"lineno": 68,
+"bases": "generic.BulkEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterTypeBulkEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterTypeBulkDeleteView",
+"lineno": 78,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterTypeBulkDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterGroupListView",
+"lineno": 91,
+"bases": "generic.ObjectListView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterGroupListView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterGroupView",
+"lineno": 101,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterGroupView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterGroupEditView",
+"lineno": 122,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterGroupEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterGroupDeleteView",
+"lineno": 128,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterGroupDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterGroupBulkImportView",
+"lineno": 133,
+"bases": "generic.BulkImportView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterGroupBulkImportView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterGroupBulkEditView",
+"lineno": 141,
+"bases": "generic.BulkEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterGroupBulkEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterGroupBulkDeleteView",
+"lineno": 151,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterGroupBulkDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterListView",
+"lineno": 164,
+"bases": "generic.ObjectListView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterListView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterView",
+"lineno": 176,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterVirtualMachinesView",
+"lineno": 201,
+"bases": "generic.ObjectChildrenView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterVirtualMachinesView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterDevicesView",
+"lineno": 219,
+"bases": "generic.ObjectChildrenView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterDevicesView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterEditView",
+"lineno": 246,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterDeleteView",
+"lineno": 252,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterBulkImportView",
+"lineno": 257,
+"bases": "generic.BulkImportView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterBulkImportView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterBulkEditView",
+"lineno": 263,
+"bases": "generic.BulkEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterBulkEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterBulkDeleteView",
+"lineno": 271,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterBulkDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterAddDevicesView",
+"lineno": 278,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterAddDevicesView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "ClusterRemoveDevicesView",
+"lineno": 321,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:ClusterRemoveDevicesView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineListView",
+"lineno": 369,
+"bases": "generic.ObjectListView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineListView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineView",
+"lineno": 378,
+"bases": "generic.ObjectView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineInterfacesView",
+"lineno": 383,
+"bases": "generic.ObjectChildrenView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineInterfacesView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineVirtualDisksView",
+"lineno": 409,
+"bases": "generic.ObjectChildrenView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineVirtualDisksView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineConfigContextView",
+"lineno": 432,
+"bases": "ObjectConfigContextView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineConfigContextView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineRenderConfigView",
+"lineno": 442,
+"bases": "ObjectRenderConfigView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineRenderConfigView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineEditView",
+"lineno": 453,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineDeleteView",
+"lineno": 459,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineBulkImportView",
+"lineno": 464,
+"bases": "generic.BulkImportView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineBulkImportView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineBulkEditView",
+"lineno": 470,
+"bases": "generic.BulkEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineBulkEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineBulkDeleteView",
+"lineno": 478,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineBulkDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceListView",
+"lineno": 489,
+"bases": "generic.ObjectListView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceListView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceView",
+"lineno": 497,
+"bases": "generic.ObjectView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceCreateView",
+"lineno": 543,
+"bases": "generic.ComponentCreateView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceCreateView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceEditView",
+"lineno": 550,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceDeleteView",
+"lineno": 556,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceBulkImportView",
+"lineno": 561,
+"bases": "generic.BulkImportView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceBulkImportView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceBulkEditView",
+"lineno": 567,
+"bases": "generic.BulkEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceBulkEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceBulkRenameView",
+"lineno": 575,
+"bases": "generic.BulkRenameView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceBulkRenameView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VMInterfaceBulkDeleteView",
+"lineno": 581,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VMInterfaceBulkDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskListView",
+"lineno": 593,
+"bases": "generic.ObjectListView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskListView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskView",
+"lineno": 601,
+"bases": "generic.ObjectView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskCreateView",
+"lineno": 606,
+"bases": "generic.ComponentCreateView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskCreateView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskEditView",
+"lineno": 613,
+"bases": "generic.ObjectEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskDeleteView",
+"lineno": 619,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskBulkImportView",
+"lineno": 624,
+"bases": "generic.BulkImportView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskBulkImportView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskBulkEditView",
+"lineno": 630,
+"bases": "generic.BulkEditView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskBulkEditView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskBulkRenameView",
+"lineno": 638,
+"bases": "generic.BulkRenameView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskBulkRenameView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualDiskBulkDeleteView",
+"lineno": 644,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualDiskBulkDeleteView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineBulkAddInterfaceView",
+"lineno": 654,
+"bases": "generic.BulkComponentCreateView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineBulkAddInterfaceView"
+},
+{
+"module": "virtualization.views",
+"kind": "class",
+"name": "VirtualMachineBulkAddVirtualDiskView",
+"lineno": 668,
+"bases": "generic.BulkComponentCreateView",
+"path": "netbox/virtualization/views.py",
+"id": "symbols:virtualization.views:VirtualMachineBulkAddVirtualDiskView"
+}
+],
+"imports_out": [
+{
+"src": "virtualization.api.serializers",
+"dst": "virtualization.api.serializers_.clusters",
+"raw": "virtualization.api.serializers_.clusters",
+"lineno": 1,
+"path": "netbox/virtualization/api/serializers.py",
+"id": "imports:virtualization.api.serializers->virtualization.api.serializers_.clusters"
+},
+{
+"src": "virtualization.api.serializers",
+"dst": "virtualization.api.serializers_.virtualmachines",
+"raw": "virtualization.api.serializers_.virtualmachines",
+"lineno": 2,
+"path": "netbox/virtualization/api/serializers.py",
+"id": "imports:virtualization.api.serializers->virtualization.api.serializers_.virtualmachines"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "dcim.constants",
+"raw": "dcim.constants",
+"lineno": 1,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->dcim.constants"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 5,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->netbox.api.fields"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 6,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->netbox.api.serializers"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 7,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->tenancy.api.serializers_.tenants"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "utilities.api",
+"raw": "utilities.api",
+"lineno": 10,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->utilities.api"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 8,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->virtualization.choices"
+},
+{
+"src": "virtualization.api.serializers_.clusters",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 9,
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"id": "imports:virtualization.api.serializers_.clusters->virtualization.models"
+},
+{
+"src": "virtualization.api.serializers_.nested",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 1,
+"path": "netbox/virtualization/api/serializers_/nested.py",
+"id": "imports:virtualization.api.serializers_.nested->netbox.api.serializers"
+},
+{
+"src": "virtualization.api.serializers_.nested",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 2,
+"path": "netbox/virtualization/api/serializers_/nested.py",
+"id": "imports:virtualization.api.serializers_.nested->virtualization"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "dcim.api.serializers_.device_components",
+"raw": "dcim.api.serializers_.device_components",
+"lineno": 5,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.device_components"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "dcim.api.serializers_.devices",
+"raw": "dcim.api.serializers_.devices",
+"lineno": 4,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.devices"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "dcim.api.serializers_.platforms",
+"raw": "dcim.api.serializers_.platforms",
+"lineno": 6,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.platforms"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "dcim.api.serializers_.roles",
+"raw": "dcim.api.serializers_.roles",
+"lineno": 7,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.roles"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "dcim.api.serializers_.sites",
+"raw": "dcim.api.serializers_.sites",
+"lineno": 8,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.sites"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 9,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->dcim.choices"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "extras.api.serializers_.configtemplates",
+"raw": "extras.api.serializers_.configtemplates",
+"lineno": 10,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->extras.api.serializers_.configtemplates"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "ipam.api.serializers_.ip",
+"raw": "ipam.api.serializers_.ip",
+"lineno": 11,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->ipam.api.serializers_.ip"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "ipam.api.serializers_.vlans",
+"raw": "ipam.api.serializers_.vlans",
+"lineno": 12,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->ipam.api.serializers_.vlans"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "ipam.api.serializers_.vrfs",
+"raw": "ipam.api.serializers_.vrfs",
+"lineno": 13,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->ipam.api.serializers_.vrfs"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 14,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->ipam.models"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 15,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->netbox.api.fields"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 16,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->netbox.api.serializers"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 17,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->tenancy.api.serializers_.tenants"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "virtualization.api.serializers_.clusters",
+"raw": "virtualization.api.serializers_.clusters",
+"lineno": 21,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->virtualization.api.serializers_.clusters"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "virtualization.api.serializers_.nested",
+"raw": "virtualization.api.serializers_.nested",
+"lineno": 22,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->virtualization.api.serializers_.nested"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 18,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->virtualization.choices"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 19,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->virtualization.models"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "vpn.api.serializers_.l2vpn",
+"raw": "vpn.api.serializers_.l2vpn",
+"lineno": 20,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->vpn.api.serializers_.l2vpn"
+},
+{
+"src": "virtualization.api.urls",
+"dst": "netbox.api.routers",
+"raw": "netbox.api.routers",
+"lineno": 1,
+"path": "netbox/virtualization/api/urls.py",
+"id": "imports:virtualization.api.urls->netbox.api.routers"
+},
+{
+"src": "virtualization.api.urls",
+"dst": "virtualization.api",
+"raw": "virtualization.api",
+"lineno": 2,
+"path": "netbox/virtualization/api/urls.py",
+"id": "imports:virtualization.api.urls->virtualization.api"
+},
+{
+"src": "virtualization.api.views",
+"dst": "extras.api.mixins",
+"raw": "extras.api.mixins",
+"lineno": 4,
+"path": "netbox/virtualization/api/views.py",
+"id": "imports:virtualization.api.views->extras.api.mixins"
+},
+{
+"src": "virtualization.api.views",
+"dst": "netbox.api.viewsets",
+"raw": "netbox.api.viewsets",
+"lineno": 5,
+"path": "netbox/virtualization/api/views.py",
+"id": "imports:virtualization.api.views->netbox.api.viewsets"
+},
+{
+"src": "virtualization.api.views",
+"dst": "utilities.query_functions",
+"raw": "utilities.query_functions",
+"lineno": 6,
+"path": "netbox/virtualization/api/views.py",
+"id": "imports:virtualization.api.views->utilities.query_functions"
+},
+{
+"src": "virtualization.api.views",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 7,
+"path": "netbox/virtualization/api/views.py",
+"id": "imports:virtualization.api.views->virtualization"
+},
+{
+"src": "virtualization.api.views",
+"dst": "virtualization.api",
+"raw": "virtualization.api",
+"lineno": 9,
+"path": "netbox/virtualization/api/views.py",
+"id": "imports:virtualization.api.views->virtualization.api"
+},
+{
+"src": "virtualization.api.views",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 8,
+"path": "netbox/virtualization/api/views.py",
+"id": "imports:virtualization.api.views->virtualization.models"
+},
+{
+"src": "virtualization.apps",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 8,
+"path": "netbox/virtualization/apps.py",
+"id": "imports:virtualization.apps->netbox.models.features"
+},
+{
+"src": "virtualization.apps",
+"dst": "utilities.counters",
+"raw": "utilities.counters",
+"lineno": 9,
+"path": "netbox/virtualization/apps.py",
+"id": "imports:virtualization.apps->utilities.counters"
+},
+{
+"src": "virtualization.apps",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 10,
+"path": "netbox/virtualization/apps.py",
+"id": "imports:virtualization.apps->virtualization"
+},
+{
+"src": "virtualization.apps",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 11,
+"path": "netbox/virtualization/apps.py",
+"id": "imports:virtualization.apps->virtualization.models"
+},
+{
+"src": "virtualization.choices",
+"dst": "utilities.choices",
+"raw": "utilities.choices",
+"lineno": 3,
+"path": "netbox/virtualization/choices.py",
+"id": "imports:virtualization.choices->utilities.choices"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "dcim.base_filtersets",
+"raw": "dcim.base_filtersets",
+"lineno": 5,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->dcim.base_filtersets"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "dcim.filtersets",
+"raw": "dcim.filtersets",
+"lineno": 6,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->dcim.filtersets"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 7,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->dcim.models"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 8,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->dcim.models"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "extras.filtersets",
+"raw": "extras.filtersets",
+"lineno": 9,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->extras.filtersets"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 10,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->extras.models"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "ipam.filtersets",
+"raw": "ipam.filtersets",
+"lineno": 11,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->ipam.filtersets"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "netbox.filtersets",
+"raw": "netbox.filtersets",
+"lineno": 12,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->netbox.filtersets"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 13,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->tenancy.filtersets"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "utilities.filters",
+"raw": "utilities.filters",
+"lineno": 14,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->utilities.filters"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 15,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->virtualization.choices"
+},
+{
+"src": "virtualization.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 16,
+"path": "netbox/virtualization/filtersets.py",
+"id": "imports:virtualization.filtersets->virtualization.models"
+},
+{
+"src": "virtualization.forms",
+"dst": "virtualization.forms.bulk_create",
+"raw": "virtualization.forms.bulk_create",
+"lineno": 4,
+"path": "netbox/virtualization/forms/__init__.py",
+"id": "imports:virtualization.forms->virtualization.forms.bulk_create"
+},
+{
+"src": "virtualization.forms",
+"dst": "virtualization.forms.bulk_edit",
+"raw": "virtualization.forms.bulk_edit",
+"lineno": 5,
+"path": "netbox/virtualization/forms/__init__.py",
+"id": "imports:virtualization.forms->virtualization.forms.bulk_edit"
+},
+{
+"src": "virtualization.forms",
+"dst": "virtualization.forms.bulk_import",
+"raw": "virtualization.forms.bulk_import",
+"lineno": 6,
+"path": "netbox/virtualization/forms/__init__.py",
+"id": "imports:virtualization.forms->virtualization.forms.bulk_import"
+},
+{
+"src": "virtualization.forms",
+"dst": "virtualization.forms.filtersets",
+"raw": "virtualization.forms.filtersets",
+"lineno": 2,
+"path": "netbox/virtualization/forms/__init__.py",
+"id": "imports:virtualization.forms->virtualization.forms.filtersets"
+},
+{
+"src": "virtualization.forms",
+"dst": "virtualization.forms.model_forms",
+"raw": "virtualization.forms.model_forms",
+"lineno": 1,
+"path": "netbox/virtualization/forms/__init__.py",
+"id": "imports:virtualization.forms->virtualization.forms.model_forms"
+},
+{
+"src": "virtualization.forms",
+"dst": "virtualization.forms.object_create",
+"raw": "virtualization.forms.object_create",
+"lineno": 3,
+"path": "netbox/virtualization/forms/__init__.py",
+"id": "imports:virtualization.forms->virtualization.forms.object_create"
+},
+{
+"src": "virtualization.forms.bulk_create",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 4,
+"path": "netbox/virtualization/forms/bulk_create.py",
+"id": "imports:virtualization.forms.bulk_create->utilities.forms"
+},
+{
+"src": "virtualization.forms.bulk_create",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 5,
+"path": "netbox/virtualization/forms/bulk_create.py",
+"id": "imports:virtualization.forms.bulk_create->utilities.forms.fields"
+},
+{
+"src": "virtualization.forms.bulk_create",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 6,
+"path": "netbox/virtualization/forms/bulk_create.py",
+"id": "imports:virtualization.forms.bulk_create->virtualization.models"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 4,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->dcim.choices"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "dcim.constants",
+"raw": "dcim.constants",
+"lineno": 5,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->dcim.constants"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "dcim.forms.mixins",
+"raw": "dcim.forms.mixins",
+"lineno": 6,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->dcim.forms.mixins"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 7,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->dcim.models"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 8,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->extras.models"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 9,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->ipam.models"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 10,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->netbox.forms"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 11,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 12,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->utilities.forms"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 13,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->utilities.forms.fields"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 14,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->utilities.forms.rendering"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 15,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->utilities.forms.widgets"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 16,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->virtualization.choices"
+},
+{
+"src": "virtualization.forms.bulk_edit",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 17,
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"id": "imports:virtualization.forms.bulk_edit->virtualization.models"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 3,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->dcim.choices"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "dcim.forms.mixins",
+"raw": "dcim.forms.mixins",
+"lineno": 4,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->dcim.forms.mixins"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->dcim.models"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 6,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->extras.models"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 7,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->ipam.models"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 8,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->netbox.forms"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 9,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->tenancy.models"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 10,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->utilities.forms.fields"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 11,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->virtualization.choices"
+},
+{
+"src": "virtualization.forms.bulk_import",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 12,
+"path": "netbox/virtualization/forms/bulk_import.py",
+"id": "imports:virtualization.forms.bulk_import->virtualization.models"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 4,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->dcim.choices"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->dcim.models"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "extras.forms",
+"raw": "extras.forms",
+"lineno": 6,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->extras.forms"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 7,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->extras.models"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 8,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->ipam.models"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 9,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->netbox.forms"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 10,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->tenancy.forms"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 11,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->utilities.forms"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 12,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->utilities.forms.fields"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 13,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->utilities.forms.rendering"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 14,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->virtualization.choices"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 15,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->virtualization.models"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 16,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->vpn.models"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "dcim.forms.common",
+"raw": "dcim.forms.common",
+"lineno": 7,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->dcim.forms.common"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "dcim.forms.mixins",
+"raw": "dcim.forms.mixins",
+"lineno": 8,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->dcim.forms.mixins"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 9,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->dcim.models"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 10,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->extras.models"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "ipam.choices",
+"raw": "ipam.choices",
+"lineno": 11,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->ipam.choices"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 12,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->ipam.models"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 13,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->netbox.forms"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 14,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->tenancy.forms"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 15,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->utilities.forms"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 16,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->utilities.forms.fields"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 19,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->utilities.forms.rendering"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 20,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->utilities.forms.widgets"
+},
+{
+"src": "virtualization.forms.model_forms",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 21,
+"path": "netbox/virtualization/forms/model_forms.py",
+"id": "imports:virtualization.forms.model_forms->virtualization.models"
+},
+{
+"src": "virtualization.forms.object_create",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 2,
+"path": "netbox/virtualization/forms/object_create.py",
+"id": "imports:virtualization.forms.object_create->utilities.forms.fields"
+},
+{
+"src": "virtualization.forms.object_create",
+"dst": "virtualization.forms.model_forms",
+"raw": "virtualization.forms.model_forms",
+"lineno": 3,
+"path": "netbox/virtualization/forms/object_create.py",
+"id": "imports:virtualization.forms.object_create->virtualization.forms.model_forms"
+},
+{
+"src": "virtualization.graphql.enums",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 3,
+"path": "netbox/virtualization/graphql/enums.py",
+"id": "imports:virtualization.graphql.enums->virtualization.choices"
+},
+{
+"src": "virtualization.graphql.filter_mixins",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 9,
+"path": "netbox/virtualization/graphql/filter_mixins.py",
+"id": "imports:virtualization.graphql.filter_mixins->netbox.graphql.filter_mixins"
+},
+{
+"src": "virtualization.graphql.filter_mixins",
+"dst": "virtualization.graphql.filters",
+"raw": "virtualization.graphql.filters",
+"lineno": 12,
+"path": "netbox/virtualization/graphql/filter_mixins.py",
+"id": "imports:virtualization.graphql.filter_mixins->virtualization.graphql.filters"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "dcim.graphql.filter_mixins",
+"raw": "dcim.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->dcim.graphql.filter_mixins"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "dcim.graphql.filters",
+"raw": "dcim.graphql.filters",
+"lineno": 22,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->dcim.graphql.filters"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "extras.graphql.filter_mixins",
+"raw": "extras.graphql.filter_mixins",
+"lineno": 9,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->extras.graphql.filter_mixins"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "ipam.graphql.filters",
+"raw": "ipam.graphql.filters",
+"lineno": 23,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->ipam.graphql.filters"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "netbox.graphql.filter_lookups",
+"raw": "netbox.graphql.filter_lookups",
+"lineno": 21,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->netbox.graphql.filter_lookups"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->netbox.graphql.filter_mixins"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 15,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 16,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->virtualization"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "virtualization.graphql.enums",
+"raw": "virtualization.graphql.enums",
+"lineno": 20,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->virtualization.graphql.enums"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "virtualization.graphql.filter_mixins",
+"raw": "virtualization.graphql.filter_mixins",
+"lineno": 17,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->virtualization.graphql.filter_mixins"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "vpn.graphql.filters",
+"raw": "vpn.graphql.filters",
+"lineno": 30,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->vpn.graphql.filters"
+},
+{
+"src": "virtualization.graphql.schema",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 6,
+"path": "netbox/virtualization/graphql/schema.py",
+"id": "imports:virtualization.graphql.schema->virtualization.graphql.types"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "dcim.graphql.types",
+"raw": "dcim.graphql.types",
+"lineno": 14,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->dcim.graphql.types"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "extras.graphql.mixins",
+"raw": "extras.graphql.mixins",
+"lineno": 6,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->extras.graphql.mixins"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "extras.graphql.types",
+"raw": "extras.graphql.types",
+"lineno": 24,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->extras.graphql.types"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "ipam.graphql.mixins",
+"raw": "ipam.graphql.mixins",
+"lineno": 7,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->ipam.graphql.mixins"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "ipam.graphql.types",
+"raw": "ipam.graphql.types",
+"lineno": 25,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->ipam.graphql.types"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "netbox.graphql.scalars",
+"raw": "netbox.graphql.scalars",
+"lineno": 8,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->netbox.graphql.scalars"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 9,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->netbox.graphql.types"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 26,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 10,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->virtualization"
+},
+{
+"src": "virtualization.graphql.types",
+"dst": "virtualization.graphql.filters",
+"raw": "virtualization.graphql.filters",
+"lineno": 11,
+"path": "netbox/virtualization/graphql/types.py",
+"id": "imports:virtualization.graphql.types->virtualization.graphql.filters"
+},
+{
+"src": "virtualization.migrations.0001_squashed_0022",
+"dst": "dcim.fields",
+"raw": "dcim.fields",
+"lineno": 1,
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"id": "imports:virtualization.migrations.0001_squashed_0022->dcim.fields"
+},
+{
+"src": "virtualization.migrations.0001_squashed_0022",
+"dst": "utilities.fields",
+"raw": "utilities.fields",
+"lineno": 7,
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"id": "imports:virtualization.migrations.0001_squashed_0022->utilities.fields"
+},
+{
+"src": "virtualization.migrations.0001_squashed_0022",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 2,
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"id": "imports:virtualization.migrations.0001_squashed_0022->utilities.json"
+},
+{
+"src": "virtualization.migrations.0001_squashed_0022",
+"dst": "utilities.ordering",
+"raw": "utilities.ordering",
+"lineno": 8,
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"id": "imports:virtualization.migrations.0001_squashed_0022->utilities.ordering"
+},
+{
+"src": "virtualization.migrations.0001_squashed_0022",
+"dst": "utilities.query_functions",
+"raw": "utilities.query_functions",
+"lineno": 9,
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"id": "imports:virtualization.migrations.0001_squashed_0022->utilities.query_functions"
+},
+{
+"src": "virtualization.migrations.0023_squashed_0036",
+"dst": "utilities.fields",
+"raw": "utilities.fields",
+"lineno": 5,
+"path": "netbox/virtualization/migrations/0023_squashed_0036.py",
+"id": "imports:virtualization.migrations.0023_squashed_0036->utilities.fields"
+},
+{
+"src": "virtualization.migrations.0023_squashed_0036",
+"dst": "utilities.ordering",
+"raw": "utilities.ordering",
+"lineno": 6,
+"path": "netbox/virtualization/migrations/0023_squashed_0036.py",
+"id": "imports:virtualization.migrations.0023_squashed_0036->utilities.ordering"
+},
+{
+"src": "virtualization.migrations.0038_virtualdisk",
+"dst": "utilities.fields",
+"raw": "utilities.fields",
+"lineno": 4,
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"id": "imports:virtualization.migrations.0038_virtualdisk->utilities.fields"
+},
+{
+"src": "virtualization.migrations.0038_virtualdisk",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 5,
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"id": "imports:virtualization.migrations.0038_virtualdisk->utilities.json"
+},
+{
+"src": "virtualization.migrations.0038_virtualdisk",
+"dst": "utilities.ordering",
+"raw": "utilities.ordering",
+"lineno": 6,
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"id": "imports:virtualization.migrations.0038_virtualdisk->utilities.ordering"
+},
+{
+"src": "virtualization.migrations.0038_virtualdisk",
+"dst": "utilities.query_functions",
+"raw": "utilities.query_functions",
+"lineno": 7,
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"id": "imports:virtualization.migrations.0038_virtualdisk->utilities.query_functions"
+},
+{
+"src": "virtualization.migrations.0038_virtualdisk",
+"dst": "utilities.tracking",
+"raw": "utilities.tracking",
+"lineno": 8,
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"id": "imports:virtualization.migrations.0038_virtualdisk->utilities.tracking"
+},
+{
+"src": "virtualization.migrations.0040_convert_disk_size",
+"dst": "netbox.settings",
+"raw": "netbox.settings",
+"lineno": 3,
+"path": "netbox/virtualization/migrations/0040_convert_disk_size.py",
+"id": "imports:virtualization.migrations.0040_convert_disk_size->netbox.settings"
+},
+{
+"src": "virtualization.models",
+"dst": "virtualization.models.clusters",
+"raw": "virtualization.models.clusters",
+"lineno": 1,
+"path": "netbox/virtualization/models/__init__.py",
+"id": "imports:virtualization.models->virtualization.models.clusters"
+},
+{
+"src": "virtualization.models",
+"dst": "virtualization.models.virtualmachines",
+"raw": "virtualization.models.virtualmachines",
+"lineno": 2,
+"path": "netbox/virtualization/models/__init__.py",
+"id": "imports:virtualization.models->virtualization.models.virtualmachines"
+},
+{
+"src": "virtualization.models.clusters",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 7,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "imports:virtualization.models.clusters->dcim.models"
+},
+{
+"src": "virtualization.models.clusters",
+"dst": "dcim.models.mixins",
+"raw": "dcim.models.mixins",
+"lineno": 8,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "imports:virtualization.models.clusters->dcim.models.mixins"
+},
+{
+"src": "virtualization.models.clusters",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 9,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "imports:virtualization.models.clusters->netbox.models"
+},
+{
+"src": "virtualization.models.clusters",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 10,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "imports:virtualization.models.clusters->netbox.models.features"
+},
+{
+"src": "virtualization.models.clusters",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 11,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "imports:virtualization.models.clusters->virtualization.choices"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 11,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->dcim.models"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "dcim.models.mixins",
+"raw": "dcim.models.mixins",
+"lineno": 12,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->dcim.models.mixins"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 13,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->extras.models"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "extras.querysets",
+"raw": "extras.querysets",
+"lineno": 14,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->extras.querysets"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "netbox.config",
+"raw": "netbox.config",
+"lineno": 15,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->netbox.config"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 16,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->netbox.models"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 17,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->netbox.models.features"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "utilities.fields",
+"raw": "utilities.fields",
+"lineno": 18,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->utilities.fields"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "utilities.ordering",
+"raw": "utilities.ordering",
+"lineno": 19,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->utilities.ordering"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "utilities.query_functions",
+"raw": "utilities.query_functions",
+"lineno": 20,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->utilities.query_functions"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "utilities.tracking",
+"raw": "utilities.tracking",
+"lineno": 21,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->utilities.tracking"
+},
+{
+"src": "virtualization.models.virtualmachines",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 22,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "imports:virtualization.models.virtualmachines->virtualization.choices"
+},
+{
+"src": "virtualization.search",
+"dst": "netbox.search",
+"raw": "netbox.search",
+"lineno": 1,
+"path": "netbox/virtualization/search.py",
+"id": "imports:virtualization.search->netbox.search"
+},
+{
+"src": "virtualization.search",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 2,
+"path": "netbox/virtualization/search.py",
+"id": "imports:virtualization.search->virtualization"
+},
+{
+"src": "virtualization.signals",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 5,
+"path": "netbox/virtualization/signals.py",
+"id": "imports:virtualization.signals->virtualization.models"
+},
+{
+"src": "virtualization.tables",
+"dst": "virtualization.tables.clusters",
+"raw": "virtualization.tables.clusters",
+"lineno": 1,
+"path": "netbox/virtualization/tables/__init__.py",
+"id": "imports:virtualization.tables->virtualization.tables.clusters"
+},
+{
+"src": "virtualization.tables",
+"dst": "virtualization.tables.virtualmachines",
+"raw": "virtualization.tables.virtualmachines",
+"lineno": 2,
+"path": "netbox/virtualization/tables/__init__.py",
+"id": "imports:virtualization.tables->virtualization.tables.virtualmachines"
+},
+{
+"src": "virtualization.tables.clusters",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 6,
+"path": "netbox/virtualization/tables/clusters.py",
+"id": "imports:virtualization.tables.clusters->netbox.tables"
+},
+{
+"src": "virtualization.tables.clusters",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 3,
+"path": "netbox/virtualization/tables/clusters.py",
+"id": "imports:virtualization.tables.clusters->tenancy.tables"
+},
+{
+"src": "virtualization.tables.clusters",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 4,
+"path": "netbox/virtualization/tables/clusters.py",
+"id": "imports:virtualization.tables.clusters->virtualization.models"
+},
+{
+"src": "virtualization.tables.virtualmachines",
+"dst": "dcim.tables.devices",
+"raw": "dcim.tables.devices",
+"lineno": 4,
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "imports:virtualization.tables.virtualmachines->dcim.tables.devices"
+},
+{
+"src": "virtualization.tables.virtualmachines",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 5,
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "imports:virtualization.tables.virtualmachines->netbox.tables"
+},
+{
+"src": "virtualization.tables.virtualmachines",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "imports:virtualization.tables.virtualmachines->tenancy.tables"
+},
+{
+"src": "virtualization.tables.virtualmachines",
+"dst": "utilities.templatetags.helpers",
+"raw": "utilities.templatetags.helpers",
+"lineno": 7,
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "imports:virtualization.tables.virtualmachines->utilities.templatetags.helpers"
+},
+{
+"src": "virtualization.tables.virtualmachines",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 8,
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "imports:virtualization.tables.virtualmachines->virtualization.models"
+},
+{
+"src": "virtualization.tables.virtualmachines",
+"dst": "virtualization.tables.template_code",
+"raw": "virtualization.tables.template_code",
+"lineno": 9,
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"id": "imports:virtualization.tables.virtualmachines->virtualization.tables.template_code"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->core.models"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 9,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->dcim.choices"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 10,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->dcim.models"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "extras.choices",
+"raw": "extras.choices",
+"lineno": 11,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->extras.choices"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 12,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->extras.models"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "ipam.choices",
+"raw": "ipam.choices",
+"lineno": 13,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->ipam.choices"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 14,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->ipam.models"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 15,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->utilities.testing"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 18,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->virtualization.choices"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 19,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->virtualization.models"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 3,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->dcim.choices"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->dcim.models"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "ipam.choices",
+"raw": "ipam.choices",
+"lineno": 5,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->ipam.choices"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->ipam.models"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 8,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->utilities.testing"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 9,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->virtualization.choices"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "virtualization.filtersets",
+"raw": "virtualization.filtersets",
+"lineno": 10,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->virtualization.filtersets"
+},
+{
+"src": "virtualization.tests.test_filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 11,
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"id": "imports:virtualization.tests.test_filtersets->virtualization.models"
+},
+{
+"src": "virtualization.tests.test_models",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/virtualization/tests/test_models.py",
+"id": "imports:virtualization.tests.test_models->dcim.models"
+},
+{
+"src": "virtualization.tests.test_models",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 6,
+"path": "netbox/virtualization/tests/test_models.py",
+"id": "imports:virtualization.tests.test_models->tenancy.models"
+},
+{
+"src": "virtualization.tests.test_models",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 5,
+"path": "netbox/virtualization/tests/test_models.py",
+"id": "imports:virtualization.tests.test_models->virtualization.models"
+},
+{
+"src": "virtualization.tests.test_views",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 5,
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "imports:virtualization.tests.test_views->dcim.choices"
+},
+{
+"src": "virtualization.tests.test_views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 6,
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "imports:virtualization.tests.test_views->dcim.models"
+},
+{
+"src": "virtualization.tests.test_views",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 7,
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "imports:virtualization.tests.test_views->ipam.models"
+},
+{
+"src": "virtualization.tests.test_views",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 8,
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "imports:virtualization.tests.test_views->utilities.testing"
+},
+{
+"src": "virtualization.tests.test_views",
+"dst": "virtualization.choices",
+"raw": "virtualization.choices",
+"lineno": 9,
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "imports:virtualization.tests.test_views->virtualization.choices"
+},
+{
+"src": "virtualization.tests.test_views",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 10,
+"path": "netbox/virtualization/tests/test_views.py",
+"id": "imports:virtualization.tests.test_views->virtualization.models"
+},
+{
+"src": "virtualization.urls",
+"dst": "utilities.urls",
+"raw": "utilities.urls",
+"lineno": 3,
+"path": "netbox/virtualization/urls.py",
+"id": "imports:virtualization.urls->utilities.urls"
+},
+{
+"src": "virtualization.urls",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 4,
+"path": "netbox/virtualization/urls.py",
+"id": "imports:virtualization.urls->virtualization"
+},
+{
+"src": "virtualization.views",
+"dst": "dcim.filtersets",
+"raw": "dcim.filtersets",
+"lineno": 9,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->dcim.filtersets"
+},
+{
+"src": "virtualization.views",
+"dst": "dcim.forms",
+"raw": "dcim.forms",
+"lineno": 10,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->dcim.forms"
+},
+{
+"src": "virtualization.views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 11,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->dcim.models"
+},
+{
+"src": "virtualization.views",
+"dst": "dcim.tables",
+"raw": "dcim.tables",
+"lineno": 12,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->dcim.tables"
+},
+{
+"src": "virtualization.views",
+"dst": "extras.views",
+"raw": "extras.views",
+"lineno": 13,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->extras.views"
+},
+{
+"src": "virtualization.views",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 14,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->ipam.models"
+},
+{
+"src": "virtualization.views",
+"dst": "ipam.tables",
+"raw": "ipam.tables",
+"lineno": 15,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->ipam.tables"
+},
+{
+"src": "virtualization.views",
+"dst": "netbox.constants",
+"raw": "netbox.constants",
+"lineno": 16,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->netbox.constants"
+},
+{
+"src": "virtualization.views",
+"dst": "netbox.views",
+"raw": "netbox.views",
+"lineno": 17,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->netbox.views"
+},
+{
+"src": "virtualization.views",
+"dst": "utilities.query",
+"raw": "utilities.query",
+"lineno": 18,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->utilities.query"
+},
+{
+"src": "virtualization.views",
+"dst": "utilities.query_functions",
+"raw": "utilities.query_functions",
+"lineno": 19,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->utilities.query_functions"
+},
+{
+"src": "virtualization.views",
+"dst": "utilities.views",
+"raw": "utilities.views",
+"lineno": 20,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->utilities.views"
+},
+{
+"src": "virtualization.views",
+"dst": "virtualization",
+"raw": "virtualization",
+"lineno": 21,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->virtualization"
+},
+{
+"src": "virtualization.views",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 22,
+"path": "netbox/virtualization/views.py",
+"id": "imports:virtualization.views->virtualization.models"
+}
+],
+"imports_in": [
+{
+"src": "dcim.api.serializers_.devices",
+"dst": "virtualization.api.serializers_.clusters",
+"raw": "virtualization.api.serializers_.clusters",
+"lineno": 17,
+"path": "netbox/dcim/api/serializers_/devices.py",
+"id": "imports:dcim.api.serializers_.devices->virtualization.api.serializers_.clusters"
+},
+{
+"src": "dcim.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 24,
+"path": "netbox/dcim/filtersets.py",
+"id": "imports:dcim.filtersets->virtualization.models"
+},
+{
+"src": "dcim.forms.bulk_edit",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 22,
+"path": "netbox/dcim/forms/bulk_edit.py",
+"id": "imports:dcim.forms.bulk_edit->virtualization.models"
+},
+{
+"src": "dcim.forms.bulk_import",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 20,
+"path": "netbox/dcim/forms/bulk_import.py",
+"id": "imports:dcim.forms.bulk_import->virtualization.models"
+},
+{
+"src": "dcim.forms.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 18,
+"path": "netbox/dcim/forms/filtersets.py",
+"id": "imports:dcim.forms.filtersets->virtualization.models"
+},
+{
+"src": "dcim.forms.model_forms",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 23,
+"path": "netbox/dcim/forms/model_forms.py",
+"id": "imports:dcim.forms.model_forms->virtualization.models"
+},
+{
+"src": "dcim.graphql.filters",
+"dst": "virtualization.graphql.filters",
+"raw": "virtualization.graphql.filters",
+"lineno": 39,
+"path": "netbox/dcim/graphql/filters.py",
+"id": "imports:dcim.graphql.filters->virtualization.graphql.filters"
+},
+{
+"src": "dcim.graphql.types",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 35,
+"path": "netbox/dcim/graphql/types.py",
+"id": "imports:dcim.graphql.types->virtualization.graphql.types"
+},
+{
+"src": "dcim.tests.test_api",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 18,
+"path": "netbox/dcim/tests/test_api.py",
+"id": "imports:dcim.tests.test_api->virtualization.models"
+},
+{
+"src": "dcim.tests.test_filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 13,
+"path": "netbox/dcim/tests/test_filtersets.py",
+"id": "imports:dcim.tests.test_filtersets->virtualization.models"
+},
+{
+"src": "dcim.tests.test_forms",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 11,
+"path": "netbox/dcim/tests/test_forms.py",
+"id": "imports:dcim.tests.test_forms->virtualization.models"
+},
+{
+"src": "dcim.tests.test_models",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 12,
+"path": "netbox/dcim/tests/test_models.py",
+"id": "imports:dcim.tests.test_models->virtualization.models"
+},
+{
+"src": "dcim.views",
+"dst": "virtualization.filtersets",
+"raw": "virtualization.filtersets",
+"lineno": 29,
+"path": "netbox/dcim/views.py",
+"id": "imports:dcim.views->virtualization.filtersets"
+},
+{
+"src": "dcim.views",
+"dst": "virtualization.forms",
+"raw": "virtualization.forms",
+"lineno": 30,
+"path": "netbox/dcim/views.py",
+"id": "imports:dcim.views->virtualization.forms"
+},
+{
+"src": "dcim.views",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 31,
+"path": "netbox/dcim/views.py",
+"id": "imports:dcim.views->virtualization.models"
+},
+{
+"src": "dcim.views",
+"dst": "virtualization.tables",
+"raw": "virtualization.tables",
+"lineno": 32,
+"path": "netbox/dcim/views.py",
+"id": "imports:dcim.views->virtualization.tables"
+},
+{
+"src": "extras.api.serializers_.configcontexts",
+"dst": "virtualization.api.serializers_.clusters",
+"raw": "virtualization.api.serializers_.clusters",
+"lineno": 14,
+"path": "netbox/extras/api/serializers_/configcontexts.py",
+"id": "imports:extras.api.serializers_.configcontexts->virtualization.api.serializers_.clusters"
+},
+{
+"src": "extras.api.serializers_.configcontexts",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 15,
+"path": "netbox/extras/api/serializers_/configcontexts.py",
+"id": "imports:extras.api.serializers_.configcontexts->virtualization.models"
+},
+{
+"src": "extras.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 14,
+"path": "netbox/extras/filtersets.py",
+"id": "imports:extras.filtersets->virtualization.models"
+},
+{
+"src": "extras.forms.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 19,
+"path": "netbox/extras/forms/filtersets.py",
+"id": "imports:extras.forms.filtersets->virtualization.models"
+},
+{
+"src": "extras.forms.model_forms",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 26,
+"path": "netbox/extras/forms/model_forms.py",
+"id": "imports:extras.forms.model_forms->virtualization.models"
+},
+{
+"src": "extras.graphql.filters",
+"dst": "virtualization.graphql.filters",
+"raw": "virtualization.graphql.filters",
+"lineno": 22,
+"path": "netbox/extras/graphql/filters.py",
+"id": "imports:extras.graphql.filters->virtualization.graphql.filters"
+},
+{
+"src": "extras.graphql.types",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 25,
+"path": "netbox/extras/graphql/types.py",
+"id": "imports:extras.graphql.types->virtualization.graphql.types"
+},
+{
+"src": "extras.tests.test_customfields",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 17,
+"path": "netbox/extras/tests/test_customfields.py",
+"id": "imports:extras.tests.test_customfields->virtualization.models"
+},
+{
+"src": "extras.tests.test_filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 20,
+"path": "netbox/extras/tests/test_filtersets.py",
+"id": "imports:extras.tests.test_filtersets->virtualization.models"
+},
+{
+"src": "extras.tests.test_models",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 12,
+"path": "netbox/extras/tests/test_models.py",
+"id": "imports:extras.tests.test_models->virtualization.models"
+},
+{
+"src": "extras.views",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 34,
+"path": "netbox/extras/views.py",
+"id": "imports:extras.views->virtualization.models"
+},
+{
+"src": "ipam.api.views",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 26,
+"path": "netbox/ipam/api/views.py",
+"id": "imports:ipam.api.views->virtualization.models"
+},
+{
+"src": "ipam.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 20,
+"path": "netbox/ipam/filtersets.py",
+"id": "imports:ipam.filtersets->virtualization.models"
+},
+{
+"src": "ipam.forms.bulk_import",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 16,
+"path": "netbox/ipam/forms/bulk_import.py",
+"id": "imports:ipam.forms.bulk_import->virtualization.models"
+},
+{
+"src": "ipam.forms.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 13,
+"path": "netbox/ipam/forms/filtersets.py",
+"id": "imports:ipam.forms.filtersets->virtualization.models"
+},
+{
+"src": "ipam.forms.model_forms",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 24,
+"path": "netbox/ipam/forms/model_forms.py",
+"id": "imports:ipam.forms.model_forms->virtualization.models"
+},
+{
+"src": "ipam.graphql.filters",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 19,
+"path": "netbox/ipam/graphql/filters.py",
+"id": "imports:ipam.graphql.filters->virtualization.models"
+},
+{
+"src": "ipam.graphql.types",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 26,
+"path": "netbox/ipam/graphql/types.py",
+"id": "imports:ipam.graphql.types->virtualization.graphql.types"
+},
+{
+"src": "ipam.models.vlans",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 16,
+"path": "netbox/ipam/models/vlans.py",
+"id": "imports:ipam.models.vlans->virtualization.models"
+},
+{
+"src": "ipam.signals",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 5,
+"path": "netbox/ipam/signals.py",
+"id": "imports:ipam.signals->virtualization.models"
+},
+{
+"src": "ipam.tables.vlans",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 10,
+"path": "netbox/ipam/tables/vlans.py",
+"id": "imports:ipam.tables.vlans->virtualization.models"
+},
+{
+"src": "ipam.tests.test_filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 14,
+"path": "netbox/ipam/tests/test_filtersets.py",
+"id": "imports:ipam.tests.test_filtersets->virtualization.models"
+},
+{
+"src": "ipam.views",
+"dst": "virtualization.filtersets",
+"raw": "virtualization.filtersets",
+"lineno": 17,
+"path": "netbox/ipam/views.py",
+"id": "imports:ipam.views->virtualization.filtersets"
+},
+{
+"src": "ipam.views",
+"dst": "virtualization.forms",
+"raw": "virtualization.forms",
+"lineno": 18,
+"path": "netbox/ipam/views.py",
+"id": "imports:ipam.views->virtualization.forms"
+},
+{
+"src": "ipam.views",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 19,
+"path": "netbox/ipam/views.py",
+"id": "imports:ipam.views->virtualization.models"
+},
+{
+"src": "netbox.graphql.schema",
+"dst": "virtualization.graphql.schema",
+"raw": "virtualization.graphql.schema",
+"lineno": 15,
+"path": "netbox/netbox/graphql/schema.py",
+"id": "imports:netbox.graphql.schema->virtualization.graphql.schema"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "virtualization.graphql.filters",
+"raw": "virtualization.graphql.filters",
+"lineno": 45,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->virtualization.graphql.filters"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 37,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->virtualization.graphql.types"
+},
+{
+"src": "utilities.testing.utils",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 14,
+"path": "netbox/utilities/testing/utils.py",
+"id": "imports:utilities.testing.utils->virtualization.models"
+},
+{
+"src": "vpn.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 10,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->virtualization.models"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 9,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->virtualization.models"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 14,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->virtualization.models"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 13,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->virtualization.models"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 16,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->virtualization.graphql.types"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 7,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->virtualization.models"
+}
+],
+"model_refs": [
+{
+"module": "virtualization.migrations.0040_convert_disk_size",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.VirtualDisk",
+"ref_app": "virtualization",
+"ref_model": "VirtualDisk",
+"cross_app": 0,
+"lineno": 7,
+"path": "netbox/virtualization/migrations/0040_convert_disk_size.py",
+"id": "model_refs:virtualization.migrations.0040_convert_disk_size:7"
+},
+{
+"module": "virtualization.migrations.0040_convert_disk_size",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.VirtualMachine",
+"ref_app": "virtualization",
+"ref_model": "VirtualMachine",
+"cross_app": 0,
+"lineno": 8,
+"path": "netbox/virtualization/migrations/0040_convert_disk_size.py",
+"id": "model_refs:virtualization.migrations.0040_convert_disk_size:8"
+},
+{
+"module": "virtualization.migrations.0041_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.VMInterface",
+"ref_app": "virtualization",
+"ref_model": "VMInterface",
+"cross_app": 0,
+"lineno": 8,
+"path": "netbox/virtualization/migrations/0041_charfield_null_choices.py",
+"id": "model_refs:virtualization.migrations.0041_charfield_null_choices:8"
+},
+{
+"module": "virtualization.migrations.0044_cluster_scope",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 10,
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"id": "model_refs:virtualization.migrations.0044_cluster_scope:10"
+},
+{
+"module": "virtualization.migrations.0044_cluster_scope",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.Cluster",
+"ref_app": "virtualization",
+"ref_model": "Cluster",
+"cross_app": 0,
+"lineno": 11,
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"id": "model_refs:virtualization.migrations.0044_cluster_scope:11"
+},
+{
+"module": "virtualization.migrations.0044_cluster_scope",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.Site",
+"ref_app": "dcim",
+"ref_model": "Site",
+"cross_app": 1,
+"lineno": 12,
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"id": "model_refs:virtualization.migrations.0044_cluster_scope:12"
+},
+{
+"module": "virtualization.migrations.0045_clusters_cached_relations",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.Cluster",
+"ref_app": "virtualization",
+"ref_model": "Cluster",
+"cross_app": 0,
+"lineno": 9,
+"path": "netbox/virtualization/migrations/0045_clusters_cached_relations.py",
+"id": "model_refs:virtualization.migrations.0045_clusters_cached_relations:9"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 8,
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"id": "model_refs:virtualization.migrations.0048_populate_mac_addresses:8"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.VMInterface",
+"ref_app": "virtualization",
+"ref_model": "VMInterface",
+"cross_app": 0,
+"lineno": 9,
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"id": "model_refs:virtualization.migrations.0048_populate_mac_addresses:9"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.MACAddress",
+"ref_app": "dcim",
+"ref_model": "MACAddress",
+"cross_app": 1,
+"lineno": 10,
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"id": "model_refs:virtualization.migrations.0048_populate_mac_addresses:10"
+},
+{
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.MACAddress",
+"ref_app": "dcim",
+"ref_model": "MACAddress",
+"cross_app": 1,
+"lineno": 59,
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"id": "model_refs:virtualization.migrations.0048_populate_mac_addresses:59"
+},
+{
+"module": "virtualization.models.clusters",
+"class": "ClusterGroup",
+"field": "vlan_groups",
+"kind": "GenericRelation",
+"raw": "ipam.VLANGroup",
+"ref_app": "ipam",
+"ref_model": "VLANGroup",
+"cross_app": 1,
+"lineno": 34,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "model_refs:virtualization.models.clusters:34"
+},
+{
+"module": "virtualization.models.clusters",
+"class": "Cluster",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 75,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "model_refs:virtualization.models.clusters:75"
+},
+{
+"module": "virtualization.models.clusters",
+"class": "Cluster",
+"field": "vlan_groups",
+"kind": "GenericRelation",
+"raw": "ipam.VLANGroup",
+"ref_app": "ipam",
+"ref_model": "VLANGroup",
+"cross_app": 1,
+"lineno": 84,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "model_refs:virtualization.models.clusters:84"
+},
+{
+"module": "virtualization.models.clusters",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.site",
+"ref_app": "dcim",
+"ref_model": "site",
+"cross_app": 1,
+"lineno": 125,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "model_refs:virtualization.models.clusters:125"
+},
+{
+"module": "virtualization.models.clusters",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.location",
+"ref_app": "dcim",
+"ref_model": "location",
+"cross_app": 1,
+"lineno": 127,
+"path": "netbox/virtualization/models/clusters.py",
+"id": "model_refs:virtualization.models.clusters:127"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "site",
+"kind": "ForeignKey",
+"raw": "dcim.Site",
+"ref_app": "dcim",
+"ref_model": "Site",
+"cross_app": 1,
+"lineno": 35,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:35"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "cluster",
+"kind": "ForeignKey",
+"raw": "virtualization.Cluster",
+"ref_app": "virtualization",
+"ref_model": "Cluster",
+"cross_app": 0,
+"lineno": 42,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:42"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "device",
+"kind": "ForeignKey",
+"raw": "dcim.Device",
+"ref_app": "dcim",
+"ref_model": "Device",
+"cross_app": 1,
+"lineno": 49,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:49"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 56,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:56"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "platform",
+"kind": "ForeignKey",
+"raw": "dcim.Platform",
+"ref_app": "dcim",
+"ref_model": "Platform",
+"cross_app": 1,
+"lineno": 63,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:63"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "role",
+"kind": "ForeignKey",
+"raw": "dcim.DeviceRole",
+"ref_app": "dcim",
+"ref_model": "DeviceRole",
+"cross_app": 1,
+"lineno": 81,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:81"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "primary_ip4",
+"kind": "OneToOneField",
+"raw": "ipam.IPAddress",
+"ref_app": "ipam",
+"ref_model": "IPAddress",
+"cross_app": 1,
+"lineno": 88,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:88"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "primary_ip6",
+"kind": "OneToOneField",
+"raw": "ipam.IPAddress",
+"ref_app": "ipam",
+"ref_model": "IPAddress",
+"cross_app": 1,
+"lineno": 96,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:96"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VirtualMachine",
+"field": "services",
+"kind": "GenericRelation",
+"raw": "ipam.Service",
+"ref_app": "ipam",
+"ref_model": "Service",
+"cross_app": 1,
+"lineno": 129,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:129"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "ComponentModel",
+"field": "virtual_machine",
+"kind": "ForeignKey",
+"raw": "virtualization.VirtualMachine",
+"ref_app": "virtualization",
+"ref_model": "VirtualMachine",
+"cross_app": 0,
+"lineno": 270,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:270"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "virtual_machine",
+"kind": "ForeignKey",
+"raw": "virtualization.VirtualMachine",
+"ref_app": "virtualization",
+"ref_model": "VirtualMachine",
+"cross_app": 0,
+"lineno": 319,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:319"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "ip_addresses",
+"kind": "GenericRelation",
+"raw": "ipam.IPAddress",
+"ref_app": "ipam",
+"ref_model": "IPAddress",
+"cross_app": 1,
+"lineno": 324,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:324"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "vrf",
+"kind": "ForeignKey",
+"raw": "ipam.VRF",
+"ref_app": "ipam",
+"ref_model": "VRF",
+"cross_app": 1,
+"lineno": 330,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:330"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "fhrp_group_assignments",
+"kind": "GenericRelation",
+"raw": "ipam.FHRPGroupAssignment",
+"ref_app": "ipam",
+"ref_model": "FHRPGroupAssignment",
+"cross_app": 1,
+"lineno": 338,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:338"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "tunnel_terminations",
+"kind": "GenericRelation",
+"raw": "vpn.TunnelTermination",
+"ref_app": "vpn",
+"ref_model": "TunnelTermination",
+"cross_app": 1,
+"lineno": 344,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:344"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "l2vpn_terminations",
+"kind": "GenericRelation",
+"raw": "vpn.L2VPNTermination",
+"ref_app": "vpn",
+"ref_model": "L2VPNTermination",
+"cross_app": 1,
+"lineno": 350,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:350"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "mac_addresses",
+"kind": "GenericRelation",
+"raw": "dcim.MACAddress",
+"ref_app": "dcim",
+"ref_model": "MACAddress",
+"cross_app": 1,
+"lineno": 356,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:356"
+}
+],
+"model_refs_in": [
+{
+"module": "dcim.models.devices",
+"class": "Device",
+"field": "cluster",
+"kind": "ForeignKey",
+"raw": "virtualization.Cluster",
+"ref_app": "virtualization",
+"ref_model": "Cluster",
+"cross_app": 1,
+"lineno": 569,
+"path": "netbox/dcim/models/devices.py",
+"id": "model_refs:dcim.models.devices:569"
+},
+{
+"module": "extras.models.configs",
+"class": "ConfigContext",
+"field": "cluster_types",
+"kind": "ManyToManyField",
+"raw": "virtualization.ClusterType",
+"ref_app": "virtualization",
+"ref_model": "ClusterType",
+"cross_app": 1,
+"lineno": 85,
+"path": "netbox/extras/models/configs.py",
+"id": "model_refs:extras.models.configs:85"
+},
+{
+"module": "extras.models.configs",
+"class": "ConfigContext",
+"field": "cluster_groups",
+"kind": "ManyToManyField",
+"raw": "virtualization.ClusterGroup",
+"ref_app": "virtualization",
+"ref_model": "ClusterGroup",
+"cross_app": 1,
+"lineno": 90,
+"path": "netbox/extras/models/configs.py",
+"id": "model_refs:extras.models.configs:90"
+},
+{
+"module": "extras.models.configs",
+"class": "ConfigContext",
+"field": "clusters",
+"kind": "ManyToManyField",
+"raw": "virtualization.Cluster",
+"ref_app": "virtualization",
+"ref_model": "Cluster",
+"cross_app": 1,
+"lineno": 95,
+"path": "netbox/extras/models/configs.py",
+"id": "model_refs:extras.models.configs:95"
+},
+{
+"module": "ipam.migrations.0080_populate_service_parent",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.virtualmachine",
+"ref_app": "virtualization",
+"ref_model": "virtualmachine",
+"cross_app": 1,
+"lineno": 10,
+"path": "netbox/ipam/migrations/0080_populate_service_parent.py",
+"id": "model_refs:ipam.migrations.0080_populate_service_parent:10"
+},
+{
+"module": "ipam.migrations.0080_populate_service_parent",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "virtualization.virtualmachine",
+"ref_app": "virtualization",
+"ref_model": "virtualmachine",
+"cross_app": 1,
+"lineno": 28,
+"path": "netbox/ipam/migrations/0080_populate_service_parent.py",
+"id": "model_refs:ipam.migrations.0080_populate_service_parent:28"
+}
+],
+"churn": [
+{
+"path": "netbox/virtualization/views.py",
+"module": "virtualization.views",
+"commits": 185,
+"authors": 16,
+"first_commit": "2017-08-04",
+"last_commit": "2025-06-25",
+"id": "churn:virtualization.views"
+},
+{
+"path": "netbox/virtualization/api/serializers.py",
+"module": "virtualization.api.serializers",
+"commits": 90,
+"authors": 8,
+"first_commit": "2017-08-08",
+"last_commit": "2024-08-14",
+"id": "churn:virtualization.api.serializers"
+},
+{
+"path": "netbox/virtualization/api/views.py",
+"module": "virtualization.api.views",
+"commits": 73,
+"authors": 7,
+"first_commit": "2017-08-08",
+"last_commit": "2024-11-15",
+"id": "churn:virtualization.api.views"
+},
+{
+"path": "netbox/virtualization/tests/test_api.py",
+"module": "virtualization.tests.test_api",
+"commits": 62,
+"authors": 8,
+"first_commit": "2017-08-31",
+"last_commit": "2025-05-21",
+"id": "churn:virtualization.tests.test_api"
+},
+{
+"path": "netbox/virtualization/tests/test_views.py",
+"module": "virtualization.tests.test_views",
+"commits": 54,
+"authors": 5,
+"first_commit": "2019-02-15",
+"last_commit": "2025-03-28",
+"id": "churn:virtualization.tests.test_views"
+},
+{
+"path": "netbox/virtualization/urls.py",
+"module": "virtualization.urls",
+"commits": 43,
+"authors": 4,
+"first_commit": "2017-08-04",
+"last_commit": "2024-11-25",
+"id": "churn:virtualization.urls"
+},
+{
+"path": "netbox/virtualization/forms/filtersets.py",
+"module": "virtualization.forms.filtersets",
+"commits": 38,
+"authors": 10,
+"first_commit": "2021-09-28",
+"last_commit": "2025-04-15",
+"id": "churn:virtualization.forms.filtersets"
+},
+{
+"path": "netbox/virtualization/tables/virtualmachines.py",
+"module": "virtualization.tables.virtualmachines",
+"commits": 37,
+"authors": 10,
+"first_commit": "2022-03-03",
+"last_commit": "2025-03-07",
+"id": "churn:virtualization.tables.virtualmachines"
+},
+{
+"path": "netbox/virtualization/filtersets.py",
+"module": "virtualization.filtersets",
+"commits": 36,
+"authors": 9,
+"first_commit": "2021-04-29",
+"last_commit": "2025-03-28",
+"id": "churn:virtualization.filtersets"
+},
+{
+"path": "netbox/virtualization/forms/bulk_edit.py",
+"module": "virtualization.forms.bulk_edit",
+"commits": 36,
+"authors": 8,
+"first_commit": "2021-09-28",
+"last_commit": "2025-02-23",
+"id": "churn:virtualization.forms.bulk_edit"
+},
+{
+"path": "netbox/virtualization/models/virtualmachines.py",
+"module": "virtualization.models.virtualmachines",
+"commits": 30,
+"authors": 8,
+"first_commit": "2022-11-04",
+"last_commit": "2025-04-11",
+"id": "churn:virtualization.models.virtualmachines"
+},
+{
+"path": "netbox/virtualization/tests/test_filtersets.py",
+"module": "virtualization.tests.test_filtersets",
+"commits": 30,
+"authors": 7,
+"first_commit": "2021-05-03",
+"last_commit": "2025-05-01",
+"id": "churn:virtualization.tests.test_filtersets"
+},
+{
+"path": "netbox/virtualization/forms/model_forms.py",
+"module": "virtualization.forms.model_forms",
+"commits": 28,
+"authors": 9,
+"first_commit": "2022-10-25",
+"last_commit": "2025-01-21",
+"id": "churn:virtualization.forms.model_forms"
+},
+{
+"path": "netbox/virtualization/forms/bulk_import.py",
+"module": "virtualization.forms.bulk_import",
+"commits": 24,
+"authors": 6,
+"first_commit": "2021-09-28",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.forms.bulk_import"
+},
+{
+"path": "netbox/virtualization/graphql/types.py",
+"module": "virtualization.graphql.types",
+"commits": 22,
+"authors": 4,
+"first_commit": "2021-06-25",
+"last_commit": "2025-04-10",
+"id": "churn:virtualization.graphql.types"
+},
+{
+"path": "netbox/virtualization/choices.py",
+"module": "virtualization.choices",
+"commits": 15,
+"authors": 5,
+"first_commit": "2019-12-04",
+"last_commit": "2025-02-07",
+"id": "churn:virtualization.choices"
+},
+{
+"path": "netbox/virtualization/tables/clusters.py",
+"module": "virtualization.tables.clusters",
+"commits": 14,
+"authors": 5,
+"first_commit": "2022-03-03",
+"last_commit": "2025-01-16",
+"id": "churn:virtualization.tables.clusters"
+},
+{
+"path": "netbox/virtualization/api/urls.py",
+"module": "virtualization.api.urls",
+"commits": 13,
+"authors": 3,
+"first_commit": "2017-08-08",
+"last_commit": "2023-11-17",
+"id": "churn:virtualization.api.urls"
+},
+{
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"module": "virtualization.api.serializers_.virtualmachines",
+"commits": 12,
+"authors": 4,
+"first_commit": "2024-02-27",
+"last_commit": "2025-03-20",
+"id": "churn:virtualization.api.serializers_.virtualmachines"
+},
+{
+"path": "netbox/virtualization/models/clusters.py",
+"module": "virtualization.models.clusters",
+"commits": 11,
+"authors": 3,
+"first_commit": "2022-11-04",
+"last_commit": "2024-11-15",
+"id": "churn:virtualization.models.clusters"
+},
+{
+"path": "netbox/virtualization/apps.py",
+"module": "virtualization.apps",
+"commits": 10,
+"authors": 2,
+"first_commit": "2017-08-04",
+"last_commit": "2025-04-04",
+"id": "churn:virtualization.apps"
+},
+{
+"path": "netbox/virtualization/search.py",
+"module": "virtualization.search",
+"commits": 10,
+"authors": 4,
+"first_commit": "2022-10-10",
+"last_commit": "2025-01-07",
+"id": "churn:virtualization.search"
+},
+{
+"path": "netbox/virtualization/tests/test_models.py",
+"module": "virtualization.tests.test_models",
+"commits": 10,
+"authors": 4,
+"first_commit": "2019-12-09",
+"last_commit": "2024-11-01",
+"id": "churn:virtualization.tests.test_models"
+},
+{
+"path": "netbox/virtualization/forms/object_create.py",
+"module": "virtualization.forms.object_create",
+"commits": 9,
+"authors": 3,
+"first_commit": "2021-09-28",
+"last_commit": "2023-11-17",
+"id": "churn:virtualization.forms.object_create"
+},
+{
+"path": "netbox/virtualization/api/serializers_/clusters.py",
+"module": "virtualization.api.serializers_.clusters",
+"commits": 7,
+"authors": 2,
+"first_commit": "2024-02-27",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.api.serializers_.clusters"
+},
+{
+"path": "netbox/virtualization/forms/bulk_create.py",
+"module": "virtualization.forms.bulk_create",
+"commits": 7,
+"authors": 4,
+"first_commit": "2021-09-28",
+"last_commit": "2024-01-19",
+"id": "churn:virtualization.forms.bulk_create"
+},
+{
+"path": "netbox/virtualization/graphql/schema.py",
+"module": "virtualization.graphql.schema",
+"commits": 6,
+"authors": 3,
+"first_commit": "2021-06-25",
+"last_commit": "2024-08-28",
+"id": "churn:virtualization.graphql.schema"
+},
+{
+"path": "netbox/virtualization/migrations/0001_squashed_0022.py",
+"module": "virtualization.migrations.0001_squashed_0022",
+"commits": 6,
+"authors": 4,
+"first_commit": "2021-07-09",
+"last_commit": "2025-04-03",
+"id": "churn:virtualization.migrations.0001_squashed_0022"
+},
+{
+"path": "netbox/virtualization/migrations/0044_cluster_scope.py",
+"module": "virtualization.migrations.0044_cluster_scope",
+"commits": 6,
+"authors": 2,
+"first_commit": "2024-11-01",
+"last_commit": "2025-06-05",
+"id": "churn:virtualization.migrations.0044_cluster_scope"
+},
+{
+"path": "netbox/virtualization/migrations/0045_clusters_cached_relations.py",
+"module": "virtualization.migrations.0045_clusters_cached_relations",
+"commits": 5,
+"authors": 2,
+"first_commit": "2024-11-01",
+"last_commit": "2025-06-05",
+"id": "churn:virtualization.migrations.0045_clusters_cached_relations"
+},
+{
+"path": "netbox/virtualization/graphql/filters.py",
+"module": "virtualization.graphql.filters",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-03-22",
+"last_commit": "2025-05-14",
+"id": "churn:virtualization.graphql.filters"
+},
+{
+"path": "netbox/virtualization/migrations/0040_convert_disk_size.py",
+"module": "virtualization.migrations.0040_convert_disk_size",
+"commits": 4,
+"authors": 3,
+"first_commit": "2024-07-31",
+"last_commit": "2025-05-08",
+"id": "churn:virtualization.migrations.0040_convert_disk_size"
+},
+{
+"path": "netbox/virtualization/migrations/0048_populate_mac_addresses.py",
+"module": "virtualization.migrations.0048_populate_mac_addresses",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-11-18",
+"last_commit": "2025-06-05",
+"id": "churn:virtualization.migrations.0048_populate_mac_addresses"
+},
+{
+"path": "netbox/virtualization/__init__.py",
+"module": "virtualization",
+"commits": 3,
+"authors": 3,
+"first_commit": "2017-08-04",
+"last_commit": "2021-09-15",
+"id": "churn:virtualization"
+},
+{
+"path": "netbox/virtualization/migrations/0023_squashed_0036.py",
+"module": "virtualization.migrations.0023_squashed_0036",
+"commits": 3,
+"authors": 2,
+"first_commit": "2024-01-24",
+"last_commit": "2025-03-07",
+"id": "churn:virtualization.migrations.0023_squashed_0036"
+},
+{
+"path": "netbox/virtualization/migrations/0037_protect_child_interfaces.py",
+"module": "virtualization.migrations.0037_protect_child_interfaces",
+"commits": 3,
+"authors": 2,
+"first_commit": "2023-11-01",
+"last_commit": "2025-03-07",
+"id": "churn:virtualization.migrations.0037_protect_child_interfaces"
+},
+{
+"path": "netbox/virtualization/migrations/0041_charfield_null_choices.py",
+"module": "virtualization.migrations.0041_charfield_null_choices",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-10-18",
+"last_commit": "2025-05-08",
+"id": "churn:virtualization.migrations.0041_charfield_null_choices"
+},
+{
+"path": "netbox/virtualization/migrations/0042_vminterface_vlan_translation_policy.py",
+"module": "virtualization.migrations.0042_vminterface_vlan_translation_policy",
+"commits": 3,
+"authors": 2,
+"first_commit": "2024-10-30",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.migrations.0042_vminterface_vlan_translation_policy"
+},
+{
+"path": "netbox/virtualization/forms/__init__.py",
+"module": "virtualization.forms",
+"commits": 2,
+"authors": 1,
+"first_commit": "2021-09-28",
+"last_commit": "2022-10-25",
+"id": "churn:virtualization.forms"
+},
+{
+"path": "netbox/virtualization/graphql/enums.py",
+"module": "virtualization.graphql.enums",
+"commits": 2,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-04-17",
+"id": "churn:virtualization.graphql.enums"
+},
+{
+"path": "netbox/virtualization/graphql/filter_mixins.py",
+"module": "virtualization.graphql.filter_mixins",
+"commits": 2,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-04-18",
+"id": "churn:virtualization.graphql.filter_mixins"
+},
+{
+"path": "netbox/virtualization/migrations/0038_virtualdisk.py",
+"module": "virtualization.migrations.0038_virtualdisk",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-11-17",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.migrations.0038_virtualdisk"
+},
+{
+"path": "netbox/virtualization/migrations/0039_virtualmachine_serial_number.py",
+"module": "virtualization.migrations.0039_virtualmachine_serial_number",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-07-31",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.migrations.0039_virtualmachine_serial_number"
+},
+{
+"path": "netbox/virtualization/migrations/0043_qinq_svlan.py",
+"module": "virtualization.migrations.0043_qinq_svlan",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-10-31",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.migrations.0043_qinq_svlan"
+},
+{
+"path": "netbox/virtualization/migrations/0046_alter_cluster__location_alter_cluster__region_and_more.py",
+"module": "virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-11-15",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more"
+},
+{
+"path": "netbox/virtualization/migrations/0047_natural_ordering.py",
+"module": "virtualization.migrations.0047_natural_ordering",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-11-15",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.migrations.0047_natural_ordering"
+},
+{
+"path": "netbox/virtualization/signals.py",
+"module": "virtualization.signals",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-11-17",
+"last_commit": "2025-04-04",
+"id": "churn:virtualization.signals"
+},
+{
+"path": "netbox/virtualization/api/__init__.py",
+"module": "virtualization.api",
+"commits": 1,
+"authors": 1,
+"first_commit": "2017-08-08",
+"last_commit": "2017-08-08",
+"id": "churn:virtualization.api"
+},
+{
+"path": "netbox/virtualization/api/serializers_/__init__.py",
+"module": "virtualization.api.serializers_",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-02-27",
+"last_commit": "2024-02-27",
+"id": "churn:virtualization.api.serializers_"
+},
+{
+"path": "netbox/virtualization/api/serializers_/nested.py",
+"module": "virtualization.api.serializers_.nested",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-08-14",
+"last_commit": "2024-08-14",
+"id": "churn:virtualization.api.serializers_.nested"
+},
+{
+"path": "netbox/virtualization/graphql/__init__.py",
+"module": "virtualization.graphql",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-06-25",
+"last_commit": "2021-06-25",
+"id": "churn:virtualization.graphql"
+},
+{
+"path": "netbox/virtualization/migrations/__init__.py",
+"module": "virtualization.migrations",
+"commits": 1,
+"authors": 1,
+"first_commit": "2017-08-04",
+"last_commit": "2017-08-04",
+"id": "churn:virtualization.migrations"
+},
+{
+"path": "netbox/virtualization/models/__init__.py",
+"module": "virtualization.models",
+"commits": 1,
+"authors": 1,
+"first_commit": "2022-11-04",
+"last_commit": "2022-11-04",
+"id": "churn:virtualization.models"
+},
+{
+"path": "netbox/virtualization/tables/__init__.py",
+"module": "virtualization.tables",
+"commits": 1,
+"authors": 1,
+"first_commit": "2022-03-03",
+"last_commit": "2022-03-03",
+"id": "churn:virtualization.tables"
+},
+{
+"path": "netbox/virtualization/tables/template_code.py",
+"module": "virtualization.tables.template_code",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-11-21",
+"last_commit": "2024-11-21",
+"id": "churn:virtualization.tables.template_code"
+},
+{
+"path": "netbox/virtualization/tests/__init__.py",
+"module": "virtualization.tests",
+"commits": 1,
+"authors": 1,
+"first_commit": "2017-08-31",
+"last_commit": "2017-08-31",
+"id": "churn:virtualization.tests"
+}
+],
+"entrypoints": [
+{
+"kind": "urls",
+"module": "virtualization.api.urls",
+"detail": "",
+"path": "netbox/virtualization/api/urls.py",
+"id": "entrypoints:virtualization.api.urls"
+},
+{
+"kind": "api_views",
+"module": "virtualization.api.views",
+"detail": "",
+"path": "netbox/virtualization/api/views.py",
+"id": "entrypoints:virtualization.api.views"
+},
+{
+"kind": "signals",
+"module": "virtualization.signals",
+"detail": "",
+"path": "netbox/virtualization/signals.py",
+"id": "entrypoints:virtualization.signals"
+},
+{
+"kind": "urls",
+"module": "virtualization.urls",
+"detail": "",
+"path": "netbox/virtualization/urls.py",
+"id": "entrypoints:virtualization.urls"
+}
+]
+}

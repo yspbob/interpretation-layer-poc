@@ -1,0 +1,318 @@
+# Fact-graph digest: subsystem `circuits` at T0 ea4c205
+
+Summary row [fg:subsystems:circuits]: {'subsystem': 'circuits', 'modules': 44, 'loc_code': 8214, 'loc_data': 0, 'test_modules': 5}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- circuits | netbox/circuits/__init__.py | 1 | 0 | 0 |  | 
+- circuits.api | netbox/circuits/api/__init__.py | 1 | 0 | 0 |  | 
+- circuits.api.serializers | netbox/circuits/api/serializers.py | 3 | 0 | 0 |  | 
+- circuits.api.serializers_ | netbox/circuits/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- circuits.api.serializers_.circuits | netbox/circuits/api/serializers_/circuits.py | 221 | 10 | 0 |  | 
+- circuits.api.serializers_.nested | netbox/circuits/api/serializers_/nested.py | 14 | 1 | 0 |  | 
+- circuits.api.serializers_.providers | netbox/circuits/api/serializers_/providers.py | 67 | 3 | 0 |  | 
+- circuits.api.urls | netbox/circuits/api/urls.py | 27 | 0 | 0 |  | 
+- circuits.api.views | netbox/circuits/api/views.py | 126 | 12 | 0 |  | 
+- circuits.apps | netbox/circuits/apps.py | 14 | 1 | 0 |  | 
+- circuits.choices | netbox/circuits/choices.py | 111 | 6 | 0 |  | 
+- circuits.constants | netbox/circuits/constants.py | 13 | 0 | 0 |  | 
+- circuits.filtersets | netbox/circuits/filtersets.py | 591 | 11 | 0 |  | 
+- circuits.forms | netbox/circuits/forms/__init__.py | 5 | 0 | 0 |  | 
+- circuits.forms.bulk_edit | netbox/circuits/forms/bulk_edit.py | 381 | 11 | 0 |  | 
+- circuits.forms.bulk_import | netbox/circuits/forms/bulk_import.py | 281 | 15 | 0 |  | 
+- circuits.forms.filtersets | netbox/circuits/forms/filtersets.py | 400 | 11 | 0 |  | 
+- circuits.forms.model_forms | netbox/circuits/forms/model_forms.py | 390 | 11 | 0 |  | 
+- circuits.graphql | netbox/circuits/graphql/__init__.py | 1 | 0 | 0 |  | 
+- circuits.graphql.enums | netbox/circuits/graphql/enums.py | 17 | 0 | 0 |  | 
+- circuits.graphql.filter_mixins | netbox/circuits/graphql/filter_mixins.py | 20 | 1 | 0 |  | 
+- circuits.graphql.filters | netbox/circuits/graphql/filters.py | 225 | 11 | 0 |  | 
+- circuits.graphql.schema | netbox/circuits/graphql/schema.py | 43 | 1 | 0 |  | 
+- circuits.graphql.types | netbox/circuits/graphql/types.py | 190 | 11 | 0 |  | 
+- circuits.migrations | netbox/circuits/migrations/__init__.py | 1 | 0 | 0 |  | 
+- circuits.migrations.0001_squashed | netbox/circuits/migrations/0001_squashed.py | 111 | 1 | 0 |  | migration
+- circuits.migrations.0002_squashed_0029 | netbox/circuits/migrations/0002_squashed_0029.py | 177 | 1 | 0 |  | migration
+- circuits.migrations.0003_squashed_0037 | netbox/circuits/migrations/0003_squashed_0037.py | 127 | 1 | 0 |  | migration
+- circuits.migrations.0038_squashed_0042 | netbox/circuits/migrations/0038_squashed_0042.py | 151 | 1 | 0 |  | migration
+- circuits.migrations.0043_circuittype_color | netbox/circuits/migrations/0043_circuittype_color.py | 19 | 1 | 0 |  | migration
+- circuits.migrations.0044_circuit_groups | netbox/circuits/migrations/0044_circuit_groups.py | 88 | 1 | 0 |  | migration
+- circuits.migrations.0045_circuit_distance | netbox/circuits/migrations/0045_circuit_distance.py | 28 | 1 | 0 |  | migration
+- circuits.migrations.0046_charfield_null_choices | netbox/circuits/migrations/0046_charfield_null_choices.py | 41 | 1 | 1 |  | migration
+- circuits.migrations.0047_circuittermination__termination | netbox/circuits/migrations/0047_circuittermination__termination.py | 76 | 1 | 2 |  | migration
+- circuits.migrations.0048_circuitterminations_cached_relations | netbox/circuits/migrations/0048_circuitterminations_cached_relations.py | 101 | 1 | 2 |  | migration
+- circuits.migrations.0049_natural_ordering | netbox/circuits/migrations/0049_natural_ordering.py | 22 | 1 | 0 |  | migration
+- circuits.migrations.0050_virtual_circuits | netbox/circuits/migrations/0050_virtual_circuits.py | 148 | 1 | 0 |  | migration
+- circuits.migrations.0051_virtualcircuit_group_assignment | netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py | 104 | 1 | 2 |  | migration
+- circuits.migrations.0052_extend_circuit_abs_distance_upper_limit | netbox/circuits/migrations/0052_extend_circuit_abs_distance_upper_limit.py | 17 | 1 | 0 |  | migration
+- circuits.models | netbox/circuits/models/__init__.py | 4 | 0 | 0 |  | 
+- circuits.models.base | netbox/circuits/models/base.py | 24 | 1 | 0 |  | 
+- circuits.models.circuits | netbox/circuits/models/circuits.py | 398 | 5 | 0 |  | 
+- circuits.models.providers | netbox/circuits/models/providers.py | 126 | 3 | 0 |  | 
+- circuits.models.virtual_circuits | netbox/circuits/models/virtual_circuits.py | 192 | 3 | 0 |  | 
+- circuits.search | netbox/circuits/search.py | 114 | 10 | 0 |  | 
+- circuits.signals | netbox/circuits/signals.py | 28 | 0 | 2 |  | 
+- circuits.tables | netbox/circuits/tables/__init__.py | 5 | 0 | 0 |  | 
+- circuits.tables.circuits | netbox/circuits/tables/circuits.py | 220 | 5 | 0 |  | 
+- circuits.tables.columns | netbox/circuits/tables/columns.py | 22 | 1 | 0 |  | 
+- circuits.tables.providers | netbox/circuits/tables/providers.py | 117 | 3 | 0 |  | 
+- circuits.tables.virtual_circuits | netbox/circuits/tables/virtual_circuits.py | 124 | 3 | 0 |  | 
+- circuits.tests | netbox/circuits/tests/__init__.py | 1 | 0 | 0 | test | 
+- circuits.tests.test_api | netbox/circuits/tests/test_api.py | 697 | 12 | 0 | test | 
+- circuits.tests.test_filtersets | netbox/circuits/tests/test_filtersets.py | 1209 | 11 | 0 | test | 
+- circuits.tests.test_tables | netbox/circuits/tests/test_tables.py | 24 | 1 | 0 | test | 
+- circuits.tests.test_views | netbox/circuits/tests/test_views.py | 938 | 11 | 0 | test | 
+- circuits.urls | netbox/circuits/urls.py | 76 | 0 | 0 |  | 
+- circuits.views | netbox/circuits/views.py | 751 | 78 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'circuits': 68, 'netbox': 37, 'utilities': 34, 'dcim': 22, 'ipam': 13, 'tenancy': 12, 'core': 3, 'extras': 2, 'users': 1}
+Inbound by source subsystem: {'dcim': 12, 'ipam': 5, 'extras': 4, 'tenancy': 2, 'netbox': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- circuits.api.serializers_.circuits -> dcim.api.serializers_.cables [fg:imports:circuits.api.serializers_.circuits->dcim.api.serializers_.cables]
+- circuits.api.serializers_.circuits -> dcim.api.serializers_.device_components [fg:imports:circuits.api.serializers_.circuits->dcim.api.serializers_.device_components]
+- circuits.api.serializers_.circuits -> netbox.api.fields [fg:imports:circuits.api.serializers_.circuits->netbox.api.fields]
+- circuits.api.serializers_.circuits -> netbox.api.serializers [fg:imports:circuits.api.serializers_.circuits->netbox.api.serializers]
+- circuits.api.serializers_.circuits -> netbox.choices [fg:imports:circuits.api.serializers_.circuits->netbox.choices]
+- circuits.api.serializers_.circuits -> tenancy.api.serializers_.tenants [fg:imports:circuits.api.serializers_.circuits->tenancy.api.serializers_.tenants]
+- circuits.api.serializers_.circuits -> utilities.api [fg:imports:circuits.api.serializers_.circuits->utilities.api]
+- circuits.api.serializers_.nested -> netbox.api.serializers [fg:imports:circuits.api.serializers_.nested->netbox.api.serializers]
+- circuits.api.serializers_.providers -> ipam.api.serializers_.asns [fg:imports:circuits.api.serializers_.providers->ipam.api.serializers_.asns]
+- circuits.api.serializers_.providers -> ipam.models [fg:imports:circuits.api.serializers_.providers->ipam.models]
+- circuits.api.serializers_.providers -> netbox.api.fields [fg:imports:circuits.api.serializers_.providers->netbox.api.fields]
+- circuits.api.serializers_.providers -> netbox.api.serializers [fg:imports:circuits.api.serializers_.providers->netbox.api.serializers]
+- circuits.api.urls -> netbox.api.routers [fg:imports:circuits.api.urls->netbox.api.routers]
+- circuits.api.views -> dcim.api.views [fg:imports:circuits.api.views->dcim.api.views]
+- circuits.api.views -> netbox.api.viewsets [fg:imports:circuits.api.views->netbox.api.viewsets]
+- circuits.apps -> netbox.models.features [fg:imports:circuits.apps->netbox.models.features]
+- circuits.choices -> utilities.choices [fg:imports:circuits.choices->utilities.choices]
+- circuits.filtersets -> dcim.filtersets [fg:imports:circuits.filtersets->dcim.filtersets]
+- circuits.filtersets -> dcim.models [fg:imports:circuits.filtersets->dcim.models]
+- circuits.filtersets -> ipam.models [fg:imports:circuits.filtersets->ipam.models]
+- circuits.filtersets -> netbox.filtersets [fg:imports:circuits.filtersets->netbox.filtersets]
+- circuits.filtersets -> tenancy.filtersets [fg:imports:circuits.filtersets->tenancy.filtersets]
+- circuits.filtersets -> utilities.filters [fg:imports:circuits.filtersets->utilities.filters]
+- circuits.forms.bulk_edit -> dcim.models [fg:imports:circuits.forms.bulk_edit->dcim.models]
+- circuits.forms.bulk_edit -> ipam.models [fg:imports:circuits.forms.bulk_edit->ipam.models]
+- circuits.forms.bulk_edit -> netbox.choices [fg:imports:circuits.forms.bulk_edit->netbox.choices]
+- circuits.forms.bulk_edit -> netbox.forms [fg:imports:circuits.forms.bulk_edit->netbox.forms]
+- circuits.forms.bulk_edit -> tenancy.models [fg:imports:circuits.forms.bulk_edit->tenancy.models]
+- circuits.forms.bulk_edit -> utilities.forms [fg:imports:circuits.forms.bulk_edit->utilities.forms]
+- circuits.forms.bulk_edit -> utilities.forms.fields [fg:imports:circuits.forms.bulk_edit->utilities.forms.fields]
+- circuits.forms.bulk_edit -> utilities.forms.rendering [fg:imports:circuits.forms.bulk_edit->utilities.forms.rendering]
+- circuits.forms.bulk_edit -> utilities.forms.widgets [fg:imports:circuits.forms.bulk_edit->utilities.forms.widgets]
+- circuits.forms.bulk_edit -> utilities.templatetags.builtins.filters [fg:imports:circuits.forms.bulk_edit->utilities.templatetags.builtins.filters]
+- circuits.forms.bulk_import -> dcim.models [fg:imports:circuits.forms.bulk_import->dcim.models]
+- circuits.forms.bulk_import -> netbox.choices [fg:imports:circuits.forms.bulk_import->netbox.choices]
+- circuits.forms.bulk_import -> netbox.forms [fg:imports:circuits.forms.bulk_import->netbox.forms]
+- circuits.forms.bulk_import -> tenancy.models [fg:imports:circuits.forms.bulk_import->tenancy.models]
+- circuits.forms.bulk_import -> utilities.forms.fields [fg:imports:circuits.forms.bulk_import->utilities.forms.fields]
+- circuits.forms.filtersets -> dcim.models [fg:imports:circuits.forms.filtersets->dcim.models]
+- circuits.forms.filtersets -> ipam.models [fg:imports:circuits.forms.filtersets->ipam.models]
+- circuits.forms.filtersets -> netbox.choices [fg:imports:circuits.forms.filtersets->netbox.choices]
+- circuits.forms.filtersets -> netbox.forms [fg:imports:circuits.forms.filtersets->netbox.forms]
+- circuits.forms.filtersets -> tenancy.forms [fg:imports:circuits.forms.filtersets->tenancy.forms]
+- circuits.forms.filtersets -> utilities.forms [fg:imports:circuits.forms.filtersets->utilities.forms]
+- circuits.forms.filtersets -> utilities.forms.fields [fg:imports:circuits.forms.filtersets->utilities.forms.fields]
+- circuits.forms.filtersets -> utilities.forms.rendering [fg:imports:circuits.forms.filtersets->utilities.forms.rendering]
+- circuits.forms.filtersets -> utilities.forms.widgets [fg:imports:circuits.forms.filtersets->utilities.forms.widgets]
+- circuits.forms.model_forms -> dcim.models [fg:imports:circuits.forms.model_forms->dcim.models]
+- circuits.forms.model_forms -> ipam.models [fg:imports:circuits.forms.model_forms->ipam.models]
+- circuits.forms.model_forms -> netbox.forms [fg:imports:circuits.forms.model_forms->netbox.forms]
+- circuits.forms.model_forms -> tenancy.forms [fg:imports:circuits.forms.model_forms->tenancy.forms]
+- circuits.forms.model_forms -> utilities.forms [fg:imports:circuits.forms.model_forms->utilities.forms]
+- circuits.forms.model_forms -> utilities.forms.fields [fg:imports:circuits.forms.model_forms->utilities.forms.fields]
+- circuits.forms.model_forms -> utilities.forms.mixins [fg:imports:circuits.forms.model_forms->utilities.forms.mixins]
+- circuits.forms.model_forms -> utilities.forms.rendering [fg:imports:circuits.forms.model_forms->utilities.forms.rendering]
+- circuits.forms.model_forms -> utilities.forms.widgets [fg:imports:circuits.forms.model_forms->utilities.forms.widgets]
+- circuits.forms.model_forms -> utilities.templatetags.builtins.filters [fg:imports:circuits.forms.model_forms->utilities.templatetags.builtins.filters]
+- circuits.graphql.filter_mixins -> netbox.graphql.enums [fg:imports:circuits.graphql.filter_mixins->netbox.graphql.enums]
+- circuits.graphql.filter_mixins -> netbox.graphql.filter_mixins [fg:imports:circuits.graphql.filter_mixins->netbox.graphql.filter_mixins]
+- circuits.graphql.filters -> core.graphql.filter_mixins [fg:imports:circuits.graphql.filters->core.graphql.filter_mixins]
+- circuits.graphql.filters -> core.graphql.filters [fg:imports:circuits.graphql.filters->core.graphql.filters]
+- circuits.graphql.filters -> dcim.graphql.filter_mixins [fg:imports:circuits.graphql.filters->dcim.graphql.filter_mixins]
+- circuits.graphql.filters -> dcim.graphql.filters [fg:imports:circuits.graphql.filters->dcim.graphql.filters]
+- circuits.graphql.filters -> extras.graphql.filter_mixins [fg:imports:circuits.graphql.filters->extras.graphql.filter_mixins]
+- circuits.graphql.filters -> ipam.graphql.filters [fg:imports:circuits.graphql.filters->ipam.graphql.filters]
+- circuits.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:circuits.graphql.filters->netbox.graphql.filter_lookups]
+- circuits.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:circuits.graphql.filters->netbox.graphql.filter_mixins]
+- circuits.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:circuits.graphql.filters->tenancy.graphql.filter_mixins]
+- circuits.graphql.types -> dcim.graphql.mixins [fg:imports:circuits.graphql.types->dcim.graphql.mixins]
+- circuits.graphql.types -> dcim.graphql.types [fg:imports:circuits.graphql.types->dcim.graphql.types]
+- circuits.graphql.types -> extras.graphql.mixins [fg:imports:circuits.graphql.types->extras.graphql.mixins]
+- circuits.graphql.types -> ipam.graphql.types [fg:imports:circuits.graphql.types->ipam.graphql.types]
+- circuits.graphql.types -> netbox.graphql.types [fg:imports:circuits.graphql.types->netbox.graphql.types]
+- circuits.graphql.types -> tenancy.graphql.types [fg:imports:circuits.graphql.types->tenancy.graphql.types]
+- circuits.migrations.0001_squashed -> ipam.fields [fg:imports:circuits.migrations.0001_squashed->ipam.fields]
+- circuits.migrations.0001_squashed -> utilities.json [fg:imports:circuits.migrations.0001_squashed->utilities.json]
+- circuits.migrations.0003_squashed_0037 -> utilities.json [fg:imports:circuits.migrations.0003_squashed_0037->utilities.json]
+- circuits.migrations.0038_squashed_0042 -> utilities.json [fg:imports:circuits.migrations.0038_squashed_0042->utilities.json]
+- circuits.migrations.0043_circuittype_color -> utilities.fields [fg:imports:circuits.migrations.0043_circuittype_color->utilities.fields]
+- circuits.migrations.0044_circuit_groups -> utilities.json [fg:imports:circuits.migrations.0044_circuit_groups->utilities.json]
+- circuits.migrations.0050_virtual_circuits -> utilities.fields [fg:imports:circuits.migrations.0050_virtual_circuits->utilities.fields]
+- circuits.migrations.0050_virtual_circuits -> utilities.json [fg:imports:circuits.migrations.0050_virtual_circuits->utilities.json]
+- circuits.models.base -> netbox.models [fg:imports:circuits.models.base->netbox.models]
+- circuits.models.base -> utilities.fields [fg:imports:circuits.models.base->utilities.fields]
+- circuits.models.circuits -> dcim.models [fg:imports:circuits.models.circuits->dcim.models]
+- circuits.models.circuits -> netbox.models [fg:imports:circuits.models.circuits->netbox.models]
+- circuits.models.circuits -> netbox.models.features [fg:imports:circuits.models.circuits->netbox.models.features]
+- circuits.models.circuits -> netbox.models.mixins [fg:imports:circuits.models.circuits->netbox.models.mixins]
+- circuits.models.providers -> netbox.models [fg:imports:circuits.models.providers->netbox.models]
+- circuits.models.providers -> netbox.models.features [fg:imports:circuits.models.providers->netbox.models.features]
+- circuits.models.virtual_circuits -> netbox.models [fg:imports:circuits.models.virtual_circuits->netbox.models]
+- circuits.models.virtual_circuits -> netbox.models.features [fg:imports:circuits.models.virtual_circuits->netbox.models.features]
+- circuits.search -> netbox.search [fg:imports:circuits.search->netbox.search]
+- circuits.signals -> dcim.signals [fg:imports:circuits.signals->dcim.signals]
+- circuits.tables.circuits -> netbox.tables [fg:imports:circuits.tables.circuits->netbox.tables]
+- circuits.tables.circuits -> tenancy.tables [fg:imports:circuits.tables.circuits->tenancy.tables]
+- circuits.tables.providers -> netbox.tables [fg:imports:circuits.tables.providers->netbox.tables]
+- circuits.tables.providers -> tenancy.tables [fg:imports:circuits.tables.providers->tenancy.tables]
+- circuits.tables.virtual_circuits -> netbox.tables [fg:imports:circuits.tables.virtual_circuits->netbox.tables]
+- circuits.tables.virtual_circuits -> tenancy.tables [fg:imports:circuits.tables.virtual_circuits->tenancy.tables]
+- circuits.tests.test_api -> dcim.choices [fg:imports:circuits.tests.test_api->dcim.choices]
+- circuits.tests.test_api -> dcim.models [fg:imports:circuits.tests.test_api->dcim.models]
+- circuits.tests.test_api -> ipam.models [fg:imports:circuits.tests.test_api->ipam.models]
+- circuits.tests.test_api -> utilities.testing [fg:imports:circuits.tests.test_api->utilities.testing]
+- circuits.tests.test_filtersets -> dcim.choices [fg:imports:circuits.tests.test_filtersets->dcim.choices]
+- circuits.tests.test_filtersets -> dcim.models [fg:imports:circuits.tests.test_filtersets->dcim.models]
+- circuits.tests.test_filtersets -> ipam.models [fg:imports:circuits.tests.test_filtersets->ipam.models]
+- circuits.tests.test_filtersets -> netbox.choices [fg:imports:circuits.tests.test_filtersets->netbox.choices]
+- circuits.tests.test_filtersets -> tenancy.models [fg:imports:circuits.tests.test_filtersets->tenancy.models]
+- circuits.tests.test_filtersets -> utilities.testing [fg:imports:circuits.tests.test_filtersets->utilities.testing]
+- circuits.tests.test_views -> core.models [fg:imports:circuits.tests.test_views->core.models]
+- circuits.tests.test_views -> dcim.choices [fg:imports:circuits.tests.test_views->dcim.choices]
+- circuits.tests.test_views -> dcim.models [fg:imports:circuits.tests.test_views->dcim.models]
+- circuits.tests.test_views -> ipam.models [fg:imports:circuits.tests.test_views->ipam.models]
+- circuits.tests.test_views -> netbox.choices [fg:imports:circuits.tests.test_views->netbox.choices]
+- circuits.tests.test_views -> users.models [fg:imports:circuits.tests.test_views->users.models]
+- circuits.tests.test_views -> utilities.testing [fg:imports:circuits.tests.test_views->utilities.testing]
+- circuits.urls -> utilities.urls [fg:imports:circuits.urls->utilities.urls]
+- circuits.views -> dcim.views [fg:imports:circuits.views->dcim.views]
+- circuits.views -> ipam.models [fg:imports:circuits.views->ipam.models]
+- circuits.views -> netbox.views [fg:imports:circuits.views->netbox.views]
+- circuits.views -> utilities.forms [fg:imports:circuits.views->utilities.forms]
+- circuits.views -> utilities.query [fg:imports:circuits.views->utilities.query]
+- circuits.views -> utilities.views [fg:imports:circuits.views->utilities.views]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- circuits.migrations.0046_charfield_null_choices | . | get_model | circuits.Circuit |  [fg:model_refs:circuits.migrations.0046_charfield_null_choices:8]
+- circuits.migrations.0046_charfield_null_choices | . | get_model | circuits.CircuitGroupAssignment |  [fg:model_refs:circuits.migrations.0046_charfield_null_choices:9]
+- circuits.migrations.0046_charfield_null_choices | . | get_model | circuits.CircuitTermination |  [fg:model_refs:circuits.migrations.0046_charfield_null_choices:10]
+- circuits.migrations.0047_circuittermination__termination | . | get_model | contenttypes.ContentType | cross [fg:model_refs:circuits.migrations.0047_circuittermination__termination:10]
+- circuits.migrations.0047_circuittermination__termination | . | get_model | circuits.CircuitTermination |  [fg:model_refs:circuits.migrations.0047_circuittermination__termination:11]
+- circuits.migrations.0047_circuittermination__termination | . | get_model | circuits.ProviderNetwork |  [fg:model_refs:circuits.migrations.0047_circuittermination__termination:12]
+- circuits.migrations.0047_circuittermination__termination | . | get_model | dcim.Site | cross [fg:model_refs:circuits.migrations.0047_circuittermination__termination:13]
+- circuits.migrations.0048_circuitterminations_cached_relations | . | get_model | circuits.CircuitTermination |  [fg:model_refs:circuits.migrations.0048_circuitterminations_cached_relations:9]
+- circuits.migrations.0051_virtualcircuit_group_assignment | . | get_model | contenttypes.ContentType | cross [fg:model_refs:circuits.migrations.0051_virtualcircuit_group_assignment:10]
+- circuits.migrations.0051_virtualcircuit_group_assignment | . | get_model | circuits.Circuit |  [fg:model_refs:circuits.migrations.0051_virtualcircuit_group_assignment:11]
+- circuits.migrations.0051_virtualcircuit_group_assignment | . | get_model | circuits.CircuitGroupAssignment |  [fg:model_refs:circuits.migrations.0051_virtualcircuit_group_assignment:12]
+- circuits.models.circuits | Circuit.provider | ForeignKey | circuits.Provider |  [fg:model_refs:circuits.models.circuits:49]
+- circuits.models.circuits | Circuit.provider_account | ForeignKey | circuits.ProviderAccount |  [fg:model_refs:circuits.models.circuits:54]
+- circuits.models.circuits | Circuit.type | ForeignKey | circuits.CircuitType |  [fg:model_refs:circuits.models.circuits:61]
+- circuits.models.circuits | Circuit.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:circuits.models.circuits:72]
+- circuits.models.circuits | Circuit.termination_a | ForeignKey | circuits.CircuitTermination |  [fg:model_refs:circuits.models.circuits:97]
+- circuits.models.circuits | Circuit.termination_z | ForeignKey | circuits.CircuitTermination |  [fg:model_refs:circuits.models.circuits:105]
+- circuits.models.circuits | Circuit.group_assignments | GenericRelation | circuits.CircuitGroupAssignment |  [fg:model_refs:circuits.models.circuits:114]
+- circuits.models.circuits | CircuitGroup.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:circuits.models.circuits:162]
+- circuits.models.circuits | CircuitGroupAssignment.member_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:circuits.models.circuits:183]
+- circuits.models.circuits | CircuitGroupAssignment.group | ForeignKey | circuits.CircuitGroup |  [fg:model_refs:circuits.models.circuits:195]
+- circuits.models.circuits | CircuitTermination.circuit | ForeignKey | circuits.Circuit |  [fg:model_refs:circuits.models.circuits:238]
+- circuits.models.circuits | CircuitTermination.termination_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:circuits.models.circuits:248]
+- circuits.models.circuits | CircuitTermination._provider_network | ForeignKey | circuits.ProviderNetwork |  [fg:model_refs:circuits.models.circuits:294]
+- circuits.models.circuits | CircuitTermination._location | ForeignKey | dcim.Location | cross [fg:model_refs:circuits.models.circuits:301]
+- circuits.models.circuits | CircuitTermination._site | ForeignKey | dcim.Site | cross [fg:model_refs:circuits.models.circuits:308]
+- circuits.models.circuits | CircuitTermination._region | ForeignKey | dcim.Region | cross [fg:model_refs:circuits.models.circuits:315]
+- circuits.models.circuits | CircuitTermination._site_group | ForeignKey | dcim.SiteGroup | cross [fg:model_refs:circuits.models.circuits:322]
+- circuits.models.circuits | . | get_model | dcim.region | cross [fg:model_refs:circuits.models.circuits:363]
+- circuits.models.circuits | . | get_model | dcim.sitegroup | cross [fg:model_refs:circuits.models.circuits:365]
+- circuits.models.circuits | . | get_model | dcim.site | cross [fg:model_refs:circuits.models.circuits:367]
+- circuits.models.circuits | . | get_model | dcim.location | cross [fg:model_refs:circuits.models.circuits:371]
+- circuits.models.circuits | . | get_model | circuits.providernetwork |  [fg:model_refs:circuits.models.circuits:376]
+- circuits.models.providers | Provider.asns | ManyToManyField | ipam.ASN | cross [fg:model_refs:circuits.models.providers:32]
+- circuits.models.providers | ProviderAccount.provider | ForeignKey | circuits.Provider |  [fg:model_refs:circuits.models.providers:53]
+- circuits.models.providers | ProviderNetwork.provider | ForeignKey | circuits.Provider |  [fg:model_refs:circuits.models.providers:102]
+- circuits.models.virtual_circuits | VirtualCircuit.provider_network | ForeignKey | circuits.ProviderNetwork |  [fg:model_refs:circuits.models.virtual_circuits:41]
+- circuits.models.virtual_circuits | VirtualCircuit.provider_account | ForeignKey | circuits.ProviderAccount |  [fg:model_refs:circuits.models.virtual_circuits:46]
+- circuits.models.virtual_circuits | VirtualCircuit.type | ForeignKey | circuits.VirtualCircuitType |  [fg:model_refs:circuits.models.virtual_circuits:53]
+- circuits.models.virtual_circuits | VirtualCircuit.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:circuits.models.virtual_circuits:64]
+- circuits.models.virtual_circuits | VirtualCircuit.group_assignments | GenericRelation | circuits.CircuitGroupAssignment |  [fg:model_refs:circuits.models.virtual_circuits:72]
+- circuits.models.virtual_circuits | VirtualCircuitTermination.virtual_circuit | ForeignKey | circuits.VirtualCircuit |  [fg:model_refs:circuits.models.virtual_circuits:127]
+- circuits.models.virtual_circuits | VirtualCircuitTermination.interface | OneToOneField | dcim.Interface | cross [fg:model_refs:circuits.models.virtual_circuits:138]
+
+## String references INTO this subsystem from others
+
+## Churn (id = churn:<module>) — top 25 by commits
+- circuits.views | 157 commits | 12 authors | 2016-03-01 .. 2025-06-25 [fg:churn:circuits.views]
+- circuits.api.serializers | 89 commits | 7 authors | 2016-03-01 .. 2024-08-14 [fg:churn:circuits.api.serializers]
+- circuits.api.views | 73 commits | 6 authors | 2016-03-01 .. 2025-01-06 [fg:churn:circuits.api.views]
+- circuits.tests.test_api | 56 commits | 4 authors | 2017-03-16 .. 2025-01-06 [fg:churn:circuits.tests.test_api]
+- circuits.urls | 49 commits | 5 authors | 2016-03-01 .. 2025-01-06 [fg:churn:circuits.urls]
+- circuits.filtersets | 45 commits | 10 authors | 2021-04-29 .. 2025-03-06 [fg:churn:circuits.filtersets]
+- circuits.forms.filtersets | 42 commits | 10 authors | 2021-09-27 .. 2025-03-06 [fg:churn:circuits.forms.filtersets]
+- circuits.models.circuits | 41 commits | 5 authors | 2021-11-04 .. 2025-04-10 [fg:churn:circuits.models.circuits]
+- circuits.tests.test_views | 39 commits | 4 authors | 2019-02-15 .. 2025-01-06 [fg:churn:circuits.tests.test_views]
+- circuits.forms.bulk_edit | 33 commits | 7 authors | 2021-09-27 .. 2025-01-06 [fg:churn:circuits.forms.bulk_edit]
+- circuits.api.urls | 29 commits | 4 authors | 2016-03-01 .. 2025-01-06 [fg:churn:circuits.api.urls]
+- circuits.forms.bulk_import | 28 commits | 7 authors | 2021-09-27 .. 2025-01-06 [fg:churn:circuits.forms.bulk_import]
+- circuits.tests.test_filtersets | 27 commits | 7 authors | 2021-05-03 .. 2025-02-18 [fg:churn:circuits.tests.test_filtersets]
+- circuits.tables.circuits | 26 commits | 7 authors | 2022-03-03 .. 2025-06-04 [fg:churn:circuits.tables.circuits]
+- circuits.forms.model_forms | 24 commits | 6 authors | 2022-10-25 .. 2025-05-19 [fg:churn:circuits.forms.model_forms]
+- circuits.graphql.types | 20 commits | 4 authors | 2021-06-08 .. 2025-04-10 [fg:churn:circuits.graphql.types]
+- circuits.models.providers | 18 commits | 4 authors | 2021-11-04 .. 2024-11-15 [fg:churn:circuits.models.providers]
+- circuits.choices | 15 commits | 4 authors | 2019-11-07 .. 2024-11-19 [fg:churn:circuits.choices]
+- circuits.tables.providers | 14 commits | 6 authors | 2022-03-03 .. 2025-02-28 [fg:churn:circuits.tables.providers]
+- circuits.api.serializers_.circuits | 13 commits | 2 authors | 2024-02-27 .. 2025-01-06 [fg:churn:circuits.api.serializers_.circuits]
+- circuits.search | 11 commits | 7 authors | 2022-10-10 .. 2025-01-29 [fg:churn:circuits.search]
+- circuits.signals | 11 commits | 3 authors | 2017-01-23 .. 2022-05-10 [fg:churn:circuits.signals]
+- circuits.graphql.schema | 10 commits | 4 authors | 2021-06-08 .. 2025-01-06 [fg:churn:circuits.graphql.schema]
+- circuits.graphql.filters | 9 commits | 2 authors | 2024-03-22 .. 2025-05-14 [fg:churn:circuits.graphql.filters]
+- circuits.constants | 8 commits | 2 authors | 2017-06-16 .. 2025-01-03 [fg:churn:circuits.constants]
+
+## Entry points (id = entrypoints:<module>)
+- urls | circuits.api.urls | netbox/circuits/api/urls.py [fg:entrypoints:circuits.api.urls]
+- api_views | circuits.api.views | netbox/circuits/api/views.py [fg:entrypoints:circuits.api.views]
+- signals | circuits.signals | netbox/circuits/signals.py [fg:entrypoints:circuits.signals]
+- urls | circuits.urls | netbox/circuits/urls.py [fg:entrypoints:circuits.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- circuits.api.serializers_.circuits: CircuitTypeSerializer, CircuitCircuitTerminationSerializer, CircuitGroupSerializer, CircuitGroupAssignmentSerializer_, CircuitSerializer, CircuitTerminationSerializer, CircuitGroupAssignmentSerializer, VirtualCircuitTypeSerializer, VirtualCircuitSerializer, VirtualCircuitTerminationSerializer
+- circuits.api.serializers_.nested: NestedProviderAccountSerializer
+- circuits.api.serializers_.providers: ProviderSerializer, ProviderAccountSerializer, ProviderNetworkSerializer
+- circuits.api.views: CircuitsRootView, ProviderViewSet, CircuitTypeViewSet, CircuitViewSet, CircuitTerminationViewSet, CircuitGroupViewSet, CircuitGroupAssignmentViewSet, ProviderAccountViewSet, ProviderNetworkViewSet, VirtualCircuitTypeViewSet, VirtualCircuitViewSet, VirtualCircuitTerminationViewSet
+- circuits.apps: CircuitsConfig
+- circuits.choices: CircuitStatusChoices, CircuitCommitRateChoices, CircuitTerminationSideChoices, CircuitTerminationPortSpeedChoices, CircuitPriorityChoices, VirtualCircuitTerminationRoleChoices
+- circuits.filtersets: ProviderFilterSet, ProviderAccountFilterSet, ProviderNetworkFilterSet, CircuitTypeFilterSet, CircuitFilterSet, CircuitTerminationFilterSet, CircuitGroupFilterSet, CircuitGroupAssignmentFilterSet, VirtualCircuitTypeFilterSet, VirtualCircuitFilterSet, VirtualCircuitTerminationFilterSet
+- circuits.forms.bulk_edit: ProviderBulkEditForm, ProviderAccountBulkEditForm, ProviderNetworkBulkEditForm, CircuitTypeBulkEditForm, CircuitBulkEditForm, CircuitTerminationBulkEditForm, CircuitGroupBulkEditForm, CircuitGroupAssignmentBulkEditForm, VirtualCircuitTypeBulkEditForm, VirtualCircuitBulkEditForm, VirtualCircuitTerminationBulkEditForm
+- circuits.forms.bulk_import: ProviderImportForm, ProviderAccountImportForm, ProviderNetworkImportForm, CircuitTypeImportForm, CircuitImportForm, BaseCircuitTerminationImportForm, CircuitTerminationImportRelatedForm, CircuitTerminationImportForm, CircuitGroupImportForm, CircuitGroupAssignmentImportForm, VirtualCircuitTypeImportForm, VirtualCircuitImportForm, BaseVirtualCircuitTerminationImportForm, VirtualCircuitTerminationImportRelatedForm, VirtualCircuitTerminationImportForm
+- circuits.forms.filtersets: ProviderFilterForm, ProviderAccountFilterForm, ProviderNetworkFilterForm, CircuitTypeFilterForm, CircuitFilterForm, CircuitTerminationFilterForm, CircuitGroupFilterForm, CircuitGroupAssignmentFilterForm, VirtualCircuitTypeFilterForm, VirtualCircuitFilterForm, VirtualCircuitTerminationFilterForm
+- circuits.forms.model_forms: ProviderForm, ProviderAccountForm, ProviderNetworkForm, CircuitTypeForm, CircuitForm, CircuitTerminationForm, CircuitGroupForm, CircuitGroupAssignmentForm, VirtualCircuitTypeForm, VirtualCircuitForm, VirtualCircuitTerminationForm
+- circuits.graphql.filter_mixins: BaseCircuitTypeFilterMixin
+- circuits.graphql.filters: CircuitTerminationFilter, CircuitFilter, CircuitTypeFilter, CircuitGroupFilter, CircuitGroupAssignmentFilter, ProviderFilter, ProviderAccountFilter, ProviderNetworkFilter, VirtualCircuitTypeFilter, VirtualCircuitFilter, VirtualCircuitTerminationFilter
+- circuits.graphql.schema: CircuitsQuery
+- circuits.graphql.types: ProviderType, ProviderAccountType, ProviderNetworkType, CircuitTerminationType, CircuitTypeType, CircuitType, CircuitGroupType, CircuitGroupAssignmentType, VirtualCircuitTypeType, VirtualCircuitTerminationType, VirtualCircuitType
+- circuits.migrations.0001_squashed: Migration
+- circuits.migrations.0002_squashed_0029: Migration
+- circuits.migrations.0003_squashed_0037: Migration
+- circuits.migrations.0038_squashed_0042: Migration
+- circuits.migrations.0043_circuittype_color: Migration
+- circuits.migrations.0044_circuit_groups: Migration
+- circuits.migrations.0045_circuit_distance: Migration
+- circuits.migrations.0046_charfield_null_choices: Migration
+- circuits.migrations.0047_circuittermination__termination: Migration
+- circuits.migrations.0048_circuitterminations_cached_relations: Migration
+- circuits.migrations.0049_natural_ordering: Migration
+- circuits.migrations.0050_virtual_circuits: Migration
+- circuits.migrations.0051_virtualcircuit_group_assignment: Migration
+- circuits.migrations.0052_extend_circuit_abs_distance_upper_limit: Migration
+- circuits.models.base: BaseCircuitType
+- circuits.models.circuits: CircuitType, Circuit, CircuitGroup, CircuitGroupAssignment, CircuitTermination
+- circuits.models.providers: Provider, ProviderAccount, ProviderNetwork
+- circuits.models.virtual_circuits: VirtualCircuitType, VirtualCircuit, VirtualCircuitTermination
+- circuits.search: CircuitIndex, CircuitGroupIndex, CircuitTerminationIndex, CircuitTypeIndex, ProviderIndex, ProviderAccountIndex, ProviderNetworkIndex, VirtualCircuitIndex, VirtualCircuitTerminationIndex, VirtualCircuitTypeIndex
+- circuits.tables.circuits: CircuitTypeTable, CircuitTable, CircuitTerminationTable, CircuitGroupTable, CircuitGroupAssignmentTable
+- circuits.tables.columns: CommitRateColumn
+- circuits.tables.providers: ProviderTable, ProviderAccountTable, ProviderNetworkTable
+- circuits.tables.virtual_circuits: VirtualCircuitTypeTable, VirtualCircuitTable, VirtualCircuitTerminationTable
+- circuits.tests.test_api: AppTest, ProviderTest, CircuitTypeTest, CircuitTest, CircuitTerminationTest, CircuitGroupTest, ProviderAccountTest, CircuitGroupAssignmentTest, ProviderNetworkTest, VirtualCircuitTypeTest, VirtualCircuitTest, VirtualCircuitTerminationTest
+- circuits.tests.test_filtersets: ProviderTestCase, CircuitTypeTestCase, CircuitTestCase, CircuitTerminationTestCase, CircuitGroupTestCase, CircuitGroupAssignmentTestCase, ProviderNetworkTestCase, ProviderAccountTestCase, VirtualCircuitTypeTestCase, VirtualCircuitTestCase, VirtualCircuitTerminationTestCase
+- circuits.tests.test_tables: CircuitTerminationTableTest
+- circuits.tests.test_views: ProviderTestCase, CircuitTypeTestCase, CircuitTestCase, ProviderAccountTestCase, ProviderNetworkTestCase, CircuitTerminationTestCase, CircuitGroupTestCase, CircuitGroupAssignmentTestCase, VirtualCircuitTypeTestCase, VirtualCircuitTestCase, VirtualCircuitTerminationTestCase
+- circuits.views: ProviderListView, ProviderView, ProviderEditView, ProviderDeleteView, ProviderBulkImportView, ProviderBulkEditView, ProviderBulkDeleteView, ProviderAccountListView, ProviderAccountView, ProviderAccountEditView, ProviderAccountDeleteView, ProviderAccountBulkImportView, ProviderAccountBulkEditView, ProviderAccountBulkDeleteView, ProviderNetworkListView, ProviderNetworkView, ProviderNetworkEditView, ProviderNetworkDeleteView, ProviderNetworkBulkImportView, ProviderNetworkBulkEditView, ProviderNetworkBulkDeleteView, CircuitTypeListView, CircuitTypeView, CircuitTypeEditView, CircuitTypeDeleteView, CircuitTypeBulkImportView, CircuitTypeBulkEditView, CircuitTypeBulkDeleteView, CircuitListView, CircuitView, CircuitEditView, CircuitDeleteView, CircuitBulkImportView, CircuitBulkEditView, CircuitBulkDeleteView, CircuitSwapTerminations, CircuitTerminationListView, CircuitTerminationView, CircuitTerminationEditView, CircuitTerminationDeleteView, CircuitTerminationBulkImportView, CircuitTerminationBulkEditView, CircuitTerminationBulkDeleteView, CircuitGroupListView, CircuitGroupView, CircuitGroupEditView, CircuitGroupDeleteView, CircuitGroupBulkImportView, CircuitGroupBulkEditView, CircuitGroupBulkDeleteView, CircuitGroupAssignmentListView, CircuitGroupAssignmentView, CircuitGroupAssignmentEditView, CircuitGroupAssignmentDeleteView, CircuitGroupAssignmentBulkImportView, CircuitGroupAssignmentBulkEditView, CircuitGroupAssignmentBulkDeleteView, VirtualCircuitTypeListView, VirtualCircuitTypeView, VirtualCircuitTypeEditView, VirtualCircuitTypeDeleteView, VirtualCircuitTypeBulkImportView, VirtualCircuitTypeBulkEditView, VirtualCircuitTypeBulkDeleteView, VirtualCircuitListView, VirtualCircuitView, VirtualCircuitEditView, VirtualCircuitDeleteView, VirtualCircuitBulkImportView, VirtualCircuitBulkEditView, VirtualCircuitBulkDeleteView, VirtualCircuitTerminationListView, VirtualCircuitTerminationView, VirtualCircuitTerminationEditView, VirtualCircuitTerminationDeleteView, VirtualCircuitTerminationBulkImportView, VirtualCircuitTerminationBulkEditView, VirtualCircuitTerminationBulkDeleteView

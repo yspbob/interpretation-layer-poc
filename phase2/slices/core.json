@@ -1,0 +1,6766 @@
+{
+"subsystem": "core",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "core",
+"modules": 68,
+"loc_code": 7152,
+"loc_data": 0,
+"test_modules": 6
+},
+"modules": [
+{
+"module": "core",
+"path": "netbox/core/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core"
+},
+{
+"module": "core.api",
+"path": "netbox/core/api/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api"
+},
+{
+"module": "core.api.schema",
+"path": "netbox/core/api/schema.py",
+"loc": 318,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.schema"
+},
+{
+"module": "core.api.serializers",
+"path": "netbox/core/api/serializers.py",
+"loc": 5,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.serializers"
+},
+{
+"module": "core.api.serializers_",
+"path": "netbox/core/api/serializers_/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.serializers_"
+},
+{
+"module": "core.api.serializers_.change_logging",
+"path": "netbox/core/api/serializers_/change_logging.py",
+"loc": 65,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.serializers_.change_logging"
+},
+{
+"module": "core.api.serializers_.data",
+"path": "netbox/core/api/serializers_/data.py",
+"loc": 47,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.serializers_.data"
+},
+{
+"module": "core.api.serializers_.jobs",
+"path": "netbox/core/api/serializers_/jobs.py",
+"loc": 29,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.serializers_.jobs"
+},
+{
+"module": "core.api.serializers_.tasks",
+"path": "netbox/core/api/serializers_/tasks.py",
+"loc": 88,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.serializers_.tasks"
+},
+{
+"module": "core.api.urls",
+"path": "netbox/core/api/urls.py",
+"loc": 18,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.urls"
+},
+{
+"module": "core.api.views",
+"path": "netbox/core/api/views.py",
+"loc": 235,
+"classes": 9,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.api.views"
+},
+{
+"module": "core.apps",
+"path": "netbox/core/apps.py",
+"loc": 48,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.apps"
+},
+{
+"module": "core.checks",
+"path": "netbox/core/checks.py",
+"loc": 42,
+"classes": 0,
+"functions": 1,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.checks"
+},
+{
+"module": "core.choices",
+"path": "netbox/core/choices.py",
+"loc": 106,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.choices"
+},
+{
+"module": "core.constants",
+"path": "netbox/core/constants.py",
+"loc": 27,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.constants"
+},
+{
+"module": "core.data_backends",
+"path": "netbox/core/data_backends.py",
+"loc": 206,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.data_backends"
+},
+{
+"module": "core.events",
+"path": "netbox/core/events.py",
+"loc": 21,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.events"
+},
+{
+"module": "core.exceptions",
+"path": "netbox/core/exceptions.py",
+"loc": 10,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.exceptions"
+},
+{
+"module": "core.filtersets",
+"path": "netbox/core/filtersets.py",
+"loc": 190,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.filtersets"
+},
+{
+"module": "core.forms",
+"path": "netbox/core/forms/__init__.py",
+"loc": 5,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.forms"
+},
+{
+"module": "core.forms.bulk_edit",
+"path": "netbox/core/forms/bulk_edit.py",
+"loc": 56,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.forms.bulk_edit"
+},
+{
+"module": "core.forms.bulk_import",
+"path": "netbox/core/forms/bulk_import.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.forms.bulk_import"
+},
+{
+"module": "core.forms.filtersets",
+"path": "netbox/core/forms/filtersets.py",
+"loc": 175,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.forms.filtersets"
+},
+{
+"module": "core.forms.mixins",
+"path": "netbox/core/forms/mixins.py",
+"loc": 26,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.forms.mixins"
+},
+{
+"module": "core.forms.model_forms",
+"path": "netbox/core/forms/model_forms.py",
+"loc": 244,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.forms.model_forms"
+},
+{
+"module": "core.graphql",
+"path": "netbox/core/graphql/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.graphql"
+},
+{
+"module": "core.graphql.filter_mixins",
+"path": "netbox/core/graphql/filter_mixins.py",
+"loc": 37,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.graphql.filter_mixins"
+},
+{
+"module": "core.graphql.filters",
+"path": "netbox/core/graphql/filters.py",
+"loc": 90,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.graphql.filters"
+},
+{
+"module": "core.graphql.mixins",
+"path": "netbox/core/graphql/mixins.py",
+"loc": 28,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.graphql.mixins"
+},
+{
+"module": "core.graphql.schema",
+"path": "netbox/core/graphql/schema.py",
+"loc": 16,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.graphql.schema"
+},
+{
+"module": "core.graphql.types",
+"path": "netbox/core/graphql/types.py",
+"loc": 57,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.graphql.types"
+},
+{
+"module": "core.jobs",
+"path": "netbox/core/jobs.py",
+"loc": 79,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.jobs"
+},
+{
+"module": "core.management",
+"path": "netbox/core/management/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.management"
+},
+{
+"module": "core.management.commands",
+"path": "netbox/core/management/commands/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.management.commands"
+},
+{
+"module": "core.management.commands.makemigrations",
+"path": "netbox/core/management/commands/makemigrations.py",
+"loc": 23,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.management.commands.makemigrations"
+},
+{
+"module": "core.management.commands.nbshell",
+"path": "netbox/core/management/commands/nbshell.py",
+"loc": 102,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.management.commands.nbshell"
+},
+{
+"module": "core.management.commands.rqworker",
+"path": "netbox/core/management/commands/rqworker.py",
+"loc": 40,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.management.commands.rqworker"
+},
+{
+"module": "core.management.commands.syncdatasource",
+"path": "netbox/core/management/commands/syncdatasource.py",
+"loc": 47,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.management.commands.syncdatasource"
+},
+{
+"module": "core.migrations",
+"path": "netbox/core/migrations/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.migrations"
+},
+{
+"module": "core.migrations.0001_squashed_0005",
+"path": "netbox/core/migrations/0001_squashed_0005.py",
+"loc": 210,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0001_squashed_0005"
+},
+{
+"module": "core.migrations.0006_datasource_type_remove_choices",
+"path": "netbox/core/migrations/0006_datasource_type_remove_choices.py",
+"loc": 18,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0006_datasource_type_remove_choices"
+},
+{
+"module": "core.migrations.0007_job_add_error_field",
+"path": "netbox/core/migrations/0007_job_add_error_field.py",
+"loc": 18,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0007_job_add_error_field"
+},
+{
+"module": "core.migrations.0008_contenttype_proxy",
+"path": "netbox/core/migrations/0008_contenttype_proxy.py",
+"loc": 26,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0008_contenttype_proxy"
+},
+{
+"module": "core.migrations.0009_configrevision",
+"path": "netbox/core/migrations/0009_configrevision.py",
+"loc": 31,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0009_configrevision"
+},
+{
+"module": "core.migrations.0010_gfk_indexes",
+"path": "netbox/core/migrations/0010_gfk_indexes.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0010_gfk_indexes"
+},
+{
+"module": "core.migrations.0011_move_objectchange",
+"path": "netbox/core/migrations/0011_move_objectchange.py",
+"loc": 79,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0011_move_objectchange"
+},
+{
+"module": "core.migrations.0012_job_object_type_optional",
+"path": "netbox/core/migrations/0012_job_object_type_optional.py",
+"loc": 24,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0012_job_object_type_optional"
+},
+{
+"module": "core.migrations.0013_job_data_encoder",
+"path": "netbox/core/migrations/0013_job_data_encoder.py",
+"loc": 18,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0013_job_data_encoder"
+},
+{
+"module": "core.migrations.0014_datasource_sync_interval",
+"path": "netbox/core/migrations/0014_datasource_sync_interval.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0014_datasource_sync_interval"
+},
+{
+"module": "core.migrations.0015_remove_redundant_indexes",
+"path": "netbox/core/migrations/0015_remove_redundant_indexes.py",
+"loc": 24,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:core.migrations.0015_remove_redundant_indexes"
+},
+{
+"module": "core.models",
+"path": "netbox/core/models/__init__.py",
+"loc": 7,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.models"
+},
+{
+"module": "core.models.change_logging",
+"path": "netbox/core/models/change_logging.py",
+"loc": 212,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.models.change_logging"
+},
+{
+"module": "core.models.config",
+"path": "netbox/core/models/config.py",
+"loc": 67,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.models.config"
+},
+{
+"module": "core.models.contenttypes",
+"path": "netbox/core/models/contenttypes.py",
+"loc": 51,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.models.contenttypes"
+},
+{
+"module": "core.models.data",
+"path": "netbox/core/models/data.py",
+"loc": 389,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.models.data"
+},
+{
+"module": "core.models.files",
+"path": "netbox/core/models/files.py",
+"loc": 126,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.models.files"
+},
+{
+"module": "core.models.jobs",
+"path": "netbox/core/models/jobs.py",
+"loc": 274,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.models.jobs"
+},
+{
+"module": "core.plugins",
+"path": "netbox/core/plugins.py",
+"loc": 244,
+"classes": 3,
+"functions": 2,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.plugins"
+},
+{
+"module": "core.querysets",
+"path": "netbox/core/querysets.py",
+"loc": 27,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.querysets"
+},
+{
+"module": "core.search",
+"path": "netbox/core/search.py",
+"loc": 24,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.search"
+},
+{
+"module": "core.signals",
+"path": "netbox/core/signals.py",
+"loc": 232,
+"classes": 0,
+"functions": 6,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.signals"
+},
+{
+"module": "core.tables",
+"path": "netbox/core/tables/__init__.py",
+"loc": 7,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables"
+},
+{
+"module": "core.tables.change_logging",
+"path": "netbox/core/tables/change_logging.py",
+"loc": 54,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.change_logging"
+},
+{
+"module": "core.tables.columns",
+"path": "netbox/core/tables/columns.py",
+"loc": 37,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.columns"
+},
+{
+"module": "core.tables.config",
+"path": "netbox/core/tables/config.py",
+"loc": 35,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.config"
+},
+{
+"module": "core.tables.data",
+"path": "netbox/core/tables/data.py",
+"loc": 72,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.data"
+},
+{
+"module": "core.tables.jobs",
+"path": "netbox/core/tables/jobs.py",
+"loc": 56,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.jobs"
+},
+{
+"module": "core.tables.plugins",
+"path": "netbox/core/tables/plugins.py",
+"loc": 103,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.plugins"
+},
+{
+"module": "core.tables.tasks",
+"path": "netbox/core/tables/tasks.py",
+"loc": 135,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.tasks"
+},
+{
+"module": "core.tables.template_code",
+"path": "netbox/core/tables/template_code.py",
+"loc": 29,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tables.template_code"
+},
+{
+"module": "core.tests",
+"path": "netbox/core/tests/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tests"
+},
+{
+"module": "core.tests.test_api",
+"path": "netbox/core/tests/test_api.py",
+"loc": 265,
+"classes": 4,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tests.test_api"
+},
+{
+"module": "core.tests.test_changelog",
+"path": "netbox/core/tests/test_changelog.py",
+"loc": 593,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tests.test_changelog"
+},
+{
+"module": "core.tests.test_filtersets",
+"path": "netbox/core/tests/test_filtersets.py",
+"loc": 244,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tests.test_filtersets"
+},
+{
+"module": "core.tests.test_models",
+"path": "netbox/core/tests/test_models.py",
+"loc": 123,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tests.test_models"
+},
+{
+"module": "core.tests.test_views",
+"path": "netbox/core/tests/test_views.py",
+"loc": 380,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.tests.test_views"
+},
+{
+"module": "core.urls",
+"path": "netbox/core/urls.py",
+"loc": 56,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.urls"
+},
+{
+"module": "core.utils",
+"path": "netbox/core/utils.py",
+"loc": 156,
+"classes": 0,
+"functions": 6,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.utils"
+},
+{
+"module": "core.views",
+"path": "netbox/core/views.py",
+"loc": 649,
+"classes": 38,
+"functions": 0,
+"parse": "OK",
+"subsystem": "core",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:core.views"
+}
+],
+"symbols": [
+{
+"module": "core.api.schema",
+"kind": "class",
+"name": "FixTimeZoneSerializerField",
+"lineno": 21,
+"bases": "OpenApiSerializerFieldExtension",
+"path": "netbox/core/api/schema.py",
+"id": "symbols:core.api.schema:FixTimeZoneSerializerField"
+},
+{
+"module": "core.api.schema",
+"kind": "class",
+"name": "ChoiceFieldFix",
+"lineno": 28,
+"bases": "OpenApiSerializerFieldExtension",
+"path": "netbox/core/api/schema.py",
+"id": "symbols:core.api.schema:ChoiceFieldFix"
+},
+{
+"module": "core.api.schema",
+"kind": "class",
+"name": "NetBoxAutoSchema",
+"lineno": 52,
+"bases": "AutoSchema",
+"path": "netbox/core/api/schema.py",
+"id": "symbols:core.api.schema:NetBoxAutoSchema"
+},
+{
+"module": "core.api.schema",
+"kind": "class",
+"name": "FixSerializedPKRelatedField",
+"lineno": 272,
+"bases": "OpenApiSerializerFieldExtension",
+"path": "netbox/core/api/schema.py",
+"id": "symbols:core.api.schema:FixSerializedPKRelatedField"
+},
+{
+"module": "core.api.schema",
+"kind": "class",
+"name": "FixIntegerRangeSerializerSchema",
+"lineno": 283,
+"bases": "OpenApiSerializerExtension",
+"path": "netbox/core/api/schema.py",
+"id": "symbols:core.api.schema:FixIntegerRangeSerializerSchema"
+},
+{
+"module": "core.api.schema",
+"kind": "class",
+"name": "FixWritableNestedSerializerAllowPK",
+"lineno": 302,
+"bases": "OpenApiSerializerFieldExtension",
+"path": "netbox/core/api/schema.py",
+"id": "symbols:core.api.schema:FixWritableNestedSerializerAllowPK"
+},
+{
+"module": "core.api.serializers_.change_logging",
+"kind": "class",
+"name": "ObjectChangeSerializer",
+"lineno": 17,
+"bases": "BaseModelSerializer",
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "symbols:core.api.serializers_.change_logging:ObjectChangeSerializer"
+},
+{
+"module": "core.api.serializers_.data",
+"kind": "class",
+"name": "DataSourceSerializer",
+"lineno": 13,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/core/api/serializers_/data.py",
+"id": "symbols:core.api.serializers_.data:DataSourceSerializer"
+},
+{
+"module": "core.api.serializers_.data",
+"kind": "class",
+"name": "DataFileSerializer",
+"lineno": 35,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/core/api/serializers_/data.py",
+"id": "symbols:core.api.serializers_.data:DataFileSerializer"
+},
+{
+"module": "core.api.serializers_.jobs",
+"kind": "class",
+"name": "JobSerializer",
+"lineno": 12,
+"bases": "BaseModelSerializer",
+"path": "netbox/core/api/serializers_/jobs.py",
+"id": "symbols:core.api.serializers_.jobs:JobSerializer"
+},
+{
+"module": "core.api.serializers_.tasks",
+"kind": "class",
+"name": "BackgroundTaskSerializer",
+"lineno": 11,
+"bases": "serializers.Serializer",
+"path": "netbox/core/api/serializers_/tasks.py",
+"id": "symbols:core.api.serializers_.tasks:BackgroundTaskSerializer"
+},
+{
+"module": "core.api.serializers_.tasks",
+"kind": "class",
+"name": "BackgroundQueueSerializer",
+"lineno": 52,
+"bases": "serializers.Serializer",
+"path": "netbox/core/api/serializers_/tasks.py",
+"id": "symbols:core.api.serializers_.tasks:BackgroundQueueSerializer"
+},
+{
+"module": "core.api.serializers_.tasks",
+"kind": "class",
+"name": "BackgroundWorkerSerializer",
+"lineno": 70,
+"bases": "serializers.Serializer",
+"path": "netbox/core/api/serializers_/tasks.py",
+"id": "symbols:core.api.serializers_.tasks:BackgroundWorkerSerializer"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "CoreRootView",
+"lineno": 30,
+"bases": "APIRootView",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:CoreRootView"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "DataSourceViewSet",
+"lineno": 38,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:DataSourceViewSet"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "DataFileViewSet",
+"lineno": 63,
+"bases": "NetBoxReadOnlyModelViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:DataFileViewSet"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "JobViewSet",
+"lineno": 69,
+"bases": "ReadOnlyModelViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:JobViewSet"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "ObjectChangeViewSet",
+"lineno": 78,
+"bases": "ReadOnlyModelViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:ObjectChangeViewSet"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "BaseRQViewSet",
+"lineno": 88,
+"bases": "viewsets.ViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:BaseRQViewSet"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "BackgroundQueueViewSet",
+"lineno": 117,
+"bases": "BaseRQViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:BackgroundQueueViewSet"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "BackgroundWorkerViewSet",
+"lineno": 146,
+"bases": "BaseRQViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:BackgroundWorkerViewSet"
+},
+{
+"module": "core.api.views",
+"kind": "class",
+"name": "BackgroundTaskViewSet",
+"lineno": 172,
+"bases": "BaseRQViewSet",
+"path": "netbox/core/api/views.py",
+"id": "symbols:core.api.views:BackgroundTaskViewSet"
+},
+{
+"module": "core.apps",
+"kind": "class",
+"name": "CoreConfig",
+"lineno": 20,
+"bases": "AppConfig",
+"path": "netbox/core/apps.py",
+"id": "symbols:core.apps:CoreConfig"
+},
+{
+"module": "core.checks",
+"kind": "function",
+"name": "check_duplicate_indexes",
+"lineno": 11,
+"bases": "",
+"path": "netbox/core/checks.py",
+"id": "symbols:core.checks:check_duplicate_indexes"
+},
+{
+"module": "core.choices",
+"kind": "class",
+"name": "DataSourceStatusChoices",
+"lineno": 10,
+"bases": "ChoiceSet",
+"path": "netbox/core/choices.py",
+"id": "symbols:core.choices:DataSourceStatusChoices"
+},
+{
+"module": "core.choices",
+"kind": "class",
+"name": "ManagedFileRootPathChoices",
+"lineno": 30,
+"bases": "ChoiceSet",
+"path": "netbox/core/choices.py",
+"id": "symbols:core.choices:ManagedFileRootPathChoices"
+},
+{
+"module": "core.choices",
+"kind": "class",
+"name": "JobStatusChoices",
+"lineno": 44,
+"bases": "ChoiceSet",
+"path": "netbox/core/choices.py",
+"id": "symbols:core.choices:JobStatusChoices"
+},
+{
+"module": "core.choices",
+"kind": "class",
+"name": "JobIntervalChoices",
+"lineno": 75,
+"bases": "ChoiceSet",
+"path": "netbox/core/choices.py",
+"id": "symbols:core.choices:JobIntervalChoices"
+},
+{
+"module": "core.choices",
+"kind": "class",
+"name": "ObjectChangeActionChoices",
+"lineno": 95,
+"bases": "ChoiceSet",
+"path": "netbox/core/choices.py",
+"id": "symbols:core.choices:ObjectChangeActionChoices"
+},
+{
+"module": "core.constants",
+"kind": "class",
+"name": "Status",
+"lineno": 12,
+"bases": "",
+"path": "netbox/core/constants.py",
+"id": "symbols:core.constants:Status"
+},
+{
+"module": "core.data_backends",
+"kind": "class",
+"name": "LocalBackend",
+"lineno": 30,
+"bases": "DataBackend",
+"path": "netbox/core/data_backends.py",
+"id": "symbols:core.data_backends:LocalBackend"
+},
+{
+"module": "core.data_backends",
+"kind": "class",
+"name": "GitBackend",
+"lineno": 44,
+"bases": "DataBackend",
+"path": "netbox/core/data_backends.py",
+"id": "symbols:core.data_backends:GitBackend"
+},
+{
+"module": "core.data_backends",
+"kind": "class",
+"name": "S3Backend",
+"lineno": 128,
+"bases": "DataBackend",
+"path": "netbox/core/data_backends.py",
+"id": "symbols:core.data_backends:S3Backend"
+},
+{
+"module": "core.exceptions",
+"kind": "class",
+"name": "SyncError",
+"lineno": 4,
+"bases": "Exception",
+"path": "netbox/core/exceptions.py",
+"id": "symbols:core.exceptions:SyncError"
+},
+{
+"module": "core.exceptions",
+"kind": "class",
+"name": "IncompatiblePluginError",
+"lineno": 8,
+"bases": "ImproperlyConfigured",
+"path": "netbox/core/exceptions.py",
+"id": "symbols:core.exceptions:IncompatiblePluginError"
+},
+{
+"module": "core.filtersets",
+"kind": "class",
+"name": "DataSourceFilterSet",
+"lineno": 23,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/core/filtersets.py",
+"id": "symbols:core.filtersets:DataSourceFilterSet"
+},
+{
+"module": "core.filtersets",
+"kind": "class",
+"name": "DataFileFilterSet",
+"lineno": 51,
+"bases": "ChangeLoggedModelFilterSet",
+"path": "netbox/core/filtersets.py",
+"id": "symbols:core.filtersets:DataFileFilterSet"
+},
+{
+"module": "core.filtersets",
+"kind": "class",
+"name": "JobFilterSet",
+"lineno": 78,
+"bases": "BaseFilterSet",
+"path": "netbox/core/filtersets.py",
+"id": "symbols:core.filtersets:JobFilterSet"
+},
+{
+"module": "core.filtersets",
+"kind": "class",
+"name": "ObjectChangeFilterSet",
+"lineno": 137,
+"bases": "BaseFilterSet",
+"path": "netbox/core/filtersets.py",
+"id": "symbols:core.filtersets:ObjectChangeFilterSet"
+},
+{
+"module": "core.filtersets",
+"kind": "class",
+"name": "ConfigRevisionFilterSet",
+"lineno": 174,
+"bases": "BaseFilterSet",
+"path": "netbox/core/filtersets.py",
+"id": "symbols:core.filtersets:ConfigRevisionFilterSet"
+},
+{
+"module": "core.forms.bulk_edit",
+"kind": "class",
+"name": "DataSourceBulkEditForm",
+"lineno": 17,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "symbols:core.forms.bulk_edit:DataSourceBulkEditForm"
+},
+{
+"module": "core.forms.bulk_import",
+"kind": "class",
+"name": "DataSourceImportForm",
+"lineno": 9,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/core/forms/bulk_import.py",
+"id": "symbols:core.forms.bulk_import:DataSourceImportForm"
+},
+{
+"module": "core.forms.filtersets",
+"kind": "class",
+"name": "DataSourceFilterForm",
+"lineno": 26,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/core/forms/filtersets.py",
+"id": "symbols:core.forms.filtersets:DataSourceFilterForm"
+},
+{
+"module": "core.forms.filtersets",
+"kind": "class",
+"name": "DataFileFilterForm",
+"lineno": 56,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/core/forms/filtersets.py",
+"id": "symbols:core.forms.filtersets:DataFileFilterForm"
+},
+{
+"module": "core.forms.filtersets",
+"kind": "class",
+"name": "JobFilterForm",
+"lineno": 69,
+"bases": "SavedFiltersMixin,FilterForm",
+"path": "netbox/core/forms/filtersets.py",
+"id": "symbols:core.forms.filtersets:JobFilterForm"
+},
+{
+"module": "core.forms.filtersets",
+"kind": "class",
+"name": "ObjectChangeFilterForm",
+"lineno": 136,
+"bases": "SavedFiltersMixin,FilterForm",
+"path": "netbox/core/forms/filtersets.py",
+"id": "symbols:core.forms.filtersets:ObjectChangeFilterForm"
+},
+{
+"module": "core.forms.filtersets",
+"kind": "class",
+"name": "ConfigRevisionFilterForm",
+"lineno": 170,
+"bases": "SavedFiltersMixin,FilterForm",
+"path": "netbox/core/forms/filtersets.py",
+"id": "symbols:core.forms.filtersets:ConfigRevisionFilterForm"
+},
+{
+"module": "core.forms.mixins",
+"kind": "class",
+"name": "SyncedDataMixin",
+"lineno": 12,
+"bases": "forms.Form",
+"path": "netbox/core/forms/mixins.py",
+"id": "symbols:core.forms.mixins:SyncedDataMixin"
+},
+{
+"module": "core.forms.model_forms",
+"kind": "class",
+"name": "DataSourceForm",
+"lineno": 29,
+"bases": "NetBoxModelForm",
+"path": "netbox/core/forms/model_forms.py",
+"id": "symbols:core.forms.model_forms:DataSourceForm"
+},
+{
+"module": "core.forms.model_forms",
+"kind": "class",
+"name": "ManagedFileForm",
+"lineno": 93,
+"bases": "SyncedDataMixin,NetBoxModelForm",
+"path": "netbox/core/forms/model_forms.py",
+"id": "symbols:core.forms.model_forms:ManagedFileForm"
+},
+{
+"module": "core.forms.model_forms",
+"kind": "class",
+"name": "ConfigFormMetaclass",
+"lineno": 127,
+"bases": "forms.models.ModelFormMetaclass",
+"path": "netbox/core/forms/model_forms.py",
+"id": "symbols:core.forms.model_forms:ConfigFormMetaclass"
+},
+{
+"module": "core.forms.model_forms",
+"kind": "class",
+"name": "ConfigRevisionForm",
+"lineno": 149,
+"bases": "forms.ModelForm",
+"path": "netbox/core/forms/model_forms.py",
+"id": "symbols:core.forms.model_forms:ConfigRevisionForm"
+},
+{
+"module": "core.graphql.filter_mixins",
+"kind": "class",
+"name": "BaseFilterMixin",
+"lineno": 21,
+"bases": "",
+"path": "netbox/core/graphql/filter_mixins.py",
+"id": "symbols:core.graphql.filter_mixins:BaseFilterMixin"
+},
+{
+"module": "core.graphql.filter_mixins",
+"kind": "class",
+"name": "BaseObjectTypeFilterMixin",
+"lineno": 25,
+"bases": "BaseFilterMixin",
+"path": "netbox/core/graphql/filter_mixins.py",
+"id": "symbols:core.graphql.filter_mixins:BaseObjectTypeFilterMixin"
+},
+{
+"module": "core.graphql.filter_mixins",
+"kind": "class",
+"name": "ChangeLogFilterMixin",
+"lineno": 30,
+"bases": "BaseFilterMixin",
+"path": "netbox/core/graphql/filter_mixins.py",
+"id": "symbols:core.graphql.filter_mixins:ChangeLogFilterMixin"
+},
+{
+"module": "core.graphql.filters",
+"kind": "class",
+"name": "DataFileFilter",
+"lineno": 27,
+"bases": "BaseFilterMixin",
+"path": "netbox/core/graphql/filters.py",
+"id": "symbols:core.graphql.filters:DataFileFilter"
+},
+{
+"module": "core.graphql.filters",
+"kind": "class",
+"name": "DataSourceFilter",
+"lineno": 43,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/core/graphql/filters.py",
+"id": "symbols:core.graphql.filters:DataSourceFilter"
+},
+{
+"module": "core.graphql.filters",
+"kind": "class",
+"name": "ObjectChangeFilter",
+"lineno": 60,
+"bases": "BaseFilterMixin",
+"path": "netbox/core/graphql/filters.py",
+"id": "symbols:core.graphql.filters:ObjectChangeFilter"
+},
+{
+"module": "core.graphql.filters",
+"kind": "class",
+"name": "ContentTypeFilter",
+"lineno": 86,
+"bases": "BaseFilterMixin",
+"path": "netbox/core/graphql/filters.py",
+"id": "symbols:core.graphql.filters:ContentTypeFilter"
+},
+{
+"module": "core.graphql.mixins",
+"kind": "class",
+"name": "ChangelogMixin",
+"lineno": 18,
+"bases": "",
+"path": "netbox/core/graphql/mixins.py",
+"id": "symbols:core.graphql.mixins:ChangelogMixin"
+},
+{
+"module": "core.graphql.schema",
+"kind": "class",
+"name": "CoreQuery",
+"lineno": 10,
+"bases": "",
+"path": "netbox/core/graphql/schema.py",
+"id": "symbols:core.graphql.schema:CoreQuery"
+},
+{
+"module": "core.graphql.types",
+"kind": "class",
+"name": "DataFileType",
+"lineno": 25,
+"bases": "BaseObjectType",
+"path": "netbox/core/graphql/types.py",
+"id": "symbols:core.graphql.types:DataFileType"
+},
+{
+"module": "core.graphql.types",
+"kind": "class",
+"name": "DataSourceType",
+"lineno": 35,
+"bases": "NetBoxObjectType",
+"path": "netbox/core/graphql/types.py",
+"id": "symbols:core.graphql.types:DataSourceType"
+},
+{
+"module": "core.graphql.types",
+"kind": "class",
+"name": "ObjectChangeType",
+"lineno": 46,
+"bases": "BaseObjectType",
+"path": "netbox/core/graphql/types.py",
+"id": "symbols:core.graphql.types:ObjectChangeType"
+},
+{
+"module": "core.graphql.types",
+"kind": "class",
+"name": "ContentType",
+"lineno": 55,
+"bases": "",
+"path": "netbox/core/graphql/types.py",
+"id": "symbols:core.graphql.types:ContentType"
+},
+{
+"module": "core.jobs",
+"kind": "class",
+"name": "SyncDataSourceJob",
+"lineno": 16,
+"bases": "JobRunner",
+"path": "netbox/core/jobs.py",
+"id": "symbols:core.jobs:SyncDataSourceJob"
+},
+{
+"module": "core.jobs",
+"kind": "class",
+"name": "SystemHousekeepingJob",
+"lineno": 41,
+"bases": "JobRunner",
+"path": "netbox/core/jobs.py",
+"id": "symbols:core.jobs:SystemHousekeepingJob"
+},
+{
+"module": "core.management.commands.makemigrations",
+"kind": "class",
+"name": "Command",
+"lineno": 6,
+"bases": "_Command",
+"path": "netbox/core/management/commands/makemigrations.py",
+"id": "symbols:core.management.commands.makemigrations:Command"
+},
+{
+"module": "core.management.commands.nbshell",
+"kind": "class",
+"name": "Command",
+"lineno": 29,
+"bases": "BaseCommand",
+"path": "netbox/core/management/commands/nbshell.py",
+"id": "symbols:core.management.commands.nbshell:Command"
+},
+{
+"module": "core.management.commands.rqworker",
+"kind": "class",
+"name": "Command",
+"lineno": 13,
+"bases": "_Command",
+"path": "netbox/core/management/commands/rqworker.py",
+"id": "symbols:core.management.commands.rqworker:Command"
+},
+{
+"module": "core.management.commands.syncdatasource",
+"kind": "class",
+"name": "Command",
+"lineno": 7,
+"bases": "BaseCommand",
+"path": "netbox/core/management/commands/syncdatasource.py",
+"id": "symbols:core.management.commands.syncdatasource:Command"
+},
+{
+"module": "core.migrations.0001_squashed_0005",
+"kind": "class",
+"name": "Migration",
+"lineno": 10,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0001_squashed_0005.py",
+"id": "symbols:core.migrations.0001_squashed_0005:Migration"
+},
+{
+"module": "core.migrations.0006_datasource_type_remove_choices",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0006_datasource_type_remove_choices.py",
+"id": "symbols:core.migrations.0006_datasource_type_remove_choices:Migration"
+},
+{
+"module": "core.migrations.0007_job_add_error_field",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0007_job_add_error_field.py",
+"id": "symbols:core.migrations.0007_job_add_error_field:Migration"
+},
+{
+"module": "core.migrations.0008_contenttype_proxy",
+"kind": "class",
+"name": "Migration",
+"lineno": 5,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0008_contenttype_proxy.py",
+"id": "symbols:core.migrations.0008_contenttype_proxy:Migration"
+},
+{
+"module": "core.migrations.0009_configrevision",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0009_configrevision.py",
+"id": "symbols:core.migrations.0009_configrevision:Migration"
+},
+{
+"module": "core.migrations.0010_gfk_indexes",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0010_gfk_indexes.py",
+"id": "symbols:core.migrations.0010_gfk_indexes:Migration"
+},
+{
+"module": "core.migrations.0011_move_objectchange",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0011_move_objectchange.py",
+"id": "symbols:core.migrations.0011_move_objectchange:Migration"
+},
+{
+"module": "core.migrations.0012_job_object_type_optional",
+"kind": "class",
+"name": "Migration",
+"lineno": 5,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0012_job_object_type_optional.py",
+"id": "symbols:core.migrations.0012_job_object_type_optional:Migration"
+},
+{
+"module": "core.migrations.0013_job_data_encoder",
+"kind": "class",
+"name": "Migration",
+"lineno": 5,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0013_job_data_encoder.py",
+"id": "symbols:core.migrations.0013_job_data_encoder:Migration"
+},
+{
+"module": "core.migrations.0014_datasource_sync_interval",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0014_datasource_sync_interval.py",
+"id": "symbols:core.migrations.0014_datasource_sync_interval:Migration"
+},
+{
+"module": "core.migrations.0015_remove_redundant_indexes",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/core/migrations/0015_remove_redundant_indexes.py",
+"id": "symbols:core.migrations.0015_remove_redundant_indexes:Migration"
+},
+{
+"module": "core.models.change_logging",
+"kind": "class",
+"name": "ObjectChange",
+"lineno": 22,
+"bases": "models.Model",
+"path": "netbox/core/models/change_logging.py",
+"id": "symbols:core.models.change_logging:ObjectChange"
+},
+{
+"module": "core.models.config",
+"kind": "class",
+"name": "ConfigRevision",
+"lineno": 13,
+"bases": "models.Model",
+"path": "netbox/core/models/config.py",
+"id": "symbols:core.models.config:ConfigRevision"
+},
+{
+"module": "core.models.contenttypes",
+"kind": "class",
+"name": "ObjectTypeManager",
+"lineno": 12,
+"bases": "ContentTypeManager",
+"path": "netbox/core/models/contenttypes.py",
+"id": "symbols:core.models.contenttypes:ObjectTypeManager"
+},
+{
+"module": "core.models.contenttypes",
+"kind": "class",
+"name": "ObjectType",
+"lineno": 43,
+"bases": "ContentType",
+"path": "netbox/core/models/contenttypes.py",
+"id": "symbols:core.models.contenttypes:ObjectType"
+},
+{
+"module": "core.models.data",
+"kind": "class",
+"name": "DataSource",
+"lineno": 34,
+"bases": "JobsMixin,PrimaryModel",
+"path": "netbox/core/models/data.py",
+"id": "symbols:core.models.data:DataSource"
+},
+{
+"module": "core.models.data",
+"kind": "class",
+"name": "DataFile",
+"lineno": 263,
+"bases": "models.Model",
+"path": "netbox/core/models/data.py",
+"id": "symbols:core.models.data:DataFile"
+},
+{
+"module": "core.models.data",
+"kind": "class",
+"name": "AutoSyncRecord",
+"lineno": 358,
+"bases": "models.Model",
+"path": "netbox/core/models/data.py",
+"id": "symbols:core.models.data:AutoSyncRecord"
+},
+{
+"module": "core.models.files",
+"kind": "class",
+"name": "ManagedFile",
+"lineno": 24,
+"bases": "SyncedDataMixin,models.Model",
+"path": "netbox/core/models/files.py",
+"id": "symbols:core.models.files:ManagedFile"
+},
+{
+"module": "core.models.jobs",
+"kind": "class",
+"name": "Job",
+"lineno": 27,
+"bases": "models.Model",
+"path": "netbox/core/models/jobs.py",
+"id": "symbols:core.models.jobs:Job"
+},
+{
+"module": "core.plugins",
+"kind": "class",
+"name": "PluginAuthor",
+"lineno": 21,
+"bases": "",
+"path": "netbox/core/plugins.py",
+"id": "symbols:core.plugins:PluginAuthor"
+},
+{
+"module": "core.plugins",
+"kind": "class",
+"name": "PluginVersion",
+"lineno": 31,
+"bases": "",
+"path": "netbox/core/plugins.py",
+"id": "symbols:core.plugins:PluginVersion"
+},
+{
+"module": "core.plugins",
+"kind": "class",
+"name": "Plugin",
+"lineno": 47,
+"bases": "",
+"path": "netbox/core/plugins.py",
+"id": "symbols:core.plugins:Plugin"
+},
+{
+"module": "core.plugins",
+"kind": "function",
+"name": "get_local_plugins",
+"lineno": 76,
+"bases": "",
+"path": "netbox/core/plugins.py",
+"id": "symbols:core.plugins:get_local_plugins"
+},
+{
+"module": "core.plugins",
+"kind": "function",
+"name": "get_catalog_plugins",
+"lineno": 131,
+"bases": "",
+"path": "netbox/core/plugins.py",
+"id": "symbols:core.plugins:get_catalog_plugins"
+},
+{
+"module": "core.querysets",
+"kind": "class",
+"name": "ObjectChangeQuerySet",
+"lineno": 12,
+"bases": "RestrictedQuerySet",
+"path": "netbox/core/querysets.py",
+"id": "symbols:core.querysets:ObjectChangeQuerySet"
+},
+{
+"module": "core.search",
+"kind": "class",
+"name": "DataSourceIndex",
+"lineno": 6,
+"bases": "SearchIndex",
+"path": "netbox/core/search.py",
+"id": "symbols:core.search:DataSourceIndex"
+},
+{
+"module": "core.search",
+"kind": "class",
+"name": "DataFileIndex",
+"lineno": 18,
+"bases": "SearchIndex",
+"path": "netbox/core/search.py",
+"id": "symbols:core.search:DataFileIndex"
+},
+{
+"module": "core.signals",
+"kind": "function",
+"name": "handle_changed_object",
+"lineno": 46,
+"bases": "",
+"path": "netbox/core/signals.py",
+"id": "symbols:core.signals:handle_changed_object"
+},
+{
+"module": "core.signals",
+"kind": "function",
+"name": "handle_deleted_object",
+"lineno": 112,
+"bases": "",
+"path": "netbox/core/signals.py",
+"id": "symbols:core.signals:handle_deleted_object"
+},
+{
+"module": "core.signals",
+"kind": "function",
+"name": "clear_events_queue",
+"lineno": 183,
+"bases": "",
+"path": "netbox/core/signals.py",
+"id": "symbols:core.signals:clear_events_queue"
+},
+{
+"module": "core.signals",
+"kind": "function",
+"name": "enqueue_sync_job",
+"lineno": 197,
+"bases": "",
+"path": "netbox/core/signals.py",
+"id": "symbols:core.signals:enqueue_sync_job"
+},
+{
+"module": "core.signals",
+"kind": "function",
+"name": "auto_sync",
+"lineno": 216,
+"bases": "",
+"path": "netbox/core/signals.py",
+"id": "symbols:core.signals:auto_sync"
+},
+{
+"module": "core.signals",
+"kind": "function",
+"name": "update_config",
+"lineno": 227,
+"bases": "",
+"path": "netbox/core/signals.py",
+"id": "symbols:core.signals:update_config"
+},
+{
+"module": "core.tables.change_logging",
+"kind": "class",
+"name": "ObjectChangeTable",
+"lineno": 13,
+"bases": "NetBoxTable",
+"path": "netbox/core/tables/change_logging.py",
+"id": "symbols:core.tables.change_logging:ObjectChangeTable"
+},
+{
+"module": "core.tables.columns",
+"kind": "class",
+"name": "BackendTypeColumn",
+"lineno": 13,
+"bases": "tables.Column",
+"path": "netbox/core/tables/columns.py",
+"id": "symbols:core.tables.columns:BackendTypeColumn"
+},
+{
+"module": "core.tables.columns",
+"kind": "class",
+"name": "RQJobStatusColumn",
+"lineno": 26,
+"bases": "tables.Column",
+"path": "netbox/core/tables/columns.py",
+"id": "symbols:core.tables.columns:RQJobStatusColumn"
+},
+{
+"module": "core.tables.config",
+"kind": "class",
+"name": "ConfigRevisionTable",
+"lineno": 19,
+"bases": "NetBoxTable",
+"path": "netbox/core/tables/config.py",
+"id": "symbols:core.tables.config:ConfigRevisionTable"
+},
+{
+"module": "core.tables.data",
+"kind": "class",
+"name": "DataSourceTable",
+"lineno": 14,
+"bases": "NetBoxTable",
+"path": "netbox/core/tables/data.py",
+"id": "symbols:core.tables.data:DataSourceTable"
+},
+{
+"module": "core.tables.data",
+"kind": "class",
+"name": "DataFileTable",
+"lineno": 50,
+"bases": "NetBoxTable",
+"path": "netbox/core/tables/data.py",
+"id": "symbols:core.tables.data:DataFileTable"
+},
+{
+"module": "core.tables.jobs",
+"kind": "class",
+"name": "JobTable",
+"lineno": 8,
+"bases": "NetBoxTable",
+"path": "netbox/core/tables/jobs.py",
+"id": "symbols:core.tables.jobs:JobTable"
+},
+{
+"module": "core.tables.plugins",
+"kind": "class",
+"name": "PluginVersionTable",
+"lineno": 21,
+"bases": "BaseTable",
+"path": "netbox/core/tables/plugins.py",
+"id": "symbols:core.tables.plugins:PluginVersionTable"
+},
+{
+"module": "core.tables.plugins",
+"kind": "class",
+"name": "CatalogPluginTable",
+"lineno": 50,
+"bases": "BaseTable",
+"path": "netbox/core/tables/plugins.py",
+"id": "symbols:core.tables.plugins:CatalogPluginTable"
+},
+{
+"module": "core.tables.tasks",
+"kind": "class",
+"name": "BackgroundQueueTable",
+"lineno": 9,
+"bases": "BaseTable",
+"path": "netbox/core/tables/tasks.py",
+"id": "symbols:core.tables.tasks:BackgroundQueueTable"
+},
+{
+"module": "core.tables.tasks",
+"kind": "class",
+"name": "BackgroundTaskTable",
+"lineno": 73,
+"bases": "BaseTable",
+"path": "netbox/core/tables/tasks.py",
+"id": "symbols:core.tables.tasks:BackgroundTaskTable"
+},
+{
+"module": "core.tables.tasks",
+"kind": "class",
+"name": "WorkerTable",
+"lineno": 112,
+"bases": "BaseTable",
+"path": "netbox/core/tables/tasks.py",
+"id": "symbols:core.tables.tasks:WorkerTable"
+},
+{
+"module": "core.tests.test_api",
+"kind": "class",
+"name": "AppTest",
+"lineno": 16,
+"bases": "APITestCase",
+"path": "netbox/core/tests/test_api.py",
+"id": "symbols:core.tests.test_api:AppTest"
+},
+{
+"module": "core.tests.test_api",
+"kind": "class",
+"name": "DataSourceTest",
+"lineno": 25,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/core/tests/test_api.py",
+"id": "symbols:core.tests.test_api:DataSourceTest"
+},
+{
+"module": "core.tests.test_api",
+"kind": "class",
+"name": "DataFileTest",
+"lineno": 61,
+"bases": "APIViewTestCases.GetObjectViewTestCase,APIViewTestCases.ListObjectsViewTestCase,APIViewTestCases.GraphQLTestCase",
+"path": "netbox/core/tests/test_api.py",
+"id": "symbols:core.tests.test_api:DataFileTest"
+},
+{
+"module": "core.tests.test_api",
+"kind": "class",
+"name": "BackgroundTaskTestCase",
+"lineno": 104,
+"bases": "TestCase",
+"path": "netbox/core/tests/test_api.py",
+"id": "symbols:core.tests.test_api:BackgroundTaskTestCase"
+},
+{
+"module": "core.tests.test_changelog",
+"kind": "class",
+"name": "ChangeLogViewTest",
+"lineno": 18,
+"bases": "ModelViewTestCase",
+"path": "netbox/core/tests/test_changelog.py",
+"id": "symbols:core.tests.test_changelog:ChangeLogViewTest"
+},
+{
+"module": "core.tests.test_changelog",
+"kind": "class",
+"name": "ChangeLogAPITest",
+"lineno": 350,
+"bases": "APITestCase",
+"path": "netbox/core/tests/test_changelog.py",
+"id": "symbols:core.tests.test_changelog:ChangeLogAPITest"
+},
+{
+"module": "core.tests.test_filtersets",
+"kind": "class",
+"name": "DataSourceTestCase",
+"lineno": 16,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "symbols:core.tests.test_filtersets:DataSourceTestCase"
+},
+{
+"module": "core.tests.test_filtersets",
+"kind": "class",
+"name": "DataFileTestCase",
+"lineno": 84,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "symbols:core.tests.test_filtersets:DataFileTestCase"
+},
+{
+"module": "core.tests.test_filtersets",
+"kind": "class",
+"name": "ObjectChangeTestCase",
+"lineno": 150,
+"bases": "TestCase,BaseFilterSetTests",
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "symbols:core.tests.test_filtersets:ObjectChangeTestCase"
+},
+{
+"module": "core.tests.test_models",
+"kind": "class",
+"name": "DataSourceChangeLoggingTestCase",
+"lineno": 8,
+"bases": "TestCase",
+"path": "netbox/core/tests/test_models.py",
+"id": "symbols:core.tests.test_models:DataSourceChangeLoggingTestCase"
+},
+{
+"module": "core.tests.test_views",
+"kind": "class",
+"name": "DataSourceTestCase",
+"lineno": 20,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/core/tests/test_views.py",
+"id": "symbols:core.tests.test_views:DataSourceTestCase"
+},
+{
+"module": "core.tests.test_views",
+"kind": "class",
+"name": "DataFileTestCase",
+"lineno": 63,
+"bases": "ViewTestCases.GetObjectViewTestCase,ViewTestCases.DeleteObjectViewTestCase,ViewTestCases.ListObjectsViewTestCase,ViewTestCases.BulkDeleteObjectsViewTestCase",
+"path": "netbox/core/tests/test_views.py",
+"id": "symbols:core.tests.test_views:DataFileTestCase"
+},
+{
+"module": "core.tests.test_views",
+"kind": "class",
+"name": "ObjectChangeTestCase",
+"lineno": 106,
+"bases": "TestCase",
+"path": "netbox/core/tests/test_views.py",
+"id": "symbols:core.tests.test_views:ObjectChangeTestCase"
+},
+{
+"module": "core.tests.test_views",
+"kind": "class",
+"name": "BackgroundTaskTestCase",
+"lineno": 142,
+"bases": "TestCase",
+"path": "netbox/core/tests/test_views.py",
+"id": "symbols:core.tests.test_views:BackgroundTaskTestCase"
+},
+{
+"module": "core.tests.test_views",
+"kind": "class",
+"name": "SystemTestCase",
+"lineno": 353,
+"bases": "TestCase",
+"path": "netbox/core/tests/test_views.py",
+"id": "symbols:core.tests.test_views:SystemTestCase"
+},
+{
+"module": "core.utils",
+"kind": "function",
+"name": "get_rq_jobs",
+"lineno": 27,
+"bases": "",
+"path": "netbox/core/utils.py",
+"id": "symbols:core.utils:get_rq_jobs"
+},
+{
+"module": "core.utils",
+"kind": "function",
+"name": "get_rq_jobs_from_status",
+"lineno": 40,
+"bases": "",
+"path": "netbox/core/utils.py",
+"id": "symbols:core.utils:get_rq_jobs_from_status"
+},
+{
+"module": "core.utils",
+"kind": "function",
+"name": "delete_rq_job",
+"lineno": 76,
+"bases": "",
+"path": "netbox/core/utils.py",
+"id": "symbols:core.utils:delete_rq_job"
+},
+{
+"module": "core.utils",
+"kind": "function",
+"name": "requeue_rq_job",
+"lineno": 94,
+"bases": "",
+"path": "netbox/core/utils.py",
+"id": "symbols:core.utils:requeue_rq_job"
+},
+{
+"module": "core.utils",
+"kind": "function",
+"name": "enqueue_rq_job",
+"lineno": 110,
+"bases": "",
+"path": "netbox/core/utils.py",
+"id": "symbols:core.utils:enqueue_rq_job"
+},
+{
+"module": "core.utils",
+"kind": "function",
+"name": "stop_rq_job",
+"lineno": 142,
+"bases": "",
+"path": "netbox/core/utils.py",
+"id": "symbols:core.utils:stop_rq_job"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceListView",
+"lineno": 48,
+"bases": "generic.ObjectListView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceView",
+"lineno": 58,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceSyncView",
+"lineno": 68,
+"bases": "BaseObjectView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceSyncView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceEditView",
+"lineno": 96,
+"bases": "generic.ObjectEditView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceEditView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceDeleteView",
+"lineno": 102,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceBulkImportView",
+"lineno": 107,
+"bases": "generic.BulkImportView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceBulkImportView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceBulkEditView",
+"lineno": 113,
+"bases": "generic.BulkEditView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceBulkEditView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataSourceBulkDeleteView",
+"lineno": 123,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataSourceBulkDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataFileListView",
+"lineno": 136,
+"bases": "generic.ObjectListView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataFileListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataFileView",
+"lineno": 147,
+"bases": "generic.ObjectView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataFileView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataFileDeleteView",
+"lineno": 152,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataFileDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "DataFileBulkDeleteView",
+"lineno": 157,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:DataFileBulkDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "JobListView",
+"lineno": 168,
+"bases": "generic.ObjectListView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:JobListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "JobView",
+"lineno": 180,
+"bases": "generic.ObjectView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:JobView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "JobDeleteView",
+"lineno": 185,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:JobDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "JobBulkDeleteView",
+"lineno": 190,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:JobBulkDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ObjectChangeListView",
+"lineno": 201,
+"bases": "generic.ObjectListView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ObjectChangeListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ObjectChangeView",
+"lineno": 213,
+"bases": "generic.ObjectView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ObjectChangeView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ConfigRevisionListView",
+"lineno": 272,
+"bases": "generic.ObjectListView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ConfigRevisionListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ConfigRevisionView",
+"lineno": 280,
+"bases": "generic.ObjectView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ConfigRevisionView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ConfigRevisionEditView",
+"lineno": 285,
+"bases": "generic.ObjectEditView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ConfigRevisionEditView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ConfigRevisionDeleteView",
+"lineno": 291,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ConfigRevisionDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ConfigRevisionBulkDeleteView",
+"lineno": 296,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ConfigRevisionBulkDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "ConfigRevisionRestoreView",
+"lineno": 303,
+"bases": "ContentTypePermissionRequiredMixin,View",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:ConfigRevisionRestoreView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BaseRQView",
+"lineno": 343,
+"bases": "UserPassesTestMixin,View",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BaseRQView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BackgroundQueueListView",
+"lineno": 349,
+"bases": "TableMixin,BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BackgroundQueueListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BackgroundTaskListView",
+"lineno": 361,
+"bases": "TableMixin,BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BackgroundTaskListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BackgroundTaskView",
+"lineno": 390,
+"bases": "BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BackgroundTaskView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BackgroundTaskDeleteView",
+"lineno": 417,
+"bases": "BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BackgroundTaskDeleteView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BackgroundTaskRequeueView",
+"lineno": 444,
+"bases": "BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BackgroundTaskRequeueView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BackgroundTaskEnqueueView",
+"lineno": 452,
+"bases": "BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BackgroundTaskEnqueueView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BackgroundTaskStopView",
+"lineno": 461,
+"bases": "BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BackgroundTaskStopView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "WorkerListView",
+"lineno": 473,
+"bases": "TableMixin,BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:WorkerListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "WorkerView",
+"lineno": 506,
+"bases": "BaseRQView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:WorkerView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "SystemView",
+"lineno": 526,
+"bases": "UserPassesTestMixin,View",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:SystemView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "BasePluginView",
+"lineno": 589,
+"bases": "UserPassesTestMixin,View",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:BasePluginView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "PluginListView",
+"lineno": 608,
+"bases": "BasePluginView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:PluginListView"
+},
+{
+"module": "core.views",
+"kind": "class",
+"name": "PluginView",
+"lineno": 633,
+"bases": "BasePluginView",
+"path": "netbox/core/views.py",
+"id": "symbols:core.views:PluginView"
+}
+],
+"imports_out": [
+{
+"src": "core.api.schema",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 13,
+"path": "netbox/core/api/schema.py",
+"id": "imports:core.api.schema->netbox.api.fields"
+},
+{
+"src": "core.api.schema",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 14,
+"path": "netbox/core/api/schema.py",
+"id": "imports:core.api.schema->netbox.api.serializers"
+},
+{
+"src": "core.api.serializers",
+"dst": "core.api.serializers_.change_logging",
+"raw": "core.api.serializers_.change_logging",
+"lineno": 1,
+"path": "netbox/core/api/serializers.py",
+"id": "imports:core.api.serializers->core.api.serializers_.change_logging"
+},
+{
+"src": "core.api.serializers",
+"dst": "core.api.serializers_.data",
+"raw": "core.api.serializers_.data",
+"lineno": 2,
+"path": "netbox/core/api/serializers.py",
+"id": "imports:core.api.serializers->core.api.serializers_.data"
+},
+{
+"src": "core.api.serializers",
+"dst": "core.api.serializers_.jobs",
+"raw": "core.api.serializers_.jobs",
+"lineno": 3,
+"path": "netbox/core/api/serializers.py",
+"id": "imports:core.api.serializers->core.api.serializers_.jobs"
+},
+{
+"src": "core.api.serializers",
+"dst": "core.api.serializers_.tasks",
+"raw": "core.api.serializers_.tasks",
+"lineno": 4,
+"path": "netbox/core/api/serializers.py",
+"id": "imports:core.api.serializers->core.api.serializers_.tasks"
+},
+{
+"src": "core.api.serializers_.change_logging",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 4,
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "imports:core.api.serializers_.change_logging->core.choices"
+},
+{
+"src": "core.api.serializers_.change_logging",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "imports:core.api.serializers_.change_logging->core.models"
+},
+{
+"src": "core.api.serializers_.change_logging",
+"dst": "netbox.api.exceptions",
+"raw": "netbox.api.exceptions",
+"lineno": 6,
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "imports:core.api.serializers_.change_logging->netbox.api.exceptions"
+},
+{
+"src": "core.api.serializers_.change_logging",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 7,
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "imports:core.api.serializers_.change_logging->netbox.api.fields"
+},
+{
+"src": "core.api.serializers_.change_logging",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 8,
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "imports:core.api.serializers_.change_logging->netbox.api.serializers"
+},
+{
+"src": "core.api.serializers_.change_logging",
+"dst": "users.api.serializers_.users",
+"raw": "users.api.serializers_.users",
+"lineno": 9,
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "imports:core.api.serializers_.change_logging->users.api.serializers_.users"
+},
+{
+"src": "core.api.serializers_.change_logging",
+"dst": "utilities.api",
+"raw": "utilities.api",
+"lineno": 10,
+"path": "netbox/core/api/serializers_/change_logging.py",
+"id": "imports:core.api.serializers_.change_logging->utilities.api"
+},
+{
+"src": "core.api.serializers_.data",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 1,
+"path": "netbox/core/api/serializers_/data.py",
+"id": "imports:core.api.serializers_.data->core.choices"
+},
+{
+"src": "core.api.serializers_.data",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 2,
+"path": "netbox/core/api/serializers_/data.py",
+"id": "imports:core.api.serializers_.data->core.models"
+},
+{
+"src": "core.api.serializers_.data",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 3,
+"path": "netbox/core/api/serializers_/data.py",
+"id": "imports:core.api.serializers_.data->netbox.api.fields"
+},
+{
+"src": "core.api.serializers_.data",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 4,
+"path": "netbox/core/api/serializers_/data.py",
+"id": "imports:core.api.serializers_.data->netbox.api.serializers"
+},
+{
+"src": "core.api.serializers_.data",
+"dst": "netbox.utils",
+"raw": "netbox.utils",
+"lineno": 5,
+"path": "netbox/core/api/serializers_/data.py",
+"id": "imports:core.api.serializers_.data->netbox.utils"
+},
+{
+"src": "core.api.serializers_.jobs",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 1,
+"path": "netbox/core/api/serializers_/jobs.py",
+"id": "imports:core.api.serializers_.jobs->core.choices"
+},
+{
+"src": "core.api.serializers_.jobs",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 2,
+"path": "netbox/core/api/serializers_/jobs.py",
+"id": "imports:core.api.serializers_.jobs->core.models"
+},
+{
+"src": "core.api.serializers_.jobs",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 3,
+"path": "netbox/core/api/serializers_/jobs.py",
+"id": "imports:core.api.serializers_.jobs->netbox.api.fields"
+},
+{
+"src": "core.api.serializers_.jobs",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 4,
+"path": "netbox/core/api/serializers_/jobs.py",
+"id": "imports:core.api.serializers_.jobs->netbox.api.serializers"
+},
+{
+"src": "core.api.serializers_.jobs",
+"dst": "users.api.serializers_.users",
+"raw": "users.api.serializers_.users",
+"lineno": 5,
+"path": "netbox/core/api/serializers_/jobs.py",
+"id": "imports:core.api.serializers_.jobs->users.api.serializers_.users"
+},
+{
+"src": "core.api.urls",
+"dst": "core.api",
+"raw": "core.api",
+"lineno": 2,
+"path": "netbox/core/api/urls.py",
+"id": "imports:core.api.urls->core.api"
+},
+{
+"src": "core.api.urls",
+"dst": "netbox.api.routers",
+"raw": "netbox.api.routers",
+"lineno": 1,
+"path": "netbox/core/api/urls.py",
+"id": "imports:core.api.urls->netbox.api.routers"
+},
+{
+"src": "core.api.views",
+"dst": "core",
+"raw": "core",
+"lineno": 12,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->core"
+},
+{
+"src": "core.api.views",
+"dst": "core.api",
+"raw": "core.api",
+"lineno": 27,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->core.api"
+},
+{
+"src": "core.api.views",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 13,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->core.choices"
+},
+{
+"src": "core.api.views",
+"dst": "core.jobs",
+"raw": "core.jobs",
+"lineno": 14,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->core.jobs"
+},
+{
+"src": "core.api.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 15,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->core.models"
+},
+{
+"src": "core.api.views",
+"dst": "core.utils",
+"raw": "core.utils",
+"lineno": 16,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->core.utils"
+},
+{
+"src": "core.api.views",
+"dst": "netbox.api.metadata",
+"raw": "netbox.api.metadata",
+"lineno": 20,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->netbox.api.metadata"
+},
+{
+"src": "core.api.views",
+"dst": "netbox.api.pagination",
+"raw": "netbox.api.pagination",
+"lineno": 21,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->netbox.api.pagination"
+},
+{
+"src": "core.api.views",
+"dst": "netbox.api.viewsets",
+"raw": "netbox.api.viewsets",
+"lineno": 22,
+"path": "netbox/core/api/views.py",
+"id": "imports:core.api.views->netbox.api.viewsets"
+},
+{
+"src": "core.apps",
+"dst": "core",
+"raw": "core",
+"lineno": 27,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->core"
+},
+{
+"src": "core.apps",
+"dst": "core.api",
+"raw": "core.api",
+"lineno": 24,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->core.api"
+},
+{
+"src": "core.apps",
+"dst": "core.checks",
+"raw": "core.checks",
+"lineno": 25,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->core.checks"
+},
+{
+"src": "core.apps",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 8,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->core.events"
+},
+{
+"src": "core.apps",
+"dst": "netbox",
+"raw": "netbox",
+"lineno": 28,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->netbox"
+},
+{
+"src": "core.apps",
+"dst": "netbox.events",
+"raw": "netbox.events",
+"lineno": 9,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->netbox.events"
+},
+{
+"src": "core.apps",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 26,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->netbox.models.features"
+},
+{
+"src": "core.apps",
+"dst": "utilities.migration",
+"raw": "utilities.migration",
+"lineno": 10,
+"path": "netbox/core/apps.py",
+"id": "imports:core.apps->utilities.migration"
+},
+{
+"src": "core.choices",
+"dst": "utilities.choices",
+"raw": "utilities.choices",
+"lineno": 3,
+"path": "netbox/core/choices.py",
+"id": "imports:core.choices->utilities.choices"
+},
+{
+"src": "core.data_backends",
+"dst": "core.exceptions",
+"raw": "core.exceptions",
+"lineno": 18,
+"path": "netbox/core/data_backends.py",
+"id": "imports:core.data_backends->core.exceptions"
+},
+{
+"src": "core.data_backends",
+"dst": "netbox.data_backends",
+"raw": "netbox.data_backends",
+"lineno": 13,
+"path": "netbox/core/data_backends.py",
+"id": "imports:core.data_backends->netbox.data_backends"
+},
+{
+"src": "core.data_backends",
+"dst": "netbox.utils",
+"raw": "netbox.utils",
+"lineno": 14,
+"path": "netbox/core/data_backends.py",
+"id": "imports:core.data_backends->netbox.utils"
+},
+{
+"src": "core.data_backends",
+"dst": "utilities.constants",
+"raw": "utilities.constants",
+"lineno": 15,
+"path": "netbox/core/data_backends.py",
+"id": "imports:core.data_backends->utilities.constants"
+},
+{
+"src": "core.data_backends",
+"dst": "utilities.proxy",
+"raw": "utilities.proxy",
+"lineno": 16,
+"path": "netbox/core/data_backends.py",
+"id": "imports:core.data_backends->utilities.proxy"
+},
+{
+"src": "core.data_backends",
+"dst": "utilities.socks",
+"raw": "utilities.socks",
+"lineno": 17,
+"path": "netbox/core/data_backends.py",
+"id": "imports:core.data_backends->utilities.socks"
+},
+{
+"src": "core.filtersets",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 11,
+"path": "netbox/core/filtersets.py",
+"id": "imports:core.filtersets->core.choices"
+},
+{
+"src": "core.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 12,
+"path": "netbox/core/filtersets.py",
+"id": "imports:core.filtersets->core.models"
+},
+{
+"src": "core.filtersets",
+"dst": "netbox.filtersets",
+"raw": "netbox.filtersets",
+"lineno": 7,
+"path": "netbox/core/filtersets.py",
+"id": "imports:core.filtersets->netbox.filtersets"
+},
+{
+"src": "core.filtersets",
+"dst": "netbox.utils",
+"raw": "netbox.utils",
+"lineno": 8,
+"path": "netbox/core/filtersets.py",
+"id": "imports:core.filtersets->netbox.utils"
+},
+{
+"src": "core.filtersets",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 9,
+"path": "netbox/core/filtersets.py",
+"id": "imports:core.filtersets->users.models"
+},
+{
+"src": "core.filtersets",
+"dst": "utilities.filters",
+"raw": "utilities.filters",
+"lineno": 10,
+"path": "netbox/core/filtersets.py",
+"id": "imports:core.filtersets->utilities.filters"
+},
+{
+"src": "core.forms",
+"dst": "core.forms.bulk_edit",
+"raw": "core.forms.bulk_edit",
+"lineno": 1,
+"path": "netbox/core/forms/__init__.py",
+"id": "imports:core.forms->core.forms.bulk_edit"
+},
+{
+"src": "core.forms",
+"dst": "core.forms.bulk_import",
+"raw": "core.forms.bulk_import",
+"lineno": 2,
+"path": "netbox/core/forms/__init__.py",
+"id": "imports:core.forms->core.forms.bulk_import"
+},
+{
+"src": "core.forms",
+"dst": "core.forms.filtersets",
+"raw": "core.forms.filtersets",
+"lineno": 3,
+"path": "netbox/core/forms/__init__.py",
+"id": "imports:core.forms->core.forms.filtersets"
+},
+{
+"src": "core.forms",
+"dst": "core.forms.model_forms",
+"raw": "core.forms.model_forms",
+"lineno": 4,
+"path": "netbox/core/forms/__init__.py",
+"id": "imports:core.forms->core.forms.model_forms"
+},
+{
+"src": "core.forms.bulk_edit",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 4,
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "imports:core.forms.bulk_edit->core.choices"
+},
+{
+"src": "core.forms.bulk_edit",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "imports:core.forms.bulk_edit->core.models"
+},
+{
+"src": "core.forms.bulk_edit",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 6,
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "imports:core.forms.bulk_edit->netbox.forms"
+},
+{
+"src": "core.forms.bulk_edit",
+"dst": "netbox.utils",
+"raw": "netbox.utils",
+"lineno": 7,
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "imports:core.forms.bulk_edit->netbox.utils"
+},
+{
+"src": "core.forms.bulk_edit",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 8,
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "imports:core.forms.bulk_edit->utilities.forms.fields"
+},
+{
+"src": "core.forms.bulk_edit",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 9,
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "imports:core.forms.bulk_edit->utilities.forms.rendering"
+},
+{
+"src": "core.forms.bulk_edit",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 10,
+"path": "netbox/core/forms/bulk_edit.py",
+"id": "imports:core.forms.bulk_edit->utilities.forms.widgets"
+},
+{
+"src": "core.forms.bulk_import",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 1,
+"path": "netbox/core/forms/bulk_import.py",
+"id": "imports:core.forms.bulk_import->core.models"
+},
+{
+"src": "core.forms.bulk_import",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 2,
+"path": "netbox/core/forms/bulk_import.py",
+"id": "imports:core.forms.bulk_import->netbox.forms"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 4,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->core.choices"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->core.models"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 6,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->netbox.forms"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "netbox.forms.mixins",
+"raw": "netbox.forms.mixins",
+"lineno": 7,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->netbox.forms.mixins"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "netbox.utils",
+"raw": "netbox.utils",
+"lineno": 8,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->netbox.utils"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 9,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->users.models"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 10,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->utilities.forms"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 11,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->utilities.forms.fields"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 14,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->utilities.forms.rendering"
+},
+{
+"src": "core.forms.filtersets",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 15,
+"path": "netbox/core/forms/filtersets.py",
+"id": "imports:core.forms.filtersets->utilities.forms.widgets"
+},
+{
+"src": "core.forms.mixins",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/core/forms/mixins.py",
+"id": "imports:core.forms.mixins->core.models"
+},
+{
+"src": "core.forms.mixins",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 5,
+"path": "netbox/core/forms/mixins.py",
+"id": "imports:core.forms.mixins->utilities.forms.fields"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "core.forms.mixins",
+"raw": "core.forms.mixins",
+"lineno": 9,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->core.forms.mixins"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->core.models"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "netbox.config",
+"raw": "netbox.config",
+"lineno": 11,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->netbox.config"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 12,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->netbox.forms"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "netbox.registry",
+"raw": "netbox.registry",
+"lineno": 13,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->netbox.registry"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "netbox.utils",
+"raw": "netbox.utils",
+"lineno": 14,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->netbox.utils"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 15,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->utilities.forms"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 16,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->utilities.forms.fields"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 17,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->utilities.forms.rendering"
+},
+{
+"src": "core.forms.model_forms",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 18,
+"path": "netbox/core/forms/model_forms.py",
+"id": "imports:core.forms.model_forms->utilities.forms.widgets"
+},
+{
+"src": "core.graphql.filter_mixins",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 11,
+"path": "netbox/core/graphql/filter_mixins.py",
+"id": "imports:core.graphql.filter_mixins->core.graphql.filters"
+},
+{
+"src": "core.graphql.filters",
+"dst": "core",
+"raw": "core",
+"lineno": 10,
+"path": "netbox/core/graphql/filters.py",
+"id": "imports:core.graphql.filters->core"
+},
+{
+"src": "core.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 11,
+"path": "netbox/core/graphql/filters.py",
+"id": "imports:core.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "core.graphql.filters",
+"dst": "netbox.graphql.filter_lookups",
+"raw": "netbox.graphql.filter_lookups",
+"lineno": 15,
+"path": "netbox/core/graphql/filters.py",
+"id": "imports:core.graphql.filters->netbox.graphql.filter_lookups"
+},
+{
+"src": "core.graphql.filters",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 12,
+"path": "netbox/core/graphql/filters.py",
+"id": "imports:core.graphql.filters->netbox.graphql.filter_mixins"
+},
+{
+"src": "core.graphql.filters",
+"dst": "users.graphql.filters",
+"raw": "users.graphql.filters",
+"lineno": 16,
+"path": "netbox/core/graphql/filters.py",
+"id": "imports:core.graphql.filters->users.graphql.filters"
+},
+{
+"src": "core.graphql.mixins",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/core/graphql/mixins.py",
+"id": "imports:core.graphql.mixins->core.models"
+},
+{
+"src": "core.graphql.mixins",
+"dst": "netbox",
+"raw": "netbox.core.graphql.types",
+"lineno": 10,
+"path": "netbox/core/graphql/mixins.py",
+"id": "imports:core.graphql.mixins->netbox"
+},
+{
+"src": "core.graphql.schema",
+"dst": "core.graphql.types",
+"raw": "core.graphql.types",
+"lineno": 6,
+"path": "netbox/core/graphql/schema.py",
+"id": "imports:core.graphql.schema->core.graphql.types"
+},
+{
+"src": "core.graphql.types",
+"dst": "core",
+"raw": "core",
+"lineno": 7,
+"path": "netbox/core/graphql/types.py",
+"id": "imports:core.graphql.types->core"
+},
+{
+"src": "core.graphql.types",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 9,
+"path": "netbox/core/graphql/types.py",
+"id": "imports:core.graphql.types->core.graphql.filters"
+},
+{
+"src": "core.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 8,
+"path": "netbox/core/graphql/types.py",
+"id": "imports:core.graphql.types->netbox.graphql.types"
+},
+{
+"src": "core.jobs",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 9,
+"path": "netbox/core/jobs.py",
+"id": "imports:core.jobs->core.choices"
+},
+{
+"src": "core.jobs",
+"dst": "core.exceptions",
+"raw": "core.exceptions",
+"lineno": 10,
+"path": "netbox/core/jobs.py",
+"id": "imports:core.jobs->core.exceptions"
+},
+{
+"src": "core.jobs",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 11,
+"path": "netbox/core/jobs.py",
+"id": "imports:core.jobs->core.models"
+},
+{
+"src": "core.jobs",
+"dst": "netbox.jobs",
+"raw": "netbox.jobs",
+"lineno": 6,
+"path": "netbox/core/jobs.py",
+"id": "imports:core.jobs->netbox.jobs"
+},
+{
+"src": "core.jobs",
+"dst": "netbox.search.backends",
+"raw": "netbox.search.backends",
+"lineno": 7,
+"path": "netbox/core/jobs.py",
+"id": "imports:core.jobs->netbox.search.backends"
+},
+{
+"src": "core.jobs",
+"dst": "utilities.proxy",
+"raw": "utilities.proxy",
+"lineno": 8,
+"path": "netbox/core/jobs.py",
+"id": "imports:core.jobs->utilities.proxy"
+},
+{
+"src": "core.management.commands.nbshell",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/core/management/commands/nbshell.py",
+"id": "imports:core.management.commands.nbshell->core.models"
+},
+{
+"src": "core.management.commands.nbshell",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 11,
+"path": "netbox/core/management/commands/nbshell.py",
+"id": "imports:core.management.commands.nbshell->users.models"
+},
+{
+"src": "core.management.commands.rqworker",
+"dst": "netbox.registry",
+"raw": "netbox.registry",
+"lineno": 5,
+"path": "netbox/core/management/commands/rqworker.py",
+"id": "imports:core.management.commands.rqworker->netbox.registry"
+},
+{
+"src": "core.management.commands.syncdatasource",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 3,
+"path": "netbox/core/management/commands/syncdatasource.py",
+"id": "imports:core.management.commands.syncdatasource->core.choices"
+},
+{
+"src": "core.management.commands.syncdatasource",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/core/management/commands/syncdatasource.py",
+"id": "imports:core.management.commands.syncdatasource->core.models"
+},
+{
+"src": "core.migrations.0001_squashed_0005",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 7,
+"path": "netbox/core/migrations/0001_squashed_0005.py",
+"id": "imports:core.migrations.0001_squashed_0005->utilities.json"
+},
+{
+"src": "core.migrations.0008_contenttype_proxy",
+"dst": "core.models.contenttypes",
+"raw": "core.models.contenttypes",
+"lineno": 1,
+"path": "netbox/core/migrations/0008_contenttype_proxy.py",
+"id": "imports:core.migrations.0008_contenttype_proxy->core.models.contenttypes"
+},
+{
+"src": "core.models",
+"dst": "core.models.change_logging",
+"raw": "core.models.change_logging",
+"lineno": 2,
+"path": "netbox/core/models/__init__.py",
+"id": "imports:core.models->core.models.change_logging"
+},
+{
+"src": "core.models",
+"dst": "core.models.config",
+"raw": "core.models.config",
+"lineno": 3,
+"path": "netbox/core/models/__init__.py",
+"id": "imports:core.models->core.models.config"
+},
+{
+"src": "core.models",
+"dst": "core.models.contenttypes",
+"raw": "core.models.contenttypes",
+"lineno": 1,
+"path": "netbox/core/models/__init__.py",
+"id": "imports:core.models->core.models.contenttypes"
+},
+{
+"src": "core.models",
+"dst": "core.models.data",
+"raw": "core.models.data",
+"lineno": 4,
+"path": "netbox/core/models/__init__.py",
+"id": "imports:core.models->core.models.data"
+},
+{
+"src": "core.models",
+"dst": "core.models.files",
+"raw": "core.models.files",
+"lineno": 5,
+"path": "netbox/core/models/__init__.py",
+"id": "imports:core.models->core.models.files"
+},
+{
+"src": "core.models",
+"dst": "core.models.jobs",
+"raw": "core.models.jobs",
+"lineno": 6,
+"path": "netbox/core/models/__init__.py",
+"id": "imports:core.models->core.models.jobs"
+},
+{
+"src": "core.models.change_logging",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 11,
+"path": "netbox/core/models/change_logging.py",
+"id": "imports:core.models.change_logging->core.choices"
+},
+{
+"src": "core.models.change_logging",
+"dst": "core.models.contenttypes",
+"raw": "core.models.contenttypes",
+"lineno": 15,
+"path": "netbox/core/models/change_logging.py",
+"id": "imports:core.models.change_logging->core.models.contenttypes"
+},
+{
+"src": "core.models.change_logging",
+"dst": "core.querysets",
+"raw": "core.querysets",
+"lineno": 12,
+"path": "netbox/core/models/change_logging.py",
+"id": "imports:core.models.change_logging->core.querysets"
+},
+{
+"src": "core.models.change_logging",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 13,
+"path": "netbox/core/models/change_logging.py",
+"id": "imports:core.models.change_logging->netbox.models.features"
+},
+{
+"src": "core.models.change_logging",
+"dst": "utilities.data",
+"raw": "utilities.data",
+"lineno": 14,
+"path": "netbox/core/models/change_logging.py",
+"id": "imports:core.models.change_logging->utilities.data"
+},
+{
+"src": "core.models.config",
+"dst": "utilities.querysets",
+"raw": "utilities.querysets",
+"lineno": 6,
+"path": "netbox/core/models/config.py",
+"id": "imports:core.models.config->utilities.querysets"
+},
+{
+"src": "core.models.contenttypes",
+"dst": "netbox.registry",
+"raw": "netbox.registry",
+"lineno": 4,
+"path": "netbox/core/models/contenttypes.py",
+"id": "imports:core.models.contenttypes->netbox.registry"
+},
+{
+"src": "core.models.data",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 22,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->core.choices"
+},
+{
+"src": "core.models.data",
+"dst": "core.exceptions",
+"raw": "core.exceptions",
+"lineno": 23,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->core.exceptions"
+},
+{
+"src": "core.models.data",
+"dst": "core.signals",
+"raw": "core.signals",
+"lineno": 164,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->core.signals"
+},
+{
+"src": "core.models.data",
+"dst": "netbox.constants",
+"raw": "netbox.constants",
+"lineno": 17,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->netbox.constants"
+},
+{
+"src": "core.models.data",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 18,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->netbox.models"
+},
+{
+"src": "core.models.data",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 19,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->netbox.models.features"
+},
+{
+"src": "core.models.data",
+"dst": "netbox.registry",
+"raw": "netbox.registry",
+"lineno": 20,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->netbox.registry"
+},
+{
+"src": "core.models.data",
+"dst": "utilities.querysets",
+"raw": "utilities.querysets",
+"lineno": 21,
+"path": "netbox/core/models/data.py",
+"id": "imports:core.models.data->utilities.querysets"
+},
+{
+"src": "core.models.files",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 12,
+"path": "netbox/core/models/files.py",
+"id": "imports:core.models.files->core.choices"
+},
+{
+"src": "core.models.files",
+"dst": "extras.storage",
+"raw": "extras.storage",
+"lineno": 13,
+"path": "netbox/core/models/files.py",
+"id": "imports:core.models.files->extras.storage"
+},
+{
+"src": "core.models.files",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 14,
+"path": "netbox/core/models/files.py",
+"id": "imports:core.models.files->netbox.models.features"
+},
+{
+"src": "core.models.files",
+"dst": "utilities.querysets",
+"raw": "utilities.querysets",
+"lineno": 15,
+"path": "netbox/core/models/files.py",
+"id": "imports:core.models.files->utilities.querysets"
+},
+{
+"src": "core.models.jobs",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 16,
+"path": "netbox/core/models/jobs.py",
+"id": "imports:core.models.jobs->core.choices"
+},
+{
+"src": "core.models.jobs",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 17,
+"path": "netbox/core/models/jobs.py",
+"id": "imports:core.models.jobs->core.models"
+},
+{
+"src": "core.models.jobs",
+"dst": "core.signals",
+"raw": "core.signals",
+"lineno": 18,
+"path": "netbox/core/models/jobs.py",
+"id": "imports:core.models.jobs->core.signals"
+},
+{
+"src": "core.models.jobs",
+"dst": "utilities.querysets",
+"raw": "utilities.querysets",
+"lineno": 19,
+"path": "netbox/core/models/jobs.py",
+"id": "imports:core.models.jobs->utilities.querysets"
+},
+{
+"src": "core.models.jobs",
+"dst": "utilities.rqworker",
+"raw": "utilities.rqworker",
+"lineno": 20,
+"path": "netbox/core/models/jobs.py",
+"id": "imports:core.models.jobs->utilities.rqworker"
+},
+{
+"src": "core.plugins",
+"dst": "netbox.plugins",
+"raw": "netbox.plugins",
+"lineno": 11,
+"path": "netbox/core/plugins.py",
+"id": "imports:core.plugins->netbox.plugins"
+},
+{
+"src": "core.plugins",
+"dst": "netbox.registry",
+"raw": "netbox.registry",
+"lineno": 12,
+"path": "netbox/core/plugins.py",
+"id": "imports:core.plugins->netbox.registry"
+},
+{
+"src": "core.plugins",
+"dst": "utilities.datetime",
+"raw": "utilities.datetime",
+"lineno": 13,
+"path": "netbox/core/plugins.py",
+"id": "imports:core.plugins->utilities.datetime"
+},
+{
+"src": "core.plugins",
+"dst": "utilities.proxy",
+"raw": "utilities.proxy",
+"lineno": 14,
+"path": "netbox/core/plugins.py",
+"id": "imports:core.plugins->utilities.proxy"
+},
+{
+"src": "core.querysets",
+"dst": "utilities.querysets",
+"raw": "utilities.querysets",
+"lineno": 5,
+"path": "netbox/core/querysets.py",
+"id": "imports:core.querysets->utilities.querysets"
+},
+{
+"src": "core.search",
+"dst": "core",
+"raw": "core",
+"lineno": 2,
+"path": "netbox/core/search.py",
+"id": "imports:core.search->core"
+},
+{
+"src": "core.search",
+"dst": "netbox.search",
+"raw": "netbox.search",
+"lineno": 1,
+"path": "netbox/core/search.py",
+"id": "imports:core.search->netbox.search"
+},
+{
+"src": "core.signals",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 11,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->core.choices"
+},
+{
+"src": "core.signals",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 12,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->core.events"
+},
+{
+"src": "core.signals",
+"dst": "core.jobs",
+"raw": "core.jobs",
+"lineno": 201,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->core.jobs"
+},
+{
+"src": "core.signals",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 19,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->core.models"
+},
+{
+"src": "core.signals",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 220,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->core.models"
+},
+{
+"src": "core.signals",
+"dst": "extras.events",
+"raw": "extras.events",
+"lineno": 13,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->extras.events"
+},
+{
+"src": "core.signals",
+"dst": "extras.utils",
+"raw": "extras.utils",
+"lineno": 14,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->extras.utils"
+},
+{
+"src": "core.signals",
+"dst": "netbox.config",
+"raw": "netbox.config",
+"lineno": 15,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->netbox.config"
+},
+{
+"src": "core.signals",
+"dst": "netbox.context",
+"raw": "netbox.context",
+"lineno": 16,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->netbox.context"
+},
+{
+"src": "core.signals",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 17,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->netbox.models.features"
+},
+{
+"src": "core.signals",
+"dst": "utilities.exceptions",
+"raw": "utilities.exceptions",
+"lineno": 18,
+"path": "netbox/core/signals.py",
+"id": "imports:core.signals->utilities.exceptions"
+},
+{
+"src": "core.tables",
+"dst": "core.tables.change_logging",
+"raw": "core.tables.change_logging",
+"lineno": 1,
+"path": "netbox/core/tables/__init__.py",
+"id": "imports:core.tables->core.tables.change_logging"
+},
+{
+"src": "core.tables",
+"dst": "core.tables.config",
+"raw": "core.tables.config",
+"lineno": 2,
+"path": "netbox/core/tables/__init__.py",
+"id": "imports:core.tables->core.tables.config"
+},
+{
+"src": "core.tables",
+"dst": "core.tables.data",
+"raw": "core.tables.data",
+"lineno": 3,
+"path": "netbox/core/tables/__init__.py",
+"id": "imports:core.tables->core.tables.data"
+},
+{
+"src": "core.tables",
+"dst": "core.tables.jobs",
+"raw": "core.tables.jobs",
+"lineno": 4,
+"path": "netbox/core/tables/__init__.py",
+"id": "imports:core.tables->core.tables.jobs"
+},
+{
+"src": "core.tables",
+"dst": "core.tables.plugins",
+"raw": "core.tables.plugins",
+"lineno": 6,
+"path": "netbox/core/tables/__init__.py",
+"id": "imports:core.tables->core.tables.plugins"
+},
+{
+"src": "core.tables",
+"dst": "core.tables.tasks",
+"raw": "core.tables.tasks",
+"lineno": 5,
+"path": "netbox/core/tables/__init__.py",
+"id": "imports:core.tables->core.tables.tasks"
+},
+{
+"src": "core.tables.change_logging",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/core/tables/change_logging.py",
+"id": "imports:core.tables.change_logging->core.models"
+},
+{
+"src": "core.tables.change_logging",
+"dst": "core.tables.template_code",
+"raw": "core.tables.template_code",
+"lineno": 6,
+"path": "netbox/core/tables/change_logging.py",
+"id": "imports:core.tables.change_logging->core.tables.template_code"
+},
+{
+"src": "core.tables.change_logging",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 5,
+"path": "netbox/core/tables/change_logging.py",
+"id": "imports:core.tables.change_logging->netbox.tables"
+},
+{
+"src": "core.tables.columns",
+"dst": "core.constants",
+"raw": "core.constants",
+"lineno": 4,
+"path": "netbox/core/tables/columns.py",
+"id": "imports:core.tables.columns->core.constants"
+},
+{
+"src": "core.tables.columns",
+"dst": "netbox.registry",
+"raw": "netbox.registry",
+"lineno": 5,
+"path": "netbox/core/tables/columns.py",
+"id": "imports:core.tables.columns->netbox.registry"
+},
+{
+"src": "core.tables.config",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/core/tables/config.py",
+"id": "imports:core.tables.config->core.models"
+},
+{
+"src": "core.tables.config",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 4,
+"path": "netbox/core/tables/config.py",
+"id": "imports:core.tables.config->netbox.tables"
+},
+{
+"src": "core.tables.data",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/core/tables/data.py",
+"id": "imports:core.tables.data->core.models"
+},
+{
+"src": "core.tables.data",
+"dst": "core.tables.columns",
+"raw": "core.tables.columns",
+"lineno": 6,
+"path": "netbox/core/tables/data.py",
+"id": "imports:core.tables.data->core.tables.columns"
+},
+{
+"src": "core.tables.data",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 5,
+"path": "netbox/core/tables/data.py",
+"id": "imports:core.tables.data->netbox.tables"
+},
+{
+"src": "core.tables.jobs",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/core/tables/jobs.py",
+"id": "imports:core.tables.jobs->core.models"
+},
+{
+"src": "core.tables.jobs",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 4,
+"path": "netbox/core/tables/jobs.py",
+"id": "imports:core.tables.jobs->netbox.tables"
+},
+{
+"src": "core.tables.plugins",
+"dst": "core.tables.template_code",
+"raw": "core.tables.template_code",
+"lineno": 7,
+"path": "netbox/core/tables/plugins.py",
+"id": "imports:core.tables.plugins->core.tables.template_code"
+},
+{
+"src": "core.tables.plugins",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 6,
+"path": "netbox/core/tables/plugins.py",
+"id": "imports:core.tables.plugins->netbox.tables"
+},
+{
+"src": "core.tables.tasks",
+"dst": "core.tables.columns",
+"raw": "core.tables.columns",
+"lineno": 5,
+"path": "netbox/core/tables/tasks.py",
+"id": "imports:core.tables.tasks->core.tables.columns"
+},
+{
+"src": "core.tables.tasks",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 6,
+"path": "netbox/core/tables/tasks.py",
+"id": "imports:core.tables.tasks->netbox.tables"
+},
+{
+"src": "core.tests.test_api",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 13,
+"path": "netbox/core/tests/test_api.py",
+"id": "imports:core.tests.test_api->core.models"
+},
+{
+"src": "core.tests.test_api",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 10,
+"path": "netbox/core/tests/test_api.py",
+"id": "imports:core.tests.test_api->users.models"
+},
+{
+"src": "core.tests.test_api",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 11,
+"path": "netbox/core/tests/test_api.py",
+"id": "imports:core.tests.test_api->utilities.testing"
+},
+{
+"src": "core.tests.test_api",
+"dst": "utilities.testing.utils",
+"raw": "utilities.testing.utils",
+"lineno": 12,
+"path": "netbox/core/tests/test_api.py",
+"id": "imports:core.tests.test_api->utilities.testing.utils"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 6,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->core.choices"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->core.models"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 8,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->dcim.choices"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 9,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->dcim.models"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 15,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->dcim.models"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "extras.choices",
+"raw": "extras.choices",
+"lineno": 10,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->extras.choices"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "extras.models",
+"raw": "extras.models",
+"lineno": 11,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->extras.models"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 12,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->utilities.testing"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "utilities.testing.utils",
+"raw": "utilities.testing.utils",
+"lineno": 13,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->utilities.testing.utils"
+},
+{
+"src": "core.tests.test_changelog",
+"dst": "utilities.testing.views",
+"raw": "utilities.testing.views",
+"lineno": 14,
+"path": "netbox/core/tests/test_changelog.py",
+"id": "imports:core.tests.test_changelog->utilities.testing.views"
+},
+{
+"src": "core.tests.test_filtersets",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 11,
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "imports:core.tests.test_filtersets->core.choices"
+},
+{
+"src": "core.tests.test_filtersets",
+"dst": "core.filtersets",
+"raw": "core.filtersets",
+"lineno": 12,
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "imports:core.tests.test_filtersets->core.filtersets"
+},
+{
+"src": "core.tests.test_filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 13,
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "imports:core.tests.test_filtersets->core.models"
+},
+{
+"src": "core.tests.test_filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 7,
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "imports:core.tests.test_filtersets->dcim.models"
+},
+{
+"src": "core.tests.test_filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 8,
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "imports:core.tests.test_filtersets->ipam.models"
+},
+{
+"src": "core.tests.test_filtersets",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 9,
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "imports:core.tests.test_filtersets->users.models"
+},
+{
+"src": "core.tests.test_filtersets",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 10,
+"path": "netbox/core/tests/test_filtersets.py",
+"id": "imports:core.tests.test_filtersets->utilities.testing"
+},
+{
+"src": "core.tests.test_models",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 4,
+"path": "netbox/core/tests/test_models.py",
+"id": "imports:core.tests.test_models->core.choices"
+},
+{
+"src": "core.tests.test_models",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/core/tests/test_models.py",
+"id": "imports:core.tests.test_models->core.models"
+},
+{
+"src": "core.tests.test_models",
+"dst": "netbox.constants",
+"raw": "netbox.constants",
+"lineno": 5,
+"path": "netbox/core/tests/test_models.py",
+"id": "imports:core.tests.test_models->netbox.constants"
+},
+{
+"src": "core.tests.test_views",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 13,
+"path": "netbox/core/tests/test_views.py",
+"id": "imports:core.tests.test_views->core.choices"
+},
+{
+"src": "core.tests.test_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 14,
+"path": "netbox/core/tests/test_views.py",
+"id": "imports:core.tests.test_views->core.models"
+},
+{
+"src": "core.tests.test_views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 15,
+"path": "netbox/core/tests/test_views.py",
+"id": "imports:core.tests.test_views->dcim.models"
+},
+{
+"src": "core.tests.test_views",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 16,
+"path": "netbox/core/tests/test_views.py",
+"id": "imports:core.tests.test_views->users.models"
+},
+{
+"src": "core.tests.test_views",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 17,
+"path": "netbox/core/tests/test_views.py",
+"id": "imports:core.tests.test_views->utilities.testing"
+},
+{
+"src": "core.urls",
+"dst": "core",
+"raw": "core",
+"lineno": 4,
+"path": "netbox/core/urls.py",
+"id": "imports:core.urls->core"
+},
+{
+"src": "core.urls",
+"dst": "utilities.urls",
+"raw": "utilities.urls",
+"lineno": 3,
+"path": "netbox/core/urls.py",
+"id": "imports:core.urls->utilities.urls"
+},
+{
+"src": "core.views",
+"dst": "core",
+"raw": "core",
+"lineno": 35,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->core"
+},
+{
+"src": "core.views",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 36,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->core.choices"
+},
+{
+"src": "core.views",
+"dst": "core.jobs",
+"raw": "core.jobs",
+"lineno": 37,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->core.jobs"
+},
+{
+"src": "core.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 38,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->core.models"
+},
+{
+"src": "core.views",
+"dst": "core.plugins",
+"raw": "core.plugins",
+"lineno": 39,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->core.plugins"
+},
+{
+"src": "core.views",
+"dst": "core.tables",
+"raw": "core.tables",
+"lineno": 40,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->core.tables"
+},
+{
+"src": "core.views",
+"dst": "core.utils",
+"raw": "core.utils",
+"lineno": 23,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->core.utils"
+},
+{
+"src": "core.views",
+"dst": "netbox.config",
+"raw": "netbox.config",
+"lineno": 24,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->netbox.config"
+},
+{
+"src": "core.views",
+"dst": "netbox.registry",
+"raw": "netbox.registry",
+"lineno": 25,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->netbox.registry"
+},
+{
+"src": "core.views",
+"dst": "netbox.views",
+"raw": "netbox.views",
+"lineno": 26,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->netbox.views"
+},
+{
+"src": "core.views",
+"dst": "netbox.views.generic.base",
+"raw": "netbox.views.generic.base",
+"lineno": 27,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->netbox.views.generic.base"
+},
+{
+"src": "core.views",
+"dst": "netbox.views.generic.mixins",
+"raw": "netbox.views.generic.mixins",
+"lineno": 28,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->netbox.views.generic.mixins"
+},
+{
+"src": "core.views",
+"dst": "utilities.data",
+"raw": "utilities.data",
+"lineno": 29,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->utilities.data"
+},
+{
+"src": "core.views",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 30,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->utilities.forms"
+},
+{
+"src": "core.views",
+"dst": "utilities.htmx",
+"raw": "utilities.htmx",
+"lineno": 31,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->utilities.htmx"
+},
+{
+"src": "core.views",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 32,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->utilities.json"
+},
+{
+"src": "core.views",
+"dst": "utilities.query",
+"raw": "utilities.query",
+"lineno": 33,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->utilities.query"
+},
+{
+"src": "core.views",
+"dst": "utilities.views",
+"raw": "utilities.views",
+"lineno": 34,
+"path": "netbox/core/views.py",
+"id": "imports:core.views->utilities.views"
+}
+],
+"imports_in": [
+{
+"src": "account.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 22,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->core.models"
+},
+{
+"src": "account.views",
+"dst": "core.tables",
+"raw": "core.tables",
+"lineno": 23,
+"path": "netbox/account/views.py",
+"id": "imports:account.views->core.tables"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 23,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->core.graphql.filters"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 9,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->core.models"
+},
+{
+"src": "dcim.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 9,
+"path": "netbox/dcim/graphql/filter_mixins.py",
+"id": "imports:dcim.graphql.filter_mixins->core.graphql.filter_mixins"
+},
+{
+"src": "dcim.graphql.filter_mixins",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 10,
+"path": "netbox/dcim/graphql/filter_mixins.py",
+"id": "imports:dcim.graphql.filter_mixins->core.graphql.filters"
+},
+{
+"src": "dcim.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/dcim/graphql/filters.py",
+"id": "imports:dcim.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "dcim.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 31,
+"path": "netbox/dcim/graphql/filters.py",
+"id": "imports:dcim.graphql.filters->core.graphql.filters"
+},
+{
+"src": "dcim.graphql.types",
+"dst": "core.graphql.mixins",
+"raw": "core.graphql.mixins",
+"lineno": 6,
+"path": "netbox/dcim/graphql/types.py",
+"id": "imports:dcim.graphql.types->core.graphql.mixins"
+},
+{
+"src": "dcim.models.cables",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 9,
+"path": "netbox/dcim/models/cables.py",
+"id": "imports:dcim.models.cables->core.models"
+},
+{
+"src": "dcim.models.devices",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 18,
+"path": "netbox/dcim/models/devices.py",
+"id": "imports:dcim.models.devices->core.models"
+},
+{
+"src": "dcim.tests.test_models",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/dcim/tests/test_models.py",
+"id": "imports:dcim.tests.test_models->core.models"
+},
+{
+"src": "extras.api.customfields",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/extras/api/customfields.py",
+"id": "imports:extras.api.customfields->core.models"
+},
+{
+"src": "extras.api.serializers_.attachments",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/extras/api/serializers_/attachments.py",
+"id": "imports:extras.api.serializers_.attachments->core.models"
+},
+{
+"src": "extras.api.serializers_.bookmarks",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/extras/api/serializers_/bookmarks.py",
+"id": "imports:extras.api.serializers_.bookmarks->core.models"
+},
+{
+"src": "extras.api.serializers_.configcontexts",
+"dst": "core.api.serializers_.data",
+"raw": "core.api.serializers_.data",
+"lineno": 3,
+"path": "netbox/extras/api/serializers_/configcontexts.py",
+"id": "imports:extras.api.serializers_.configcontexts->core.api.serializers_.data"
+},
+{
+"src": "extras.api.serializers_.configtemplates",
+"dst": "core.api.serializers_.data",
+"raw": "core.api.serializers_.data",
+"lineno": 1,
+"path": "netbox/extras/api/serializers_/configtemplates.py",
+"id": "imports:extras.api.serializers_.configtemplates->core.api.serializers_.data"
+},
+{
+"src": "extras.api.serializers_.customfields",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/extras/api/serializers_/customfields.py",
+"id": "imports:extras.api.serializers_.customfields->core.models"
+},
+{
+"src": "extras.api.serializers_.customlinks",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 1,
+"path": "netbox/extras/api/serializers_/customlinks.py",
+"id": "imports:extras.api.serializers_.customlinks->core.models"
+},
+{
+"src": "extras.api.serializers_.events",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/extras/api/serializers_/events.py",
+"id": "imports:extras.api.serializers_.events->core.models"
+},
+{
+"src": "extras.api.serializers_.exporttemplates",
+"dst": "core.api.serializers_.data",
+"raw": "core.api.serializers_.data",
+"lineno": 1,
+"path": "netbox/extras/api/serializers_/exporttemplates.py",
+"id": "imports:extras.api.serializers_.exporttemplates->core.api.serializers_.data"
+},
+{
+"src": "extras.api.serializers_.exporttemplates",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 2,
+"path": "netbox/extras/api/serializers_/exporttemplates.py",
+"id": "imports:extras.api.serializers_.exporttemplates->core.models"
+},
+{
+"src": "extras.api.serializers_.journaling",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/extras/api/serializers_/journaling.py",
+"id": "imports:extras.api.serializers_.journaling->core.models"
+},
+{
+"src": "extras.api.serializers_.notifications",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/extras/api/serializers_/notifications.py",
+"id": "imports:extras.api.serializers_.notifications->core.models"
+},
+{
+"src": "extras.api.serializers_.objecttypes",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/extras/api/serializers_/objecttypes.py",
+"id": "imports:extras.api.serializers_.objecttypes->core.models"
+},
+{
+"src": "extras.api.serializers_.savedfilters",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 1,
+"path": "netbox/extras/api/serializers_/savedfilters.py",
+"id": "imports:extras.api.serializers_.savedfilters->core.models"
+},
+{
+"src": "extras.api.serializers_.scripts",
+"dst": "core.api.serializers_.jobs",
+"raw": "core.api.serializers_.jobs",
+"lineno": 5,
+"path": "netbox/extras/api/serializers_/scripts.py",
+"id": "imports:extras.api.serializers_.scripts->core.api.serializers_.jobs"
+},
+{
+"src": "extras.api.serializers_.tableconfigs",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 1,
+"path": "netbox/extras/api/serializers_/tableconfigs.py",
+"id": "imports:extras.api.serializers_.tableconfigs->core.models"
+},
+{
+"src": "extras.api.serializers_.tags",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/extras/api/serializers_/tags.py",
+"id": "imports:extras.api.serializers_.tags->core.models"
+},
+{
+"src": "extras.api.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 16,
+"path": "netbox/extras/api/views.py",
+"id": "imports:extras.api.views->core.models"
+},
+{
+"src": "extras.constants",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 1,
+"path": "netbox/extras/constants.py",
+"id": "imports:extras.constants->core.events"
+},
+{
+"src": "extras.dashboard.widgets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 17,
+"path": "netbox/extras/dashboard/widgets.py",
+"id": "imports:extras.dashboard.widgets->core.models"
+},
+{
+"src": "extras.events",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 11,
+"path": "netbox/extras/events.py",
+"id": "imports:extras.events->core.events"
+},
+{
+"src": "extras.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/extras/filtersets.py",
+"id": "imports:extras.filtersets->core.models"
+},
+{
+"src": "extras.forms.bulk_import",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/extras/forms/bulk_import.py",
+"id": "imports:extras.forms.bulk_import->core.models"
+},
+{
+"src": "extras.forms.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/extras/forms/filtersets.py",
+"id": "imports:extras.forms.filtersets->core.models"
+},
+{
+"src": "extras.forms.model_forms",
+"dst": "core.forms.mixins",
+"raw": "core.forms.mixins",
+"lineno": 9,
+"path": "netbox/extras/forms/model_forms.py",
+"id": "imports:extras.forms.model_forms->core.forms.mixins"
+},
+{
+"src": "extras.forms.model_forms",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/extras/forms/model_forms.py",
+"id": "imports:extras.forms.model_forms->core.models"
+},
+{
+"src": "extras.forms.reports",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 4,
+"path": "netbox/extras/forms/reports.py",
+"id": "imports:extras.forms.reports->core.choices"
+},
+{
+"src": "extras.forms.scripts",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 1,
+"path": "netbox/extras/forms/scripts.py",
+"id": "imports:extras.forms.scripts->core.choices"
+},
+{
+"src": "extras.forms.scripts",
+"dst": "core.forms",
+"raw": "core.forms",
+"lineno": 2,
+"path": "netbox/extras/forms/scripts.py",
+"id": "imports:extras.forms.scripts->core.forms"
+},
+{
+"src": "extras.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/extras/graphql/filter_mixins.py",
+"id": "imports:extras.graphql.filter_mixins->core.graphql.filter_mixins"
+},
+{
+"src": "extras.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/extras/graphql/filters.py",
+"id": "imports:extras.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "extras.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 14,
+"path": "netbox/extras/graphql/filters.py",
+"id": "imports:extras.graphql.filters->core.graphql.filters"
+},
+{
+"src": "extras.graphql.types",
+"dst": "core.graphql.types",
+"raw": "core.graphql.types",
+"lineno": 12,
+"path": "netbox/extras/graphql/types.py",
+"id": "imports:extras.graphql.types->core.graphql.types"
+},
+{
+"src": "extras.jobs",
+"dst": "core.signals",
+"raw": "core.signals",
+"lineno": 8,
+"path": "netbox/extras/jobs.py",
+"id": "imports:extras.jobs->core.signals"
+},
+{
+"src": "extras.management.commands.housekeeping",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 11,
+"path": "netbox/extras/management/commands/housekeeping.py",
+"id": "imports:extras.management.commands.housekeeping->core.models"
+},
+{
+"src": "extras.migrations.0120_eventrule_event_types",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 4,
+"path": "netbox/extras/migrations/0120_eventrule_event_types.py",
+"id": "imports:extras.migrations.0120_eventrule_event_types->core.events"
+},
+{
+"src": "extras.models.customfields",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 19,
+"path": "netbox/extras/models/customfields.py",
+"id": "imports:extras.models.customfields->core.models"
+},
+{
+"src": "extras.models.models",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 14,
+"path": "netbox/extras/models/models.py",
+"id": "imports:extras.models.models->core.models"
+},
+{
+"src": "extras.models.notifications",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/extras/models/notifications.py",
+"id": "imports:extras.models.notifications->core.models"
+},
+{
+"src": "extras.models.scripts",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 13,
+"path": "netbox/extras/models/scripts.py",
+"id": "imports:extras.models.scripts->core.choices"
+},
+{
+"src": "extras.models.scripts",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 14,
+"path": "netbox/extras/models/scripts.py",
+"id": "imports:extras.models.scripts->core.models"
+},
+{
+"src": "extras.signals",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 5,
+"path": "netbox/extras/signals.py",
+"id": "imports:extras.signals->core.events"
+},
+{
+"src": "extras.signals",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/extras/signals.py",
+"id": "imports:extras.signals->core.models"
+},
+{
+"src": "extras.signals",
+"dst": "core.signals",
+"raw": "core.signals",
+"lineno": 7,
+"path": "netbox/extras/signals.py",
+"id": "imports:extras.signals->core.signals"
+},
+{
+"src": "extras.tables.tables",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 9,
+"path": "netbox/extras/tables/tables.py",
+"id": "imports:extras.tables.tables->core.models"
+},
+{
+"src": "extras.tables.tables",
+"dst": "core.tables",
+"raw": "core.tables",
+"lineno": 8,
+"path": "netbox/extras/tables/tables.py",
+"id": "imports:extras.tables.tables->core.tables"
+},
+{
+"src": "extras.templatetags.custom_links",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/extras/templatetags/custom_links.py",
+"id": "imports:extras.templatetags.custom_links->core.models"
+},
+{
+"src": "extras.tests.test_api",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 8,
+"path": "netbox/extras/tests/test_api.py",
+"id": "imports:extras.tests.test_api->core.choices"
+},
+{
+"src": "extras.tests.test_api",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 9,
+"path": "netbox/extras/tests/test_api.py",
+"id": "imports:extras.tests.test_api->core.events"
+},
+{
+"src": "extras.tests.test_api",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/extras/tests/test_api.py",
+"id": "imports:extras.tests.test_api->core.models"
+},
+{
+"src": "extras.tests.test_conditions",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 4,
+"path": "netbox/extras/tests/test_conditions.py",
+"id": "imports:extras.tests.test_conditions->core.events"
+},
+{
+"src": "extras.tests.test_customfields",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/extras/tests/test_customfields.py",
+"id": "imports:extras.tests.test_customfields->core.models"
+},
+{
+"src": "extras.tests.test_event_rules",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 12,
+"path": "netbox/extras/tests/test_event_rules.py",
+"id": "imports:extras.tests.test_event_rules->core.events"
+},
+{
+"src": "extras.tests.test_event_rules",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 13,
+"path": "netbox/extras/tests/test_event_rules.py",
+"id": "imports:extras.tests.test_event_rules->core.models"
+},
+{
+"src": "extras.tests.test_filtersets",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 8,
+"path": "netbox/extras/tests/test_filtersets.py",
+"id": "imports:extras.tests.test_filtersets->core.choices"
+},
+{
+"src": "extras.tests.test_filtersets",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 9,
+"path": "netbox/extras/tests/test_filtersets.py",
+"id": "imports:extras.tests.test_filtersets->core.events"
+},
+{
+"src": "extras.tests.test_filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/extras/tests/test_filtersets.py",
+"id": "imports:extras.tests.test_filtersets->core.models"
+},
+{
+"src": "extras.tests.test_forms",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/extras/tests/test_forms.py",
+"id": "imports:extras.tests.test_forms->core.models"
+},
+{
+"src": "extras.tests.test_models",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/extras/tests/test_models.py",
+"id": "imports:extras.tests.test_models->core.models"
+},
+{
+"src": "extras.tests.test_views",
+"dst": "core.events",
+"raw": "core.events",
+"lineno": 4,
+"path": "netbox/extras/tests/test_views.py",
+"id": "imports:extras.tests.test_views->core.events"
+},
+{
+"src": "extras.tests.test_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/extras/tests/test_views.py",
+"id": "imports:extras.tests.test_views->core.models"
+},
+{
+"src": "extras.views",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 15,
+"path": "netbox/extras/views.py",
+"id": "imports:extras.views->core.choices"
+},
+{
+"src": "extras.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 16,
+"path": "netbox/extras/views.py",
+"id": "imports:extras.views->core.models"
+},
+{
+"src": "ipam.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 7,
+"path": "netbox/ipam/graphql/filter_mixins.py",
+"id": "imports:ipam.graphql.filter_mixins->core.graphql.filter_mixins"
+},
+{
+"src": "ipam.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 12,
+"path": "netbox/ipam/graphql/filters.py",
+"id": "imports:ipam.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "ipam.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 24,
+"path": "netbox/ipam/graphql/filters.py",
+"id": "imports:ipam.graphql.filters->core.graphql.filters"
+},
+{
+"src": "ipam.models.ip",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/ipam/models/ip.py",
+"id": "imports:ipam.models.ip->core.models"
+},
+{
+"src": "ipam.tests.test_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/ipam/tests/test_views.py",
+"id": "imports:ipam.tests.test_views->core.models"
+},
+{
+"src": "netbox.api.serializers.generic",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/netbox/api/serializers/generic.py",
+"id": "imports:netbox.api.serializers.generic->core.models"
+},
+{
+"src": "netbox.api.viewsets.mixins",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/netbox/api/viewsets/mixins.py",
+"id": "imports:netbox.api.viewsets.mixins->core.models"
+},
+{
+"src": "netbox.config",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 78,
+"path": "netbox/netbox/config/__init__.py",
+"id": "imports:netbox.config->core.models"
+},
+{
+"src": "netbox.filtersets",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 12,
+"path": "netbox/netbox/filtersets.py",
+"id": "imports:netbox.filtersets->core.choices"
+},
+{
+"src": "netbox.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 13,
+"path": "netbox/netbox/filtersets.py",
+"id": "imports:netbox.filtersets->core.models"
+},
+{
+"src": "netbox.forms.base",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/netbox/forms/base.py",
+"id": "imports:netbox.forms.base->core.models"
+},
+{
+"src": "netbox.forms.mixins",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/netbox/forms/mixins.py",
+"id": "imports:netbox.forms.mixins->core.models"
+},
+{
+"src": "netbox.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/netbox/graphql/filter_mixins.py",
+"id": "imports:netbox.graphql.filter_mixins->core.graphql.filter_mixins"
+},
+{
+"src": "netbox.graphql.filter_mixins",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 29,
+"path": "netbox/netbox/graphql/filter_mixins.py",
+"id": "imports:netbox.graphql.filter_mixins->core.graphql.filters"
+},
+{
+"src": "netbox.graphql.schema",
+"dst": "core.graphql.schema",
+"raw": "core.graphql.schema",
+"lineno": 8,
+"path": "netbox/netbox/graphql/schema.py",
+"id": "imports:netbox.graphql.schema->core.graphql.schema"
+},
+{
+"src": "netbox.graphql.types",
+"dst": "core.graphql.mixins",
+"raw": "core.graphql.mixins",
+"lineno": 5,
+"path": "netbox/netbox/graphql/types.py",
+"id": "imports:netbox.graphql.types->core.graphql.mixins"
+},
+{
+"src": "netbox.graphql.types",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/netbox/graphql/types.py",
+"id": "imports:netbox.graphql.types->core.models"
+},
+{
+"src": "netbox.jobs",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 10,
+"path": "netbox/netbox/jobs.py",
+"id": "imports:netbox.jobs->core.choices"
+},
+{
+"src": "netbox.jobs",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 11,
+"path": "netbox/netbox/jobs.py",
+"id": "imports:netbox.jobs->core.models"
+},
+{
+"src": "netbox.models.features",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 13,
+"path": "netbox/netbox/models/features.py",
+"id": "imports:netbox.models.features->core.choices"
+},
+{
+"src": "netbox.models.features",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 14,
+"path": "netbox/netbox/models/features.py",
+"id": "imports:netbox.models.features->core.models"
+},
+{
+"src": "netbox.models.features",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 97,
+"path": "netbox/netbox/models/features.py",
+"id": "imports:netbox.models.features->core.models"
+},
+{
+"src": "netbox.models.features",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 544,
+"path": "netbox/netbox/models/features.py",
+"id": "imports:netbox.models.features->core.models"
+},
+{
+"src": "netbox.models.features",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 566,
+"path": "netbox/netbox/models/features.py",
+"id": "imports:netbox.models.features->core.models"
+},
+{
+"src": "netbox.models.features",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 583,
+"path": "netbox/netbox/models/features.py",
+"id": "imports:netbox.models.features->core.models"
+},
+{
+"src": "netbox.plugins",
+"dst": "core.exceptions",
+"raw": "core.exceptions",
+"lineno": 9,
+"path": "netbox/netbox/plugins/__init__.py",
+"id": "imports:netbox.plugins->core.exceptions"
+},
+{
+"src": "netbox.search.backends",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 15,
+"path": "netbox/netbox/search/backends.py",
+"id": "imports:netbox.search.backends->core.models"
+},
+{
+"src": "netbox.settings",
+"dst": "core.exceptions",
+"raw": "core.exceptions",
+"lineno": 15,
+"path": "netbox/netbox/settings.py",
+"id": "imports:netbox.settings->core.exceptions"
+},
+{
+"src": "netbox.tables.tables",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 17,
+"path": "netbox/netbox/tables/tables.py",
+"id": "imports:netbox.tables.tables->core.models"
+},
+{
+"src": "netbox.tests.dummy_plugin.jobs",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 1,
+"path": "netbox/netbox/tests/dummy_plugin/jobs.py",
+"id": "imports:netbox.tests.dummy_plugin.jobs->core.choices"
+},
+{
+"src": "netbox.tests.test_authentication",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 9,
+"path": "netbox/netbox/tests/test_authentication.py",
+"id": "imports:netbox.tests.test_authentication->core.models"
+},
+{
+"src": "netbox.tests.test_config",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/netbox/tests/test_config.py",
+"id": "imports:netbox.tests.test_config->core.models"
+},
+{
+"src": "netbox.tests.test_graphql",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/netbox/tests/test_graphql.py",
+"id": "imports:netbox.tests.test_graphql->core.models"
+},
+{
+"src": "netbox.tests.test_import",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/netbox/tests/test_import.py",
+"id": "imports:netbox.tests.test_import->core.models"
+},
+{
+"src": "netbox.tests.test_jobs",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 9,
+"path": "netbox/netbox/tests/test_jobs.py",
+"id": "imports:netbox.tests.test_jobs->core.choices"
+},
+{
+"src": "netbox.tests.test_jobs",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/netbox/tests/test_jobs.py",
+"id": "imports:netbox.tests.test_jobs->core.models"
+},
+{
+"src": "netbox.tests.test_models",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/netbox/tests/test_models.py",
+"id": "imports:netbox.tests.test_models->core.models"
+},
+{
+"src": "netbox.tests.test_plugins",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 8,
+"path": "netbox/netbox/tests/test_plugins.py",
+"id": "imports:netbox.tests.test_plugins->core.choices"
+},
+{
+"src": "netbox.views.generic.bulk_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 21,
+"path": "netbox/netbox/views/generic/bulk_views.py",
+"id": "imports:netbox.views.generic.bulk_views->core.models"
+},
+{
+"src": "netbox.views.generic.bulk_views",
+"dst": "core.signals",
+"raw": "core.signals",
+"lineno": 22,
+"path": "netbox/netbox/views/generic/bulk_views.py",
+"id": "imports:netbox.views.generic.bulk_views->core.signals"
+},
+{
+"src": "netbox.views.generic.feature_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 10,
+"path": "netbox/netbox/views/generic/feature_views.py",
+"id": "imports:netbox.views.generic.feature_views->core.models"
+},
+{
+"src": "netbox.views.generic.feature_views",
+"dst": "core.tables",
+"raw": "core.tables",
+"lineno": 11,
+"path": "netbox/netbox/views/generic/feature_views.py",
+"id": "imports:netbox.views.generic.feature_views->core.tables"
+},
+{
+"src": "netbox.views.generic.object_views",
+"dst": "core.signals",
+"raw": "core.signals",
+"lineno": 16,
+"path": "netbox/netbox/views/generic/object_views.py",
+"id": "imports:netbox.views.generic.object_views->core.signals"
+},
+{
+"src": "tenancy.forms.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/tenancy/forms/filtersets.py",
+"id": "imports:tenancy.forms.filtersets->core.models"
+},
+{
+"src": "tenancy.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/tenancy/graphql/filter_mixins.py",
+"id": "imports:tenancy.graphql.filter_mixins->core.graphql.filter_mixins"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 19,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->core.graphql.filters"
+},
+{
+"src": "tenancy.models.contacts",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/tenancy/models/contacts.py",
+"id": "imports:tenancy.models.contacts->core.models"
+},
+{
+"src": "tenancy.tests.test_filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/tenancy/tests/test_filtersets.py",
+"id": "imports:tenancy.tests.test_filtersets->core.models"
+},
+{
+"src": "users.api.serializers_.permissions",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 1,
+"path": "netbox/users/api/serializers_/permissions.py",
+"id": "imports:users.api.serializers_.permissions->core.models"
+},
+{
+"src": "users.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/users/filtersets.py",
+"id": "imports:users.filtersets->core.models"
+},
+{
+"src": "users.forms.model_forms",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 9,
+"path": "netbox/users/forms/model_forms.py",
+"id": "imports:users.forms.model_forms->core.models"
+},
+{
+"src": "users.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/users/graphql/filters.py",
+"id": "imports:users.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "users.tests.test_api",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 4,
+"path": "netbox/users/tests/test_api.py",
+"id": "imports:users.tests.test_api->core.models"
+},
+{
+"src": "users.tests.test_filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/users/tests/test_filtersets.py",
+"id": "imports:users.tests.test_filtersets->core.models"
+},
+{
+"src": "users.tests.test_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 1,
+"path": "netbox/users/tests/test_views.py",
+"id": "imports:users.tests.test_views->core.models"
+},
+{
+"src": "users.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 3,
+"path": "netbox/users/views.py",
+"id": "imports:users.views->core.models"
+},
+{
+"src": "users.views",
+"dst": "core.tables",
+"raw": "core.tables",
+"lineno": 4,
+"path": "netbox/users/views.py",
+"id": "imports:users.views->core.tables"
+},
+{
+"src": "utilities.forms.bulk_import",
+"dst": "core.forms.mixins",
+"raw": "core.forms.mixins",
+"lineno": 9,
+"path": "netbox/utilities/forms/bulk_import.py",
+"id": "imports:utilities.forms.bulk_import->core.forms.mixins"
+},
+{
+"src": "utilities.permissions",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 55,
+"path": "netbox/utilities/permissions.py",
+"id": "imports:utilities.permissions->core.models"
+},
+{
+"src": "utilities.tables",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/utilities/tables.py",
+"id": "imports:utilities.tables->core.models"
+},
+{
+"src": "utilities.templatetags.buttons",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 5,
+"path": "netbox/utilities/templatetags/buttons.py",
+"id": "imports:utilities.templatetags.buttons->core.models"
+},
+{
+"src": "utilities.templatetags.helpers",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/utilities/templatetags/helpers.py",
+"id": "imports:utilities.templatetags.helpers->core.models"
+},
+{
+"src": "utilities.testing.api",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 15,
+"path": "netbox/utilities/testing/api.py",
+"id": "imports:utilities.testing.api->core.choices"
+},
+{
+"src": "utilities.testing.api",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 16,
+"path": "netbox/utilities/testing/api.py",
+"id": "imports:utilities.testing.api->core.models"
+},
+{
+"src": "utilities.testing.base",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 13,
+"path": "netbox/utilities/testing/base.py",
+"id": "imports:utilities.testing.base->core.models"
+},
+{
+"src": "utilities.testing.filtersets",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 15,
+"path": "netbox/utilities/testing/filtersets.py",
+"id": "imports:utilities.testing.filtersets->core.models"
+},
+{
+"src": "utilities.testing.utils",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 9,
+"path": "netbox/utilities/testing/utils.py",
+"id": "imports:utilities.testing.utils->core.models"
+},
+{
+"src": "utilities.testing.views",
+"dst": "core.choices",
+"raw": "core.choices",
+"lineno": 11,
+"path": "netbox/utilities/testing/views.py",
+"id": "imports:utilities.testing.views->core.choices"
+},
+{
+"src": "utilities.testing.views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 12,
+"path": "netbox/utilities/testing/views.py",
+"id": "imports:utilities.testing.views->core.models"
+},
+{
+"src": "utilities.tests.test_api",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 6,
+"path": "netbox/utilities/tests/test_api.py",
+"id": "imports:utilities.tests.test_api->core.models"
+},
+{
+"src": "virtualization.tests.test_api",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 8,
+"path": "netbox/virtualization/tests/test_api.py",
+"id": "imports:virtualization.tests.test_api->core.models"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 15,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->core.graphql.filters"
+},
+{
+"src": "vpn.models.l2vpn",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "imports:vpn.models.l2vpn->core.models"
+},
+{
+"src": "wireless.graphql.filter_mixins",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/wireless/graphql/filter_mixins.py",
+"id": "imports:wireless.graphql.filter_mixins->core.graphql.filter_mixins"
+}
+],
+"model_refs": [
+{
+"module": "core.models.change_logging",
+"class": "ObjectChange",
+"field": "changed_object_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 56,
+"path": "netbox/core/models/change_logging.py",
+"id": "model_refs:core.models.change_logging:56"
+},
+{
+"module": "core.models.change_logging",
+"class": "ObjectChange",
+"field": "related_object_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 66,
+"path": "netbox/core/models/change_logging.py",
+"id": "model_refs:core.models.change_logging:66"
+},
+{
+"module": "core.models.data",
+"class": "DataFile",
+"field": "source",
+"kind": "ForeignKey",
+"raw": "core.DataSource",
+"ref_app": "core",
+"ref_model": "DataSource",
+"cross_app": 0,
+"lineno": 276,
+"path": "netbox/core/models/data.py",
+"id": "model_refs:core.models.data:276"
+},
+{
+"module": "core.models.data",
+"class": "AutoSyncRecord",
+"field": "object_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 367,
+"path": "netbox/core/models/data.py",
+"id": "model_refs:core.models.data:367"
+},
+{
+"module": "core.models.jobs",
+"class": "Job",
+"field": "object_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 31,
+"path": "netbox/core/models/jobs.py",
+"id": "model_refs:core.models.jobs:31"
+}
+],
+"model_refs_in": [
+{
+"module": "extras.migrations.0108_convert_reports_to_scripts",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "core.Job",
+"ref_app": "core",
+"ref_model": "Job",
+"cross_app": 1,
+"lineno": 6,
+"path": "netbox/extras/migrations/0108_convert_reports_to_scripts.py",
+"id": "model_refs:extras.migrations.0108_convert_reports_to_scripts:6"
+},
+{
+"module": "extras.migrations.0109_script_model",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "core.Job",
+"ref_app": "core",
+"ref_model": "Job",
+"cross_app": 1,
+"lineno": 90,
+"path": "netbox/extras/migrations/0109_script_model.py",
+"id": "model_refs:extras.migrations.0109_script_model:90"
+},
+{
+"module": "extras.models.customfields",
+"class": "CustomField",
+"field": "object_types",
+"kind": "ManyToManyField",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 74,
+"path": "netbox/extras/models/customfields.py",
+"id": "model_refs:extras.models.customfields:74"
+},
+{
+"module": "extras.models.customfields",
+"class": "CustomField",
+"field": "related_object_type",
+"kind": "ForeignKey",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 86,
+"path": "netbox/extras/models/customfields.py",
+"id": "model_refs:extras.models.customfields:86"
+},
+{
+"module": "extras.models.models",
+"class": "EventRule",
+"field": "object_types",
+"kind": "ManyToManyField",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 51,
+"path": "netbox/extras/models/models.py",
+"id": "model_refs:extras.models.models:51"
+},
+{
+"module": "extras.models.models",
+"class": "CustomLink",
+"field": "object_types",
+"kind": "ManyToManyField",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 292,
+"path": "netbox/extras/models/models.py",
+"id": "model_refs:extras.models.models:292"
+},
+{
+"module": "extras.models.models",
+"class": "ExportTemplate",
+"field": "object_types",
+"kind": "ManyToManyField",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 388,
+"path": "netbox/extras/models/models.py",
+"id": "model_refs:extras.models.models:388"
+},
+{
+"module": "extras.models.models",
+"class": "SavedFilter",
+"field": "object_types",
+"kind": "ManyToManyField",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 453,
+"path": "netbox/extras/models/models.py",
+"id": "model_refs:extras.models.models:453"
+},
+{
+"module": "extras.models.models",
+"class": "TableConfig",
+"field": "object_type",
+"kind": "ForeignKey",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 533,
+"path": "netbox/extras/models/models.py",
+"id": "model_refs:extras.models.models:533"
+},
+{
+"module": "extras.models.tags",
+"class": "Tag",
+"field": "object_types",
+"kind": "ManyToManyField",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 37,
+"path": "netbox/extras/models/tags.py",
+"id": "model_refs:extras.models.tags:37"
+},
+{
+"module": "netbox.models.features",
+"class": "JobsMixin",
+"field": "jobs",
+"kind": "GenericRelation",
+"raw": "core.Job",
+"ref_app": "core",
+"ref_model": "Job",
+"cross_app": 1,
+"lineno": 429,
+"path": "netbox/netbox/models/features.py",
+"id": "model_refs:netbox.models.features:429"
+},
+{
+"module": "netbox.models.features",
+"class": "SyncedDataMixin",
+"field": "data_source",
+"kind": "ForeignKey",
+"raw": "core.DataSource",
+"ref_app": "core",
+"ref_model": "DataSource",
+"cross_app": 1,
+"lineno": 487,
+"path": "netbox/netbox/models/features.py",
+"id": "model_refs:netbox.models.features:487"
+},
+{
+"module": "netbox.models.features",
+"class": "SyncedDataMixin",
+"field": "data_file",
+"kind": "ForeignKey",
+"raw": "core.DataFile",
+"ref_app": "core",
+"ref_model": "DataFile",
+"cross_app": 1,
+"lineno": 495,
+"path": "netbox/netbox/models/features.py",
+"id": "model_refs:netbox.models.features:495"
+},
+{
+"module": "users.migrations.0009_update_group_perms",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 5,
+"path": "netbox/users/migrations/0009_update_group_perms.py",
+"id": "model_refs:users.migrations.0009_update_group_perms:5"
+},
+{
+"module": "users.models.permissions",
+"class": "ObjectPermission",
+"field": "object_types",
+"kind": "ManyToManyField",
+"raw": "core.ObjectType",
+"ref_app": "core",
+"ref_model": "ObjectType",
+"cross_app": 1,
+"lineno": 31,
+"path": "netbox/users/models/permissions.py",
+"id": "model_refs:users.models.permissions:31"
+},
+{
+"module": "utilities.jinja2",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "core.DataFile",
+"ref_app": "core",
+"ref_model": "DataFile",
+"cross_app": 1,
+"lineno": 23,
+"path": "netbox/utilities/jinja2.py",
+"id": "model_refs:utilities.jinja2:23"
+}
+],
+"churn": [
+{
+"path": "netbox/core/views.py",
+"module": "core.views",
+"commits": 53,
+"authors": 9,
+"first_commit": "2023-02-02",
+"last_commit": "2025-05-05",
+"id": "churn:core.views"
+},
+{
+"path": "netbox/core/models/data.py",
+"module": "core.models.data",
+"commits": 36,
+"authors": 6,
+"first_commit": "2023-02-02",
+"last_commit": "2025-04-03",
+"id": "churn:core.models.data"
+},
+{
+"path": "netbox/core/models/jobs.py",
+"module": "core.models.jobs",
+"commits": 29,
+"authors": 8,
+"first_commit": "2023-03-27",
+"last_commit": "2025-05-08",
+"id": "churn:core.models.jobs"
+},
+{
+"path": "netbox/core/data_backends.py",
+"module": "core.data_backends",
+"commits": 20,
+"authors": 8,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-04",
+"id": "churn:core.data_backends"
+},
+{
+"path": "netbox/core/forms/model_forms.py",
+"module": "core.forms.model_forms",
+"commits": 19,
+"authors": 4,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-03",
+"id": "churn:core.forms.model_forms"
+},
+{
+"path": "netbox/core/forms/filtersets.py",
+"module": "core.forms.filtersets",
+"commits": 17,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2025-04-10",
+"id": "churn:core.forms.filtersets"
+},
+{
+"path": "netbox/core/plugins.py",
+"module": "core.plugins",
+"commits": 16,
+"authors": 5,
+"first_commit": "2024-07-26",
+"last_commit": "2025-05-01",
+"id": "churn:core.plugins"
+},
+{
+"path": "netbox/core/api/schema.py",
+"module": "core.api.schema",
+"commits": 15,
+"authors": 7,
+"first_commit": "2023-03-30",
+"last_commit": "2025-03-05",
+"id": "churn:core.api.schema"
+},
+{
+"path": "netbox/core/api/serializers.py",
+"module": "core.api.serializers",
+"commits": 14,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2024-11-26",
+"id": "churn:core.api.serializers"
+},
+{
+"path": "netbox/core/jobs.py",
+"module": "core.jobs",
+"commits": 12,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-04",
+"id": "churn:core.jobs"
+},
+{
+"path": "netbox/core/urls.py",
+"module": "core.urls",
+"commits": 12,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2024-11-21",
+"id": "churn:core.urls"
+},
+{
+"path": "netbox/core/apps.py",
+"module": "core.apps",
+"commits": 11,
+"authors": 4,
+"first_commit": "2023-02-02",
+"last_commit": "2025-04-10",
+"id": "churn:core.apps"
+},
+{
+"path": "netbox/core/choices.py",
+"module": "core.choices",
+"commits": 11,
+"authors": 4,
+"first_commit": "2023-02-02",
+"last_commit": "2025-02-13",
+"id": "churn:core.choices"
+},
+{
+"path": "netbox/core/filtersets.py",
+"module": "core.filtersets",
+"commits": 11,
+"authors": 2,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-03",
+"id": "churn:core.filtersets"
+},
+{
+"path": "netbox/core/models/files.py",
+"module": "core.models.files",
+"commits": 11,
+"authors": 4,
+"first_commit": "2023-03-24",
+"last_commit": "2025-05-06",
+"id": "churn:core.models.files"
+},
+{
+"path": "netbox/core/api/views.py",
+"module": "core.api.views",
+"commits": 10,
+"authors": 5,
+"first_commit": "2023-02-02",
+"last_commit": "2024-11-26",
+"id": "churn:core.api.views"
+},
+{
+"path": "netbox/core/forms/bulk_edit.py",
+"module": "core.forms.bulk_edit",
+"commits": 10,
+"authors": 5,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-03",
+"id": "churn:core.forms.bulk_edit"
+},
+{
+"path": "netbox/core/tables/plugins.py",
+"module": "core.tables.plugins",
+"commits": 10,
+"authors": 4,
+"first_commit": "2024-01-19",
+"last_commit": "2025-05-01",
+"id": "churn:core.tables.plugins"
+},
+{
+"path": "netbox/core/signals.py",
+"module": "core.signals",
+"commits": 9,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2025-06-13",
+"id": "churn:core.signals"
+},
+{
+"path": "netbox/core/management/commands/nbshell.py",
+"module": "core.management.commands.nbshell",
+"commits": 8,
+"authors": 3,
+"first_commit": "2023-03-24",
+"last_commit": "2024-09-12",
+"id": "churn:core.management.commands.nbshell"
+},
+{
+"path": "netbox/core/tests/test_filtersets.py",
+"module": "core.tests.test_filtersets",
+"commits": 8,
+"authors": 2,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-03",
+"id": "churn:core.tests.test_filtersets"
+},
+{
+"path": "netbox/core/tests/test_views.py",
+"module": "core.tests.test_views",
+"commits": 8,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2025-05-21",
+"id": "churn:core.tests.test_views"
+},
+{
+"path": "netbox/core/graphql/types.py",
+"module": "core.graphql.types",
+"commits": 6,
+"authors": 2,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-20",
+"id": "churn:core.graphql.types"
+},
+{
+"path": "netbox/core/models/__init__.py",
+"module": "core.models",
+"commits": 6,
+"authors": 2,
+"first_commit": "2023-02-02",
+"last_commit": "2024-06-17",
+"id": "churn:core.models"
+},
+{
+"path": "netbox/core/tables/__init__.py",
+"module": "core.tables",
+"commits": 6,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2024-06-17",
+"id": "churn:core.tables"
+},
+{
+"path": "netbox/core/tables/jobs.py",
+"module": "core.tables.jobs",
+"commits": 6,
+"authors": 4,
+"first_commit": "2023-03-27",
+"last_commit": "2023-11-09",
+"id": "churn:core.tables.jobs"
+},
+{
+"path": "netbox/core/tests/test_api.py",
+"module": "core.tests.test_api",
+"commits": 6,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2025-05-21",
+"id": "churn:core.tests.test_api"
+},
+{
+"path": "netbox/core/api/urls.py",
+"module": "core.api.urls",
+"commits": 5,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2024-11-26",
+"id": "churn:core.api.urls"
+},
+{
+"path": "netbox/core/events.py",
+"module": "core.events",
+"commits": 5,
+"authors": 1,
+"first_commit": "2024-07-15",
+"last_commit": "2025-04-04",
+"id": "churn:core.events"
+},
+{
+"path": "netbox/core/tables/data.py",
+"module": "core.tables.data",
+"commits": 5,
+"authors": 2,
+"first_commit": "2023-02-02",
+"last_commit": "2025-04-14",
+"id": "churn:core.tables.data"
+},
+{
+"path": "netbox/core/api/serializers_/data.py",
+"module": "core.api.serializers_.data",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-02-27",
+"last_commit": "2025-03-03",
+"id": "churn:core.api.serializers_.data"
+},
+{
+"path": "netbox/core/api/serializers_/jobs.py",
+"module": "core.api.serializers_.jobs",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-02-27",
+"last_commit": "2024-11-21",
+"id": "churn:core.api.serializers_.jobs"
+},
+{
+"path": "netbox/core/graphql/filters.py",
+"module": "core.graphql.filters",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-03-22",
+"last_commit": "2025-05-14",
+"id": "churn:core.graphql.filters"
+},
+{
+"path": "netbox/core/graphql/schema.py",
+"module": "core.graphql.schema",
+"commits": 4,
+"authors": 3,
+"first_commit": "2023-02-02",
+"last_commit": "2024-08-28",
+"id": "churn:core.graphql.schema"
+},
+{
+"path": "netbox/core/management/commands/makemigrations.py",
+"module": "core.management.commands.makemigrations",
+"commits": 4,
+"authors": 2,
+"first_commit": "2023-03-24",
+"last_commit": "2024-01-19",
+"id": "churn:core.management.commands.makemigrations"
+},
+{
+"path": "netbox/core/models/contenttypes.py",
+"module": "core.models.contenttypes",
+"commits": 4,
+"authors": 2,
+"first_commit": "2023-11-03",
+"last_commit": "2024-03-01",
+"id": "churn:core.models.contenttypes"
+},
+{
+"path": "netbox/core/graphql/mixins.py",
+"module": "core.graphql.mixins",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-06-17",
+"last_commit": "2025-03-07",
+"id": "churn:core.graphql.mixins"
+},
+{
+"path": "netbox/core/management/commands/syncdatasource.py",
+"module": "core.management.commands.syncdatasource",
+"commits": 3,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2024-10-11",
+"id": "churn:core.management.commands.syncdatasource"
+},
+{
+"path": "netbox/core/migrations/0006_datasource_type_remove_choices.py",
+"module": "core.migrations.0006_datasource_type_remove_choices",
+"commits": 3,
+"authors": 2,
+"first_commit": "2023-10-24",
+"last_commit": "2025-03-07",
+"id": "churn:core.migrations.0006_datasource_type_remove_choices"
+},
+{
+"path": "netbox/core/migrations/0008_contenttype_proxy.py",
+"module": "core.migrations.0008_contenttype_proxy",
+"commits": 3,
+"authors": 1,
+"first_commit": "2023-11-03",
+"last_commit": "2024-11-21",
+"id": "churn:core.migrations.0008_contenttype_proxy"
+},
+{
+"path": "netbox/core/search.py",
+"module": "core.search",
+"commits": 3,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-12-21",
+"id": "churn:core.search"
+},
+{
+"path": "netbox/core/tests/test_changelog.py",
+"module": "core.tests.test_changelog",
+"commits": 3,
+"authors": 2,
+"first_commit": "2024-06-17",
+"last_commit": "2025-06-13",
+"id": "churn:core.tests.test_changelog"
+},
+{
+"path": "netbox/core/api/serializers_/change_logging.py",
+"module": "core.api.serializers_.change_logging",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-06-17",
+"last_commit": "2024-06-25",
+"id": "churn:core.api.serializers_.change_logging"
+},
+{
+"path": "netbox/core/exceptions.py",
+"module": "core.exceptions",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-10",
+"id": "churn:core.exceptions"
+},
+{
+"path": "netbox/core/forms/bulk_import.py",
+"module": "core.forms.bulk_import",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2025-03-03",
+"id": "churn:core.forms.bulk_import"
+},
+{
+"path": "netbox/core/forms/mixins.py",
+"module": "core.forms.mixins",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-04-18",
+"last_commit": "2023-07-31",
+"id": "churn:core.forms.mixins"
+},
+{
+"path": "netbox/core/management/commands/rqworker.py",
+"module": "core.management.commands.rqworker",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-03-24",
+"last_commit": "2024-11-01",
+"id": "churn:core.management.commands.rqworker"
+},
+{
+"path": "netbox/core/migrations/0001_squashed_0005.py",
+"module": "core.migrations.0001_squashed_0005",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-01-24",
+"last_commit": "2024-11-21",
+"id": "churn:core.migrations.0001_squashed_0005"
+},
+{
+"path": "netbox/core/migrations/0007_job_add_error_field.py",
+"module": "core.migrations.0007_job_add_error_field",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-10-31",
+"last_commit": "2024-11-21",
+"id": "churn:core.migrations.0007_job_add_error_field"
+},
+{
+"path": "netbox/core/migrations/0009_configrevision.py",
+"module": "core.migrations.0009_configrevision",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2024-11-21",
+"id": "churn:core.migrations.0009_configrevision"
+},
+{
+"path": "netbox/core/migrations/0010_gfk_indexes.py",
+"module": "core.migrations.0010_gfk_indexes",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-12-07",
+"last_commit": "2024-11-21",
+"id": "churn:core.migrations.0010_gfk_indexes"
+},
+{
+"path": "netbox/core/migrations/0011_move_objectchange.py",
+"module": "core.migrations.0011_move_objectchange",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-06-17",
+"last_commit": "2024-11-21",
+"id": "churn:core.migrations.0011_move_objectchange"
+},
+{
+"path": "netbox/core/migrations/0012_job_object_type_optional.py",
+"module": "core.migrations.0012_job_object_type_optional",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-07-30",
+"last_commit": "2024-11-21",
+"id": "churn:core.migrations.0012_job_object_type_optional"
+},
+{
+"path": "netbox/core/models/config.py",
+"module": "core.models.config",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-11-27",
+"last_commit": "2024-02-20",
+"id": "churn:core.models.config"
+},
+{
+"path": "netbox/core/tables/change_logging.py",
+"module": "core.tables.change_logging",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-06-17",
+"last_commit": "2024-07-18",
+"id": "churn:core.tables.change_logging"
+},
+{
+"path": "netbox/core/tables/columns.py",
+"module": "core.tables.columns",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-10-24",
+"last_commit": "2024-02-01",
+"id": "churn:core.tables.columns"
+},
+{
+"path": "netbox/core/tables/config.py",
+"module": "core.tables.config",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2024-07-18",
+"id": "churn:core.tables.config"
+},
+{
+"path": "netbox/core/tables/tasks.py",
+"module": "core.tables.tasks",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-02-01",
+"last_commit": "2024-04-17",
+"id": "churn:core.tables.tasks"
+},
+{
+"path": "netbox/core/tables/template_code.py",
+"module": "core.tables.template_code",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-06-17",
+"last_commit": "2025-03-10",
+"id": "churn:core.tables.template_code"
+},
+{
+"path": "netbox/core/tests/test_models.py",
+"module": "core.tests.test_models",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-02-05",
+"last_commit": "2024-06-17",
+"id": "churn:core.tests.test_models"
+},
+{
+"path": "netbox/core/__init__.py",
+"module": "core",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core"
+},
+{
+"path": "netbox/core/api/__init__.py",
+"module": "core.api",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core.api"
+},
+{
+"path": "netbox/core/api/serializers_/__init__.py",
+"module": "core.api.serializers_",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-02-27",
+"last_commit": "2024-02-27",
+"id": "churn:core.api.serializers_"
+},
+{
+"path": "netbox/core/api/serializers_/tasks.py",
+"module": "core.api.serializers_.tasks",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-11-26",
+"last_commit": "2024-11-26",
+"id": "churn:core.api.serializers_.tasks"
+},
+{
+"path": "netbox/core/checks.py",
+"module": "core.checks",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-04-03",
+"last_commit": "2025-04-03",
+"id": "churn:core.checks"
+},
+{
+"path": "netbox/core/constants.py",
+"module": "core.constants",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-02-01",
+"last_commit": "2024-02-01",
+"id": "churn:core.constants"
+},
+{
+"path": "netbox/core/forms/__init__.py",
+"module": "core.forms",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core.forms"
+},
+{
+"path": "netbox/core/graphql/__init__.py",
+"module": "core.graphql",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core.graphql"
+},
+{
+"path": "netbox/core/graphql/filter_mixins.py",
+"module": "core.graphql.filter_mixins",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-03-07",
+"id": "churn:core.graphql.filter_mixins"
+},
+{
+"path": "netbox/core/management/__init__.py",
+"module": "core.management",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core.management"
+},
+{
+"path": "netbox/core/management/commands/__init__.py",
+"module": "core.management.commands",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core.management.commands"
+},
+{
+"path": "netbox/core/migrations/0013_job_data_encoder.py",
+"module": "core.migrations.0013_job_data_encoder",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-04-23",
+"last_commit": "2025-04-23",
+"id": "churn:core.migrations.0013_job_data_encoder"
+},
+{
+"path": "netbox/core/migrations/0014_datasource_sync_interval.py",
+"module": "core.migrations.0014_datasource_sync_interval",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-05-01",
+"last_commit": "2025-05-01",
+"id": "churn:core.migrations.0014_datasource_sync_interval"
+},
+{
+"path": "netbox/core/migrations/0015_remove_redundant_indexes.py",
+"module": "core.migrations.0015_remove_redundant_indexes",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-05-01",
+"last_commit": "2025-05-01",
+"id": "churn:core.migrations.0015_remove_redundant_indexes"
+},
+{
+"path": "netbox/core/migrations/__init__.py",
+"module": "core.migrations",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core.migrations"
+},
+{
+"path": "netbox/core/models/change_logging.py",
+"module": "core.models.change_logging",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-06-17",
+"last_commit": "2024-06-17",
+"id": "churn:core.models.change_logging"
+},
+{
+"path": "netbox/core/querysets.py",
+"module": "core.querysets",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-06-17",
+"last_commit": "2024-06-17",
+"id": "churn:core.querysets"
+},
+{
+"path": "netbox/core/tests/__init__.py",
+"module": "core.tests",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-02-02",
+"last_commit": "2023-02-02",
+"id": "churn:core.tests"
+},
+{
+"path": "netbox/core/utils.py",
+"module": "core.utils",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-11-26",
+"last_commit": "2024-11-26",
+"id": "churn:core.utils"
+}
+],
+"entrypoints": [
+{
+"kind": "urls",
+"module": "core.api.urls",
+"detail": "",
+"path": "netbox/core/api/urls.py",
+"id": "entrypoints:core.api.urls"
+},
+{
+"kind": "api_views",
+"module": "core.api.views",
+"detail": "",
+"path": "netbox/core/api/views.py",
+"id": "entrypoints:core.api.views"
+},
+{
+"kind": "management_command",
+"module": "core.management.commands.makemigrations",
+"detail": "makemigrations",
+"path": "netbox/core/management/commands/makemigrations.py",
+"id": "entrypoints:core.management.commands.makemigrations"
+},
+{
+"kind": "management_command",
+"module": "core.management.commands.nbshell",
+"detail": "nbshell",
+"path": "netbox/core/management/commands/nbshell.py",
+"id": "entrypoints:core.management.commands.nbshell"
+},
+{
+"kind": "management_command",
+"module": "core.management.commands.rqworker",
+"detail": "rqworker",
+"path": "netbox/core/management/commands/rqworker.py",
+"id": "entrypoints:core.management.commands.rqworker"
+},
+{
+"kind": "management_command",
+"module": "core.management.commands.syncdatasource",
+"detail": "syncdatasource",
+"path": "netbox/core/management/commands/syncdatasource.py",
+"id": "entrypoints:core.management.commands.syncdatasource"
+},
+{
+"kind": "signals",
+"module": "core.signals",
+"detail": "",
+"path": "netbox/core/signals.py",
+"id": "entrypoints:core.signals"
+},
+{
+"kind": "urls",
+"module": "core.urls",
+"detail": "",
+"path": "netbox/core/urls.py",
+"id": "entrypoints:core.urls"
+}
+]
+}

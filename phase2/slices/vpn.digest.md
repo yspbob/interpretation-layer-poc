@@ -1,0 +1,257 @@
+# Fact-graph digest: subsystem `vpn` at T0 ea4c205
+
+Summary row [fg:subsystems:vpn]: {'subsystem': 'vpn', 'modules': 41, 'loc_code': 7153, 'loc_data': 0, 'test_modules': 6}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- vpn | netbox/vpn/__init__.py | 1 | 0 | 0 |  | 
+- vpn.api | netbox/vpn/api/__init__.py | 1 | 0 | 0 |  | 
+- vpn.api.serializers | netbox/vpn/api/serializers.py | 4 | 0 | 0 |  | 
+- vpn.api.serializers_ | netbox/vpn/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- vpn.api.serializers_.crypto | netbox/vpn/api/serializers_/crypto.py | 125 | 5 | 0 |  | 
+- vpn.api.serializers_.l2vpn | netbox/vpn/api/serializers_/l2vpn.py | 70 | 2 | 0 |  | 
+- vpn.api.serializers_.tunnels | netbox/vpn/api/serializers_/tunnels.py | 110 | 3 | 0 |  | 
+- vpn.api.urls | netbox/vpn/api/urls.py | 19 | 0 | 0 |  | 
+- vpn.api.views | netbox/vpn/api/views.py | 93 | 11 | 0 |  | 
+- vpn.apps | netbox/vpn/apps.py | 14 | 1 | 0 |  | 
+- vpn.choices | netbox/vpn/choices.py | 284 | 13 | 0 |  | 
+- vpn.constants | netbox/vpn/constants.py | 8 | 0 | 0 |  | 
+- vpn.filtersets | netbox/vpn/filtersets.py | 469 | 10 | 0 |  | 
+- vpn.forms | netbox/vpn/forms/__init__.py | 5 | 0 | 0 |  | 
+- vpn.forms.bulk_edit | netbox/vpn/forms/bulk_edit.py | 293 | 10 | 0 |  | 
+- vpn.forms.bulk_import | netbox/vpn/forms/bulk_import.py | 348 | 10 | 0 |  | 
+- vpn.forms.filtersets | netbox/vpn/forms/filtersets.py | 306 | 10 | 0 |  | 
+- vpn.forms.model_forms | netbox/vpn/forms/model_forms.py | 495 | 11 | 0 |  | 
+- vpn.graphql | netbox/vpn/graphql/__init__.py | 1 | 0 | 0 |  | 
+- vpn.graphql.enums | netbox/vpn/graphql/enums.py | 32 | 0 | 0 |  | 
+- vpn.graphql.filters | netbox/vpn/graphql/filters.py | 187 | 10 | 0 |  | 
+- vpn.graphql.schema | netbox/vpn/graphql/schema.py | 40 | 1 | 0 |  | 
+- vpn.graphql.types | netbox/vpn/graphql/types.py | 158 | 10 | 0 |  | 
+- vpn.migrations | netbox/vpn/migrations/__init__.py | 1 | 0 | 0 |  | 
+- vpn.migrations.0001_initial | netbox/vpn/migrations/0001_initial.py | 314 | 1 | 0 |  | migration
+- vpn.migrations.0002_move_l2vpn | netbox/vpn/migrations/0002_move_l2vpn.py | 111 | 1 | 0 |  | migration
+- vpn.migrations.0003_ipaddress_multiple_tunnel_terminations | netbox/vpn/migrations/0003_ipaddress_multiple_tunnel_terminations.py | 26 | 1 | 0 |  | migration
+- vpn.migrations.0004_alter_ikepolicy_mode | netbox/vpn/migrations/0004_alter_ikepolicy_mode.py | 18 | 1 | 0 |  | migration
+- vpn.migrations.0005_rename_indexes | netbox/vpn/migrations/0005_rename_indexes.py | 58 | 1 | 0 |  | migration
+- vpn.migrations.0006_charfield_null_choices | netbox/vpn/migrations/0006_charfield_null_choices.py | 47 | 1 | 1 |  | migration
+- vpn.migrations.0007_natural_ordering | netbox/vpn/migrations/0007_natural_ordering.py | 47 | 1 | 0 |  | migration
+- vpn.migrations.0008_add_l2vpn_status | netbox/vpn/migrations/0008_add_l2vpn_status.py | 17 | 1 | 0 |  | migration
+- vpn.migrations.0009_remove_redundant_indexes | netbox/vpn/migrations/0009_remove_redundant_indexes.py | 22 | 1 | 0 |  | migration
+- vpn.models | netbox/vpn/models/__init__.py | 4 | 0 | 0 |  | 
+- vpn.models.crypto | netbox/vpn/models/crypto.py | 251 | 5 | 0 |  | 
+- vpn.models.l2vpn | netbox/vpn/models/l2vpn.py | 163 | 2 | 0 |  | 
+- vpn.models.tunnels | netbox/vpn/models/tunnels.py | 176 | 3 | 0 |  | 
+- vpn.search | netbox/vpn/search.py | 83 | 7 | 0 |  | 
+- vpn.tables | netbox/vpn/tables/__init__.py | 4 | 0 | 0 |  | 
+- vpn.tables.crypto | netbox/vpn/tables/crypto.py | 186 | 5 | 0 |  | 
+- vpn.tables.l2vpn | netbox/vpn/tables/l2vpn.py | 92 | 2 | 0 |  | 
+- vpn.tables.tunnels | netbox/vpn/tables/tunnels.py | 118 | 3 | 0 |  | 
+- vpn.tests | netbox/vpn/tests/__init__.py | 1 | 0 | 0 | test | 
+- vpn.tests.test_api | netbox/vpn/tests/test_api.py | 659 | 11 | 0 | test | 
+- vpn.tests.test_filtersets | netbox/vpn/tests/test_filtersets.py | 945 | 10 | 0 | test | 
+- vpn.tests.test_models | netbox/vpn/tests/test_models.py | 80 | 1 | 0 | test | 
+- vpn.tests.test_tables | netbox/vpn/tests/test_tables.py | 24 | 1 | 0 | test | 
+- vpn.tests.test_views | netbox/vpn/tests/test_views.py | 713 | 10 | 0 | test | 
+- vpn.urls | netbox/vpn/urls.py | 40 | 0 | 0 |  | 
+- vpn.views | netbox/vpn/views.py | 549 | 70 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'vpn': 62, 'netbox': 28, 'utilities': 23, 'ipam': 14, 'dcim': 12, 'tenancy': 11, 'virtualization': 6, 'core': 3, 'extras': 2}
+Inbound by source subsystem: {'ipam': 7, 'dcim': 4, 'virtualization': 3, 'tenancy': 2, 'netbox': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- vpn.api.serializers_.crypto -> netbox.api.fields [fg:imports:vpn.api.serializers_.crypto->netbox.api.fields]
+- vpn.api.serializers_.crypto -> netbox.api.serializers [fg:imports:vpn.api.serializers_.crypto->netbox.api.serializers]
+- vpn.api.serializers_.l2vpn -> ipam.api.serializers_.vrfs [fg:imports:vpn.api.serializers_.l2vpn->ipam.api.serializers_.vrfs]
+- vpn.api.serializers_.l2vpn -> ipam.models [fg:imports:vpn.api.serializers_.l2vpn->ipam.models]
+- vpn.api.serializers_.l2vpn -> netbox.api.fields [fg:imports:vpn.api.serializers_.l2vpn->netbox.api.fields]
+- vpn.api.serializers_.l2vpn -> netbox.api.serializers [fg:imports:vpn.api.serializers_.l2vpn->netbox.api.serializers]
+- vpn.api.serializers_.l2vpn -> tenancy.api.serializers_.tenants [fg:imports:vpn.api.serializers_.l2vpn->tenancy.api.serializers_.tenants]
+- vpn.api.serializers_.l2vpn -> utilities.api [fg:imports:vpn.api.serializers_.l2vpn->utilities.api]
+- vpn.api.serializers_.tunnels -> ipam.api.serializers_.ip [fg:imports:vpn.api.serializers_.tunnels->ipam.api.serializers_.ip]
+- vpn.api.serializers_.tunnels -> netbox.api.fields [fg:imports:vpn.api.serializers_.tunnels->netbox.api.fields]
+- vpn.api.serializers_.tunnels -> netbox.api.serializers [fg:imports:vpn.api.serializers_.tunnels->netbox.api.serializers]
+- vpn.api.serializers_.tunnels -> tenancy.api.serializers_.tenants [fg:imports:vpn.api.serializers_.tunnels->tenancy.api.serializers_.tenants]
+- vpn.api.serializers_.tunnels -> utilities.api [fg:imports:vpn.api.serializers_.tunnels->utilities.api]
+- vpn.api.urls -> netbox.api.routers [fg:imports:vpn.api.urls->netbox.api.routers]
+- vpn.api.views -> netbox.api.viewsets [fg:imports:vpn.api.views->netbox.api.viewsets]
+- vpn.apps -> netbox.models.features [fg:imports:vpn.apps->netbox.models.features]
+- vpn.choices -> utilities.choices [fg:imports:vpn.choices->utilities.choices]
+- vpn.filtersets -> dcim.models [fg:imports:vpn.filtersets->dcim.models]
+- vpn.filtersets -> ipam.models [fg:imports:vpn.filtersets->ipam.models]
+- vpn.filtersets -> netbox.filtersets [fg:imports:vpn.filtersets->netbox.filtersets]
+- vpn.filtersets -> tenancy.filtersets [fg:imports:vpn.filtersets->tenancy.filtersets]
+- vpn.filtersets -> utilities.filters [fg:imports:vpn.filtersets->utilities.filters]
+- vpn.filtersets -> virtualization.models [fg:imports:vpn.filtersets->virtualization.models]
+- vpn.forms.bulk_edit -> netbox.forms [fg:imports:vpn.forms.bulk_edit->netbox.forms]
+- vpn.forms.bulk_edit -> tenancy.models [fg:imports:vpn.forms.bulk_edit->tenancy.models]
+- vpn.forms.bulk_edit -> utilities.forms [fg:imports:vpn.forms.bulk_edit->utilities.forms]
+- vpn.forms.bulk_edit -> utilities.forms.fields [fg:imports:vpn.forms.bulk_edit->utilities.forms.fields]
+- vpn.forms.bulk_edit -> utilities.forms.rendering [fg:imports:vpn.forms.bulk_edit->utilities.forms.rendering]
+- vpn.forms.bulk_import -> dcim.models [fg:imports:vpn.forms.bulk_import->dcim.models]
+- vpn.forms.bulk_import -> ipam.models [fg:imports:vpn.forms.bulk_import->ipam.models]
+- vpn.forms.bulk_import -> netbox.forms [fg:imports:vpn.forms.bulk_import->netbox.forms]
+- vpn.forms.bulk_import -> tenancy.models [fg:imports:vpn.forms.bulk_import->tenancy.models]
+- vpn.forms.bulk_import -> utilities.forms.fields [fg:imports:vpn.forms.bulk_import->utilities.forms.fields]
+- vpn.forms.bulk_import -> virtualization.models [fg:imports:vpn.forms.bulk_import->virtualization.models]
+- vpn.forms.filtersets -> dcim.models [fg:imports:vpn.forms.filtersets->dcim.models]
+- vpn.forms.filtersets -> ipam.models [fg:imports:vpn.forms.filtersets->ipam.models]
+- vpn.forms.filtersets -> netbox.forms [fg:imports:vpn.forms.filtersets->netbox.forms]
+- vpn.forms.filtersets -> tenancy.forms [fg:imports:vpn.forms.filtersets->tenancy.forms]
+- vpn.forms.filtersets -> utilities.forms.fields [fg:imports:vpn.forms.filtersets->utilities.forms.fields]
+- vpn.forms.filtersets -> utilities.forms.rendering [fg:imports:vpn.forms.filtersets->utilities.forms.rendering]
+- vpn.forms.filtersets -> utilities.forms.utils [fg:imports:vpn.forms.filtersets->utilities.forms.utils]
+- vpn.forms.filtersets -> virtualization.models [fg:imports:vpn.forms.filtersets->virtualization.models]
+- vpn.forms.model_forms -> dcim.models [fg:imports:vpn.forms.model_forms->dcim.models]
+- vpn.forms.model_forms -> ipam.models [fg:imports:vpn.forms.model_forms->ipam.models]
+- vpn.forms.model_forms -> netbox.forms [fg:imports:vpn.forms.model_forms->netbox.forms]
+- vpn.forms.model_forms -> tenancy.forms [fg:imports:vpn.forms.model_forms->tenancy.forms]
+- vpn.forms.model_forms -> utilities.forms.fields [fg:imports:vpn.forms.model_forms->utilities.forms.fields]
+- vpn.forms.model_forms -> utilities.forms.rendering [fg:imports:vpn.forms.model_forms->utilities.forms.rendering]
+- vpn.forms.model_forms -> utilities.forms.utils [fg:imports:vpn.forms.model_forms->utilities.forms.utils]
+- vpn.forms.model_forms -> utilities.forms.widgets [fg:imports:vpn.forms.model_forms->utilities.forms.widgets]
+- vpn.forms.model_forms -> virtualization.models [fg:imports:vpn.forms.model_forms->virtualization.models]
+- vpn.graphql.filters -> core.graphql.filter_mixins [fg:imports:vpn.graphql.filters->core.graphql.filter_mixins]
+- vpn.graphql.filters -> core.graphql.filters [fg:imports:vpn.graphql.filters->core.graphql.filters]
+- vpn.graphql.filters -> extras.graphql.filter_mixins [fg:imports:vpn.graphql.filters->extras.graphql.filter_mixins]
+- vpn.graphql.filters -> ipam.graphql.filters [fg:imports:vpn.graphql.filters->ipam.graphql.filters]
+- vpn.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:vpn.graphql.filters->netbox.graphql.filter_lookups]
+- vpn.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:vpn.graphql.filters->netbox.graphql.filter_mixins]
+- vpn.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:vpn.graphql.filters->tenancy.graphql.filter_mixins]
+- vpn.graphql.types -> dcim.graphql.types [fg:imports:vpn.graphql.types->dcim.graphql.types]
+- vpn.graphql.types -> extras.graphql.mixins [fg:imports:vpn.graphql.types->extras.graphql.mixins]
+- vpn.graphql.types -> ipam.graphql.types [fg:imports:vpn.graphql.types->ipam.graphql.types]
+- vpn.graphql.types -> netbox.graphql.types [fg:imports:vpn.graphql.types->netbox.graphql.types]
+- vpn.graphql.types -> netbox.graphql.types [fg:imports:vpn.graphql.types->netbox.graphql.types]
+- vpn.graphql.types -> tenancy.graphql.types [fg:imports:vpn.graphql.types->tenancy.graphql.types]
+- vpn.graphql.types -> virtualization.graphql.types [fg:imports:vpn.graphql.types->virtualization.graphql.types]
+- vpn.migrations.0001_initial -> utilities.json [fg:imports:vpn.migrations.0001_initial->utilities.json]
+- vpn.migrations.0002_move_l2vpn -> utilities.json [fg:imports:vpn.migrations.0002_move_l2vpn->utilities.json]
+- vpn.models.crypto -> netbox.models [fg:imports:vpn.models.crypto->netbox.models]
+- vpn.models.l2vpn -> core.models [fg:imports:vpn.models.l2vpn->core.models]
+- vpn.models.l2vpn -> netbox.models [fg:imports:vpn.models.l2vpn->netbox.models]
+- vpn.models.l2vpn -> netbox.models.features [fg:imports:vpn.models.l2vpn->netbox.models.features]
+- vpn.models.tunnels -> netbox.models [fg:imports:vpn.models.tunnels->netbox.models]
+- vpn.models.tunnels -> netbox.models.features [fg:imports:vpn.models.tunnels->netbox.models.features]
+- vpn.search -> netbox.search [fg:imports:vpn.search->netbox.search]
+- vpn.tables.crypto -> netbox.tables [fg:imports:vpn.tables.crypto->netbox.tables]
+- vpn.tables.l2vpn -> netbox.tables [fg:imports:vpn.tables.l2vpn->netbox.tables]
+- vpn.tables.l2vpn -> tenancy.tables [fg:imports:vpn.tables.l2vpn->tenancy.tables]
+- vpn.tables.tunnels -> netbox.tables [fg:imports:vpn.tables.tunnels->netbox.tables]
+- vpn.tables.tunnels -> tenancy.tables [fg:imports:vpn.tables.tunnels->tenancy.tables]
+- vpn.tests.test_api -> dcim.choices [fg:imports:vpn.tests.test_api->dcim.choices]
+- vpn.tests.test_api -> dcim.models [fg:imports:vpn.tests.test_api->dcim.models]
+- vpn.tests.test_api -> ipam.models [fg:imports:vpn.tests.test_api->ipam.models]
+- vpn.tests.test_api -> utilities.testing [fg:imports:vpn.tests.test_api->utilities.testing]
+- vpn.tests.test_filtersets -> dcim.choices [fg:imports:vpn.tests.test_filtersets->dcim.choices]
+- vpn.tests.test_filtersets -> dcim.models [fg:imports:vpn.tests.test_filtersets->dcim.models]
+- vpn.tests.test_filtersets -> ipam.models [fg:imports:vpn.tests.test_filtersets->ipam.models]
+- vpn.tests.test_filtersets -> utilities.testing [fg:imports:vpn.tests.test_filtersets->utilities.testing]
+- vpn.tests.test_filtersets -> virtualization.models [fg:imports:vpn.tests.test_filtersets->virtualization.models]
+- vpn.tests.test_models -> dcim.models [fg:imports:vpn.tests.test_models->dcim.models]
+- vpn.tests.test_models -> ipam.models [fg:imports:vpn.tests.test_models->ipam.models]
+- vpn.tests.test_views -> dcim.choices [fg:imports:vpn.tests.test_views->dcim.choices]
+- vpn.tests.test_views -> dcim.models [fg:imports:vpn.tests.test_views->dcim.models]
+- vpn.tests.test_views -> ipam.models [fg:imports:vpn.tests.test_views->ipam.models]
+- vpn.tests.test_views -> utilities.testing [fg:imports:vpn.tests.test_views->utilities.testing]
+- vpn.urls -> utilities.urls [fg:imports:vpn.urls->utilities.urls]
+- vpn.views -> ipam.tables [fg:imports:vpn.views->ipam.tables]
+- vpn.views -> netbox.views [fg:imports:vpn.views->netbox.views]
+- vpn.views -> utilities.query [fg:imports:vpn.views->utilities.query]
+- vpn.views -> utilities.views [fg:imports:vpn.views->utilities.views]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- vpn.migrations.0006_charfield_null_choices | . | get_model | vpn.IKEPolicy |  [fg:model_refs:vpn.migrations.0006_charfield_null_choices:8]
+- vpn.migrations.0006_charfield_null_choices | . | get_model | vpn.IKEProposal |  [fg:model_refs:vpn.migrations.0006_charfield_null_choices:9]
+- vpn.migrations.0006_charfield_null_choices | . | get_model | vpn.IPSecProposal |  [fg:model_refs:vpn.migrations.0006_charfield_null_choices:10]
+- vpn.models.crypto | IKEPolicy.proposals | ManyToManyField | vpn.IKEProposal |  [fg:model_refs:vpn.models.crypto:85]
+- vpn.models.crypto | IPSecPolicy.proposals | ManyToManyField | vpn.IPSecProposal |  [fg:model_refs:vpn.models.crypto:185]
+- vpn.models.crypto | IPSecProfile.ike_policy | ForeignKey | vpn.IKEPolicy |  [fg:model_refs:vpn.models.crypto:225]
+- vpn.models.crypto | IPSecProfile.ipsec_policy | ForeignKey | vpn.IPSecPolicy |  [fg:model_refs:vpn.models.crypto:230]
+- vpn.models.l2vpn | L2VPN.import_targets | ManyToManyField | ipam.RouteTarget | cross [fg:model_refs:vpn.models.l2vpn:46]
+- vpn.models.l2vpn | L2VPN.export_targets | ManyToManyField | ipam.RouteTarget | cross [fg:model_refs:vpn.models.l2vpn:51]
+- vpn.models.l2vpn | L2VPN.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:vpn.models.l2vpn:56]
+- vpn.models.l2vpn | L2VPNTermination.l2vpn | ForeignKey | vpn.L2VPN |  [fg:model_refs:vpn.models.l2vpn:88]
+- vpn.models.l2vpn | L2VPNTermination.assigned_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:vpn.models.l2vpn:93]
+- vpn.models.tunnels | Tunnel.group | ForeignKey | vpn.TunnelGroup |  [fg:model_refs:vpn.models.tunnels:43]
+- vpn.models.tunnels | Tunnel.ipsec_profile | ForeignKey | vpn.IPSecProfile |  [fg:model_refs:vpn.models.tunnels:55]
+- vpn.models.tunnels | Tunnel.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:vpn.models.tunnels:62]
+- vpn.models.tunnels | TunnelTermination.tunnel | ForeignKey | vpn.Tunnel |  [fg:model_refs:vpn.models.tunnels:103]
+- vpn.models.tunnels | TunnelTermination.termination_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:vpn.models.tunnels:114]
+- vpn.models.tunnels | TunnelTermination.outside_ip | ForeignKey | ipam.IPAddress | cross [fg:model_refs:vpn.models.tunnels:127]
+
+## String references INTO this subsystem from others
+- dcim.models.device_components | Interface.tunnel_terminations | GenericRelation -> vpn.TunnelTermination [fg:model_refs:dcim.models.device_components:781]
+- dcim.models.device_components | Interface.l2vpn_terminations | GenericRelation -> vpn.L2VPNTermination [fg:model_refs:dcim.models.device_components:787]
+- ipam.models.vlans | VLAN.l2vpn_terminations | GenericRelation -> vpn.L2VPNTermination [fg:model_refs:ipam.models.vlans:246]
+- virtualization.models.virtualmachines | VMInterface.tunnel_terminations | GenericRelation -> vpn.TunnelTermination [fg:model_refs:virtualization.models.virtualmachines:344]
+- virtualization.models.virtualmachines | VMInterface.l2vpn_terminations | GenericRelation -> vpn.L2VPNTermination [fg:model_refs:virtualization.models.virtualmachines:350]
+
+## Churn (id = churn:<module>) — top 25 by commits
+- vpn.forms.model_forms | 19 commits | 5 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.forms.model_forms]
+- vpn.views | 17 commits | 5 authors | 2023-11-27 .. 2025-05-05 [fg:churn:vpn.views]
+- vpn.filtersets | 16 commits | 3 authors | 2023-11-27 .. 2025-04-10 [fg:churn:vpn.filtersets]
+- vpn.tests.test_filtersets | 13 commits | 3 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.tests.test_filtersets]
+- vpn.api.serializers | 12 commits | 1 authors | 2023-11-27 .. 2024-08-14 [fg:churn:vpn.api.serializers]
+- vpn.api.serializers_.crypto | 10 commits | 3 authors | 2024-02-27 .. 2025-01-06 [fg:churn:vpn.api.serializers_.crypto]
+- vpn.models.l2vpn | 10 commits | 4 authors | 2023-11-28 .. 2025-04-07 [fg:churn:vpn.models.l2vpn]
+- vpn.choices | 9 commits | 6 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.choices]
+- vpn.graphql.types | 9 commits | 3 authors | 2023-11-27 .. 2025-05-07 [fg:churn:vpn.graphql.types]
+- vpn.models.crypto | 8 commits | 3 authors | 2023-11-27 .. 2024-11-15 [fg:churn:vpn.models.crypto]
+- vpn.models.tunnels | 8 commits | 2 authors | 2023-11-27 .. 2025-04-10 [fg:churn:vpn.models.tunnels]
+- vpn.tables.tunnels | 8 commits | 3 authors | 2023-11-28 .. 2025-06-04 [fg:churn:vpn.tables.tunnels]
+- vpn.forms.bulk_import | 7 commits | 3 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.forms.bulk_import]
+- vpn.forms.filtersets | 7 commits | 2 authors | 2023-11-27 .. 2025-04-10 [fg:churn:vpn.forms.filtersets]
+- vpn.migrations.0001_initial | 7 commits | 2 authors | 2023-11-27 .. 2025-03-07 [fg:churn:vpn.migrations.0001_initial]
+- vpn.tests.test_api | 7 commits | 3 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.tests.test_api]
+- vpn.api.serializers_.l2vpn | 6 commits | 4 authors | 2024-02-27 .. 2025-04-11 [fg:churn:vpn.api.serializers_.l2vpn]
+- vpn.forms.bulk_edit | 6 commits | 3 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.forms.bulk_edit]
+- vpn.search | 6 commits | 3 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.search]
+- vpn.tests.test_views | 6 commits | 3 authors | 2023-11-27 .. 2025-03-06 [fg:churn:vpn.tests.test_views]
+- vpn.api.serializers_.tunnels | 5 commits | 2 authors | 2024-02-27 .. 2024-06-25 [fg:churn:vpn.api.serializers_.tunnels]
+- vpn.api.views | 5 commits | 1 authors | 2023-11-27 .. 2024-02-15 [fg:churn:vpn.api.views]
+- vpn.graphql.schema | 5 commits | 3 authors | 2023-11-27 .. 2024-08-28 [fg:churn:vpn.graphql.schema]
+- vpn.urls | 5 commits | 1 authors | 2023-11-27 .. 2024-11-20 [fg:churn:vpn.urls]
+- vpn.graphql.filters | 4 commits | 2 authors | 2024-03-22 .. 2025-05-14 [fg:churn:vpn.graphql.filters]
+
+## Entry points (id = entrypoints:<module>)
+- urls | vpn.api.urls | netbox/vpn/api/urls.py [fg:entrypoints:vpn.api.urls]
+- api_views | vpn.api.views | netbox/vpn/api/views.py [fg:entrypoints:vpn.api.views]
+- urls | vpn.urls | netbox/vpn/urls.py [fg:entrypoints:vpn.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- vpn.api.serializers_.crypto: IKEProposalSerializer, IKEPolicySerializer, IPSecProposalSerializer, IPSecPolicySerializer, IPSecProfileSerializer
+- vpn.api.serializers_.l2vpn: L2VPNSerializer, L2VPNTerminationSerializer
+- vpn.api.serializers_.tunnels: TunnelGroupSerializer, TunnelSerializer, TunnelTerminationSerializer
+- vpn.api.views: VPNRootView, TunnelGroupViewSet, TunnelViewSet, TunnelTerminationViewSet, IKEProposalViewSet, IKEPolicyViewSet, IPSecProposalViewSet, IPSecPolicyViewSet, IPSecProfileViewSet, L2VPNViewSet, L2VPNTerminationViewSet
+- vpn.apps: VPNConfig
+- vpn.choices: TunnelStatusChoices, TunnelEncapsulationChoices, TunnelTerminationTypeChoices, TunnelTerminationRoleChoices, IKEVersionChoices, IKEModeChoices, AuthenticationMethodChoices, IPSecModeChoices, EncryptionAlgorithmChoices, AuthenticationAlgorithmChoices, DHGroupChoices, L2VPNTypeChoices, L2VPNStatusChoices
+- vpn.filtersets: TunnelGroupFilterSet, TunnelFilterSet, TunnelTerminationFilterSet, IKEProposalFilterSet, IKEPolicyFilterSet, IPSecProposalFilterSet, IPSecPolicyFilterSet, IPSecProfileFilterSet, L2VPNFilterSet, L2VPNTerminationFilterSet
+- vpn.forms.bulk_edit: TunnelGroupBulkEditForm, TunnelBulkEditForm, TunnelTerminationBulkEditForm, IKEProposalBulkEditForm, IKEPolicyBulkEditForm, IPSecProposalBulkEditForm, IPSecPolicyBulkEditForm, IPSecProfileBulkEditForm, L2VPNBulkEditForm, L2VPNTerminationBulkEditForm
+- vpn.forms.bulk_import: TunnelGroupImportForm, TunnelImportForm, TunnelTerminationImportForm, IKEProposalImportForm, IKEPolicyImportForm, IPSecProposalImportForm, IPSecPolicyImportForm, IPSecProfileImportForm, L2VPNImportForm, L2VPNTerminationImportForm
+- vpn.forms.filtersets: TunnelGroupFilterForm, TunnelFilterForm, TunnelTerminationFilterForm, IKEProposalFilterForm, IKEPolicyFilterForm, IPSecProposalFilterForm, IPSecPolicyFilterForm, IPSecProfileFilterForm, L2VPNFilterForm, L2VPNTerminationFilterForm
+- vpn.forms.model_forms: TunnelGroupForm, TunnelForm, TunnelCreateForm, TunnelTerminationForm, IKEProposalForm, IKEPolicyForm, IPSecProposalForm, IPSecPolicyForm, IPSecProfileForm, L2VPNForm, L2VPNTerminationForm
+- vpn.graphql.filters: TunnelGroupFilter, TunnelTerminationFilter, TunnelFilter, IKEProposalFilter, IKEPolicyFilter, IPSecProposalFilter, IPSecPolicyFilter, IPSecProfileFilter, L2VPNFilter, L2VPNTerminationFilter
+- vpn.graphql.schema: VPNQuery
+- vpn.graphql.types: TunnelGroupType, TunnelTerminationType, TunnelType, IKEProposalType, IKEPolicyType, IPSecProposalType, IPSecPolicyType, IPSecProfileType, L2VPNType, L2VPNTerminationType
+- vpn.migrations.0001_initial: Migration
+- vpn.migrations.0002_move_l2vpn: Migration
+- vpn.migrations.0003_ipaddress_multiple_tunnel_terminations: Migration
+- vpn.migrations.0004_alter_ikepolicy_mode: Migration
+- vpn.migrations.0005_rename_indexes: Migration
+- vpn.migrations.0006_charfield_null_choices: Migration
+- vpn.migrations.0007_natural_ordering: Migration
+- vpn.migrations.0008_add_l2vpn_status: Migration
+- vpn.migrations.0009_remove_redundant_indexes: Migration
+- vpn.models.crypto: IKEProposal, IKEPolicy, IPSecProposal, IPSecPolicy, IPSecProfile
+- vpn.models.l2vpn: L2VPN, L2VPNTermination
+- vpn.models.tunnels: TunnelGroup, Tunnel, TunnelTermination
+- vpn.search: TunnelIndex, IKEProposalIndex, IKEPolicyIndex, IPSecProposalIndex, IPSecPolicyIndex, IPSecProfileIndex, L2VPNIndex
+- vpn.tables.crypto: IKEProposalTable, IKEPolicyTable, IPSecProposalTable, IPSecPolicyTable, IPSecProfileTable
+- vpn.tables.l2vpn: L2VPNTable, L2VPNTerminationTable
+- vpn.tables.tunnels: TunnelGroupTable, TunnelTable, TunnelTerminationTable
+- vpn.tests.test_api: AppTest, TunnelGroupTest, TunnelTest, TunnelTerminationTest, IKEProposalTest, IKEPolicyTest, IPSecProposalTest, IPSecPolicyTest, IPSecProfileTest, L2VPNTest, L2VPNTerminationTest
+- vpn.tests.test_filtersets: TunnelGroupTestCase, TunnelTestCase, TunnelTerminationTestCase, IKEProposalTestCase, IKEPolicyTestCase, IPSecProposalTestCase, IPSecPolicyTestCase, IPSecProfileTestCase, L2VPNTestCase, L2VPNTerminationTestCase
+- vpn.tests.test_models: TestL2VPNTermination
+- vpn.tests.test_tables: TunnelTerminationTableTest
+- vpn.tests.test_views: TunnelGroupTestCase, TunnelTestCase, TunnelTerminationTestCase, IKEProposalTestCase, IKEPolicyTestCase, IPSecProposalTestCase, IPSecPolicyTestCase, IPSecProfileTestCase, L2VPNTestCase, L2VPNTerminationTestCase
+- vpn.views: TunnelGroupListView, TunnelGroupView, TunnelGroupEditView, TunnelGroupDeleteView, TunnelGroupBulkImportView, TunnelGroupBulkEditView, TunnelGroupBulkDeleteView, TunnelListView, TunnelView, TunnelEditView, TunnelDeleteView, TunnelBulkImportView, TunnelBulkEditView, TunnelBulkDeleteView, TunnelTerminationListView, TunnelTerminationView, TunnelTerminationEditView, TunnelTerminationDeleteView, TunnelTerminationBulkImportView, TunnelTerminationBulkEditView, TunnelTerminationBulkDeleteView, IKEProposalListView, IKEProposalView, IKEProposalEditView, IKEProposalDeleteView, IKEProposalBulkImportView, IKEProposalBulkEditView, IKEProposalBulkDeleteView, IKEPolicyListView, IKEPolicyView, IKEPolicyEditView, IKEPolicyDeleteView, IKEPolicyBulkImportView, IKEPolicyBulkEditView, IKEPolicyBulkDeleteView, IPSecProposalListView, IPSecProposalView, IPSecProposalEditView, IPSecProposalDeleteView, IPSecProposalBulkImportView, IPSecProposalBulkEditView, IPSecProposalBulkDeleteView, IPSecPolicyListView, IPSecPolicyView, IPSecPolicyEditView, IPSecPolicyDeleteView, IPSecPolicyBulkImportView, IPSecPolicyBulkEditView, IPSecPolicyBulkDeleteView, IPSecProfileListView, IPSecProfileView, IPSecProfileEditView, IPSecProfileDeleteView, IPSecProfileBulkImportView, IPSecProfileBulkEditView, IPSecProfileBulkDeleteView, L2VPNListView, L2VPNView, L2VPNEditView, L2VPNDeleteView, L2VPNBulkImportView, L2VPNBulkEditView, L2VPNBulkDeleteView, L2VPNTerminationListView, L2VPNTerminationView, L2VPNTerminationEditView, L2VPNTerminationDeleteView, L2VPNTerminationBulkImportView, L2VPNTerminationBulkEditView, L2VPNTerminationBulkDeleteView

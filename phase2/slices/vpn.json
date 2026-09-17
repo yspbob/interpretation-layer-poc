@@ -1,0 +1,5094 @@
+{
+"subsystem": "vpn",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "vpn",
+"modules": 41,
+"loc_code": 7153,
+"loc_data": 0,
+"test_modules": 6
+},
+"modules": [
+{
+"module": "vpn",
+"path": "netbox/vpn/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn"
+},
+{
+"module": "vpn.api",
+"path": "netbox/vpn/api/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api"
+},
+{
+"module": "vpn.api.serializers",
+"path": "netbox/vpn/api/serializers.py",
+"loc": 4,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api.serializers"
+},
+{
+"module": "vpn.api.serializers_",
+"path": "netbox/vpn/api/serializers_/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api.serializers_"
+},
+{
+"module": "vpn.api.serializers_.crypto",
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"loc": 125,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api.serializers_.crypto"
+},
+{
+"module": "vpn.api.serializers_.l2vpn",
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"loc": 70,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api.serializers_.l2vpn"
+},
+{
+"module": "vpn.api.serializers_.tunnels",
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"loc": 110,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api.serializers_.tunnels"
+},
+{
+"module": "vpn.api.urls",
+"path": "netbox/vpn/api/urls.py",
+"loc": 19,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api.urls"
+},
+{
+"module": "vpn.api.views",
+"path": "netbox/vpn/api/views.py",
+"loc": 93,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.api.views"
+},
+{
+"module": "vpn.apps",
+"path": "netbox/vpn/apps.py",
+"loc": 14,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.apps"
+},
+{
+"module": "vpn.choices",
+"path": "netbox/vpn/choices.py",
+"loc": 284,
+"classes": 13,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.choices"
+},
+{
+"module": "vpn.constants",
+"path": "netbox/vpn/constants.py",
+"loc": 8,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.constants"
+},
+{
+"module": "vpn.filtersets",
+"path": "netbox/vpn/filtersets.py",
+"loc": 469,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.filtersets"
+},
+{
+"module": "vpn.forms",
+"path": "netbox/vpn/forms/__init__.py",
+"loc": 5,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.forms"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"loc": 293,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.forms.bulk_edit"
+},
+{
+"module": "vpn.forms.bulk_import",
+"path": "netbox/vpn/forms/bulk_import.py",
+"loc": 348,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.forms.bulk_import"
+},
+{
+"module": "vpn.forms.filtersets",
+"path": "netbox/vpn/forms/filtersets.py",
+"loc": 306,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.forms.filtersets"
+},
+{
+"module": "vpn.forms.model_forms",
+"path": "netbox/vpn/forms/model_forms.py",
+"loc": 495,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.forms.model_forms"
+},
+{
+"module": "vpn.graphql",
+"path": "netbox/vpn/graphql/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.graphql"
+},
+{
+"module": "vpn.graphql.enums",
+"path": "netbox/vpn/graphql/enums.py",
+"loc": 32,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.graphql.enums"
+},
+{
+"module": "vpn.graphql.filters",
+"path": "netbox/vpn/graphql/filters.py",
+"loc": 187,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.graphql.filters"
+},
+{
+"module": "vpn.graphql.schema",
+"path": "netbox/vpn/graphql/schema.py",
+"loc": 40,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.graphql.schema"
+},
+{
+"module": "vpn.graphql.types",
+"path": "netbox/vpn/graphql/types.py",
+"loc": 158,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.graphql.types"
+},
+{
+"module": "vpn.migrations",
+"path": "netbox/vpn/migrations/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.migrations"
+},
+{
+"module": "vpn.migrations.0001_initial",
+"path": "netbox/vpn/migrations/0001_initial.py",
+"loc": 314,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0001_initial"
+},
+{
+"module": "vpn.migrations.0002_move_l2vpn",
+"path": "netbox/vpn/migrations/0002_move_l2vpn.py",
+"loc": 111,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0002_move_l2vpn"
+},
+{
+"module": "vpn.migrations.0003_ipaddress_multiple_tunnel_terminations",
+"path": "netbox/vpn/migrations/0003_ipaddress_multiple_tunnel_terminations.py",
+"loc": 26,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0003_ipaddress_multiple_tunnel_terminations"
+},
+{
+"module": "vpn.migrations.0004_alter_ikepolicy_mode",
+"path": "netbox/vpn/migrations/0004_alter_ikepolicy_mode.py",
+"loc": 18,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0004_alter_ikepolicy_mode"
+},
+{
+"module": "vpn.migrations.0005_rename_indexes",
+"path": "netbox/vpn/migrations/0005_rename_indexes.py",
+"loc": 58,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0005_rename_indexes"
+},
+{
+"module": "vpn.migrations.0006_charfield_null_choices",
+"path": "netbox/vpn/migrations/0006_charfield_null_choices.py",
+"loc": 47,
+"classes": 1,
+"functions": 1,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0006_charfield_null_choices"
+},
+{
+"module": "vpn.migrations.0007_natural_ordering",
+"path": "netbox/vpn/migrations/0007_natural_ordering.py",
+"loc": 47,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0007_natural_ordering"
+},
+{
+"module": "vpn.migrations.0008_add_l2vpn_status",
+"path": "netbox/vpn/migrations/0008_add_l2vpn_status.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0008_add_l2vpn_status"
+},
+{
+"module": "vpn.migrations.0009_remove_redundant_indexes",
+"path": "netbox/vpn/migrations/0009_remove_redundant_indexes.py",
+"loc": 22,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:vpn.migrations.0009_remove_redundant_indexes"
+},
+{
+"module": "vpn.models",
+"path": "netbox/vpn/models/__init__.py",
+"loc": 4,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.models"
+},
+{
+"module": "vpn.models.crypto",
+"path": "netbox/vpn/models/crypto.py",
+"loc": 251,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.models.crypto"
+},
+{
+"module": "vpn.models.l2vpn",
+"path": "netbox/vpn/models/l2vpn.py",
+"loc": 163,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.models.l2vpn"
+},
+{
+"module": "vpn.models.tunnels",
+"path": "netbox/vpn/models/tunnels.py",
+"loc": 176,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.models.tunnels"
+},
+{
+"module": "vpn.search",
+"path": "netbox/vpn/search.py",
+"loc": 83,
+"classes": 7,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.search"
+},
+{
+"module": "vpn.tables",
+"path": "netbox/vpn/tables/__init__.py",
+"loc": 4,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tables"
+},
+{
+"module": "vpn.tables.crypto",
+"path": "netbox/vpn/tables/crypto.py",
+"loc": 186,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tables.crypto"
+},
+{
+"module": "vpn.tables.l2vpn",
+"path": "netbox/vpn/tables/l2vpn.py",
+"loc": 92,
+"classes": 2,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tables.l2vpn"
+},
+{
+"module": "vpn.tables.tunnels",
+"path": "netbox/vpn/tables/tunnels.py",
+"loc": 118,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tables.tunnels"
+},
+{
+"module": "vpn.tests",
+"path": "netbox/vpn/tests/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tests"
+},
+{
+"module": "vpn.tests.test_api",
+"path": "netbox/vpn/tests/test_api.py",
+"loc": 659,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tests.test_api"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"loc": 945,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tests.test_filtersets"
+},
+{
+"module": "vpn.tests.test_models",
+"path": "netbox/vpn/tests/test_models.py",
+"loc": 80,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tests.test_models"
+},
+{
+"module": "vpn.tests.test_tables",
+"path": "netbox/vpn/tests/test_tables.py",
+"loc": 24,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tests.test_tables"
+},
+{
+"module": "vpn.tests.test_views",
+"path": "netbox/vpn/tests/test_views.py",
+"loc": 713,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.tests.test_views"
+},
+{
+"module": "vpn.urls",
+"path": "netbox/vpn/urls.py",
+"loc": 40,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.urls"
+},
+{
+"module": "vpn.views",
+"path": "netbox/vpn/views.py",
+"loc": 549,
+"classes": 70,
+"functions": 0,
+"parse": "OK",
+"subsystem": "vpn",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:vpn.views"
+}
+],
+"symbols": [
+{
+"module": "vpn.api.serializers_.crypto",
+"kind": "class",
+"name": "IKEProposalSerializer",
+"lineno": 15,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "symbols:vpn.api.serializers_.crypto:IKEProposalSerializer"
+},
+{
+"module": "vpn.api.serializers_.crypto",
+"kind": "class",
+"name": "IKEPolicySerializer",
+"lineno": 40,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "symbols:vpn.api.serializers_.crypto:IKEPolicySerializer"
+},
+{
+"module": "vpn.api.serializers_.crypto",
+"kind": "class",
+"name": "IPSecProposalSerializer",
+"lineno": 65,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "symbols:vpn.api.serializers_.crypto:IPSecProposalSerializer"
+},
+{
+"module": "vpn.api.serializers_.crypto",
+"kind": "class",
+"name": "IPSecPolicySerializer",
+"lineno": 85,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "symbols:vpn.api.serializers_.crypto:IPSecPolicySerializer"
+},
+{
+"module": "vpn.api.serializers_.crypto",
+"kind": "class",
+"name": "IPSecProfileSerializer",
+"lineno": 107,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "symbols:vpn.api.serializers_.crypto:IPSecProfileSerializer"
+},
+{
+"module": "vpn.api.serializers_.l2vpn",
+"kind": "class",
+"name": "L2VPNSerializer",
+"lineno": 20,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "symbols:vpn.api.serializers_.l2vpn:L2VPNSerializer"
+},
+{
+"module": "vpn.api.serializers_.l2vpn",
+"kind": "class",
+"name": "L2VPNTerminationSerializer",
+"lineno": 48,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "symbols:vpn.api.serializers_.l2vpn:L2VPNTerminationSerializer"
+},
+{
+"module": "vpn.api.serializers_.tunnels",
+"kind": "class",
+"name": "TunnelGroupSerializer",
+"lineno": 25,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "symbols:vpn.api.serializers_.tunnels:TunnelGroupSerializer"
+},
+{
+"module": "vpn.api.serializers_.tunnels",
+"kind": "class",
+"name": "TunnelSerializer",
+"lineno": 39,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "symbols:vpn.api.serializers_.tunnels:TunnelSerializer"
+},
+{
+"module": "vpn.api.serializers_.tunnels",
+"kind": "class",
+"name": "TunnelTerminationSerializer",
+"lineno": 76,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "symbols:vpn.api.serializers_.tunnels:TunnelTerminationSerializer"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "VPNRootView",
+"lineno": 23,
+"bases": "APIRootView",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:VPNRootView"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "TunnelGroupViewSet",
+"lineno": 35,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:TunnelGroupViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "TunnelViewSet",
+"lineno": 41,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:TunnelViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "TunnelTerminationViewSet",
+"lineno": 47,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:TunnelTerminationViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "IKEProposalViewSet",
+"lineno": 53,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:IKEProposalViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "IKEPolicyViewSet",
+"lineno": 59,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:IKEPolicyViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "IPSecProposalViewSet",
+"lineno": 65,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:IPSecProposalViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "IPSecPolicyViewSet",
+"lineno": 71,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:IPSecPolicyViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "IPSecProfileViewSet",
+"lineno": 77,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:IPSecProfileViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "L2VPNViewSet",
+"lineno": 83,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:L2VPNViewSet"
+},
+{
+"module": "vpn.api.views",
+"kind": "class",
+"name": "L2VPNTerminationViewSet",
+"lineno": 89,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/vpn/api/views.py",
+"id": "symbols:vpn.api.views:L2VPNTerminationViewSet"
+},
+{
+"module": "vpn.apps",
+"kind": "class",
+"name": "VPNConfig",
+"lineno": 4,
+"bases": "AppConfig",
+"path": "netbox/vpn/apps.py",
+"id": "symbols:vpn.apps:VPNConfig"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "TunnelStatusChoices",
+"lineno": 10,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:TunnelStatusChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "TunnelEncapsulationChoices",
+"lineno": 24,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:TunnelEncapsulationChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "TunnelTerminationTypeChoices",
+"lineno": 46,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:TunnelTerminationTypeChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "TunnelTerminationRoleChoices",
+"lineno": 57,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:TunnelTerminationRoleChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "IKEVersionChoices",
+"lineno": 73,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:IKEVersionChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "IKEModeChoices",
+"lineno": 83,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:IKEModeChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "AuthenticationMethodChoices",
+"lineno": 93,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:AuthenticationMethodChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "IPSecModeChoices",
+"lineno": 107,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:IPSecModeChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "EncryptionAlgorithmChoices",
+"lineno": 117,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:EncryptionAlgorithmChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "AuthenticationAlgorithmChoices",
+"lineno": 139,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:AuthenticationAlgorithmChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "DHGroupChoices",
+"lineno": 155,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:DHGroupChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "L2VPNTypeChoices",
+"lineno": 217,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:L2VPNTypeChoices"
+},
+{
+"module": "vpn.choices",
+"kind": "class",
+"name": "L2VPNStatusChoices",
+"lineno": 272,
+"bases": "ChoiceSet",
+"path": "netbox/vpn/choices.py",
+"id": "symbols:vpn.choices:L2VPNStatusChoices"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "TunnelGroupFilterSet",
+"lineno": 28,
+"bases": "OrganizationalModelFilterSet,ContactModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:TunnelGroupFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "TunnelFilterSet",
+"lineno": 35,
+"bases": "NetBoxModelFilterSet,TenancyFilterSet,ContactModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:TunnelFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "TunnelTerminationFilterSet",
+"lineno": 77,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:TunnelTerminationFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "IKEProposalFilterSet",
+"lineno": 126,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:IKEProposalFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "IKEPolicyFilterSet",
+"lineno": 165,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:IKEPolicyFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "IPSecProposalFilterSet",
+"lineno": 196,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:IPSecProposalFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "IPSecPolicyFilterSet",
+"lineno": 229,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:IPSecPolicyFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "IPSecProfileFilterSet",
+"lineno": 257,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:IPSecProfileFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "L2VPNFilterSet",
+"lineno": 296,
+"bases": "NetBoxModelFilterSet,TenancyFilterSet,ContactModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:L2VPNFilterSet"
+},
+{
+"module": "vpn.filtersets",
+"kind": "class",
+"name": "L2VPNTerminationFilterSet",
+"lineno": 342,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/vpn/filtersets.py",
+"id": "symbols:vpn.filtersets:L2VPNTerminationFilterSet"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "TunnelGroupBulkEditForm",
+"lineno": 26,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:TunnelGroupBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "TunnelBulkEditForm",
+"lineno": 37,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:TunnelBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "TunnelTerminationBulkEditForm",
+"lineno": 85,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:TunnelTerminationBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "IKEProposalBulkEditForm",
+"lineno": 95,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:IKEProposalBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "IKEPolicyBulkEditForm",
+"lineno": 139,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:IKEPolicyBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "IPSecProposalBulkEditForm",
+"lineno": 170,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:IPSecProposalBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "IPSecPolicyBulkEditForm",
+"lineno": 208,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:IPSecPolicyBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "IPSecProfileBulkEditForm",
+"lineno": 230,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:IPSecProfileBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "L2VPNBulkEditForm",
+"lineno": 262,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:L2VPNBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_edit",
+"kind": "class",
+"name": "L2VPNTerminationBulkEditForm",
+"lineno": 291,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "symbols:vpn.forms.bulk_edit:L2VPNTerminationBulkEditForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "TunnelGroupImportForm",
+"lineno": 27,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:TunnelGroupImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "TunnelImportForm",
+"lineno": 35,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:TunnelImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "TunnelTerminationImportForm",
+"lineno": 74,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:TunnelTerminationImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "IKEProposalImportForm",
+"lineno": 143,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:IKEProposalImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "IKEPolicyImportForm",
+"lineno": 170,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:IKEPolicyImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "IPSecProposalImportForm",
+"lineno": 193,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:IPSecProposalImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "IPSecPolicyImportForm",
+"lineno": 213,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:IPSecPolicyImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "IPSecProfileImportForm",
+"lineno": 232,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:IPSecProfileImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "L2VPNImportForm",
+"lineno": 256,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:L2VPNImportForm"
+},
+{
+"module": "vpn.forms.bulk_import",
+"kind": "class",
+"name": "L2VPNTerminationImportForm",
+"lineno": 280,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "symbols:vpn.forms.bulk_import:L2VPNTerminationImportForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "TunnelGroupFilterForm",
+"lineno": 33,
+"bases": "ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:TunnelGroupFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "TunnelFilterForm",
+"lineno": 42,
+"bases": "ContactModelFilterForm,TenancyFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:TunnelFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "TunnelTerminationFilterForm",
+"lineno": 78,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:TunnelTerminationFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "IKEProposalFilterForm",
+"lineno": 97,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:IKEProposalFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "IKEPolicyFilterForm",
+"lineno": 128,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:IKEPolicyFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "IPSecProposalFilterForm",
+"lineno": 152,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:IPSecProposalFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "IPSecPolicyFilterForm",
+"lineno": 171,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:IPSecPolicyFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "IPSecProfileFilterForm",
+"lineno": 190,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:IPSecProfileFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "L2VPNFilterForm",
+"lineno": 214,
+"bases": "ContactModelFilterForm,TenancyFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:L2VPNFilterForm"
+},
+{
+"module": "vpn.forms.filtersets",
+"kind": "class",
+"name": "L2VPNTerminationFilterForm",
+"lineno": 245,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "symbols:vpn.forms.filtersets:L2VPNTerminationFilterForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "TunnelGroupForm",
+"lineno": 32,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:TunnelGroupForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "TunnelForm",
+"lineno": 46,
+"bases": "TenancyForm,NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:TunnelForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "TunnelCreateForm",
+"lineno": 74,
+"bases": "TunnelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:TunnelCreateForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "TunnelTerminationForm",
+"lineno": 225,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:TunnelTerminationForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "IKEProposalForm",
+"lineno": 296,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:IKEProposalForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "IKEPolicyForm",
+"lineno": 314,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:IKEPolicyForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "IPSecProposalForm",
+"lineno": 333,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:IPSecProposalForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "IPSecPolicyForm",
+"lineno": 351,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:IPSecPolicyForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "IPSecProfileForm",
+"lineno": 370,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:IPSecProfileForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "L2VPNForm",
+"lineno": 397,
+"bases": "TenancyForm,NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:L2VPNForm"
+},
+{
+"module": "vpn.forms.model_forms",
+"kind": "class",
+"name": "L2VPNTerminationForm",
+"lineno": 425,
+"bases": "NetBoxModelForm",
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "symbols:vpn.forms.model_forms:L2VPNTerminationForm"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "TunnelGroupFilter",
+"lineno": 35,
+"bases": "OrganizationalModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:TunnelGroupFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "TunnelTerminationFilter",
+"lineno": 40,
+"bases": "BaseObjectTypeFilterMixin,CustomFieldsFilterMixin,TagsFilterMixin,ChangeLogFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:TunnelTerminationFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "TunnelFilter",
+"lineno": 60,
+"bases": "TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:TunnelFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "IKEProposalFilter",
+"lineno": 84,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:IKEProposalFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "IKEPolicyFilter",
+"lineno": 105,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:IKEPolicyFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "IPSecProposalFilter",
+"lineno": 116,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:IPSecProposalFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "IPSecPolicyFilter",
+"lineno": 136,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:IPSecPolicyFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "IPSecProfileFilter",
+"lineno": 145,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:IPSecProfileFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "L2VPNFilter",
+"lineno": 159,
+"bases": "ContactFilterMixin,TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:L2VPNFilter"
+},
+{
+"module": "vpn.graphql.filters",
+"kind": "class",
+"name": "L2VPNTerminationFilter",
+"lineno": 178,
+"bases": "NetBoxModelFilterMixin",
+"path": "netbox/vpn/graphql/filters.py",
+"id": "symbols:vpn.graphql.filters:L2VPNTerminationFilter"
+},
+{
+"module": "vpn.graphql.schema",
+"kind": "class",
+"name": "VPNQuery",
+"lineno": 10,
+"bases": "",
+"path": "netbox/vpn/graphql/schema.py",
+"id": "symbols:vpn.graphql.schema:VPNQuery"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "TunnelGroupType",
+"lineno": 38,
+"bases": "ContactsMixin,OrganizationalObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:TunnelGroupType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "TunnelTerminationType",
+"lineno": 49,
+"bases": "CustomFieldsMixin,TagsMixin,ObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:TunnelTerminationType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "TunnelType",
+"lineno": 61,
+"bases": "ContactsMixin,NetBoxObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:TunnelType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "IKEProposalType",
+"lineno": 75,
+"bases": "OrganizationalObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:IKEProposalType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "IKEPolicyType",
+"lineno": 86,
+"bases": "OrganizationalObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:IKEPolicyType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "IPSecProposalType",
+"lineno": 98,
+"bases": "OrganizationalObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:IPSecProposalType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "IPSecPolicyType",
+"lineno": 109,
+"bases": "OrganizationalObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:IPSecPolicyType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "IPSecProfileType",
+"lineno": 121,
+"bases": "OrganizationalObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:IPSecProfileType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "L2VPNType",
+"lineno": 134,
+"bases": "ContactsMixin,NetBoxObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:L2VPNType"
+},
+{
+"module": "vpn.graphql.types",
+"kind": "class",
+"name": "L2VPNTerminationType",
+"lineno": 148,
+"bases": "NetBoxObjectType",
+"path": "netbox/vpn/graphql/types.py",
+"id": "symbols:vpn.graphql.types:L2VPNTerminationType"
+},
+{
+"module": "vpn.migrations.0001_initial",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0001_initial.py",
+"id": "symbols:vpn.migrations.0001_initial:Migration"
+},
+{
+"module": "vpn.migrations.0002_move_l2vpn",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0002_move_l2vpn.py",
+"id": "symbols:vpn.migrations.0002_move_l2vpn:Migration"
+},
+{
+"module": "vpn.migrations.0003_ipaddress_multiple_tunnel_terminations",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0003_ipaddress_multiple_tunnel_terminations.py",
+"id": "symbols:vpn.migrations.0003_ipaddress_multiple_tunnel_terminations:Migration"
+},
+{
+"module": "vpn.migrations.0004_alter_ikepolicy_mode",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0004_alter_ikepolicy_mode.py",
+"id": "symbols:vpn.migrations.0004_alter_ikepolicy_mode:Migration"
+},
+{
+"module": "vpn.migrations.0005_rename_indexes",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0005_rename_indexes.py",
+"id": "symbols:vpn.migrations.0005_rename_indexes:Migration"
+},
+{
+"module": "vpn.migrations.0006_charfield_null_choices",
+"kind": "function",
+"name": "set_null_values",
+"lineno": 4,
+"bases": "",
+"path": "netbox/vpn/migrations/0006_charfield_null_choices.py",
+"id": "symbols:vpn.migrations.0006_charfield_null_choices:set_null_values"
+},
+{
+"module": "vpn.migrations.0006_charfield_null_choices",
+"kind": "class",
+"name": "Migration",
+"lineno": 19,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0006_charfield_null_choices.py",
+"id": "symbols:vpn.migrations.0006_charfield_null_choices:Migration"
+},
+{
+"module": "vpn.migrations.0007_natural_ordering",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0007_natural_ordering.py",
+"id": "symbols:vpn.migrations.0007_natural_ordering:Migration"
+},
+{
+"module": "vpn.migrations.0008_add_l2vpn_status",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0008_add_l2vpn_status.py",
+"id": "symbols:vpn.migrations.0008_add_l2vpn_status:Migration"
+},
+{
+"module": "vpn.migrations.0009_remove_redundant_indexes",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/vpn/migrations/0009_remove_redundant_indexes.py",
+"id": "symbols:vpn.migrations.0009_remove_redundant_indexes:Migration"
+},
+{
+"module": "vpn.models.crypto",
+"kind": "class",
+"name": "IKEProposal",
+"lineno": 21,
+"bases": "PrimaryModel",
+"path": "netbox/vpn/models/crypto.py",
+"id": "symbols:vpn.models.crypto:IKEProposal"
+},
+{
+"module": "vpn.models.crypto",
+"kind": "class",
+"name": "IKEPolicy",
+"lineno": 67,
+"bases": "PrimaryModel",
+"path": "netbox/vpn/models/crypto.py",
+"id": "symbols:vpn.models.crypto:IKEPolicy"
+},
+{
+"module": "vpn.models.crypto",
+"kind": "class",
+"name": "IPSecProposal",
+"lineno": 126,
+"bases": "PrimaryModel",
+"path": "netbox/vpn/models/crypto.py",
+"id": "symbols:vpn.models.crypto:IPSecProposal"
+},
+{
+"module": "vpn.models.crypto",
+"kind": "class",
+"name": "IPSecPolicy",
+"lineno": 178,
+"bases": "PrimaryModel",
+"path": "netbox/vpn/models/crypto.py",
+"id": "symbols:vpn.models.crypto:IPSecPolicy"
+},
+{
+"module": "vpn.models.crypto",
+"kind": "class",
+"name": "IPSecProfile",
+"lineno": 214,
+"bases": "PrimaryModel",
+"path": "netbox/vpn/models/crypto.py",
+"id": "symbols:vpn.models.crypto:IPSecProfile"
+},
+{
+"module": "vpn.models.l2vpn",
+"kind": "class",
+"name": "L2VPN",
+"lineno": 18,
+"bases": "ContactsMixin,PrimaryModel",
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "symbols:vpn.models.l2vpn:L2VPN"
+},
+{
+"module": "vpn.models.l2vpn",
+"kind": "class",
+"name": "L2VPNTermination",
+"lineno": 87,
+"bases": "NetBoxModel",
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "symbols:vpn.models.l2vpn:L2VPNTermination"
+},
+{
+"module": "vpn.models.tunnels",
+"kind": "class",
+"name": "TunnelGroup",
+"lineno": 19,
+"bases": "ContactsMixin,OrganizationalModel",
+"path": "netbox/vpn/models/tunnels.py",
+"id": "symbols:vpn.models.tunnels:TunnelGroup"
+},
+{
+"module": "vpn.models.tunnels",
+"kind": "class",
+"name": "Tunnel",
+"lineno": 30,
+"bases": "ContactsMixin,PrimaryModel",
+"path": "netbox/vpn/models/tunnels.py",
+"id": "symbols:vpn.models.tunnels:Tunnel"
+},
+{
+"module": "vpn.models.tunnels",
+"kind": "class",
+"name": "TunnelTermination",
+"lineno": 102,
+"bases": "CustomFieldsMixin,CustomLinksMixin,TagsMixin,ChangeLoggedModel",
+"path": "netbox/vpn/models/tunnels.py",
+"id": "symbols:vpn.models.tunnels:TunnelTermination"
+},
+{
+"module": "vpn.search",
+"kind": "class",
+"name": "TunnelIndex",
+"lineno": 6,
+"bases": "SearchIndex",
+"path": "netbox/vpn/search.py",
+"id": "symbols:vpn.search:TunnelIndex"
+},
+{
+"module": "vpn.search",
+"kind": "class",
+"name": "IKEProposalIndex",
+"lineno": 18,
+"bases": "SearchIndex",
+"path": "netbox/vpn/search.py",
+"id": "symbols:vpn.search:IKEProposalIndex"
+},
+{
+"module": "vpn.search",
+"kind": "class",
+"name": "IKEPolicyIndex",
+"lineno": 29,
+"bases": "SearchIndex",
+"path": "netbox/vpn/search.py",
+"id": "symbols:vpn.search:IKEPolicyIndex"
+},
+{
+"module": "vpn.search",
+"kind": "class",
+"name": "IPSecProposalIndex",
+"lineno": 40,
+"bases": "SearchIndex",
+"path": "netbox/vpn/search.py",
+"id": "symbols:vpn.search:IPSecProposalIndex"
+},
+{
+"module": "vpn.search",
+"kind": "class",
+"name": "IPSecPolicyIndex",
+"lineno": 51,
+"bases": "SearchIndex",
+"path": "netbox/vpn/search.py",
+"id": "symbols:vpn.search:IPSecPolicyIndex"
+},
+{
+"module": "vpn.search",
+"kind": "class",
+"name": "IPSecProfileIndex",
+"lineno": 62,
+"bases": "SearchIndex",
+"path": "netbox/vpn/search.py",
+"id": "symbols:vpn.search:IPSecProfileIndex"
+},
+{
+"module": "vpn.search",
+"kind": "class",
+"name": "L2VPNIndex",
+"lineno": 73,
+"bases": "SearchIndex",
+"path": "netbox/vpn/search.py",
+"id": "symbols:vpn.search:L2VPNIndex"
+},
+{
+"module": "vpn.tables.crypto",
+"kind": "class",
+"name": "IKEProposalTable",
+"lineno": 16,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/crypto.py",
+"id": "symbols:vpn.tables.crypto:IKEProposalTable"
+},
+{
+"module": "vpn.tables.crypto",
+"kind": "class",
+"name": "IKEPolicyTable",
+"lineno": 55,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/crypto.py",
+"id": "symbols:vpn.tables.crypto:IKEPolicyTable"
+},
+{
+"module": "vpn.tables.crypto",
+"kind": "class",
+"name": "IPSecProposalTable",
+"lineno": 91,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/crypto.py",
+"id": "symbols:vpn.tables.crypto:IPSecProposalTable"
+},
+{
+"module": "vpn.tables.crypto",
+"kind": "class",
+"name": "IPSecPolicyTable",
+"lineno": 127,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/crypto.py",
+"id": "symbols:vpn.tables.crypto:IPSecPolicyTable"
+},
+{
+"module": "vpn.tables.crypto",
+"kind": "class",
+"name": "IPSecProfileTable",
+"lineno": 156,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/crypto.py",
+"id": "symbols:vpn.tables.crypto:IPSecProfileTable"
+},
+{
+"module": "vpn.tables.l2vpn",
+"kind": "class",
+"name": "L2VPNTable",
+"lineno": 20,
+"bases": "TenancyColumnsMixin,NetBoxTable",
+"path": "netbox/vpn/tables/l2vpn.py",
+"id": "symbols:vpn.tables.l2vpn:L2VPNTable"
+},
+{
+"module": "vpn.tables.l2vpn",
+"kind": "class",
+"name": "L2VPNTerminationTable",
+"lineno": 55,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/l2vpn.py",
+"id": "symbols:vpn.tables.l2vpn:L2VPNTerminationTable"
+},
+{
+"module": "vpn.tables.tunnels",
+"kind": "class",
+"name": "TunnelGroupTable",
+"lineno": 16,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/tunnels.py",
+"id": "symbols:vpn.tables.tunnels:TunnelGroupTable"
+},
+{
+"module": "vpn.tables.tunnels",
+"kind": "class",
+"name": "TunnelTable",
+"lineno": 38,
+"bases": "TenancyColumnsMixin,NetBoxTable",
+"path": "netbox/vpn/tables/tunnels.py",
+"id": "symbols:vpn.tables.tunnels:TunnelTable"
+},
+{
+"module": "vpn.tables.tunnels",
+"kind": "class",
+"name": "TunnelTerminationTable",
+"lineno": 76,
+"bases": "NetBoxTable",
+"path": "netbox/vpn/tables/tunnels.py",
+"id": "symbols:vpn.tables.tunnels:TunnelTerminationTable"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "AppTest",
+"lineno": 12,
+"bases": "APITestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:AppTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "TunnelGroupTest",
+"lineno": 21,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:TunnelGroupTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "TunnelTest",
+"lineno": 53,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:TunnelTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "TunnelTerminationTest",
+"lineno": 114,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:TunnelTerminationTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "IKEProposalTest",
+"lineno": 182,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:IKEProposalTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "IKEPolicyTest",
+"lineno": 246,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:IKEPolicyTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "IPSecProposalTest",
+"lineno": 320,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:IPSecProposalTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "IPSecPolicyTest",
+"lineno": 370,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:IPSecPolicyTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "IPSecProfileTest",
+"lineno": 432,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:IPSecProfileTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "L2VPNTest",
+"lineno": 523,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:L2VPNTest"
+},
+{
+"module": "vpn.tests.test_api",
+"kind": "class",
+"name": "L2VPNTerminationTest",
+"lineno": 605,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/vpn/tests/test_api.py",
+"id": "symbols:vpn.tests.test_api:L2VPNTerminationTest"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "TunnelGroupTestCase",
+"lineno": 13,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:TunnelGroupTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "TunnelTestCase",
+"lineno": 43,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:TunnelTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "TunnelTerminationTestCase",
+"lineno": 165,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:TunnelTerminationTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "IKEProposalTestCase",
+"lineno": 296,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:IKEProposalTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "IKEPolicyTestCase",
+"lineno": 389,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:IKEPolicyTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "IPSecProposalTestCase",
+"lineno": 473,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:IPSecProposalTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "IPSecPolicyTestCase",
+"lineno": 557,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:IPSecPolicyTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "IPSecProfileTestCase",
+"lineno": 628,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:IPSecProfileTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "L2VPNTestCase",
+"lineno": 742,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:L2VPNTestCase"
+},
+{
+"module": "vpn.tests.test_filtersets",
+"kind": "class",
+"name": "L2VPNTerminationTestCase",
+"lineno": 848,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "symbols:vpn.tests.test_filtersets:L2VPNTerminationTestCase"
+},
+{
+"module": "vpn.tests.test_models",
+"kind": "class",
+"name": "TestL2VPNTermination",
+"lineno": 9,
+"bases": "TestCase",
+"path": "netbox/vpn/tests/test_models.py",
+"id": "symbols:vpn.tests.test_models:TestL2VPNTermination"
+},
+{
+"module": "vpn.tests.test_tables",
+"kind": "class",
+"name": "TunnelTerminationTableTest",
+"lineno": 8,
+"bases": "TestCase",
+"path": "netbox/vpn/tests/test_tables.py",
+"id": "symbols:vpn.tests.test_tables:TunnelTerminationTableTest"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "TunnelGroupTestCase",
+"lineno": 9,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:TunnelGroupTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "TunnelTestCase",
+"lineno": 50,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:TunnelTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "TunnelTerminationTestCase",
+"lineno": 119,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:TunnelTerminationTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "IKEProposalTestCase",
+"lineno": 193,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:IKEProposalTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "IKEPolicyTestCase",
+"lineno": 258,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:IKEPolicyTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "IPSecProposalTestCase",
+"lineno": 334,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:IPSecProposalTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "IPSecPolicyTestCase",
+"lineno": 393,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:IPSecPolicyTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "IPSecProfileTestCase",
+"lineno": 461,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:IPSecProfileTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "L2VPNTestCase",
+"lineno": 565,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:L2VPNTestCase"
+},
+{
+"module": "vpn.tests.test_views",
+"kind": "class",
+"name": "L2VPNTerminationTestCase",
+"lineno": 621,
+"bases": "ViewTestCases.GetObjectViewTestCase,ViewTestCases.GetObjectChangelogViewTestCase,ViewTestCases.CreateObjectViewTestCase,ViewTestCases.EditObjectViewTestCase,ViewTestCases.DeleteObjectViewTestCase,View",
+"path": "netbox/vpn/tests/test_views.py",
+"id": "symbols:vpn.tests.test_views:L2VPNTerminationTestCase"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelGroupListView",
+"lineno": 14,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelGroupListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelGroupView",
+"lineno": 24,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelGroupView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelGroupEditView",
+"lineno": 35,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelGroupEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelGroupDeleteView",
+"lineno": 41,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelGroupDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelGroupBulkImportView",
+"lineno": 46,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelGroupBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelGroupBulkEditView",
+"lineno": 52,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelGroupBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelGroupBulkDeleteView",
+"lineno": 62,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelGroupBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelListView",
+"lineno": 75,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelView",
+"lineno": 85,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelEditView",
+"lineno": 91,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelDeleteView",
+"lineno": 105,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelBulkImportView",
+"lineno": 110,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelBulkEditView",
+"lineno": 116,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelBulkDeleteView",
+"lineno": 126,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelTerminationListView",
+"lineno": 139,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelTerminationListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelTerminationView",
+"lineno": 147,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelTerminationView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelTerminationEditView",
+"lineno": 153,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelTerminationEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelTerminationDeleteView",
+"lineno": 159,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelTerminationDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelTerminationBulkImportView",
+"lineno": 164,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelTerminationBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelTerminationBulkEditView",
+"lineno": 170,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelTerminationBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "TunnelTerminationBulkDeleteView",
+"lineno": 178,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:TunnelTerminationBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEProposalListView",
+"lineno": 189,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEProposalListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEProposalView",
+"lineno": 197,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEProposalView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEProposalEditView",
+"lineno": 203,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEProposalEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEProposalDeleteView",
+"lineno": 209,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEProposalDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEProposalBulkImportView",
+"lineno": 214,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEProposalBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEProposalBulkEditView",
+"lineno": 220,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEProposalBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEProposalBulkDeleteView",
+"lineno": 228,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEProposalBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEPolicyListView",
+"lineno": 239,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEPolicyListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEPolicyView",
+"lineno": 247,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEPolicyView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEPolicyEditView",
+"lineno": 253,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEPolicyEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEPolicyDeleteView",
+"lineno": 259,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEPolicyDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEPolicyBulkImportView",
+"lineno": 264,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEPolicyBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEPolicyBulkEditView",
+"lineno": 270,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEPolicyBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IKEPolicyBulkDeleteView",
+"lineno": 278,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IKEPolicyBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProposalListView",
+"lineno": 289,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProposalListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProposalView",
+"lineno": 297,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProposalView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProposalEditView",
+"lineno": 303,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProposalEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProposalDeleteView",
+"lineno": 309,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProposalDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProposalBulkImportView",
+"lineno": 314,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProposalBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProposalBulkEditView",
+"lineno": 320,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProposalBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProposalBulkDeleteView",
+"lineno": 328,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProposalBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecPolicyListView",
+"lineno": 339,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecPolicyListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecPolicyView",
+"lineno": 347,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecPolicyView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecPolicyEditView",
+"lineno": 353,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecPolicyEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecPolicyDeleteView",
+"lineno": 359,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecPolicyDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecPolicyBulkImportView",
+"lineno": 364,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecPolicyBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecPolicyBulkEditView",
+"lineno": 370,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecPolicyBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecPolicyBulkDeleteView",
+"lineno": 378,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecPolicyBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProfileListView",
+"lineno": 389,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProfileListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProfileView",
+"lineno": 397,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProfileView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProfileEditView",
+"lineno": 403,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProfileEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProfileDeleteView",
+"lineno": 409,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProfileDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProfileBulkImportView",
+"lineno": 414,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProfileBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProfileBulkEditView",
+"lineno": 420,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProfileBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "IPSecProfileBulkDeleteView",
+"lineno": 428,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:IPSecProfileBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNListView",
+"lineno": 439,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNView",
+"lineno": 447,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNEditView",
+"lineno": 470,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNDeleteView",
+"lineno": 476,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNBulkImportView",
+"lineno": 481,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNBulkEditView",
+"lineno": 487,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNBulkDeleteView",
+"lineno": 495,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNBulkDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNTerminationListView",
+"lineno": 506,
+"bases": "generic.ObjectListView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNTerminationListView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNTerminationView",
+"lineno": 514,
+"bases": "generic.ObjectView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNTerminationView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNTerminationEditView",
+"lineno": 520,
+"bases": "generic.ObjectEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNTerminationEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNTerminationDeleteView",
+"lineno": 526,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNTerminationDeleteView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNTerminationBulkImportView",
+"lineno": 531,
+"bases": "generic.BulkImportView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNTerminationBulkImportView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNTerminationBulkEditView",
+"lineno": 537,
+"bases": "generic.BulkEditView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNTerminationBulkEditView"
+},
+{
+"module": "vpn.views",
+"kind": "class",
+"name": "L2VPNTerminationBulkDeleteView",
+"lineno": 545,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/vpn/views.py",
+"id": "symbols:vpn.views:L2VPNTerminationBulkDeleteView"
+}
+],
+"imports_out": [
+{
+"src": "vpn.api.serializers",
+"dst": "vpn.api.serializers_.crypto",
+"raw": "vpn.api.serializers_.crypto",
+"lineno": 1,
+"path": "netbox/vpn/api/serializers.py",
+"id": "imports:vpn.api.serializers->vpn.api.serializers_.crypto"
+},
+{
+"src": "vpn.api.serializers",
+"dst": "vpn.api.serializers_.l2vpn",
+"raw": "vpn.api.serializers_.l2vpn",
+"lineno": 3,
+"path": "netbox/vpn/api/serializers.py",
+"id": "imports:vpn.api.serializers->vpn.api.serializers_.l2vpn"
+},
+{
+"src": "vpn.api.serializers",
+"dst": "vpn.api.serializers_.tunnels",
+"raw": "vpn.api.serializers_.tunnels",
+"lineno": 2,
+"path": "netbox/vpn/api/serializers.py",
+"id": "imports:vpn.api.serializers->vpn.api.serializers_.tunnels"
+},
+{
+"src": "vpn.api.serializers_.crypto",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 1,
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "imports:vpn.api.serializers_.crypto->netbox.api.fields"
+},
+{
+"src": "vpn.api.serializers_.crypto",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 2,
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "imports:vpn.api.serializers_.crypto->netbox.api.serializers"
+},
+{
+"src": "vpn.api.serializers_.crypto",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 3,
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "imports:vpn.api.serializers_.crypto->vpn.choices"
+},
+{
+"src": "vpn.api.serializers_.crypto",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 4,
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"id": "imports:vpn.api.serializers_.crypto->vpn.models"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "ipam.api.serializers_.vrfs",
+"raw": "ipam.api.serializers_.vrfs",
+"lineno": 5,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->ipam.api.serializers_.vrfs"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->ipam.models"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 7,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->netbox.api.fields"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 8,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->netbox.api.serializers"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 9,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->tenancy.api.serializers_.tenants"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "utilities.api",
+"raw": "utilities.api",
+"lineno": 10,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->utilities.api"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 11,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->vpn.choices"
+},
+{
+"src": "vpn.api.serializers_.l2vpn",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 12,
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"id": "imports:vpn.api.serializers_.l2vpn->vpn.models"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "ipam.api.serializers_.ip",
+"raw": "ipam.api.serializers_.ip",
+"lineno": 5,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->ipam.api.serializers_.ip"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 6,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->netbox.api.fields"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 7,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->netbox.api.serializers"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 8,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->tenancy.api.serializers_.tenants"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "utilities.api",
+"raw": "utilities.api",
+"lineno": 9,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->utilities.api"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "vpn.api.serializers_.crypto",
+"raw": "vpn.api.serializers_.crypto",
+"lineno": 12,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->vpn.api.serializers_.crypto"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 10,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->vpn.choices"
+},
+{
+"src": "vpn.api.serializers_.tunnels",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 11,
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"id": "imports:vpn.api.serializers_.tunnels->vpn.models"
+},
+{
+"src": "vpn.api.urls",
+"dst": "netbox.api.routers",
+"raw": "netbox.api.routers",
+"lineno": 1,
+"path": "netbox/vpn/api/urls.py",
+"id": "imports:vpn.api.urls->netbox.api.routers"
+},
+{
+"src": "vpn.api.urls",
+"dst": "vpn.api",
+"raw": "vpn.api",
+"lineno": 2,
+"path": "netbox/vpn/api/urls.py",
+"id": "imports:vpn.api.urls->vpn.api"
+},
+{
+"src": "vpn.api.views",
+"dst": "netbox.api.viewsets",
+"raw": "netbox.api.viewsets",
+"lineno": 3,
+"path": "netbox/vpn/api/views.py",
+"id": "imports:vpn.api.views->netbox.api.viewsets"
+},
+{
+"src": "vpn.api.views",
+"dst": "vpn",
+"raw": "vpn",
+"lineno": 4,
+"path": "netbox/vpn/api/views.py",
+"id": "imports:vpn.api.views->vpn"
+},
+{
+"src": "vpn.api.views",
+"dst": "vpn.api",
+"raw": "vpn.api",
+"lineno": 6,
+"path": "netbox/vpn/api/views.py",
+"id": "imports:vpn.api.views->vpn.api"
+},
+{
+"src": "vpn.api.views",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 5,
+"path": "netbox/vpn/api/views.py",
+"id": "imports:vpn.api.views->vpn.models"
+},
+{
+"src": "vpn.apps",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 9,
+"path": "netbox/vpn/apps.py",
+"id": "imports:vpn.apps->netbox.models.features"
+},
+{
+"src": "vpn.apps",
+"dst": "vpn",
+"raw": "vpn",
+"lineno": 10,
+"path": "netbox/vpn/apps.py",
+"id": "imports:vpn.apps->vpn"
+},
+{
+"src": "vpn.choices",
+"dst": "utilities.choices",
+"raw": "utilities.choices",
+"lineno": 3,
+"path": "netbox/vpn/choices.py",
+"id": "imports:vpn.choices->utilities.choices"
+},
+{
+"src": "vpn.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->dcim.models"
+},
+{
+"src": "vpn.filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->ipam.models"
+},
+{
+"src": "vpn.filtersets",
+"dst": "netbox.filtersets",
+"raw": "netbox.filtersets",
+"lineno": 7,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->netbox.filtersets"
+},
+{
+"src": "vpn.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 8,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->tenancy.filtersets"
+},
+{
+"src": "vpn.filtersets",
+"dst": "utilities.filters",
+"raw": "utilities.filters",
+"lineno": 9,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->utilities.filters"
+},
+{
+"src": "vpn.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 10,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->virtualization.models"
+},
+{
+"src": "vpn.filtersets",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 11,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->vpn.choices"
+},
+{
+"src": "vpn.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 12,
+"path": "netbox/vpn/filtersets.py",
+"id": "imports:vpn.filtersets->vpn.models"
+},
+{
+"src": "vpn.forms",
+"dst": "vpn.forms.bulk_edit",
+"raw": "vpn.forms.bulk_edit",
+"lineno": 1,
+"path": "netbox/vpn/forms/__init__.py",
+"id": "imports:vpn.forms->vpn.forms.bulk_edit"
+},
+{
+"src": "vpn.forms",
+"dst": "vpn.forms.bulk_import",
+"raw": "vpn.forms.bulk_import",
+"lineno": 2,
+"path": "netbox/vpn/forms/__init__.py",
+"id": "imports:vpn.forms->vpn.forms.bulk_import"
+},
+{
+"src": "vpn.forms",
+"dst": "vpn.forms.filtersets",
+"raw": "vpn.forms.filtersets",
+"lineno": 3,
+"path": "netbox/vpn/forms/__init__.py",
+"id": "imports:vpn.forms->vpn.forms.filtersets"
+},
+{
+"src": "vpn.forms",
+"dst": "vpn.forms.model_forms",
+"raw": "vpn.forms.model_forms",
+"lineno": 4,
+"path": "netbox/vpn/forms/__init__.py",
+"id": "imports:vpn.forms->vpn.forms.model_forms"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 4,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->netbox.forms"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 5,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 6,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->utilities.forms"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 7,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->utilities.forms.fields"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 8,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->utilities.forms.rendering"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 9,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->vpn.choices"
+},
+{
+"src": "vpn.forms.bulk_edit",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 10,
+"path": "netbox/vpn/forms/bulk_edit.py",
+"id": "imports:vpn.forms.bulk_edit->vpn.models"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->dcim.models"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 5,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->ipam.models"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 6,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->netbox.forms"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 7,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->tenancy.models"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 8,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->utilities.forms.fields"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 9,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->virtualization.models"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 10,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->vpn.choices"
+},
+{
+"src": "vpn.forms.bulk_import",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 11,
+"path": "netbox/vpn/forms/bulk_import.py",
+"id": "imports:vpn.forms.bulk_import->vpn.models"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->dcim.models"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->ipam.models"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 7,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->netbox.forms"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->tenancy.forms"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 9,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->utilities.forms.fields"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 12,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->utilities.forms.rendering"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "utilities.forms.utils",
+"raw": "utilities.forms.utils",
+"lineno": 13,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->utilities.forms.utils"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 14,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->virtualization.models"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 15,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->vpn.choices"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "vpn.constants",
+"raw": "vpn.constants",
+"lineno": 16,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->vpn.constants"
+},
+{
+"src": "vpn.forms.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 17,
+"path": "netbox/vpn/forms/filtersets.py",
+"id": "imports:vpn.forms.filtersets->vpn.models"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->dcim.models"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->ipam.models"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 7,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->netbox.forms"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 8,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->tenancy.forms"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 9,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->utilities.forms.fields"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 10,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->utilities.forms.rendering"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "utilities.forms.utils",
+"raw": "utilities.forms.utils",
+"lineno": 11,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->utilities.forms.utils"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 12,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->utilities.forms.widgets"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 13,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->virtualization.models"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 14,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->vpn.choices"
+},
+{
+"src": "vpn.forms.model_forms",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 15,
+"path": "netbox/vpn/forms/model_forms.py",
+"id": "imports:vpn.forms.model_forms->vpn.models"
+},
+{
+"src": "vpn.graphql.enums",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 3,
+"path": "netbox/vpn/graphql/enums.py",
+"id": "imports:vpn.graphql.enums->vpn.choices"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 8,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 15,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->core.graphql.filters"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "extras.graphql.filter_mixins",
+"raw": "extras.graphql.filter_mixins",
+"lineno": 9,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->extras.graphql.filter_mixins"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "ipam.graphql.filters",
+"raw": "ipam.graphql.filters",
+"lineno": 16,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->ipam.graphql.filters"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "netbox.graphql.filter_lookups",
+"raw": "netbox.graphql.filter_lookups",
+"lineno": 17,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->netbox.graphql.filter_lookups"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->netbox.graphql.filter_mixins"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 11,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "vpn",
+"raw": "vpn",
+"lineno": 12,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->vpn"
+},
+{
+"src": "vpn.graphql.filters",
+"dst": "vpn.graphql.enums",
+"raw": "vpn.graphql.enums",
+"lineno": 18,
+"path": "netbox/vpn/graphql/filters.py",
+"id": "imports:vpn.graphql.filters->vpn.graphql.enums"
+},
+{
+"src": "vpn.graphql.schema",
+"dst": "vpn.graphql.types",
+"raw": "vpn.graphql.types",
+"lineno": 6,
+"path": "netbox/vpn/graphql/schema.py",
+"id": "imports:vpn.graphql.schema->vpn.graphql.types"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "dcim.graphql.types",
+"raw": "dcim.graphql.types",
+"lineno": 12,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->dcim.graphql.types"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "extras.graphql.mixins",
+"raw": "extras.graphql.mixins",
+"lineno": 6,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->extras.graphql.mixins"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "ipam.graphql.types",
+"raw": "ipam.graphql.types",
+"lineno": 13,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->ipam.graphql.types"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 7,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->netbox.graphql.types"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 14,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->netbox.graphql.types"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 15,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "virtualization.graphql.types",
+"raw": "virtualization.graphql.types",
+"lineno": 16,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->virtualization.graphql.types"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "vpn",
+"raw": "vpn",
+"lineno": 8,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->vpn"
+},
+{
+"src": "vpn.graphql.types",
+"dst": "vpn.graphql.filters",
+"raw": "vpn.graphql.filters",
+"lineno": 9,
+"path": "netbox/vpn/graphql/types.py",
+"id": "imports:vpn.graphql.types->vpn.graphql.filters"
+},
+{
+"src": "vpn.migrations.0001_initial",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 4,
+"path": "netbox/vpn/migrations/0001_initial.py",
+"id": "imports:vpn.migrations.0001_initial->utilities.json"
+},
+{
+"src": "vpn.migrations.0002_move_l2vpn",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 4,
+"path": "netbox/vpn/migrations/0002_move_l2vpn.py",
+"id": "imports:vpn.migrations.0002_move_l2vpn->utilities.json"
+},
+{
+"src": "vpn.models",
+"dst": "vpn.models.crypto",
+"raw": "vpn.models.crypto",
+"lineno": 1,
+"path": "netbox/vpn/models/__init__.py",
+"id": "imports:vpn.models->vpn.models.crypto"
+},
+{
+"src": "vpn.models",
+"dst": "vpn.models.l2vpn",
+"raw": "vpn.models.l2vpn",
+"lineno": 2,
+"path": "netbox/vpn/models/__init__.py",
+"id": "imports:vpn.models->vpn.models.l2vpn"
+},
+{
+"src": "vpn.models",
+"dst": "vpn.models.tunnels",
+"raw": "vpn.models.tunnels",
+"lineno": 3,
+"path": "netbox/vpn/models/__init__.py",
+"id": "imports:vpn.models->vpn.models.tunnels"
+},
+{
+"src": "vpn.models.crypto",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 5,
+"path": "netbox/vpn/models/crypto.py",
+"id": "imports:vpn.models.crypto->netbox.models"
+},
+{
+"src": "vpn.models.crypto",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 6,
+"path": "netbox/vpn/models/crypto.py",
+"id": "imports:vpn.models.crypto->vpn.choices"
+},
+{
+"src": "vpn.models.l2vpn",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 7,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "imports:vpn.models.l2vpn->core.models"
+},
+{
+"src": "vpn.models.l2vpn",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 8,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "imports:vpn.models.l2vpn->netbox.models"
+},
+{
+"src": "vpn.models.l2vpn",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 9,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "imports:vpn.models.l2vpn->netbox.models.features"
+},
+{
+"src": "vpn.models.l2vpn",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 10,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "imports:vpn.models.l2vpn->vpn.choices"
+},
+{
+"src": "vpn.models.tunnels",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 8,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "imports:vpn.models.tunnels->netbox.models"
+},
+{
+"src": "vpn.models.tunnels",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 9,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "imports:vpn.models.tunnels->netbox.models.features"
+},
+{
+"src": "vpn.models.tunnels",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 10,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "imports:vpn.models.tunnels->vpn.choices"
+},
+{
+"src": "vpn.search",
+"dst": "netbox.search",
+"raw": "netbox.search",
+"lineno": 1,
+"path": "netbox/vpn/search.py",
+"id": "imports:vpn.search->netbox.search"
+},
+{
+"src": "vpn.search",
+"dst": "vpn",
+"raw": "vpn",
+"lineno": 2,
+"path": "netbox/vpn/search.py",
+"id": "imports:vpn.search->vpn"
+},
+{
+"src": "vpn.tables",
+"dst": "vpn.tables.crypto",
+"raw": "vpn.tables.crypto",
+"lineno": 1,
+"path": "netbox/vpn/tables/__init__.py",
+"id": "imports:vpn.tables->vpn.tables.crypto"
+},
+{
+"src": "vpn.tables",
+"dst": "vpn.tables.l2vpn",
+"raw": "vpn.tables.l2vpn",
+"lineno": 2,
+"path": "netbox/vpn/tables/__init__.py",
+"id": "imports:vpn.tables->vpn.tables.l2vpn"
+},
+{
+"src": "vpn.tables",
+"dst": "vpn.tables.tunnels",
+"raw": "vpn.tables.tunnels",
+"lineno": 3,
+"path": "netbox/vpn/tables/__init__.py",
+"id": "imports:vpn.tables->vpn.tables.tunnels"
+},
+{
+"src": "vpn.tables.crypto",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 4,
+"path": "netbox/vpn/tables/crypto.py",
+"id": "imports:vpn.tables.crypto->netbox.tables"
+},
+{
+"src": "vpn.tables.crypto",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 5,
+"path": "netbox/vpn/tables/crypto.py",
+"id": "imports:vpn.tables.crypto->vpn.models"
+},
+{
+"src": "vpn.tables.l2vpn",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 4,
+"path": "netbox/vpn/tables/l2vpn.py",
+"id": "imports:vpn.tables.l2vpn->netbox.tables"
+},
+{
+"src": "vpn.tables.l2vpn",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/vpn/tables/l2vpn.py",
+"id": "imports:vpn.tables.l2vpn->tenancy.tables"
+},
+{
+"src": "vpn.tables.l2vpn",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 6,
+"path": "netbox/vpn/tables/l2vpn.py",
+"id": "imports:vpn.tables.l2vpn->vpn.models"
+},
+{
+"src": "vpn.tables.tunnels",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 5,
+"path": "netbox/vpn/tables/tunnels.py",
+"id": "imports:vpn.tables.tunnels->netbox.tables"
+},
+{
+"src": "vpn.tables.tunnels",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/vpn/tables/tunnels.py",
+"id": "imports:vpn.tables.tunnels->tenancy.tables"
+},
+{
+"src": "vpn.tables.tunnels",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 7,
+"path": "netbox/vpn/tables/tunnels.py",
+"id": "imports:vpn.tables.tunnels->vpn.models"
+},
+{
+"src": "vpn.tests.test_api",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 4,
+"path": "netbox/vpn/tests/test_api.py",
+"id": "imports:vpn.tests.test_api->dcim.choices"
+},
+{
+"src": "vpn.tests.test_api",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 5,
+"path": "netbox/vpn/tests/test_api.py",
+"id": "imports:vpn.tests.test_api->dcim.models"
+},
+{
+"src": "vpn.tests.test_api",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 6,
+"path": "netbox/vpn/tests/test_api.py",
+"id": "imports:vpn.tests.test_api->ipam.models"
+},
+{
+"src": "vpn.tests.test_api",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 7,
+"path": "netbox/vpn/tests/test_api.py",
+"id": "imports:vpn.tests.test_api->utilities.testing"
+},
+{
+"src": "vpn.tests.test_api",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 8,
+"path": "netbox/vpn/tests/test_api.py",
+"id": "imports:vpn.tests.test_api->vpn.choices"
+},
+{
+"src": "vpn.tests.test_api",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 9,
+"path": "netbox/vpn/tests/test_api.py",
+"id": "imports:vpn.tests.test_api->vpn.models"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 3,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->dcim.choices"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->dcim.models"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 5,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->ipam.models"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 6,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->utilities.testing"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "virtualization.models",
+"raw": "virtualization.models",
+"lineno": 7,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->virtualization.models"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 8,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->vpn.choices"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "vpn.filtersets",
+"raw": "vpn.filtersets",
+"lineno": 9,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->vpn.filtersets"
+},
+{
+"src": "vpn.tests.test_filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 10,
+"path": "netbox/vpn/tests/test_filtersets.py",
+"id": "imports:vpn.tests.test_filtersets->vpn.models"
+},
+{
+"src": "vpn.tests.test_models",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 4,
+"path": "netbox/vpn/tests/test_models.py",
+"id": "imports:vpn.tests.test_models->dcim.models"
+},
+{
+"src": "vpn.tests.test_models",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 5,
+"path": "netbox/vpn/tests/test_models.py",
+"id": "imports:vpn.tests.test_models->ipam.models"
+},
+{
+"src": "vpn.tests.test_models",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 6,
+"path": "netbox/vpn/tests/test_models.py",
+"id": "imports:vpn.tests.test_models->vpn.models"
+},
+{
+"src": "vpn.tests.test_tables",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 3,
+"path": "netbox/vpn/tests/test_tables.py",
+"id": "imports:vpn.tests.test_tables->vpn.models"
+},
+{
+"src": "vpn.tests.test_tables",
+"dst": "vpn.tables",
+"raw": "vpn.tables",
+"lineno": 4,
+"path": "netbox/vpn/tests/test_tables.py",
+"id": "imports:vpn.tests.test_tables->vpn.tables"
+},
+{
+"src": "vpn.tests.test_views",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 1,
+"path": "netbox/vpn/tests/test_views.py",
+"id": "imports:vpn.tests.test_views->dcim.choices"
+},
+{
+"src": "vpn.tests.test_views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 2,
+"path": "netbox/vpn/tests/test_views.py",
+"id": "imports:vpn.tests.test_views->dcim.models"
+},
+{
+"src": "vpn.tests.test_views",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 3,
+"path": "netbox/vpn/tests/test_views.py",
+"id": "imports:vpn.tests.test_views->ipam.models"
+},
+{
+"src": "vpn.tests.test_views",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 4,
+"path": "netbox/vpn/tests/test_views.py",
+"id": "imports:vpn.tests.test_views->utilities.testing"
+},
+{
+"src": "vpn.tests.test_views",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 5,
+"path": "netbox/vpn/tests/test_views.py",
+"id": "imports:vpn.tests.test_views->vpn.choices"
+},
+{
+"src": "vpn.tests.test_views",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 6,
+"path": "netbox/vpn/tests/test_views.py",
+"id": "imports:vpn.tests.test_views->vpn.models"
+},
+{
+"src": "vpn.urls",
+"dst": "utilities.urls",
+"raw": "utilities.urls",
+"lineno": 3,
+"path": "netbox/vpn/urls.py",
+"id": "imports:vpn.urls->utilities.urls"
+},
+{
+"src": "vpn.urls",
+"dst": "vpn",
+"raw": "vpn",
+"lineno": 4,
+"path": "netbox/vpn/urls.py",
+"id": "imports:vpn.urls->vpn"
+},
+{
+"src": "vpn.views",
+"dst": "ipam.tables",
+"raw": "ipam.tables",
+"lineno": 1,
+"path": "netbox/vpn/views.py",
+"id": "imports:vpn.views->ipam.tables"
+},
+{
+"src": "vpn.views",
+"dst": "netbox.views",
+"raw": "netbox.views",
+"lineno": 2,
+"path": "netbox/vpn/views.py",
+"id": "imports:vpn.views->netbox.views"
+},
+{
+"src": "vpn.views",
+"dst": "utilities.query",
+"raw": "utilities.query",
+"lineno": 3,
+"path": "netbox/vpn/views.py",
+"id": "imports:vpn.views->utilities.query"
+},
+{
+"src": "vpn.views",
+"dst": "utilities.views",
+"raw": "utilities.views",
+"lineno": 4,
+"path": "netbox/vpn/views.py",
+"id": "imports:vpn.views->utilities.views"
+},
+{
+"src": "vpn.views",
+"dst": "vpn",
+"raw": "vpn",
+"lineno": 5,
+"path": "netbox/vpn/views.py",
+"id": "imports:vpn.views->vpn"
+},
+{
+"src": "vpn.views",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 6,
+"path": "netbox/vpn/views.py",
+"id": "imports:vpn.views->vpn.models"
+}
+],
+"imports_in": [
+{
+"src": "dcim.api.serializers_.device_components",
+"dst": "vpn.api.serializers_.l2vpn",
+"raw": "vpn.api.serializers_.l2vpn",
+"lineno": 18,
+"path": "netbox/dcim/api/serializers_/device_components.py",
+"id": "imports:dcim.api.serializers_.device_components->vpn.api.serializers_.l2vpn"
+},
+{
+"src": "dcim.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 25,
+"path": "netbox/dcim/filtersets.py",
+"id": "imports:dcim.filtersets->vpn.models"
+},
+{
+"src": "dcim.forms.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 19,
+"path": "netbox/dcim/forms/filtersets.py",
+"id": "imports:dcim.forms.filtersets->vpn.models"
+},
+{
+"src": "dcim.graphql.filters",
+"dst": "vpn.graphql.filters",
+"raw": "vpn.graphql.filters",
+"lineno": 40,
+"path": "netbox/dcim/graphql/filters.py",
+"id": "imports:dcim.graphql.filters->vpn.graphql.filters"
+},
+{
+"src": "ipam.api.serializers_.vlans",
+"dst": "vpn.api.serializers_.l2vpn",
+"raw": "vpn.api.serializers_.l2vpn",
+"lineno": 13,
+"path": "netbox/ipam/api/serializers_/vlans.py",
+"id": "imports:ipam.api.serializers_.vlans->vpn.api.serializers_.l2vpn"
+},
+{
+"src": "ipam.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 21,
+"path": "netbox/ipam/filtersets.py",
+"id": "imports:ipam.filtersets->vpn.models"
+},
+{
+"src": "ipam.forms.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 14,
+"path": "netbox/ipam/forms/filtersets.py",
+"id": "imports:ipam.forms.filtersets->vpn.models"
+},
+{
+"src": "ipam.graphql.filters",
+"dst": "vpn.graphql.filters",
+"raw": "vpn.graphql.filters",
+"lineno": 26,
+"path": "netbox/ipam/graphql/filters.py",
+"id": "imports:ipam.graphql.filters->vpn.graphql.filters"
+},
+{
+"src": "ipam.graphql.types",
+"dst": "vpn.graphql.types",
+"raw": "vpn.graphql.types",
+"lineno": 27,
+"path": "netbox/ipam/graphql/types.py",
+"id": "imports:ipam.graphql.types->vpn.graphql.types"
+},
+{
+"src": "ipam.tests.test_filtersets",
+"dst": "vpn.choices",
+"raw": "vpn.choices",
+"lineno": 15,
+"path": "netbox/ipam/tests/test_filtersets.py",
+"id": "imports:ipam.tests.test_filtersets->vpn.choices"
+},
+{
+"src": "ipam.tests.test_filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 16,
+"path": "netbox/ipam/tests/test_filtersets.py",
+"id": "imports:ipam.tests.test_filtersets->vpn.models"
+},
+{
+"src": "netbox.graphql.schema",
+"dst": "vpn.graphql.schema",
+"raw": "vpn.graphql.schema",
+"lineno": 16,
+"path": "netbox/netbox/graphql/schema.py",
+"id": "imports:netbox.graphql.schema->vpn.graphql.schema"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "vpn.graphql.filters",
+"raw": "vpn.graphql.filters",
+"lineno": 46,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->vpn.graphql.filters"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "vpn.graphql.types",
+"raw": "vpn.graphql.types",
+"lineno": 38,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->vpn.graphql.types"
+},
+{
+"src": "virtualization.api.serializers_.virtualmachines",
+"dst": "vpn.api.serializers_.l2vpn",
+"raw": "vpn.api.serializers_.l2vpn",
+"lineno": 20,
+"path": "netbox/virtualization/api/serializers_/virtualmachines.py",
+"id": "imports:virtualization.api.serializers_.virtualmachines->vpn.api.serializers_.l2vpn"
+},
+{
+"src": "virtualization.forms.filtersets",
+"dst": "vpn.models",
+"raw": "vpn.models",
+"lineno": 16,
+"path": "netbox/virtualization/forms/filtersets.py",
+"id": "imports:virtualization.forms.filtersets->vpn.models"
+},
+{
+"src": "virtualization.graphql.filters",
+"dst": "vpn.graphql.filters",
+"raw": "vpn.graphql.filters",
+"lineno": 30,
+"path": "netbox/virtualization/graphql/filters.py",
+"id": "imports:virtualization.graphql.filters->vpn.graphql.filters"
+}
+],
+"model_refs": [
+{
+"module": "vpn.migrations.0006_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "vpn.IKEPolicy",
+"ref_app": "vpn",
+"ref_model": "IKEPolicy",
+"cross_app": 0,
+"lineno": 8,
+"path": "netbox/vpn/migrations/0006_charfield_null_choices.py",
+"id": "model_refs:vpn.migrations.0006_charfield_null_choices:8"
+},
+{
+"module": "vpn.migrations.0006_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "vpn.IKEProposal",
+"ref_app": "vpn",
+"ref_model": "IKEProposal",
+"cross_app": 0,
+"lineno": 9,
+"path": "netbox/vpn/migrations/0006_charfield_null_choices.py",
+"id": "model_refs:vpn.migrations.0006_charfield_null_choices:9"
+},
+{
+"module": "vpn.migrations.0006_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "vpn.IPSecProposal",
+"ref_app": "vpn",
+"ref_model": "IPSecProposal",
+"cross_app": 0,
+"lineno": 10,
+"path": "netbox/vpn/migrations/0006_charfield_null_choices.py",
+"id": "model_refs:vpn.migrations.0006_charfield_null_choices:10"
+},
+{
+"module": "vpn.models.crypto",
+"class": "IKEPolicy",
+"field": "proposals",
+"kind": "ManyToManyField",
+"raw": "vpn.IKEProposal",
+"ref_app": "vpn",
+"ref_model": "IKEProposal",
+"cross_app": 0,
+"lineno": 85,
+"path": "netbox/vpn/models/crypto.py",
+"id": "model_refs:vpn.models.crypto:85"
+},
+{
+"module": "vpn.models.crypto",
+"class": "IPSecPolicy",
+"field": "proposals",
+"kind": "ManyToManyField",
+"raw": "vpn.IPSecProposal",
+"ref_app": "vpn",
+"ref_model": "IPSecProposal",
+"cross_app": 0,
+"lineno": 185,
+"path": "netbox/vpn/models/crypto.py",
+"id": "model_refs:vpn.models.crypto:185"
+},
+{
+"module": "vpn.models.crypto",
+"class": "IPSecProfile",
+"field": "ike_policy",
+"kind": "ForeignKey",
+"raw": "vpn.IKEPolicy",
+"ref_app": "vpn",
+"ref_model": "IKEPolicy",
+"cross_app": 0,
+"lineno": 225,
+"path": "netbox/vpn/models/crypto.py",
+"id": "model_refs:vpn.models.crypto:225"
+},
+{
+"module": "vpn.models.crypto",
+"class": "IPSecProfile",
+"field": "ipsec_policy",
+"kind": "ForeignKey",
+"raw": "vpn.IPSecPolicy",
+"ref_app": "vpn",
+"ref_model": "IPSecPolicy",
+"cross_app": 0,
+"lineno": 230,
+"path": "netbox/vpn/models/crypto.py",
+"id": "model_refs:vpn.models.crypto:230"
+},
+{
+"module": "vpn.models.l2vpn",
+"class": "L2VPN",
+"field": "import_targets",
+"kind": "ManyToManyField",
+"raw": "ipam.RouteTarget",
+"ref_app": "ipam",
+"ref_model": "RouteTarget",
+"cross_app": 1,
+"lineno": 46,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "model_refs:vpn.models.l2vpn:46"
+},
+{
+"module": "vpn.models.l2vpn",
+"class": "L2VPN",
+"field": "export_targets",
+"kind": "ManyToManyField",
+"raw": "ipam.RouteTarget",
+"ref_app": "ipam",
+"ref_model": "RouteTarget",
+"cross_app": 1,
+"lineno": 51,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "model_refs:vpn.models.l2vpn:51"
+},
+{
+"module": "vpn.models.l2vpn",
+"class": "L2VPN",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 56,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "model_refs:vpn.models.l2vpn:56"
+},
+{
+"module": "vpn.models.l2vpn",
+"class": "L2VPNTermination",
+"field": "l2vpn",
+"kind": "ForeignKey",
+"raw": "vpn.L2VPN",
+"ref_app": "vpn",
+"ref_model": "L2VPN",
+"cross_app": 0,
+"lineno": 88,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "model_refs:vpn.models.l2vpn:88"
+},
+{
+"module": "vpn.models.l2vpn",
+"class": "L2VPNTermination",
+"field": "assigned_object_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 93,
+"path": "netbox/vpn/models/l2vpn.py",
+"id": "model_refs:vpn.models.l2vpn:93"
+},
+{
+"module": "vpn.models.tunnels",
+"class": "Tunnel",
+"field": "group",
+"kind": "ForeignKey",
+"raw": "vpn.TunnelGroup",
+"ref_app": "vpn",
+"ref_model": "TunnelGroup",
+"cross_app": 0,
+"lineno": 43,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "model_refs:vpn.models.tunnels:43"
+},
+{
+"module": "vpn.models.tunnels",
+"class": "Tunnel",
+"field": "ipsec_profile",
+"kind": "ForeignKey",
+"raw": "vpn.IPSecProfile",
+"ref_app": "vpn",
+"ref_model": "IPSecProfile",
+"cross_app": 0,
+"lineno": 55,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "model_refs:vpn.models.tunnels:55"
+},
+{
+"module": "vpn.models.tunnels",
+"class": "Tunnel",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 62,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "model_refs:vpn.models.tunnels:62"
+},
+{
+"module": "vpn.models.tunnels",
+"class": "TunnelTermination",
+"field": "tunnel",
+"kind": "ForeignKey",
+"raw": "vpn.Tunnel",
+"ref_app": "vpn",
+"ref_model": "Tunnel",
+"cross_app": 0,
+"lineno": 103,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "model_refs:vpn.models.tunnels:103"
+},
+{
+"module": "vpn.models.tunnels",
+"class": "TunnelTermination",
+"field": "termination_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 114,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "model_refs:vpn.models.tunnels:114"
+},
+{
+"module": "vpn.models.tunnels",
+"class": "TunnelTermination",
+"field": "outside_ip",
+"kind": "ForeignKey",
+"raw": "ipam.IPAddress",
+"ref_app": "ipam",
+"ref_model": "IPAddress",
+"cross_app": 1,
+"lineno": 127,
+"path": "netbox/vpn/models/tunnels.py",
+"id": "model_refs:vpn.models.tunnels:127"
+}
+],
+"model_refs_in": [
+{
+"module": "dcim.models.device_components",
+"class": "Interface",
+"field": "tunnel_terminations",
+"kind": "GenericRelation",
+"raw": "vpn.TunnelTermination",
+"ref_app": "vpn",
+"ref_model": "TunnelTermination",
+"cross_app": 1,
+"lineno": 781,
+"path": "netbox/dcim/models/device_components.py",
+"id": "model_refs:dcim.models.device_components:781"
+},
+{
+"module": "dcim.models.device_components",
+"class": "Interface",
+"field": "l2vpn_terminations",
+"kind": "GenericRelation",
+"raw": "vpn.L2VPNTermination",
+"ref_app": "vpn",
+"ref_model": "L2VPNTermination",
+"cross_app": 1,
+"lineno": 787,
+"path": "netbox/dcim/models/device_components.py",
+"id": "model_refs:dcim.models.device_components:787"
+},
+{
+"module": "ipam.models.vlans",
+"class": "VLAN",
+"field": "l2vpn_terminations",
+"kind": "GenericRelation",
+"raw": "vpn.L2VPNTermination",
+"ref_app": "vpn",
+"ref_model": "L2VPNTermination",
+"cross_app": 1,
+"lineno": 246,
+"path": "netbox/ipam/models/vlans.py",
+"id": "model_refs:ipam.models.vlans:246"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "tunnel_terminations",
+"kind": "GenericRelation",
+"raw": "vpn.TunnelTermination",
+"ref_app": "vpn",
+"ref_model": "TunnelTermination",
+"cross_app": 1,
+"lineno": 344,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:344"
+},
+{
+"module": "virtualization.models.virtualmachines",
+"class": "VMInterface",
+"field": "l2vpn_terminations",
+"kind": "GenericRelation",
+"raw": "vpn.L2VPNTermination",
+"ref_app": "vpn",
+"ref_model": "L2VPNTermination",
+"cross_app": 1,
+"lineno": 350,
+"path": "netbox/virtualization/models/virtualmachines.py",
+"id": "model_refs:virtualization.models.virtualmachines:350"
+}
+],
+"churn": [
+{
+"path": "netbox/vpn/forms/model_forms.py",
+"module": "vpn.forms.model_forms",
+"commits": 19,
+"authors": 5,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.forms.model_forms"
+},
+{
+"path": "netbox/vpn/views.py",
+"module": "vpn.views",
+"commits": 17,
+"authors": 5,
+"first_commit": "2023-11-27",
+"last_commit": "2025-05-05",
+"id": "churn:vpn.views"
+},
+{
+"path": "netbox/vpn/filtersets.py",
+"module": "vpn.filtersets",
+"commits": 16,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-04-10",
+"id": "churn:vpn.filtersets"
+},
+{
+"path": "netbox/vpn/tests/test_filtersets.py",
+"module": "vpn.tests.test_filtersets",
+"commits": 13,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.tests.test_filtersets"
+},
+{
+"path": "netbox/vpn/api/serializers.py",
+"module": "vpn.api.serializers",
+"commits": 12,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2024-08-14",
+"id": "churn:vpn.api.serializers"
+},
+{
+"path": "netbox/vpn/api/serializers_/crypto.py",
+"module": "vpn.api.serializers_.crypto",
+"commits": 10,
+"authors": 3,
+"first_commit": "2024-02-27",
+"last_commit": "2025-01-06",
+"id": "churn:vpn.api.serializers_.crypto"
+},
+{
+"path": "netbox/vpn/models/l2vpn.py",
+"module": "vpn.models.l2vpn",
+"commits": 10,
+"authors": 4,
+"first_commit": "2023-11-28",
+"last_commit": "2025-04-07",
+"id": "churn:vpn.models.l2vpn"
+},
+{
+"path": "netbox/vpn/choices.py",
+"module": "vpn.choices",
+"commits": 9,
+"authors": 6,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.choices"
+},
+{
+"path": "netbox/vpn/graphql/types.py",
+"module": "vpn.graphql.types",
+"commits": 9,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-05-07",
+"id": "churn:vpn.graphql.types"
+},
+{
+"path": "netbox/vpn/models/crypto.py",
+"module": "vpn.models.crypto",
+"commits": 8,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2024-11-15",
+"id": "churn:vpn.models.crypto"
+},
+{
+"path": "netbox/vpn/models/tunnels.py",
+"module": "vpn.models.tunnels",
+"commits": 8,
+"authors": 2,
+"first_commit": "2023-11-27",
+"last_commit": "2025-04-10",
+"id": "churn:vpn.models.tunnels"
+},
+{
+"path": "netbox/vpn/tables/tunnels.py",
+"module": "vpn.tables.tunnels",
+"commits": 8,
+"authors": 3,
+"first_commit": "2023-11-28",
+"last_commit": "2025-06-04",
+"id": "churn:vpn.tables.tunnels"
+},
+{
+"path": "netbox/vpn/forms/bulk_import.py",
+"module": "vpn.forms.bulk_import",
+"commits": 7,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.forms.bulk_import"
+},
+{
+"path": "netbox/vpn/forms/filtersets.py",
+"module": "vpn.forms.filtersets",
+"commits": 7,
+"authors": 2,
+"first_commit": "2023-11-27",
+"last_commit": "2025-04-10",
+"id": "churn:vpn.forms.filtersets"
+},
+{
+"path": "netbox/vpn/migrations/0001_initial.py",
+"module": "vpn.migrations.0001_initial",
+"commits": 7,
+"authors": 2,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-07",
+"id": "churn:vpn.migrations.0001_initial"
+},
+{
+"path": "netbox/vpn/tests/test_api.py",
+"module": "vpn.tests.test_api",
+"commits": 7,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.tests.test_api"
+},
+{
+"path": "netbox/vpn/api/serializers_/l2vpn.py",
+"module": "vpn.api.serializers_.l2vpn",
+"commits": 6,
+"authors": 4,
+"first_commit": "2024-02-27",
+"last_commit": "2025-04-11",
+"id": "churn:vpn.api.serializers_.l2vpn"
+},
+{
+"path": "netbox/vpn/forms/bulk_edit.py",
+"module": "vpn.forms.bulk_edit",
+"commits": 6,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.forms.bulk_edit"
+},
+{
+"path": "netbox/vpn/search.py",
+"module": "vpn.search",
+"commits": 6,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.search"
+},
+{
+"path": "netbox/vpn/tests/test_views.py",
+"module": "vpn.tests.test_views",
+"commits": 6,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.tests.test_views"
+},
+{
+"path": "netbox/vpn/api/serializers_/tunnels.py",
+"module": "vpn.api.serializers_.tunnels",
+"commits": 5,
+"authors": 2,
+"first_commit": "2024-02-27",
+"last_commit": "2024-06-25",
+"id": "churn:vpn.api.serializers_.tunnels"
+},
+{
+"path": "netbox/vpn/api/views.py",
+"module": "vpn.api.views",
+"commits": 5,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2024-02-15",
+"id": "churn:vpn.api.views"
+},
+{
+"path": "netbox/vpn/graphql/schema.py",
+"module": "vpn.graphql.schema",
+"commits": 5,
+"authors": 3,
+"first_commit": "2023-11-27",
+"last_commit": "2024-08-28",
+"id": "churn:vpn.graphql.schema"
+},
+{
+"path": "netbox/vpn/urls.py",
+"module": "vpn.urls",
+"commits": 5,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2024-11-20",
+"id": "churn:vpn.urls"
+},
+{
+"path": "netbox/vpn/graphql/filters.py",
+"module": "vpn.graphql.filters",
+"commits": 4,
+"authors": 2,
+"first_commit": "2024-03-22",
+"last_commit": "2025-05-14",
+"id": "churn:vpn.graphql.filters"
+},
+{
+"path": "netbox/vpn/migrations/0002_move_l2vpn.py",
+"module": "vpn.migrations.0002_move_l2vpn",
+"commits": 4,
+"authors": 1,
+"first_commit": "2023-11-28",
+"last_commit": "2025-04-03",
+"id": "churn:vpn.migrations.0002_move_l2vpn"
+},
+{
+"path": "netbox/vpn/tables/l2vpn.py",
+"module": "vpn.tables.l2vpn",
+"commits": 4,
+"authors": 2,
+"first_commit": "2023-11-28",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.tables.l2vpn"
+},
+{
+"path": "netbox/vpn/api/urls.py",
+"module": "vpn.api.urls",
+"commits": 3,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-12-04",
+"id": "churn:vpn.api.urls"
+},
+{
+"path": "netbox/vpn/apps.py",
+"module": "vpn.apps",
+"commits": 3,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2024-10-10",
+"id": "churn:vpn.apps"
+},
+{
+"path": "netbox/vpn/migrations/0006_charfield_null_choices.py",
+"module": "vpn.migrations.0006_charfield_null_choices",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-10-18",
+"last_commit": "2025-05-08",
+"id": "churn:vpn.migrations.0006_charfield_null_choices"
+},
+{
+"path": "netbox/vpn/tables/crypto.py",
+"module": "vpn.tables.crypto",
+"commits": 3,
+"authors": 1,
+"first_commit": "2023-11-28",
+"last_commit": "2024-05-06",
+"id": "churn:vpn.tables.crypto"
+},
+{
+"path": "netbox/vpn/graphql/enums.py",
+"module": "vpn.graphql.enums",
+"commits": 2,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-04-17",
+"id": "churn:vpn.graphql.enums"
+},
+{
+"path": "netbox/vpn/migrations/0003_ipaddress_multiple_tunnel_terminations.py",
+"module": "vpn.migrations.0003_ipaddress_multiple_tunnel_terminations",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-01-05",
+"last_commit": "2024-11-21",
+"id": "churn:vpn.migrations.0003_ipaddress_multiple_tunnel_terminations"
+},
+{
+"path": "netbox/vpn/migrations/0004_alter_ikepolicy_mode.py",
+"module": "vpn.migrations.0004_alter_ikepolicy_mode",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-01-22",
+"last_commit": "2024-11-21",
+"id": "churn:vpn.migrations.0004_alter_ikepolicy_mode"
+},
+{
+"path": "netbox/vpn/migrations/0005_rename_indexes.py",
+"module": "vpn.migrations.0005_rename_indexes",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-03-12",
+"last_commit": "2024-11-21",
+"id": "churn:vpn.migrations.0005_rename_indexes"
+},
+{
+"path": "netbox/vpn/migrations/0007_natural_ordering.py",
+"module": "vpn.migrations.0007_natural_ordering",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-11-15",
+"last_commit": "2024-11-21",
+"id": "churn:vpn.migrations.0007_natural_ordering"
+},
+{
+"path": "netbox/vpn/models/__init__.py",
+"module": "vpn.models",
+"commits": 2,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-11-28",
+"id": "churn:vpn.models"
+},
+{
+"path": "netbox/vpn/__init__.py",
+"module": "vpn",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-11-27",
+"id": "churn:vpn"
+},
+{
+"path": "netbox/vpn/api/__init__.py",
+"module": "vpn.api",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-11-27",
+"id": "churn:vpn.api"
+},
+{
+"path": "netbox/vpn/api/serializers_/__init__.py",
+"module": "vpn.api.serializers_",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-02-27",
+"last_commit": "2024-02-27",
+"id": "churn:vpn.api.serializers_"
+},
+{
+"path": "netbox/vpn/constants.py",
+"module": "vpn.constants",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-28",
+"last_commit": "2023-11-28",
+"id": "churn:vpn.constants"
+},
+{
+"path": "netbox/vpn/forms/__init__.py",
+"module": "vpn.forms",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-11-27",
+"id": "churn:vpn.forms"
+},
+{
+"path": "netbox/vpn/graphql/__init__.py",
+"module": "vpn.graphql",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-11-27",
+"id": "churn:vpn.graphql"
+},
+{
+"path": "netbox/vpn/migrations/0008_add_l2vpn_status.py",
+"module": "vpn.migrations.0008_add_l2vpn_status",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-03-06",
+"last_commit": "2025-03-06",
+"id": "churn:vpn.migrations.0008_add_l2vpn_status"
+},
+{
+"path": "netbox/vpn/migrations/0009_remove_redundant_indexes.py",
+"module": "vpn.migrations.0009_remove_redundant_indexes",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-04-03",
+"last_commit": "2025-04-03",
+"id": "churn:vpn.migrations.0009_remove_redundant_indexes"
+},
+{
+"path": "netbox/vpn/migrations/__init__.py",
+"module": "vpn.migrations",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-11-27",
+"id": "churn:vpn.migrations"
+},
+{
+"path": "netbox/vpn/tables/__init__.py",
+"module": "vpn.tables",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-28",
+"last_commit": "2023-11-28",
+"id": "churn:vpn.tables"
+},
+{
+"path": "netbox/vpn/tests/__init__.py",
+"module": "vpn.tests",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-27",
+"last_commit": "2023-11-27",
+"id": "churn:vpn.tests"
+},
+{
+"path": "netbox/vpn/tests/test_models.py",
+"module": "vpn.tests.test_models",
+"commits": 1,
+"authors": 1,
+"first_commit": "2023-11-28",
+"last_commit": "2023-11-28",
+"id": "churn:vpn.tests.test_models"
+},
+{
+"path": "netbox/vpn/tests/test_tables.py",
+"module": "vpn.tests.test_tables",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-06-04",
+"last_commit": "2025-06-04",
+"id": "churn:vpn.tests.test_tables"
+}
+],
+"entrypoints": [
+{
+"kind": "urls",
+"module": "vpn.api.urls",
+"detail": "",
+"path": "netbox/vpn/api/urls.py",
+"id": "entrypoints:vpn.api.urls"
+},
+{
+"kind": "api_views",
+"module": "vpn.api.views",
+"detail": "",
+"path": "netbox/vpn/api/views.py",
+"id": "entrypoints:vpn.api.views"
+},
+{
+"kind": "urls",
+"module": "vpn.urls",
+"detail": "",
+"path": "netbox/vpn/urls.py",
+"id": "entrypoints:vpn.urls"
+}
+]
+}

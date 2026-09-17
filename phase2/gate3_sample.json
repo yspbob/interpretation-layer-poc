@@ -1,0 +1,122 @@
+[
+ [
+  "circuits",
+  "adrs.md",
+  27,
+  "**Consequences.** Swapping ends cannot be done by editing the circuit; `CircuitSwapTerminations` re-saves the terminations inside a transaction with a temporary `'_'` side to avoid tripping the unique constraint, then fixes the pointers by hand. There is no `post_delete` receiver clearing the slot; `SET_NULL` on the FK does that at the database level. [code:netbox/circuits/views.py:385-409] [code:netbox/circuits/models/circuits.py:97-104]"
+ ],
+ [
+  "core",
+  "adrs.md",
+  15,
+  "**Decision.** Migration `0008` creates `ObjectType` as a `proxy = True` subclass of `contenttypes.ContentType` with `ObjectTypeManager`, whose `public()` and `with_feature()` build `Q` objects from `registry['models']` and `registry['model_features']` [code:netbox/core/migrations/0008_contenttype_proxy.py:11-24] [code:netbox/core/models/contenttypes.py:12-50]. `CoreConfig.ready()` registers core's models into that registry via `register_models` [code:netbox/core/apps.py:26-31]."
+ ],
+ [
+  "core",
+  "patterns.md",
+  12,
+  "- Exception: `DataFile` is a plain model but its filterset is a `ChangeLoggedModelFilterSet` and its serializer a `NetBoxModelSerializer` with a read-only viewset [fg:symbols:core.filtersets:DataFileFilterSet] [fg:symbols:core.api.serializers_.data:DataFileSerializer] [fg:symbols:core.api.views:DataFileViewSet]."
+ ],
+ [
+  "core",
+  "patterns.md",
+  79,
+  "- `DataSourceBulkEditForm.nullable_fields` repeats `'description'` and `'parameters'` and is missing a comma between `'ignore_rules'` and `'comments'`, so the tuple contains the concatenated string `'ignore_rulescomments'` and neither field is nullable by name [code:netbox/core/forms/bulk_edit.py:53-55]."
+ ],
+ [
+  "dcim",
+  "map.md",
+  15,
+  "**Signals and app wiring**: `signals` holds eight receivers (site cascade from Location/Rack, VirtualChassis master assignment, and the cable-path retrace handlers); `apps.DCIMConfig.ready()` imports signals and search, registers all models with `netbox.models.features`, registers denormalized-field propagation for CableTermination's `_device/_rack/_location/_site`, and connects counters for Device, DeviceType and VirtualChassis. [code:netbox/dcim/signals.py:18-67] [code:netbox/dcim/signals.py:74-118] [code:netbox/dcim/signals.py:120-143] [code:netbox/dcim/apps.py:10-34] [fg:entrypoints:dcim.signals]"
+ ],
+ [
+  "extras",
+  "adrs.md",
+  15,
+  "**Context.** Migration 0101 introduced `EventRule` and moved trigger data off `Webhook`; 0109 repointed script actions from `ScriptModule` to the new `Script` row; 0110 dropped `action_parameters`; 0120 replaced boolean type flags with an `event_types` array. [fg:model_refs:extras.migrations.0101_eventrule:11] [code:netbox/extras/migrations/0109_script_model.py:120-141] [fg:modules:extras.migrations.0110_remove_eventrule_action_parameters] [fg:modules:extras.migrations.0120_eventrule_event_types]"
+ ],
+ [
+  "extras",
+  "patterns.md",
+  59,
+  "`CustomField` never stores values; on add/remove/rename/delete, signal handlers call `populate_initial_data`, `remove_stale_data` and `rename_object_data`, which issue `UPDATE ... jsonb_set()`/key-deletion queries against every affected model table. [code:netbox/extras/models/customfields.py:281-328] [code:netbox/extras/signals.py:22-56] [code:netbox/extras/models/customfields.py:254-258]"
+ ],
+ [
+  "ipam",
+  "adrs.md",
+  57,
+  "**Decision.** `prep_table_data()` injects placeholders (`Prefix(prefix=p, status=None)`, `AvailableIPSpace`, VLAN dicts) only when the request has no search and no explicit ordering; templates test `record.pk`, and `PrefixUtilizationColumn` renders nothing for pk-less rows. [code:netbox/ipam/views.py:580-585] [code:netbox/ipam/views.py:641-644] [code:netbox/ipam/views.py:1036-1039] [code:netbox/ipam/utils.py:36-63] [code:netbox/ipam/utils.py:177-188] [code:netbox/ipam/tables/ip.py:142-154]"
+ ],
+ [
+  "ipam",
+  "patterns.md",
+  53,
+  "Exception: IPAddress roles in `IPADDRESS_ROLES_NONUNIQUE` are exempt; the detail view likewise hides anycast duplicates. [code:netbox/ipam/constants.py:40-48] [code:netbox/ipam/models/ip.py:877-880] [code:netbox/ipam/views.py:816-818]"
+ ],
+ [
+  "ipam",
+  "patterns.md",
+  71,
+  "Model serializers extend `NetBoxModelSerializer`, nest FKs with `nested=True`, expose `family` as a read-only `ChoiceField`, use `IPNetworkField`/`IPAddressField` serializer fields, and declare `brief_fields`. Instances: Aggregate, Prefix, IPRange, IPAddress. [code:netbox/ipam/api/serializers_/ip.py:31-43] [code:netbox/ipam/api/serializers_/ip.py:46-74] [code:netbox/ipam/api/serializers_/ip.py:136-152] [code:netbox/ipam/api/serializers_/ip.py:159-182]"
+ ],
+ [
+  "netbox",
+  "adrs.md",
+  13,
+  "- **Decision.** Every read path applies `queryset.restrict(user, action)` (`BaseViewSet.initial`, generic views, feature views, GraphQL `get_queryset`, the HTMX selector); every write path saves inside `transaction.atomic()` and then checks the saved object is still matched by the restricted queryset, raising `PermissionsViolation` or `ObjectDoesNotExist` to roll the transaction back. [code:netbox/netbox/api/viewsets/__init__.py:40-46] [code:netbox/netbox/graphql/types.py:28-34] [code:netbox/netbox/views/generic/object_views.py:284-291] [code:netbox/netbox/api/viewsets/mixins.py:167-180]"
+ ],
+ [
+  "netbox",
+  "adrs.md",
+  47,
+  "- **Context.** The abstract base models need `CustomField`, `ObjectChange`, `DataFile`, `AutoSyncRecord` and `ContactAssignment`, all of which subclass those same base models. [fg:imports:netbox.models.features->extras.models] [fg:imports:extras.models.models->netbox.models]"
+ ],
+ [
+  "netbox",
+  "map.md",
+  36,
+  "- The `dcim`/`ipam`/`circuits`/`virtualization`/`vpn`/`wireless` edges come almost entirely from `graphql.schema` (which imports every app's Query), `urls` and tests; the runtime code otherwise depends only on `utilities`, `core`, `extras`, `users` and `tenancy`. [fg:imports:netbox.graphql.schema->dcim.graphql.schema] [fg:imports:netbox.graphql.schema->wireless.graphql.schema] [fg:imports:netbox.tests.test_views->dcim.models]"
+ ],
+ [
+  "utilities",
+  "patterns.md",
+  21,
+  "Where a utility needs a concrete model from `core`, `extras` or `users`, it resolves it at call time with `apps.get_model()` or a function-local import rather than a module-level import: `TableConfig` in `tables.py`, `DataFile` in `jinja2.py`, `User` and `ObjectType` in `permissions.py`, `Tag` in `serialization.py`, `CustomValidator` in `json.py`. `socks.py` does the same for the optional `python_socks` dependency. [code:netbox/utilities/tables.py:22] [code:netbox/utilities/jinja2.py:23] [code:netbox/utilities/permissions.py:55] [code:netbox/utilities/permissions.py:96] [code:netbox/utilities/serialization.py:68] [code:netbox/utilities/json.py:26] [code:netbox/utilities/socks.py:26-33]"
+ ],
+ [
+  "virtualization",
+  "adrs.md",
+  55,
+  "**Decision.** Migration 0048 adds `primary_mac_address` (OneToOne to `dcim.MACAddress`, inherited via `BaseInterface`), creates one `MACAddress` per existing value assigned back to the interface, then drops the column. `VMInterface` keeps a `mac_addresses` GenericRelation; the serializer exposes read-only `mac_address` for older clients plus writable `primary_mac_address` and read-only `mac_addresses`; filtering by MAC traverses `mac_addresses__mac_address` [code:netbox/virtualization/migrations/0048_populate_mac_addresses.py:7-53] [code:netbox/virtualization/models/virtualmachines.py:356-361] [code:netbox/virtualization/api/serializers_/virtualmachines.py:99-102] [code:netbox/virtualization/filtersets.py:196-199] [code:netbox/virtualization/filtersets.py:268-282]."
+ ],
+ [
+  "virtualization",
+  "adrs.md",
+  65,
+  "**Consequences.** `dcim` is 43 of the outbound import edges and 16 of the inbound ones; a change to `BaseInterface` or the scope mixins lands here automatically, and the form/filterset churn tracks `dcim`/`ipam` field additions (Q-in-Q, VLAN translation) rather than local features [fg:subsystems:virtualization] [code:netbox/virtualization/migrations/0042_vminterface_vlan_translation_policy.py:1-1] [code:netbox/virtualization/migrations/0043_qinq_svlan.py:12-14] [fg:churn:virtualization.forms.filtersets]."
+ ],
+ [
+  "vpn",
+  "map.md",
+  51,
+  "- dcim, ipam and virtualization interface/VLAN serializers embed a nested L2VPNTerminationSerializer as a read-only `l2vpn_termination` field [fg:imports:dcim.api.serializers_.device_components->vpn.api.serializers_.l2vpn] [code:netbox/dcim/api/serializers_/device_components.py:204] [fg:imports:ipam.api.serializers_.vlans->vpn.api.serializers_.l2vpn] [fg:imports:virtualization.api.serializers_.virtualmachines->vpn.api.serializers_.l2vpn]."
+ ],
+ [
+  "vpn",
+  "patterns.md",
+  45,
+  "Choice fields are wrapped in `ChoiceField(choices=...)` [code:netbox/vpn/api/serializers_/crypto.py:16-28] [code:netbox/vpn/api/serializers_/tunnels.py:40-51]. FKs are the target serializer with `nested=True` [code:netbox/vpn/api/serializers_/crypto.py:111-116] [code:netbox/vpn/api/serializers_/tunnels.py:43-61]. M2Ms use SerializedPKRelatedField [code:netbox/vpn/api/serializers_/crypto.py:48-54] [code:netbox/vpn/api/serializers_/l2vpn.py:22-35]. The GFK target is a read-only SerializerMethodField that dispatches through `get_serializer_for_model` with `nested=True` [code:netbox/vpn/api/serializers_/tunnels.py:103-109] [code:netbox/vpn/api/serializers_/l2vpn.py:65-69]. Every Meta declares `brief_fields` [code:netbox/vpn/api/serializers_/tunnels.py:36] [code:netbox/vpn/api/serializers_/l2vpn.py:45]."
+ ],
+ [
+  "vpn",
+  "patterns.md",
+  63,
+  "Models with dependencies also declare `prerequisite_models` (IKEPolicy, IPSecProfile, both terminations) [code:netbox/vpn/models/crypto.py:98-100] [code:netbox/vpn/models/tunnels.py:135-137] [code:netbox/vpn/models/l2vpn.py:105-107]."
+ ],
+ [
+  "vpn",
+  "patterns.md",
+  81,
+  "Bulk-edit forms wrap ChoiceSets with `add_blank_choice`, set `required=False` on everything, and list `nullable_fields` [code:netbox/vpn/forms/bulk_edit.py:37-82] [code:netbox/vpn/forms/bulk_edit.py:95-136]."
+ ]
+]

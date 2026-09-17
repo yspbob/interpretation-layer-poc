@@ -1,0 +1,278 @@
+# Fact-graph digest: subsystem `utilities` at T0 ea4c205
+
+Summary row [fg:subsystems:utilities]: {'subsystem': 'utilities', 'modules': 95, 'loc_code': 10987, 'loc_data': 0, 'test_modules': 13}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- utilities | netbox/utilities/__init__.py | 1 | 0 | 0 |  | 
+- utilities.api | netbox/utilities/api.py | 178 | 0 | 7 |  | 
+- utilities.choices | netbox/utilities/choices.py | 117 | 2 | 1 |  | 
+- utilities.constants | netbox/utilities/constants.py | 100 | 0 | 0 |  | 
+- utilities.conversion | netbox/utilities/conversion.py | 69 | 0 | 2 |  | 
+- utilities.counters | netbox/utilities/counters.py | 125 | 0 | 7 |  | 
+- utilities.data | netbox/utilities/data.py | 169 | 0 | 9 |  | 
+- utilities.datetime | netbox/utilities/datetime.py | 29 | 0 | 2 |  | 
+- utilities.error_handlers | netbox/utilities/error_handlers.py | 60 | 0 | 2 |  | 
+- utilities.exceptions | netbox/utilities/exceptions.py | 51 | 5 | 0 |  | 
+- utilities.fields | netbox/utilities/fields.py | 321 | 5 | 0 |  | 
+- utilities.filters | netbox/utilities/filters.py | 174 | 13 | 1 |  | 
+- utilities.forms | netbox/utilities/forms/__init__.py | 5 | 0 | 0 |  | 
+- utilities.forms.bulk_import | netbox/utilities/forms/bulk_import.py | 177 | 1 | 0 |  | 
+- utilities.forms.constants | netbox/utilities/forms/constants.py | 15 | 0 | 0 |  | 
+- utilities.forms.fields | netbox/utilities/forms/fields/__init__.py | 7 | 0 | 0 |  | 
+- utilities.forms.fields.array | netbox/utilities/forms/fields/array.py | 58 | 2 | 0 |  | 
+- utilities.forms.fields.content_types | netbox/utilities/forms/fields/content_types.py | 37 | 3 | 0 |  | 
+- utilities.forms.fields.csv | netbox/utilities/forms/fields/csv.py | 124 | 8 | 0 |  | 
+- utilities.forms.fields.dynamic | netbox/utilities/forms/fields/dynamic.py | 227 | 5 | 0 |  | 
+- utilities.forms.fields.expandable | netbox/utilities/forms/fields/expandable.py | 56 | 2 | 0 |  | 
+- utilities.forms.fields.fields | netbox/utilities/forms/fields/fields.py | 138 | 7 | 0 |  | 
+- utilities.forms.forms | netbox/utilities/forms/forms.py | 142 | 6 | 0 |  | 
+- utilities.forms.mixins | netbox/utilities/forms/mixins.py | 60 | 2 | 0 |  | 
+- utilities.forms.rendering | netbox/utilities/forms/rendering.py | 87 | 4 | 0 |  | 
+- utilities.forms.utils | netbox/utilities/forms/utils.py | 288 | 0 | 11 |  | 
+- utilities.forms.widgets | netbox/utilities/forms/widgets/__init__.py | 5 | 0 | 0 |  | 
+- utilities.forms.widgets.apiselect | netbox/utilities/forms/widgets/apiselect.py | 175 | 2 | 0 |  | 
+- utilities.forms.widgets.datetime | netbox/utilities/forms/widgets/datetime.py | 38 | 3 | 0 |  | 
+- utilities.forms.widgets.misc | netbox/utilities/forms/widgets/misc.py | 80 | 6 | 0 |  | 
+- utilities.forms.widgets.select | netbox/utilities/forms/widgets/select.py | 66 | 4 | 0 |  | 
+- utilities.html | netbox/utilities/html.py | 73 | 0 | 3 |  | 
+- utilities.htmx | netbox/utilities/htmx.py | 12 | 0 | 1 |  | 
+- utilities.jinja2 | netbox/utilities/jinja2.py | 76 | 1 | 1 |  | 
+- utilities.json | netbox/utilities/json.py | 32 | 2 | 0 |  | 
+- utilities.jsonschema | netbox/utilities/jsonschema.py | 167 | 3 | 1 |  | 
+- utilities.management | netbox/utilities/management/__init__.py | 1 | 0 | 0 |  | 
+- utilities.management.commands | netbox/utilities/management/commands/__init__.py | 1 | 0 | 0 |  | 
+- utilities.management.commands.calculate_cached_counts | netbox/utilities/management/commands/calculate_cached_counts.py | 35 | 1 | 0 |  | 
+- utilities.markdown | netbox/utilities/markdown.py | 21 | 1 | 0 |  | 
+- utilities.migration | netbox/utilities/migration.py | 35 | 0 | 1 |  | 
+- utilities.mptt | netbox/utilities/mptt.py | 25 | 2 | 0 |  | 
+- utilities.object_types | netbox/utilities/object_types.py | 30 | 0 | 2 |  | 
+- utilities.ordering | netbox/utilities/ordering.py | 91 | 0 | 2 |  | 
+- utilities.paginator | netbox/utilities/paginator.py | 94 | 2 | 1 |  | 
+- utilities.password_validation | netbox/utilities/password_validation.py | 28 | 1 | 0 |  | 
+- utilities.permissions | netbox/utilities/permissions.py | 115 | 0 | 5 |  | 
+- utilities.proxy | netbox/utilities/proxy.py | 56 | 1 | 1 |  | 
+- utilities.query | netbox/utilities/query.py | 72 | 0 | 3 |  | 
+- utilities.query_functions | netbox/utilities/query_functions.py | 25 | 2 | 0 |  | 
+- utilities.querydict | netbox/utilities/querydict.py | 66 | 0 | 3 |  | 
+- utilities.querysets | netbox/utilities/querysets.py | 71 | 2 | 0 |  | 
+- utilities.relations | netbox/utilities/relations.py | 23 | 0 | 1 |  | 
+- utilities.release | netbox/utilities/release.py | 81 | 2 | 1 |  | 
+- utilities.request | netbox/utilities/request.py | 90 | 1 | 3 |  | 
+- utilities.rqworker | netbox/utilities/rqworker.py | 37 | 0 | 3 |  | 
+- utilities.serialization | netbox/utilities/serialization.py | 82 | 0 | 2 |  | 
+- utilities.serializers.json | netbox/utilities/serializers/json.py | 22 | 1 | 0 |  | 
+- utilities.socks | netbox/utilities/socks.py | 105 | 9 | 0 |  | 
+- utilities.string | netbox/utilities/string.py | 38 | 0 | 4 |  | 
+- utilities.tables | netbox/utilities/tables.py | 79 | 0 | 5 |  | 
+- utilities.templatetags | netbox/utilities/templatetags/__init__.py | 1 | 0 | 0 |  | 
+- utilities.templatetags.builtins | netbox/utilities/templatetags/builtins/__init__.py | 1 | 0 | 0 |  | 
+- utilities.templatetags.builtins.filters | netbox/utilities/templatetags/builtins/filters.py | 246 | 0 | 15 |  | 
+- utilities.templatetags.builtins.tags | netbox/utilities/templatetags/builtins/tags.py | 130 | 0 | 7 |  | 
+- utilities.templatetags.buttons | netbox/utilities/templatetags/buttons.py | 220 | 0 | 11 |  | 
+- utilities.templatetags.form_helpers | netbox/utilities/templatetags/form_helpers.py | 147 | 0 | 7 |  | 
+- utilities.templatetags.helpers | netbox/utilities/templatetags/helpers.py | 329 | 0 | 20 |  | 
+- utilities.templatetags.mptt | netbox/utilities/templatetags/mptt.py | 22 | 0 | 1 |  | 
+- utilities.templatetags.navigation | netbox/utilities/templatetags/navigation.py | 73 | 0 | 2 |  | 
+- utilities.templatetags.perms | netbox/utilities/templatetags/perms.py | 51 | 0 | 7 |  | 
+- utilities.templatetags.plugins | netbox/utilities/templatetags/plugins.py | 110 | 0 | 9 |  | 
+- utilities.templatetags.tabs | netbox/utilities/templatetags/tabs.py | 64 | 0 | 1 |  | 
+- utilities.testing | netbox/utilities/testing/__init__.py | 6 | 0 | 0 | test | 
+- utilities.testing.api | netbox/utilities/testing/api.py | 641 | 2 | 0 |  | 
+- utilities.testing.base | netbox/utilities/testing/base.py | 192 | 2 | 0 |  | 
+- utilities.testing.filtersets | netbox/utilities/testing/filtersets.py | 167 | 2 | 0 |  | 
+- utilities.testing.utils | netbox/utilities/testing/utils.py | 157 | 0 | 9 |  | 
+- utilities.testing.views | netbox/utilities/testing/views.py | 1002 | 2 | 0 |  | 
+- utilities.tests | netbox/utilities/tests/__init__.py | 1 | 0 | 0 | test | 
+- utilities.tests.test_api | netbox/utilities/tests/test_api.py | 271 | 4 | 0 | test | 
+- utilities.tests.test_choices | netbox/utilities/tests/test_choices.py | 33 | 2 | 0 | test | 
+- utilities.tests.test_conversions | netbox/utilities/tests/test_conversions.py | 54 | 1 | 0 | test | 
+- utilities.tests.test_counters | netbox/utilities/tests/test_counters.py | 105 | 1 | 0 | test | 
+- utilities.tests.test_data | netbox/utilities/tests/test_data.py | 69 | 1 | 0 | test | 
+- utilities.tests.test_filters | netbox/utilities/tests/test_filters.py | 626 | 4 | 0 | test | 
+- utilities.tests.test_forms | netbox/utilities/tests/test_forms.py | 451 | 5 | 0 | test | 
+- utilities.tests.test_managers | netbox/utilities/tests/test_managers.py | 191 | 1 | 0 | test | 
+- utilities.tests.test_ordering | netbox/utilities/tests/test_ordering.py | 66 | 1 | 0 | test | 
+- utilities.tests.test_request | netbox/utilities/tests/test_request.py | 29 | 1 | 0 | test | 
+- utilities.tests.test_utils | netbox/utilities/tests/test_utils.py | 133 | 3 | 0 | test | 
+- utilities.tracking | netbox/utilities/tracking.py | 79 | 2 | 0 |  | 
+- utilities.urls | netbox/utilities/urls.py | 51 | 0 | 1 |  | 
+- utilities.validators | netbox/utilities/validators.py | 84 | 3 | 1 |  | 
+- utilities.views | netbox/utilities/views.py | 323 | 6 | 2 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'utilities': 93, 'netbox': 32, 'core': 13, 'extras': 12, 'dcim': 11, 'users': 6, 'ipam': 4, 'virtualization': 1, 'wireless': 1}
+Inbound by source subsystem: {'extras': 98, 'dcim': 90, 'netbox': 80, 'core': 45, 'virtualization': 43, 'ipam': 42, 'circuits': 34, 'users': 28, 'vpn': 23, 'tenancy': 22, 'wireless': 21, 'account': 4}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- utilities.api -> extras.constants [fg:imports:utilities.api->extras.constants]
+- utilities.api -> netbox.api.exceptions [fg:imports:utilities.api->netbox.api.exceptions]
+- utilities.api -> netbox.api.fields [fg:imports:utilities.api->netbox.api.fields]
+- utilities.conversion -> dcim.choices [fg:imports:utilities.conversion->dcim.choices]
+- utilities.conversion -> netbox.choices [fg:imports:utilities.conversion->netbox.choices]
+- utilities.counters -> netbox.registry [fg:imports:utilities.counters->netbox.registry]
+- utilities.forms.bulk_import -> core.forms.mixins [fg:imports:utilities.forms.bulk_import->core.forms.mixins]
+- utilities.forms.bulk_import -> netbox.choices [fg:imports:utilities.forms.bulk_import->netbox.choices]
+- utilities.forms.widgets.select -> netbox.choices [fg:imports:utilities.forms.widgets.select->netbox.choices]
+- utilities.jinja2 -> netbox.config [fg:imports:utilities.jinja2->netbox.config]
+- utilities.json -> extras.validators [fg:imports:utilities.json->extras.validators]
+- utilities.management.commands.calculate_cached_counts -> netbox.registry [fg:imports:utilities.management.commands.calculate_cached_counts->netbox.registry]
+- utilities.migration -> netbox.config [fg:imports:utilities.migration->netbox.config]
+- utilities.paginator -> netbox.config [fg:imports:utilities.paginator->netbox.config]
+- utilities.permissions -> core.models [fg:imports:utilities.permissions->core.models]
+- utilities.permissions -> users.constants [fg:imports:utilities.permissions->users.constants]
+- utilities.querydict -> netbox.models [fg:imports:utilities.querydict->netbox.models]
+- utilities.querysets -> users.constants [fg:imports:utilities.querysets->users.constants]
+- utilities.rqworker -> netbox.config [fg:imports:utilities.rqworker->netbox.config]
+- utilities.rqworker -> netbox.constants [fg:imports:utilities.rqworker->netbox.constants]
+- utilities.serialization -> extras.utils [fg:imports:utilities.serialization->extras.utils]
+- utilities.tables -> core.models [fg:imports:utilities.tables->core.models]
+- utilities.tables -> netbox.registry [fg:imports:utilities.tables->netbox.registry]
+- utilities.templatetags.builtins.filters -> netbox.config [fg:imports:utilities.templatetags.builtins.filters->netbox.config]
+- utilities.templatetags.builtins.tags -> extras.choices [fg:imports:utilities.templatetags.builtins.tags->extras.choices]
+- utilities.templatetags.buttons -> core.models [fg:imports:utilities.templatetags.buttons->core.models]
+- utilities.templatetags.buttons -> extras.models [fg:imports:utilities.templatetags.buttons->extras.models]
+- utilities.templatetags.buttons -> netbox.models.features [fg:imports:utilities.templatetags.buttons->netbox.models.features]
+- utilities.templatetags.helpers -> core.models [fg:imports:utilities.templatetags.helpers->core.models]
+- utilities.templatetags.helpers -> netbox.settings [fg:imports:utilities.templatetags.helpers->netbox.settings]
+- utilities.templatetags.navigation -> netbox.navigation.menu [fg:imports:utilities.templatetags.navigation->netbox.navigation.menu]
+- utilities.templatetags.plugins -> netbox.plugins [fg:imports:utilities.templatetags.plugins->netbox.plugins]
+- utilities.templatetags.plugins -> netbox.registry [fg:imports:utilities.templatetags.plugins->netbox.registry]
+- utilities.templatetags.tabs -> netbox.registry [fg:imports:utilities.templatetags.tabs->netbox.registry]
+- utilities.testing.api -> core.choices [fg:imports:utilities.testing.api->core.choices]
+- utilities.testing.api -> core.models [fg:imports:utilities.testing.api->core.models]
+- utilities.testing.api -> ipam.graphql.types [fg:imports:utilities.testing.api->ipam.graphql.types]
+- utilities.testing.api -> users.models [fg:imports:utilities.testing.api->users.models]
+- utilities.testing.base -> core.models [fg:imports:utilities.testing.base->core.models]
+- utilities.testing.base -> users.models [fg:imports:utilities.testing.base->users.models]
+- utilities.testing.filtersets -> core.models [fg:imports:utilities.testing.filtersets->core.models]
+- utilities.testing.filtersets -> extras.filters [fg:imports:utilities.testing.filtersets->extras.filters]
+- utilities.testing.utils -> core.models [fg:imports:utilities.testing.utils->core.models]
+- utilities.testing.utils -> dcim.models [fg:imports:utilities.testing.utils->dcim.models]
+- utilities.testing.utils -> extras.choices [fg:imports:utilities.testing.utils->extras.choices]
+- utilities.testing.utils -> extras.models [fg:imports:utilities.testing.utils->extras.models]
+- utilities.testing.utils -> users.models [fg:imports:utilities.testing.utils->users.models]
+- utilities.testing.utils -> virtualization.models [fg:imports:utilities.testing.utils->virtualization.models]
+- utilities.testing.views -> core.choices [fg:imports:utilities.testing.views->core.choices]
+- utilities.testing.views -> core.models [fg:imports:utilities.testing.views->core.models]
+- utilities.testing.views -> netbox.choices [fg:imports:utilities.testing.views->netbox.choices]
+- utilities.testing.views -> netbox.models.features [fg:imports:utilities.testing.views->netbox.models.features]
+- utilities.testing.views -> users.models [fg:imports:utilities.testing.views->users.models]
+- utilities.tests.test_api -> core.models [fg:imports:utilities.tests.test_api->core.models]
+- utilities.tests.test_api -> dcim.models [fg:imports:utilities.tests.test_api->dcim.models]
+- utilities.tests.test_api -> extras.choices [fg:imports:utilities.tests.test_api->extras.choices]
+- utilities.tests.test_api -> extras.models [fg:imports:utilities.tests.test_api->extras.models]
+- utilities.tests.test_api -> ipam.models [fg:imports:utilities.tests.test_api->ipam.models]
+- utilities.tests.test_api -> netbox.config [fg:imports:utilities.tests.test_api->netbox.config]
+- utilities.tests.test_conversions -> dcim.choices [fg:imports:utilities.tests.test_conversions->dcim.choices]
+- utilities.tests.test_conversions -> netbox.choices [fg:imports:utilities.tests.test_conversions->netbox.choices]
+- utilities.tests.test_counters -> dcim.models [fg:imports:utilities.tests.test_counters->dcim.models]
+- utilities.tests.test_filters -> dcim.choices [fg:imports:utilities.tests.test_filters->dcim.choices]
+- utilities.tests.test_filters -> dcim.fields [fg:imports:utilities.tests.test_filters->dcim.fields]
+- utilities.tests.test_filters -> dcim.filtersets [fg:imports:utilities.tests.test_filters->dcim.filtersets]
+- utilities.tests.test_filters -> dcim.models [fg:imports:utilities.tests.test_filters->dcim.models]
+- utilities.tests.test_filters -> extras.filters [fg:imports:utilities.tests.test_filters->extras.filters]
+- utilities.tests.test_filters -> extras.models [fg:imports:utilities.tests.test_filters->extras.models]
+- utilities.tests.test_filters -> ipam.filtersets [fg:imports:utilities.tests.test_filters->ipam.filtersets]
+- utilities.tests.test_filters -> ipam.models [fg:imports:utilities.tests.test_filters->ipam.models]
+- utilities.tests.test_filters -> netbox.filtersets [fg:imports:utilities.tests.test_filters->netbox.filtersets]
+- utilities.tests.test_filters -> wireless.choices [fg:imports:utilities.tests.test_filters->wireless.choices]
+- utilities.tests.test_forms -> dcim.models [fg:imports:utilities.tests.test_forms->dcim.models]
+- utilities.tests.test_forms -> netbox.choices [fg:imports:utilities.tests.test_forms->netbox.choices]
+- utilities.tests.test_managers -> dcim.models [fg:imports:utilities.tests.test_managers->dcim.models]
+- utilities.tracking -> netbox.registry [fg:imports:utilities.tracking->netbox.registry]
+- utilities.urls -> netbox.registry [fg:imports:utilities.urls->netbox.registry]
+- utilities.validators -> netbox.config [fg:imports:utilities.validators->netbox.config]
+- utilities.views -> netbox.plugins [fg:imports:utilities.views->netbox.plugins]
+- utilities.views -> netbox.registry [fg:imports:utilities.views->netbox.registry]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- utilities.jinja2 | . | get_model | core.DataFile | cross [fg:model_refs:utilities.jinja2:23]
+- utilities.permissions | . | get_model | users.User | cross [fg:model_refs:utilities.permissions:96]
+- utilities.serialization | . | get_model | extras.Tag | cross [fg:model_refs:utilities.serialization:68]
+- utilities.tables | . | get_model | extras.TableConfig | cross [fg:model_refs:utilities.tables:22]
+
+## String references INTO this subsystem from others
+
+## Churn (id = churn:<module>) — top 25 by commits
+- utilities.views | 321 commits | 14 authors | 2016-03-01 .. 2025-05-01 [fg:churn:utilities.views]
+- utilities.templatetags.helpers | 129 commits | 14 authors | 2016-03-01 .. 2025-03-07 [fg:churn:utilities.templatetags.helpers]
+- utilities.api | 123 commits | 7 authors | 2016-03-01 .. 2024-11-15 [fg:churn:utilities.api]
+- utilities.tables | 101 commits | 7 authors | 2016-06-01 .. 2025-04-23 [fg:churn:utilities.tables]
+- utilities.testing.api | 54 commits | 6 authors | 2020-06-08 .. 2024-11-21 [fg:churn:utilities.testing.api]
+- utilities.testing.views | 53 commits | 5 authors | 2020-06-08 .. 2024-11-21 [fg:churn:utilities.testing.views]
+- utilities.filters | 52 commits | 6 authors | 2016-09-15 .. 2024-08-10 [fg:churn:utilities.filters]
+- utilities.forms.forms | 43 commits | 7 authors | 2020-08-11 .. 2025-04-10 [fg:churn:utilities.forms.forms]
+- utilities.choices | 31 commits | 6 authors | 2019-11-07 .. 2025-04-17 [fg:churn:utilities.choices]
+- utilities.forms.utils | 29 commits | 8 authors | 2020-08-11 .. 2025-04-23 [fg:churn:utilities.forms.utils]
+- utilities.templatetags.buttons | 29 commits | 3 authors | 2018-02-02 .. 2024-11-21 [fg:churn:utilities.templatetags.buttons]
+- utilities.fields | 27 commits | 6 authors | 2016-03-01 .. 2025-03-26 [fg:churn:utilities.fields]
+- utilities.testing.utils | 23 commits | 5 authors | 2020-01-31 .. 2024-08-29 [fg:churn:utilities.testing.utils]
+- utilities.constants | 21 commits | 8 authors | 2017-11-14 .. 2024-10-01 [fg:churn:utilities.constants]
+- utilities.paginator | 21 commits | 3 authors | 2016-03-01 .. 2024-05-16 [fg:churn:utilities.paginator]
+- utilities.querysets | 21 commits | 4 authors | 2019-10-22 .. 2024-05-13 [fg:churn:utilities.querysets]
+- utilities.templatetags.form_helpers | 21 commits | 5 authors | 2016-03-01 .. 2024-10-10 [fg:churn:utilities.templatetags.form_helpers]
+- utilities.tests.test_filters | 21 commits | 7 authors | 2019-11-01 .. 2025-03-28 [fg:churn:utilities.tests.test_filters]
+- utilities.forms.fields.dynamic | 18 commits | 5 authors | 2022-01-31 .. 2025-04-24 [fg:churn:utilities.forms.fields.dynamic]
+- utilities.forms.fields.fields | 18 commits | 8 authors | 2022-01-31 .. 2025-03-27 [fg:churn:utilities.forms.fields.fields]
+- utilities.templatetags.builtins.filters | 18 commits | 5 authors | 2022-02-09 .. 2024-08-26 [fg:churn:utilities.templatetags.builtins.filters]
+- utilities.tests.test_forms | 18 commits | 8 authors | 2020-01-09 .. 2025-03-31 [fg:churn:utilities.tests.test_forms]
+- utilities.permissions | 17 commits | 4 authors | 2020-05-21 .. 2024-08-26 [fg:churn:utilities.permissions]
+- utilities.testing.base | 17 commits | 3 authors | 2021-04-14 .. 2024-10-18 [fg:churn:utilities.testing.base]
+- utilities.tests.test_api | 16 commits | 4 authors | 2019-04-17 .. 2025-05-21 [fg:churn:utilities.tests.test_api]
+
+## Entry points (id = entrypoints:<module>)
+- management_command | utilities.management.commands.calculate_cached_counts | netbox/utilities/management/commands/calculate_cached_counts.py [fg:entrypoints:utilities.management.commands.calculate_cached_counts]
+- urls | utilities.urls | netbox/utilities/urls.py [fg:entrypoints:utilities.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- utilities.choices: ChoiceSetMeta, ChoiceSet
+- utilities.exceptions: AbortTransaction, AbortRequest, AbortScript, PermissionsViolation, RQWorkerNotRunningException
+- utilities.fields: ColorField, NaturalOrderingField, RestrictedGenericForeignKey, CounterCacheField, GenericArrayForeignKey
+- utilities.filters: MultiValueCharFilter, MultiValueDateFilter, MultiValueDateTimeFilter, MultiValueNumberFilter, MultiValueDecimalFilter, MultiValueTimeFilter, MultiValueArrayFilter, MultiValueMACAddressFilter, MultiValueWWNFilter, TreeNodeMultipleChoiceFilter, NullableCharFieldFilter, NumericArrayFilter, ContentTypeFilter
+- utilities.forms.bulk_import: BulkImportForm
+- utilities.forms.fields.array: NumericArrayField, NumericRangeArrayField
+- utilities.forms.fields.content_types: ContentTypeChoiceMixin, ContentTypeChoiceField, ContentTypeMultipleChoiceField
+- utilities.forms.fields.csv: CSVChoicesMixin, CSVChoiceField, CSVMultipleChoiceField, CSVTypedChoiceField, CSVModelChoiceField, CSVModelMultipleChoiceField, CSVContentTypeField, CSVMultipleContentTypeField
+- utilities.forms.fields.dynamic: DynamicChoiceField, DynamicMultipleChoiceField, DynamicModelChoiceMixin, DynamicModelChoiceField, DynamicModelMultipleChoiceField
+- utilities.forms.fields.expandable: ExpandableNameField, ExpandableIPAddressField
+- utilities.forms.fields.fields: CommentField, SlugField, ColorField, TagFilterField, LaxURLField, JSONField, MACAddressField
+- utilities.forms.forms: ConfirmationForm, BulkEditForm, BulkRenameForm, CSVModelForm, FilterForm, TableConfigForm
+- utilities.forms.mixins: CheckLastUpdatedMixin, DistanceValidationMixin
+- utilities.forms.rendering: FieldSet, InlineFields, TabbedGroups, ObjectAttribute
+- utilities.forms.widgets.apiselect: APISelect, APISelectMultiple
+- utilities.forms.widgets.datetime: DatePicker, DateTimePicker, TimePicker
+- utilities.forms.widgets.misc: ClearableFileInput, MarkdownWidget, NumberWithOptions, SlugWidget, ArrayWidget, ChoicesWidget
+- utilities.forms.widgets.select: BulkEditNullBooleanSelect, ColorSelect, HTMXSelect, SelectWithPK
+- utilities.jinja2: DataFileLoader
+- utilities.json: CustomFieldJSONEncoder, ConfigJSONEncoder
+- utilities.jsonschema: PropertyTypeEnum, StringFormatEnum, JSONSchemaProperty
+- utilities.management.commands.calculate_cached_counts: Command
+- utilities.markdown: StrikethroughExtension
+- utilities.mptt: TreeQuerySet, TreeManager
+- utilities.paginator: EnhancedPaginator, EnhancedPage
+- utilities.password_validation: AlphanumericPasswordValidator
+- utilities.proxy: DefaultProxyRouter
+- utilities.query_functions: CollateAsChar, EmptyGroupByJSONBAgg
+- utilities.querysets: RestrictedPrefetch, RestrictedQuerySet
+- utilities.release: FeatureSet, ReleaseInfo
+- utilities.request: NetBoxFakeRequest
+- utilities.serializers.json: Serializer
+- utilities.socks: ProxyHTTPConnection, ProxyHTTPSConnection, RdnsProxyHTTPConnection, RdnsProxyHTTPSConnection, ProxyHTTPConnectionPool, ProxyHTTPSConnectionPool, RdnsProxyHTTPConnectionPool, RdnsProxyHTTPSConnectionPool, ProxyPoolManager
+- utilities.testing.api: APITestCase, APIViewTestCases
+- utilities.testing.base: TestCase, ModelTestCase
+- utilities.testing.filtersets: BaseFilterSetTests, ChangeLoggedFilterSetTests
+- utilities.testing.views: ModelViewTestCase, ViewTestCases
+- utilities.tests.test_api: WritableNestedSerializerTest, APIPaginationTestCase, APIOrderingTestCase, APIDocsTestCase
+- utilities.tests.test_choices: ExampleChoices, ChoiceSetTestCase
+- utilities.tests.test_conversions: ConversionsTest
+- utilities.tests.test_counters: CountersTest
+- utilities.tests.test_data: RangeFunctionsTestCase
+- utilities.tests.test_filters: TreeNodeMultipleChoiceFilterTest, DummyModel, BaseFilterSetTest, DynamicFilterLookupExpressionTest
+- utilities.tests.test_forms: ExpandIPAddress, ExpandAlphanumeric, ImportFormTest, BulkRenameFormTest, GetFieldValueTest
+- utilities.tests.test_managers: NaturalOrderByManagerTest
+- utilities.tests.test_ordering: NaturalizationTestCase
+- utilities.tests.test_request: GetClientIPTests
+- utilities.tests.test_utils: DictToFilterParamsTest, NormalizeQueryDictTest, DeepMergeTest
+- utilities.tracking: Tracker, TrackingModelMixin
+- utilities.validators: EnhancedURLValidator, ExclusionValidator, MultipleOfValidator
+- utilities.views: ConditionalLoginRequiredMixin, ContentTypePermissionRequiredMixin, ObjectPermissionRequiredMixin, GetReturnURLMixin, GetRelatedModelsMixin, ViewTab

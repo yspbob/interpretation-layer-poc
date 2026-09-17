@@ -1,0 +1,26 @@
+{
+ "subsystem": "virtualization",
+ "files": {
+  "adrs.md": {
+   "claims_kept": 30,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "map.md": {
+   "claims_kept": 32,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "patterns.md": {
+   "claims_kept": 29,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  }
+ }
+}

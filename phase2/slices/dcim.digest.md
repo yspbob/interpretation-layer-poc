@@ -1,0 +1,785 @@
+# Fact-graph digest: subsystem `dcim` at T0 ea4c205
+
+Summary row [fg:subsystems:dcim]: {'subsystem': 'dcim', 'modules': 91, 'loc_code': 50460, 'loc_data': 0, 'test_modules': 8}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- dcim | netbox/dcim/__init__.py | 1 | 0 | 0 |  | 
+- dcim.api | netbox/dcim/api/__init__.py | 1 | 0 | 0 |  | 
+- dcim.api.exceptions | netbox/dcim/api/exceptions.py | 7 | 1 | 0 |  | 
+- dcim.api.serializers | netbox/dcim/api/serializers.py | 14 | 0 | 0 |  | 
+- dcim.api.serializers_ | netbox/dcim/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- dcim.api.serializers_.base | netbox/dcim/api/serializers_/base.py | 38 | 1 | 0 |  | 
+- dcim.api.serializers_.cables | netbox/dcim/api/serializers_/cables.py | 125 | 5 | 0 |  | 
+- dcim.api.serializers_.device_components | netbox/dcim/api/serializers_/device_components.py | 417 | 11 | 0 |  | 
+- dcim.api.serializers_.devices | netbox/dcim/api/serializers_/devices.py | 185 | 5 | 0 |  | 
+- dcim.api.serializers_.devicetype_components | netbox/dcim/api/serializers_/devicetype_components.py | 331 | 10 | 0 |  | 
+- dcim.api.serializers_.devicetypes | netbox/dcim/api/serializers_/devicetypes.py | 112 | 3 | 0 |  | 
+- dcim.api.serializers_.manufacturers | netbox/dcim/api/serializers_/manufacturers.py | 24 | 1 | 0 |  | 
+- dcim.api.serializers_.nested | netbox/dcim/api/serializers_/nested.py | 105 | 10 | 0 |  | 
+- dcim.api.serializers_.platforms | netbox/dcim/api/serializers_/platforms.py | 27 | 1 | 0 |  | 
+- dcim.api.serializers_.power | netbox/dcim/api/serializers_/power.py | 77 | 2 | 0 |  | 
+- dcim.api.serializers_.racks | netbox/dcim/api/serializers_/racks.py | 190 | 6 | 0 |  | 
+- dcim.api.serializers_.rackunits | netbox/dcim/api/serializers_/rackunits.py | 32 | 1 | 0 |  | 
+- dcim.api.serializers_.roles | netbox/dcim/api/serializers_/roles.py | 45 | 2 | 0 |  | 
+- dcim.api.serializers_.sites | netbox/dcim/api/serializers_/sites.py | 99 | 4 | 0 |  | 
+- dcim.api.serializers_.virtualchassis | netbox/dcim/api/serializers_/virtualchassis.py | 26 | 1 | 0 |  | 
+- dcim.api.urls | netbox/dcim/api/urls.py | 79 | 0 | 0 |  | 
+- dcim.api.views | netbox/dcim/api/views.py | 650 | 48 | 0 |  | 
+- dcim.apps | netbox/dcim/apps.py | 35 | 1 | 0 |  | 
+- dcim.base_filtersets | netbox/dcim/base_filtersets.py | 68 | 1 | 0 |  | 
+- dcim.choices | netbox/dcim/choices.py | 1701 | 38 | 0 |  | 
+- dcim.constants | netbox/dcim/constants.py | 146 | 0 | 0 |  | 
+- dcim.exceptions | netbox/dcim/exceptions.py | 3 | 1 | 0 |  | 
+- dcim.fields | netbox/dcim/fields.py | 92 | 5 | 0 |  | 
+- dcim.filtersets | netbox/dcim/filtersets.py | 2602 | 55 | 0 |  | 
+- dcim.forms | netbox/dcim/forms/__init__.py | 10 | 0 | 0 |  | 
+- dcim.forms.bulk_create | netbox/dcim/forms/bulk_create.py | 132 | 10 | 0 |  | 
+- dcim.forms.bulk_edit | netbox/dcim/forms/bulk_edit.py | 1852 | 44 | 0 |  | 
+- dcim.forms.bulk_import | netbox/dcim/forms/bulk_import.py | 1636 | 34 | 0 |  | 
+- dcim.forms.common | netbox/dcim/forms/common.py | 161 | 2 | 0 |  | 
+- dcim.forms.connections | netbox/dcim/forms/connections.py | 140 | 0 | 1 |  | 
+- dcim.forms.filtersets | netbox/dcim/forms/filtersets.py | 1763 | 41 | 0 |  | 
+- dcim.forms.formsets | netbox/dcim/forms/formsets.py | 25 | 1 | 0 |  | 
+- dcim.forms.mixins | netbox/dcim/forms/mixins.py | 110 | 3 | 0 |  | 
+- dcim.forms.model_forms | netbox/dcim/forms/model_forms.py | 1958 | 50 | 1 |  | 
+- dcim.forms.object_create | netbox/dcim/forms/object_create.py | 456 | 22 | 0 |  | 
+- dcim.forms.object_import | netbox/dcim/forms/object_import.py | 213 | 10 | 0 |  | 
+- dcim.graphql | netbox/dcim/graphql/__init__.py | 1 | 0 | 0 |  | 
+- dcim.graphql.enums | netbox/dcim/graphql/enums.py | 76 | 0 | 0 |  | 
+- dcim.graphql.filter_mixins | netbox/dcim/graphql/filter_mixins.py | 149 | 9 | 0 |  | 
+- dcim.graphql.filters | netbox/dcim/graphql/filters.py | 963 | 44 | 0 |  | 
+- dcim.graphql.gfk_mixins | netbox/dcim/graphql/gfk_mixins.py | 136 | 3 | 0 |  | 
+- dcim.graphql.mixins | netbox/dcim/graphql/mixins.py | 44 | 2 | 0 |  | 
+- dcim.graphql.schema | netbox/dcim/graphql/schema.py | 139 | 1 | 0 |  | 
+- dcim.graphql.types | netbox/dcim/graphql/types.py | 899 | 48 | 0 |  | 
+- dcim.lookups | netbox/dcim/lookups.py | 11 | 1 | 0 |  | 
+- dcim.management | netbox/dcim/management/__init__.py | 1 | 0 | 0 |  | 
+- dcim.management.commands | netbox/dcim/management/commands/__init__.py | 1 | 0 | 0 |  | 
+- dcim.management.commands.buildschema | netbox/dcim/management/commands/buildschema.py | 64 | 1 | 0 |  | 
+- dcim.management.commands.trace_paths | netbox/dcim/management/commands/trace_paths.py | 91 | 1 | 0 |  | 
+- dcim.migrations | netbox/dcim/migrations/__init__.py | 1 | 0 | 0 |  | 
+- dcim.migrations.0001_squashed | netbox/dcim/migrations/0001_squashed.py | 876 | 1 | 0 |  | migration
+- dcim.migrations.0002_squashed | netbox/dcim/migrations/0002_squashed.py | 495 | 1 | 0 |  | migration
+- dcim.migrations.0003_squashed_0130 | netbox/dcim/migrations/0003_squashed_0130.py | 627 | 1 | 0 |  | migration
+- dcim.migrations.0131_squashed_0159 | netbox/dcim/migrations/0131_squashed_0159.py | 1547 | 1 | 0 |  | migration
+- dcim.migrations.0160_squashed_0166 | netbox/dcim/migrations/0160_squashed_0166.py | 765 | 1 | 0 |  | migration
+- dcim.migrations.0167_squashed_0182 | netbox/dcim/migrations/0167_squashed_0182.py | 343 | 1 | 0 |  | migration
+- dcim.migrations.0183_devicetype_exclude_from_utilization | netbox/dcim/migrations/0183_devicetype_exclude_from_utilization.py | 18 | 1 | 0 |  | migration
+- dcim.migrations.0184_protect_child_interfaces | netbox/dcim/migrations/0184_protect_child_interfaces.py | 25 | 1 | 0 |  | migration
+- dcim.migrations.0185_gfk_indexes | netbox/dcim/migrations/0185_gfk_indexes.py | 25 | 1 | 0 |  | migration
+- dcim.migrations.0186_location_facility | netbox/dcim/migrations/0186_location_facility.py | 18 | 1 | 0 |  | migration
+- dcim.migrations.0187_alter_device_vc_position | netbox/dcim/migrations/0187_alter_device_vc_position.py | 18 | 1 | 0 |  | migration
+- dcim.migrations.0188_racktype | netbox/dcim/migrations/0188_racktype.py | 116 | 1 | 1 |  | migration
+- dcim.migrations.0189_moduletype_rack_airflow | netbox/dcim/migrations/0189_moduletype_rack_airflow.py | 21 | 1 | 0 |  | migration
+- dcim.migrations.0190_nested_modules | netbox/dcim/migrations/0190_nested_modules.py | 103 | 1 | 0 |  | migration
+- dcim.migrations.0191_module_bay_rebuild | netbox/dcim/migrations/0191_module_bay_rebuild.py | 23 | 1 | 1 |  | migration
+- dcim.migrations.0192_inventoryitem_status | netbox/dcim/migrations/0192_inventoryitem_status.py | 18 | 1 | 0 |  | migration
+- dcim.migrations.0193_poweroutlet_color | netbox/dcim/migrations/0193_poweroutlet_color.py | 19 | 1 | 0 |  | migration
+- dcim.migrations.0194_charfield_null_choices | netbox/dcim/migrations/0194_charfield_null_choices.py | 293 | 1 | 1 |  | migration
+- dcim.migrations.0195_interface_vlan_translation_policy | netbox/dcim/migrations/0195_interface_vlan_translation_policy.py | 22 | 1 | 0 |  | migration
+- dcim.migrations.0196_qinq_svlan | netbox/dcim/migrations/0196_qinq_svlan.py | 40 | 1 | 0 |  | migration
+- dcim.migrations.0197_natural_sort_collation | netbox/dcim/migrations/0197_natural_sort_collation.py | 17 | 1 | 0 |  | migration
+- dcim.migrations.0198_natural_ordering | netbox/dcim/migrations/0198_natural_ordering.py | 318 | 1 | 0 |  | migration
+- dcim.migrations.0199_macaddress | netbox/dcim/migrations/0199_macaddress.py | 45 | 1 | 0 |  | migration
+- dcim.migrations.0200_populate_mac_addresses | netbox/dcim/migrations/0200_populate_mac_addresses.py | 96 | 1 | 2 |  | migration
+- dcim.migrations.0201_add_power_outlet_status | netbox/dcim/migrations/0201_add_power_outlet_status.py | 17 | 1 | 0 |  | migration
+- dcim.migrations.0202_location_comments_region_comments_sitegroup_comments | netbox/dcim/migrations/0202_location_comments_region_comments_sitegroup_comments.py | 27 | 1 | 0 |  | migration
+- dcim.migrations.0203_add_rack_outer_height | netbox/dcim/migrations/0203_add_rack_outer_height.py | 24 | 1 | 0 |  | migration
+- dcim.migrations.0203_device_role_nested | netbox/dcim/migrations/0203_device_role_nested.py | 66 | 1 | 0 |  | migration
+- dcim.migrations.0204_device_role_rebuild | netbox/dcim/migrations/0204_device_role_rebuild.py | 23 | 1 | 1 |  | migration
+- dcim.migrations.0205_moduletypeprofile | netbox/dcim/migrations/0205_moduletypeprofile.py | 58 | 1 | 0 |  | migration
+- dcim.migrations.0206_load_module_type_profiles | netbox/dcim/migrations/0206_load_module_type_profiles.py | 45 | 1 | 1 |  | migration
+- dcim.migrations.0207_remove_redundant_indexes | netbox/dcim/migrations/0207_remove_redundant_indexes.py | 18 | 1 | 0 |  | migration
+- dcim.models | netbox/dcim/models/__init__.py | 9 | 0 | 0 |  | 
+- dcim.models.cables | netbox/dcim/models/cables.py | 833 | 3 | 0 |  | 
+- dcim.models.device_component_templates | netbox/dcim/models/device_component_templates.py | 823 | 12 | 0 |  | 
+- dcim.models.device_components | netbox/dcim/models/device_components.py | 1389 | 16 | 0 |  | 
+- dcim.models.devices | netbox/dcim/models/devices.py | 1293 | 8 | 0 |  | 
+- dcim.models.mixins | netbox/dcim/models/mixins.py | 121 | 2 | 0 |  | 
+- dcim.models.modules | netbox/dcim/models/modules.py | 363 | 3 | 0 |  | 
+- dcim.models.power | netbox/dcim/models/power.py | 208 | 2 | 0 |  | 
+- dcim.models.racks | netbox/dcim/models/racks.py | 740 | 5 | 0 |  | 
+- dcim.models.sites | netbox/dcim/models/sites.py | 346 | 4 | 0 |  | 
+- dcim.search | netbox/dcim/search.py | 387 | 32 | 0 |  | 
+- dcim.signals | netbox/dcim/signals.py | 144 | 0 | 8 |  | 
+- dcim.svg | netbox/dcim/svg/__init__.py | 3 | 0 | 0 |  | 
+- dcim.svg.cables | netbox/dcim/svg/cables.py | 469 | 3 | 0 |  | 
+- dcim.svg.racks | netbox/dcim/svg/racks.py | 346 | 1 | 2 |  | 
+- dcim.tables | netbox/dcim/tables/__init__.py | 9 | 0 | 0 |  | 
+- dcim.tables.cables | netbox/dcim/tables/cables.py | 131 | 2 | 0 |  | 
+- dcim.tables.connections | netbox/dcim/tables/connections.py | 77 | 3 | 0 |  | 
+- dcim.tables.devices | netbox/dcim/tables/devices.py | 1168 | 32 | 0 |  | 
+- dcim.tables.devicetypes | netbox/dcim/tables/devicetypes.py | 329 | 13 | 0 |  | 
+- dcim.tables.modules | netbox/dcim/tables/modules.py | 122 | 3 | 0 |  | 
+- dcim.tables.power | netbox/dcim/tables/power.py | 113 | 2 | 0 |  | 
+- dcim.tables.racks | netbox/dcim/tables/racks.py | 246 | 4 | 0 |  | 
+- dcim.tables.sites | netbox/dcim/tables/sites.py | 181 | 4 | 0 |  | 
+- dcim.tables.template_code | netbox/dcim/tables/template_code.py | 575 | 0 | 0 |  | 
+- dcim.tests | netbox/dcim/tests/__init__.py | 1 | 0 | 0 | test | 
+- dcim.tests.test_api | netbox/dcim/tests/test_api.py | 2677 | 46 | 0 | test | 
+- dcim.tests.test_cablepaths | netbox/dcim/tests/test_cablepaths.py | 2513 | 1 | 0 | test | 
+- dcim.tests.test_filtersets | netbox/dcim/tests/test_filtersets.py | 6943 | 45 | 0 | test | 
+- dcim.tests.test_forms | netbox/dcim/tests/test_forms.py | 414 | 4 | 1 | test | 
+- dcim.tests.test_models | netbox/dcim/tests/test_models.py | 1022 | 8 | 0 | test | 
+- dcim.tests.test_natural_ordering | netbox/dcim/tests/test_natural_ordering.py | 172 | 1 | 0 | test | 
+- dcim.tests.test_views | netbox/dcim/tests/test_views.py | 3630 | 43 | 0 | test | 
+- dcim.urls | netbox/dcim/urls.py | 175 | 0 | 0 |  | 
+- dcim.utils | netbox/dcim/utils.py | 79 | 0 | 7 |  | 
+- dcim.views | netbox/dcim/views.py | 4144 | 377 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'dcim': 241, 'netbox': 93, 'utilities': 90, 'ipam': 27, 'wireless': 27, 'tenancy': 23, 'extras': 23, 'virtualization': 16, 'circuits': 12, 'users': 10, 'core': 8, 'vpn': 4}
+Inbound by source subsystem: {'virtualization': 43, 'wireless': 32, 'ipam': 31, 'extras': 30, 'circuits': 22, 'netbox': 13, 'vpn': 12, 'utilities': 11, 'core': 5, 'tenancy': 5, 'users': 2}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- dcim.api.serializers_.base -> utilities.api [fg:imports:dcim.api.serializers_.base->utilities.api]
+- dcim.api.serializers_.cables -> netbox.api.fields [fg:imports:dcim.api.serializers_.cables->netbox.api.fields]
+- dcim.api.serializers_.cables -> netbox.api.serializers [fg:imports:dcim.api.serializers_.cables->netbox.api.serializers]
+- dcim.api.serializers_.cables -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.cables->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.cables -> utilities.api [fg:imports:dcim.api.serializers_.cables->utilities.api]
+- dcim.api.serializers_.device_components -> ipam.api.serializers_.vlans [fg:imports:dcim.api.serializers_.device_components->ipam.api.serializers_.vlans]
+- dcim.api.serializers_.device_components -> ipam.api.serializers_.vrfs [fg:imports:dcim.api.serializers_.device_components->ipam.api.serializers_.vrfs]
+- dcim.api.serializers_.device_components -> ipam.models [fg:imports:dcim.api.serializers_.device_components->ipam.models]
+- dcim.api.serializers_.device_components -> netbox.api.fields [fg:imports:dcim.api.serializers_.device_components->netbox.api.fields]
+- dcim.api.serializers_.device_components -> netbox.api.serializers [fg:imports:dcim.api.serializers_.device_components->netbox.api.serializers]
+- dcim.api.serializers_.device_components -> utilities.api [fg:imports:dcim.api.serializers_.device_components->utilities.api]
+- dcim.api.serializers_.device_components -> vpn.api.serializers_.l2vpn [fg:imports:dcim.api.serializers_.device_components->vpn.api.serializers_.l2vpn]
+- dcim.api.serializers_.device_components -> wireless.api.serializers_.nested [fg:imports:dcim.api.serializers_.device_components->wireless.api.serializers_.nested]
+- dcim.api.serializers_.device_components -> wireless.api.serializers_.wirelesslans [fg:imports:dcim.api.serializers_.device_components->wireless.api.serializers_.wirelesslans]
+- dcim.api.serializers_.device_components -> wireless.choices [fg:imports:dcim.api.serializers_.device_components->wireless.choices]
+- dcim.api.serializers_.device_components -> wireless.models [fg:imports:dcim.api.serializers_.device_components->wireless.models]
+- dcim.api.serializers_.devices -> extras.api.serializers_.configtemplates [fg:imports:dcim.api.serializers_.devices->extras.api.serializers_.configtemplates]
+- dcim.api.serializers_.devices -> ipam.api.serializers_.ip [fg:imports:dcim.api.serializers_.devices->ipam.api.serializers_.ip]
+- dcim.api.serializers_.devices -> netbox.api.fields [fg:imports:dcim.api.serializers_.devices->netbox.api.fields]
+- dcim.api.serializers_.devices -> netbox.api.serializers [fg:imports:dcim.api.serializers_.devices->netbox.api.serializers]
+- dcim.api.serializers_.devices -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.devices->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.devices -> utilities.api [fg:imports:dcim.api.serializers_.devices->utilities.api]
+- dcim.api.serializers_.devices -> virtualization.api.serializers_.clusters [fg:imports:dcim.api.serializers_.devices->virtualization.api.serializers_.clusters]
+- dcim.api.serializers_.devicetype_components -> netbox.api.fields [fg:imports:dcim.api.serializers_.devicetype_components->netbox.api.fields]
+- dcim.api.serializers_.devicetype_components -> netbox.api.serializers [fg:imports:dcim.api.serializers_.devicetype_components->netbox.api.serializers]
+- dcim.api.serializers_.devicetype_components -> utilities.api [fg:imports:dcim.api.serializers_.devicetype_components->utilities.api]
+- dcim.api.serializers_.devicetype_components -> wireless.choices [fg:imports:dcim.api.serializers_.devicetype_components->wireless.choices]
+- dcim.api.serializers_.devicetypes -> netbox.api.fields [fg:imports:dcim.api.serializers_.devicetypes->netbox.api.fields]
+- dcim.api.serializers_.devicetypes -> netbox.api.serializers [fg:imports:dcim.api.serializers_.devicetypes->netbox.api.serializers]
+- dcim.api.serializers_.devicetypes -> netbox.choices [fg:imports:dcim.api.serializers_.devicetypes->netbox.choices]
+- dcim.api.serializers_.manufacturers -> netbox.api.fields [fg:imports:dcim.api.serializers_.manufacturers->netbox.api.fields]
+- dcim.api.serializers_.manufacturers -> netbox.api.serializers [fg:imports:dcim.api.serializers_.manufacturers->netbox.api.serializers]
+- dcim.api.serializers_.nested -> netbox.api.serializers [fg:imports:dcim.api.serializers_.nested->netbox.api.serializers]
+- dcim.api.serializers_.platforms -> extras.api.serializers_.configtemplates [fg:imports:dcim.api.serializers_.platforms->extras.api.serializers_.configtemplates]
+- dcim.api.serializers_.platforms -> netbox.api.fields [fg:imports:dcim.api.serializers_.platforms->netbox.api.fields]
+- dcim.api.serializers_.platforms -> netbox.api.serializers [fg:imports:dcim.api.serializers_.platforms->netbox.api.serializers]
+- dcim.api.serializers_.power -> netbox.api.fields [fg:imports:dcim.api.serializers_.power->netbox.api.fields]
+- dcim.api.serializers_.power -> netbox.api.serializers [fg:imports:dcim.api.serializers_.power->netbox.api.serializers]
+- dcim.api.serializers_.power -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.power->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.racks -> netbox.api.fields [fg:imports:dcim.api.serializers_.racks->netbox.api.fields]
+- dcim.api.serializers_.racks -> netbox.api.serializers [fg:imports:dcim.api.serializers_.racks->netbox.api.serializers]
+- dcim.api.serializers_.racks -> netbox.choices [fg:imports:dcim.api.serializers_.racks->netbox.choices]
+- dcim.api.serializers_.racks -> netbox.config [fg:imports:dcim.api.serializers_.racks->netbox.config]
+- dcim.api.serializers_.racks -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.racks->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.racks -> users.api.serializers_.users [fg:imports:dcim.api.serializers_.racks->users.api.serializers_.users]
+- dcim.api.serializers_.rackunits -> netbox.api.fields [fg:imports:dcim.api.serializers_.rackunits->netbox.api.fields]
+- dcim.api.serializers_.roles -> extras.api.serializers_.configtemplates [fg:imports:dcim.api.serializers_.roles->extras.api.serializers_.configtemplates]
+- dcim.api.serializers_.roles -> netbox.api.fields [fg:imports:dcim.api.serializers_.roles->netbox.api.fields]
+- dcim.api.serializers_.roles -> netbox.api.serializers [fg:imports:dcim.api.serializers_.roles->netbox.api.serializers]
+- dcim.api.serializers_.sites -> ipam.api.serializers_.asns [fg:imports:dcim.api.serializers_.sites->ipam.api.serializers_.asns]
+- dcim.api.serializers_.sites -> ipam.models [fg:imports:dcim.api.serializers_.sites->ipam.models]
+- dcim.api.serializers_.sites -> netbox.api.fields [fg:imports:dcim.api.serializers_.sites->netbox.api.fields]
+- dcim.api.serializers_.sites -> netbox.api.serializers [fg:imports:dcim.api.serializers_.sites->netbox.api.serializers]
+- dcim.api.serializers_.sites -> tenancy.api.serializers_.tenants [fg:imports:dcim.api.serializers_.sites->tenancy.api.serializers_.tenants]
+- dcim.api.serializers_.virtualchassis -> netbox.api.serializers [fg:imports:dcim.api.serializers_.virtualchassis->netbox.api.serializers]
+- dcim.api.urls -> netbox.api.routers [fg:imports:dcim.api.urls->netbox.api.routers]
+- dcim.api.views -> extras.api.mixins [fg:imports:dcim.api.views->extras.api.mixins]
+- dcim.api.views -> netbox.api.authentication [fg:imports:dcim.api.views->netbox.api.authentication]
+- dcim.api.views -> netbox.api.metadata [fg:imports:dcim.api.views->netbox.api.metadata]
+- dcim.api.views -> netbox.api.pagination [fg:imports:dcim.api.views->netbox.api.pagination]
+- dcim.api.views -> netbox.api.viewsets [fg:imports:dcim.api.views->netbox.api.viewsets]
+- dcim.api.views -> netbox.api.viewsets.mixins [fg:imports:dcim.api.views->netbox.api.viewsets.mixins]
+- dcim.api.views -> utilities.api [fg:imports:dcim.api.views->utilities.api]
+- dcim.api.views -> utilities.query_functions [fg:imports:dcim.api.views->utilities.query_functions]
+- dcim.apps -> netbox [fg:imports:dcim.apps->netbox]
+- dcim.apps -> netbox.models.features [fg:imports:dcim.apps->netbox.models.features]
+- dcim.apps -> utilities.counters [fg:imports:dcim.apps->utilities.counters]
+- dcim.base_filtersets -> netbox.filtersets [fg:imports:dcim.base_filtersets->netbox.filtersets]
+- dcim.base_filtersets -> utilities.filters [fg:imports:dcim.base_filtersets->utilities.filters]
+- dcim.choices -> utilities.choices [fg:imports:dcim.choices->utilities.choices]
+- dcim.filtersets -> circuits.models [fg:imports:dcim.filtersets->circuits.models]
+- dcim.filtersets -> extras.filtersets [fg:imports:dcim.filtersets->extras.filtersets]
+- dcim.filtersets -> extras.models [fg:imports:dcim.filtersets->extras.models]
+- dcim.filtersets -> ipam.filtersets [fg:imports:dcim.filtersets->ipam.filtersets]
+- dcim.filtersets -> ipam.models [fg:imports:dcim.filtersets->ipam.models]
+- dcim.filtersets -> netbox.choices [fg:imports:dcim.filtersets->netbox.choices]
+- dcim.filtersets -> netbox.filtersets [fg:imports:dcim.filtersets->netbox.filtersets]
+- dcim.filtersets -> tenancy.filtersets [fg:imports:dcim.filtersets->tenancy.filtersets]
+- dcim.filtersets -> tenancy.models [fg:imports:dcim.filtersets->tenancy.models]
+- dcim.filtersets -> users.models [fg:imports:dcim.filtersets->users.models]
+- dcim.filtersets -> utilities.filters [fg:imports:dcim.filtersets->utilities.filters]
+- dcim.filtersets -> virtualization.models [fg:imports:dcim.filtersets->virtualization.models]
+- dcim.filtersets -> vpn.models [fg:imports:dcim.filtersets->vpn.models]
+- dcim.filtersets -> wireless.choices [fg:imports:dcim.filtersets->wireless.choices]
+- dcim.filtersets -> wireless.models [fg:imports:dcim.filtersets->wireless.models]
+- dcim.forms.bulk_create -> extras.models [fg:imports:dcim.forms.bulk_create->extras.models]
+- dcim.forms.bulk_create -> netbox.forms.mixins [fg:imports:dcim.forms.bulk_create->netbox.forms.mixins]
+- dcim.forms.bulk_create -> utilities.forms [fg:imports:dcim.forms.bulk_create->utilities.forms]
+- dcim.forms.bulk_create -> utilities.forms.fields [fg:imports:dcim.forms.bulk_create->utilities.forms.fields]
+- dcim.forms.bulk_edit -> extras.models [fg:imports:dcim.forms.bulk_edit->extras.models]
+- dcim.forms.bulk_edit -> ipam.choices [fg:imports:dcim.forms.bulk_edit->ipam.choices]
+- dcim.forms.bulk_edit -> ipam.models [fg:imports:dcim.forms.bulk_edit->ipam.models]
+- dcim.forms.bulk_edit -> netbox.choices [fg:imports:dcim.forms.bulk_edit->netbox.choices]
+- dcim.forms.bulk_edit -> netbox.forms [fg:imports:dcim.forms.bulk_edit->netbox.forms]
+- dcim.forms.bulk_edit -> tenancy.models [fg:imports:dcim.forms.bulk_edit->tenancy.models]
+- dcim.forms.bulk_edit -> users.models [fg:imports:dcim.forms.bulk_edit->users.models]
+- dcim.forms.bulk_edit -> utilities.forms [fg:imports:dcim.forms.bulk_edit->utilities.forms]
+- dcim.forms.bulk_edit -> utilities.forms.fields [fg:imports:dcim.forms.bulk_edit->utilities.forms.fields]
+- dcim.forms.bulk_edit -> utilities.forms.rendering [fg:imports:dcim.forms.bulk_edit->utilities.forms.rendering]
+- dcim.forms.bulk_edit -> utilities.forms.widgets [fg:imports:dcim.forms.bulk_edit->utilities.forms.widgets]
+- dcim.forms.bulk_edit -> virtualization.models [fg:imports:dcim.forms.bulk_edit->virtualization.models]
+- dcim.forms.bulk_edit -> wireless.choices [fg:imports:dcim.forms.bulk_edit->wireless.choices]
+- dcim.forms.bulk_edit -> wireless.models [fg:imports:dcim.forms.bulk_edit->wireless.models]
+- dcim.forms.bulk_import -> extras.models [fg:imports:dcim.forms.bulk_import->extras.models]
+- dcim.forms.bulk_import -> ipam.models [fg:imports:dcim.forms.bulk_import->ipam.models]
+- dcim.forms.bulk_import -> netbox.choices [fg:imports:dcim.forms.bulk_import->netbox.choices]
+- dcim.forms.bulk_import -> netbox.forms [fg:imports:dcim.forms.bulk_import->netbox.forms]
+- dcim.forms.bulk_import -> tenancy.models [fg:imports:dcim.forms.bulk_import->tenancy.models]
+- dcim.forms.bulk_import -> utilities.forms.fields [fg:imports:dcim.forms.bulk_import->utilities.forms.fields]
+- dcim.forms.bulk_import -> virtualization.models [fg:imports:dcim.forms.bulk_import->virtualization.models]
+- dcim.forms.bulk_import -> wireless.choices [fg:imports:dcim.forms.bulk_import->wireless.choices]
+- dcim.forms.common -> utilities.forms [fg:imports:dcim.forms.common->utilities.forms]
+- dcim.forms.connections -> circuits.models [fg:imports:dcim.forms.connections->circuits.models]
+- dcim.forms.connections -> utilities.forms.fields [fg:imports:dcim.forms.connections->utilities.forms.fields]
+- dcim.forms.filtersets -> extras.forms [fg:imports:dcim.forms.filtersets->extras.forms]
+- dcim.forms.filtersets -> extras.models [fg:imports:dcim.forms.filtersets->extras.models]
+- dcim.forms.filtersets -> ipam.models [fg:imports:dcim.forms.filtersets->ipam.models]
+- dcim.forms.filtersets -> netbox.choices [fg:imports:dcim.forms.filtersets->netbox.choices]
+- dcim.forms.filtersets -> netbox.forms [fg:imports:dcim.forms.filtersets->netbox.forms]
+- dcim.forms.filtersets -> tenancy.forms [fg:imports:dcim.forms.filtersets->tenancy.forms]
+- dcim.forms.filtersets -> users.models [fg:imports:dcim.forms.filtersets->users.models]
+- dcim.forms.filtersets -> utilities.forms [fg:imports:dcim.forms.filtersets->utilities.forms]
+- dcim.forms.filtersets -> utilities.forms.fields [fg:imports:dcim.forms.filtersets->utilities.forms.fields]
+- dcim.forms.filtersets -> utilities.forms.rendering [fg:imports:dcim.forms.filtersets->utilities.forms.rendering]
+- dcim.forms.filtersets -> utilities.forms.widgets [fg:imports:dcim.forms.filtersets->utilities.forms.widgets]
+- dcim.forms.filtersets -> virtualization.models [fg:imports:dcim.forms.filtersets->virtualization.models]
+- dcim.forms.filtersets -> vpn.models [fg:imports:dcim.forms.filtersets->vpn.models]
+- dcim.forms.filtersets -> wireless.choices [fg:imports:dcim.forms.filtersets->wireless.choices]
+- dcim.forms.mixins -> utilities.forms [fg:imports:dcim.forms.mixins->utilities.forms]
+- dcim.forms.mixins -> utilities.forms.fields [fg:imports:dcim.forms.mixins->utilities.forms.fields]
+- dcim.forms.mixins -> utilities.forms.widgets [fg:imports:dcim.forms.mixins->utilities.forms.widgets]
+- dcim.forms.mixins -> utilities.templatetags.builtins.filters [fg:imports:dcim.forms.mixins->utilities.templatetags.builtins.filters]
+- dcim.forms.model_forms -> extras.models [fg:imports:dcim.forms.model_forms->extras.models]
+- dcim.forms.model_forms -> ipam.choices [fg:imports:dcim.forms.model_forms->ipam.choices]
+- dcim.forms.model_forms -> ipam.models [fg:imports:dcim.forms.model_forms->ipam.models]
+- dcim.forms.model_forms -> netbox.forms [fg:imports:dcim.forms.model_forms->netbox.forms]
+- dcim.forms.model_forms -> tenancy.forms [fg:imports:dcim.forms.model_forms->tenancy.forms]
+- dcim.forms.model_forms -> users.models [fg:imports:dcim.forms.model_forms->users.models]
+- dcim.forms.model_forms -> utilities.forms [fg:imports:dcim.forms.model_forms->utilities.forms]
+- dcim.forms.model_forms -> utilities.forms.fields [fg:imports:dcim.forms.model_forms->utilities.forms.fields]
+- dcim.forms.model_forms -> utilities.forms.rendering [fg:imports:dcim.forms.model_forms->utilities.forms.rendering]
+- dcim.forms.model_forms -> utilities.forms.widgets [fg:imports:dcim.forms.model_forms->utilities.forms.widgets]
+- dcim.forms.model_forms -> utilities.jsonschema [fg:imports:dcim.forms.model_forms->utilities.jsonschema]
+- dcim.forms.model_forms -> virtualization.models [fg:imports:dcim.forms.model_forms->virtualization.models]
+- dcim.forms.model_forms -> wireless.models [fg:imports:dcim.forms.model_forms->wireless.models]
+- dcim.forms.object_create -> netbox.forms [fg:imports:dcim.forms.object_create->netbox.forms]
+- dcim.forms.object_create -> utilities.forms.fields [fg:imports:dcim.forms.object_create->utilities.forms.fields]
+- dcim.forms.object_create -> utilities.forms.rendering [fg:imports:dcim.forms.object_create->utilities.forms.rendering]
+- dcim.forms.object_create -> utilities.forms.widgets [fg:imports:dcim.forms.object_create->utilities.forms.widgets]
+- dcim.forms.object_import -> wireless.choices [fg:imports:dcim.forms.object_import->wireless.choices]
+- dcim.graphql.filter_mixins -> core.graphql.filter_mixins [fg:imports:dcim.graphql.filter_mixins->core.graphql.filter_mixins]
+- dcim.graphql.filter_mixins -> core.graphql.filters [fg:imports:dcim.graphql.filter_mixins->core.graphql.filters]
+- dcim.graphql.filter_mixins -> extras.graphql.filters [fg:imports:dcim.graphql.filter_mixins->extras.graphql.filters]
+- dcim.graphql.filter_mixins -> ipam.graphql.filters [fg:imports:dcim.graphql.filter_mixins->ipam.graphql.filters]
+- dcim.graphql.filter_mixins -> netbox.graphql.filter_lookups [fg:imports:dcim.graphql.filter_mixins->netbox.graphql.filter_lookups]
+- dcim.graphql.filter_mixins -> netbox.graphql.filter_mixins [fg:imports:dcim.graphql.filter_mixins->netbox.graphql.filter_mixins]
+- dcim.graphql.filters -> core.graphql.filter_mixins [fg:imports:dcim.graphql.filters->core.graphql.filter_mixins]
+- dcim.graphql.filters -> core.graphql.filters [fg:imports:dcim.graphql.filters->core.graphql.filters]
+- dcim.graphql.filters -> extras.graphql.filter_mixins [fg:imports:dcim.graphql.filters->extras.graphql.filter_mixins]
+- dcim.graphql.filters -> extras.graphql.filters [fg:imports:dcim.graphql.filters->extras.graphql.filters]
+- dcim.graphql.filters -> ipam.graphql.filters [fg:imports:dcim.graphql.filters->ipam.graphql.filters]
+- dcim.graphql.filters -> netbox.graphql.enums [fg:imports:dcim.graphql.filters->netbox.graphql.enums]
+- dcim.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:dcim.graphql.filters->netbox.graphql.filter_lookups]
+- dcim.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:dcim.graphql.filters->netbox.graphql.filter_mixins]
+- dcim.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:dcim.graphql.filters->tenancy.graphql.filter_mixins]
+- dcim.graphql.filters -> users.graphql.filters [fg:imports:dcim.graphql.filters->users.graphql.filters]
+- dcim.graphql.filters -> virtualization.graphql.filters [fg:imports:dcim.graphql.filters->virtualization.graphql.filters]
+- dcim.graphql.filters -> vpn.graphql.filters [fg:imports:dcim.graphql.filters->vpn.graphql.filters]
+- dcim.graphql.filters -> wireless.graphql.enums [fg:imports:dcim.graphql.filters->wireless.graphql.enums]
+- dcim.graphql.filters -> wireless.graphql.filters [fg:imports:dcim.graphql.filters->wireless.graphql.filters]
+- dcim.graphql.gfk_mixins -> circuits.graphql.types [fg:imports:dcim.graphql.gfk_mixins->circuits.graphql.types]
+- dcim.graphql.gfk_mixins -> circuits.models [fg:imports:dcim.graphql.gfk_mixins->circuits.models]
+- dcim.graphql.types -> circuits.graphql.types [fg:imports:dcim.graphql.types->circuits.graphql.types]
+- dcim.graphql.types -> core.graphql.mixins [fg:imports:dcim.graphql.types->core.graphql.mixins]
+- dcim.graphql.types -> extras.graphql.mixins [fg:imports:dcim.graphql.types->extras.graphql.mixins]
+- dcim.graphql.types -> extras.graphql.types [fg:imports:dcim.graphql.types->extras.graphql.types]
+- dcim.graphql.types -> ipam.graphql.mixins [fg:imports:dcim.graphql.types->ipam.graphql.mixins]
+- dcim.graphql.types -> ipam.graphql.types [fg:imports:dcim.graphql.types->ipam.graphql.types]
+- dcim.graphql.types -> netbox.graphql.scalars [fg:imports:dcim.graphql.types->netbox.graphql.scalars]
+- dcim.graphql.types -> netbox.graphql.types [fg:imports:dcim.graphql.types->netbox.graphql.types]
+- dcim.graphql.types -> tenancy.graphql.types [fg:imports:dcim.graphql.types->tenancy.graphql.types]
+- dcim.graphql.types -> users.graphql.types [fg:imports:dcim.graphql.types->users.graphql.types]
+- dcim.graphql.types -> virtualization.graphql.types [fg:imports:dcim.graphql.types->virtualization.graphql.types]
+- dcim.graphql.types -> wireless.graphql.types [fg:imports:dcim.graphql.types->wireless.graphql.types]
+- dcim.management.commands.buildschema -> netbox.choices [fg:imports:dcim.management.commands.buildschema->netbox.choices]
+- dcim.migrations.0001_squashed -> ipam.fields [fg:imports:dcim.migrations.0001_squashed->ipam.fields]
+- dcim.migrations.0001_squashed -> utilities.fields [fg:imports:dcim.migrations.0001_squashed->utilities.fields]
+- dcim.migrations.0001_squashed -> utilities.json [fg:imports:dcim.migrations.0001_squashed->utilities.json]
+- dcim.migrations.0001_squashed -> utilities.ordering [fg:imports:dcim.migrations.0001_squashed->utilities.ordering]
+- dcim.migrations.0001_squashed -> utilities.query_functions [fg:imports:dcim.migrations.0001_squashed->utilities.query_functions]
+- dcim.migrations.0001_squashed -> utilities.validators [fg:imports:dcim.migrations.0001_squashed->utilities.validators]
+- dcim.migrations.0131_squashed_0159 -> utilities.fields [fg:imports:dcim.migrations.0131_squashed_0159->utilities.fields]
+- dcim.migrations.0131_squashed_0159 -> utilities.json [fg:imports:dcim.migrations.0131_squashed_0159->utilities.json]
+- dcim.migrations.0131_squashed_0159 -> utilities.ordering [fg:imports:dcim.migrations.0131_squashed_0159->utilities.ordering]
+- dcim.migrations.0160_squashed_0166 -> utilities.json [fg:imports:dcim.migrations.0160_squashed_0166->utilities.json]
+- dcim.migrations.0167_squashed_0182 -> utilities.fields [fg:imports:dcim.migrations.0167_squashed_0182->utilities.fields]
+- dcim.migrations.0188_racktype -> utilities.fields [fg:imports:dcim.migrations.0188_racktype->utilities.fields]
+- dcim.migrations.0188_racktype -> utilities.json [fg:imports:dcim.migrations.0188_racktype->utilities.json]
+- dcim.migrations.0188_racktype -> utilities.ordering [fg:imports:dcim.migrations.0188_racktype->utilities.ordering]
+- dcim.migrations.0193_poweroutlet_color -> utilities.fields [fg:imports:dcim.migrations.0193_poweroutlet_color->utilities.fields]
+- dcim.migrations.0199_macaddress -> utilities.json [fg:imports:dcim.migrations.0199_macaddress->utilities.json]
+- dcim.migrations.0205_moduletypeprofile -> utilities.json [fg:imports:dcim.migrations.0205_moduletypeprofile->utilities.json]
+- dcim.models.cables -> circuits.models [fg:imports:dcim.models.cables->circuits.models]
+- dcim.models.cables -> circuits.models [fg:imports:dcim.models.cables->circuits.models]
+- dcim.models.cables -> circuits.models [fg:imports:dcim.models.cables->circuits.models]
+- dcim.models.cables -> core.models [fg:imports:dcim.models.cables->core.models]
+- dcim.models.cables -> netbox.models [fg:imports:dcim.models.cables->netbox.models]
+- dcim.models.cables -> utilities.conversion [fg:imports:dcim.models.cables->utilities.conversion]
+- dcim.models.cables -> utilities.exceptions [fg:imports:dcim.models.cables->utilities.exceptions]
+- dcim.models.cables -> utilities.fields [fg:imports:dcim.models.cables->utilities.fields]
+- dcim.models.cables -> utilities.querysets [fg:imports:dcim.models.cables->utilities.querysets]
+- dcim.models.cables -> wireless.models [fg:imports:dcim.models.cables->wireless.models]
+- dcim.models.device_component_templates -> netbox.models [fg:imports:dcim.models.device_component_templates->netbox.models]
+- dcim.models.device_component_templates -> utilities.fields [fg:imports:dcim.models.device_component_templates->utilities.fields]
+- dcim.models.device_component_templates -> utilities.mptt [fg:imports:dcim.models.device_component_templates->utilities.mptt]
+- dcim.models.device_component_templates -> utilities.ordering [fg:imports:dcim.models.device_component_templates->utilities.ordering]
+- dcim.models.device_component_templates -> utilities.tracking [fg:imports:dcim.models.device_component_templates->utilities.tracking]
+- dcim.models.device_component_templates -> wireless.choices [fg:imports:dcim.models.device_component_templates->wireless.choices]
+- dcim.models.device_components -> netbox.choices [fg:imports:dcim.models.device_components->netbox.choices]
+- dcim.models.device_components -> netbox.models [fg:imports:dcim.models.device_components->netbox.models]
+- dcim.models.device_components -> utilities.fields [fg:imports:dcim.models.device_components->utilities.fields]
+- dcim.models.device_components -> utilities.mptt [fg:imports:dcim.models.device_components->utilities.mptt]
+- dcim.models.device_components -> utilities.ordering [fg:imports:dcim.models.device_components->utilities.ordering]
+- dcim.models.device_components -> utilities.query_functions [fg:imports:dcim.models.device_components->utilities.query_functions]
+- dcim.models.device_components -> utilities.tracking [fg:imports:dcim.models.device_components->utilities.tracking]
+- dcim.models.device_components -> wireless.choices [fg:imports:dcim.models.device_components->wireless.choices]
+- dcim.models.device_components -> wireless.utils [fg:imports:dcim.models.device_components->wireless.utils]
+- dcim.models.devices -> core.models [fg:imports:dcim.models.devices->core.models]
+- dcim.models.devices -> extras.models [fg:imports:dcim.models.devices->extras.models]
+- dcim.models.devices -> extras.querysets [fg:imports:dcim.models.devices->extras.querysets]
+- dcim.models.devices -> netbox.choices [fg:imports:dcim.models.devices->netbox.choices]
+- dcim.models.devices -> netbox.config [fg:imports:dcim.models.devices->netbox.config]
+- dcim.models.devices -> netbox.models [fg:imports:dcim.models.devices->netbox.models]
+- dcim.models.devices -> netbox.models.features [fg:imports:dcim.models.devices->netbox.models.features]
+- dcim.models.devices -> netbox.models.mixins [fg:imports:dcim.models.devices->netbox.models.mixins]
+- dcim.models.devices -> utilities.fields [fg:imports:dcim.models.devices->utilities.fields]
+- dcim.models.devices -> utilities.tracking [fg:imports:dcim.models.devices->utilities.tracking]
+- dcim.models.modules -> extras.models [fg:imports:dcim.models.modules->extras.models]
+- dcim.models.modules -> netbox.models [fg:imports:dcim.models.modules->netbox.models]
+- dcim.models.modules -> netbox.models.features [fg:imports:dcim.models.modules->netbox.models.features]
+- dcim.models.modules -> netbox.models.mixins [fg:imports:dcim.models.modules->netbox.models.mixins]
+- dcim.models.modules -> utilities.jsonschema [fg:imports:dcim.models.modules->utilities.jsonschema]
+- dcim.models.modules -> utilities.string [fg:imports:dcim.models.modules->utilities.string]
+- dcim.models.power -> netbox.config [fg:imports:dcim.models.power->netbox.config]
+- dcim.models.power -> netbox.models [fg:imports:dcim.models.power->netbox.models]
+- dcim.models.power -> netbox.models.features [fg:imports:dcim.models.power->netbox.models.features]
+- dcim.models.power -> utilities.validators [fg:imports:dcim.models.power->utilities.validators]
+- dcim.models.racks -> netbox.choices [fg:imports:dcim.models.racks->netbox.choices]
+- dcim.models.racks -> netbox.models [fg:imports:dcim.models.racks->netbox.models]
+- dcim.models.racks -> netbox.models.features [fg:imports:dcim.models.racks->netbox.models.features]
+- dcim.models.racks -> netbox.models.mixins [fg:imports:dcim.models.racks->netbox.models.mixins]
+- dcim.models.racks -> utilities.conversion [fg:imports:dcim.models.racks->utilities.conversion]
+- dcim.models.racks -> utilities.data [fg:imports:dcim.models.racks->utilities.data]
+- dcim.models.racks -> utilities.fields [fg:imports:dcim.models.racks->utilities.fields]
+- dcim.models.sites -> netbox.models [fg:imports:dcim.models.sites->netbox.models]
+- dcim.models.sites -> netbox.models.features [fg:imports:dcim.models.sites->netbox.models.features]
+- dcim.search -> netbox.search [fg:imports:dcim.search->netbox.search]
+- dcim.svg.cables -> utilities.html [fg:imports:dcim.svg.cables->utilities.html]
+- dcim.svg.cables -> wireless.models [fg:imports:dcim.svg.cables->wireless.models]
+- dcim.svg.racks -> netbox.config [fg:imports:dcim.svg.racks->netbox.config]
+- dcim.svg.racks -> utilities.data [fg:imports:dcim.svg.racks->utilities.data]
+- dcim.svg.racks -> utilities.html [fg:imports:dcim.svg.racks->utilities.html]
+- dcim.tables.cables -> netbox.tables [fg:imports:dcim.tables.cables->netbox.tables]
+- dcim.tables.cables -> tenancy.tables [fg:imports:dcim.tables.cables->tenancy.tables]
+- dcim.tables.connections -> netbox.tables [fg:imports:dcim.tables.connections->netbox.tables]
+- dcim.tables.devices -> netbox.tables [fg:imports:dcim.tables.devices->netbox.tables]
+- dcim.tables.devices -> tenancy.tables [fg:imports:dcim.tables.devices->tenancy.tables]
+- dcim.tables.devicetypes -> netbox.tables [fg:imports:dcim.tables.devicetypes->netbox.tables]
+- dcim.tables.devicetypes -> tenancy.tables [fg:imports:dcim.tables.devicetypes->tenancy.tables]
+- dcim.tables.modules -> netbox.tables [fg:imports:dcim.tables.modules->netbox.tables]
+- dcim.tables.power -> netbox.tables [fg:imports:dcim.tables.power->netbox.tables]
+- dcim.tables.power -> tenancy.tables [fg:imports:dcim.tables.power->tenancy.tables]
+- dcim.tables.racks -> netbox.tables [fg:imports:dcim.tables.racks->netbox.tables]
+- dcim.tables.racks -> tenancy.tables [fg:imports:dcim.tables.racks->tenancy.tables]
+- dcim.tables.sites -> netbox.tables [fg:imports:dcim.tables.sites->netbox.tables]
+- dcim.tables.sites -> tenancy.tables [fg:imports:dcim.tables.sites->tenancy.tables]
+- dcim.tests.test_api -> extras.models [fg:imports:dcim.tests.test_api->extras.models]
+- dcim.tests.test_api -> ipam.choices [fg:imports:dcim.tests.test_api->ipam.choices]
+- dcim.tests.test_api -> ipam.models [fg:imports:dcim.tests.test_api->ipam.models]
+- dcim.tests.test_api -> netbox.api.serializers [fg:imports:dcim.tests.test_api->netbox.api.serializers]
+- dcim.tests.test_api -> tenancy.models [fg:imports:dcim.tests.test_api->tenancy.models]
+- dcim.tests.test_api -> users.models [fg:imports:dcim.tests.test_api->users.models]
+- dcim.tests.test_api -> utilities.testing [fg:imports:dcim.tests.test_api->utilities.testing]
+- dcim.tests.test_api -> virtualization.models [fg:imports:dcim.tests.test_api->virtualization.models]
+- dcim.tests.test_api -> wireless.choices [fg:imports:dcim.tests.test_api->wireless.choices]
+- dcim.tests.test_api -> wireless.models [fg:imports:dcim.tests.test_api->wireless.models]
+- dcim.tests.test_cablepaths -> circuits.models [fg:imports:dcim.tests.test_cablepaths->circuits.models]
+- dcim.tests.test_cablepaths -> utilities.exceptions [fg:imports:dcim.tests.test_cablepaths->utilities.exceptions]
+- dcim.tests.test_filtersets -> circuits.models [fg:imports:dcim.tests.test_filtersets->circuits.models]
+- dcim.tests.test_filtersets -> ipam.choices [fg:imports:dcim.tests.test_filtersets->ipam.choices]
+- dcim.tests.test_filtersets -> ipam.models [fg:imports:dcim.tests.test_filtersets->ipam.models]
+- dcim.tests.test_filtersets -> netbox.choices [fg:imports:dcim.tests.test_filtersets->netbox.choices]
+- dcim.tests.test_filtersets -> tenancy.models [fg:imports:dcim.tests.test_filtersets->tenancy.models]
+- dcim.tests.test_filtersets -> users.models [fg:imports:dcim.tests.test_filtersets->users.models]
+- dcim.tests.test_filtersets -> utilities.testing [fg:imports:dcim.tests.test_filtersets->utilities.testing]
+- dcim.tests.test_filtersets -> virtualization.models [fg:imports:dcim.tests.test_filtersets->virtualization.models]
+- dcim.tests.test_filtersets -> wireless.choices [fg:imports:dcim.tests.test_filtersets->wireless.choices]
+- dcim.tests.test_filtersets -> wireless.models [fg:imports:dcim.tests.test_filtersets->wireless.models]
+- dcim.tests.test_forms -> ipam.models [fg:imports:dcim.tests.test_forms->ipam.models]
+- dcim.tests.test_forms -> utilities.testing [fg:imports:dcim.tests.test_forms->utilities.testing]
+- dcim.tests.test_forms -> virtualization.models [fg:imports:dcim.tests.test_forms->virtualization.models]
+- dcim.tests.test_models -> circuits.models [fg:imports:dcim.tests.test_models->circuits.models]
+- dcim.tests.test_models -> core.models [fg:imports:dcim.tests.test_models->core.models]
+- dcim.tests.test_models -> extras.models [fg:imports:dcim.tests.test_models->extras.models]
+- dcim.tests.test_models -> netbox.choices [fg:imports:dcim.tests.test_models->netbox.choices]
+- dcim.tests.test_models -> tenancy.models [fg:imports:dcim.tests.test_models->tenancy.models]
+- dcim.tests.test_models -> utilities.data [fg:imports:dcim.tests.test_models->utilities.data]
+- dcim.tests.test_models -> virtualization.models [fg:imports:dcim.tests.test_models->virtualization.models]
+- dcim.tests.test_views -> ipam.models [fg:imports:dcim.tests.test_views->ipam.models]
+- dcim.tests.test_views -> netbox.choices [fg:imports:dcim.tests.test_views->netbox.choices]
+- dcim.tests.test_views -> tenancy.models [fg:imports:dcim.tests.test_views->tenancy.models]
+- dcim.tests.test_views -> users.models [fg:imports:dcim.tests.test_views->users.models]
+- dcim.tests.test_views -> utilities.testing [fg:imports:dcim.tests.test_views->utilities.testing]
+- dcim.tests.test_views -> wireless.models [fg:imports:dcim.tests.test_views->wireless.models]
+- dcim.urls -> utilities.urls [fg:imports:dcim.urls->utilities.urls]
+- dcim.views -> circuits.models [fg:imports:dcim.views->circuits.models]
+- dcim.views -> extras.views [fg:imports:dcim.views->extras.views]
+- dcim.views -> ipam.models [fg:imports:dcim.views->ipam.models]
+- dcim.views -> ipam.tables [fg:imports:dcim.views->ipam.tables]
+- dcim.views -> netbox.constants [fg:imports:dcim.views->netbox.constants]
+- dcim.views -> netbox.views [fg:imports:dcim.views->netbox.views]
+- dcim.views -> utilities.forms [fg:imports:dcim.views->utilities.forms]
+- dcim.views -> utilities.paginator [fg:imports:dcim.views->utilities.paginator]
+- dcim.views -> utilities.permissions [fg:imports:dcim.views->utilities.permissions]
+- dcim.views -> utilities.query [fg:imports:dcim.views->utilities.query]
+- dcim.views -> utilities.query_functions [fg:imports:dcim.views->utilities.query_functions]
+- dcim.views -> utilities.request [fg:imports:dcim.views->utilities.request]
+- dcim.views -> utilities.views [fg:imports:dcim.views->utilities.views]
+- dcim.views -> virtualization.filtersets [fg:imports:dcim.views->virtualization.filtersets]
+- dcim.views -> virtualization.forms [fg:imports:dcim.views->virtualization.forms]
+- dcim.views -> virtualization.models [fg:imports:dcim.views->virtualization.models]
+- dcim.views -> virtualization.tables [fg:imports:dcim.views->virtualization.tables]
+- dcim.views -> wireless.models [fg:imports:dcim.views->wireless.models]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- dcim.migrations.0191_module_bay_rebuild | . | get_model | dcim.ModuleBay |  [fg:model_refs:dcim.migrations.0191_module_bay_rebuild:8]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.Cable |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:9]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.ConsolePort |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:10]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.ConsolePortTemplate |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:11]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.ConsoleServerPort |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:12]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.ConsoleServerPortTemplate |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:13]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.Device |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:14]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.DeviceType |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:15]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.FrontPort |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:16]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.Interface |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:17]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.InterfaceTemplate |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:18]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.ModuleType |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:19]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.PowerFeed |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:20]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.PowerOutlet |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:21]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.PowerOutletTemplate |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:22]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.PowerPort |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:23]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.PowerPortTemplate |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:24]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.Rack |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:25]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.RackType |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:26]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.RearPort |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:27]
+- dcim.migrations.0194_charfield_null_choices | . | get_model | dcim.Site |  [fg:model_refs:dcim.migrations.0194_charfield_null_choices:28]
+- dcim.migrations.0200_populate_mac_addresses | . | get_model | contenttypes.ContentType | cross [fg:model_refs:dcim.migrations.0200_populate_mac_addresses:8]
+- dcim.migrations.0200_populate_mac_addresses | . | get_model | dcim.Interface |  [fg:model_refs:dcim.migrations.0200_populate_mac_addresses:9]
+- dcim.migrations.0200_populate_mac_addresses | . | get_model | dcim.MACAddress |  [fg:model_refs:dcim.migrations.0200_populate_mac_addresses:10]
+- dcim.migrations.0200_populate_mac_addresses | . | get_model | dcim.MACAddress |  [fg:model_refs:dcim.migrations.0200_populate_mac_addresses:60]
+- dcim.migrations.0204_device_role_rebuild | . | get_model | dcim.DeviceRole |  [fg:model_refs:dcim.migrations.0204_device_role_rebuild:8]
+- dcim.migrations.0206_load_module_type_profiles | . | get_model | dcim.ModuleTypeProfile |  [fg:model_refs:dcim.migrations.0206_load_module_type_profiles:13]
+- dcim.models.cables | Cable.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.cables:54]
+- dcim.models.cables | CableTermination.cable | ForeignKey | dcim.Cable |  [fg:model_refs:dcim.models.cables:252]
+- dcim.models.cables | CableTermination.termination_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:dcim.models.cables:262]
+- dcim.models.cables | CableTermination._device | ForeignKey | dcim.Device |  [fg:model_refs:dcim.models.cables:274]
+- dcim.models.cables | CableTermination._rack | ForeignKey | dcim.Rack |  [fg:model_refs:dcim.models.cables:280]
+- dcim.models.cables | CableTermination._location | ForeignKey | dcim.Location |  [fg:model_refs:dcim.models.cables:286]
+- dcim.models.cables | CableTermination._site | ForeignKey | dcim.Site |  [fg:model_refs:dcim.models.cables:292]
+- dcim.models.device_component_templates | ComponentTemplateModel.device_type | ForeignKey | dcim.DeviceType |  [fg:model_refs:dcim.models.device_component_templates:37]
+- dcim.models.device_component_templates | ModularComponentTemplateModel.device_type | ForeignKey | dcim.DeviceType |  [fg:model_refs:dcim.models.device_component_templates:107]
+- dcim.models.device_component_templates | ModularComponentTemplateModel.module_type | ForeignKey | dcim.ModuleType |  [fg:model_refs:dcim.models.device_component_templates:114]
+- dcim.models.device_component_templates | PowerOutletTemplate.power_port | ForeignKey | dcim.PowerPortTemplate |  [fg:model_refs:dcim.models.device_component_templates:341]
+- dcim.models.device_component_templates | InterfaceTemplate.bridge | ForeignKey | self |  [fg:model_refs:dcim.models.device_component_templates:432]
+- dcim.models.device_component_templates | FrontPortTemplate.rear_port | ForeignKey | dcim.RearPortTemplate |  [fg:model_refs:dcim.models.device_component_templates:534]
+- dcim.models.device_component_templates | InventoryItemTemplate.component_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:dcim.models.device_component_templates:752]
+- dcim.models.device_component_templates | InventoryItemTemplate.role | ForeignKey | dcim.InventoryItemRole |  [fg:model_refs:dcim.models.device_component_templates:767]
+- dcim.models.device_component_templates | InventoryItemTemplate.manufacturer | ForeignKey | dcim.Manufacturer |  [fg:model_refs:dcim.models.device_component_templates:774]
+- dcim.models.device_components | ComponentModel.device | ForeignKey | dcim.Device |  [fg:model_refs:dcim.models.device_components:46]
+- dcim.models.device_components | ModularComponentModel.module | ForeignKey | dcim.Module |  [fg:model_refs:dcim.models.device_components:109]
+- dcim.models.device_components | ModularComponentModel.inventory_items | GenericRelation | dcim.InventoryItem |  [fg:model_refs:dcim.models.device_components:116]
+- dcim.models.device_components | CabledObjectModel.cable | ForeignKey | dcim.Cable |  [fg:model_refs:dcim.models.device_components:131]
+- dcim.models.device_components | CabledObjectModel.cable_terminations | GenericRelation | dcim.CableTermination |  [fg:model_refs:dcim.models.device_components:151]
+- dcim.models.device_components | PathEndpoint._path | ForeignKey | dcim.CablePath |  [fg:model_refs:dcim.models.device_components:222]
+- dcim.models.device_components | PowerOutlet.power_port | ForeignKey | dcim.PowerPort |  [fg:model_refs:dcim.models.device_components:469]
+- dcim.models.device_components | BaseInterface.parent | ForeignKey | self |  [fg:model_refs:dcim.models.device_components:537]
+- dcim.models.device_components | BaseInterface.bridge | ForeignKey | self |  [fg:model_refs:dcim.models.device_components:545]
+- dcim.models.device_components | BaseInterface.untagged_vlan | ForeignKey | ipam.VLAN | cross [fg:model_refs:dcim.models.device_components:553]
+- dcim.models.device_components | BaseInterface.tagged_vlans | ManyToManyField | ipam.VLAN | cross [fg:model_refs:dcim.models.device_components:561]
+- dcim.models.device_components | BaseInterface.qinq_svlan | ForeignKey | ipam.VLAN | cross [fg:model_refs:dcim.models.device_components:567]
+- dcim.models.device_components | BaseInterface.vlan_translation_policy | ForeignKey | ipam.VLANTranslationPolicy | cross [fg:model_refs:dcim.models.device_components:575]
+- dcim.models.device_components | BaseInterface.primary_mac_address | OneToOneField | dcim.MACAddress |  [fg:model_refs:dcim.models.device_components:582]
+- dcim.models.device_components | Interface.vdcs | ManyToManyField | dcim.VirtualDeviceContext |  [fg:model_refs:dcim.models.device_components:652]
+- dcim.models.device_components | Interface.lag | ForeignKey | self |  [fg:model_refs:dcim.models.device_components:656]
+- dcim.models.device_components | Interface.wireless_link | ForeignKey | wireless.WirelessLink | cross [fg:model_refs:dcim.models.device_components:742]
+- dcim.models.device_components | Interface.wireless_lans | ManyToManyField | wireless.WirelessLAN | cross [fg:model_refs:dcim.models.device_components:749]
+- dcim.models.device_components | Interface.vrf | ForeignKey | ipam.VRF | cross [fg:model_refs:dcim.models.device_components:755]
+- dcim.models.device_components | Interface.ip_addresses | GenericRelation | ipam.IPAddress | cross [fg:model_refs:dcim.models.device_components:763]
+- dcim.models.device_components | Interface.mac_addresses | GenericRelation | dcim.MACAddress |  [fg:model_refs:dcim.models.device_components:769]
+- dcim.models.device_components | Interface.fhrp_group_assignments | GenericRelation | ipam.FHRPGroupAssignment | cross [fg:model_refs:dcim.models.device_components:775]
+- dcim.models.device_components | Interface.tunnel_terminations | GenericRelation | vpn.TunnelTermination | cross [fg:model_refs:dcim.models.device_components:781]
+- dcim.models.device_components | Interface.l2vpn_terminations | GenericRelation | vpn.L2VPNTermination | cross [fg:model_refs:dcim.models.device_components:787]
+- dcim.models.device_components | FrontPort.rear_port | ForeignKey | dcim.RearPort |  [fg:model_refs:dcim.models.device_components:1041]
+- dcim.models.device_components | DeviceBay.installed_device | OneToOneField | dcim.Device |  [fg:model_refs:dcim.models.device_components:1207]
+- dcim.models.device_components | InventoryItem.component_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:dcim.models.device_components:1278]
+- dcim.models.device_components | InventoryItem.role | ForeignKey | dcim.InventoryItemRole |  [fg:model_refs:dcim.models.device_components:1299]
+- dcim.models.device_components | InventoryItem.manufacturer | ForeignKey | dcim.Manufacturer |  [fg:model_refs:dcim.models.device_components:1306]
+- dcim.models.devices | DeviceType.manufacturer | ForeignKey | dcim.Manufacturer |  [fg:model_refs:dcim.models.devices:78]
+- dcim.models.devices | DeviceType.default_platform | ForeignKey | dcim.Platform |  [fg:model_refs:dcim.models.devices:91]
+- dcim.models.devices | DeviceRole.config_template | ForeignKey | extras.ConfigTemplate | cross [fg:model_refs:dcim.models.devices:389]
+- dcim.models.devices | Platform.manufacturer | ForeignKey | dcim.Manufacturer |  [fg:model_refs:dcim.models.devices:410]
+- dcim.models.devices | Platform.config_template | ForeignKey | extras.ConfigTemplate | cross [fg:model_refs:dcim.models.devices:418]
+- dcim.models.devices | Device.device_type | ForeignKey | dcim.DeviceType |  [fg:model_refs:dcim.models.devices:451]
+- dcim.models.devices | Device.role | ForeignKey | dcim.DeviceRole |  [fg:model_refs:dcim.models.devices:456]
+- dcim.models.devices | Device.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.devices:462]
+- dcim.models.devices | Device.platform | ForeignKey | dcim.Platform |  [fg:model_refs:dcim.models.devices:469]
+- dcim.models.devices | Device.site | ForeignKey | dcim.Site |  [fg:model_refs:dcim.models.devices:497]
+- dcim.models.devices | Device.location | ForeignKey | dcim.Location |  [fg:model_refs:dcim.models.devices:502]
+- dcim.models.devices | Device.rack | ForeignKey | dcim.Rack |  [fg:model_refs:dcim.models.devices:509]
+- dcim.models.devices | Device.primary_ip4 | OneToOneField | ipam.IPAddress | cross [fg:model_refs:dcim.models.devices:545]
+- dcim.models.devices | Device.primary_ip6 | OneToOneField | ipam.IPAddress | cross [fg:model_refs:dcim.models.devices:553]
+- dcim.models.devices | Device.oob_ip | OneToOneField | ipam.IPAddress | cross [fg:model_refs:dcim.models.devices:561]
+- dcim.models.devices | Device.cluster | ForeignKey | virtualization.Cluster | cross [fg:model_refs:dcim.models.devices:569]
+- dcim.models.devices | Device.virtual_chassis | ForeignKey | VirtualChassis |  [fg:model_refs:dcim.models.devices:576]
+- dcim.models.devices | Device.services | GenericRelation | ipam.Service | cross [fg:model_refs:dcim.models.devices:612]
+- dcim.models.devices | VirtualChassis.master | OneToOneField | Device |  [fg:model_refs:dcim.models.devices:1062]
+- dcim.models.devices | VirtualDeviceContext.device | ForeignKey | Device |  [fg:model_refs:dcim.models.devices:1125]
+- dcim.models.devices | VirtualDeviceContext.primary_ip4 | OneToOneField | ipam.IPAddress | cross [fg:model_refs:dcim.models.devices:1148]
+- dcim.models.devices | VirtualDeviceContext.primary_ip6 | OneToOneField | ipam.IPAddress | cross [fg:model_refs:dcim.models.devices:1156]
+- dcim.models.devices | VirtualDeviceContext.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.devices:1164]
+- dcim.models.devices | MACAddress.assigned_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:dcim.models.devices:1236]
+- dcim.models.mixins | RenderConfigMixin.config_template | ForeignKey | extras.ConfigTemplate | cross [fg:model_refs:dcim.models.mixins:14]
+- dcim.models.mixins | CachedScopeMixin.scope_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:dcim.models.mixins:43]
+- dcim.models.mixins | CachedScopeMixin._location | ForeignKey | dcim.Location |  [fg:model_refs:dcim.models.mixins:59]
+- dcim.models.mixins | CachedScopeMixin._site | ForeignKey | dcim.Site |  [fg:model_refs:dcim.models.mixins:65]
+- dcim.models.mixins | CachedScopeMixin._region | ForeignKey | dcim.Region |  [fg:model_refs:dcim.models.mixins:71]
+- dcim.models.mixins | CachedScopeMixin._site_group | ForeignKey | dcim.SiteGroup |  [fg:model_refs:dcim.models.mixins:77]
+- dcim.models.mixins | . | get_model | dcim.region |  [fg:model_refs:dcim.models.mixins:107]
+- dcim.models.mixins | . | get_model | dcim.sitegroup |  [fg:model_refs:dcim.models.mixins:109]
+- dcim.models.mixins | . | get_model | dcim.site |  [fg:model_refs:dcim.models.mixins:111]
+- dcim.models.mixins | . | get_model | dcim.location |  [fg:model_refs:dcim.models.mixins:115]
+- dcim.models.modules | ModuleType.profile | ForeignKey | dcim.ModuleTypeProfile |  [fg:model_refs:dcim.models.modules:72]
+- dcim.models.modules | ModuleType.manufacturer | ForeignKey | dcim.Manufacturer |  [fg:model_refs:dcim.models.modules:79]
+- dcim.models.modules | Module.device | ForeignKey | dcim.Device |  [fg:model_refs:dcim.models.modules:205]
+- dcim.models.modules | Module.module_bay | OneToOneField | dcim.ModuleBay |  [fg:model_refs:dcim.models.modules:210]
+- dcim.models.modules | Module.module_type | ForeignKey | dcim.ModuleType |  [fg:model_refs:dcim.models.modules:215]
+- dcim.models.power | PowerPanel.site | ForeignKey | Site |  [fg:model_refs:dcim.models.power:27]
+- dcim.models.power | PowerPanel.location | ForeignKey | dcim.Location |  [fg:model_refs:dcim.models.power:31]
+- dcim.models.power | PowerFeed.power_panel | ForeignKey | PowerPanel |  [fg:model_refs:dcim.models.power:76]
+- dcim.models.power | PowerFeed.rack | ForeignKey | Rack |  [fg:model_refs:dcim.models.power:81]
+- dcim.models.power | PowerFeed.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.power:138]
+- dcim.models.racks | RackType.manufacturer | ForeignKey | dcim.Manufacturer |  [fg:model_refs:dcim.models.racks:133]
+- dcim.models.racks | Rack.rack_type | ForeignKey | dcim.RackType |  [fg:model_refs:dcim.models.racks:255]
+- dcim.models.racks | Rack.site | ForeignKey | dcim.Site |  [fg:model_refs:dcim.models.racks:274]
+- dcim.models.racks | Rack.location | ForeignKey | dcim.Location |  [fg:model_refs:dcim.models.racks:279]
+- dcim.models.racks | Rack.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.racks:286]
+- dcim.models.racks | Rack.role | ForeignKey | dcim.RackRole |  [fg:model_refs:dcim.models.racks:299]
+- dcim.models.racks | Rack.vlan_groups | GenericRelation | ipam.VLANGroup | cross [fg:model_refs:dcim.models.racks:329]
+- dcim.models.racks | RackReservation.rack | ForeignKey | dcim.Rack |  [fg:model_refs:dcim.models.racks:667]
+- dcim.models.racks | RackReservation.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.racks:676]
+- dcim.models.sites | Region.prefixes | GenericRelation | ipam.Prefix | cross [fg:model_refs:dcim.models.sites:30]
+- dcim.models.sites | Region.vlan_groups | GenericRelation | ipam.VLANGroup | cross [fg:model_refs:dcim.models.sites:36]
+- dcim.models.sites | SiteGroup.prefixes | GenericRelation | ipam.Prefix | cross [fg:model_refs:dcim.models.sites:86]
+- dcim.models.sites | SiteGroup.vlan_groups | GenericRelation | ipam.VLANGroup | cross [fg:model_refs:dcim.models.sites:92]
+- dcim.models.sites | Site.region | ForeignKey | dcim.Region |  [fg:model_refs:dcim.models.sites:159]
+- dcim.models.sites | Site.group | ForeignKey | dcim.SiteGroup |  [fg:model_refs:dcim.models.sites:166]
+- dcim.models.sites | Site.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.sites:173]
+- dcim.models.sites | Site.asns | ManyToManyField | ipam.ASN | cross [fg:model_refs:dcim.models.sites:186]
+- dcim.models.sites | Site.prefixes | GenericRelation | ipam.Prefix | cross [fg:model_refs:dcim.models.sites:225]
+- dcim.models.sites | Site.vlan_groups | GenericRelation | ipam.VLANGroup | cross [fg:model_refs:dcim.models.sites:231]
+- dcim.models.sites | Location.site | ForeignKey | dcim.Site |  [fg:model_refs:dcim.models.sites:264]
+- dcim.models.sites | Location.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:dcim.models.sites:275]
+- dcim.models.sites | Location.prefixes | GenericRelation | ipam.Prefix | cross [fg:model_refs:dcim.models.sites:290]
+- dcim.models.sites | Location.vlan_groups | GenericRelation | ipam.VLANGroup | cross [fg:model_refs:dcim.models.sites:296]
+- dcim.utils | . | get_model | dcim.Interface |  [fg:model_refs:dcim.utils:67]
+
+## String references INTO this subsystem from others
+- circuits.migrations.0047_circuittermination__termination | . | get_model -> dcim.Site [fg:model_refs:circuits.migrations.0047_circuittermination__termination:13]
+- circuits.models.circuits | CircuitTermination._location | ForeignKey -> dcim.Location [fg:model_refs:circuits.models.circuits:301]
+- circuits.models.circuits | CircuitTermination._site | ForeignKey -> dcim.Site [fg:model_refs:circuits.models.circuits:308]
+- circuits.models.circuits | CircuitTermination._region | ForeignKey -> dcim.Region [fg:model_refs:circuits.models.circuits:315]
+- circuits.models.circuits | CircuitTermination._site_group | ForeignKey -> dcim.SiteGroup [fg:model_refs:circuits.models.circuits:322]
+- circuits.models.circuits | . | get_model -> dcim.region [fg:model_refs:circuits.models.circuits:363]
+- circuits.models.circuits | . | get_model -> dcim.sitegroup [fg:model_refs:circuits.models.circuits:365]
+- circuits.models.circuits | . | get_model -> dcim.site [fg:model_refs:circuits.models.circuits:367]
+- circuits.models.circuits | . | get_model -> dcim.location [fg:model_refs:circuits.models.circuits:371]
+- circuits.models.virtual_circuits | VirtualCircuitTermination.interface | OneToOneField -> dcim.Interface [fg:model_refs:circuits.models.virtual_circuits:138]
+- extras.models.configs | ConfigContext.regions | ManyToManyField -> dcim.Region [fg:model_refs:extras.models.configs:50]
+- extras.models.configs | ConfigContext.site_groups | ManyToManyField -> dcim.SiteGroup [fg:model_refs:extras.models.configs:55]
+- extras.models.configs | ConfigContext.sites | ManyToManyField -> dcim.Site [fg:model_refs:extras.models.configs:60]
+- extras.models.configs | ConfigContext.locations | ManyToManyField -> dcim.Location [fg:model_refs:extras.models.configs:65]
+- extras.models.configs | ConfigContext.device_types | ManyToManyField -> dcim.DeviceType [fg:model_refs:extras.models.configs:70]
+- extras.models.configs | ConfigContext.roles | ManyToManyField -> dcim.DeviceRole [fg:model_refs:extras.models.configs:75]
+- extras.models.configs | ConfigContext.platforms | ManyToManyField -> dcim.Platform [fg:model_refs:extras.models.configs:80]
+- ipam.migrations.0071_prefix_scope | . | get_model -> dcim.Site [fg:model_refs:ipam.migrations.0071_prefix_scope:12]
+- ipam.migrations.0080_populate_service_parent | . | get_model -> dcim.device [fg:model_refs:ipam.migrations.0080_populate_service_parent:9]
+- ipam.migrations.0080_populate_service_parent | . | get_model -> dcim.device [fg:model_refs:ipam.migrations.0080_populate_service_parent:27]
+- ipam.models.vlans | VLAN.site | ForeignKey -> dcim.Site [fg:model_refs:ipam.models.vlans:181]
+- virtualization.migrations.0044_cluster_scope | . | get_model -> dcim.Site [fg:model_refs:virtualization.migrations.0044_cluster_scope:12]
+- virtualization.migrations.0048_populate_mac_addresses | . | get_model -> dcim.MACAddress [fg:model_refs:virtualization.migrations.0048_populate_mac_addresses:10]
+- virtualization.migrations.0048_populate_mac_addresses | . | get_model -> dcim.MACAddress [fg:model_refs:virtualization.migrations.0048_populate_mac_addresses:59]
+- virtualization.models.clusters | . | get_model -> dcim.site [fg:model_refs:virtualization.models.clusters:125]
+- virtualization.models.clusters | . | get_model -> dcim.location [fg:model_refs:virtualization.models.clusters:127]
+- virtualization.models.virtualmachines | VirtualMachine.site | ForeignKey -> dcim.Site [fg:model_refs:virtualization.models.virtualmachines:35]
+- virtualization.models.virtualmachines | VirtualMachine.device | ForeignKey -> dcim.Device [fg:model_refs:virtualization.models.virtualmachines:49]
+- virtualization.models.virtualmachines | VirtualMachine.platform | ForeignKey -> dcim.Platform [fg:model_refs:virtualization.models.virtualmachines:63]
+- virtualization.models.virtualmachines | VirtualMachine.role | ForeignKey -> dcim.DeviceRole [fg:model_refs:virtualization.models.virtualmachines:81]
+- virtualization.models.virtualmachines | VMInterface.mac_addresses | GenericRelation -> dcim.MACAddress [fg:model_refs:virtualization.models.virtualmachines:356]
+- wireless.models | WirelessLink.interface_a | ForeignKey -> dcim.Interface [fg:model_refs:wireless.models:130]
+- wireless.models | WirelessLink.interface_b | ForeignKey -> dcim.Interface [fg:model_refs:wireless.models:136]
+- wireless.models | WirelessLink._interface_a_device | ForeignKey -> dcim.Device [fg:model_refs:wireless.models:163]
+- wireless.models | WirelessLink._interface_b_device | ForeignKey -> dcim.Device [fg:model_refs:wireless.models:170]
+
+## Churn (id = churn:<module>) — top 25 by commits
+- dcim.views | 760 commits | 40 authors | 2016-03-01 .. 2025-06-25 [fg:churn:dcim.views]
+- dcim.api.serializers | 425 commits | 21 authors | 2016-03-01 .. 2024-08-14 [fg:churn:dcim.api.serializers]
+- dcim.api.views | 325 commits | 22 authors | 2016-03-01 .. 2025-05-06 [fg:churn:dcim.api.views]
+- dcim.models.device_components | 227 commits | 15 authors | 2020-01-10 .. 2025-04-10 [fg:churn:dcim.models.device_components]
+- dcim.choices | 200 commits | 51 authors | 2019-10-30 .. 2025-05-09 [fg:churn:dcim.choices]
+- dcim.filtersets | 200 commits | 25 authors | 2021-04-29 .. 2025-06-03 [fg:churn:dcim.filtersets]
+- dcim.urls | 191 commits | 9 authors | 2016-03-01 .. 2025-04-01 [fg:churn:dcim.urls]
+- dcim.tables.devices | 188 commits | 23 authors | 2020-10-16 .. 2025-05-13 [fg:churn:dcim.tables.devices]
+- dcim.tests.test_api | 181 commits | 11 authors | 2017-03-16 .. 2025-05-21 [fg:churn:dcim.tests.test_api]
+- dcim.tests.test_views | 180 commits | 14 authors | 2019-02-15 .. 2025-05-01 [fg:churn:dcim.tests.test_views]
+- dcim.models.devices | 175 commits | 16 authors | 2020-08-19 .. 2025-04-11 [fg:churn:dcim.models.devices]
+- dcim.tests.test_filtersets | 136 commits | 18 authors | 2021-05-03 .. 2025-06-03 [fg:churn:dcim.tests.test_filtersets]
+- dcim.forms.filtersets | 132 commits | 21 authors | 2021-09-27 .. 2025-05-01 [fg:churn:dcim.forms.filtersets]
+- dcim.constants | 129 commits | 17 authors | 2017-06-16 .. 2025-06-12 [fg:churn:dcim.constants]
+- dcim.models.cables | 125 commits | 10 authors | 2020-10-14 .. 2025-05-01 [fg:churn:dcim.models.cables]
+- dcim.forms.bulk_edit | 119 commits | 15 authors | 2021-09-27 .. 2025-05-13 [fg:churn:dcim.forms.bulk_edit]
+- dcim.forms.bulk_import | 107 commits | 17 authors | 2021-09-27 .. 2025-04-10 [fg:churn:dcim.forms.bulk_import]
+- dcim.models | 105 commits | 8 authors | 2020-01-10 .. 2025-04-01 [fg:churn:dcim.models]
+- dcim.tables.template_code | 104 commits | 16 authors | 2020-10-16 .. 2025-04-22 [fg:churn:dcim.tables.template_code]
+- dcim.models.racks | 100 commits | 9 authors | 2020-08-19 .. 2025-05-01 [fg:churn:dcim.models.racks]
+- dcim.forms.model_forms | 96 commits | 13 authors | 2022-10-25 .. 2025-05-01 [fg:churn:dcim.forms.model_forms]
+- dcim.tests.test_models | 92 commits | 15 authors | 2016-03-01 .. 2025-06-12 [fg:churn:dcim.tests.test_models]
+- dcim.signals | 79 commits | 6 authors | 2017-11-27 .. 2025-01-06 [fg:churn:dcim.signals]
+- dcim.models.device_component_templates | 78 commits | 11 authors | 2020-01-10 .. 2025-04-03 [fg:churn:dcim.models.device_component_templates]
+- dcim.api.urls | 61 commits | 6 authors | 2016-03-01 .. 2025-04-01 [fg:churn:dcim.api.urls]
+
+## Entry points (id = entrypoints:<module>)
+- urls | dcim.api.urls | netbox/dcim/api/urls.py [fg:entrypoints:dcim.api.urls]
+- api_views | dcim.api.views | netbox/dcim/api/views.py [fg:entrypoints:dcim.api.views]
+- management_command | dcim.management.commands.buildschema | netbox/dcim/management/commands/buildschema.py [fg:entrypoints:dcim.management.commands.buildschema]
+- management_command | dcim.management.commands.trace_paths | netbox/dcim/management/commands/trace_paths.py [fg:entrypoints:dcim.management.commands.trace_paths]
+- signals | dcim.signals | netbox/dcim/signals.py [fg:entrypoints:dcim.signals]
+- urls | dcim.urls | netbox/dcim/urls.py [fg:entrypoints:dcim.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- dcim.api.exceptions: MissingFilterException
+- dcim.api.serializers_.base: ConnectedEndpointsSerializer
+- dcim.api.serializers_.cables: CableSerializer, TracedCableSerializer, CableTerminationSerializer, CablePathSerializer, CabledObjectSerializer
+- dcim.api.serializers_.device_components: ConsoleServerPortSerializer, ConsolePortSerializer, PowerPortSerializer, PowerOutletSerializer, InterfaceSerializer, RearPortSerializer, FrontPortRearPortSerializer, FrontPortSerializer, ModuleBaySerializer, DeviceBaySerializer, InventoryItemSerializer
+- dcim.api.serializers_.devices: DeviceSerializer, DeviceWithConfigContextSerializer, VirtualDeviceContextSerializer, ModuleSerializer, MACAddressSerializer
+- dcim.api.serializers_.devicetype_components: ConsolePortTemplateSerializer, ConsoleServerPortTemplateSerializer, PowerPortTemplateSerializer, PowerOutletTemplateSerializer, InterfaceTemplateSerializer, RearPortTemplateSerializer, FrontPortTemplateSerializer, ModuleBayTemplateSerializer, DeviceBayTemplateSerializer, InventoryItemTemplateSerializer
+- dcim.api.serializers_.devicetypes: DeviceTypeSerializer, ModuleTypeProfileSerializer, ModuleTypeSerializer
+- dcim.api.serializers_.manufacturers: ManufacturerSerializer
+- dcim.api.serializers_.nested: NestedRegionSerializer, NestedSiteGroupSerializer, NestedLocationSerializer, NestedDeviceRoleSerializer, NestedDeviceSerializer, NestedInterfaceSerializer, NestedInterfaceTemplateSerializer, NestedDeviceBaySerializer, ModuleBayNestedModuleSerializer, NestedModuleBaySerializer
+- dcim.api.serializers_.platforms: PlatformSerializer
+- dcim.api.serializers_.power: PowerPanelSerializer, PowerFeedSerializer
+- dcim.api.serializers_.racks: RackRoleSerializer, RackBaseSerializer, RackTypeSerializer, RackSerializer, RackReservationSerializer, RackElevationDetailFilterSerializer
+- dcim.api.serializers_.rackunits: RackUnitSerializer
+- dcim.api.serializers_.roles: DeviceRoleSerializer, InventoryItemRoleSerializer
+- dcim.api.serializers_.sites: RegionSerializer, SiteGroupSerializer, SiteSerializer, LocationSerializer
+- dcim.api.serializers_.virtualchassis: VirtualChassisSerializer
+- dcim.api.views: DCIMRootView, PathEndpointMixin, PassThroughPortMixin, RegionViewSet, SiteGroupViewSet, SiteViewSet, LocationViewSet, RackRoleViewSet, RackTypeViewSet, RackViewSet, RackReservationViewSet, ManufacturerViewSet, DeviceTypeViewSet, ModuleTypeProfileViewSet, ModuleTypeViewSet, ConsolePortTemplateViewSet, ConsoleServerPortTemplateViewSet, PowerPortTemplateViewSet, PowerOutletTemplateViewSet, InterfaceTemplateViewSet, FrontPortTemplateViewSet, RearPortTemplateViewSet, ModuleBayTemplateViewSet, DeviceBayTemplateViewSet, InventoryItemTemplateViewSet, DeviceRoleViewSet, PlatformViewSet, DeviceViewSet, VirtualDeviceContextViewSet, ModuleViewSet, ConsolePortViewSet, ConsoleServerPortViewSet, PowerPortViewSet, PowerOutletViewSet, InterfaceViewSet, FrontPortViewSet, RearPortViewSet, ModuleBayViewSet, DeviceBayViewSet, InventoryItemViewSet, InventoryItemRoleViewSet, MACAddressViewSet, CableViewSet, CableTerminationViewSet, VirtualChassisViewSet, PowerPanelViewSet, PowerFeedViewSet, ConnectedDeviceViewSet
+- dcim.apps: DCIMConfig
+- dcim.base_filtersets: ScopedFilterSet
+- dcim.choices: SiteStatusChoices, LocationStatusChoices, RackFormFactorChoices, RackWidthChoices, RackStatusChoices, RackDimensionUnitChoices, RackElevationDetailRenderChoices, RackAirflowChoices, SubdeviceRoleChoices, DeviceFaceChoices, DeviceStatusChoices, DeviceAirflowChoices, ModuleStatusChoices, ModuleAirflowChoices, ConsolePortTypeChoices, ConsolePortSpeedChoices, PowerPortTypeChoices, PowerOutletTypeChoices, PowerOutletFeedLegChoices, InterfaceKindChoices, InterfaceTypeChoices, InterfaceSpeedChoices, InterfaceDuplexChoices, InterfaceModeChoices, InterfacePoEModeChoices, InterfacePoETypeChoices, PortTypeChoices, CableTypeChoices, LinkStatusChoices, CableLengthUnitChoices, CableEndChoices, PowerFeedStatusChoices, PowerFeedTypeChoices, PowerFeedSupplyChoices, PowerFeedPhaseChoices, PowerOutletStatusChoices, VirtualDeviceContextStatusChoices, InventoryItemStatusChoices
+- dcim.exceptions: UnsupportedCablePath
+- dcim.fields: mac_unix_expanded_uppercase, eui64_unix_expanded_uppercase, MACAddressField, WWNField, PathField
+- dcim.filtersets: RegionFilterSet, SiteGroupFilterSet, SiteFilterSet, LocationFilterSet, RackRoleFilterSet, RackTypeFilterSet, RackFilterSet, RackReservationFilterSet, ManufacturerFilterSet, DeviceTypeFilterSet, ModuleTypeProfileFilterSet, ModuleTypeFilterSet, DeviceTypeComponentFilterSet, ModularDeviceTypeComponentFilterSet, ConsolePortTemplateFilterSet, ConsoleServerPortTemplateFilterSet, PowerPortTemplateFilterSet, PowerOutletTemplateFilterSet, InterfaceTemplateFilterSet, FrontPortTemplateFilterSet, RearPortTemplateFilterSet, ModuleBayTemplateFilterSet, DeviceBayTemplateFilterSet, InventoryItemTemplateFilterSet, DeviceRoleFilterSet, PlatformFilterSet, DeviceFilterSet, VirtualDeviceContextFilterSet, ModuleFilterSet, DeviceComponentFilterSet, ModularDeviceComponentFilterSet, CabledObjectFilterSet, PathEndpointFilterSet, ConsolePortFilterSet, ConsoleServerPortFilterSet, PowerPortFilterSet, PowerOutletFilterSet, MACAddressFilterSet, CommonInterfaceFilterSet, InterfaceFilterSet, FrontPortFilterSet, RearPortFilterSet, ModuleBayFilterSet, DeviceBayFilterSet, InventoryItemFilterSet, InventoryItemRoleFilterSet, VirtualChassisFilterSet, CableFilterSet, CableTerminationFilterSet, PowerPanelFilterSet, PowerFeedFilterSet, ConnectionFilterSet, ConsoleConnectionFilterSet, PowerConnectionFilterSet, InterfaceConnectionFilterSet
+- dcim.forms.bulk_create: DeviceBulkAddComponentForm, ConsolePortBulkCreateForm, ConsoleServerPortBulkCreateForm, PowerPortBulkCreateForm, PowerOutletBulkCreateForm, InterfaceBulkCreateForm, RearPortBulkCreateForm, ModuleBayBulkCreateForm, DeviceBayBulkCreateForm, InventoryItemBulkCreateForm
+- dcim.forms.bulk_edit: RegionBulkEditForm, SiteGroupBulkEditForm, SiteBulkEditForm, LocationBulkEditForm, RackRoleBulkEditForm, RackTypeBulkEditForm, RackBulkEditForm, RackReservationBulkEditForm, ManufacturerBulkEditForm, DeviceTypeBulkEditForm, ModuleTypeProfileBulkEditForm, ModuleTypeBulkEditForm, DeviceRoleBulkEditForm, PlatformBulkEditForm, DeviceBulkEditForm, ModuleBulkEditForm, CableBulkEditForm, VirtualChassisBulkEditForm, PowerPanelBulkEditForm, PowerFeedBulkEditForm, ConsolePortTemplateBulkEditForm, ConsoleServerPortTemplateBulkEditForm, PowerPortTemplateBulkEditForm, PowerOutletTemplateBulkEditForm, InterfaceTemplateBulkEditForm, FrontPortTemplateBulkEditForm, RearPortTemplateBulkEditForm, ModuleBayTemplateBulkEditForm, DeviceBayTemplateBulkEditForm, InventoryItemTemplateBulkEditForm, ComponentBulkEditForm, ConsolePortBulkEditForm, ConsoleServerPortBulkEditForm, PowerPortBulkEditForm, PowerOutletBulkEditForm, InterfaceBulkEditForm, FrontPortBulkEditForm, RearPortBulkEditForm, ModuleBayBulkEditForm, DeviceBayBulkEditForm, InventoryItemBulkEditForm, InventoryItemRoleBulkEditForm, VirtualDeviceContextBulkEditForm, MACAddressBulkEditForm
+- dcim.forms.bulk_import: RegionImportForm, SiteGroupImportForm, SiteImportForm, LocationImportForm, RackRoleImportForm, RackTypeImportForm, RackImportForm, RackReservationImportForm, ManufacturerImportForm, DeviceTypeImportForm, ModuleTypeProfileImportForm, ModuleTypeImportForm, DeviceRoleImportForm, PlatformImportForm, BaseDeviceImportForm, DeviceImportForm, ModuleImportForm, ConsolePortImportForm, ConsoleServerPortImportForm, PowerPortImportForm, PowerOutletImportForm, InterfaceImportForm, FrontPortImportForm, RearPortImportForm, ModuleBayImportForm, DeviceBayImportForm, InventoryItemImportForm, InventoryItemRoleImportForm, MACAddressImportForm, CableImportForm, VirtualChassisImportForm, PowerPanelImportForm, PowerFeedImportForm, VirtualDeviceContextImportForm
+- dcim.forms.common: InterfaceCommonForm, ModuleCommonForm
+- dcim.forms.filtersets: DeviceComponentFilterForm, RegionFilterForm, SiteGroupFilterForm, SiteFilterForm, LocationFilterForm, RackRoleFilterForm, RackBaseFilterForm, RackTypeFilterForm, RackFilterForm, RackElevationFilterForm, RackReservationFilterForm, ManufacturerFilterForm, DeviceTypeFilterForm, ModuleTypeProfileFilterForm, ModuleTypeFilterForm, DeviceRoleFilterForm, PlatformFilterForm, DeviceFilterForm, VirtualDeviceContextFilterForm, ModuleFilterForm, VirtualChassisFilterForm, CableFilterForm, PowerPanelFilterForm, PowerFeedFilterForm, CabledFilterForm, PathEndpointFilterForm, ConsolePortFilterForm, ConsoleServerPortFilterForm, PowerPortFilterForm, PowerOutletFilterForm, InterfaceFilterForm, FrontPortFilterForm, RearPortFilterForm, ModuleBayFilterForm, DeviceBayFilterForm, InventoryItemFilterForm, InventoryItemRoleFilterForm, MACAddressFilterForm, ConsoleConnectionFilterForm, PowerConnectionFilterForm, InterfaceConnectionFilterForm
+- dcim.forms.formsets: BaseVCMemberFormSet
+- dcim.forms.mixins: ScopedForm, ScopedBulkEditForm, ScopedImportForm
+- dcim.forms.model_forms: RegionForm, SiteGroupForm, SiteForm, LocationForm, RackRoleForm, RackTypeForm, RackForm, RackReservationForm, ManufacturerForm, DeviceTypeForm, ModuleTypeProfileForm, ModuleTypeForm, DeviceRoleForm, PlatformForm, DeviceForm, ModuleForm, CableForm, PowerPanelForm, PowerFeedForm, VirtualChassisForm, DeviceVCMembershipForm, VCMemberSelectForm, ComponentTemplateForm, ModularComponentTemplateForm, ConsolePortTemplateForm, ConsoleServerPortTemplateForm, PowerPortTemplateForm, PowerOutletTemplateForm, InterfaceTemplateForm, FrontPortTemplateForm, RearPortTemplateForm, ModuleBayTemplateForm, DeviceBayTemplateForm, InventoryItemTemplateForm, DeviceComponentForm, ModularDeviceComponentForm, ConsolePortForm, ConsoleServerPortForm, PowerPortForm, PowerOutletForm, InterfaceForm, FrontPortForm, RearPortForm, ModuleBayForm, DeviceBayForm, PopulateDeviceBayForm, InventoryItemForm, InventoryItemRoleForm, VirtualDeviceContextForm, MACAddressForm
+- dcim.forms.object_create: ComponentCreateForm, ConsolePortTemplateCreateForm, ConsoleServerPortTemplateCreateForm, PowerPortTemplateCreateForm, PowerOutletTemplateCreateForm, InterfaceTemplateCreateForm, FrontPortTemplateCreateForm, RearPortTemplateCreateForm, DeviceBayTemplateCreateForm, ModuleBayTemplateCreateForm, InventoryItemTemplateCreateForm, ConsolePortCreateForm, ConsoleServerPortCreateForm, PowerPortCreateForm, PowerOutletCreateForm, InterfaceCreateForm, FrontPortCreateForm, RearPortCreateForm, DeviceBayCreateForm, ModuleBayCreateForm, InventoryItemCreateForm, VirtualChassisCreateForm
+- dcim.forms.object_import: ConsolePortTemplateImportForm, ConsoleServerPortTemplateImportForm, PowerPortTemplateImportForm, PowerOutletTemplateImportForm, InterfaceTemplateImportForm, FrontPortTemplateImportForm, RearPortTemplateImportForm, ModuleBayTemplateImportForm, DeviceBayTemplateImportForm, InventoryItemTemplateImportForm
+- dcim.graphql.filter_mixins: ScopedFilterMixin, ComponentModelFilterMixin, ModularComponentModelFilterMixin, CabledObjectModelFilterMixin, ComponentTemplateFilterMixin, ModularComponentTemplateFilterMixin, RenderConfigFilterMixin, InterfaceBaseFilterMixin, RackBaseFilterMixin
+- dcim.graphql.filters: CableFilter, CableTerminationFilter, ConsolePortFilter, ConsolePortTemplateFilter, ConsoleServerPortFilter, ConsoleServerPortTemplateFilter, DeviceFilter, DeviceBayFilter, DeviceBayTemplateFilter, InventoryItemTemplateFilter, DeviceRoleFilter, DeviceTypeFilter, FrontPortFilter, FrontPortTemplateFilter, MACAddressFilter, InterfaceFilter, InterfaceTemplateFilter, InventoryItemFilter, InventoryItemRoleFilter, LocationFilter, ManufacturerFilter, ModuleFilter, ModuleBayFilter, ModuleBayTemplateFilter, ModuleTypeProfileFilter, ModuleTypeFilter, PlatformFilter, PowerFeedFilter, PowerOutletFilter, PowerOutletTemplateFilter, PowerPanelFilter, PowerPortFilter, PowerPortTemplateFilter, RackTypeFilter, RackFilter, RackReservationFilter, RackRoleFilter, RearPortFilter, RearPortTemplateFilter, RegionFilter, SiteFilter, SiteGroupFilter, VirtualChassisFilter, VirtualDeviceContextFilter
+- dcim.graphql.gfk_mixins: InventoryItemTemplateComponentType, InventoryItemComponentType, ConnectedEndpointType
+- dcim.graphql.mixins: CabledObjectMixin, PathEndpointMixin
+- dcim.graphql.schema: DCIMQuery
+- dcim.graphql.types: ComponentType, ModularComponentType, ComponentTemplateType, ModularComponentTemplateType, CableTerminationType, CableType, ConsolePortType, ConsolePortTemplateType, ConsoleServerPortType, ConsoleServerPortTemplateType, DeviceType, DeviceBayType, DeviceBayTemplateType, InventoryItemTemplateType, DeviceRoleType, DeviceTypeType, FrontPortType, FrontPortTemplateType, MACAddressType, InterfaceType, InterfaceTemplateType, InventoryItemType, InventoryItemRoleType, LocationType, ManufacturerType, ModuleType, ModuleBayType, ModuleBayTemplateType, ModuleTypeProfileType, ModuleTypeType, PlatformType, PowerFeedType, PowerOutletType, PowerOutletTemplateType, PowerPanelType, PowerPortType, PowerPortTemplateType, RackTypeType, RackType, RackReservationType, RackRoleType, RearPortType, RearPortTemplateType, RegionType, SiteType, SiteGroupType, VirtualChassisType, VirtualDeviceContextType
+- dcim.lookups: PathContains
+- dcim.management.commands.buildschema: Command
+- dcim.management.commands.trace_paths: Command
+- dcim.migrations.0001_squashed: Migration
+- dcim.migrations.0002_squashed: Migration
+- dcim.migrations.0003_squashed_0130: Migration
+- dcim.migrations.0131_squashed_0159: Migration
+- dcim.migrations.0160_squashed_0166: Migration
+- dcim.migrations.0167_squashed_0182: Migration
+- dcim.migrations.0183_devicetype_exclude_from_utilization: Migration
+- dcim.migrations.0184_protect_child_interfaces: Migration
+- dcim.migrations.0185_gfk_indexes: Migration
+- dcim.migrations.0186_location_facility: Migration
+- dcim.migrations.0187_alter_device_vc_position: Migration
+- dcim.migrations.0188_racktype: Migration
+- dcim.migrations.0189_moduletype_rack_airflow: Migration
+- dcim.migrations.0190_nested_modules: Migration
+- dcim.migrations.0191_module_bay_rebuild: Migration
+- dcim.migrations.0192_inventoryitem_status: Migration
+- dcim.migrations.0193_poweroutlet_color: Migration
+- dcim.migrations.0194_charfield_null_choices: Migration
+- dcim.migrations.0195_interface_vlan_translation_policy: Migration
+- dcim.migrations.0196_qinq_svlan: Migration
+- dcim.migrations.0197_natural_sort_collation: Migration
+- dcim.migrations.0198_natural_ordering: Migration
+- dcim.migrations.0199_macaddress: Migration
+- dcim.migrations.0200_populate_mac_addresses: Migration
+- dcim.migrations.0201_add_power_outlet_status: Migration
+- dcim.migrations.0202_location_comments_region_comments_sitegroup_comments: Migration
+- dcim.migrations.0203_add_rack_outer_height: Migration
+- dcim.migrations.0203_device_role_nested: Migration
+- dcim.migrations.0204_device_role_rebuild: Migration
+- dcim.migrations.0205_moduletypeprofile: Migration
+- dcim.migrations.0206_load_module_type_profiles: Migration
+- dcim.migrations.0207_remove_redundant_indexes: Migration
+- dcim.models.cables: Cable, CableTermination, CablePath
+- dcim.models.device_component_templates: ComponentTemplateModel, ModularComponentTemplateModel, ConsolePortTemplate, ConsoleServerPortTemplate, PowerPortTemplate, PowerOutletTemplate, InterfaceTemplate, FrontPortTemplate, RearPortTemplate, ModuleBayTemplate, DeviceBayTemplate, InventoryItemTemplate
+- dcim.models.device_components: ComponentModel, ModularComponentModel, CabledObjectModel, PathEndpoint, ConsolePort, ConsoleServerPort, PowerPort, PowerOutlet, BaseInterface, Interface, FrontPort, RearPort, ModuleBay, DeviceBay, InventoryItemRole, InventoryItem
+- dcim.models.devices: Manufacturer, DeviceType, DeviceRole, Platform, Device, VirtualChassis, VirtualDeviceContext, MACAddress
+- dcim.models.mixins: RenderConfigMixin, CachedScopeMixin
+- dcim.models.modules: ModuleTypeProfile, ModuleType, Module
+- dcim.models.power: PowerPanel, PowerFeed
+- dcim.models.racks: RackBase, RackType, RackRole, Rack, RackReservation
+- dcim.models.sites: Region, SiteGroup, Site, Location
+- dcim.search: CableIndex, ConsolePortIndex, ConsoleServerPortIndex, DeviceIndex, DeviceBayIndex, DeviceRoleIndex, DeviceTypeIndex, FrontPortIndex, MACAddressIndex, InterfaceIndex, InventoryItemIndex, LocationIndex, ManufacturerIndex, ModuleIndex, ModuleBayIndex, ModuleTypeProfileIndex, ModuleTypeIndex, PlatformIndex, PowerFeedIndex, PowerOutletIndex, PowerPanelIndex, PowerPortIndex, RackTypeIndex, RackIndex, RackReservationIndex, RackRoleIndex, RearPortIndex, RegionIndex, SiteIndex, SiteGroupIndex, VirtualChassisIndex, VirtualDeviceContextIndex
+- dcim.svg.cables: Node, Connector, CableTraceSVG
+- dcim.svg.racks: RackElevationSVG
+- dcim.tables.cables: CableTerminationsColumn, CableTable
+- dcim.tables.connections: ConsoleConnectionTable, PowerConnectionTable, InterfaceConnectionTable
+- dcim.tables.devices: DeviceRoleTable, PlatformTable, DeviceTable, DeviceComponentTable, ModularDeviceComponentTable, CableTerminationTable, PathEndpointTable, ConsolePortTable, DeviceConsolePortTable, ConsoleServerPortTable, DeviceConsoleServerPortTable, PowerPortTable, DevicePowerPortTable, PowerOutletTable, DevicePowerOutletTable, BaseInterfaceTable, InterfaceTable, DeviceInterfaceTable, FrontPortTable, DeviceFrontPortTable, RearPortTable, DeviceRearPortTable, DeviceBayTable, DeviceDeviceBayTable, ModuleBayTable, DeviceModuleBayTable, InventoryItemTable, DeviceInventoryItemTable, InventoryItemRoleTable, VirtualChassisTable, VirtualDeviceContextTable, MACAddressTable
+- dcim.tables.devicetypes: ManufacturerTable, DeviceTypeTable, ComponentTemplateTable, ConsolePortTemplateTable, ConsoleServerPortTemplateTable, PowerPortTemplateTable, PowerOutletTemplateTable, InterfaceTemplateTable, FrontPortTemplateTable, RearPortTemplateTable, ModuleBayTemplateTable, DeviceBayTemplateTable, InventoryItemTemplateTable
+- dcim.tables.modules: ModuleTypeProfileTable, ModuleTypeTable, ModuleTable
+- dcim.tables.power: PowerPanelTable, PowerFeedTable
+- dcim.tables.racks: RackRoleTable, RackTypeTable, RackTable, RackReservationTable
+- dcim.tables.sites: RegionTable, SiteGroupTable, SiteTable, LocationTable
+- dcim.tests.test_api: AppTest, Mixins, RegionTest, SiteGroupTest, SiteTest, LocationTest, RackRoleTest, RackTypeTest, RackTest, RackReservationTest, ManufacturerTest, DeviceTypeTest, ModuleTypeTest, ModuleTypeProfileTest, ConsolePortTemplateTest, ConsoleServerPortTemplateTest, PowerPortTemplateTest, PowerOutletTemplateTest, InterfaceTemplateTest, FrontPortTemplateTest, RearPortTemplateTest, ModuleBayTemplateTest, DeviceBayTemplateTest, InventoryItemTemplateTest, DeviceRoleTest, PlatformTest, DeviceTest, ModuleTest, ConsolePortTest, ConsoleServerPortTest, PowerPortTest, PowerOutletTest, InterfaceTest, FrontPortTest, RearPortTest, ModuleBayTest, DeviceBayTest, InventoryItemTest, InventoryItemRoleTest, CableTest, ConnectedDeviceTest, VirtualChassisTest, PowerPanelTest, PowerFeedTest, VirtualDeviceContextTest, MACAddressTest
+- dcim.tests.test_cablepaths: CablePathTestCase
+- dcim.tests.test_filtersets: DeviceComponentFilterSetTests, DeviceComponentTemplateFilterSetTests, RegionTestCase, SiteGroupTestCase, SiteTestCase, LocationTestCase, RackRoleTestCase, RackTypeTestCase, RackTestCase, RackReservationTestCase, ManufacturerTestCase, DeviceTypeTestCase, ModuleTypeTestCase, ModuleTypeProfileTestCase, ConsolePortTemplateTestCase, ConsoleServerPortTemplateTestCase, PowerPortTemplateTestCase, PowerOutletTemplateTestCase, InterfaceTemplateTestCase, FrontPortTemplateTestCase, RearPortTemplateTestCase, ModuleBayTemplateTestCase, DeviceBayTemplateTestCase, InventoryItemTemplateTestCase, DeviceRoleTestCase, PlatformTestCase, DeviceTestCase, ModuleTestCase, ConsolePortTestCase, ConsoleServerPortTestCase, PowerPortTestCase, PowerOutletTestCase, InterfaceTestCase, FrontPortTestCase, RearPortTestCase, ModuleBayTestCase, DeviceBayTestCase, InventoryItemTestCase, InventoryItemRoleTestCase, VirtualChassisTestCase, CableTestCase, PowerPanelTestCase, PowerFeedTestCase, VirtualDeviceContextTestCase, MACAddressTestCase
+- dcim.tests.test_forms: PowerOutletFormTestCase, DeviceTestCase, FrontPortTestCase, InterfaceTestCase
+- dcim.tests.test_models: MACAddressTestCase, LocationTestCase, RackTypeTestCase, RackTestCase, DeviceTestCase, ModuleBayTestCase, CableTestCase, VirtualDeviceContextTestCase
+- dcim.tests.test_natural_ordering: NaturalOrderingTestCase
+- dcim.tests.test_views: RegionTestCase, SiteGroupTestCase, SiteTestCase, LocationTestCase, RackRoleTestCase, RackReservationTestCase, RackTypeTestCase, RackTestCase, ManufacturerTestCase, DeviceTypeTestCase, ModuleTypeTestCase, ModuleTypeProfileTestCase, ConsolePortTemplateTestCase, ConsoleServerPortTemplateTestCase, PowerPortTemplateTestCase, PowerOutletTemplateTestCase, InterfaceTemplateTestCase, FrontPortTemplateTestCase, RearPortTemplateTestCase, ModuleBayTemplateTestCase, DeviceBayTemplateTestCase, InventoryItemTemplateTestCase, DeviceRoleTestCase, PlatformTestCase, DeviceTestCase, ModuleTestCase, ConsolePortTestCase, ConsoleServerPortTestCase, PowerPortTestCase, PowerOutletTestCase, InterfaceTestCase, FrontPortTestCase, RearPortTestCase, ModuleBayTestCase, DeviceBayTestCase, InventoryItemTestCase, InventoryItemRoleTestCase, CableTestCase, VirtualChassisTestCase, PowerPanelTestCase, PowerFeedTestCase, VirtualDeviceContextTestCase, MACAddressTestCase
+- dcim.views: DeviceComponentsView, DeviceTypeComponentsView, ModuleTypeComponentsView, BulkDisconnectView, PathTraceView, RegionListView, RegionView, RegionEditView, RegionDeleteView, RegionBulkImportView, RegionBulkEditView, RegionBulkDeleteView, SiteGroupListView, SiteGroupView, SiteGroupEditView, SiteGroupDeleteView, SiteGroupBulkImportView, SiteGroupBulkEditView, SiteGroupBulkDeleteView, SiteListView, SiteView, SiteEditView, SiteDeleteView, SiteBulkImportView, SiteBulkEditView, SiteBulkDeleteView, LocationListView, LocationView, LocationEditView, LocationDeleteView, LocationBulkImportView, LocationBulkEditView, LocationBulkDeleteView, RackRoleListView, RackRoleView, RackRoleEditView, RackRoleDeleteView, RackRoleBulkImportView, RackRoleBulkEditView, RackRoleBulkDeleteView, RackTypeListView, RackTypeView, RackTypeEditView, RackTypeDeleteView, RackTypeBulkImportView, RackTypeBulkEditView, RackTypeBulkDeleteView, RackListView, RackElevationListView, RackView, RackRackReservationsView, RackNonRackedView, RackEditView, RackDeleteView, RackBulkImportView, RackBulkEditView, RackBulkDeleteView, RackReservationListView, RackReservationView, RackReservationEditView, RackReservationDeleteView, RackReservationImportView, RackReservationBulkEditView, RackReservationBulkDeleteView, ManufacturerListView, ManufacturerView, ManufacturerEditView, ManufacturerDeleteView, ManufacturerBulkImportView, ManufacturerBulkEditView, ManufacturerBulkDeleteView, DeviceTypeListView, DeviceTypeView, DeviceTypeEditView, DeviceTypeDeleteView, DeviceTypeConsolePortsView, DeviceTypeConsoleServerPortsView, DeviceTypePowerPortsView, DeviceTypePowerOutletsView, DeviceTypeInterfacesView, DeviceTypeFrontPortsView, DeviceTypeRearPortsView, DeviceTypeModuleBaysView, DeviceTypeDeviceBaysView, DeviceTypeInventoryItemsView, DeviceTypeImportView, DeviceTypeBulkEditView, DeviceTypeBulkDeleteView, ModuleTypeProfileListView, ModuleTypeProfileView, ModuleTypeProfileEditView, ModuleTypeProfileDeleteView, ModuleTypeProfileBulkImportView, ModuleTypeProfileBulkEditView, ModuleTypeProfileBulkDeleteView, ModuleTypeListView, ModuleTypeView, ModuleTypeEditView, ModuleTypeDeleteView, ModuleTypeConsolePortsView, ModuleTypeConsoleServerPortsView, ModuleTypePowerPortsView, ModuleTypePowerOutletsView, ModuleTypeInterfacesView, ModuleTypeFrontPortsView, ModuleTypeRearPortsView, ModuleTypeModuleBaysView, ModuleTypeImportView, ModuleTypeBulkEditView, ModuleTypeBulkDeleteView, ConsolePortTemplateCreateView, ConsolePortTemplateEditView, ConsolePortTemplateDeleteView, ConsolePortTemplateBulkEditView, ConsolePortTemplateBulkRenameView, ConsolePortTemplateBulkDeleteView, ConsoleServerPortTemplateCreateView, ConsoleServerPortTemplateEditView, ConsoleServerPortTemplateDeleteView, ConsoleServerPortTemplateBulkEditView, ConsoleServerPortTemplateBulkRenameView, ConsoleServerPortTemplateBulkDeleteView, PowerPortTemplateCreateView, PowerPortTemplateEditView, PowerPortTemplateDeleteView, PowerPortTemplateBulkEditView, PowerPortTemplateBulkRenameView, PowerPortTemplateBulkDeleteView, PowerOutletTemplateCreateView, PowerOutletTemplateEditView, PowerOutletTemplateDeleteView, PowerOutletTemplateBulkEditView, PowerOutletTemplateBulkRenameView, PowerOutletTemplateBulkDeleteView, InterfaceTemplateCreateView, InterfaceTemplateEditView, InterfaceTemplateDeleteView, InterfaceTemplateBulkEditView, InterfaceTemplateBulkRenameView, InterfaceTemplateBulkDeleteView, FrontPortTemplateCreateView, FrontPortTemplateEditView, FrontPortTemplateDeleteView, FrontPortTemplateBulkEditView, FrontPortTemplateBulkRenameView, FrontPortTemplateBulkDeleteView, RearPortTemplateCreateView, RearPortTemplateEditView, RearPortTemplateDeleteView, RearPortTemplateBulkEditView, RearPortTemplateBulkRenameView, RearPortTemplateBulkDeleteView, ModuleBayTemplateCreateView, ModuleBayTemplateEditView, ModuleBayTemplateDeleteView, ModuleBayTemplateBulkEditView, ModuleBayTemplateBulkRenameView, ModuleBayTemplateBulkDeleteView, DeviceBayTemplateCreateView, DeviceBayTemplateEditView, DeviceBayTemplateDeleteView, DeviceBayTemplateBulkEditView, DeviceBayTemplateBulkRenameView, DeviceBayTemplateBulkDeleteView, InventoryItemTemplateCreateView, InventoryItemTemplateEditView, InventoryItemTemplateDeleteView, InventoryItemTemplateBulkEditView, InventoryItemTemplateBulkRenameView, InventoryItemTemplateBulkDeleteView, DeviceRoleListView, DeviceRoleView, DeviceRoleEditView, DeviceRoleDeleteView, DeviceRoleBulkImportView, DeviceRoleBulkEditView, DeviceRoleBulkDeleteView, PlatformListView, PlatformView, PlatformEditView, PlatformDeleteView, PlatformBulkImportView, PlatformBulkEditView, PlatformBulkDeleteView, DeviceListView, DeviceView, DeviceEditView, DeviceDeleteView, DeviceConsolePortsView, DeviceConsoleServerPortsView, DevicePowerPortsView, DevicePowerOutletsView, DeviceInterfacesView, DeviceFrontPortsView, DeviceRearPortsView, DeviceModuleBaysView, DeviceDeviceBaysView, DeviceInventoryView, DeviceConfigContextView, DeviceRenderConfigView, DeviceVirtualMachinesView, DeviceBulkImportView, DeviceBulkEditView, DeviceBulkDeleteView, DeviceBulkRenameView, ModuleListView, ModuleView, ModuleEditView, ModuleDeleteView, ModuleBulkImportView, ModuleBulkEditView, ModuleBulkDeleteView, ConsolePortListView, ConsolePortView, ConsolePortCreateView, ConsolePortEditView, ConsolePortDeleteView, ConsolePortBulkImportView, ConsolePortBulkEditView, ConsolePortBulkRenameView, ConsolePortBulkDisconnectView, ConsolePortBulkDeleteView, ConsoleServerPortListView, ConsoleServerPortView, ConsoleServerPortCreateView, ConsoleServerPortEditView, ConsoleServerPortDeleteView, ConsoleServerPortBulkImportView, ConsoleServerPortBulkEditView, ConsoleServerPortBulkRenameView, ConsoleServerPortBulkDisconnectView, ConsoleServerPortBulkDeleteView, PowerPortListView, PowerPortView, PowerPortCreateView, PowerPortEditView, PowerPortDeleteView, PowerPortBulkImportView, PowerPortBulkEditView, PowerPortBulkRenameView, PowerPortBulkDisconnectView, PowerPortBulkDeleteView, PowerOutletListView, PowerOutletView, PowerOutletCreateView, PowerOutletEditView, PowerOutletDeleteView, PowerOutletBulkImportView, PowerOutletBulkEditView, PowerOutletBulkRenameView, PowerOutletBulkDisconnectView, PowerOutletBulkDeleteView, InterfaceListView, InterfaceView, InterfaceCreateView, InterfaceEditView, InterfaceDeleteView, InterfaceBulkImportView, InterfaceBulkEditView, InterfaceBulkRenameView, InterfaceBulkDisconnectView, InterfaceBulkDeleteView, FrontPortListView, FrontPortView, FrontPortCreateView, FrontPortEditView, FrontPortDeleteView, FrontPortBulkImportView, FrontPortBulkEditView, FrontPortBulkRenameView, FrontPortBulkDisconnectView, FrontPortBulkDeleteView, RearPortListView, RearPortView, RearPortCreateView, RearPortEditView, RearPortDeleteView, RearPortBulkImportView, RearPortBulkEditView, RearPortBulkRenameView, RearPortBulkDisconnectView, RearPortBulkDeleteView, ModuleBayListView, ModuleBayView, ModuleBayCreateView, ModuleBayEditView, ModuleBayDeleteView, ModuleBayBulkImportView, ModuleBayBulkEditView, ModuleBayBulkRenameView, ModuleBayBulkDeleteView, DeviceBayListView, DeviceBayView, DeviceBayCreateView, DeviceBayEditView, DeviceBayDeleteView, DeviceBayPopulateView, DeviceBayDepopulateView, DeviceBayBulkImportView, DeviceBayBulkEditView, DeviceBayBulkRenameView, DeviceBayBulkDeleteView, InventoryItemListView, InventoryItemView, InventoryItemEditView, InventoryItemCreateView, InventoryItemDeleteView, InventoryItemBulkImportView, InventoryItemBulkEditView, InventoryItemBulkRenameView, InventoryItemBulkDeleteView, InventoryItemChildrenView, InventoryItemRoleListView, InventoryItemRoleView, InventoryItemRoleEditView, InventoryItemRoleDeleteView, InventoryItemRoleBulkImportView, InventoryItemRoleBulkEditView, InventoryItemRoleBulkDeleteView, DeviceBulkAddConsolePortView, DeviceBulkAddConsoleServerPortView, DeviceBulkAddPowerPortView, DeviceBulkAddPowerOutletView, DeviceBulkAddInterfaceView, DeviceBulkAddRearPortView, DeviceBulkAddModuleBayView, DeviceBulkAddDeviceBayView, DeviceBulkAddInventoryItemView, CableListView, CableView, CableEditView, CableDeleteView, CableBulkImportView, CableBulkEditView, CableBulkDeleteView, ConsoleConnectionsListView, PowerConnectionsListView, InterfaceConnectionsListView, VirtualChassisListView, VirtualChassisView, VirtualChassisCreateView, VirtualChassisEditView, VirtualChassisDeleteView, VirtualChassisAddMemberView, VirtualChassisRemoveMemberView, VirtualChassisBulkImportView, VirtualChassisBulkEditView, VirtualChassisBulkDeleteView, PowerPanelListView, PowerPanelView, PowerPanelEditView, PowerPanelDeleteView, PowerPanelBulkImportView, PowerPanelBulkEditView, PowerPanelBulkDeleteView, PowerFeedListView, PowerFeedView, PowerFeedEditView, PowerFeedDeleteView, PowerFeedBulkImportView, PowerFeedBulkEditView, PowerFeedBulkDisconnectView, PowerFeedBulkDeleteView, VirtualDeviceContextListView, VirtualDeviceContextView, VirtualDeviceContextEditView, VirtualDeviceContextDeleteView, VirtualDeviceContextBulkImportView, VirtualDeviceContextBulkEditView, VirtualDeviceContextBulkDeleteView, MACAddressListView, MACAddressView, MACAddressEditView, MACAddressDeleteView, MACAddressBulkImportView, MACAddressBulkEditView, MACAddressBulkDeleteView

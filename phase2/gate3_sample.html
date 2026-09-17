@@ -1,0 +1,643 @@
+<title>Gate 3 Corpus Sample</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#F6F7F4;--ink:#1D2622;--mute:#5B6660;--line:#D9DED9;--card:#FFFFFF;--acc:#1F6F63;--acc-ink:#FFFFFF;--code:#EEF1EE}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#131816;--ink:#E6EBE7;--mute:#9AA69F;--line:#2B3430;--card:#1B2220;--acc:#5FB8A8;--acc-ink:#0F1513;--code:#232C28}}
+:root[data-theme="dark"]{--bg:#131816;--ink:#E6EBE7;--mute:#9AA69F;--line:#2B3430;--card:#1B2220;--acc:#5FB8A8;--acc-ink:#0F1513;--code:#232C28}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.5;padding-inline:16px;padding-block:24px 64px}
+.wrap{max-width:960px;margin:0 auto} h1{font-size:26px;font-weight:600;margin:0 0 6px} p{margin:0 0 10px} .how{color:var(--mute)}
+.claim{display:grid;grid-template-columns:34px 1fr 150px;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px}
+.num{font-family:"IBM Plex Mono",monospace;color:var(--mute)} .src{font-size:12px;color:var(--mute);letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.text{font-weight:500;margin-bottom:8px} .ev{margin-top:8px}
+pre{background:var(--code);border-radius:6px;padding:8px 10px;font-family:"IBM Plex Mono",monospace;font-size:12px;overflow-x:auto;margin:6px 0 0;white-space:pre}
+.btn{display:inline-block;background:var(--acc);color:var(--acc-ink);text-decoration:none;padding:5px 10px;border-radius:6px;font-size:13px;font-weight:500} .btn.muted{background:var(--code);color:var(--mute)}
+.side{display:flex;flex-direction:column;gap:6px} .tick{font-size:13px;display:flex;gap:6px;align-items:center}
+.summary{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0} .tile{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;min-width:110px} .tile b{font-size:20px;display:block} .tile span{color:var(--mute);font-size:13px}
+@media (max-width:640px){.claim{grid-template-columns:28px 1fr}.side{grid-column:2;flex-direction:row;flex-wrap:wrap}}
+</style>
+<div class="wrap"><h1>Gate 3 Corpus Sample</h1>
+<p>Twenty claims drawn at random (seed 20260917) from the 781 cited claims in the nine-subsystem draft corpus at T0 <code>ea4c205</code>. Under each claim is the evidence it cites, shown inline and linked to the pinned source. The mechanical check already confirmed every citation exists; your judgement is whether the evidence actually supports what the sentence says. Mark each one, then tell Munin the tally.</p>
+<div class="summary"><div class="tile"><b id="yes">0</b><span>supported</span></div><div class="tile"><b id="no">0</b><span>not supported</span></div><div class="tile"><b id="unsure">0</b><span>unsure</span></div></div>
+<article class="claim" id="c1"><div class="num">1</div><div class="main">
+<div class="src">circuits / adrs.md line 27</div>
+<div class="text">**Consequences.** Swapping ends cannot be done by editing the circuit; `CircuitSwapTerminations` re-saves the terminations inside a transaction with a temporary `&#x27;_&#x27;` side to avoid tripping the unique constraint, then fixes the pointers by hand. There is no `post_delete` receiver clearing the slot; `SET_NULL` on the FK does that at the database level.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/circuits/views.py#L385-L409" target="_blank" rel="noopener">netbox/circuits/views.py:385-409</a><pre>  385              if termination_a and termination_z:
+  386                  # Use a placeholder to avoid an IntegrityError on the (circuit, term_side) unique constraint
+  387                  with transaction.atomic(using=router.db_for_write(CircuitTermination)):
+  388                      termination_a.term_side = &#x27;_&#x27;
+  389                      termination_a.save()
+  390                      termination_z.term_side = &#x27;A&#x27;
+  391                      termination_z.save()
+  392                      termination_a.term_side = &#x27;Z&#x27;
+  393                      termination_a.save()
+  394                      circuit.refresh_from_db()
+  395                      circuit.termination_a = termination_z
+  396                      circuit.termination_z = termination_a
+  ... (range continues to line 409)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/circuits/models/circuits.py#L97-L104" target="_blank" rel="noopener">netbox/circuits/models/circuits.py:97-104</a><pre>   97      termination_a = models.ForeignKey(
+   98          to=&#x27;circuits.CircuitTermination&#x27;,
+   99          on_delete=models.SET_NULL,
+  100          related_name=&#x27;+&#x27;,
+  101          editable=False,
+  102          blank=True,
+  103          null=True
+  104      )</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v1" value="yes" data-id="1"> supported</label><label class="tick"><input type="radio" name="v1" value="no" data-id="1"> not supported</label><label class="tick"><input type="radio" name="v1" value="unsure" data-id="1"> unsure</label></div></article><article class="claim" id="c2"><div class="num">2</div><div class="main">
+<div class="src">core / adrs.md line 15</div>
+<div class="text">**Decision.** Migration `0008` creates `ObjectType` as a `proxy = True` subclass of `contenttypes.ContentType` with `ObjectTypeManager`, whose `public()` and `with_feature()` build `Q` objects from `registry[&#x27;models&#x27;]` and `registry[&#x27;model_features&#x27;]`  . `CoreConfig.ready()` registers core&#x27;s models into that registry via `register_models` .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/migrations/0008_contenttype_proxy.py#L11-L24" target="_blank" rel="noopener">netbox/core/migrations/0008_contenttype_proxy.py:11-24</a><pre>   11      operations = [
+   12          migrations.CreateModel(
+   13              name=&#x27;ObjectType&#x27;,
+   14              fields=[],
+   15              options={
+   16                  &#x27;proxy&#x27;: True,
+   17                  &#x27;indexes&#x27;: [],
+   18                  &#x27;constraints&#x27;: [],
+   19              },
+   20              bases=(&#x27;contenttypes.contenttype&#x27;,),
+   21              managers=[
+   22                  (&#x27;objects&#x27;, core.models.contenttypes.ObjectTypeManager()),
+  ... (range continues to line 24)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/models/contenttypes.py#L12-L50" target="_blank" rel="noopener">netbox/core/models/contenttypes.py:12-50</a><pre>   12  class ObjectTypeManager(ContentTypeManager):
+   13  
+   14      def public(self):
+   15          &quot;&quot;&quot;
+   16          Filter the base queryset to return only ContentTypes corresponding to &quot;public&quot; models; those which are listed
+   17          in registry[&#x27;models&#x27;] and intended for reference by other objects.
+   18          &quot;&quot;&quot;
+   19          q = Q()
+   20          for app_label, models in registry[&#x27;models&#x27;].items():
+   21              q |= Q(app_label=app_label, model__in=models)
+   22          return self.get_queryset().filter(q)
+   23  
+  ... (range continues to line 50)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/apps.py#L26-L31" target="_blank" rel="noopener">netbox/core/apps.py:26-31</a><pre>   26          from netbox.models.features import register_models
+   27          from . import data_backends, events, search  # noqa: F401
+   28          from netbox import context_managers  # noqa: F401
+   29  
+   30          # Register models
+   31          register_models(*self.get_models())</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v2" value="yes" data-id="2"> supported</label><label class="tick"><input type="radio" name="v2" value="no" data-id="2"> not supported</label><label class="tick"><input type="radio" name="v2" value="unsure" data-id="2"> unsure</label></div></article><article class="claim" id="c3"><div class="num">3</div><div class="main">
+<div class="src">core / patterns.md line 12</div>
+<div class="text">- Exception: `DataFile` is a plain model but its filterset is a `ChangeLoggedModelFilterSet` and its serializer a `NetBoxModelSerializer` with a read-only viewset   .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/filtersets.py#L51" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;module&quot;: &quot;core.filtersets&quot;,
+ &quot;kind&quot;: &quot;class&quot;,
+ &quot;name&quot;: &quot;DataFileFilterSet&quot;,
+ &quot;lineno&quot;: 51,
+ &quot;bases&quot;: &quot;ChangeLoggedModelFilterSet&quot;,
+ &quot;path&quot;: &quot;netbox/core/filtersets.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/api/serializers_/data.py#L35" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;module&quot;: &quot;core.api.serializers_.data&quot;,
+ &quot;kind&quot;: &quot;class&quot;,
+ &quot;name&quot;: &quot;DataFileSerializer&quot;,
+ &quot;lineno&quot;: 35,
+ &quot;bases&quot;: &quot;NetBoxModelSerializer&quot;,
+ &quot;path&quot;: &quot;netbox/core/api/serializers_/data.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/api/views.py#L63" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;module&quot;: &quot;core.api.views&quot;,
+ &quot;kind&quot;: &quot;class&quot;,
+ &quot;name&quot;: &quot;DataFileViewSet&quot;,
+ &quot;lineno&quot;: 63,
+ &quot;bases&quot;: &quot;NetBoxReadOnlyModelViewSet&quot;,
+ &quot;path&quot;: &quot;netbox/core/api/views.py&quot;
+}</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v3" value="yes" data-id="3"> supported</label><label class="tick"><input type="radio" name="v3" value="no" data-id="3"> not supported</label><label class="tick"><input type="radio" name="v3" value="unsure" data-id="3"> unsure</label></div></article><article class="claim" id="c4"><div class="num">4</div><div class="main">
+<div class="src">core / patterns.md line 79</div>
+<div class="text">- `DataSourceBulkEditForm.nullable_fields` repeats `&#x27;description&#x27;` and `&#x27;parameters&#x27;` and is missing a comma between `&#x27;ignore_rules&#x27;` and `&#x27;comments&#x27;`, so the tuple contains the concatenated string `&#x27;ignore_rulescomments&#x27;` and neither field is nullable by name .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/core/forms/bulk_edit.py#L53-L55" target="_blank" rel="noopener">netbox/core/forms/bulk_edit.py:53-55</a><pre>   53      nullable_fields = (
+   54          &#x27;description&#x27;, &#x27;description&#x27;, &#x27;sync_interval&#x27;, &#x27;parameters&#x27;, &#x27;parameters&#x27;, &#x27;ignore_rules&#x27; &#x27;comments&#x27;,
+   55      )</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v4" value="yes" data-id="4"> supported</label><label class="tick"><input type="radio" name="v4" value="no" data-id="4"> not supported</label><label class="tick"><input type="radio" name="v4" value="unsure" data-id="4"> unsure</label></div></article><article class="claim" id="c5"><div class="num">5</div><div class="main">
+<div class="src">dcim / map.md line 15</div>
+<div class="text">**Signals and app wiring**: `signals` holds eight receivers (site cascade from Location/Rack, VirtualChassis master assignment, and the cable-path retrace handlers); `apps.DCIMConfig.ready()` imports signals and search, registers all models with `netbox.models.features`, registers denormalized-field propagation for CableTermination&#x27;s `_device/_rack/_location/_site`, and connects counters for Device, DeviceType and VirtualChassis.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/signals.py#L18-L67" target="_blank" rel="noopener">netbox/dcim/signals.py:18-67</a><pre>   18  @receiver(post_save, sender=Location)
+   19  def handle_location_site_change(instance, created, **kwargs):
+   20      &quot;&quot;&quot;
+   21      Update child objects if Site assignment has changed. We intentionally recurse through each child
+   22      object instead of calling update() on the QuerySet to ensure the proper change records get created for each.
+   23      &quot;&quot;&quot;
+   24      if not created:
+   25          instance.get_descendants().update(site=instance.site)
+   26          locations = instance.get_descendants(include_self=True).values_list(&#x27;pk&#x27;, flat=True)
+   27          Rack.objects.filter(location__in=locations).update(site=instance.site)
+   28          Device.objects.filter(location__in=locations).update(site=instance.site)
+   29          PowerPanel.objects.filter(location__in=locations).update(site=instance.site)
+  ... (range continues to line 67)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/signals.py#L74-L118" target="_blank" rel="noopener">netbox/dcim/signals.py:74-118</a><pre>   74  @receiver(trace_paths, sender=Cable)
+   75  def update_connected_endpoints(instance, created, raw=False, **kwargs):
+   76      &quot;&quot;&quot;
+   77      When a Cable is saved with new terminations, retrace any affected cable paths.
+   78      &quot;&quot;&quot;
+   79      logger = logging.getLogger(&#x27;netbox.dcim.cable&#x27;)
+   80      if raw:
+   81          logger.debug(f&quot;Skipping endpoint updates for imported cable {instance}&quot;)
+   82          return
+   83  
+   84      # Update cable paths if new terminations have been set
+   85      if instance._terminations_modified:
+  ... (range continues to line 118)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/signals.py#L120-L143" target="_blank" rel="noopener">netbox/dcim/signals.py:120-143</a><pre>  120  @receiver(post_delete, sender=CableTermination)
+  121  def nullify_connected_endpoints(instance, **kwargs):
+  122      &quot;&quot;&quot;
+  123      Disassociate the Cable from the termination object, and retrace any affected CablePaths.
+  124      &quot;&quot;&quot;
+  125      model = instance.termination_type.model_class()
+  126      model.objects.filter(pk=instance.termination_id).update(cable=None, cable_end=&#x27;&#x27;)
+  127  
+  128      for cablepath in CablePath.objects.filter(_nodes__contains=instance.cable):
+  129          # Remove the deleted CableTermination if it&#x27;s one of the path&#x27;s originating nodes
+  130          if instance.termination in cablepath.origins:
+  131              cablepath.origins.remove(instance.termination)
+  ... (range continues to line 143)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/apps.py#L10-L34" target="_blank" rel="noopener">netbox/dcim/apps.py:10-34</a><pre>   10      def ready(self):
+   11          from netbox.models.features import register_models
+   12          from utilities.counters import connect_counters
+   13          from . import signals, search  # noqa: F401
+   14          from .models import CableTermination, Device, DeviceType, VirtualChassis
+   15  
+   16          # Register models
+   17          register_models(*self.get_models())
+   18  
+   19          # Register denormalized fields
+   20          denormalized.register(CableTermination, &#x27;_device&#x27;, {
+   21              &#x27;_rack&#x27;: &#x27;rack&#x27;,
+  ... (range continues to line 34)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/signals.py" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;kind&quot;: &quot;signals&quot;,
+ &quot;module&quot;: &quot;dcim.signals&quot;,
+ &quot;detail&quot;: &quot;&quot;,
+ &quot;path&quot;: &quot;netbox/dcim/signals.py&quot;
+}</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v5" value="yes" data-id="5"> supported</label><label class="tick"><input type="radio" name="v5" value="no" data-id="5"> not supported</label><label class="tick"><input type="radio" name="v5" value="unsure" data-id="5"> unsure</label></div></article><article class="claim" id="c6"><div class="num">6</div><div class="main">
+<div class="src">extras / adrs.md line 15</div>
+<div class="text">**Context.** Migration 0101 introduced `EventRule` and moved trigger data off `Webhook`; 0109 repointed script actions from `ScriptModule` to the new `Script` row; 0110 dropped `action_parameters`; 0120 replaced boolean type flags with an `event_types` array.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/migrations/0101_eventrule.py#L11" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;module&quot;: &quot;extras.migrations.0101_eventrule&quot;,
+ &quot;class&quot;: &quot;&quot;,
+ &quot;field&quot;: &quot;&quot;,
+ &quot;kind&quot;: &quot;get_model&quot;,
+ &quot;raw&quot;: &quot;extras.Webhook&quot;,
+ &quot;ref_app&quot;: &quot;extras&quot;,
+ &quot;ref_model&quot;: &quot;Webhook&quot;,
+ &quot;cross_app&quot;: 0,
+ &quot;lineno&quot;: 11,
+ &quot;path&quot;: &quot;netbox/extras/migrations/0101_eventrule.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/migrations/0109_script_model.py#L120-L141" target="_blank" rel="noopener">netbox/extras/migrations/0109_script_model.py:120-141</a><pre>  120  
+  121  
+  122  def update_event_rules(apps, schema_editor):
+  123      &quot;&quot;&quot;
+  124      Update any existing EventRules for scripts. Change action_object_type from ScriptModule to Script, and populate
+  125      the ID of the related Script object.
+  126      &quot;&quot;&quot;
+  127      ContentType = apps.get_model(&#x27;contenttypes&#x27;, &#x27;ContentType&#x27;)
+  128      Script = apps.get_model(&#x27;extras&#x27;, &#x27;Script&#x27;)
+  129      ScriptModule = apps.get_model(&#x27;extras&#x27;, &#x27;ScriptModule&#x27;)
+  130      EventRule = apps.get_model(&#x27;extras&#x27;, &#x27;EventRule&#x27;)
+  131      db_alias = schema_editor.connection.alias
+  ... (range continues to line 141)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/migrations/0110_remove_eventrule_action_parameters.py" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;module&quot;: &quot;extras.migrations.0110_remove_eventrule_action_parameters&quot;,
+ &quot;path&quot;: &quot;netbox/extras/migrations/0110_remove_eventrule_action_parameters.py&quot;,
+ &quot;loc&quot;: 18,
+ &quot;classes&quot;: 1,
+ &quot;functions&quot;: 0,
+ &quot;parse&quot;: &quot;OK&quot;,
+ &quot;subsystem&quot;: &quot;extras&quot;,
+ &quot;is_test&quot;: 0,
+ &quot;is_migration&quot;: 1,
+ &quot;is_data&quot;: 0
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/migrations/0120_eventrule_event_types.py" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;module&quot;: &quot;extras.migrations.0120_eventrule_event_types&quot;,
+ &quot;path&quot;: &quot;netbox/extras/migrations/0120_eventrule_event_types.py&quot;,
+ &quot;loc&quot;: 70,
+ &quot;classes&quot;: 1,
+ &quot;functions&quot;: 1,
+ &quot;parse&quot;: &quot;OK&quot;,
+ &quot;subsystem&quot;: &quot;extras&quot;,
+ &quot;is_test&quot;: 0,
+ &quot;is_migration&quot;: 1,
+ &quot;is_data&quot;: 0
+}</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v6" value="yes" data-id="6"> supported</label><label class="tick"><input type="radio" name="v6" value="no" data-id="6"> not supported</label><label class="tick"><input type="radio" name="v6" value="unsure" data-id="6"> unsure</label></div></article><article class="claim" id="c7"><div class="num">7</div><div class="main">
+<div class="src">extras / patterns.md line 59</div>
+<div class="text">`CustomField` never stores values; on add/remove/rename/delete, signal handlers call `populate_initial_data`, `remove_stale_data` and `rename_object_data`, which issue `UPDATE ... jsonb_set()`/key-deletion queries against every affected model table.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/customfields.py#L281-L328" target="_blank" rel="noopener">netbox/extras/models/customfields.py:281-328</a><pre>  281      def populate_initial_data(self, content_types):
+  282          &quot;&quot;&quot;
+  283          Populate initial custom field data upon either a) the creation of a new CustomField, or
+  284          b) the assignment of an existing CustomField to new object types.
+  285          &quot;&quot;&quot;
+  286          if self.default is None:
+  287              # We have to convert None to a JSON null for jsonb_set()
+  288              value = RawSQL(&quot;&#x27;null&#x27;::jsonb&quot;, [])
+  289          else:
+  290              value = Value(self.default, models.JSONField())
+  291          for ct in content_types:
+  292              ct.model_class().objects.update(
+  ... (range continues to line 328)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/signals.py#L22-L56" target="_blank" rel="noopener">netbox/extras/signals.py:22-56</a><pre>   22  def handle_cf_added_obj_types(instance, action, pk_set, **kwargs):
+   23      &quot;&quot;&quot;
+   24      Handle the population of default/null values when a CustomField is added to one or more ContentTypes.
+   25      &quot;&quot;&quot;
+   26      if action == &#x27;post_add&#x27;:
+   27          instance.populate_initial_data(ContentType.objects.filter(pk__in=pk_set))
+   28  
+   29  
+   30  def handle_cf_removed_obj_types(instance, action, pk_set, **kwargs):
+   31      &quot;&quot;&quot;
+   32      Handle the cleanup of old custom field data when a CustomField is removed from one or more ContentTypes.
+   33      &quot;&quot;&quot;
+  ... (range continues to line 56)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/customfields.py#L254-L258" target="_blank" rel="noopener">netbox/extras/models/customfields.py:254-258</a><pre>  254      def __init__(self, *args, **kwargs):
+  255          super().__init__(*args, **kwargs)
+  256  
+  257          # Cache instance&#x27;s original name so we can check later whether it has changed
+  258          self._name = self.__dict__.get(&#x27;name&#x27;)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v7" value="yes" data-id="7"> supported</label><label class="tick"><input type="radio" name="v7" value="no" data-id="7"> not supported</label><label class="tick"><input type="radio" name="v7" value="unsure" data-id="7"> unsure</label></div></article><article class="claim" id="c8"><div class="num">8</div><div class="main">
+<div class="src">ipam / adrs.md line 57</div>
+<div class="text">**Decision.** `prep_table_data()` injects placeholders (`Prefix(prefix=p, status=None)`, `AvailableIPSpace`, VLAN dicts) only when the request has no search and no explicit ordering; templates test `record.pk`, and `PrefixUtilizationColumn` renders nothing for pk-less rows.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/views.py#L580-L585" target="_blank" rel="noopener">netbox/ipam/views.py:580-585</a><pre>  580      def prep_table_data(self, request, queryset, parent):
+  581          # Determine whether to show assigned prefixes, available prefixes, or both
+  582          show_available = bool(request.GET.get(&#x27;show_available&#x27;, &#x27;true&#x27;) == &#x27;true&#x27;)
+  583          show_assigned = bool(request.GET.get(&#x27;show_assigned&#x27;, &#x27;true&#x27;) == &#x27;true&#x27;)
+  584  
+  585          return add_requested_prefixes(parent.prefix, queryset, show_available, show_assigned)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/views.py#L641-L644" target="_blank" rel="noopener">netbox/ipam/views.py:641-644</a><pre>  641      def prep_table_data(self, request, queryset, parent):
+  642          if not request.GET.get(&#x27;q&#x27;) and not get_table_ordering(request, self.table):
+  643              return annotate_ip_space(parent)
+  644          return queryset</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/views.py#L1036-L1039" target="_blank" rel="noopener">netbox/ipam/views.py:1036-1039</a><pre> 1036      def prep_table_data(self, request, queryset, parent):
+ 1037          if not get_table_ordering(request, self.table):
+ 1038              return add_available_vlans(queryset, parent)
+ 1039          return queryset</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/utils.py#L36-L63" target="_blank" rel="noopener">netbox/ipam/utils.py:36-63</a><pre>   36  def add_requested_prefixes(parent, prefix_list, show_available=True, show_assigned=True):
+   37      &quot;&quot;&quot;
+   38      Return a list of requested prefixes using show_available, show_assigned filters. If available prefixes are
+   39      requested, create fake Prefix objects for all unallocated space within a prefix.
+   40  
+   41      :param parent: Parent Prefix instance
+   42      :param prefix_list: Child prefixes list
+   43      :param show_available: Include available prefixes.
+   44      :param show_assigned: Show assigned prefixes.
+   45      &quot;&quot;&quot;
+   46      child_prefixes = []
+   47  
+  ... (range continues to line 63)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/utils.py#L177-L188" target="_blank" rel="noopener">netbox/ipam/utils.py:177-188</a><pre>  177  def add_available_vlans(vlans, vlan_group):
+  178      &quot;&quot;&quot;
+  179      Create fake records for all gaps between used VLANs
+  180      &quot;&quot;&quot;
+  181      new_vlans = []
+  182      for vid_range in vlan_group.vid_ranges:
+  183          new_vlans.extend(available_vlans_from_range(vlans, vlan_group, vid_range))
+  184  
+  185      vlans = list(vlans) + new_vlans
+  186      vlans.sort(key=lambda v: v.vid if type(v) is VLAN else v[&#x27;vid&#x27;])
+  187  
+  188      return vlans</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/tables/ip.py#L142-L154" target="_blank" rel="noopener">netbox/ipam/tables/ip.py:142-154</a><pre>  142  class PrefixUtilizationColumn(columns.UtilizationColumn):
+  143      &quot;&quot;&quot;
+  144      Extend UtilizationColumn to allow disabling the warning &amp; danger thresholds for prefixes
+  145      marked as fully utilized.
+  146      &quot;&quot;&quot;
+  147      template_code = &quot;&quot;&quot;
+  148      {% load helpers %}
+  149      {% if record.pk and record.mark_utilized %}
+  150        {% utilization_graph value warning_threshold=0 danger_threshold=0 %}
+  151      {% elif record.pk %}
+  152        {% utilization_graph value %}
+  153      {% endif %}
+  ... (range continues to line 154)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v8" value="yes" data-id="8"> supported</label><label class="tick"><input type="radio" name="v8" value="no" data-id="8"> not supported</label><label class="tick"><input type="radio" name="v8" value="unsure" data-id="8"> unsure</label></div></article><article class="claim" id="c9"><div class="num">9</div><div class="main">
+<div class="src">ipam / patterns.md line 53</div>
+<div class="text">Exception: IPAddress roles in `IPADDRESS_ROLES_NONUNIQUE` are exempt; the detail view likewise hides anycast duplicates.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/constants.py#L40-L48" target="_blank" rel="noopener">netbox/ipam/constants.py:40-48</a><pre>   40  IPADDRESS_ROLES_NONUNIQUE = (
+   41      # IPAddress roles which are exempt from unique address enforcement
+   42      IPAddressRoleChoices.ROLE_ANYCAST,
+   43      IPAddressRoleChoices.ROLE_VIP,
+   44      IPAddressRoleChoices.ROLE_VRRP,
+   45      IPAddressRoleChoices.ROLE_HSRP,
+   46      IPAddressRoleChoices.ROLE_GLBP,
+   47      IPAddressRoleChoices.ROLE_CARP,
+   48  )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/models/ip.py#L877-L880" target="_blank" rel="noopener">netbox/ipam/models/ip.py:877-880</a><pre>  877                  if duplicate_ips and (
+  878                          self.role not in IPADDRESS_ROLES_NONUNIQUE or
+  879                          any(dip.role not in IPADDRESS_ROLES_NONUNIQUE for dip in duplicate_ips)
+  880                  ):</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/views.py#L816-L818" target="_blank" rel="noopener">netbox/ipam/views.py:816-818</a><pre>  816          # Exclude anycast IPs if this IP is anycast
+  817          if instance.role == IPAddressRoleChoices.ROLE_ANYCAST:
+  818              duplicate_ips = duplicate_ips.exclude(role=IPAddressRoleChoices.ROLE_ANYCAST)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v9" value="yes" data-id="9"> supported</label><label class="tick"><input type="radio" name="v9" value="no" data-id="9"> not supported</label><label class="tick"><input type="radio" name="v9" value="unsure" data-id="9"> unsure</label></div></article><article class="claim" id="c10"><div class="num">10</div><div class="main">
+<div class="src">ipam / patterns.md line 71</div>
+<div class="text">Model serializers extend `NetBoxModelSerializer`, nest FKs with `nested=True`, expose `family` as a read-only `ChoiceField`, use `IPNetworkField`/`IPAddressField` serializer fields, and declare `brief_fields`. Instances: Aggregate, Prefix, IPRange, IPAddress.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/api/serializers_/ip.py#L31-L43" target="_blank" rel="noopener">netbox/ipam/api/serializers_/ip.py:31-43</a><pre>   31  class AggregateSerializer(NetBoxModelSerializer):
+   32      family = ChoiceField(choices=IPAddressFamilyChoices, read_only=True)
+   33      rir = RIRSerializer(nested=True)
+   34      tenant = TenantSerializer(nested=True, required=False, allow_null=True)
+   35      prefix = IPNetworkField()
+   36  
+   37      class Meta:
+   38          model = Aggregate
+   39          fields = [
+   40              &#x27;id&#x27;, &#x27;url&#x27;, &#x27;display_url&#x27;, &#x27;display&#x27;, &#x27;family&#x27;, &#x27;prefix&#x27;, &#x27;rir&#x27;, &#x27;tenant&#x27;, &#x27;date_added&#x27;, &#x27;description&#x27;,
+   41              &#x27;comments&#x27;, &#x27;tags&#x27;, &#x27;custom_fields&#x27;, &#x27;created&#x27;, &#x27;last_updated&#x27;,
+   42          ]
+  ... (range continues to line 43)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/api/serializers_/ip.py#L46-L74" target="_blank" rel="noopener">netbox/ipam/api/serializers_/ip.py:46-74</a><pre>   46  class PrefixSerializer(NetBoxModelSerializer):
+   47      family = ChoiceField(choices=IPAddressFamilyChoices, read_only=True)
+   48      vrf = VRFSerializer(nested=True, required=False, allow_null=True)
+   49      scope_type = ContentTypeField(
+   50          queryset=ContentType.objects.filter(
+   51              model__in=LOCATION_SCOPE_TYPES
+   52          ),
+   53          allow_null=True,
+   54          required=False,
+   55          default=None
+   56      )
+   57      scope_id = serializers.IntegerField(allow_null=True, required=False, default=None)
+  ... (range continues to line 74)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/api/serializers_/ip.py#L136-L152" target="_blank" rel="noopener">netbox/ipam/api/serializers_/ip.py:136-152</a><pre>  136  class IPRangeSerializer(NetBoxModelSerializer):
+  137      family = ChoiceField(choices=IPAddressFamilyChoices, read_only=True)
+  138      start_address = IPAddressField()
+  139      end_address = IPAddressField()
+  140      vrf = VRFSerializer(nested=True, required=False, allow_null=True)
+  141      tenant = TenantSerializer(nested=True, required=False, allow_null=True)
+  142      status = ChoiceField(choices=IPRangeStatusChoices, required=False)
+  143      role = RoleSerializer(nested=True, required=False, allow_null=True)
+  144  
+  145      class Meta:
+  146          model = IPRange
+  147          fields = [
+  ... (range continues to line 152)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/api/serializers_/ip.py#L159-L182" target="_blank" rel="noopener">netbox/ipam/api/serializers_/ip.py:159-182</a><pre>  159  class IPAddressSerializer(NetBoxModelSerializer):
+  160      family = ChoiceField(choices=IPAddressFamilyChoices, read_only=True)
+  161      address = IPAddressField()
+  162      vrf = VRFSerializer(nested=True, required=False, allow_null=True)
+  163      tenant = TenantSerializer(nested=True, required=False, allow_null=True)
+  164      status = ChoiceField(choices=IPAddressStatusChoices, required=False)
+  165      role = ChoiceField(choices=IPAddressRoleChoices, allow_blank=True, required=False)
+  166      assigned_object_type = ContentTypeField(
+  167          queryset=ContentType.objects.filter(IPADDRESS_ASSIGNMENT_MODELS),
+  168          required=False,
+  169          allow_null=True
+  170      )
+  ... (range continues to line 182)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v10" value="yes" data-id="10"> supported</label><label class="tick"><input type="radio" name="v10" value="no" data-id="10"> not supported</label><label class="tick"><input type="radio" name="v10" value="unsure" data-id="10"> unsure</label></div></article><article class="claim" id="c11"><div class="num">11</div><div class="main">
+<div class="src">netbox / adrs.md line 13</div>
+<div class="text">- **Decision.** Every read path applies `queryset.restrict(user, action)` (`BaseViewSet.initial`, generic views, feature views, GraphQL `get_queryset`, the HTMX selector); every write path saves inside `transaction.atomic()` and then checks the saved object is still matched by the restricted queryset, raising `PermissionsViolation` or `ObjectDoesNotExist` to roll the transaction back.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/api/viewsets/__init__.py#L40-L46" target="_blank" rel="noopener">netbox/netbox/api/viewsets/__init__.py:40-46</a><pre>   40      def initial(self, request, *args, **kwargs):
+   41          super().initial(request, *args, **kwargs)
+   42  
+   43          # Restrict the view&#x27;s QuerySet to allow only the permitted objects
+   44          if request.user.is_authenticated:
+   45              if action := HTTP_ACTIONS[request.method]:
+   46                  self.queryset = self.queryset.restrict(request.user, action)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/graphql/types.py#L28-L34" target="_blank" rel="noopener">netbox/netbox/graphql/types.py:28-34</a><pre>   28      @classmethod
+   29      def get_queryset(cls, queryset, info, **kwargs):
+   30          # Enforce object permissions on the queryset
+   31          if hasattr(queryset, &#x27;restrict&#x27;):
+   32              return queryset.restrict(info.context.request.user, &#x27;view&#x27;)
+   33          else:
+   34              return queryset</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/views/generic/object_views.py#L284-L291" target="_blank" rel="noopener">netbox/netbox/views/generic/object_views.py:284-291</a><pre>  284              try:
+  285                  with transaction.atomic(using=router.db_for_write(model)):
+  286                      object_created = form.instance.pk is None
+  287                      obj = form.save()
+  288  
+  289                      # Check that the new object conforms with any assigned object-level permissions
+  290                      if not self.queryset.filter(pk=obj.pk).exists():
+  291                          raise PermissionsViolation()</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/api/viewsets/mixins.py#L167-L180" target="_blank" rel="noopener">netbox/netbox/api/viewsets/mixins.py:167-180</a><pre>  167  class ObjectValidationMixin:
+  168  
+  169      def _validate_objects(self, instance):
+  170          &quot;&quot;&quot;
+  171          Check that the provided instance or list of instances are matched by the current queryset. This confirms that
+  172          any newly created or modified objects abide by the attributes granted by any applicable ObjectPermissions.
+  173          &quot;&quot;&quot;
+  174          if type(instance) is list:
+  175              # Check that all instances are still included in the view&#x27;s queryset
+  176              conforming_count = self.queryset.filter(pk__in=[obj.pk for obj in instance]).count()
+  177              if conforming_count != len(instance):
+  178                  raise ObjectDoesNotExist
+  ... (range continues to line 180)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v11" value="yes" data-id="11"> supported</label><label class="tick"><input type="radio" name="v11" value="no" data-id="11"> not supported</label><label class="tick"><input type="radio" name="v11" value="unsure" data-id="11"> unsure</label></div></article><article class="claim" id="c12"><div class="num">12</div><div class="main">
+<div class="src">netbox / adrs.md line 47</div>
+<div class="text">- **Context.** The abstract base models need `CustomField`, `ObjectChange`, `DataFile`, `AutoSyncRecord` and `ContactAssignment`, all of which subclass those same base models.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/models/features.py#L202" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;netbox.models.features&quot;,
+ &quot;dst&quot;: &quot;extras.models&quot;,
+ &quot;raw&quot;: &quot;extras.models&quot;,
+ &quot;lineno&quot;: 202,
+ &quot;path&quot;: &quot;netbox/netbox/models/features.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/extras/models/models.py#L22" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;extras.models.models&quot;,
+ &quot;dst&quot;: &quot;netbox.models&quot;,
+ &quot;raw&quot;: &quot;netbox.models&quot;,
+ &quot;lineno&quot;: 22,
+ &quot;path&quot;: &quot;netbox/extras/models/models.py&quot;
+}</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v12" value="yes" data-id="12"> supported</label><label class="tick"><input type="radio" name="v12" value="no" data-id="12"> not supported</label><label class="tick"><input type="radio" name="v12" value="unsure" data-id="12"> unsure</label></div></article><article class="claim" id="c13"><div class="num">13</div><div class="main">
+<div class="src">netbox / map.md line 36</div>
+<div class="text">- The `dcim`/`ipam`/`circuits`/`virtualization`/`vpn`/`wireless` edges come almost entirely from `graphql.schema` (which imports every app&#x27;s Query), `urls` and tests; the runtime code otherwise depends only on `utilities`, `core`, `extras`, `users` and `tenancy`.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/graphql/schema.py#L9" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;netbox.graphql.schema&quot;,
+ &quot;dst&quot;: &quot;dcim.graphql.schema&quot;,
+ &quot;raw&quot;: &quot;dcim.graphql.schema&quot;,
+ &quot;lineno&quot;: 9,
+ &quot;path&quot;: &quot;netbox/netbox/graphql/schema.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/graphql/schema.py#L17" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;netbox.graphql.schema&quot;,
+ &quot;dst&quot;: &quot;wireless.graphql.schema&quot;,
+ &quot;raw&quot;: &quot;wireless.graphql.schema&quot;,
+ &quot;lineno&quot;: 17,
+ &quot;path&quot;: &quot;netbox/netbox/graphql/schema.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/netbox/tests/test_views.py#L6" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;netbox.tests.test_views&quot;,
+ &quot;dst&quot;: &quot;dcim.models&quot;,
+ &quot;raw&quot;: &quot;dcim.models&quot;,
+ &quot;lineno&quot;: 6,
+ &quot;path&quot;: &quot;netbox/netbox/tests/test_views.py&quot;
+}</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v13" value="yes" data-id="13"> supported</label><label class="tick"><input type="radio" name="v13" value="no" data-id="13"> not supported</label><label class="tick"><input type="radio" name="v13" value="unsure" data-id="13"> unsure</label></div></article><article class="claim" id="c14"><div class="num">14</div><div class="main">
+<div class="src">utilities / patterns.md line 21</div>
+<div class="text">Where a utility needs a concrete model from `core`, `extras` or `users`, it resolves it at call time with `apps.get_model()` or a function-local import rather than a module-level import: `TableConfig` in `tables.py`, `DataFile` in `jinja2.py`, `User` and `ObjectType` in `permissions.py`, `Tag` in `serialization.py`, `CustomValidator` in `json.py`. `socks.py` does the same for the optional `python_socks` dependency.</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/tables.py#L22-L22" target="_blank" rel="noopener">netbox/utilities/tables.py:22</a><pre>   22      TableConfig = apps.get_model(&#x27;extras&#x27;, &#x27;TableConfig&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/jinja2.py#L23-L23" target="_blank" rel="noopener">netbox/utilities/jinja2.py:23</a><pre>   23          DataFile = apps.get_model(&#x27;core&#x27;, &#x27;DataFile&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/permissions.py#L55-L55" target="_blank" rel="noopener">netbox/utilities/permissions.py:55</a><pre>   55      from core.models import ObjectType</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/permissions.py#L96-L96" target="_blank" rel="noopener">netbox/utilities/permissions.py:96</a><pre>   96      User = apps.get_model(&#x27;users.User&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/serialization.py#L68-L68" target="_blank" rel="noopener">netbox/utilities/serialization.py:68</a><pre>   68          Tag = apps.get_model(&#x27;extras&#x27;, &#x27;Tag&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/json.py#L26-L26" target="_blank" rel="noopener">netbox/utilities/json.py:26</a><pre>   26          from extras.validators import CustomValidator</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/utilities/socks.py#L26-L33" target="_blank" rel="noopener">netbox/utilities/socks.py:26-33</a><pre>   26          try:
+   27              from python_socks.sync import Proxy
+   28          except ModuleNotFoundError as e:
+   29              logger.info(
+   30                  &quot;Configuring an HTTP proxy using SOCKS requires the python_socks library. Check that it has been &quot;
+   31                  &quot;installed.&quot;
+   32              )
+   33              raise e</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v14" value="yes" data-id="14"> supported</label><label class="tick"><input type="radio" name="v14" value="no" data-id="14"> not supported</label><label class="tick"><input type="radio" name="v14" value="unsure" data-id="14"> unsure</label></div></article><article class="claim" id="c15"><div class="num">15</div><div class="main">
+<div class="src">virtualization / adrs.md line 55</div>
+<div class="text">**Decision.** Migration 0048 adds `primary_mac_address` (OneToOne to `dcim.MACAddress`, inherited via `BaseInterface`), creates one `MACAddress` per existing value assigned back to the interface, then drops the column. `VMInterface` keeps a `mac_addresses` GenericRelation; the serializer exposes read-only `mac_address` for older clients plus writable `primary_mac_address` and read-only `mac_addresses`; filtering by MAC traverses `mac_addresses__mac_address`     .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/migrations/0048_populate_mac_addresses.py#L7-L53" target="_blank" rel="noopener">netbox/virtualization/migrations/0048_populate_mac_addresses.py:7-53</a><pre>    7  def populate_mac_addresses(apps, schema_editor):
+    8      ContentType = apps.get_model(&#x27;contenttypes&#x27;, &#x27;ContentType&#x27;)
+    9      VMInterface = apps.get_model(&#x27;virtualization&#x27;, &#x27;VMInterface&#x27;)
+   10      MACAddress = apps.get_model(&#x27;dcim&#x27;, &#x27;MACAddress&#x27;)
+   11      db_alias = schema_editor.connection.alias
+   12      vminterface_ct = ContentType.objects.get_for_model(VMInterface)
+   13  
+   14      mac_addresses = [
+   15          MACAddress(
+   16              mac_address=vminterface.mac_address,
+   17              assigned_object_type=vminterface_ct,
+   18              assigned_object_id=vminterface.pk
+  ... (range continues to line 53)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/models/virtualmachines.py#L356-L361" target="_blank" rel="noopener">netbox/virtualization/models/virtualmachines.py:356-361</a><pre>  356      mac_addresses = GenericRelation(
+  357          to=&#x27;dcim.MACAddress&#x27;,
+  358          content_type_field=&#x27;assigned_object_type&#x27;,
+  359          object_id_field=&#x27;assigned_object_id&#x27;,
+  360          related_query_name=&#x27;vminterface&#x27;
+  361      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/api/serializers_/virtualmachines.py#L99-L102" target="_blank" rel="noopener">netbox/virtualization/api/serializers_/virtualmachines.py:99-102</a><pre>   99      # Maintains backward compatibility with NetBox &lt;v4.2
+  100      mac_address = serializers.CharField(allow_null=True, read_only=True)
+  101      primary_mac_address = MACAddressSerializer(nested=True, required=False, allow_null=True)
+  102      mac_addresses = MACAddressSerializer(many=True, nested=True, read_only=True, allow_null=True)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/filtersets.py#L196-L199" target="_blank" rel="noopener">netbox/virtualization/filtersets.py:196-199</a><pre>  196      mac_address = MultiValueMACAddressFilter(
+  197          field_name=&#x27;interfaces__mac_addresses__mac_address&#x27;,
+  198          label=_(&#x27;MAC address&#x27;),
+  199      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/filtersets.py#L268-L282" target="_blank" rel="noopener">netbox/virtualization/filtersets.py:268-282</a><pre>  268      mac_address = MultiValueMACAddressFilter(
+  269          field_name=&#x27;mac_addresses__mac_address&#x27;,
+  270          label=_(&#x27;MAC address&#x27;),
+  271      )
+  272      primary_mac_address_id = django_filters.ModelMultipleChoiceFilter(
+  273          field_name=&#x27;primary_mac_address&#x27;,
+  274          queryset=MACAddress.objects.all(),
+  275          label=_(&#x27;Primary MAC address (ID)&#x27;),
+  276      )
+  277      primary_mac_address = django_filters.ModelMultipleChoiceFilter(
+  278          field_name=&#x27;primary_mac_address__mac_address&#x27;,
+  279          queryset=MACAddress.objects.all(),
+  ... (range continues to line 282)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v15" value="yes" data-id="15"> supported</label><label class="tick"><input type="radio" name="v15" value="no" data-id="15"> not supported</label><label class="tick"><input type="radio" name="v15" value="unsure" data-id="15"> unsure</label></div></article><article class="claim" id="c16"><div class="num">16</div><div class="main">
+<div class="src">virtualization / adrs.md line 65</div>
+<div class="text">**Consequences.** `dcim` is 43 of the outbound import edges and 16 of the inbound ones; a change to `BaseInterface` or the scope mixins lands here automatically, and the form/filterset churn tracks `dcim`/`ipam` field additions (Q-in-Q, VLAN translation) rather than local features    .</div>
+<div class="ev"><span class="btn muted">graph row (no single file)</span><pre>{
+ &quot;subsystem&quot;: &quot;virtualization&quot;,
+ &quot;modules&quot;: 42,
+ &quot;loc_code&quot;: 6077,
+ &quot;loc_data&quot;: 0,
+ &quot;test_modules&quot;: 5
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/migrations/0042_vminterface_vlan_translation_policy.py#L1-L1" target="_blank" rel="noopener">netbox/virtualization/migrations/0042_vminterface_vlan_translation_policy.py:1</a><pre>    1  import django.db.models.deletion</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/migrations/0043_qinq_svlan.py#L12-L14" target="_blank" rel="noopener">netbox/virtualization/migrations/0043_qinq_svlan.py:12-14</a><pre>   12          migrations.AddField(
+   13              model_name=&#x27;vminterface&#x27;,
+   14              name=&#x27;qinq_svlan&#x27;,</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/forms/filtersets.py" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;path&quot;: &quot;netbox/virtualization/forms/filtersets.py&quot;,
+ &quot;module&quot;: &quot;virtualization.forms.filtersets&quot;,
+ &quot;commits&quot;: 38,
+ &quot;authors&quot;: 10,
+ &quot;first_commit&quot;: &quot;2021-09-28&quot;,
+ &quot;last_commit&quot;: &quot;2025-04-15&quot;
+}</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v16" value="yes" data-id="16"> supported</label><label class="tick"><input type="radio" name="v16" value="no" data-id="16"> not supported</label><label class="tick"><input type="radio" name="v16" value="unsure" data-id="16"> unsure</label></div></article><article class="claim" id="c17"><div class="num">17</div><div class="main">
+<div class="src">vpn / map.md line 51</div>
+<div class="text">- dcim, ipam and virtualization interface/VLAN serializers embed a nested L2VPNTerminationSerializer as a read-only `l2vpn_termination` field    .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/api/serializers_/device_components.py#L18" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;dcim.api.serializers_.device_components&quot;,
+ &quot;dst&quot;: &quot;vpn.api.serializers_.l2vpn&quot;,
+ &quot;raw&quot;: &quot;vpn.api.serializers_.l2vpn&quot;,
+ &quot;lineno&quot;: 18,
+ &quot;path&quot;: &quot;netbox/dcim/api/serializers_/device_components.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/dcim/api/serializers_/device_components.py#L204-L204" target="_blank" rel="noopener">netbox/dcim/api/serializers_/device_components.py:204</a><pre>  204      l2vpn_termination = L2VPNTerminationSerializer(nested=True, read_only=True, allow_null=True)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/ipam/api/serializers_/vlans.py#L13" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;ipam.api.serializers_.vlans&quot;,
+ &quot;dst&quot;: &quot;vpn.api.serializers_.l2vpn&quot;,
+ &quot;raw&quot;: &quot;vpn.api.serializers_.l2vpn&quot;,
+ &quot;lineno&quot;: 13,
+ &quot;path&quot;: &quot;netbox/ipam/api/serializers_/vlans.py&quot;
+}</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/virtualization/api/serializers_/virtualmachines.py#L20" target="_blank" rel="noopener">graph row, open source</a><pre>{
+ &quot;src&quot;: &quot;virtualization.api.serializers_.virtualmachines&quot;,
+ &quot;dst&quot;: &quot;vpn.api.serializers_.l2vpn&quot;,
+ &quot;raw&quot;: &quot;vpn.api.serializers_.l2vpn&quot;,
+ &quot;lineno&quot;: 20,
+ &quot;path&quot;: &quot;netbox/virtualization/api/serializers_/virtualmachines.py&quot;
+}</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v17" value="yes" data-id="17"> supported</label><label class="tick"><input type="radio" name="v17" value="no" data-id="17"> not supported</label><label class="tick"><input type="radio" name="v17" value="unsure" data-id="17"> unsure</label></div></article><article class="claim" id="c18"><div class="num">18</div><div class="main">
+<div class="src">vpn / patterns.md line 45</div>
+<div class="text">Choice fields are wrapped in `ChoiceField(choices=...)`  . FKs are the target serializer with `nested=True`  . M2Ms use SerializedPKRelatedField  . The GFK target is a read-only SerializerMethodField that dispatches through `get_serializer_for_model` with `nested=True`  . Every Meta declares `brief_fields`  .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/crypto.py#L16-L28" target="_blank" rel="noopener">netbox/vpn/api/serializers_/crypto.py:16-28</a><pre>   16      authentication_method = ChoiceField(
+   17          choices=AuthenticationMethodChoices
+   18      )
+   19      encryption_algorithm = ChoiceField(
+   20          choices=EncryptionAlgorithmChoices
+   21      )
+   22      authentication_algorithm = ChoiceField(
+   23          choices=AuthenticationAlgorithmChoices,
+   24          required=False
+   25      )
+   26      group = ChoiceField(
+   27          choices=DHGroupChoices
+  ... (range continues to line 28)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/tunnels.py#L40-L51" target="_blank" rel="noopener">netbox/vpn/api/serializers_/tunnels.py:40-51</a><pre>   40      status = ChoiceField(
+   41          choices=TunnelStatusChoices
+   42      )
+   43      group = TunnelGroupSerializer(
+   44          nested=True,
+   45          required=False,
+   46          allow_null=True,
+   47          default=None
+   48      )
+   49      encapsulation = ChoiceField(
+   50          choices=TunnelEncapsulationChoices
+   51      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/crypto.py#L111-L116" target="_blank" rel="noopener">netbox/vpn/api/serializers_/crypto.py:111-116</a><pre>  111      ike_policy = IKEPolicySerializer(
+  112          nested=True
+  113      )
+  114      ipsec_policy = IPSecPolicySerializer(
+  115          nested=True
+  116      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/tunnels.py#L43-L61" target="_blank" rel="noopener">netbox/vpn/api/serializers_/tunnels.py:43-61</a><pre>   43      group = TunnelGroupSerializer(
+   44          nested=True,
+   45          required=False,
+   46          allow_null=True,
+   47          default=None
+   48      )
+   49      encapsulation = ChoiceField(
+   50          choices=TunnelEncapsulationChoices
+   51      )
+   52      ipsec_profile = IPSecProfileSerializer(
+   53          nested=True,
+   54          required=False,
+  ... (range continues to line 61)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/crypto.py#L48-L54" target="_blank" rel="noopener">netbox/vpn/api/serializers_/crypto.py:48-54</a><pre>   48      proposals = SerializedPKRelatedField(
+   49          queryset=IKEProposal.objects.all(),
+   50          serializer=IKEProposalSerializer,
+   51          nested=True,
+   52          required=False,
+   53          many=True
+   54      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/l2vpn.py#L22-L35" target="_blank" rel="noopener">netbox/vpn/api/serializers_/l2vpn.py:22-35</a><pre>   22      import_targets = SerializedPKRelatedField(
+   23          queryset=RouteTarget.objects.all(),
+   24          serializer=RouteTargetSerializer,
+   25          nested=True,
+   26          required=False,
+   27          many=True
+   28      )
+   29      export_targets = SerializedPKRelatedField(
+   30          queryset=RouteTarget.objects.all(),
+   31          serializer=RouteTargetSerializer,
+   32          nested=True,
+   33          required=False,
+  ... (range continues to line 35)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/tunnels.py#L103-L109" target="_blank" rel="noopener">netbox/vpn/api/serializers_/tunnels.py:103-109</a><pre>  103      @extend_schema_field(serializers.JSONField(allow_null=True))
+  104      def get_termination(self, obj):
+  105          if not obj.termination:
+  106              return None
+  107          serializer = get_serializer_for_model(obj.termination)
+  108          context = {&#x27;request&#x27;: self.context[&#x27;request&#x27;]}
+  109          return serializer(obj.termination, nested=True, context=context).data</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/l2vpn.py#L65-L69" target="_blank" rel="noopener">netbox/vpn/api/serializers_/l2vpn.py:65-69</a><pre>   65      @extend_schema_field(serializers.JSONField(allow_null=True))
+   66      def get_assigned_object(self, instance):
+   67          serializer = get_serializer_for_model(instance.assigned_object)
+   68          context = {&#x27;request&#x27;: self.context[&#x27;request&#x27;]}
+   69          return serializer(instance.assigned_object, nested=True, context=context).data</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/tunnels.py#L36-L36" target="_blank" rel="noopener">netbox/vpn/api/serializers_/tunnels.py:36</a><pre>   36          brief_fields = (&#x27;id&#x27;, &#x27;url&#x27;, &#x27;display&#x27;, &#x27;name&#x27;, &#x27;slug&#x27;, &#x27;description&#x27;, &#x27;tunnel_count&#x27;)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/api/serializers_/l2vpn.py#L45-L45" target="_blank" rel="noopener">netbox/vpn/api/serializers_/l2vpn.py:45</a><pre>   45          brief_fields = (&#x27;id&#x27;, &#x27;url&#x27;, &#x27;display&#x27;, &#x27;identifier&#x27;, &#x27;name&#x27;, &#x27;slug&#x27;, &#x27;type&#x27;, &#x27;description&#x27;)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v18" value="yes" data-id="18"> supported</label><label class="tick"><input type="radio" name="v18" value="no" data-id="18"> not supported</label><label class="tick"><input type="radio" name="v18" value="unsure" data-id="18"> unsure</label></div></article><article class="claim" id="c19"><div class="num">19</div><div class="main">
+<div class="src">vpn / patterns.md line 63</div>
+<div class="text">Models with dependencies also declare `prerequisite_models` (IKEPolicy, IPSecProfile, both terminations)   .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/models/crypto.py#L98-L100" target="_blank" rel="noopener">netbox/vpn/models/crypto.py:98-100</a><pre>   98      prerequisite_models = (
+   99          &#x27;vpn.IKEProposal&#x27;,
+  100      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/models/tunnels.py#L135-L137" target="_blank" rel="noopener">netbox/vpn/models/tunnels.py:135-137</a><pre>  135      prerequisite_models = (
+  136          &#x27;vpn.Tunnel&#x27;,
+  137      )</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/models/l2vpn.py#L105-L107" target="_blank" rel="noopener">netbox/vpn/models/l2vpn.py:105-107</a><pre>  105      prerequisite_models = (
+  106          &#x27;vpn.L2VPN&#x27;,
+  107      )</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v19" value="yes" data-id="19"> supported</label><label class="tick"><input type="radio" name="v19" value="no" data-id="19"> not supported</label><label class="tick"><input type="radio" name="v19" value="unsure" data-id="19"> unsure</label></div></article><article class="claim" id="c20"><div class="num">20</div><div class="main">
+<div class="src">vpn / patterns.md line 81</div>
+<div class="text">Bulk-edit forms wrap ChoiceSets with `add_blank_choice`, set `required=False` on everything, and list `nullable_fields`  .</div>
+<div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/forms/bulk_edit.py#L37-L82" target="_blank" rel="noopener">netbox/vpn/forms/bulk_edit.py:37-82</a><pre>   37  class TunnelBulkEditForm(NetBoxModelBulkEditForm):
+   38      status = forms.ChoiceField(
+   39          label=_(&#x27;Status&#x27;),
+   40          choices=add_blank_choice(TunnelStatusChoices),
+   41          required=False
+   42      )
+   43      group = DynamicModelChoiceField(
+   44          queryset=TunnelGroup.objects.all(),
+   45          label=_(&#x27;Tunnel group&#x27;),
+   46          required=False
+   47      )
+   48      encapsulation = forms.ChoiceField(
+  ... (range continues to line 82)</pre></div><div class="ev"><a class="btn" href="https://github.com/netbox-community/netbox/blob/ea4c205a37baa3e58e6e481158c15c6154cceeff/netbox/vpn/forms/bulk_edit.py#L95-L136" target="_blank" rel="noopener">netbox/vpn/forms/bulk_edit.py:95-136</a><pre>   95  class IKEProposalBulkEditForm(NetBoxModelBulkEditForm):
+   96      authentication_method = forms.ChoiceField(
+   97          label=_(&#x27;Authentication method&#x27;),
+   98          choices=add_blank_choice(AuthenticationMethodChoices),
+   99          required=False
+  100      )
+  101      encryption_algorithm = forms.ChoiceField(
+  102          label=_(&#x27;Encryption algorithm&#x27;),
+  103          choices=add_blank_choice(EncryptionAlgorithmChoices),
+  104          required=False
+  105      )
+  106      authentication_algorithm = forms.ChoiceField(
+  ... (range continues to line 136)</pre></div>
+</div><div class="side"><label class="tick"><input type="radio" name="v20" value="yes" data-id="20"> supported</label><label class="tick"><input type="radio" name="v20" value="no" data-id="20"> not supported</label><label class="tick"><input type="radio" name="v20" value="unsure" data-id="20"> unsure</label></div></article>
+</div>
+<script>(function(){var key='gate3marks';function load(){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch(e){return {}}}function save(o){try{localStorage.setItem(key,JSON.stringify(o))}catch(e){}}
+var st=load();function tally(){var c={yes:0,no:0,unsure:0};Object.values(st).forEach(function(v){c[v]=(c[v]||0)+1});['yes','no','unsure'].forEach(function(k){document.getElementById(k).textContent=c[k]})}
+document.querySelectorAll('.tick input').forEach(function(r){if(st[r.dataset.id]===r.value)r.checked=true;r.addEventListener('change',function(){st[r.dataset.id]=r.value;save(st);tally()})});tally();})();</script>

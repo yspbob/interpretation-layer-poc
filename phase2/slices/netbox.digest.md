@@ -1,0 +1,451 @@
+# Fact-graph digest: subsystem `netbox` at T0 ea4c205
+
+Summary row [fg:subsystems:netbox]: {'subsystem': 'netbox', 'modules': 116, 'loc_code': 14106, 'loc_data': 0, 'test_modules': 33}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- netbox | netbox/netbox/__init__.py | 1 | 0 | 0 |  | 
+- netbox.api | netbox/netbox/api/__init__.py | 1 | 0 | 0 |  | 
+- netbox.api.authentication | netbox/netbox/api/authentication.py | 135 | 3 | 0 |  | 
+- netbox.api.exceptions | netbox/netbox/api/exceptions.py | 15 | 3 | 0 |  | 
+- netbox.api.features | netbox/netbox/api/features.py | 30 | 1 | 0 |  | 
+- netbox.api.fields | netbox/netbox/api/fields.py | 192 | 7 | 0 |  | 
+- netbox.api.metadata | netbox/netbox/api/metadata.py | 56 | 2 | 0 |  | 
+- netbox.api.pagination | netbox/netbox/api/pagination.py | 113 | 3 | 0 |  | 
+- netbox.api.renderers | netbox/netbox/api/renderers.py | 29 | 2 | 0 |  | 
+- netbox.api.routers | netbox/netbox/api/routers.py | 30 | 1 | 0 |  | 
+- netbox.api.serializers | netbox/netbox/api/serializers/__init__.py | 29 | 3 | 0 |  | 
+- netbox.api.serializers.base | netbox/netbox/api/serializers/base.py | 114 | 2 | 0 |  | 
+- netbox.api.serializers.features | netbox/netbox/api/serializers/features.py | 57 | 2 | 0 |  | 
+- netbox.api.serializers.fields | netbox/netbox/api/serializers/fields.py | 55 | 3 | 0 |  | 
+- netbox.api.serializers.generic | netbox/netbox/api/serializers/generic.py | 45 | 1 | 0 |  | 
+- netbox.api.serializers.nested | netbox/netbox/api/serializers/nested.py | 28 | 2 | 0 |  | 
+- netbox.api.views | netbox/netbox/api/views.py | 75 | 2 | 0 |  | 
+- netbox.api.viewsets | netbox/netbox/api/viewsets/__init__.py | 231 | 4 | 0 |  | 
+- netbox.api.viewsets.mixins | netbox/netbox/api/viewsets/mixins.py | 181 | 6 | 0 |  | 
+- netbox.authentication | netbox/netbox/authentication/__init__.py | 409 | 4 | 3 |  | 
+- netbox.authentication.misc | netbox/netbox/authentication/misc.py | 68 | 0 | 1 |  | 
+- netbox.choices | netbox/netbox/choices.py | 198 | 7 | 0 |  | 
+- netbox.config | netbox/netbox/config/__init__.py | 107 | 2 | 2 |  | 
+- netbox.config.parameters | netbox/netbox/config/parameters.py | 215 | 1 | 0 |  | 
+- netbox.configuration_example | netbox/netbox/configuration_example.py | 251 | 0 | 0 |  | 
+- netbox.configuration_testing | netbox/netbox/configuration_testing.py | 52 | 0 | 0 |  | 
+- netbox.constants | netbox/netbox/constants.py | 46 | 0 | 0 |  | 
+- netbox.context | netbox/netbox/context.py | 11 | 0 | 0 |  | 
+- netbox.context_managers | netbox/netbox/context_managers.py | 29 | 0 | 1 |  | 
+- netbox.context_processors | netbox/netbox/context_processors.py | 51 | 0 | 4 |  | 
+- netbox.data_backends | netbox/netbox/data_backends.py | 54 | 1 | 0 |  | 
+- netbox.denormalized | netbox/netbox/denormalized.py | 59 | 0 | 2 |  | 
+- netbox.events | netbox/netbox/events.py | 80 | 1 | 3 |  | 
+- netbox.filtersets | netbox/netbox/filtersets.py | 381 | 6 | 0 |  | 
+- netbox.forms | netbox/netbox/forms/__init__.py | 58 | 1 | 0 |  | 
+- netbox.forms.base | netbox/netbox/forms/base.py | 180 | 4 | 0 |  | 
+- netbox.forms.mixins | netbox/netbox/forms/mixins.py | 101 | 3 | 0 |  | 
+- netbox.graphql | netbox/netbox/graphql/__init__.py | 1 | 0 | 0 |  | 
+- netbox.graphql.enums | netbox/netbox/graphql/enums.py | 14 | 0 | 0 |  | 
+- netbox.graphql.filter_lookups | netbox/netbox/graphql/filter_lookups.py | 220 | 10 | 1 |  | 
+- netbox.graphql.filter_mixins | netbox/netbox/graphql/filter_mixins.py | 105 | 8 | 0 |  | 
+- netbox.graphql.scalars | netbox/netbox/graphql/scalars.py | 11 | 0 | 0 |  | 
+- netbox.graphql.schema | netbox/netbox/graphql/schema.py | 45 | 1 | 0 |  | 
+- netbox.graphql.types | netbox/netbox/graphql/types.py | 100 | 6 | 0 |  | 
+- netbox.graphql.views | netbox/netbox/graphql/views.py | 44 | 1 | 0 |  | 
+- netbox.jobs | netbox/netbox/jobs.py | 157 | 1 | 1 |  | 
+- netbox.middleware | netbox/netbox/middleware.py | 233 | 3 | 0 |  | 
+- netbox.models | netbox/netbox/models/__init__.py | 213 | 6 | 0 |  | 
+- netbox.models.deletion | netbox/netbox/models/deletion.py | 91 | 2 | 0 |  | 
+- netbox.models.features | netbox/netbox/models/features.py | 693 | 15 | 1 |  | 
+- netbox.models.mixins | netbox/netbox/models/mixins.py | 101 | 2 | 0 |  | 
+- netbox.navigation | netbox/netbox/navigation/__init__.py | 95 | 4 | 2 |  | 
+- netbox.navigation.menu | netbox/netbox/navigation/menu.py | 533 | 0 | 0 |  | 
+- netbox.plugins | netbox/netbox/plugins/__init__.py | 168 | 1 | 0 |  | 
+- netbox.plugins.navigation | netbox/netbox/plugins/navigation.py | 76 | 3 | 0 |  | 
+- netbox.plugins.registration | netbox/netbox/plugins/registration.py | 84 | 0 | 5 |  | 
+- netbox.plugins.templates | netbox/netbox/plugins/templates.py | 115 | 1 | 0 |  | 
+- netbox.plugins.urls | netbox/netbox/plugins/urls.py | 37 | 0 | 0 |  | 
+- netbox.plugins.utils | netbox/netbox/plugins/utils.py | 43 | 0 | 2 |  | 
+- netbox.plugins.views | netbox/netbox/plugins/views.py | 82 | 2 | 0 |  | 
+- netbox.preferences | netbox/netbox/preferences.py | 87 | 0 | 1 |  | 
+- netbox.registry | netbox/netbox/registry.py | 39 | 1 | 0 |  | 
+- netbox.search | netbox/netbox/search/__init__.py | 152 | 3 | 2 |  | 
+- netbox.search.backends | netbox/netbox/search/backends.py | 291 | 2 | 1 |  | 
+- netbox.search.utils | netbox/netbox/search/utils.py | 15 | 0 | 1 |  | 
+- netbox.settings | netbox/netbox/settings.py | 912 | 0 | 0 |  | 
+- netbox.signals | netbox/netbox/signals.py | 6 | 0 | 0 |  | 
+- netbox.tables | netbox/netbox/tables/__init__.py | 3 | 0 | 0 |  | 
+- netbox.tables.columns | netbox/netbox/tables/columns.py | 726 | 25 | 0 |  | 
+- netbox.tables.tables | netbox/netbox/tables/tables.py | 319 | 3 | 0 |  | 
+- netbox.tables.template_code | netbox/netbox/tables/template_code.py | 19 | 0 | 0 |  | 
+- netbox.tests | netbox/netbox/tests/__init__.py | 1 | 0 | 0 | test | 
+- netbox.tests.dummy_plugin | netbox/netbox/tests/dummy_plugin/__init__.py | 31 | 1 | 0 | test | 
+- netbox.tests.dummy_plugin.api.serializers | netbox/netbox/tests/dummy_plugin/api/serializers.py | 10 | 1 | 0 | test | 
+- netbox.tests.dummy_plugin.api.urls | netbox/netbox/tests/dummy_plugin/api/urls.py | 7 | 0 | 0 | test | 
+- netbox.tests.dummy_plugin.api.views | netbox/netbox/tests/dummy_plugin/api/views.py | 9 | 1 | 0 | test | 
+- netbox.tests.dummy_plugin.data_backends | netbox/netbox/tests/dummy_plugin/data_backends.py | 19 | 1 | 0 | test | 
+- netbox.tests.dummy_plugin.events | netbox/netbox/tests/dummy_plugin/events.py | 3 | 0 | 1 | test | 
+- netbox.tests.dummy_plugin.graphql | netbox/netbox/tests/dummy_plugin/graphql.py | 25 | 2 | 0 | test | 
+- netbox.tests.dummy_plugin.jobs | netbox/netbox/tests/dummy_plugin/jobs.py | 10 | 1 | 0 | test | 
+- netbox.tests.dummy_plugin.middleware | netbox/netbox/tests/dummy_plugin/middleware.py | 8 | 1 | 0 | test | 
+- netbox.tests.dummy_plugin.migrations | netbox/netbox/tests/dummy_plugin/migrations/__init__.py | 1 | 0 | 0 | test | 
+- netbox.tests.dummy_plugin.migrations.0001_initial | netbox/netbox/tests/dummy_plugin/migrations/0001_initial.py | 24 | 1 | 0 | test | migration
+- netbox.tests.dummy_plugin.migrations.0002_dummynetboxmodel | netbox/netbox/tests/dummy_plugin/migrations/0002_dummynetboxmodel.py | 31 | 1 | 0 | test | migration
+- netbox.tests.dummy_plugin.models | netbox/netbox/tests/dummy_plugin/models.py | 20 | 2 | 0 | test | 
+- netbox.tests.dummy_plugin.navigation | netbox/netbox/tests/dummy_plugin/navigation.py | 33 | 0 | 0 | test | 
+- netbox.tests.dummy_plugin.preferences | netbox/netbox/tests/dummy_plugin/preferences.py | 21 | 0 | 0 | test | 
+- netbox.tests.dummy_plugin.search | netbox/netbox/tests/dummy_plugin/search.py | 15 | 1 | 0 | test | 
+- netbox.tests.dummy_plugin.tables | netbox/netbox/tests/dummy_plugin/tables.py | 12 | 0 | 0 | test | 
+- netbox.tests.dummy_plugin.template_content | netbox/netbox/tests/dummy_plugin/template_content.py | 36 | 2 | 0 | test | 
+- netbox.tests.dummy_plugin.urls | netbox/netbox/tests/dummy_plugin/urls.py | 12 | 0 | 0 | test | 
+- netbox.tests.dummy_plugin.views | netbox/netbox/tests/dummy_plugin/views.py | 57 | 4 | 0 | test | 
+- netbox.tests.test_api | netbox/netbox/tests/test_api.py | 29 | 1 | 0 | test | 
+- netbox.tests.test_authentication | netbox/netbox/tests/test_authentication.py | 581 | 3 | 0 | test | 
+- netbox.tests.test_config | netbox/netbox/tests/test_config.py | 69 | 1 | 0 | test | 
+- netbox.tests.test_graphql | netbox/netbox/tests/test_graphql.py | 129 | 2 | 0 | test | 
+- netbox.tests.test_import | netbox/netbox/tests/test_import.py | 144 | 1 | 0 | test | 
+- netbox.tests.test_jobs | netbox/netbox/tests/test_jobs.py | 166 | 5 | 0 | test | 
+- netbox.tests.test_models | netbox/netbox/tests/test_models.py | 24 | 1 | 0 | test | 
+- netbox.tests.test_plugins | netbox/netbox/tests/test_plugins.py | 221 | 1 | 0 | test | 
+- netbox.tests.test_registry | netbox/netbox/tests/test_registry.py | 28 | 1 | 0 | test | 
+- netbox.tests.test_search | netbox/netbox/tests/test_search.py | 154 | 1 | 0 | test | 
+- netbox.tests.test_tables | netbox/netbox/tests/test_tables.py | 38 | 2 | 0 | test | 
+- netbox.tests.test_views | netbox/netbox/tests/test_views.py | 95 | 3 | 0 | test | 
+- netbox.urls | netbox/netbox/urls.py | 95 | 0 | 0 |  | 
+- netbox.utils | netbox/netbox/utils.py | 37 | 0 | 3 |  | 
+- netbox.views | netbox/netbox/views/__init__.py | 3 | 0 | 0 |  | 
+- netbox.views.errors | netbox/netbox/views/errors.py | 61 | 1 | 2 |  | 
+- netbox.views.generic | netbox/netbox/views/generic/__init__.py | 4 | 0 | 0 |  | 
+- netbox.views.generic.base | netbox/netbox/views/generic/base.py | 101 | 2 | 0 |  | 
+- netbox.views.generic.bulk_views | netbox/netbox/views/generic/bulk_views.py | 1045 | 7 | 0 |  | 
+- netbox.views.generic.feature_views | netbox/netbox/views/generic/feature_views.py | 275 | 6 | 0 |  | 
+- netbox.views.generic.mixins | netbox/netbox/views/generic/mixins.py | 68 | 2 | 0 |  | 
+- netbox.views.generic.object_views | netbox/netbox/views/generic/object_views.py | 604 | 5 | 0 |  | 
+- netbox.views.generic.utils | netbox/netbox/views/generic/utils.py | 14 | 0 | 1 |  | 
+- netbox.views.htmx | netbox/netbox/views/htmx.py | 58 | 1 | 0 |  | 
+- netbox.views.misc | netbox/netbox/views/misc.py | 128 | 3 | 0 |  | 
+- netbox.wsgi | netbox/netbox/wsgi.py | 8 | 0 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'netbox': 142, 'utilities': 80, 'core': 38, 'extras': 36, 'dcim': 13, 'users': 10, 'tenancy': 6, 'ipam': 2, 'circuits': 1, 'virtualization': 1, 'vpn': 1, 'wireless': 1, 'account': 1}
+Inbound by source subsystem: {'extras': 96, 'dcim': 93, 'core': 64, 'ipam': 50, 'circuits': 37, 'utilities': 32, 'virtualization': 29, 'vpn': 28, 'tenancy': 27, 'wireless': 27, 'users': 19, 'account': 4}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- netbox.api.authentication -> users.models [fg:imports:netbox.api.authentication->users.models]
+- netbox.api.authentication -> utilities.request [fg:imports:netbox.api.authentication->utilities.request]
+- netbox.api.features -> utilities.permissions [fg:imports:netbox.api.features->utilities.permissions]
+- netbox.api.serializers.base -> utilities.api [fg:imports:netbox.api.serializers.base->utilities.api]
+- netbox.api.serializers.features -> extras.api.customfields [fg:imports:netbox.api.serializers.features->extras.api.customfields]
+- netbox.api.serializers.fields -> utilities.views [fg:imports:netbox.api.serializers.fields->utilities.views]
+- netbox.api.serializers.generic -> core.models [fg:imports:netbox.api.serializers.generic->core.models]
+- netbox.api.serializers.generic -> utilities.api [fg:imports:netbox.api.serializers.generic->utilities.api]
+- netbox.api.serializers.generic -> utilities.object_types [fg:imports:netbox.api.serializers.generic->utilities.object_types]
+- netbox.api.serializers.nested -> extras.models [fg:imports:netbox.api.serializers.nested->extras.models]
+- netbox.api.serializers.nested -> utilities.api [fg:imports:netbox.api.serializers.nested->utilities.api]
+- netbox.api.viewsets -> utilities.api [fg:imports:netbox.api.viewsets->utilities.api]
+- netbox.api.viewsets -> utilities.exceptions [fg:imports:netbox.api.viewsets->utilities.exceptions]
+- netbox.api.viewsets -> utilities.query [fg:imports:netbox.api.viewsets->utilities.query]
+- netbox.api.viewsets.mixins -> core.models [fg:imports:netbox.api.viewsets.mixins->core.models]
+- netbox.api.viewsets.mixins -> extras.models [fg:imports:netbox.api.viewsets.mixins->extras.models]
+- netbox.authentication -> users.constants [fg:imports:netbox.authentication->users.constants]
+- netbox.authentication -> users.models [fg:imports:netbox.authentication->users.models]
+- netbox.authentication -> utilities.permissions [fg:imports:netbox.authentication->utilities.permissions]
+- netbox.authentication.misc -> users.models [fg:imports:netbox.authentication.misc->users.models]
+- netbox.choices -> utilities.choices [fg:imports:netbox.choices->utilities.choices]
+- netbox.choices -> utilities.constants [fg:imports:netbox.choices->utilities.constants]
+- netbox.config -> core.models [fg:imports:netbox.config->core.models]
+- netbox.context_managers -> extras.events [fg:imports:netbox.context_managers->extras.events]
+- netbox.filtersets -> core.choices [fg:imports:netbox.filtersets->core.choices]
+- netbox.filtersets -> core.models [fg:imports:netbox.filtersets->core.models]
+- netbox.filtersets -> extras.choices [fg:imports:netbox.filtersets->extras.choices]
+- netbox.filtersets -> extras.filters [fg:imports:netbox.filtersets->extras.filters]
+- netbox.filtersets -> extras.models [fg:imports:netbox.filtersets->extras.models]
+- netbox.filtersets -> utilities [fg:imports:netbox.filtersets->utilities]
+- netbox.filtersets -> utilities.constants [fg:imports:netbox.filtersets->utilities.constants]
+- netbox.filtersets -> utilities.forms.fields [fg:imports:netbox.filtersets->utilities.forms.fields]
+- netbox.forms.base -> core.models [fg:imports:netbox.forms.base->core.models]
+- netbox.forms.base -> extras.choices [fg:imports:netbox.forms.base->extras.choices]
+- netbox.forms.base -> extras.models [fg:imports:netbox.forms.base->extras.models]
+- netbox.forms.base -> utilities.forms [fg:imports:netbox.forms.base->utilities.forms]
+- netbox.forms.base -> utilities.forms.fields [fg:imports:netbox.forms.base->utilities.forms.fields]
+- netbox.forms.base -> utilities.forms.mixins [fg:imports:netbox.forms.base->utilities.forms.mixins]
+- netbox.forms.mixins -> core.models [fg:imports:netbox.forms.mixins->core.models]
+- netbox.forms.mixins -> extras.choices [fg:imports:netbox.forms.mixins->extras.choices]
+- netbox.forms.mixins -> extras.models [fg:imports:netbox.forms.mixins->extras.models]
+- netbox.forms.mixins -> utilities.forms.fields [fg:imports:netbox.forms.mixins->utilities.forms.fields]
+- netbox.graphql.filter_mixins -> core.graphql.filter_mixins [fg:imports:netbox.graphql.filter_mixins->core.graphql.filter_mixins]
+- netbox.graphql.filter_mixins -> core.graphql.filters [fg:imports:netbox.graphql.filter_mixins->core.graphql.filters]
+- netbox.graphql.filter_mixins -> extras.graphql.filter_mixins [fg:imports:netbox.graphql.filter_mixins->extras.graphql.filter_mixins]
+- netbox.graphql.filter_mixins -> extras.graphql.filters [fg:imports:netbox.graphql.filter_mixins->extras.graphql.filters]
+- netbox.graphql.schema -> circuits.graphql.schema [fg:imports:netbox.graphql.schema->circuits.graphql.schema]
+- netbox.graphql.schema -> core.graphql.schema [fg:imports:netbox.graphql.schema->core.graphql.schema]
+- netbox.graphql.schema -> dcim.graphql.schema [fg:imports:netbox.graphql.schema->dcim.graphql.schema]
+- netbox.graphql.schema -> extras.graphql.schema [fg:imports:netbox.graphql.schema->extras.graphql.schema]
+- netbox.graphql.schema -> ipam.graphql.schema [fg:imports:netbox.graphql.schema->ipam.graphql.schema]
+- netbox.graphql.schema -> tenancy.graphql.schema [fg:imports:netbox.graphql.schema->tenancy.graphql.schema]
+- netbox.graphql.schema -> users.graphql.schema [fg:imports:netbox.graphql.schema->users.graphql.schema]
+- netbox.graphql.schema -> virtualization.graphql.schema [fg:imports:netbox.graphql.schema->virtualization.graphql.schema]
+- netbox.graphql.schema -> vpn.graphql.schema [fg:imports:netbox.graphql.schema->vpn.graphql.schema]
+- netbox.graphql.schema -> wireless.graphql.schema [fg:imports:netbox.graphql.schema->wireless.graphql.schema]
+- netbox.graphql.types -> core.graphql.mixins [fg:imports:netbox.graphql.types->core.graphql.mixins]
+- netbox.graphql.types -> core.models [fg:imports:netbox.graphql.types->core.models]
+- netbox.graphql.types -> extras.graphql.mixins [fg:imports:netbox.graphql.types->extras.graphql.mixins]
+- netbox.jobs -> core.choices [fg:imports:netbox.jobs->core.choices]
+- netbox.jobs -> core.models [fg:imports:netbox.jobs->core.models]
+- netbox.middleware -> utilities.api [fg:imports:netbox.middleware->utilities.api]
+- netbox.middleware -> utilities.error_handlers [fg:imports:netbox.middleware->utilities.error_handlers]
+- netbox.models -> utilities.mptt [fg:imports:netbox.models->utilities.mptt]
+- netbox.models -> utilities.querysets [fg:imports:netbox.models->utilities.querysets]
+- netbox.models -> utilities.views [fg:imports:netbox.models->utilities.views]
+- netbox.models.features -> core.choices [fg:imports:netbox.models.features->core.choices]
+- netbox.models.features -> core.models [fg:imports:netbox.models.features->core.models]
+- netbox.models.features -> core.models [fg:imports:netbox.models.features->core.models]
+- netbox.models.features -> core.models [fg:imports:netbox.models.features->core.models]
+- netbox.models.features -> core.models [fg:imports:netbox.models.features->core.models]
+- netbox.models.features -> core.models [fg:imports:netbox.models.features->core.models]
+- netbox.models.features -> extras.choices [fg:imports:netbox.models.features->extras.choices]
+- netbox.models.features -> extras.constants [fg:imports:netbox.models.features->extras.constants]
+- netbox.models.features -> extras.models [fg:imports:netbox.models.features->extras.models]
+- netbox.models.features -> extras.models [fg:imports:netbox.models.features->extras.models]
+- netbox.models.features -> extras.models [fg:imports:netbox.models.features->extras.models]
+- netbox.models.features -> extras.models [fg:imports:netbox.models.features->extras.models]
+- netbox.models.features -> extras.utils [fg:imports:netbox.models.features->extras.utils]
+- netbox.models.features -> tenancy.models [fg:imports:netbox.models.features->tenancy.models]
+- netbox.models.features -> utilities.json [fg:imports:netbox.models.features->utilities.json]
+- netbox.models.features -> utilities.serialization [fg:imports:netbox.models.features->utilities.serialization]
+- netbox.models.features -> utilities.views [fg:imports:netbox.models.features->utilities.views]
+- netbox.models.mixins -> utilities.conversion [fg:imports:netbox.models.mixins->utilities.conversion]
+- netbox.plugins -> core.exceptions [fg:imports:netbox.plugins->core.exceptions]
+- netbox.preferences -> users.preferences [fg:imports:netbox.preferences->users.preferences]
+- netbox.preferences -> utilities.paginator [fg:imports:netbox.preferences->utilities.paginator]
+- netbox.search -> ipam.fields [fg:imports:netbox.search->ipam.fields]
+- netbox.search.backends -> core.models [fg:imports:netbox.search.backends->core.models]
+- netbox.search.backends -> extras.models [fg:imports:netbox.search.backends->extras.models]
+- netbox.search.backends -> utilities.object_types [fg:imports:netbox.search.backends->utilities.object_types]
+- netbox.search.backends -> utilities.querysets [fg:imports:netbox.search.backends->utilities.querysets]
+- netbox.search.backends -> utilities.string [fg:imports:netbox.search.backends->utilities.string]
+- netbox.search.utils -> utilities.object_types [fg:imports:netbox.search.utils->utilities.object_types]
+- netbox.settings -> core.exceptions [fg:imports:netbox.settings->core.exceptions]
+- netbox.settings -> utilities.release [fg:imports:netbox.settings->utilities.release]
+- netbox.settings -> utilities.string [fg:imports:netbox.settings->utilities.string]
+- netbox.tables.columns -> extras.choices [fg:imports:netbox.tables.columns->extras.choices]
+- netbox.tables.columns -> utilities.object_types [fg:imports:netbox.tables.columns->utilities.object_types]
+- netbox.tables.columns -> utilities.permissions [fg:imports:netbox.tables.columns->utilities.permissions]
+- netbox.tables.columns -> utilities.templatetags.builtins.filters [fg:imports:netbox.tables.columns->utilities.templatetags.builtins.filters]
+- netbox.tables.columns -> utilities.views [fg:imports:netbox.tables.columns->utilities.views]
+- netbox.tables.tables -> core.models [fg:imports:netbox.tables.tables->core.models]
+- netbox.tables.tables -> extras.choices [fg:imports:netbox.tables.tables->extras.choices]
+- netbox.tables.tables -> extras.models [fg:imports:netbox.tables.tables->extras.models]
+- netbox.tables.tables -> utilities.html [fg:imports:netbox.tables.tables->utilities.html]
+- netbox.tables.tables -> utilities.paginator [fg:imports:netbox.tables.tables->utilities.paginator]
+- netbox.tables.tables -> utilities.string [fg:imports:netbox.tables.tables->utilities.string]
+- netbox.tables.tables -> utilities.views [fg:imports:netbox.tables.tables->utilities.views]
+- netbox.tests.dummy_plugin.jobs -> core.choices [fg:imports:netbox.tests.dummy_plugin.jobs->core.choices]
+- netbox.tests.dummy_plugin.migrations.0002_dummynetboxmodel -> utilities.json [fg:imports:netbox.tests.dummy_plugin.migrations.0002_dummynetboxmodel->utilities.json]
+- netbox.tests.dummy_plugin.preferences -> users.preferences [fg:imports:netbox.tests.dummy_plugin.preferences->users.preferences]
+- netbox.tests.dummy_plugin.tables -> dcim.tables [fg:imports:netbox.tests.dummy_plugin.tables->dcim.tables]
+- netbox.tests.dummy_plugin.tables -> utilities.tables [fg:imports:netbox.tests.dummy_plugin.tables->utilities.tables]
+- netbox.tests.dummy_plugin.views -> dcim.models [fg:imports:netbox.tests.dummy_plugin.views->dcim.models]
+- netbox.tests.dummy_plugin.views -> utilities.views [fg:imports:netbox.tests.dummy_plugin.views->utilities.views]
+- netbox.tests.test_api -> utilities.testing [fg:imports:netbox.tests.test_api->utilities.testing]
+- netbox.tests.test_authentication -> core.models [fg:imports:netbox.tests.test_authentication->core.models]
+- netbox.tests.test_authentication -> dcim.models [fg:imports:netbox.tests.test_authentication->dcim.models]
+- netbox.tests.test_authentication -> users.models [fg:imports:netbox.tests.test_authentication->users.models]
+- netbox.tests.test_authentication -> utilities.testing [fg:imports:netbox.tests.test_authentication->utilities.testing]
+- netbox.tests.test_authentication -> utilities.testing.api [fg:imports:netbox.tests.test_authentication->utilities.testing.api]
+- netbox.tests.test_config -> core.models [fg:imports:netbox.tests.test_config->core.models]
+- netbox.tests.test_graphql -> core.models [fg:imports:netbox.tests.test_graphql->core.models]
+- netbox.tests.test_graphql -> dcim.choices [fg:imports:netbox.tests.test_graphql->dcim.choices]
+- netbox.tests.test_graphql -> dcim.models [fg:imports:netbox.tests.test_graphql->dcim.models]
+- netbox.tests.test_graphql -> users.models [fg:imports:netbox.tests.test_graphql->users.models]
+- netbox.tests.test_graphql -> utilities.testing [fg:imports:netbox.tests.test_graphql->utilities.testing]
+- netbox.tests.test_import -> core.models [fg:imports:netbox.tests.test_import->core.models]
+- netbox.tests.test_import -> dcim.models [fg:imports:netbox.tests.test_import->dcim.models]
+- netbox.tests.test_import -> extras.models [fg:imports:netbox.tests.test_import->extras.models]
+- netbox.tests.test_import -> users.models [fg:imports:netbox.tests.test_import->users.models]
+- netbox.tests.test_import -> utilities.testing [fg:imports:netbox.tests.test_import->utilities.testing]
+- netbox.tests.test_jobs -> core.choices [fg:imports:netbox.tests.test_jobs->core.choices]
+- netbox.tests.test_jobs -> core.models [fg:imports:netbox.tests.test_jobs->core.models]
+- netbox.tests.test_models -> core.models [fg:imports:netbox.tests.test_models->core.models]
+- netbox.tests.test_plugins -> core.choices [fg:imports:netbox.tests.test_plugins->core.choices]
+- netbox.tests.test_plugins -> dcim.models [fg:imports:netbox.tests.test_plugins->dcim.models]
+- netbox.tests.test_plugins -> dcim.tables [fg:imports:netbox.tests.test_plugins->dcim.tables]
+- netbox.tests.test_search -> dcim.models [fg:imports:netbox.tests.test_search->dcim.models]
+- netbox.tests.test_search -> dcim.search [fg:imports:netbox.tests.test_search->dcim.search]
+- netbox.tests.test_search -> extras.models [fg:imports:netbox.tests.test_search->extras.models]
+- netbox.tests.test_tables -> dcim.models [fg:imports:netbox.tests.test_tables->dcim.models]
+- netbox.tests.test_tables -> utilities.testing [fg:imports:netbox.tests.test_tables->utilities.testing]
+- netbox.tests.test_views -> dcim.models [fg:imports:netbox.tests.test_views->dcim.models]
+- netbox.tests.test_views -> utilities.testing [fg:imports:netbox.tests.test_views->utilities.testing]
+- netbox.urls -> account.views [fg:imports:netbox.urls->account.views]
+- netbox.views.generic.base -> utilities.views [fg:imports:netbox.views.generic.base->utilities.views]
+- netbox.views.generic.bulk_views -> core.models [fg:imports:netbox.views.generic.bulk_views->core.models]
+- netbox.views.generic.bulk_views -> core.signals [fg:imports:netbox.views.generic.bulk_views->core.signals]
+- netbox.views.generic.bulk_views -> extras.choices [fg:imports:netbox.views.generic.bulk_views->extras.choices]
+- netbox.views.generic.bulk_views -> extras.models [fg:imports:netbox.views.generic.bulk_views->extras.models]
+- netbox.views.generic.bulk_views -> utilities.error_handlers [fg:imports:netbox.views.generic.bulk_views->utilities.error_handlers]
+- netbox.views.generic.bulk_views -> utilities.exceptions [fg:imports:netbox.views.generic.bulk_views->utilities.exceptions]
+- netbox.views.generic.bulk_views -> utilities.forms [fg:imports:netbox.views.generic.bulk_views->utilities.forms]
+- netbox.views.generic.bulk_views -> utilities.forms.bulk_import [fg:imports:netbox.views.generic.bulk_views->utilities.forms.bulk_import]
+- netbox.views.generic.bulk_views -> utilities.htmx [fg:imports:netbox.views.generic.bulk_views->utilities.htmx]
+- netbox.views.generic.bulk_views -> utilities.permissions [fg:imports:netbox.views.generic.bulk_views->utilities.permissions]
+- netbox.views.generic.bulk_views -> utilities.query [fg:imports:netbox.views.generic.bulk_views->utilities.query]
+- netbox.views.generic.bulk_views -> utilities.request [fg:imports:netbox.views.generic.bulk_views->utilities.request]
+- netbox.views.generic.bulk_views -> utilities.tables [fg:imports:netbox.views.generic.bulk_views->utilities.tables]
+- netbox.views.generic.bulk_views -> utilities.views [fg:imports:netbox.views.generic.bulk_views->utilities.views]
+- netbox.views.generic.feature_views -> core.models [fg:imports:netbox.views.generic.feature_views->core.models]
+- netbox.views.generic.feature_views -> core.tables [fg:imports:netbox.views.generic.feature_views->core.tables]
+- netbox.views.generic.feature_views -> extras.forms [fg:imports:netbox.views.generic.feature_views->extras.forms]
+- netbox.views.generic.feature_views -> extras.models [fg:imports:netbox.views.generic.feature_views->extras.models]
+- netbox.views.generic.feature_views -> extras.tables [fg:imports:netbox.views.generic.feature_views->extras.tables]
+- netbox.views.generic.feature_views -> tenancy.filtersets [fg:imports:netbox.views.generic.feature_views->tenancy.filtersets]
+- netbox.views.generic.feature_views -> tenancy.forms [fg:imports:netbox.views.generic.feature_views->tenancy.forms]
+- netbox.views.generic.feature_views -> tenancy.models [fg:imports:netbox.views.generic.feature_views->tenancy.models]
+- netbox.views.generic.feature_views -> tenancy.tables [fg:imports:netbox.views.generic.feature_views->tenancy.tables]
+- netbox.views.generic.feature_views -> utilities.permissions [fg:imports:netbox.views.generic.feature_views->utilities.permissions]
+- netbox.views.generic.feature_views -> utilities.views [fg:imports:netbox.views.generic.feature_views->utilities.views]
+- netbox.views.generic.mixins -> extras.models [fg:imports:netbox.views.generic.mixins->extras.models]
+- netbox.views.generic.mixins -> utilities.permissions [fg:imports:netbox.views.generic.mixins->utilities.permissions]
+- netbox.views.generic.object_views -> core.signals [fg:imports:netbox.views.generic.object_views->core.signals]
+- netbox.views.generic.object_views -> utilities.error_handlers [fg:imports:netbox.views.generic.object_views->utilities.error_handlers]
+- netbox.views.generic.object_views -> utilities.exceptions [fg:imports:netbox.views.generic.object_views->utilities.exceptions]
+- netbox.views.generic.object_views -> utilities.forms [fg:imports:netbox.views.generic.object_views->utilities.forms]
+- netbox.views.generic.object_views -> utilities.htmx [fg:imports:netbox.views.generic.object_views->utilities.htmx]
+- netbox.views.generic.object_views -> utilities.permissions [fg:imports:netbox.views.generic.object_views->utilities.permissions]
+- netbox.views.generic.object_views -> utilities.querydict [fg:imports:netbox.views.generic.object_views->utilities.querydict]
+- netbox.views.generic.object_views -> utilities.request [fg:imports:netbox.views.generic.object_views->utilities.request]
+- netbox.views.generic.object_views -> utilities.tables [fg:imports:netbox.views.generic.object_views->utilities.tables]
+- netbox.views.generic.object_views -> utilities.views [fg:imports:netbox.views.generic.object_views->utilities.views]
+- netbox.views.misc -> extras.constants [fg:imports:netbox.views.misc->extras.constants]
+- netbox.views.misc -> extras.dashboard.utils [fg:imports:netbox.views.misc->extras.dashboard.utils]
+- netbox.views.misc -> utilities.htmx [fg:imports:netbox.views.misc->utilities.htmx]
+- netbox.views.misc -> utilities.paginator [fg:imports:netbox.views.misc->utilities.paginator]
+- netbox.views.misc -> utilities.views [fg:imports:netbox.views.misc->utilities.views]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- netbox.models.features | ImageAttachmentsMixin.images | GenericRelation | extras.ImageAttachment | cross [fg:model_refs:netbox.models.features:352]
+- netbox.models.features | ContactsMixin.contacts | GenericRelation | tenancy.ContactAssignment | cross [fg:model_refs:netbox.models.features:366]
+- netbox.models.features | BookmarksMixin.bookmarks | GenericRelation | extras.Bookmark | cross [fg:model_refs:netbox.models.features:401]
+- netbox.models.features | NotificationsMixin.subscriptions | GenericRelation | extras.Subscription | cross [fg:model_refs:netbox.models.features:415]
+- netbox.models.features | JobsMixin.jobs | GenericRelation | core.Job | cross [fg:model_refs:netbox.models.features:429]
+- netbox.models.features | JournalingMixin.journal_entries | GenericRelation | extras.JournalEntry | cross [fg:model_refs:netbox.models.features:451]
+- netbox.models.features | SyncedDataMixin.data_source | ForeignKey | core.DataSource | cross [fg:model_refs:netbox.models.features:487]
+- netbox.models.features | SyncedDataMixin.data_file | ForeignKey | core.DataFile | cross [fg:model_refs:netbox.models.features:495]
+
+## String references INTO this subsystem from others
+
+## Churn (id = churn:<module>) — top 25 by commits
+- netbox.settings | 960 commits | 52 authors | 2016-03-01 .. 2025-05-01 [fg:churn:netbox.settings]
+- netbox.views.generic.bulk_views | 103 commits | 14 authors | 2021-12-16 .. 2025-06-25 [fg:churn:netbox.views.generic.bulk_views]
+- netbox.urls | 101 commits | 11 authors | 2016-03-01 .. 2024-11-21 [fg:churn:netbox.urls]
+- netbox.views.generic.object_views | 81 commits | 9 authors | 2021-12-16 .. 2025-06-25 [fg:churn:netbox.views.generic.object_views]
+- netbox.models.features | 77 commits | 11 authors | 2022-01-19 .. 2025-06-13 [fg:churn:netbox.models.features]
+- netbox.navigation.menu | 68 commits | 11 authors | 2022-09-28 .. 2025-04-25 [fg:churn:netbox.navigation.menu]
+- netbox.tables.columns | 67 commits | 10 authors | 2022-01-27 .. 2025-04-23 [fg:churn:netbox.tables.columns]
+- netbox.forms.base | 48 commits | 7 authors | 2022-01-28 .. 2025-02-06 [fg:churn:netbox.forms.base]
+- netbox.tables.tables | 42 commits | 9 authors | 2022-01-27 .. 2025-06-26 [fg:churn:netbox.tables.tables]
+- netbox.models | 38 commits | 6 authors | 2022-01-19 .. 2025-04-10 [fg:churn:netbox.models]
+- netbox.constants | 36 commits | 8 authors | 2020-11-11 .. 2024-11-21 [fg:churn:netbox.constants]
+- netbox.filtersets | 35 commits | 7 authors | 2021-04-29 .. 2025-04-11 [fg:churn:netbox.filtersets]
+- netbox.middleware | 33 commits | 9 authors | 2020-11-10 .. 2025-04-22 [fg:churn:netbox.middleware]
+- netbox.views | 29 commits | 7 authors | 2020-11-11 .. 2022-11-16 [fg:churn:netbox.views]
+- netbox.tests.test_authentication | 28 commits | 6 authors | 2020-03-10 .. 2024-10-18 [fg:churn:netbox.tests.test_authentication]
+- netbox.config.parameters | 27 commits | 8 authors | 2021-10-25 .. 2023-12-19 [fg:churn:netbox.config.parameters]
+- netbox.api.views | 22 commits | 5 authors | 2020-10-13 .. 2025-02-16 [fg:churn:netbox.api.views]
+- netbox.configuration_example | 20 commits | 11 authors | 2022-02-15 .. 2025-06-09 [fg:churn:netbox.configuration_example]
+- netbox.views.generic.feature_views | 20 commits | 5 authors | 2022-02-09 .. 2025-06-25 [fg:churn:netbox.views.generic.feature_views]
+- netbox.api.viewsets | 19 commits | 5 authors | 2022-03-09 .. 2025-06-25 [fg:churn:netbox.api.viewsets]
+- netbox.search.backends | 19 commits | 5 authors | 2022-10-10 .. 2024-06-26 [fg:churn:netbox.search.backends]
+- netbox.graphql.schema | 18 commits | 4 authors | 2021-06-08 .. 2025-03-20 [fg:churn:netbox.graphql.schema]
+- netbox.graphql.types | 17 commits | 4 authors | 2021-06-08 .. 2025-03-20 [fg:churn:netbox.graphql.types]
+- netbox.api.authentication | 16 commits | 7 authors | 2020-10-13 .. 2023-06-26 [fg:churn:netbox.api.authentication]
+- netbox.api.fields | 15 commits | 4 authors | 2020-10-13 .. 2025-04-01 [fg:churn:netbox.api.fields]
+
+## Entry points (id = entrypoints:<module>)
+- api_views | netbox.api.views | netbox/netbox/api/views.py [fg:entrypoints:netbox.api.views]
+- api_views | netbox.api.viewsets | netbox/netbox/api/viewsets/__init__.py [fg:entrypoints:netbox.api.viewsets]
+- urls | netbox.plugins.urls | netbox/netbox/plugins/urls.py [fg:entrypoints:netbox.plugins.urls]
+- signals | netbox.signals | netbox/netbox/signals.py [fg:entrypoints:netbox.signals]
+- urls | netbox.tests.dummy_plugin.api.urls | netbox/netbox/tests/dummy_plugin/api/urls.py [fg:entrypoints:netbox.tests.dummy_plugin.api.urls]
+- api_views | netbox.tests.dummy_plugin.api.views | netbox/netbox/tests/dummy_plugin/api/views.py [fg:entrypoints:netbox.tests.dummy_plugin.api.views]
+- urls | netbox.tests.dummy_plugin.urls | netbox/netbox/tests/dummy_plugin/urls.py [fg:entrypoints:netbox.tests.dummy_plugin.urls]
+- urls | netbox.urls | netbox/netbox/urls.py [fg:entrypoints:netbox.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- netbox.api.authentication: TokenAuthentication, TokenPermissions, IsAuthenticatedOrLoginNotRequired
+- netbox.api.exceptions: ServiceUnavailable, SerializerNotFound, GraphQLTypeNotFound
+- netbox.api.features: SyncedDataMixin
+- netbox.api.fields: ChoiceField, ContentTypeField, IPNetworkSerializer, SerializedPKRelatedField, RelatedObjectCountField, IntegerRangeSerializer, AttributesField
+- netbox.api.metadata: BulkOperationMetadata, ContentTypeMetadata
+- netbox.api.pagination: OptionalLimitOffsetPagination, StripCountAnnotationsPaginator, LimitOffsetListPagination
+- netbox.api.renderers: FormlessBrowsableAPIRenderer, TextRenderer
+- netbox.api.routers: NetBoxRouter
+- netbox.api.serializers: NetBoxModelSerializer, NestedGroupModelSerializer, BulkOperationSerializer
+- netbox.api.serializers.base: BaseModelSerializer, ValidatedModelSerializer
+- netbox.api.serializers.features: CustomFieldModelSerializer, TaggableModelSerializer
+- netbox.api.serializers.fields: BaseNetBoxHyperlinkedIdentityField, NetBoxAPIHyperlinkedIdentityField, NetBoxURLHyperlinkedIdentityField
+- netbox.api.serializers.generic: GenericObjectSerializer
+- netbox.api.serializers.nested: WritableNestedSerializer, NestedTagSerializer
+- netbox.api.views: APIRootView, StatusView
+- netbox.api.viewsets: BaseViewSet, NetBoxReadOnlyModelViewSet, NetBoxModelViewSet, MPTTLockedMixin
+- netbox.api.viewsets.mixins: CustomFieldsMixin, ExportTemplatesMixin, SequentialBulkCreatesMixin, BulkUpdateModelMixin, BulkDestroyModelMixin, ObjectValidationMixin
+- netbox.authentication: ObjectPermissionMixin, ObjectPermissionBackend, RemoteUserBackend, LDAPBackend
+- netbox.choices: ColorChoices, ButtonColorChoices, ImportMethodChoices, ImportFormatChoices, CSVDelimiterChoices, DistanceUnitChoices, WeightUnitChoices
+- netbox.config: Config, ConfigItem
+- netbox.config.parameters: ConfigParam
+- netbox.data_backends: DataBackend
+- netbox.events: EventType
+- netbox.filtersets: BaseFilterSet, ChangeLoggedModelFilterSet, NetBoxModelFilterSet, OrganizationalModelFilterSet, NestedGroupModelFilterSet, AttributeFiltersMixin
+- netbox.forms: SearchForm
+- netbox.forms.base: NetBoxModelForm, NetBoxModelImportForm, NetBoxModelBulkEditForm, NetBoxModelFilterSetForm
+- netbox.forms.mixins: CustomFieldsMixin, SavedFiltersMixin, TagsMixin
+- netbox.graphql.filter_lookups: JSONLookup, IntegerLookup, FloatLookup, JSONFilter, TreeNodeMatch, TreeNodeFilter, ArrayLookup, IntegerArrayLookup, FloatArrayLookup, StringArrayLookup
+- netbox.graphql.filter_mixins: NetBoxModelFilterMixin, NestedGroupModelFilterMixin, OrganizationalModelFilterMixin, PrimaryModelFilterMixin, ImageAttachmentFilterMixin, WeightFilterMixin, SyncedDataFilterMixin, DistanceFilterMixin
+- netbox.graphql.schema: Query
+- netbox.graphql.types: BaseObjectType, ObjectType, OrganizationalObjectType, NetBoxObjectType, ContentTypeType, ObjectTypeType
+- netbox.graphql.views: NetBoxGraphQLView
+- netbox.jobs: JobRunner
+- netbox.middleware: CoreMiddleware, RemoteUserMiddleware, MaintenanceModeMiddleware
+- netbox.models: NetBoxFeatureSet, ChangeLoggedModel, NetBoxModel, PrimaryModel, NestedGroupModel, OrganizationalModel
+- netbox.models.deletion: CustomCollector, DeleteMixin
+- netbox.models.features: ChangeLoggingMixin, CloningMixin, CustomFieldsMixin, CustomLinksMixin, CustomValidationMixin, ExportTemplatesMixin, ImageAttachmentsMixin, ContactsMixin, BookmarksMixin, NotificationsMixin, JobsMixin, JournalingMixin, TagsMixin, EventRulesMixin, SyncedDataMixin
+- netbox.models.mixins: WeightMixin, DistanceMixin
+- netbox.navigation: MenuItemButton, MenuItem, MenuGroup, Menu
+- netbox.plugins: PluginConfig
+- netbox.plugins.navigation: PluginMenu, PluginMenuItem, PluginMenuButton
+- netbox.plugins.templates: PluginTemplateExtension
+- netbox.plugins.views: InstalledPluginsAPIView, PluginsAPIRootView
+- netbox.registry: Registry
+- netbox.search: FieldTypes, LookupTypes, SearchIndex
+- netbox.search.backends: SearchBackend, CachedValueSearchBackend
+- netbox.tables.columns: DateColumn, DateTimeColumn, DurationColumn, ManyToManyColumn, TemplateColumn, ToggleColumn, BooleanColumn, ActionsItem, ActionsColumn, ChoiceFieldColumn, ContentTypeColumn, ContentTypesColumn, ColorColumn, ColoredLabelColumn, LinkedCountColumn, TagColumn, CustomFieldColumn, CustomLinkColumn, MPTTColumn, UtilizationColumn, MarkdownColumn, ArrayColumn, ChoicesColumn, DistanceColumn, DictColumn
+- netbox.tables.tables: BaseTable, NetBoxTable, SearchTable
+- netbox.tests.dummy_plugin: DummyPluginConfig
+- netbox.tests.dummy_plugin.api.serializers: DummySerializer
+- netbox.tests.dummy_plugin.api.views: DummyViewSet
+- netbox.tests.dummy_plugin.data_backends: DummyBackend
+- netbox.tests.dummy_plugin.graphql: DummyModelType, DummyQuery
+- netbox.tests.dummy_plugin.jobs: DummySystemJob
+- netbox.tests.dummy_plugin.middleware: DummyMiddleware
+- netbox.tests.dummy_plugin.migrations.0001_initial: Migration
+- netbox.tests.dummy_plugin.migrations.0002_dummynetboxmodel: Migration
+- netbox.tests.dummy_plugin.models: DummyModel, DummyNetBoxModel
+- netbox.tests.dummy_plugin.search: DummyModelIndex
+- netbox.tests.dummy_plugin.template_content: GlobalContent, SiteContent
+- netbox.tests.dummy_plugin.views: DummyModelsView, DummyModelAddView, DummyNetBoxModelView, ExtraCoreModelView
+- netbox.tests.test_api: AppTest
+- netbox.tests.test_authentication: TokenAuthenticationTestCase, ExternalAuthenticationTestCase, ObjectPermissionAPIViewTestCase
+- netbox.tests.test_config: ConfigTestCase
+- netbox.tests.test_graphql: GraphQLTestCase, GraphQLAPITestCase
+- netbox.tests.test_import: CSVImportTestCase
+- netbox.tests.test_jobs: TestJobRunner, JobRunnerTestCase, JobRunnerTest, EnqueueTest, SystemJobTest
+- netbox.tests.test_models: ModelTest
+- netbox.tests.test_plugins: PluginTest
+- netbox.tests.test_registry: RegistryTest
+- netbox.tests.test_search: SearchBackendTestCase
+- netbox.tests.test_tables: TagColumnTable, TagColumnTest
+- netbox.tests.test_views: HomeViewTestCase, SearchViewTestCase, MediaViewTestCase
+- netbox.views.errors: StaticMediaFailureView
+- netbox.views.generic.base: BaseObjectView, BaseMultiObjectView
+- netbox.views.generic.bulk_views: ObjectListView, BulkCreateView, BulkImportView, BulkEditView, BulkRenameView, BulkDeleteView, BulkComponentCreateView
+- netbox.views.generic.feature_views: ObjectChangeLogView, ObjectJournalView, ObjectJobsView, ObjectSyncDataView, BulkSyncDataView, ObjectContactsView
+- netbox.views.generic.mixins: ActionsMixin, TableMixin
+- netbox.views.generic.object_views: ObjectView, ObjectChildrenView, ObjectEditView, ObjectDeleteView, ComponentCreateView
+- netbox.views.htmx: ObjectSelectorView
+- netbox.views.misc: HomeView, SearchView, MediaView

@@ -1,0 +1,355 @@
+# Fact-graph digest: subsystem `virtualization` at T0 ea4c205
+
+Summary row [fg:subsystems:virtualization]: {'subsystem': 'virtualization', 'modules': 42, 'loc_code': 6077, 'loc_data': 0, 'test_modules': 5}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- virtualization | netbox/virtualization/__init__.py | 1 | 0 | 0 |  | 
+- virtualization.api | netbox/virtualization/api/__init__.py | 1 | 0 | 0 |  | 
+- virtualization.api.serializers | netbox/virtualization/api/serializers.py | 3 | 0 | 0 |  | 
+- virtualization.api.serializers_ | netbox/virtualization/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- virtualization.api.serializers_.clusters | netbox/virtualization/api/serializers_/clusters.py | 91 | 3 | 0 |  | 
+- virtualization.api.serializers_.nested | netbox/virtualization/api/serializers_/nested.py | 23 | 2 | 0 |  | 
+- virtualization.api.serializers_.virtualmachines | netbox/virtualization/api/serializers_/virtualmachines.py | 159 | 4 | 0 |  | 
+- virtualization.api.urls | netbox/virtualization/api/urls.py | 20 | 0 | 0 |  | 
+- virtualization.api.views | netbox/virtualization/api/views.py | 89 | 7 | 0 |  | 
+- virtualization.apps | netbox/virtualization/apps.py | 18 | 1 | 0 |  | 
+- virtualization.choices | netbox/virtualization/choices.py | 52 | 2 | 0 |  | 
+- virtualization.filtersets | netbox/virtualization/filtersets.py | 321 | 6 | 0 |  | 
+- virtualization.forms | netbox/virtualization/forms/__init__.py | 7 | 0 | 0 |  | 
+- virtualization.forms.bulk_create | netbox/virtualization/forms/bulk_create.py | 41 | 3 | 0 |  | 
+- virtualization.forms.bulk_edit | netbox/virtualization/forms/bulk_edit.py | 344 | 8 | 0 |  | 
+- virtualization.forms.bulk_import | netbox/virtualization/forms/bulk_import.py | 223 | 6 | 0 |  | 
+- virtualization.forms.filtersets | netbox/virtualization/forms/filtersets.py | 274 | 6 | 0 |  | 
+- virtualization.forms.model_forms | netbox/virtualization/forms/model_forms.py | 413 | 9 | 0 |  | 
+- virtualization.forms.object_create | netbox/virtualization/forms/object_create.py | 29 | 2 | 0 |  | 
+- virtualization.graphql | netbox/virtualization/graphql/__init__.py | 1 | 0 | 0 |  | 
+- virtualization.graphql.enums | netbox/virtualization/graphql/enums.py | 12 | 0 | 0 |  | 
+- virtualization.graphql.filter_mixins | netbox/virtualization/graphql/filter_mixins.py | 27 | 1 | 0 |  | 
+- virtualization.graphql.filters | netbox/virtualization/graphql/filters.py | 163 | 6 | 0 |  | 
+- virtualization.graphql.schema | netbox/virtualization/graphql/schema.py | 28 | 1 | 0 |  | 
+- virtualization.graphql.types | netbox/virtualization/graphql/types.py | 147 | 7 | 0 |  | 
+- virtualization.migrations | netbox/virtualization/migrations/__init__.py | 1 | 0 | 0 |  | 
+- virtualization.migrations.0001_squashed_0022 | netbox/virtualization/migrations/0001_squashed_0022.py | 295 | 1 | 0 |  | migration
+- virtualization.migrations.0023_squashed_0036 | netbox/virtualization/migrations/0023_squashed_0036.py | 251 | 1 | 0 |  | migration
+- virtualization.migrations.0037_protect_child_interfaces | netbox/virtualization/migrations/0037_protect_child_interfaces.py | 25 | 1 | 0 |  | migration
+- virtualization.migrations.0038_virtualdisk | netbox/virtualization/migrations/0038_virtualdisk.py | 69 | 1 | 0 |  | migration
+- virtualization.migrations.0039_virtualmachine_serial_number | netbox/virtualization/migrations/0039_virtualmachine_serial_number.py | 16 | 1 | 0 |  | migration
+- virtualization.migrations.0040_convert_disk_size | netbox/virtualization/migrations/0040_convert_disk_size.py | 30 | 1 | 1 |  | migration
+- virtualization.migrations.0041_charfield_null_choices | netbox/virtualization/migrations/0041_charfield_null_choices.py | 27 | 1 | 1 |  | migration
+- virtualization.migrations.0042_vminterface_vlan_translation_policy | netbox/virtualization/migrations/0042_vminterface_vlan_translation_policy.py | 20 | 1 | 0 |  | migration
+- virtualization.migrations.0043_qinq_svlan | netbox/virtualization/migrations/0043_qinq_svlan.py | 40 | 1 | 0 |  | migration
+- virtualization.migrations.0044_cluster_scope | netbox/virtualization/migrations/0044_cluster_scope.py | 64 | 1 | 2 |  | migration
+- virtualization.migrations.0045_clusters_cached_relations | netbox/virtualization/migrations/0045_clusters_cached_relations.py | 101 | 1 | 2 |  | migration
+- virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more | netbox/virtualization/migrations/0046_alter_cluster__location_alter_cluster__region_and_more.py | 41 | 1 | 0 |  | migration
+- virtualization.migrations.0047_natural_ordering | netbox/virtualization/migrations/0047_natural_ordering.py | 43 | 1 | 0 |  | migration
+- virtualization.migrations.0048_populate_mac_addresses | netbox/virtualization/migrations/0048_populate_mac_addresses.py | 95 | 1 | 2 |  | migration
+- virtualization.models | netbox/virtualization/models/__init__.py | 3 | 0 | 0 |  | 
+- virtualization.models.clusters | netbox/virtualization/models/clusters.py | 147 | 3 | 0 |  | 
+- virtualization.models.virtualmachines | netbox/virtualization/models/virtualmachines.py | 426 | 4 | 0 |  | 
+- virtualization.search | netbox/virtualization/search.py | 69 | 6 | 0 |  | 
+- virtualization.signals | netbox/virtualization/signals.py | 26 | 0 | 2 |  | 
+- virtualization.tables | netbox/virtualization/tables/__init__.py | 3 | 0 | 0 |  | 
+- virtualization.tables.clusters | netbox/virtualization/tables/clusters.py | 108 | 3 | 0 |  | 
+- virtualization.tables.template_code | netbox/virtualization/tables/template_code.py | 33 | 0 | 0 |  | 
+- virtualization.tables.virtualmachines | netbox/virtualization/tables/virtualmachines.py | 199 | 5 | 0 |  | 
+- virtualization.tests | netbox/virtualization/tests/__init__.py | 1 | 0 | 0 | test | 
+- virtualization.tests.test_api | netbox/virtualization/tests/test_api.py | 459 | 7 | 0 | test | 
+- virtualization.tests.test_filtersets | netbox/virtualization/tests/test_filtersets.py | 777 | 6 | 0 | test | 
+- virtualization.tests.test_models | netbox/virtualization/tests/test_models.py | 122 | 1 | 0 | test | 
+- virtualization.tests.test_views | netbox/virtualization/tests/test_views.py | 498 | 6 | 0 | test | 
+- virtualization.urls | netbox/virtualization/urls.py | 37 | 0 | 0 |  | 
+- virtualization.views | netbox/virtualization/views.py | 680 | 56 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'virtualization': 62, 'dcim': 43, 'utilities': 43, 'netbox': 29, 'ipam': 20, 'extras': 17, 'tenancy': 13, 'vpn': 3, 'core': 1}
+Inbound by source subsystem: {'dcim': 16, 'ipam': 14, 'extras': 11, 'vpn': 6, 'tenancy': 2, 'netbox': 1, 'utilities': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- virtualization.api.serializers_.clusters -> dcim.constants [fg:imports:virtualization.api.serializers_.clusters->dcim.constants]
+- virtualization.api.serializers_.clusters -> netbox.api.fields [fg:imports:virtualization.api.serializers_.clusters->netbox.api.fields]
+- virtualization.api.serializers_.clusters -> netbox.api.serializers [fg:imports:virtualization.api.serializers_.clusters->netbox.api.serializers]
+- virtualization.api.serializers_.clusters -> tenancy.api.serializers_.tenants [fg:imports:virtualization.api.serializers_.clusters->tenancy.api.serializers_.tenants]
+- virtualization.api.serializers_.clusters -> utilities.api [fg:imports:virtualization.api.serializers_.clusters->utilities.api]
+- virtualization.api.serializers_.nested -> netbox.api.serializers [fg:imports:virtualization.api.serializers_.nested->netbox.api.serializers]
+- virtualization.api.serializers_.virtualmachines -> dcim.api.serializers_.device_components [fg:imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.device_components]
+- virtualization.api.serializers_.virtualmachines -> dcim.api.serializers_.devices [fg:imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.devices]
+- virtualization.api.serializers_.virtualmachines -> dcim.api.serializers_.platforms [fg:imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.platforms]
+- virtualization.api.serializers_.virtualmachines -> dcim.api.serializers_.roles [fg:imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.roles]
+- virtualization.api.serializers_.virtualmachines -> dcim.api.serializers_.sites [fg:imports:virtualization.api.serializers_.virtualmachines->dcim.api.serializers_.sites]
+- virtualization.api.serializers_.virtualmachines -> dcim.choices [fg:imports:virtualization.api.serializers_.virtualmachines->dcim.choices]
+- virtualization.api.serializers_.virtualmachines -> extras.api.serializers_.configtemplates [fg:imports:virtualization.api.serializers_.virtualmachines->extras.api.serializers_.configtemplates]
+- virtualization.api.serializers_.virtualmachines -> ipam.api.serializers_.ip [fg:imports:virtualization.api.serializers_.virtualmachines->ipam.api.serializers_.ip]
+- virtualization.api.serializers_.virtualmachines -> ipam.api.serializers_.vlans [fg:imports:virtualization.api.serializers_.virtualmachines->ipam.api.serializers_.vlans]
+- virtualization.api.serializers_.virtualmachines -> ipam.api.serializers_.vrfs [fg:imports:virtualization.api.serializers_.virtualmachines->ipam.api.serializers_.vrfs]
+- virtualization.api.serializers_.virtualmachines -> ipam.models [fg:imports:virtualization.api.serializers_.virtualmachines->ipam.models]
+- virtualization.api.serializers_.virtualmachines -> netbox.api.fields [fg:imports:virtualization.api.serializers_.virtualmachines->netbox.api.fields]
+- virtualization.api.serializers_.virtualmachines -> netbox.api.serializers [fg:imports:virtualization.api.serializers_.virtualmachines->netbox.api.serializers]
+- virtualization.api.serializers_.virtualmachines -> tenancy.api.serializers_.tenants [fg:imports:virtualization.api.serializers_.virtualmachines->tenancy.api.serializers_.tenants]
+- virtualization.api.serializers_.virtualmachines -> vpn.api.serializers_.l2vpn [fg:imports:virtualization.api.serializers_.virtualmachines->vpn.api.serializers_.l2vpn]
+- virtualization.api.urls -> netbox.api.routers [fg:imports:virtualization.api.urls->netbox.api.routers]
+- virtualization.api.views -> extras.api.mixins [fg:imports:virtualization.api.views->extras.api.mixins]
+- virtualization.api.views -> netbox.api.viewsets [fg:imports:virtualization.api.views->netbox.api.viewsets]
+- virtualization.api.views -> utilities.query_functions [fg:imports:virtualization.api.views->utilities.query_functions]
+- virtualization.apps -> netbox.models.features [fg:imports:virtualization.apps->netbox.models.features]
+- virtualization.apps -> utilities.counters [fg:imports:virtualization.apps->utilities.counters]
+- virtualization.choices -> utilities.choices [fg:imports:virtualization.choices->utilities.choices]
+- virtualization.filtersets -> dcim.base_filtersets [fg:imports:virtualization.filtersets->dcim.base_filtersets]
+- virtualization.filtersets -> dcim.filtersets [fg:imports:virtualization.filtersets->dcim.filtersets]
+- virtualization.filtersets -> dcim.models [fg:imports:virtualization.filtersets->dcim.models]
+- virtualization.filtersets -> dcim.models [fg:imports:virtualization.filtersets->dcim.models]
+- virtualization.filtersets -> extras.filtersets [fg:imports:virtualization.filtersets->extras.filtersets]
+- virtualization.filtersets -> extras.models [fg:imports:virtualization.filtersets->extras.models]
+- virtualization.filtersets -> ipam.filtersets [fg:imports:virtualization.filtersets->ipam.filtersets]
+- virtualization.filtersets -> netbox.filtersets [fg:imports:virtualization.filtersets->netbox.filtersets]
+- virtualization.filtersets -> tenancy.filtersets [fg:imports:virtualization.filtersets->tenancy.filtersets]
+- virtualization.filtersets -> utilities.filters [fg:imports:virtualization.filtersets->utilities.filters]
+- virtualization.forms.bulk_create -> utilities.forms [fg:imports:virtualization.forms.bulk_create->utilities.forms]
+- virtualization.forms.bulk_create -> utilities.forms.fields [fg:imports:virtualization.forms.bulk_create->utilities.forms.fields]
+- virtualization.forms.bulk_edit -> dcim.choices [fg:imports:virtualization.forms.bulk_edit->dcim.choices]
+- virtualization.forms.bulk_edit -> dcim.constants [fg:imports:virtualization.forms.bulk_edit->dcim.constants]
+- virtualization.forms.bulk_edit -> dcim.forms.mixins [fg:imports:virtualization.forms.bulk_edit->dcim.forms.mixins]
+- virtualization.forms.bulk_edit -> dcim.models [fg:imports:virtualization.forms.bulk_edit->dcim.models]
+- virtualization.forms.bulk_edit -> extras.models [fg:imports:virtualization.forms.bulk_edit->extras.models]
+- virtualization.forms.bulk_edit -> ipam.models [fg:imports:virtualization.forms.bulk_edit->ipam.models]
+- virtualization.forms.bulk_edit -> netbox.forms [fg:imports:virtualization.forms.bulk_edit->netbox.forms]
+- virtualization.forms.bulk_edit -> tenancy.models [fg:imports:virtualization.forms.bulk_edit->tenancy.models]
+- virtualization.forms.bulk_edit -> utilities.forms [fg:imports:virtualization.forms.bulk_edit->utilities.forms]
+- virtualization.forms.bulk_edit -> utilities.forms.fields [fg:imports:virtualization.forms.bulk_edit->utilities.forms.fields]
+- virtualization.forms.bulk_edit -> utilities.forms.rendering [fg:imports:virtualization.forms.bulk_edit->utilities.forms.rendering]
+- virtualization.forms.bulk_edit -> utilities.forms.widgets [fg:imports:virtualization.forms.bulk_edit->utilities.forms.widgets]
+- virtualization.forms.bulk_import -> dcim.choices [fg:imports:virtualization.forms.bulk_import->dcim.choices]
+- virtualization.forms.bulk_import -> dcim.forms.mixins [fg:imports:virtualization.forms.bulk_import->dcim.forms.mixins]
+- virtualization.forms.bulk_import -> dcim.models [fg:imports:virtualization.forms.bulk_import->dcim.models]
+- virtualization.forms.bulk_import -> extras.models [fg:imports:virtualization.forms.bulk_import->extras.models]
+- virtualization.forms.bulk_import -> ipam.models [fg:imports:virtualization.forms.bulk_import->ipam.models]
+- virtualization.forms.bulk_import -> netbox.forms [fg:imports:virtualization.forms.bulk_import->netbox.forms]
+- virtualization.forms.bulk_import -> tenancy.models [fg:imports:virtualization.forms.bulk_import->tenancy.models]
+- virtualization.forms.bulk_import -> utilities.forms.fields [fg:imports:virtualization.forms.bulk_import->utilities.forms.fields]
+- virtualization.forms.filtersets -> dcim.choices [fg:imports:virtualization.forms.filtersets->dcim.choices]
+- virtualization.forms.filtersets -> dcim.models [fg:imports:virtualization.forms.filtersets->dcim.models]
+- virtualization.forms.filtersets -> extras.forms [fg:imports:virtualization.forms.filtersets->extras.forms]
+- virtualization.forms.filtersets -> extras.models [fg:imports:virtualization.forms.filtersets->extras.models]
+- virtualization.forms.filtersets -> ipam.models [fg:imports:virtualization.forms.filtersets->ipam.models]
+- virtualization.forms.filtersets -> netbox.forms [fg:imports:virtualization.forms.filtersets->netbox.forms]
+- virtualization.forms.filtersets -> tenancy.forms [fg:imports:virtualization.forms.filtersets->tenancy.forms]
+- virtualization.forms.filtersets -> utilities.forms [fg:imports:virtualization.forms.filtersets->utilities.forms]
+- virtualization.forms.filtersets -> utilities.forms.fields [fg:imports:virtualization.forms.filtersets->utilities.forms.fields]
+- virtualization.forms.filtersets -> utilities.forms.rendering [fg:imports:virtualization.forms.filtersets->utilities.forms.rendering]
+- virtualization.forms.filtersets -> vpn.models [fg:imports:virtualization.forms.filtersets->vpn.models]
+- virtualization.forms.model_forms -> dcim.forms.common [fg:imports:virtualization.forms.model_forms->dcim.forms.common]
+- virtualization.forms.model_forms -> dcim.forms.mixins [fg:imports:virtualization.forms.model_forms->dcim.forms.mixins]
+- virtualization.forms.model_forms -> dcim.models [fg:imports:virtualization.forms.model_forms->dcim.models]
+- virtualization.forms.model_forms -> extras.models [fg:imports:virtualization.forms.model_forms->extras.models]
+- virtualization.forms.model_forms -> ipam.choices [fg:imports:virtualization.forms.model_forms->ipam.choices]
+- virtualization.forms.model_forms -> ipam.models [fg:imports:virtualization.forms.model_forms->ipam.models]
+- virtualization.forms.model_forms -> netbox.forms [fg:imports:virtualization.forms.model_forms->netbox.forms]
+- virtualization.forms.model_forms -> tenancy.forms [fg:imports:virtualization.forms.model_forms->tenancy.forms]
+- virtualization.forms.model_forms -> utilities.forms [fg:imports:virtualization.forms.model_forms->utilities.forms]
+- virtualization.forms.model_forms -> utilities.forms.fields [fg:imports:virtualization.forms.model_forms->utilities.forms.fields]
+- virtualization.forms.model_forms -> utilities.forms.rendering [fg:imports:virtualization.forms.model_forms->utilities.forms.rendering]
+- virtualization.forms.model_forms -> utilities.forms.widgets [fg:imports:virtualization.forms.model_forms->utilities.forms.widgets]
+- virtualization.forms.object_create -> utilities.forms.fields [fg:imports:virtualization.forms.object_create->utilities.forms.fields]
+- virtualization.graphql.filter_mixins -> netbox.graphql.filter_mixins [fg:imports:virtualization.graphql.filter_mixins->netbox.graphql.filter_mixins]
+- virtualization.graphql.filters -> dcim.graphql.filter_mixins [fg:imports:virtualization.graphql.filters->dcim.graphql.filter_mixins]
+- virtualization.graphql.filters -> dcim.graphql.filters [fg:imports:virtualization.graphql.filters->dcim.graphql.filters]
+- virtualization.graphql.filters -> extras.graphql.filter_mixins [fg:imports:virtualization.graphql.filters->extras.graphql.filter_mixins]
+- virtualization.graphql.filters -> ipam.graphql.filters [fg:imports:virtualization.graphql.filters->ipam.graphql.filters]
+- virtualization.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:virtualization.graphql.filters->netbox.graphql.filter_lookups]
+- virtualization.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:virtualization.graphql.filters->netbox.graphql.filter_mixins]
+- virtualization.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:virtualization.graphql.filters->tenancy.graphql.filter_mixins]
+- virtualization.graphql.filters -> vpn.graphql.filters [fg:imports:virtualization.graphql.filters->vpn.graphql.filters]
+- virtualization.graphql.types -> dcim.graphql.types [fg:imports:virtualization.graphql.types->dcim.graphql.types]
+- virtualization.graphql.types -> extras.graphql.mixins [fg:imports:virtualization.graphql.types->extras.graphql.mixins]
+- virtualization.graphql.types -> extras.graphql.types [fg:imports:virtualization.graphql.types->extras.graphql.types]
+- virtualization.graphql.types -> ipam.graphql.mixins [fg:imports:virtualization.graphql.types->ipam.graphql.mixins]
+- virtualization.graphql.types -> ipam.graphql.types [fg:imports:virtualization.graphql.types->ipam.graphql.types]
+- virtualization.graphql.types -> netbox.graphql.scalars [fg:imports:virtualization.graphql.types->netbox.graphql.scalars]
+- virtualization.graphql.types -> netbox.graphql.types [fg:imports:virtualization.graphql.types->netbox.graphql.types]
+- virtualization.graphql.types -> tenancy.graphql.types [fg:imports:virtualization.graphql.types->tenancy.graphql.types]
+- virtualization.migrations.0001_squashed_0022 -> dcim.fields [fg:imports:virtualization.migrations.0001_squashed_0022->dcim.fields]
+- virtualization.migrations.0001_squashed_0022 -> utilities.fields [fg:imports:virtualization.migrations.0001_squashed_0022->utilities.fields]
+- virtualization.migrations.0001_squashed_0022 -> utilities.json [fg:imports:virtualization.migrations.0001_squashed_0022->utilities.json]
+- virtualization.migrations.0001_squashed_0022 -> utilities.ordering [fg:imports:virtualization.migrations.0001_squashed_0022->utilities.ordering]
+- virtualization.migrations.0001_squashed_0022 -> utilities.query_functions [fg:imports:virtualization.migrations.0001_squashed_0022->utilities.query_functions]
+- virtualization.migrations.0023_squashed_0036 -> utilities.fields [fg:imports:virtualization.migrations.0023_squashed_0036->utilities.fields]
+- virtualization.migrations.0023_squashed_0036 -> utilities.ordering [fg:imports:virtualization.migrations.0023_squashed_0036->utilities.ordering]
+- virtualization.migrations.0038_virtualdisk -> utilities.fields [fg:imports:virtualization.migrations.0038_virtualdisk->utilities.fields]
+- virtualization.migrations.0038_virtualdisk -> utilities.json [fg:imports:virtualization.migrations.0038_virtualdisk->utilities.json]
+- virtualization.migrations.0038_virtualdisk -> utilities.ordering [fg:imports:virtualization.migrations.0038_virtualdisk->utilities.ordering]
+- virtualization.migrations.0038_virtualdisk -> utilities.query_functions [fg:imports:virtualization.migrations.0038_virtualdisk->utilities.query_functions]
+- virtualization.migrations.0038_virtualdisk -> utilities.tracking [fg:imports:virtualization.migrations.0038_virtualdisk->utilities.tracking]
+- virtualization.migrations.0040_convert_disk_size -> netbox.settings [fg:imports:virtualization.migrations.0040_convert_disk_size->netbox.settings]
+- virtualization.models.clusters -> dcim.models [fg:imports:virtualization.models.clusters->dcim.models]
+- virtualization.models.clusters -> dcim.models.mixins [fg:imports:virtualization.models.clusters->dcim.models.mixins]
+- virtualization.models.clusters -> netbox.models [fg:imports:virtualization.models.clusters->netbox.models]
+- virtualization.models.clusters -> netbox.models.features [fg:imports:virtualization.models.clusters->netbox.models.features]
+- virtualization.models.virtualmachines -> dcim.models [fg:imports:virtualization.models.virtualmachines->dcim.models]
+- virtualization.models.virtualmachines -> dcim.models.mixins [fg:imports:virtualization.models.virtualmachines->dcim.models.mixins]
+- virtualization.models.virtualmachines -> extras.models [fg:imports:virtualization.models.virtualmachines->extras.models]
+- virtualization.models.virtualmachines -> extras.querysets [fg:imports:virtualization.models.virtualmachines->extras.querysets]
+- virtualization.models.virtualmachines -> netbox.config [fg:imports:virtualization.models.virtualmachines->netbox.config]
+- virtualization.models.virtualmachines -> netbox.models [fg:imports:virtualization.models.virtualmachines->netbox.models]
+- virtualization.models.virtualmachines -> netbox.models.features [fg:imports:virtualization.models.virtualmachines->netbox.models.features]
+- virtualization.models.virtualmachines -> utilities.fields [fg:imports:virtualization.models.virtualmachines->utilities.fields]
+- virtualization.models.virtualmachines -> utilities.ordering [fg:imports:virtualization.models.virtualmachines->utilities.ordering]
+- virtualization.models.virtualmachines -> utilities.query_functions [fg:imports:virtualization.models.virtualmachines->utilities.query_functions]
+- virtualization.models.virtualmachines -> utilities.tracking [fg:imports:virtualization.models.virtualmachines->utilities.tracking]
+- virtualization.search -> netbox.search [fg:imports:virtualization.search->netbox.search]
+- virtualization.tables.clusters -> netbox.tables [fg:imports:virtualization.tables.clusters->netbox.tables]
+- virtualization.tables.clusters -> tenancy.tables [fg:imports:virtualization.tables.clusters->tenancy.tables]
+- virtualization.tables.virtualmachines -> dcim.tables.devices [fg:imports:virtualization.tables.virtualmachines->dcim.tables.devices]
+- virtualization.tables.virtualmachines -> netbox.tables [fg:imports:virtualization.tables.virtualmachines->netbox.tables]
+- virtualization.tables.virtualmachines -> tenancy.tables [fg:imports:virtualization.tables.virtualmachines->tenancy.tables]
+- virtualization.tables.virtualmachines -> utilities.templatetags.helpers [fg:imports:virtualization.tables.virtualmachines->utilities.templatetags.helpers]
+- virtualization.tests.test_api -> core.models [fg:imports:virtualization.tests.test_api->core.models]
+- virtualization.tests.test_api -> dcim.choices [fg:imports:virtualization.tests.test_api->dcim.choices]
+- virtualization.tests.test_api -> dcim.models [fg:imports:virtualization.tests.test_api->dcim.models]
+- virtualization.tests.test_api -> extras.choices [fg:imports:virtualization.tests.test_api->extras.choices]
+- virtualization.tests.test_api -> extras.models [fg:imports:virtualization.tests.test_api->extras.models]
+- virtualization.tests.test_api -> ipam.choices [fg:imports:virtualization.tests.test_api->ipam.choices]
+- virtualization.tests.test_api -> ipam.models [fg:imports:virtualization.tests.test_api->ipam.models]
+- virtualization.tests.test_api -> utilities.testing [fg:imports:virtualization.tests.test_api->utilities.testing]
+- virtualization.tests.test_filtersets -> dcim.choices [fg:imports:virtualization.tests.test_filtersets->dcim.choices]
+- virtualization.tests.test_filtersets -> dcim.models [fg:imports:virtualization.tests.test_filtersets->dcim.models]
+- virtualization.tests.test_filtersets -> ipam.choices [fg:imports:virtualization.tests.test_filtersets->ipam.choices]
+- virtualization.tests.test_filtersets -> ipam.models [fg:imports:virtualization.tests.test_filtersets->ipam.models]
+- virtualization.tests.test_filtersets -> tenancy.models [fg:imports:virtualization.tests.test_filtersets->tenancy.models]
+- virtualization.tests.test_filtersets -> utilities.testing [fg:imports:virtualization.tests.test_filtersets->utilities.testing]
+- virtualization.tests.test_models -> dcim.models [fg:imports:virtualization.tests.test_models->dcim.models]
+- virtualization.tests.test_models -> tenancy.models [fg:imports:virtualization.tests.test_models->tenancy.models]
+- virtualization.tests.test_views -> dcim.choices [fg:imports:virtualization.tests.test_views->dcim.choices]
+- virtualization.tests.test_views -> dcim.models [fg:imports:virtualization.tests.test_views->dcim.models]
+- virtualization.tests.test_views -> ipam.models [fg:imports:virtualization.tests.test_views->ipam.models]
+- virtualization.tests.test_views -> utilities.testing [fg:imports:virtualization.tests.test_views->utilities.testing]
+- virtualization.urls -> utilities.urls [fg:imports:virtualization.urls->utilities.urls]
+- virtualization.views -> dcim.filtersets [fg:imports:virtualization.views->dcim.filtersets]
+- virtualization.views -> dcim.forms [fg:imports:virtualization.views->dcim.forms]
+- virtualization.views -> dcim.models [fg:imports:virtualization.views->dcim.models]
+- virtualization.views -> dcim.tables [fg:imports:virtualization.views->dcim.tables]
+- virtualization.views -> extras.views [fg:imports:virtualization.views->extras.views]
+- virtualization.views -> ipam.models [fg:imports:virtualization.views->ipam.models]
+- virtualization.views -> ipam.tables [fg:imports:virtualization.views->ipam.tables]
+- virtualization.views -> netbox.constants [fg:imports:virtualization.views->netbox.constants]
+- virtualization.views -> netbox.views [fg:imports:virtualization.views->netbox.views]
+- virtualization.views -> utilities.query [fg:imports:virtualization.views->utilities.query]
+- virtualization.views -> utilities.query_functions [fg:imports:virtualization.views->utilities.query_functions]
+- virtualization.views -> utilities.views [fg:imports:virtualization.views->utilities.views]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- virtualization.migrations.0040_convert_disk_size | . | get_model | virtualization.VirtualDisk |  [fg:model_refs:virtualization.migrations.0040_convert_disk_size:7]
+- virtualization.migrations.0040_convert_disk_size | . | get_model | virtualization.VirtualMachine |  [fg:model_refs:virtualization.migrations.0040_convert_disk_size:8]
+- virtualization.migrations.0041_charfield_null_choices | . | get_model | virtualization.VMInterface |  [fg:model_refs:virtualization.migrations.0041_charfield_null_choices:8]
+- virtualization.migrations.0044_cluster_scope | . | get_model | contenttypes.ContentType | cross [fg:model_refs:virtualization.migrations.0044_cluster_scope:10]
+- virtualization.migrations.0044_cluster_scope | . | get_model | virtualization.Cluster |  [fg:model_refs:virtualization.migrations.0044_cluster_scope:11]
+- virtualization.migrations.0044_cluster_scope | . | get_model | dcim.Site | cross [fg:model_refs:virtualization.migrations.0044_cluster_scope:12]
+- virtualization.migrations.0045_clusters_cached_relations | . | get_model | virtualization.Cluster |  [fg:model_refs:virtualization.migrations.0045_clusters_cached_relations:9]
+- virtualization.migrations.0048_populate_mac_addresses | . | get_model | contenttypes.ContentType | cross [fg:model_refs:virtualization.migrations.0048_populate_mac_addresses:8]
+- virtualization.migrations.0048_populate_mac_addresses | . | get_model | virtualization.VMInterface |  [fg:model_refs:virtualization.migrations.0048_populate_mac_addresses:9]
+- virtualization.migrations.0048_populate_mac_addresses | . | get_model | dcim.MACAddress | cross [fg:model_refs:virtualization.migrations.0048_populate_mac_addresses:10]
+- virtualization.migrations.0048_populate_mac_addresses | . | get_model | dcim.MACAddress | cross [fg:model_refs:virtualization.migrations.0048_populate_mac_addresses:59]
+- virtualization.models.clusters | ClusterGroup.vlan_groups | GenericRelation | ipam.VLANGroup | cross [fg:model_refs:virtualization.models.clusters:34]
+- virtualization.models.clusters | Cluster.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:virtualization.models.clusters:75]
+- virtualization.models.clusters | Cluster.vlan_groups | GenericRelation | ipam.VLANGroup | cross [fg:model_refs:virtualization.models.clusters:84]
+- virtualization.models.clusters | . | get_model | dcim.site | cross [fg:model_refs:virtualization.models.clusters:125]
+- virtualization.models.clusters | . | get_model | dcim.location | cross [fg:model_refs:virtualization.models.clusters:127]
+- virtualization.models.virtualmachines | VirtualMachine.site | ForeignKey | dcim.Site | cross [fg:model_refs:virtualization.models.virtualmachines:35]
+- virtualization.models.virtualmachines | VirtualMachine.cluster | ForeignKey | virtualization.Cluster |  [fg:model_refs:virtualization.models.virtualmachines:42]
+- virtualization.models.virtualmachines | VirtualMachine.device | ForeignKey | dcim.Device | cross [fg:model_refs:virtualization.models.virtualmachines:49]
+- virtualization.models.virtualmachines | VirtualMachine.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:virtualization.models.virtualmachines:56]
+- virtualization.models.virtualmachines | VirtualMachine.platform | ForeignKey | dcim.Platform | cross [fg:model_refs:virtualization.models.virtualmachines:63]
+- virtualization.models.virtualmachines | VirtualMachine.role | ForeignKey | dcim.DeviceRole | cross [fg:model_refs:virtualization.models.virtualmachines:81]
+- virtualization.models.virtualmachines | VirtualMachine.primary_ip4 | OneToOneField | ipam.IPAddress | cross [fg:model_refs:virtualization.models.virtualmachines:88]
+- virtualization.models.virtualmachines | VirtualMachine.primary_ip6 | OneToOneField | ipam.IPAddress | cross [fg:model_refs:virtualization.models.virtualmachines:96]
+- virtualization.models.virtualmachines | VirtualMachine.services | GenericRelation | ipam.Service | cross [fg:model_refs:virtualization.models.virtualmachines:129]
+- virtualization.models.virtualmachines | ComponentModel.virtual_machine | ForeignKey | virtualization.VirtualMachine |  [fg:model_refs:virtualization.models.virtualmachines:270]
+- virtualization.models.virtualmachines | VMInterface.virtual_machine | ForeignKey | virtualization.VirtualMachine |  [fg:model_refs:virtualization.models.virtualmachines:319]
+- virtualization.models.virtualmachines | VMInterface.ip_addresses | GenericRelation | ipam.IPAddress | cross [fg:model_refs:virtualization.models.virtualmachines:324]
+- virtualization.models.virtualmachines | VMInterface.vrf | ForeignKey | ipam.VRF | cross [fg:model_refs:virtualization.models.virtualmachines:330]
+- virtualization.models.virtualmachines | VMInterface.fhrp_group_assignments | GenericRelation | ipam.FHRPGroupAssignment | cross [fg:model_refs:virtualization.models.virtualmachines:338]
+- virtualization.models.virtualmachines | VMInterface.tunnel_terminations | GenericRelation | vpn.TunnelTermination | cross [fg:model_refs:virtualization.models.virtualmachines:344]
+- virtualization.models.virtualmachines | VMInterface.l2vpn_terminations | GenericRelation | vpn.L2VPNTermination | cross [fg:model_refs:virtualization.models.virtualmachines:350]
+- virtualization.models.virtualmachines | VMInterface.mac_addresses | GenericRelation | dcim.MACAddress | cross [fg:model_refs:virtualization.models.virtualmachines:356]
+
+## String references INTO this subsystem from others
+- dcim.models.devices | Device.cluster | ForeignKey -> virtualization.Cluster [fg:model_refs:dcim.models.devices:569]
+- extras.models.configs | ConfigContext.cluster_types | ManyToManyField -> virtualization.ClusterType [fg:model_refs:extras.models.configs:85]
+- extras.models.configs | ConfigContext.cluster_groups | ManyToManyField -> virtualization.ClusterGroup [fg:model_refs:extras.models.configs:90]
+- extras.models.configs | ConfigContext.clusters | ManyToManyField -> virtualization.Cluster [fg:model_refs:extras.models.configs:95]
+- ipam.migrations.0080_populate_service_parent | . | get_model -> virtualization.virtualmachine [fg:model_refs:ipam.migrations.0080_populate_service_parent:10]
+- ipam.migrations.0080_populate_service_parent | . | get_model -> virtualization.virtualmachine [fg:model_refs:ipam.migrations.0080_populate_service_parent:28]
+
+## Churn (id = churn:<module>) — top 25 by commits
+- virtualization.views | 185 commits | 16 authors | 2017-08-04 .. 2025-06-25 [fg:churn:virtualization.views]
+- virtualization.api.serializers | 90 commits | 8 authors | 2017-08-08 .. 2024-08-14 [fg:churn:virtualization.api.serializers]
+- virtualization.api.views | 73 commits | 7 authors | 2017-08-08 .. 2024-11-15 [fg:churn:virtualization.api.views]
+- virtualization.tests.test_api | 62 commits | 8 authors | 2017-08-31 .. 2025-05-21 [fg:churn:virtualization.tests.test_api]
+- virtualization.tests.test_views | 54 commits | 5 authors | 2019-02-15 .. 2025-03-28 [fg:churn:virtualization.tests.test_views]
+- virtualization.urls | 43 commits | 4 authors | 2017-08-04 .. 2024-11-25 [fg:churn:virtualization.urls]
+- virtualization.forms.filtersets | 38 commits | 10 authors | 2021-09-28 .. 2025-04-15 [fg:churn:virtualization.forms.filtersets]
+- virtualization.tables.virtualmachines | 37 commits | 10 authors | 2022-03-03 .. 2025-03-07 [fg:churn:virtualization.tables.virtualmachines]
+- virtualization.filtersets | 36 commits | 9 authors | 2021-04-29 .. 2025-03-28 [fg:churn:virtualization.filtersets]
+- virtualization.forms.bulk_edit | 36 commits | 8 authors | 2021-09-28 .. 2025-02-23 [fg:churn:virtualization.forms.bulk_edit]
+- virtualization.models.virtualmachines | 30 commits | 8 authors | 2022-11-04 .. 2025-04-11 [fg:churn:virtualization.models.virtualmachines]
+- virtualization.tests.test_filtersets | 30 commits | 7 authors | 2021-05-03 .. 2025-05-01 [fg:churn:virtualization.tests.test_filtersets]
+- virtualization.forms.model_forms | 28 commits | 9 authors | 2022-10-25 .. 2025-01-21 [fg:churn:virtualization.forms.model_forms]
+- virtualization.forms.bulk_import | 24 commits | 6 authors | 2021-09-28 .. 2024-11-21 [fg:churn:virtualization.forms.bulk_import]
+- virtualization.graphql.types | 22 commits | 4 authors | 2021-06-25 .. 2025-04-10 [fg:churn:virtualization.graphql.types]
+- virtualization.choices | 15 commits | 5 authors | 2019-12-04 .. 2025-02-07 [fg:churn:virtualization.choices]
+- virtualization.tables.clusters | 14 commits | 5 authors | 2022-03-03 .. 2025-01-16 [fg:churn:virtualization.tables.clusters]
+- virtualization.api.urls | 13 commits | 3 authors | 2017-08-08 .. 2023-11-17 [fg:churn:virtualization.api.urls]
+- virtualization.api.serializers_.virtualmachines | 12 commits | 4 authors | 2024-02-27 .. 2025-03-20 [fg:churn:virtualization.api.serializers_.virtualmachines]
+- virtualization.models.clusters | 11 commits | 3 authors | 2022-11-04 .. 2024-11-15 [fg:churn:virtualization.models.clusters]
+- virtualization.apps | 10 commits | 2 authors | 2017-08-04 .. 2025-04-04 [fg:churn:virtualization.apps]
+- virtualization.search | 10 commits | 4 authors | 2022-10-10 .. 2025-01-07 [fg:churn:virtualization.search]
+- virtualization.tests.test_models | 10 commits | 4 authors | 2019-12-09 .. 2024-11-01 [fg:churn:virtualization.tests.test_models]
+- virtualization.forms.object_create | 9 commits | 3 authors | 2021-09-28 .. 2023-11-17 [fg:churn:virtualization.forms.object_create]
+- virtualization.api.serializers_.clusters | 7 commits | 2 authors | 2024-02-27 .. 2024-11-21 [fg:churn:virtualization.api.serializers_.clusters]
+
+## Entry points (id = entrypoints:<module>)
+- urls | virtualization.api.urls | netbox/virtualization/api/urls.py [fg:entrypoints:virtualization.api.urls]
+- api_views | virtualization.api.views | netbox/virtualization/api/views.py [fg:entrypoints:virtualization.api.views]
+- signals | virtualization.signals | netbox/virtualization/signals.py [fg:entrypoints:virtualization.signals]
+- urls | virtualization.urls | netbox/virtualization/urls.py [fg:entrypoints:virtualization.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- virtualization.api.serializers_.clusters: ClusterTypeSerializer, ClusterGroupSerializer, ClusterSerializer
+- virtualization.api.serializers_.nested: NestedVirtualMachineSerializer, NestedVMInterfaceSerializer
+- virtualization.api.serializers_.virtualmachines: VirtualMachineSerializer, VirtualMachineWithConfigContextSerializer, VMInterfaceSerializer, VirtualDiskSerializer
+- virtualization.api.views: VirtualizationRootView, ClusterTypeViewSet, ClusterGroupViewSet, ClusterViewSet, VirtualMachineViewSet, VMInterfaceViewSet, VirtualDiskViewSet
+- virtualization.apps: VirtualizationConfig
+- virtualization.choices: ClusterStatusChoices, VirtualMachineStatusChoices
+- virtualization.filtersets: ClusterTypeFilterSet, ClusterGroupFilterSet, ClusterFilterSet, VirtualMachineFilterSet, VMInterfaceFilterSet, VirtualDiskFilterSet
+- virtualization.forms.bulk_create: VirtualMachineBulkAddComponentForm, VMInterfaceBulkCreateForm, VirtualDiskBulkCreateForm
+- virtualization.forms.bulk_edit: ClusterTypeBulkEditForm, ClusterGroupBulkEditForm, ClusterBulkEditForm, VirtualMachineBulkEditForm, VMInterfaceBulkEditForm, VMInterfaceBulkRenameForm, VirtualDiskBulkEditForm, VirtualDiskBulkRenameForm
+- virtualization.forms.bulk_import: ClusterTypeImportForm, ClusterGroupImportForm, ClusterImportForm, VirtualMachineImportForm, VMInterfaceImportForm, VirtualDiskImportForm
+- virtualization.forms.filtersets: ClusterTypeFilterForm, ClusterGroupFilterForm, ClusterFilterForm, VirtualMachineFilterForm, VMInterfaceFilterForm, VirtualDiskFilterForm
+- virtualization.forms.model_forms: ClusterTypeForm, ClusterGroupForm, ClusterForm, ClusterAddDevicesForm, ClusterRemoveDevicesForm, VirtualMachineForm, VMComponentForm, VMInterfaceForm, VirtualDiskForm
+- virtualization.forms.object_create: VMInterfaceCreateForm, VirtualDiskCreateForm
+- virtualization.graphql.filter_mixins: VMComponentFilterMixin
+- virtualization.graphql.filters: ClusterFilter, ClusterGroupFilter, ClusterTypeFilter, VirtualMachineFilter, VMInterfaceFilter, VirtualDiskFilter
+- virtualization.graphql.schema: VirtualizationQuery
+- virtualization.graphql.types: ComponentType, ClusterType, ClusterGroupType, ClusterTypeType, VirtualMachineType, VMInterfaceType, VirtualDiskType
+- virtualization.migrations.0001_squashed_0022: Migration
+- virtualization.migrations.0023_squashed_0036: Migration
+- virtualization.migrations.0037_protect_child_interfaces: Migration
+- virtualization.migrations.0038_virtualdisk: Migration
+- virtualization.migrations.0039_virtualmachine_serial_number: Migration
+- virtualization.migrations.0040_convert_disk_size: Migration
+- virtualization.migrations.0041_charfield_null_choices: Migration
+- virtualization.migrations.0042_vminterface_vlan_translation_policy: Migration
+- virtualization.migrations.0043_qinq_svlan: Migration
+- virtualization.migrations.0044_cluster_scope: Migration
+- virtualization.migrations.0045_clusters_cached_relations: Migration
+- virtualization.migrations.0046_alter_cluster__location_alter_cluster__region_and_more: Migration
+- virtualization.migrations.0047_natural_ordering: Migration
+- virtualization.migrations.0048_populate_mac_addresses: Migration
+- virtualization.models.clusters: ClusterType, ClusterGroup, Cluster
+- virtualization.models.virtualmachines: VirtualMachine, ComponentModel, VMInterface, VirtualDisk
+- virtualization.search: ClusterIndex, ClusterGroupIndex, ClusterTypeIndex, VirtualMachineIndex, VMInterfaceIndex, VirtualDiskIndex
+- virtualization.tables.clusters: ClusterTypeTable, ClusterGroupTable, ClusterTable
+- virtualization.tables.virtualmachines: VirtualMachineTable, VMInterfaceTable, VirtualMachineVMInterfaceTable, VirtualDiskTable, VirtualMachineVirtualDiskTable
+- virtualization.tests.test_api: AppTest, ClusterTypeTest, ClusterGroupTest, ClusterTest, VirtualMachineTest, VMInterfaceTest, VirtualDiskTest
+- virtualization.tests.test_filtersets: ClusterTypeTestCase, ClusterGroupTestCase, ClusterTestCase, VirtualMachineTestCase, VMInterfaceTestCase, VirtualDiskTestCase
+- virtualization.tests.test_models: VirtualMachineTestCase
+- virtualization.tests.test_views: ClusterGroupTestCase, ClusterTypeTestCase, ClusterTestCase, VirtualMachineTestCase, VMInterfaceTestCase, VirtualDiskTestCase
+- virtualization.views: ClusterTypeListView, ClusterTypeView, ClusterTypeEditView, ClusterTypeDeleteView, ClusterTypeBulkImportView, ClusterTypeBulkEditView, ClusterTypeBulkDeleteView, ClusterGroupListView, ClusterGroupView, ClusterGroupEditView, ClusterGroupDeleteView, ClusterGroupBulkImportView, ClusterGroupBulkEditView, ClusterGroupBulkDeleteView, ClusterListView, ClusterView, ClusterVirtualMachinesView, ClusterDevicesView, ClusterEditView, ClusterDeleteView, ClusterBulkImportView, ClusterBulkEditView, ClusterBulkDeleteView, ClusterAddDevicesView, ClusterRemoveDevicesView, VirtualMachineListView, VirtualMachineView, VirtualMachineInterfacesView, VirtualMachineVirtualDisksView, VirtualMachineConfigContextView, VirtualMachineRenderConfigView, VirtualMachineEditView, VirtualMachineDeleteView, VirtualMachineBulkImportView, VirtualMachineBulkEditView, VirtualMachineBulkDeleteView, VMInterfaceListView, VMInterfaceView, VMInterfaceCreateView, VMInterfaceEditView, VMInterfaceDeleteView, VMInterfaceBulkImportView, VMInterfaceBulkEditView, VMInterfaceBulkRenameView, VMInterfaceBulkDeleteView, VirtualDiskListView, VirtualDiskView, VirtualDiskCreateView, VirtualDiskEditView, VirtualDiskDeleteView, VirtualDiskBulkImportView, VirtualDiskBulkEditView, VirtualDiskBulkRenameView, VirtualDiskBulkDeleteView, VirtualMachineBulkAddInterfaceView, VirtualMachineBulkAddVirtualDiskView

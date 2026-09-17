@@ -1,0 +1,26 @@
+{
+ "subsystem": "vpn",
+ "files": {
+  "adrs.md": {
+   "claims_kept": 28,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "map.md": {
+   "claims_kept": 35,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  },
+  "patterns.md": {
+   "claims_kept": 30,
+   "claims_removed": 0,
+   "citations_dropped": 0,
+   "removed": [],
+   "dropped": []
+  }
+ }
+}

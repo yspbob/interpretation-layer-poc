@@ -1,0 +1,718 @@
+# Fact-graph digest: subsystem `extras` at T0 ea4c205
+
+Summary row [fg:subsystems:extras]: {'subsystem': 'extras', 'modules': 106, 'loc_code': 22120, 'loc_data': 121327, 'test_modules': 15}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- extras | netbox/extras/__init__.py | 1 | 0 | 0 |  | 
+- extras.api | netbox/extras/api/__init__.py | 1 | 0 | 0 |  | 
+- extras.api.customfields | netbox/extras/api/customfields.py | 96 | 2 | 0 |  | 
+- extras.api.mixins | netbox/extras/api/mixins.py | 86 | 3 | 0 |  | 
+- extras.api.serializers | netbox/extras/api/serializers.py | 17 | 0 | 0 |  | 
+- extras.api.serializers_ | netbox/extras/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- extras.api.serializers_.attachments | netbox/extras/api/serializers_/attachments.py | 52 | 1 | 0 |  | 
+- extras.api.serializers_.bookmarks | netbox/extras/api/serializers_/bookmarks.py | 35 | 1 | 0 |  | 
+- extras.api.serializers_.configcontexts | netbox/extras/api/serializers_/configcontexts.py | 131 | 1 | 0 |  | 
+- extras.api.serializers_.configtemplates | netbox/extras/api/serializers_/configtemplates.py | 29 | 1 | 0 |  | 
+- extras.api.serializers_.customfields | netbox/extras/api/serializers_/customfields.py | 91 | 2 | 0 |  | 
+- extras.api.serializers_.customlinks | netbox/extras/api/serializers_/customlinks.py | 24 | 1 | 0 |  | 
+- extras.api.serializers_.dashboard | netbox/extras/api/serializers_/dashboard.py | 14 | 1 | 0 |  | 
+- extras.api.serializers_.events | netbox/extras/api/serializers_/events.py | 69 | 2 | 0 |  | 
+- extras.api.serializers_.exporttemplates | netbox/extras/api/serializers_/exporttemplates.py | 34 | 1 | 0 |  | 
+- extras.api.serializers_.journaling | netbox/extras/api/serializers_/journaling.py | 60 | 1 | 0 |  | 
+- extras.api.serializers_.notifications | netbox/extras/api/serializers_/notifications.py | 83 | 3 | 0 |  | 
+- extras.api.serializers_.objecttypes | netbox/extras/api/serializers_/objecttypes.py | 17 | 1 | 0 |  | 
+- extras.api.serializers_.savedfilters | netbox/extras/api/serializers_/savedfilters.py | 24 | 1 | 0 |  | 
+- extras.api.serializers_.scripts | netbox/extras/api/serializers_/scripts.py | 77 | 3 | 0 |  | 
+- extras.api.serializers_.tableconfigs | netbox/extras/api/serializers_/tableconfigs.py | 23 | 1 | 0 |  | 
+- extras.api.serializers_.tags | netbox/extras/api/serializers_/tags.py | 68 | 2 | 0 |  | 
+- extras.api.urls | netbox/extras/api/urls.py | 36 | 0 | 0 |  | 
+- extras.api.views | netbox/extras/api/views.py | 341 | 22 | 0 |  | 
+- extras.apps | netbox/extras/apps.py | 13 | 1 | 0 |  | 
+- extras.choices | netbox/extras/choices.py | 253 | 12 | 0 |  | 
+- extras.conditions | netbox/extras/conditions.py | 162 | 2 | 1 |  | 
+- extras.constants | netbox/extras/constants.py | 149 | 0 | 0 |  | 
+- extras.dashboard | netbox/extras/dashboard/__init__.py | 3 | 0 | 0 |  | 
+- extras.dashboard.forms | netbox/extras/dashboard/forms.py | 41 | 2 | 1 |  | 
+- extras.dashboard.utils | netbox/extras/dashboard/utils.py | 80 | 0 | 4 |  | 
+- extras.dashboard.widgets | netbox/extras/dashboard/widgets.py | 436 | 7 | 4 |  | 
+- extras.data | netbox/extras/data/__init__.py | 10 | 0 | 0 |  | 
+- extras.data.iata | netbox/extras/data/iata.py | 9769 | 0 | 0 |  | 
+- extras.data.iso_3166 | netbox/extras/data/iso_3166.py | 254 | 0 | 0 |  | 
+- extras.data.un_locode | netbox/extras/data/un_locode.py | 111558 | 0 | 0 |  | 
+- extras.events | netbox/extras/events.py | 197 | 0 | 6 |  | 
+- extras.fields | netbox/extras/fields.py | 9 | 1 | 0 |  | 
+- extras.filters | netbox/extras/filters.py | 39 | 2 | 0 |  | 
+- extras.filtersets | netbox/extras/filtersets.py | 814 | 19 | 0 |  | 
+- extras.forms | netbox/extras/forms/__init__.py | 7 | 0 | 0 |  | 
+- extras.forms.bulk_edit | netbox/extras/forms/bulk_edit.py | 401 | 13 | 0 |  | 
+- extras.forms.bulk_import | netbox/extras/forms/bulk_import.py | 292 | 11 | 0 |  | 
+- extras.forms.filtersets | netbox/extras/forms/filtersets.py | 546 | 15 | 0 |  | 
+- extras.forms.misc | netbox/extras/forms/misc.py | 17 | 1 | 0 |  | 
+- extras.forms.model_forms | netbox/extras/forms/model_forms.py | 771 | 16 | 0 |  | 
+- extras.forms.reports | netbox/extras/forms/reports.py | 52 | 1 | 0 |  | 
+- extras.forms.scripts | netbox/extras/forms/scripts.py | 78 | 2 | 0 |  | 
+- extras.graphql | netbox/extras/graphql/__init__.py | 1 | 0 | 0 |  | 
+- extras.graphql.enums | netbox/extras/graphql/enums.py | 27 | 0 | 0 |  | 
+- extras.graphql.filter_mixins | netbox/extras/graphql/filter_mixins.py | 53 | 5 | 0 |  | 
+- extras.graphql.filters | netbox/extras/graphql/filters.py | 325 | 14 | 0 |  | 
+- extras.graphql.mixins | netbox/extras/graphql/mixins.py | 62 | 6 | 0 |  | 
+- extras.graphql.schema | netbox/extras/graphql/schema.py | 58 | 1 | 0 |  | 
+- extras.graphql.types | netbox/extras/graphql/types.py | 230 | 16 | 0 |  | 
+- extras.jobs | netbox/extras/jobs.py | 113 | 1 | 0 |  | 
+- extras.lookups | netbox/extras/lookups.py | 36 | 2 | 0 |  | 
+- extras.management | netbox/extras/management/__init__.py | 1 | 0 | 0 |  | 
+- extras.management.commands | netbox/extras/management/commands/__init__.py | 1 | 0 | 0 |  | 
+- extras.management.commands.housekeeping | netbox/extras/management/commands/housekeeping.py | 136 | 1 | 0 |  | 
+- extras.management.commands.reindex | netbox/extras/management/commands/reindex.py | 106 | 1 | 0 |  | 
+- extras.management.commands.renaturalize | netbox/extras/management/commands/renaturalize.py | 112 | 1 | 0 |  | 
+- extras.management.commands.runscript | netbox/extras/management/commands/runscript.py | 108 | 1 | 0 |  | 
+- extras.management.commands.webhook_receiver | netbox/extras/management/commands/webhook_receiver.py | 90 | 2 | 0 |  | 
+- extras.migrations | netbox/extras/migrations/__init__.py | 1 | 0 | 0 |  | 
+- extras.migrations.0001_squashed | netbox/extras/migrations/0001_squashed.py | 318 | 1 | 0 |  | migration
+- extras.migrations.0002_squashed_0059 | netbox/extras/migrations/0002_squashed_0059.py | 138 | 1 | 0 |  | migration
+- extras.migrations.0060_squashed_0086 | netbox/extras/migrations/0060_squashed_0086.py | 602 | 1 | 0 |  | migration
+- extras.migrations.0087_squashed_0098 | netbox/extras/migrations/0087_squashed_0098.py | 183 | 1 | 0 |  | migration
+- extras.migrations.0099_cachedvalue_ordering | netbox/extras/migrations/0099_cachedvalue_ordering.py | 17 | 1 | 0 |  | migration
+- extras.migrations.0100_customfield_ui_attrs | netbox/extras/migrations/0100_customfield_ui_attrs.py | 38 | 1 | 1 |  | migration
+- extras.migrations.0101_eventrule | netbox/extras/migrations/0101_eventrule.py | 145 | 1 | 1 |  | migration
+- extras.migrations.0102_move_configrevision | netbox/extras/migrations/0102_move_configrevision.py | 36 | 1 | 1 |  | migration
+- extras.migrations.0103_gfk_indexes | netbox/extras/migrations/0103_gfk_indexes.py | 43 | 1 | 0 |  | migration
+- extras.migrations.0104_stagedchange_remove_change_logging | netbox/extras/migrations/0104_stagedchange_remove_change_logging.py | 21 | 1 | 0 |  | migration
+- extras.migrations.0105_customfield_min_max_values | netbox/extras/migrations/0105_customfield_min_max_values.py | 23 | 1 | 0 |  | migration
+- extras.migrations.0106_bookmark_user_cascade_deletion | netbox/extras/migrations/0106_bookmark_user_cascade_deletion.py | 21 | 1 | 0 |  | migration
+- extras.migrations.0107_cachedvalue_extras_cachedvalue_object | netbox/extras/migrations/0107_cachedvalue_extras_cachedvalue_object.py | 17 | 1 | 0 |  | migration
+- extras.migrations.0108_convert_reports_to_scripts | netbox/extras/migrations/0108_convert_reports_to_scripts.py | 26 | 1 | 1 |  | migration
+- extras.migrations.0109_script_model | netbox/extras/migrations/0109_script_model.py | 182 | 1 | 6 |  | migration
+- extras.migrations.0110_remove_eventrule_action_parameters | netbox/extras/migrations/0110_remove_eventrule_action_parameters.py | 18 | 1 | 0 |  | migration
+- extras.migrations.0111_rename_content_types | netbox/extras/migrations/0111_rename_content_types.py | 110 | 1 | 0 |  | migration
+- extras.migrations.0112_tag_update_object_types | netbox/extras/migrations/0112_tag_update_object_types.py | 17 | 1 | 0 |  | migration
+- extras.migrations.0113_customfield_rename_object_type | netbox/extras/migrations/0113_customfield_rename_object_type.py | 16 | 1 | 0 |  | migration
+- extras.migrations.0114_customfield_add_comments | netbox/extras/migrations/0114_customfield_add_comments.py | 18 | 1 | 0 |  | migration
+- extras.migrations.0115_convert_dashboard_widgets | netbox/extras/migrations/0115_convert_dashboard_widgets.py | 25 | 1 | 1 |  | migration
+- extras.migrations.0116_custom_link_button_color | netbox/extras/migrations/0116_custom_link_button_color.py | 24 | 1 | 1 |  | migration
+- extras.migrations.0117_move_objectchange | netbox/extras/migrations/0117_move_objectchange.py | 109 | 1 | 2 |  | migration
+- extras.migrations.0118_customfield_uniqueness | netbox/extras/migrations/0118_customfield_uniqueness.py | 16 | 1 | 0 |  | migration
+- extras.migrations.0119_notifications | netbox/extras/migrations/0119_notifications.py | 106 | 1 | 0 |  | migration
+- extras.migrations.0120_eventrule_event_types | netbox/extras/migrations/0120_eventrule_event_types.py | 70 | 1 | 1 |  | migration
+- extras.migrations.0121_customfield_related_object_filter | netbox/extras/migrations/0121_customfield_related_object_filter.py | 16 | 1 | 0 |  | migration
+- extras.migrations.0122_charfield_null_choices | netbox/extras/migrations/0122_charfield_null_choices.py | 27 | 1 | 1 |  | migration
+- extras.migrations.0123_journalentry_kind_default | netbox/extras/migrations/0123_journalentry_kind_default.py | 28 | 1 | 1 |  | migration
+- extras.migrations.0124_remove_staging | netbox/extras/migrations/0124_remove_staging.py | 28 | 1 | 0 |  | migration
+- extras.migrations.0125_alter_tag_options_tag_weight | netbox/extras/migrations/0125_alter_tag_options_tag_weight.py | 21 | 1 | 0 |  | migration
+- extras.migrations.0126_exporttemplate_file_name | netbox/extras/migrations/0126_exporttemplate_file_name.py | 17 | 1 | 0 |  | migration
+- extras.migrations.0127_configtemplate_as_attachment_and_more | netbox/extras/migrations/0127_configtemplate_as_attachment_and_more.py | 39 | 1 | 0 |  | migration
+- extras.migrations.0128_tableconfig | netbox/extras/migrations/0128_tableconfig.py | 57 | 1 | 0 |  | migration
+- extras.migrations.0129_fix_script_paths | netbox/extras/migrations/0129_fix_script_paths.py | 57 | 1 | 3 |  | migration
+- extras.models | netbox/extras/models/__init__.py | 9 | 0 | 0 |  | 
+- extras.models.configs | netbox/extras/models/configs.py | 257 | 3 | 0 |  | 
+- extras.models.customfields | netbox/extras/models/customfields.py | 878 | 3 | 0 |  | 
+- extras.models.dashboard | netbox/extras/models/dashboard.py | 78 | 1 | 0 |  | 
+- extras.models.mixins | netbox/extras/models/mixins.py | 161 | 3 | 0 |  | 
+- extras.models.models | netbox/extras/models/models.py | 852 | 9 | 0 |  | 
+- extras.models.notifications | netbox/extras/models/notifications.py | 242 | 3 | 1 |  | 
+- extras.models.scripts | netbox/extras/models/scripts.py | 194 | 3 | 1 |  | 
+- extras.models.search | netbox/extras/models/search.py | 80 | 1 | 0 |  | 
+- extras.models.tags | netbox/extras/models/tags.py | 86 | 2 | 0 |  | 
+- extras.querysets | netbox/extras/querysets.py | 172 | 3 | 0 |  | 
+- extras.reports | netbox/extras/reports.py | 35 | 1 | 0 |  | 
+- extras.scripts | netbox/extras/scripts.py | 652 | 17 | 2 |  | 
+- extras.search | netbox/extras/search.py | 46 | 4 | 0 |  | 
+- extras.signals | netbox/extras/signals.py | 175 | 0 | 9 |  | 
+- extras.storage | netbox/extras/storage.py | 15 | 1 | 0 |  | 
+- extras.tables | netbox/extras/tables/__init__.py | 2 | 0 | 0 |  | 
+- extras.tables.columns | netbox/extras/tables/columns.py | 14 | 1 | 0 |  | 
+- extras.tables.tables | netbox/extras/tables/tables.py | 751 | 21 | 0 |  | 
+- extras.templatetags | netbox/extras/templatetags/__init__.py | 1 | 0 | 0 |  | 
+- extras.templatetags.custom_links | netbox/extras/templatetags/custom_links.py | 96 | 0 | 1 |  | 
+- extras.templatetags.dashboard | netbox/extras/templatetags/dashboard.py | 12 | 0 | 1 |  | 
+- extras.templatetags.log_levels | netbox/extras/templatetags/log_levels.py | 18 | 0 | 1 |  | 
+- extras.tests | netbox/extras/tests/__init__.py | 1 | 0 | 0 | test | 
+- extras.tests.test_api | netbox/extras/tests/test_api.py | 1138 | 21 | 0 | test | 
+- extras.tests.test_conditions | netbox/extras/tests/test_conditions.py | 313 | 2 | 0 | test | 
+- extras.tests.test_custom_validation | netbox/extras/tests/test_custom_validation.py | 266 | 4 | 0 | test | 
+- extras.tests.test_customfields | netbox/extras/tests/test_customfields.py | 1706 | 6 | 0 | test | 
+- extras.tests.test_customvalidators | netbox/extras/tests/test_customvalidators.py | 302 | 4 | 0 | test | 
+- extras.tests.test_dashboard | netbox/extras/tests/test_dashboard.py | 49 | 1 | 0 | test | 
+- extras.tests.test_event_rules | netbox/extras/tests/test_event_rules.py | 436 | 1 | 0 | test | 
+- extras.tests.test_filtersets | netbox/extras/tests/test_filtersets.py | 1547 | 16 | 0 | test | 
+- extras.tests.test_forms | netbox/extras/tests/test_forms.py | 112 | 2 | 0 | test | 
+- extras.tests.test_models | netbox/extras/tests/test_models.py | 609 | 3 | 0 | test | 
+- extras.tests.test_scripts | netbox/extras/tests/test_scripts.py | 374 | 2 | 0 | test | 
+- extras.tests.test_tags | netbox/extras/tests/test_tags.py | 80 | 1 | 0 | test | 
+- extras.tests.test_utils | netbox/extras/tests/test_utils.py | 20 | 1 | 0 | test | 
+- extras.tests.test_views | netbox/extras/tests/test_views.py | 810 | 16 | 0 | test | 
+- extras.urls | netbox/extras/urls.py | 91 | 0 | 0 |  | 
+- extras.utils | netbox/extras/utils.py | 123 | 1 | 7 |  | 
+- extras.validators | netbox/extras/validators.py | 181 | 5 | 0 |  | 
+- extras.views | netbox/extras/views.py | 1539 | 121 | 0 |  | 
+- extras.webhooks | netbox/extras/webhooks.py | 103 | 0 | 2 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'extras': 186, 'utilities': 98, 'netbox': 96, 'core': 63, 'dcim': 30, 'users': 17, 'tenancy': 11, 'virtualization': 11, 'ipam': 5, 'circuits': 4, 'wireless': 1}
+Inbound by source subsystem: {'netbox': 36, 'dcim': 23, 'virtualization': 17, 'utilities': 12, 'core': 5, 'account': 2, 'circuits': 2, 'tenancy': 2, 'vpn': 2, 'ipam': 1, 'users': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- extras.api.customfields -> core.models [fg:imports:extras.api.customfields->core.models]
+- extras.api.customfields -> utilities.api [fg:imports:extras.api.customfields->utilities.api]
+- extras.api.customfields -> utilities.api [fg:imports:extras.api.customfields->utilities.api]
+- extras.api.mixins -> netbox.api.renderers [fg:imports:extras.api.mixins->netbox.api.renderers]
+- extras.api.serializers_.attachments -> core.models [fg:imports:extras.api.serializers_.attachments->core.models]
+- extras.api.serializers_.attachments -> netbox.api.fields [fg:imports:extras.api.serializers_.attachments->netbox.api.fields]
+- extras.api.serializers_.attachments -> netbox.api.serializers [fg:imports:extras.api.serializers_.attachments->netbox.api.serializers]
+- extras.api.serializers_.attachments -> utilities.api [fg:imports:extras.api.serializers_.attachments->utilities.api]
+- extras.api.serializers_.bookmarks -> core.models [fg:imports:extras.api.serializers_.bookmarks->core.models]
+- extras.api.serializers_.bookmarks -> netbox.api.fields [fg:imports:extras.api.serializers_.bookmarks->netbox.api.fields]
+- extras.api.serializers_.bookmarks -> netbox.api.serializers [fg:imports:extras.api.serializers_.bookmarks->netbox.api.serializers]
+- extras.api.serializers_.bookmarks -> users.api.serializers_.users [fg:imports:extras.api.serializers_.bookmarks->users.api.serializers_.users]
+- extras.api.serializers_.bookmarks -> utilities.api [fg:imports:extras.api.serializers_.bookmarks->utilities.api]
+- extras.api.serializers_.configcontexts -> core.api.serializers_.data [fg:imports:extras.api.serializers_.configcontexts->core.api.serializers_.data]
+- extras.api.serializers_.configcontexts -> dcim.api.serializers_.devicetypes [fg:imports:extras.api.serializers_.configcontexts->dcim.api.serializers_.devicetypes]
+- extras.api.serializers_.configcontexts -> dcim.api.serializers_.platforms [fg:imports:extras.api.serializers_.configcontexts->dcim.api.serializers_.platforms]
+- extras.api.serializers_.configcontexts -> dcim.api.serializers_.roles [fg:imports:extras.api.serializers_.configcontexts->dcim.api.serializers_.roles]
+- extras.api.serializers_.configcontexts -> dcim.api.serializers_.sites [fg:imports:extras.api.serializers_.configcontexts->dcim.api.serializers_.sites]
+- extras.api.serializers_.configcontexts -> dcim.models [fg:imports:extras.api.serializers_.configcontexts->dcim.models]
+- extras.api.serializers_.configcontexts -> netbox.api.fields [fg:imports:extras.api.serializers_.configcontexts->netbox.api.fields]
+- extras.api.serializers_.configcontexts -> netbox.api.serializers [fg:imports:extras.api.serializers_.configcontexts->netbox.api.serializers]
+- extras.api.serializers_.configcontexts -> tenancy.api.serializers_.tenants [fg:imports:extras.api.serializers_.configcontexts->tenancy.api.serializers_.tenants]
+- extras.api.serializers_.configcontexts -> tenancy.models [fg:imports:extras.api.serializers_.configcontexts->tenancy.models]
+- extras.api.serializers_.configcontexts -> virtualization.api.serializers_.clusters [fg:imports:extras.api.serializers_.configcontexts->virtualization.api.serializers_.clusters]
+- extras.api.serializers_.configcontexts -> virtualization.models [fg:imports:extras.api.serializers_.configcontexts->virtualization.models]
+- extras.api.serializers_.configtemplates -> core.api.serializers_.data [fg:imports:extras.api.serializers_.configtemplates->core.api.serializers_.data]
+- extras.api.serializers_.configtemplates -> netbox.api.serializers [fg:imports:extras.api.serializers_.configtemplates->netbox.api.serializers]
+- extras.api.serializers_.configtemplates -> netbox.api.serializers.features [fg:imports:extras.api.serializers_.configtemplates->netbox.api.serializers.features]
+- extras.api.serializers_.customfields -> core.models [fg:imports:extras.api.serializers_.customfields->core.models]
+- extras.api.serializers_.customfields -> netbox.api.fields [fg:imports:extras.api.serializers_.customfields->netbox.api.fields]
+- extras.api.serializers_.customfields -> netbox.api.serializers [fg:imports:extras.api.serializers_.customfields->netbox.api.serializers]
+- extras.api.serializers_.customlinks -> core.models [fg:imports:extras.api.serializers_.customlinks->core.models]
+- extras.api.serializers_.customlinks -> netbox.api.fields [fg:imports:extras.api.serializers_.customlinks->netbox.api.fields]
+- extras.api.serializers_.customlinks -> netbox.api.serializers [fg:imports:extras.api.serializers_.customlinks->netbox.api.serializers]
+- extras.api.serializers_.events -> core.models [fg:imports:extras.api.serializers_.events->core.models]
+- extras.api.serializers_.events -> netbox.api.fields [fg:imports:extras.api.serializers_.events->netbox.api.fields]
+- extras.api.serializers_.events -> netbox.api.serializers [fg:imports:extras.api.serializers_.events->netbox.api.serializers]
+- extras.api.serializers_.events -> utilities.api [fg:imports:extras.api.serializers_.events->utilities.api]
+- extras.api.serializers_.exporttemplates -> core.api.serializers_.data [fg:imports:extras.api.serializers_.exporttemplates->core.api.serializers_.data]
+- extras.api.serializers_.exporttemplates -> core.models [fg:imports:extras.api.serializers_.exporttemplates->core.models]
+- extras.api.serializers_.exporttemplates -> netbox.api.fields [fg:imports:extras.api.serializers_.exporttemplates->netbox.api.fields]
+- extras.api.serializers_.exporttemplates -> netbox.api.serializers [fg:imports:extras.api.serializers_.exporttemplates->netbox.api.serializers]
+- extras.api.serializers_.journaling -> core.models [fg:imports:extras.api.serializers_.journaling->core.models]
+- extras.api.serializers_.journaling -> netbox.api.fields [fg:imports:extras.api.serializers_.journaling->netbox.api.fields]
+- extras.api.serializers_.journaling -> netbox.api.serializers [fg:imports:extras.api.serializers_.journaling->netbox.api.serializers]
+- extras.api.serializers_.journaling -> users.models [fg:imports:extras.api.serializers_.journaling->users.models]
+- extras.api.serializers_.journaling -> utilities.api [fg:imports:extras.api.serializers_.journaling->utilities.api]
+- extras.api.serializers_.notifications -> core.models [fg:imports:extras.api.serializers_.notifications->core.models]
+- extras.api.serializers_.notifications -> netbox.api.fields [fg:imports:extras.api.serializers_.notifications->netbox.api.fields]
+- extras.api.serializers_.notifications -> netbox.api.serializers [fg:imports:extras.api.serializers_.notifications->netbox.api.serializers]
+- extras.api.serializers_.notifications -> users.api.serializers_.users [fg:imports:extras.api.serializers_.notifications->users.api.serializers_.users]
+- extras.api.serializers_.notifications -> users.models [fg:imports:extras.api.serializers_.notifications->users.models]
+- extras.api.serializers_.notifications -> utilities.api [fg:imports:extras.api.serializers_.notifications->utilities.api]
+- extras.api.serializers_.objecttypes -> core.models [fg:imports:extras.api.serializers_.objecttypes->core.models]
+- extras.api.serializers_.objecttypes -> netbox.api.serializers [fg:imports:extras.api.serializers_.objecttypes->netbox.api.serializers]
+- extras.api.serializers_.savedfilters -> core.models [fg:imports:extras.api.serializers_.savedfilters->core.models]
+- extras.api.serializers_.savedfilters -> netbox.api.fields [fg:imports:extras.api.serializers_.savedfilters->netbox.api.fields]
+- extras.api.serializers_.savedfilters -> netbox.api.serializers [fg:imports:extras.api.serializers_.savedfilters->netbox.api.serializers]
+- extras.api.serializers_.scripts -> core.api.serializers_.jobs [fg:imports:extras.api.serializers_.scripts->core.api.serializers_.jobs]
+- extras.api.serializers_.scripts -> netbox.api.serializers [fg:imports:extras.api.serializers_.scripts->netbox.api.serializers]
+- extras.api.serializers_.tableconfigs -> core.models [fg:imports:extras.api.serializers_.tableconfigs->core.models]
+- extras.api.serializers_.tableconfigs -> netbox.api.fields [fg:imports:extras.api.serializers_.tableconfigs->netbox.api.fields]
+- extras.api.serializers_.tableconfigs -> netbox.api.serializers [fg:imports:extras.api.serializers_.tableconfigs->netbox.api.serializers]
+- extras.api.serializers_.tags -> core.models [fg:imports:extras.api.serializers_.tags->core.models]
+- extras.api.serializers_.tags -> netbox.api.exceptions [fg:imports:extras.api.serializers_.tags->netbox.api.exceptions]
+- extras.api.serializers_.tags -> netbox.api.fields [fg:imports:extras.api.serializers_.tags->netbox.api.fields]
+- extras.api.serializers_.tags -> netbox.api.serializers [fg:imports:extras.api.serializers_.tags->netbox.api.serializers]
+- extras.api.serializers_.tags -> utilities.api [fg:imports:extras.api.serializers_.tags->utilities.api]
+- extras.api.urls -> netbox.api.routers [fg:imports:extras.api.urls->netbox.api.routers]
+- extras.api.views -> core.models [fg:imports:extras.api.views->core.models]
+- extras.api.views -> netbox.api.authentication [fg:imports:extras.api.views->netbox.api.authentication]
+- extras.api.views -> netbox.api.features [fg:imports:extras.api.views->netbox.api.features]
+- extras.api.views -> netbox.api.metadata [fg:imports:extras.api.views->netbox.api.metadata]
+- extras.api.views -> netbox.api.renderers [fg:imports:extras.api.views->netbox.api.renderers]
+- extras.api.views -> netbox.api.viewsets [fg:imports:extras.api.views->netbox.api.viewsets]
+- extras.api.views -> utilities.exceptions [fg:imports:extras.api.views->utilities.exceptions]
+- extras.api.views -> utilities.request [fg:imports:extras.api.views->utilities.request]
+- extras.apps -> netbox.models.features [fg:imports:extras.apps->netbox.models.features]
+- extras.choices -> netbox.choices [fg:imports:extras.choices->netbox.choices]
+- extras.choices -> utilities.choices [fg:imports:extras.choices->utilities.choices]
+- extras.constants -> core.events [fg:imports:extras.constants->core.events]
+- extras.dashboard.forms -> netbox.registry [fg:imports:extras.dashboard.forms->netbox.registry]
+- extras.dashboard.forms -> utilities.forms [fg:imports:extras.dashboard.forms->utilities.forms]
+- extras.dashboard.utils -> netbox.registry [fg:imports:extras.dashboard.utils->netbox.registry]
+- extras.dashboard.widgets -> core.models [fg:imports:extras.dashboard.widgets->core.models]
+- extras.dashboard.widgets -> utilities.object_types [fg:imports:extras.dashboard.widgets->utilities.object_types]
+- extras.dashboard.widgets -> utilities.permissions [fg:imports:extras.dashboard.widgets->utilities.permissions]
+- extras.dashboard.widgets -> utilities.proxy [fg:imports:extras.dashboard.widgets->utilities.proxy]
+- extras.dashboard.widgets -> utilities.querydict [fg:imports:extras.dashboard.widgets->utilities.querydict]
+- extras.dashboard.widgets -> utilities.templatetags.builtins.filters [fg:imports:extras.dashboard.widgets->utilities.templatetags.builtins.filters]
+- extras.dashboard.widgets -> utilities.views [fg:imports:extras.dashboard.widgets->utilities.views]
+- extras.events -> core.events [fg:imports:extras.events->core.events]
+- extras.events -> netbox.config [fg:imports:extras.events->netbox.config]
+- extras.events -> netbox.constants [fg:imports:extras.events->netbox.constants]
+- extras.events -> netbox.registry [fg:imports:extras.events->netbox.registry]
+- extras.events -> users.models [fg:imports:extras.events->users.models]
+- extras.events -> utilities.api [fg:imports:extras.events->utilities.api]
+- extras.events -> utilities.rqworker [fg:imports:extras.events->utilities.rqworker]
+- extras.events -> utilities.serialization [fg:imports:extras.events->utilities.serialization]
+- extras.filtersets -> core.models [fg:imports:extras.filtersets->core.models]
+- extras.filtersets -> dcim.models [fg:imports:extras.filtersets->dcim.models]
+- extras.filtersets -> netbox.filtersets [fg:imports:extras.filtersets->netbox.filtersets]
+- extras.filtersets -> tenancy.models [fg:imports:extras.filtersets->tenancy.models]
+- extras.filtersets -> users.models [fg:imports:extras.filtersets->users.models]
+- extras.filtersets -> utilities.filters [fg:imports:extras.filtersets->utilities.filters]
+- extras.filtersets -> virtualization.models [fg:imports:extras.filtersets->virtualization.models]
+- extras.forms.bulk_edit -> netbox.events [fg:imports:extras.forms.bulk_edit->netbox.events]
+- extras.forms.bulk_edit -> netbox.forms [fg:imports:extras.forms.bulk_edit->netbox.forms]
+- extras.forms.bulk_edit -> utilities.forms [fg:imports:extras.forms.bulk_edit->utilities.forms]
+- extras.forms.bulk_edit -> utilities.forms.fields [fg:imports:extras.forms.bulk_edit->utilities.forms.fields]
+- extras.forms.bulk_edit -> utilities.forms.rendering [fg:imports:extras.forms.bulk_edit->utilities.forms.rendering]
+- extras.forms.bulk_edit -> utilities.forms.widgets [fg:imports:extras.forms.bulk_edit->utilities.forms.widgets]
+- extras.forms.bulk_import -> core.models [fg:imports:extras.forms.bulk_import->core.models]
+- extras.forms.bulk_import -> netbox.events [fg:imports:extras.forms.bulk_import->netbox.events]
+- extras.forms.bulk_import -> netbox.forms [fg:imports:extras.forms.bulk_import->netbox.forms]
+- extras.forms.bulk_import -> users.models [fg:imports:extras.forms.bulk_import->users.models]
+- extras.forms.bulk_import -> utilities.forms [fg:imports:extras.forms.bulk_import->utilities.forms]
+- extras.forms.bulk_import -> utilities.forms.fields [fg:imports:extras.forms.bulk_import->utilities.forms.fields]
+- extras.forms.filtersets -> core.models [fg:imports:extras.forms.filtersets->core.models]
+- extras.forms.filtersets -> dcim.models [fg:imports:extras.forms.filtersets->dcim.models]
+- extras.forms.filtersets -> netbox.events [fg:imports:extras.forms.filtersets->netbox.events]
+- extras.forms.filtersets -> netbox.forms.base [fg:imports:extras.forms.filtersets->netbox.forms.base]
+- extras.forms.filtersets -> netbox.forms.mixins [fg:imports:extras.forms.filtersets->netbox.forms.mixins]
+- extras.forms.filtersets -> tenancy.models [fg:imports:extras.forms.filtersets->tenancy.models]
+- extras.forms.filtersets -> users.models [fg:imports:extras.forms.filtersets->users.models]
+- extras.forms.filtersets -> utilities.forms [fg:imports:extras.forms.filtersets->utilities.forms]
+- extras.forms.filtersets -> utilities.forms.fields [fg:imports:extras.forms.filtersets->utilities.forms.fields]
+- extras.forms.filtersets -> utilities.forms.rendering [fg:imports:extras.forms.filtersets->utilities.forms.rendering]
+- extras.forms.filtersets -> utilities.forms.widgets [fg:imports:extras.forms.filtersets->utilities.forms.widgets]
+- extras.forms.filtersets -> virtualization.models [fg:imports:extras.forms.filtersets->virtualization.models]
+- extras.forms.model_forms -> core.forms.mixins [fg:imports:extras.forms.model_forms->core.forms.mixins]
+- extras.forms.model_forms -> core.models [fg:imports:extras.forms.model_forms->core.models]
+- extras.forms.model_forms -> dcim.models [fg:imports:extras.forms.model_forms->dcim.models]
+- extras.forms.model_forms -> netbox.events [fg:imports:extras.forms.model_forms->netbox.events]
+- extras.forms.model_forms -> netbox.forms [fg:imports:extras.forms.model_forms->netbox.forms]
+- extras.forms.model_forms -> tenancy.models [fg:imports:extras.forms.model_forms->tenancy.models]
+- extras.forms.model_forms -> users.models [fg:imports:extras.forms.model_forms->users.models]
+- extras.forms.model_forms -> utilities.forms [fg:imports:extras.forms.model_forms->utilities.forms]
+- extras.forms.model_forms -> utilities.forms.fields [fg:imports:extras.forms.model_forms->utilities.forms.fields]
+- extras.forms.model_forms -> utilities.forms.rendering [fg:imports:extras.forms.model_forms->utilities.forms.rendering]
+- extras.forms.model_forms -> utilities.forms.widgets [fg:imports:extras.forms.model_forms->utilities.forms.widgets]
+- extras.forms.model_forms -> utilities.tables [fg:imports:extras.forms.model_forms->utilities.tables]
+- extras.forms.model_forms -> virtualization.models [fg:imports:extras.forms.model_forms->virtualization.models]
+- extras.forms.reports -> core.choices [fg:imports:extras.forms.reports->core.choices]
+- extras.forms.reports -> utilities.datetime [fg:imports:extras.forms.reports->utilities.datetime]
+- extras.forms.reports -> utilities.forms.widgets [fg:imports:extras.forms.reports->utilities.forms.widgets]
+- extras.forms.scripts -> core.choices [fg:imports:extras.forms.scripts->core.choices]
+- extras.forms.scripts -> core.forms [fg:imports:extras.forms.scripts->core.forms]
+- extras.forms.scripts -> utilities.datetime [fg:imports:extras.forms.scripts->utilities.datetime]
+- extras.forms.scripts -> utilities.forms.widgets [fg:imports:extras.forms.scripts->utilities.forms.widgets]
+- extras.graphql.filter_mixins -> core.graphql.filter_mixins [fg:imports:extras.graphql.filter_mixins->core.graphql.filter_mixins]
+- extras.graphql.filter_mixins -> netbox.graphql.filter_lookups [fg:imports:extras.graphql.filter_mixins->netbox.graphql.filter_lookups]
+- extras.graphql.filters -> core.graphql.filter_mixins [fg:imports:extras.graphql.filters->core.graphql.filter_mixins]
+- extras.graphql.filters -> core.graphql.filters [fg:imports:extras.graphql.filters->core.graphql.filters]
+- extras.graphql.filters -> dcim.graphql.filters [fg:imports:extras.graphql.filters->dcim.graphql.filters]
+- extras.graphql.filters -> netbox.graphql.enums [fg:imports:extras.graphql.filters->netbox.graphql.enums]
+- extras.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:extras.graphql.filters->netbox.graphql.filter_lookups]
+- extras.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:extras.graphql.filters->netbox.graphql.filter_mixins]
+- extras.graphql.filters -> tenancy.graphql.filters [fg:imports:extras.graphql.filters->tenancy.graphql.filters]
+- extras.graphql.filters -> users.graphql.filters [fg:imports:extras.graphql.filters->users.graphql.filters]
+- extras.graphql.filters -> virtualization.graphql.filters [fg:imports:extras.graphql.filters->virtualization.graphql.filters]
+- extras.graphql.mixins -> tenancy.graphql.types [fg:imports:extras.graphql.mixins->tenancy.graphql.types]
+- extras.graphql.types -> core.graphql.types [fg:imports:extras.graphql.types->core.graphql.types]
+- extras.graphql.types -> dcim.graphql.types [fg:imports:extras.graphql.types->dcim.graphql.types]
+- extras.graphql.types -> netbox.graphql.types [fg:imports:extras.graphql.types->netbox.graphql.types]
+- extras.graphql.types -> tenancy.graphql.types [fg:imports:extras.graphql.types->tenancy.graphql.types]
+- extras.graphql.types -> users.graphql.types [fg:imports:extras.graphql.types->users.graphql.types]
+- extras.graphql.types -> virtualization.graphql.types [fg:imports:extras.graphql.types->virtualization.graphql.types]
+- extras.jobs -> core.signals [fg:imports:extras.jobs->core.signals]
+- extras.jobs -> netbox.jobs [fg:imports:extras.jobs->netbox.jobs]
+- extras.jobs -> netbox.registry [fg:imports:extras.jobs->netbox.registry]
+- extras.jobs -> utilities.exceptions [fg:imports:extras.jobs->utilities.exceptions]
+- extras.management.commands.housekeeping -> core.models [fg:imports:extras.management.commands.housekeeping->core.models]
+- extras.management.commands.housekeeping -> netbox.config [fg:imports:extras.management.commands.housekeeping->netbox.config]
+- extras.management.commands.housekeeping -> utilities.proxy [fg:imports:extras.management.commands.housekeeping->utilities.proxy]
+- extras.management.commands.reindex -> netbox.registry [fg:imports:extras.management.commands.reindex->netbox.registry]
+- extras.management.commands.reindex -> netbox.search.backends [fg:imports:extras.management.commands.reindex->netbox.search.backends]
+- extras.management.commands.renaturalize -> utilities.fields [fg:imports:extras.management.commands.renaturalize->utilities.fields]
+- extras.management.commands.runscript -> users.models [fg:imports:extras.management.commands.runscript->users.models]
+- extras.management.commands.runscript -> utilities.request [fg:imports:extras.management.commands.runscript->utilities.request]
+- extras.migrations.0001_squashed -> utilities.fields [fg:imports:extras.migrations.0001_squashed->utilities.fields]
+- extras.migrations.0001_squashed -> utilities.validators [fg:imports:extras.migrations.0001_squashed->utilities.validators]
+- extras.migrations.0060_squashed_0086 -> utilities.json [fg:imports:extras.migrations.0060_squashed_0086->utilities.json]
+- extras.migrations.0087_squashed_0098 -> utilities.json [fg:imports:extras.migrations.0087_squashed_0098->utilities.json]
+- extras.migrations.0101_eventrule -> utilities.json [fg:imports:extras.migrations.0101_eventrule->utilities.json]
+- extras.migrations.0120_eventrule_event_types -> core.events [fg:imports:extras.migrations.0120_eventrule_event_types->core.events]
+- extras.models.configs -> netbox.models [fg:imports:extras.models.configs->netbox.models]
+- extras.models.configs -> netbox.models.features [fg:imports:extras.models.configs->netbox.models.features]
+- extras.models.configs -> netbox.registry [fg:imports:extras.models.configs->netbox.registry]
+- extras.models.configs -> utilities.data [fg:imports:extras.models.configs->utilities.data]
+- extras.models.customfields -> core.models [fg:imports:extras.models.customfields->core.models]
+- extras.models.customfields -> netbox.models [fg:imports:extras.models.customfields->netbox.models]
+- extras.models.customfields -> netbox.models.features [fg:imports:extras.models.customfields->netbox.models.features]
+- extras.models.customfields -> netbox.search [fg:imports:extras.models.customfields->netbox.search]
+- extras.models.customfields -> utilities [fg:imports:extras.models.customfields->utilities]
+- extras.models.customfields -> utilities.datetime [fg:imports:extras.models.customfields->utilities.datetime]
+- extras.models.customfields -> utilities.forms.fields [fg:imports:extras.models.customfields->utilities.forms.fields]
+- extras.models.customfields -> utilities.forms.utils [fg:imports:extras.models.customfields->utilities.forms.utils]
+- extras.models.customfields -> utilities.forms.widgets [fg:imports:extras.models.customfields->utilities.forms.widgets]
+- extras.models.customfields -> utilities.querysets [fg:imports:extras.models.customfields->utilities.querysets]
+- extras.models.customfields -> utilities.templatetags.builtins.filters [fg:imports:extras.models.customfields->utilities.templatetags.builtins.filters]
+- extras.models.customfields -> utilities.validators [fg:imports:extras.models.customfields->utilities.validators]
+- extras.models.mixins -> utilities.jinja2 [fg:imports:extras.models.mixins->utilities.jinja2]
+- extras.models.models -> core.models [fg:imports:extras.models.models->core.models]
+- extras.models.models -> netbox.config [fg:imports:extras.models.models->netbox.config]
+- extras.models.models -> netbox.events [fg:imports:extras.models.models->netbox.events]
+- extras.models.models -> netbox.models [fg:imports:extras.models.models->netbox.models]
+- extras.models.models -> netbox.models.features [fg:imports:extras.models.models->netbox.models.features]
+- extras.models.models -> utilities.html [fg:imports:extras.models.models->utilities.html]
+- extras.models.models -> utilities.jinja2 [fg:imports:extras.models.models->utilities.jinja2]
+- extras.models.models -> utilities.querydict [fg:imports:extras.models.models->utilities.querydict]
+- extras.models.models -> utilities.querysets [fg:imports:extras.models.models->utilities.querysets]
+- extras.models.models -> utilities.tables [fg:imports:extras.models.models->utilities.tables]
+- extras.models.notifications -> core.models [fg:imports:extras.models.notifications->core.models]
+- extras.models.notifications -> netbox.models [fg:imports:extras.models.notifications->netbox.models]
+- extras.models.notifications -> netbox.registry [fg:imports:extras.models.notifications->netbox.registry]
+- extras.models.notifications -> users.models [fg:imports:extras.models.notifications->users.models]
+- extras.models.notifications -> utilities.querysets [fg:imports:extras.models.notifications->utilities.querysets]
+- extras.models.scripts -> core.choices [fg:imports:extras.models.scripts->core.choices]
+- extras.models.scripts -> core.models [fg:imports:extras.models.scripts->core.models]
+- extras.models.scripts -> netbox.models.features [fg:imports:extras.models.scripts->netbox.models.features]
+- extras.models.scripts -> utilities.querysets [fg:imports:extras.models.scripts->utilities.querysets]
+- extras.models.search -> netbox.search.utils [fg:imports:extras.models.search->netbox.search.utils]
+- extras.models.search -> utilities.fields [fg:imports:extras.models.search->utilities.fields]
+- extras.models.tags -> netbox.choices [fg:imports:extras.models.tags->netbox.choices]
+- extras.models.tags -> netbox.models [fg:imports:extras.models.tags->netbox.models]
+- extras.models.tags -> netbox.models.features [fg:imports:extras.models.tags->netbox.models.features]
+- extras.models.tags -> utilities.fields [fg:imports:extras.models.tags->utilities.fields]
+- extras.models.tags -> utilities.querysets [fg:imports:extras.models.tags->utilities.querysets]
+- extras.querysets -> utilities.query_functions [fg:imports:extras.querysets->utilities.query_functions]
+- extras.querysets -> utilities.querysets [fg:imports:extras.querysets->utilities.querysets]
+- extras.scripts -> ipam.formfields [fg:imports:extras.scripts->ipam.formfields]
+- extras.scripts -> ipam.validators [fg:imports:extras.scripts->ipam.validators]
+- extras.scripts -> utilities.forms [fg:imports:extras.scripts->utilities.forms]
+- extras.scripts -> utilities.forms.fields [fg:imports:extras.scripts->utilities.forms.fields]
+- extras.scripts -> utilities.forms.widgets [fg:imports:extras.scripts->utilities.forms.widgets]
+- extras.search -> netbox.search [fg:imports:extras.search->netbox.search]
+- extras.signals -> core.events [fg:imports:extras.signals->core.events]
+- extras.signals -> core.models [fg:imports:extras.signals->core.models]
+- extras.signals -> core.signals [fg:imports:extras.signals->core.signals]
+- extras.signals -> netbox.config [fg:imports:extras.signals->netbox.config]
+- extras.signals -> netbox.registry [fg:imports:extras.signals->netbox.registry]
+- extras.signals -> netbox.signals [fg:imports:extras.signals->netbox.signals]
+- extras.signals -> utilities.exceptions [fg:imports:extras.signals->utilities.exceptions]
+- extras.tables.columns -> netbox.tables.columns [fg:imports:extras.tables.columns->netbox.tables.columns]
+- extras.tables.tables -> core.models [fg:imports:extras.tables.tables->core.models]
+- extras.tables.tables -> core.tables [fg:imports:extras.tables.tables->core.tables]
+- extras.tables.tables -> netbox.constants [fg:imports:extras.tables.tables->netbox.constants]
+- extras.tables.tables -> netbox.events [fg:imports:extras.tables.tables->netbox.events]
+- extras.tables.tables -> netbox.tables [fg:imports:extras.tables.tables->netbox.tables]
+- extras.templatetags.custom_links -> core.models [fg:imports:extras.templatetags.custom_links->core.models]
+- extras.templatetags.custom_links -> netbox.choices [fg:imports:extras.templatetags.custom_links->netbox.choices]
+- extras.tests.test_api -> core.choices [fg:imports:extras.tests.test_api->core.choices]
+- extras.tests.test_api -> core.events [fg:imports:extras.tests.test_api->core.events]
+- extras.tests.test_api -> core.models [fg:imports:extras.tests.test_api->core.models]
+- extras.tests.test_api -> dcim.models [fg:imports:extras.tests.test_api->dcim.models]
+- extras.tests.test_api -> users.models [fg:imports:extras.tests.test_api->users.models]
+- extras.tests.test_api -> utilities.testing [fg:imports:extras.tests.test_api->utilities.testing]
+- extras.tests.test_conditions -> core.events [fg:imports:extras.tests.test_conditions->core.events]
+- extras.tests.test_conditions -> dcim.choices [fg:imports:extras.tests.test_conditions->dcim.choices]
+- extras.tests.test_conditions -> dcim.models [fg:imports:extras.tests.test_conditions->dcim.models]
+- extras.tests.test_custom_validation -> circuits.api.serializers [fg:imports:extras.tests.test_custom_validation->circuits.api.serializers]
+- extras.tests.test_custom_validation -> circuits.forms [fg:imports:extras.tests.test_custom_validation->circuits.forms]
+- extras.tests.test_custom_validation -> circuits.models [fg:imports:extras.tests.test_custom_validation->circuits.models]
+- extras.tests.test_custom_validation -> ipam.models [fg:imports:extras.tests.test_custom_validation->ipam.models]
+- extras.tests.test_custom_validation -> netbox.choices [fg:imports:extras.tests.test_custom_validation->netbox.choices]
+- extras.tests.test_custom_validation -> utilities.testing [fg:imports:extras.tests.test_custom_validation->utilities.testing]
+- extras.tests.test_customfields -> core.models [fg:imports:extras.tests.test_customfields->core.models]
+- extras.tests.test_customfields -> dcim.filtersets [fg:imports:extras.tests.test_customfields->dcim.filtersets]
+- extras.tests.test_customfields -> dcim.forms [fg:imports:extras.tests.test_customfields->dcim.forms]
+- extras.tests.test_customfields -> dcim.models [fg:imports:extras.tests.test_customfields->dcim.models]
+- extras.tests.test_customfields -> ipam.models [fg:imports:extras.tests.test_customfields->ipam.models]
+- extras.tests.test_customfields -> netbox.choices [fg:imports:extras.tests.test_customfields->netbox.choices]
+- extras.tests.test_customfields -> utilities.testing [fg:imports:extras.tests.test_customfields->utilities.testing]
+- extras.tests.test_customfields -> virtualization.models [fg:imports:extras.tests.test_customfields->virtualization.models]
+- extras.tests.test_customvalidators -> dcim.choices [fg:imports:extras.tests.test_customvalidators->dcim.choices]
+- extras.tests.test_customvalidators -> dcim.models [fg:imports:extras.tests.test_customvalidators->dcim.models]
+- extras.tests.test_customvalidators -> ipam.models [fg:imports:extras.tests.test_customvalidators->ipam.models]
+- extras.tests.test_customvalidators -> users.models [fg:imports:extras.tests.test_customvalidators->users.models]
+- extras.tests.test_customvalidators -> utilities.exceptions [fg:imports:extras.tests.test_customvalidators->utilities.exceptions]
+- extras.tests.test_customvalidators -> utilities.request [fg:imports:extras.tests.test_customvalidators->utilities.request]
+- extras.tests.test_event_rules -> core.events [fg:imports:extras.tests.test_event_rules->core.events]
+- extras.tests.test_event_rules -> core.models [fg:imports:extras.tests.test_event_rules->core.models]
+- extras.tests.test_event_rules -> dcim.choices [fg:imports:extras.tests.test_event_rules->dcim.choices]
+- extras.tests.test_event_rules -> dcim.models [fg:imports:extras.tests.test_event_rules->dcim.models]
+- extras.tests.test_event_rules -> netbox.context_managers [fg:imports:extras.tests.test_event_rules->netbox.context_managers]
+- extras.tests.test_event_rules -> utilities.testing [fg:imports:extras.tests.test_event_rules->utilities.testing]
+- extras.tests.test_filtersets -> circuits.models [fg:imports:extras.tests.test_filtersets->circuits.models]
+- extras.tests.test_filtersets -> core.choices [fg:imports:extras.tests.test_filtersets->core.choices]
+- extras.tests.test_filtersets -> core.events [fg:imports:extras.tests.test_filtersets->core.events]
+- extras.tests.test_filtersets -> core.models [fg:imports:extras.tests.test_filtersets->core.models]
+- extras.tests.test_filtersets -> dcim.filtersets [fg:imports:extras.tests.test_filtersets->dcim.filtersets]
+- extras.tests.test_filtersets -> dcim.models [fg:imports:extras.tests.test_filtersets->dcim.models]
+- extras.tests.test_filtersets -> dcim.models [fg:imports:extras.tests.test_filtersets->dcim.models]
+- extras.tests.test_filtersets -> tenancy.models [fg:imports:extras.tests.test_filtersets->tenancy.models]
+- extras.tests.test_filtersets -> users.models [fg:imports:extras.tests.test_filtersets->users.models]
+- extras.tests.test_filtersets -> utilities.testing [fg:imports:extras.tests.test_filtersets->utilities.testing]
+- extras.tests.test_filtersets -> virtualization.models [fg:imports:extras.tests.test_filtersets->virtualization.models]
+- extras.tests.test_forms -> core.models [fg:imports:extras.tests.test_forms->core.models]
+- extras.tests.test_forms -> dcim.forms [fg:imports:extras.tests.test_forms->dcim.forms]
+- extras.tests.test_forms -> dcim.models [fg:imports:extras.tests.test_forms->dcim.models]
+- extras.tests.test_models -> core.models [fg:imports:extras.tests.test_models->core.models]
+- extras.tests.test_models -> dcim.models [fg:imports:extras.tests.test_models->dcim.models]
+- extras.tests.test_models -> tenancy.models [fg:imports:extras.tests.test_models->tenancy.models]
+- extras.tests.test_models -> utilities.exceptions [fg:imports:extras.tests.test_models->utilities.exceptions]
+- extras.tests.test_models -> virtualization.models [fg:imports:extras.tests.test_models->virtualization.models]
+- extras.tests.test_scripts -> dcim.models [fg:imports:extras.tests.test_scripts->dcim.models]
+- extras.tests.test_scripts -> utilities.testing [fg:imports:extras.tests.test_scripts->utilities.testing]
+- extras.tests.test_tags -> dcim.models [fg:imports:extras.tests.test_tags->dcim.models]
+- extras.tests.test_tags -> utilities.testing [fg:imports:extras.tests.test_tags->utilities.testing]
+- extras.tests.test_utils -> tenancy.models [fg:imports:extras.tests.test_utils->tenancy.models]
+- extras.tests.test_utils -> wireless.models [fg:imports:extras.tests.test_utils->wireless.models]
+- extras.tests.test_views -> core.events [fg:imports:extras.tests.test_views->core.events]
+- extras.tests.test_views -> core.models [fg:imports:extras.tests.test_views->core.models]
+- extras.tests.test_views -> dcim.models [fg:imports:extras.tests.test_views->dcim.models]
+- extras.tests.test_views -> users.models [fg:imports:extras.tests.test_views->users.models]
+- extras.tests.test_views -> utilities.testing [fg:imports:extras.tests.test_views->utilities.testing]
+- extras.urls -> utilities.urls [fg:imports:extras.urls->utilities.urls]
+- extras.utils -> netbox.context [fg:imports:extras.utils->netbox.context]
+- extras.views -> core.choices [fg:imports:extras.views->core.choices]
+- extras.views -> core.models [fg:imports:extras.views->core.models]
+- extras.views -> dcim.models [fg:imports:extras.views->dcim.models]
+- extras.views -> netbox.constants [fg:imports:extras.views->netbox.constants]
+- extras.views -> netbox.views [fg:imports:extras.views->netbox.views]
+- extras.views -> netbox.views.generic.mixins [fg:imports:extras.views->netbox.views.generic.mixins]
+- extras.views -> utilities.forms [fg:imports:extras.views->utilities.forms]
+- extras.views -> utilities.htmx [fg:imports:extras.views->utilities.htmx]
+- extras.views -> utilities.paginator [fg:imports:extras.views->utilities.paginator]
+- extras.views -> utilities.query [fg:imports:extras.views->utilities.query]
+- extras.views -> utilities.querydict [fg:imports:extras.views->utilities.querydict]
+- extras.views -> utilities.request [fg:imports:extras.views->utilities.request]
+- extras.views -> utilities.rqworker [fg:imports:extras.views->utilities.rqworker]
+- extras.views -> utilities.templatetags.builtins.filters [fg:imports:extras.views->utilities.templatetags.builtins.filters]
+- extras.views -> utilities.views [fg:imports:extras.views->utilities.views]
+- extras.views -> virtualization.models [fg:imports:extras.views->virtualization.models]
+- extras.webhooks -> utilities.proxy [fg:imports:extras.webhooks->utilities.proxy]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- extras.migrations.0100_customfield_ui_attrs | . | get_model | extras.CustomField |  [fg:model_refs:extras.migrations.0100_customfield_ui_attrs:8]
+- extras.migrations.0101_eventrule | . | get_model | extras.Webhook |  [fg:model_refs:extras.migrations.0101_eventrule:11]
+- extras.migrations.0101_eventrule | . | get_model | extras.EventRule |  [fg:model_refs:extras.migrations.0101_eventrule:12]
+- extras.migrations.0102_move_configrevision | . | get_model | contenttypes.ContentType | cross [fg:model_refs:extras.migrations.0102_move_configrevision:5]
+- extras.migrations.0108_convert_reports_to_scripts | . | get_model | contenttypes.ContentType | cross [fg:model_refs:extras.migrations.0108_convert_reports_to_scripts:5]
+- extras.migrations.0108_convert_reports_to_scripts | . | get_model | core.Job | cross [fg:model_refs:extras.migrations.0108_convert_reports_to_scripts:6]
+- extras.migrations.0109_script_model | . | get_model | contenttypes.ContentType | cross [fg:model_refs:extras.migrations.0109_script_model:86]
+- extras.migrations.0109_script_model | . | get_model | extras.Script |  [fg:model_refs:extras.migrations.0109_script_model:87]
+- extras.migrations.0109_script_model | . | get_model | extras.ScriptModule |  [fg:model_refs:extras.migrations.0109_script_model:88]
+- extras.migrations.0109_script_model | . | get_model | extras.ReportModule |  [fg:model_refs:extras.migrations.0109_script_model:89]
+- extras.migrations.0109_script_model | . | get_model | core.Job | cross [fg:model_refs:extras.migrations.0109_script_model:90]
+- extras.migrations.0109_script_model | . | get_model | contenttypes.ContentType | cross [fg:model_refs:extras.migrations.0109_script_model:127]
+- extras.migrations.0109_script_model | . | get_model | extras.Script |  [fg:model_refs:extras.migrations.0109_script_model:128]
+- extras.migrations.0109_script_model | . | get_model | extras.ScriptModule |  [fg:model_refs:extras.migrations.0109_script_model:129]
+- extras.migrations.0109_script_model | . | get_model | extras.EventRule |  [fg:model_refs:extras.migrations.0109_script_model:130]
+- extras.migrations.0115_convert_dashboard_widgets | . | get_model | extras.Dashboard |  [fg:model_refs:extras.migrations.0115_convert_dashboard_widgets:5]
+- extras.migrations.0116_custom_link_button_color | . | get_model | extras.CustomLink |  [fg:model_refs:extras.migrations.0116_custom_link_button_color:5]
+- extras.migrations.0117_move_objectchange | . | get_model | contenttypes.ContentType | cross [fg:model_refs:extras.migrations.0117_move_objectchange:5]
+- extras.migrations.0117_move_objectchange | . | get_model | extras.Dashboard |  [fg:model_refs:extras.migrations.0117_move_objectchange:17]
+- extras.migrations.0120_eventrule_event_types | . | get_model | extras.EventRule |  [fg:model_refs:extras.migrations.0120_eventrule_event_types:8]
+- extras.migrations.0122_charfield_null_choices | . | get_model | extras.CustomFieldChoiceSet |  [fg:model_refs:extras.migrations.0122_charfield_null_choices:8]
+- extras.migrations.0123_journalentry_kind_default | . | get_model | extras.JournalEntry |  [fg:model_refs:extras.migrations.0123_journalentry_kind_default:10]
+- extras.migrations.0129_fix_script_paths | . | get_model | extras.ScriptModule |  [fg:model_refs:extras.migrations.0129_fix_script_paths:24]
+- extras.models.configs | ConfigContext.regions | ManyToManyField | dcim.Region | cross [fg:model_refs:extras.models.configs:50]
+- extras.models.configs | ConfigContext.site_groups | ManyToManyField | dcim.SiteGroup | cross [fg:model_refs:extras.models.configs:55]
+- extras.models.configs | ConfigContext.sites | ManyToManyField | dcim.Site | cross [fg:model_refs:extras.models.configs:60]
+- extras.models.configs | ConfigContext.locations | ManyToManyField | dcim.Location | cross [fg:model_refs:extras.models.configs:65]
+- extras.models.configs | ConfigContext.device_types | ManyToManyField | dcim.DeviceType | cross [fg:model_refs:extras.models.configs:70]
+- extras.models.configs | ConfigContext.roles | ManyToManyField | dcim.DeviceRole | cross [fg:model_refs:extras.models.configs:75]
+- extras.models.configs | ConfigContext.platforms | ManyToManyField | dcim.Platform | cross [fg:model_refs:extras.models.configs:80]
+- extras.models.configs | ConfigContext.cluster_types | ManyToManyField | virtualization.ClusterType | cross [fg:model_refs:extras.models.configs:85]
+- extras.models.configs | ConfigContext.cluster_groups | ManyToManyField | virtualization.ClusterGroup | cross [fg:model_refs:extras.models.configs:90]
+- extras.models.configs | ConfigContext.clusters | ManyToManyField | virtualization.Cluster | cross [fg:model_refs:extras.models.configs:95]
+- extras.models.configs | ConfigContext.tenant_groups | ManyToManyField | tenancy.TenantGroup | cross [fg:model_refs:extras.models.configs:100]
+- extras.models.configs | ConfigContext.tenants | ManyToManyField | tenancy.Tenant | cross [fg:model_refs:extras.models.configs:105]
+- extras.models.configs | ConfigContext.tags | ManyToManyField | extras.Tag |  [fg:model_refs:extras.models.configs:110]
+- extras.models.customfields | CustomField.object_types | ManyToManyField | core.ObjectType | cross [fg:model_refs:extras.models.customfields:74]
+- extras.models.customfields | CustomField.related_object_type | ForeignKey | core.ObjectType | cross [fg:model_refs:extras.models.customfields:86]
+- extras.models.customfields | CustomField.choice_set | ForeignKey | CustomFieldChoiceSet |  [fg:model_refs:extras.models.customfields:199]
+- extras.models.dashboard | Dashboard.user | OneToOneField | users.User | cross [fg:model_refs:extras.models.dashboard:12]
+- extras.models.models | EventRule.object_types | ManyToManyField | core.ObjectType | cross [fg:model_refs:extras.models.models:51]
+- extras.models.models | EventRule.action_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:extras.models.models:89]
+- extras.models.models | CustomLink.object_types | ManyToManyField | core.ObjectType | cross [fg:model_refs:extras.models.models:292]
+- extras.models.models | ExportTemplate.object_types | ManyToManyField | core.ObjectType | cross [fg:model_refs:extras.models.models:388]
+- extras.models.models | SavedFilter.object_types | ManyToManyField | core.ObjectType | cross [fg:model_refs:extras.models.models:453]
+- extras.models.models | TableConfig.object_type | ForeignKey | core.ObjectType | cross [fg:model_refs:extras.models.models:533]
+- extras.models.models | ImageAttachment.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:extras.models.models:648]
+- extras.models.models | JournalEntry.assigned_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:extras.models.models:745]
+- extras.models.models | Bookmark.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:extras.models.models:809]
+- extras.models.notifications | Notification.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:extras.models.notifications:52]
+- extras.models.notifications | NotificationGroup.groups | ManyToManyField | users.Group | cross [fg:model_refs:extras.models.notifications:135]
+- extras.models.notifications | NotificationGroup.users | ManyToManyField | users.User | cross [fg:model_refs:extras.models.notifications:141]
+- extras.models.notifications | NotificationGroup.event_rules | GenericRelation | extras.EventRule |  [fg:model_refs:extras.models.notifications:147]
+- extras.models.notifications | Subscription.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:extras.models.notifications:200]
+- extras.models.scripts | Script.module | ForeignKey | extras.ScriptModule |  [fg:model_refs:extras.models.scripts:34]
+- extras.models.scripts | Script.events | GenericRelation | extras.EventRule |  [fg:model_refs:extras.models.scripts:45]
+- extras.models.scripts | ScriptModule.event_rules | GenericRelation | extras.EventRule |  [fg:model_refs:extras.models.scripts:101]
+- extras.models.search | CachedValue.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:extras.models.search:26]
+- extras.models.tags | Tag.object_types | ManyToManyField | core.ObjectType | cross [fg:model_refs:extras.models.tags:37]
+
+## String references INTO this subsystem from others
+- dcim.models.devices | DeviceRole.config_template | ForeignKey -> extras.ConfigTemplate [fg:model_refs:dcim.models.devices:389]
+- dcim.models.devices | Platform.config_template | ForeignKey -> extras.ConfigTemplate [fg:model_refs:dcim.models.devices:418]
+- dcim.models.mixins | RenderConfigMixin.config_template | ForeignKey -> extras.ConfigTemplate [fg:model_refs:dcim.models.mixins:14]
+- netbox.models.features | ImageAttachmentsMixin.images | GenericRelation -> extras.ImageAttachment [fg:model_refs:netbox.models.features:352]
+- netbox.models.features | BookmarksMixin.bookmarks | GenericRelation -> extras.Bookmark [fg:model_refs:netbox.models.features:401]
+- netbox.models.features | NotificationsMixin.subscriptions | GenericRelation -> extras.Subscription [fg:model_refs:netbox.models.features:415]
+- netbox.models.features | JournalingMixin.journal_entries | GenericRelation -> extras.JournalEntry [fg:model_refs:netbox.models.features:451]
+- users.migrations.0005_alter_user_table | . | get_model -> extras.CustomField [fg:model_refs:users.migrations.0005_alter_user_table:6]
+- users.migrations.0006_custom_group_model | . | get_model -> extras.CustomField [fg:model_refs:users.migrations.0006_custom_group_model:10]
+- utilities.serialization | . | get_model -> extras.Tag [fg:model_refs:utilities.serialization:68]
+- utilities.tables | . | get_model -> extras.TableConfig [fg:model_refs:utilities.tables:22]
+
+## Churn (id = churn:<module>) — top 25 by commits
+- extras.views | 278 commits | 21 authors | 2016-03-01 .. 2025-06-19 [fg:churn:extras.views]
+- extras.api.serializers | 175 commits | 14 authors | 2016-03-01 .. 2025-04-10 [fg:churn:extras.api.serializers]
+- extras.models.models | 175 commits | 17 authors | 2020-05-07 .. 2025-04-11 [fg:churn:extras.models.models]
+- extras.api.views | 159 commits | 15 authors | 2016-03-01 .. 2025-06-11 [fg:churn:extras.api.views]
+- extras.models.customfields | 139 commits | 11 authors | 2020-05-07 .. 2025-03-26 [fg:churn:extras.models.customfields]
+- extras.scripts | 131 commits | 18 authors | 2019-08-09 .. 2025-04-22 [fg:churn:extras.scripts]
+- extras.tests.test_api | 107 commits | 13 authors | 2017-03-20 .. 2025-05-21 [fg:churn:extras.tests.test_api]
+- extras.filtersets | 92 commits | 12 authors | 2021-04-29 .. 2025-04-11 [fg:churn:extras.filtersets]
+- extras.filters | 89 commits | 8 authors | 2016-08-23 .. 2025-04-11 [fg:churn:extras.filters]
+- extras.forms.model_forms | 83 commits | 10 authors | 2022-10-25 .. 2025-04-10 [fg:churn:extras.forms.model_forms]
+- extras.tables.tables | 82 commits | 11 authors | 2022-03-03 .. 2025-05-01 [fg:churn:extras.tables.tables]
+- extras.tests.test_customfields | 81 commits | 7 authors | 2016-08-16 .. 2025-01-21 [fg:churn:extras.tests.test_customfields]
+- extras.forms.filtersets | 79 commits | 10 authors | 2021-09-28 .. 2025-04-10 [fg:churn:extras.forms.filtersets]
+- extras.urls | 77 commits | 8 authors | 2017-03-30 .. 2025-04-10 [fg:churn:extras.urls]
+- extras.constants | 76 commits | 8 authors | 2017-06-16 .. 2025-04-10 [fg:churn:extras.constants]
+- extras.tests.test_views | 73 commits | 10 authors | 2019-02-15 .. 2025-06-10 [fg:churn:extras.tests.test_views]
+- extras.tests.test_filtersets | 65 commits | 9 authors | 2021-05-03 .. 2025-04-11 [fg:churn:extras.tests.test_filtersets]
+- extras.forms.bulk_import | 60 commits | 10 authors | 2021-09-28 .. 2025-06-10 [fg:churn:extras.forms.bulk_import]
+- extras.choices | 58 commits | 12 authors | 2019-12-04 .. 2025-04-10 [fg:churn:extras.choices]
+- extras.api.customfields | 55 commits | 3 authors | 2017-03-08 .. 2024-06-25 [fg:churn:extras.api.customfields]
+- extras.reports | 55 commits | 10 authors | 2017-09-19 .. 2025-02-06 [fg:churn:extras.reports]
+- extras.signals | 55 commits | 4 authors | 2019-04-25 .. 2024-08-02 [fg:churn:extras.signals]
+- extras.dashboard.widgets | 53 commits | 9 authors | 2023-02-24 .. 2025-04-10 [fg:churn:extras.dashboard.widgets]
+- extras.api.urls | 49 commits | 6 authors | 2017-03-08 .. 2025-04-10 [fg:churn:extras.api.urls]
+- extras.models.tags | 43 commits | 6 authors | 2020-05-07 .. 2025-04-11 [fg:churn:extras.models.tags]
+
+## Entry points (id = entrypoints:<module>)
+- urls | extras.api.urls | netbox/extras/api/urls.py [fg:entrypoints:extras.api.urls]
+- api_views | extras.api.views | netbox/extras/api/views.py [fg:entrypoints:extras.api.views]
+- management_command | extras.management.commands.housekeeping | netbox/extras/management/commands/housekeeping.py [fg:entrypoints:extras.management.commands.housekeeping]
+- management_command | extras.management.commands.reindex | netbox/extras/management/commands/reindex.py [fg:entrypoints:extras.management.commands.reindex]
+- management_command | extras.management.commands.renaturalize | netbox/extras/management/commands/renaturalize.py [fg:entrypoints:extras.management.commands.renaturalize]
+- management_command | extras.management.commands.runscript | netbox/extras/management/commands/runscript.py [fg:entrypoints:extras.management.commands.runscript]
+- management_command | extras.management.commands.webhook_receiver | netbox/extras/management/commands/webhook_receiver.py [fg:entrypoints:extras.management.commands.webhook_receiver]
+- signals | extras.signals | netbox/extras/signals.py [fg:entrypoints:extras.signals]
+- urls | extras.urls | netbox/extras/urls.py [fg:entrypoints:extras.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- extras.api.customfields: CustomFieldDefaultValues, CustomFieldsDataField
+- extras.api.mixins: ConfigContextQuerySetMixin, ConfigTemplateRenderMixin, RenderConfigMixin
+- extras.api.serializers_.attachments: ImageAttachmentSerializer
+- extras.api.serializers_.bookmarks: BookmarkSerializer
+- extras.api.serializers_.configcontexts: ConfigContextSerializer
+- extras.api.serializers_.configtemplates: ConfigTemplateSerializer
+- extras.api.serializers_.customfields: CustomFieldChoiceSetSerializer, CustomFieldSerializer
+- extras.api.serializers_.customlinks: CustomLinkSerializer
+- extras.api.serializers_.dashboard: DashboardSerializer
+- extras.api.serializers_.events: EventRuleSerializer, WebhookSerializer
+- extras.api.serializers_.exporttemplates: ExportTemplateSerializer
+- extras.api.serializers_.journaling: JournalEntrySerializer
+- extras.api.serializers_.notifications: NotificationSerializer, NotificationGroupSerializer, SubscriptionSerializer
+- extras.api.serializers_.objecttypes: ObjectTypeSerializer
+- extras.api.serializers_.savedfilters: SavedFilterSerializer
+- extras.api.serializers_.scripts: ScriptSerializer, ScriptDetailSerializer, ScriptInputSerializer
+- extras.api.serializers_.tableconfigs: TableConfigSerializer
+- extras.api.serializers_.tags: TagSerializer, TaggedItemSerializer
+- extras.api.views: ExtrasRootView, EventRuleViewSet, WebhookViewSet, CustomFieldViewSet, CustomFieldChoiceSetViewSet, CustomLinkViewSet, ExportTemplateViewSet, SavedFilterViewSet, TableConfigViewSet, BookmarkViewSet, NotificationViewSet, NotificationGroupViewSet, SubscriptionViewSet, TagViewSet, TaggedItemViewSet, ImageAttachmentViewSet, JournalEntryViewSet, ConfigContextViewSet, ConfigTemplateViewSet, ScriptViewSet, ObjectTypeViewSet, DashboardView
+- extras.apps: ExtrasConfig
+- extras.choices: CustomFieldTypeChoices, CustomFieldFilterLogicChoices, CustomFieldUIVisibleChoices, CustomFieldUIEditableChoices, CustomFieldChoiceSetBaseChoices, CustomLinkButtonClassChoices, BookmarkOrderingChoices, JournalEntryKindChoices, LogLevelChoices, WebhookHttpMethodChoices, DashboardWidgetColorChoices, EventRuleActionChoices
+- extras.conditions: Condition, ConditionSet
+- extras.dashboard.forms: DashboardWidgetForm, DashboardWidgetAddForm
+- extras.dashboard.widgets: WidgetConfigForm, DashboardWidget, NoteWidget, ObjectCountsWidget, ObjectListWidget, RSSFeedWidget, BookmarksWidget
+- extras.fields: CachedValueField
+- extras.filters: TagFilter, TagIDFilter
+- extras.filtersets: ScriptFilterSet, WebhookFilterSet, EventRuleFilterSet, CustomFieldFilterSet, CustomFieldChoiceSetFilterSet, CustomLinkFilterSet, ExportTemplateFilterSet, SavedFilterFilterSet, TableConfigFilterSet, BookmarkFilterSet, NotificationGroupFilterSet, ImageAttachmentFilterSet, JournalEntryFilterSet, TagFilterSet, TaggedItemFilterSet, ConfigContextFilterSet, ConfigTemplateFilterSet, LocalConfigContextFilterSet, ObjectTypeFilterSet
+- extras.forms.bulk_edit: CustomFieldBulkEditForm, CustomFieldChoiceSetBulkEditForm, CustomLinkBulkEditForm, ExportTemplateBulkEditForm, SavedFilterBulkEditForm, TableConfigBulkEditForm, WebhookBulkEditForm, EventRuleBulkEditForm, TagBulkEditForm, ConfigContextBulkEditForm, ConfigTemplateBulkEditForm, JournalEntryBulkEditForm, NotificationGroupBulkEditForm
+- extras.forms.bulk_import: CustomFieldImportForm, CustomFieldChoiceSetImportForm, CustomLinkImportForm, ExportTemplateImportForm, ConfigTemplateImportForm, SavedFilterImportForm, WebhookImportForm, EventRuleImportForm, TagImportForm, JournalEntryImportForm, NotificationGroupImportForm
+- extras.forms.filtersets: CustomFieldFilterForm, CustomFieldChoiceSetFilterForm, CustomLinkFilterForm, ExportTemplateFilterForm, ImageAttachmentFilterForm, SavedFilterFilterForm, TableConfigFilterForm, WebhookFilterForm, EventRuleFilterForm, TagFilterForm, ConfigContextFilterForm, ConfigTemplateFilterForm, LocalConfigContextFilterForm, JournalEntryFilterForm, NotificationGroupFilterForm
+- extras.forms.misc: RenderMarkdownForm
+- extras.forms.model_forms: CustomFieldForm, CustomFieldChoiceSetForm, CustomLinkForm, ExportTemplateForm, SavedFilterForm, TableConfigForm, BookmarkForm, NotificationGroupForm, SubscriptionForm, WebhookForm, EventRuleForm, TagForm, ConfigContextForm, ConfigTemplateForm, ImageAttachmentForm, JournalEntryForm
+- extras.forms.reports: ReportForm
+- extras.forms.scripts: ScriptForm, ScriptFileForm
+- extras.graphql.filter_mixins: CustomFieldsFilterMixin, JournalEntriesFilterMixin, TagsFilterMixin, ConfigContextFilterMixin, TagBaseFilterMixin
+- extras.graphql.filters: ConfigContextFilter, ConfigTemplateFilter, CustomFieldFilter, CustomFieldChoiceSetFilter, CustomLinkFilter, ExportTemplateFilter, ImageAttachmentFilter, JournalEntryFilter, NotificationGroupFilter, SavedFilterFilter, TableConfigFilter, TagFilter, WebhookFilter, EventRuleFilter
+- extras.graphql.mixins: ConfigContextMixin, CustomFieldsMixin, ImageAttachmentsMixin, JournalEntriesMixin, TagsMixin, ContactsMixin
+- extras.graphql.schema: ExtrasQuery
+- extras.graphql.types: ConfigContextType, ConfigTemplateType, CustomFieldType, CustomFieldChoiceSetType, CustomLinkType, ExportTemplateType, ImageAttachmentType, JournalEntryType, NotificationType, NotificationGroupType, SavedFilterType, SubscriptionType, TableConfigType, TagType, WebhookType, EventRuleType
+- extras.jobs: ScriptJob
+- extras.lookups: Empty, NetContainsOrEquals
+- extras.management.commands.housekeeping: Command
+- extras.management.commands.reindex: Command
+- extras.management.commands.renaturalize: Command
+- extras.management.commands.runscript: Command
+- extras.management.commands.webhook_receiver: WebhookHandler, Command
+- extras.migrations.0001_squashed: Migration
+- extras.migrations.0002_squashed_0059: Migration
+- extras.migrations.0060_squashed_0086: Migration
+- extras.migrations.0087_squashed_0098: Migration
+- extras.migrations.0099_cachedvalue_ordering: Migration
+- extras.migrations.0100_customfield_ui_attrs: Migration
+- extras.migrations.0101_eventrule: Migration
+- extras.migrations.0102_move_configrevision: Migration
+- extras.migrations.0103_gfk_indexes: Migration
+- extras.migrations.0104_stagedchange_remove_change_logging: Migration
+- extras.migrations.0105_customfield_min_max_values: Migration
+- extras.migrations.0106_bookmark_user_cascade_deletion: Migration
+- extras.migrations.0107_cachedvalue_extras_cachedvalue_object: Migration
+- extras.migrations.0108_convert_reports_to_scripts: Migration
+- extras.migrations.0109_script_model: Migration
+- extras.migrations.0110_remove_eventrule_action_parameters: Migration
+- extras.migrations.0111_rename_content_types: Migration
+- extras.migrations.0112_tag_update_object_types: Migration
+- extras.migrations.0113_customfield_rename_object_type: Migration
+- extras.migrations.0114_customfield_add_comments: Migration
+- extras.migrations.0115_convert_dashboard_widgets: Migration
+- extras.migrations.0116_custom_link_button_color: Migration
+- extras.migrations.0117_move_objectchange: Migration
+- extras.migrations.0118_customfield_uniqueness: Migration
+- extras.migrations.0119_notifications: Migration
+- extras.migrations.0120_eventrule_event_types: Migration
+- extras.migrations.0121_customfield_related_object_filter: Migration
+- extras.migrations.0122_charfield_null_choices: Migration
+- extras.migrations.0123_journalentry_kind_default: Migration
+- extras.migrations.0124_remove_staging: Migration
+- extras.migrations.0125_alter_tag_options_tag_weight: Migration
+- extras.migrations.0126_exporttemplate_file_name: Migration
+- extras.migrations.0127_configtemplate_as_attachment_and_more: Migration
+- extras.migrations.0128_tableconfig: Migration
+- extras.migrations.0129_fix_script_paths: Migration
+- extras.models.configs: ConfigContext, ConfigContextModel, ConfigTemplate
+- extras.models.customfields: CustomFieldManager, CustomField, CustomFieldChoiceSet
+- extras.models.dashboard: Dashboard
+- extras.models.mixins: CustomStoragesLoader, PythonModuleMixin, RenderTemplateMixin
+- extras.models.models: EventRule, Webhook, CustomLink, ExportTemplate, SavedFilter, TableConfig, ImageAttachment, JournalEntry, Bookmark
+- extras.models.notifications: Notification, NotificationGroup, Subscription
+- extras.models.scripts: Script, ScriptModuleManager, ScriptModule
+- extras.models.search: CachedValue
+- extras.models.tags: Tag, TaggedItem
+- extras.querysets: ConfigContextQuerySet, ConfigContextModelQuerySet, NotificationQuerySet
+- extras.reports: Report
+- extras.scripts: ScriptVariable, StringVar, TextVar, IntegerVar, BooleanVar, ChoiceVar, DateVar, DateTimeVar, MultiChoiceVar, ObjectVar, MultiObjectVar, FileVar, IPAddressVar, IPAddressWithMaskVar, IPNetworkVar, BaseScript, Script
+- extras.search: CustomFieldIndex, JournalEntryIndex, TagIndex, WebhookEntryIndex
+- extras.storage: ScriptFileSystemStorage
+- extras.tables.columns: NotificationActionsColumn
+- extras.tables.tables: CustomFieldTable, CustomFieldChoiceSetTable, CustomLinkTable, ExportTemplateTable, ImageAttachmentTable, SavedFilterTable, TableConfigTable, BookmarkTable, SubscriptionTable, NotificationTable, NotificationGroupTable, WebhookTable, EventRuleTable, TagTable, TaggedItemTable, ConfigContextTable, ConfigTemplateTable, JournalEntryTable, ScriptResultsTable, ScriptJobTable, ReportResultsTable
+- extras.tests.test_api: AppTest, WebhookTest, EventRuleTest, CustomFieldTest, CustomFieldChoiceSetTest, CustomLinkTest, SavedFilterTest, BookmarkTest, ExportTemplateTest, TagTest, TaggedItemTest, ImageAttachmentTest, JournalEntryTest, ConfigContextTest, ConfigTemplateTest, ScriptTest, CreatedUpdatedFilterTest, ObjectTypeTest, SubscriptionTest, NotificationGroupTest, NotificationTest
+- extras.tests.test_conditions: ConditionTestCase, ConditionSetTest
+- extras.tests.test_custom_validation: ModelFormCustomValidationTest, BulkEditCustomValidationTest, BulkImportCustomValidationTest, APISerializerCustomValidationTest
+- extras.tests.test_customfields: CustomFieldTest, CustomFieldManagerTest, CustomFieldAPITest, CustomFieldImportTest, CustomFieldModelTest, CustomFieldModelFilterTest
+- extras.tests.test_customvalidators: MyValidator, CustomValidatorTest, CustomValidatorConfigTest, ProtectionRulesConfigTest
+- extras.tests.test_dashboard: ObjectListWidgetTests
+- extras.tests.test_event_rules: EventRuleTest
+- extras.tests.test_filtersets: CustomFieldTestCase, CustomFieldChoiceSetTestCase, WebhookTestCase, EventRuleTestCase, CustomLinkTestCase, SavedFilterTestCase, BookmarkTestCase, ExportTemplateTestCase, ImageAttachmentTestCase, JournalEntryTestCase, ConfigContextTestCase, ConfigTemplateTestCase, TagTestCase, TaggedItemFilterSetTestCase, ChangeLoggedFilterSetTestCase, NotificationGroupTestCase
+- extras.tests.test_forms: CustomFieldModelFormTest, SavedFilterFormTest
+- extras.tests.test_models: TagTest, ConfigContextTest, ConfigTemplateTest
+- extras.tests.test_scripts: ScriptTest, ScriptVariablesTest
+- extras.tests.test_tags: TaggedItemTest
+- extras.tests.test_utils: FilenameFromModelTests
+- extras.tests.test_views: CustomFieldTestCase, CustomFieldChoiceSetTestCase, CustomLinkTestCase, SavedFilterTestCase, BookmarkTestCase, ExportTemplateTestCase, WebhookTestCase, EventRulesTestCase, TagTestCase, ConfigContextTestCase, ConfigTemplateTestCase, JournalEntryTestCase, CustomLinkTest, SubscriptionTestCase, NotificationGroupTestCase, NotificationTestCase
+- extras.utils: SharedObjectViewMixin
+- extras.validators: IsEqualValidator, IsNotEqualValidator, IsEmptyValidator, IsNotEmptyValidator, CustomValidator
+- extras.views: CustomFieldListView, CustomFieldView, CustomFieldEditView, CustomFieldDeleteView, CustomFieldBulkImportView, CustomFieldBulkEditView, CustomFieldBulkDeleteView, CustomFieldChoiceSetListView, CustomFieldChoiceSetView, CustomFieldChoiceSetEditView, CustomFieldChoiceSetDeleteView, CustomFieldChoiceSetBulkImportView, CustomFieldChoiceSetBulkEditView, CustomFieldChoiceSetBulkDeleteView, CustomLinkListView, CustomLinkView, CustomLinkEditView, CustomLinkDeleteView, CustomLinkBulkImportView, CustomLinkBulkEditView, CustomLinkBulkDeleteView, ExportTemplateListView, ExportTemplateView, ExportTemplateEditView, ExportTemplateDeleteView, ExportTemplateBulkImportView, ExportTemplateBulkEditView, ExportTemplateBulkDeleteView, ExportTemplateBulkSyncDataView, SavedFilterListView, SavedFilterView, SavedFilterEditView, SavedFilterDeleteView, SavedFilterBulkImportView, SavedFilterBulkEditView, SavedFilterBulkDeleteView, TableConfigListView, TableConfigView, TableConfigEditView, TableConfigDeleteView, TableConfigBulkEditView, TableConfigBulkDeleteView, BookmarkCreateView, BookmarkDeleteView, BookmarkBulkDeleteView, NotificationGroupListView, NotificationGroupView, NotificationGroupEditView, NotificationGroupDeleteView, NotificationGroupBulkImportView, NotificationGroupBulkEditView, NotificationGroupBulkDeleteView, NotificationsView, NotificationReadView, NotificationDismissView, NotificationDeleteView, NotificationBulkDeleteView, SubscriptionCreateView, SubscriptionDeleteView, SubscriptionBulkDeleteView, WebhookListView, WebhookView, WebhookEditView, WebhookDeleteView, WebhookBulkImportView, WebhookBulkEditView, WebhookBulkDeleteView, EventRuleListView, EventRuleView, EventRuleEditView, EventRuleDeleteView, EventRuleBulkImportView, EventRuleBulkEditView, EventRuleBulkDeleteView, TagListView, TagView, TagEditView, TagDeleteView, TagBulkImportView, TagBulkEditView, TagBulkDeleteView, ConfigContextListView, ConfigContextView, ConfigContextEditView, ConfigContextDeleteView, ConfigContextBulkEditView, ConfigContextBulkDeleteView, ConfigContextBulkSyncDataView, ObjectConfigContextView, ConfigTemplateListView, ConfigTemplateView, ConfigTemplateEditView, ConfigTemplateDeleteView, ConfigTemplateBulkImportView, ConfigTemplateBulkEditView, ConfigTemplateBulkDeleteView, ConfigTemplateBulkSyncDataView, ObjectRenderConfigView, ImageAttachmentListView, ImageAttachmentEditView, ImageAttachmentDeleteView, JournalEntryListView, JournalEntryView, JournalEntryEditView, JournalEntryDeleteView, JournalEntryBulkImportView, JournalEntryBulkEditView, JournalEntryBulkDeleteView, DashboardResetView, DashboardWidgetAddView, DashboardWidgetConfigView, DashboardWidgetDeleteView, ScriptModuleCreateView, ScriptModuleDeleteView, ScriptListView, BaseScriptView, ScriptView, ScriptSourceView, ScriptJobsView, ScriptResultView, RenderMarkdownView

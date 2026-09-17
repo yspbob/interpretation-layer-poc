@@ -1,0 +1,6191 @@
+{
+"subsystem": "circuits",
+"t0": "ea4c205a37baa3e58e6e481158c15c6154cceeff",
+"summary": {
+"subsystem": "circuits",
+"modules": 44,
+"loc_code": 8214,
+"loc_data": 0,
+"test_modules": 5
+},
+"modules": [
+{
+"module": "circuits",
+"path": "netbox/circuits/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits"
+},
+{
+"module": "circuits.api",
+"path": "netbox/circuits/api/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api"
+},
+{
+"module": "circuits.api.serializers",
+"path": "netbox/circuits/api/serializers.py",
+"loc": 3,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api.serializers"
+},
+{
+"module": "circuits.api.serializers_",
+"path": "netbox/circuits/api/serializers_/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api.serializers_"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"loc": 221,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api.serializers_.circuits"
+},
+{
+"module": "circuits.api.serializers_.nested",
+"path": "netbox/circuits/api/serializers_/nested.py",
+"loc": 14,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api.serializers_.nested"
+},
+{
+"module": "circuits.api.serializers_.providers",
+"path": "netbox/circuits/api/serializers_/providers.py",
+"loc": 67,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api.serializers_.providers"
+},
+{
+"module": "circuits.api.urls",
+"path": "netbox/circuits/api/urls.py",
+"loc": 27,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api.urls"
+},
+{
+"module": "circuits.api.views",
+"path": "netbox/circuits/api/views.py",
+"loc": 126,
+"classes": 12,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.api.views"
+},
+{
+"module": "circuits.apps",
+"path": "netbox/circuits/apps.py",
+"loc": 14,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.apps"
+},
+{
+"module": "circuits.choices",
+"path": "netbox/circuits/choices.py",
+"loc": 111,
+"classes": 6,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.choices"
+},
+{
+"module": "circuits.constants",
+"path": "netbox/circuits/constants.py",
+"loc": 13,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.constants"
+},
+{
+"module": "circuits.filtersets",
+"path": "netbox/circuits/filtersets.py",
+"loc": 591,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.filtersets"
+},
+{
+"module": "circuits.forms",
+"path": "netbox/circuits/forms/__init__.py",
+"loc": 5,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.forms"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"loc": 381,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.forms.bulk_edit"
+},
+{
+"module": "circuits.forms.bulk_import",
+"path": "netbox/circuits/forms/bulk_import.py",
+"loc": 281,
+"classes": 15,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.forms.bulk_import"
+},
+{
+"module": "circuits.forms.filtersets",
+"path": "netbox/circuits/forms/filtersets.py",
+"loc": 400,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.forms.filtersets"
+},
+{
+"module": "circuits.forms.model_forms",
+"path": "netbox/circuits/forms/model_forms.py",
+"loc": 390,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.forms.model_forms"
+},
+{
+"module": "circuits.graphql",
+"path": "netbox/circuits/graphql/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.graphql"
+},
+{
+"module": "circuits.graphql.enums",
+"path": "netbox/circuits/graphql/enums.py",
+"loc": 17,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.graphql.enums"
+},
+{
+"module": "circuits.graphql.filter_mixins",
+"path": "netbox/circuits/graphql/filter_mixins.py",
+"loc": 20,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.graphql.filter_mixins"
+},
+{
+"module": "circuits.graphql.filters",
+"path": "netbox/circuits/graphql/filters.py",
+"loc": 225,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.graphql.filters"
+},
+{
+"module": "circuits.graphql.schema",
+"path": "netbox/circuits/graphql/schema.py",
+"loc": 43,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.graphql.schema"
+},
+{
+"module": "circuits.graphql.types",
+"path": "netbox/circuits/graphql/types.py",
+"loc": 190,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.graphql.types"
+},
+{
+"module": "circuits.migrations",
+"path": "netbox/circuits/migrations/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.migrations"
+},
+{
+"module": "circuits.migrations.0001_squashed",
+"path": "netbox/circuits/migrations/0001_squashed.py",
+"loc": 111,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0001_squashed"
+},
+{
+"module": "circuits.migrations.0002_squashed_0029",
+"path": "netbox/circuits/migrations/0002_squashed_0029.py",
+"loc": 177,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0002_squashed_0029"
+},
+{
+"module": "circuits.migrations.0003_squashed_0037",
+"path": "netbox/circuits/migrations/0003_squashed_0037.py",
+"loc": 127,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0003_squashed_0037"
+},
+{
+"module": "circuits.migrations.0038_squashed_0042",
+"path": "netbox/circuits/migrations/0038_squashed_0042.py",
+"loc": 151,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0038_squashed_0042"
+},
+{
+"module": "circuits.migrations.0043_circuittype_color",
+"path": "netbox/circuits/migrations/0043_circuittype_color.py",
+"loc": 19,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0043_circuittype_color"
+},
+{
+"module": "circuits.migrations.0044_circuit_groups",
+"path": "netbox/circuits/migrations/0044_circuit_groups.py",
+"loc": 88,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0044_circuit_groups"
+},
+{
+"module": "circuits.migrations.0045_circuit_distance",
+"path": "netbox/circuits/migrations/0045_circuit_distance.py",
+"loc": 28,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0045_circuit_distance"
+},
+{
+"module": "circuits.migrations.0046_charfield_null_choices",
+"path": "netbox/circuits/migrations/0046_charfield_null_choices.py",
+"loc": 41,
+"classes": 1,
+"functions": 1,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0046_charfield_null_choices"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"loc": 76,
+"classes": 1,
+"functions": 2,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0047_circuittermination__termination"
+},
+{
+"module": "circuits.migrations.0048_circuitterminations_cached_relations",
+"path": "netbox/circuits/migrations/0048_circuitterminations_cached_relations.py",
+"loc": 101,
+"classes": 1,
+"functions": 2,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0048_circuitterminations_cached_relations"
+},
+{
+"module": "circuits.migrations.0049_natural_ordering",
+"path": "netbox/circuits/migrations/0049_natural_ordering.py",
+"loc": 22,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0049_natural_ordering"
+},
+{
+"module": "circuits.migrations.0050_virtual_circuits",
+"path": "netbox/circuits/migrations/0050_virtual_circuits.py",
+"loc": 148,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0050_virtual_circuits"
+},
+{
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"loc": 104,
+"classes": 1,
+"functions": 2,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0051_virtualcircuit_group_assignment"
+},
+{
+"module": "circuits.migrations.0052_extend_circuit_abs_distance_upper_limit",
+"path": "netbox/circuits/migrations/0052_extend_circuit_abs_distance_upper_limit.py",
+"loc": 17,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 1,
+"is_data": 0,
+"id": "modules:circuits.migrations.0052_extend_circuit_abs_distance_upper_limit"
+},
+{
+"module": "circuits.models",
+"path": "netbox/circuits/models/__init__.py",
+"loc": 4,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.models"
+},
+{
+"module": "circuits.models.base",
+"path": "netbox/circuits/models/base.py",
+"loc": 24,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.models.base"
+},
+{
+"module": "circuits.models.circuits",
+"path": "netbox/circuits/models/circuits.py",
+"loc": 398,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.models.circuits"
+},
+{
+"module": "circuits.models.providers",
+"path": "netbox/circuits/models/providers.py",
+"loc": 126,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.models.providers"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"path": "netbox/circuits/models/virtual_circuits.py",
+"loc": 192,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.models.virtual_circuits"
+},
+{
+"module": "circuits.search",
+"path": "netbox/circuits/search.py",
+"loc": 114,
+"classes": 10,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.search"
+},
+{
+"module": "circuits.signals",
+"path": "netbox/circuits/signals.py",
+"loc": 28,
+"classes": 0,
+"functions": 2,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.signals"
+},
+{
+"module": "circuits.tables",
+"path": "netbox/circuits/tables/__init__.py",
+"loc": 5,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tables"
+},
+{
+"module": "circuits.tables.circuits",
+"path": "netbox/circuits/tables/circuits.py",
+"loc": 220,
+"classes": 5,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tables.circuits"
+},
+{
+"module": "circuits.tables.columns",
+"path": "netbox/circuits/tables/columns.py",
+"loc": 22,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tables.columns"
+},
+{
+"module": "circuits.tables.providers",
+"path": "netbox/circuits/tables/providers.py",
+"loc": 117,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tables.providers"
+},
+{
+"module": "circuits.tables.virtual_circuits",
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"loc": 124,
+"classes": 3,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tables.virtual_circuits"
+},
+{
+"module": "circuits.tests",
+"path": "netbox/circuits/tests/__init__.py",
+"loc": 1,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tests"
+},
+{
+"module": "circuits.tests.test_api",
+"path": "netbox/circuits/tests/test_api.py",
+"loc": 697,
+"classes": 12,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tests.test_api"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"loc": 1209,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tests.test_filtersets"
+},
+{
+"module": "circuits.tests.test_tables",
+"path": "netbox/circuits/tests/test_tables.py",
+"loc": 24,
+"classes": 1,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tests.test_tables"
+},
+{
+"module": "circuits.tests.test_views",
+"path": "netbox/circuits/tests/test_views.py",
+"loc": 938,
+"classes": 11,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 1,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.tests.test_views"
+},
+{
+"module": "circuits.urls",
+"path": "netbox/circuits/urls.py",
+"loc": 76,
+"classes": 0,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.urls"
+},
+{
+"module": "circuits.views",
+"path": "netbox/circuits/views.py",
+"loc": 751,
+"classes": 78,
+"functions": 0,
+"parse": "OK",
+"subsystem": "circuits",
+"is_test": 0,
+"is_migration": 0,
+"is_data": 0,
+"id": "modules:circuits.views"
+}
+],
+"symbols": [
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "CircuitTypeSerializer",
+"lineno": 32,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:CircuitTypeSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "CircuitCircuitTerminationSerializer",
+"lineno": 46,
+"bases": "WritableNestedSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:CircuitCircuitTerminationSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "CircuitGroupSerializer",
+"lineno": 74,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:CircuitGroupSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "CircuitGroupAssignmentSerializer_",
+"lineno": 87,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:CircuitGroupAssignmentSerializer_"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "CircuitSerializer",
+"lineno": 102,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:CircuitSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "CircuitTerminationSerializer",
+"lineno": 124,
+"bases": "NetBoxModelSerializer,CabledObjectSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:CircuitTerminationSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "CircuitGroupAssignmentSerializer",
+"lineno": 156,
+"bases": "CircuitGroupAssignmentSerializer_",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:CircuitGroupAssignmentSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "VirtualCircuitTypeSerializer",
+"lineno": 179,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:VirtualCircuitTypeSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "VirtualCircuitSerializer",
+"lineno": 193,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:VirtualCircuitSerializer"
+},
+{
+"module": "circuits.api.serializers_.circuits",
+"kind": "class",
+"name": "VirtualCircuitTerminationSerializer",
+"lineno": 209,
+"bases": "NetBoxModelSerializer,CabledObjectSerializer",
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "symbols:circuits.api.serializers_.circuits:VirtualCircuitTerminationSerializer"
+},
+{
+"module": "circuits.api.serializers_.nested",
+"kind": "class",
+"name": "NestedProviderAccountSerializer",
+"lineno": 9,
+"bases": "WritableNestedSerializer",
+"path": "netbox/circuits/api/serializers_/nested.py",
+"id": "symbols:circuits.api.serializers_.nested:NestedProviderAccountSerializer"
+},
+{
+"module": "circuits.api.serializers_.providers",
+"kind": "class",
+"name": "ProviderSerializer",
+"lineno": 17,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "symbols:circuits.api.serializers_.providers:ProviderSerializer"
+},
+{
+"module": "circuits.api.serializers_.providers",
+"kind": "class",
+"name": "ProviderAccountSerializer",
+"lineno": 44,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "symbols:circuits.api.serializers_.providers:ProviderAccountSerializer"
+},
+{
+"module": "circuits.api.serializers_.providers",
+"kind": "class",
+"name": "ProviderNetworkSerializer",
+"lineno": 57,
+"bases": "NetBoxModelSerializer",
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "symbols:circuits.api.serializers_.providers:ProviderNetworkSerializer"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "CircuitsRootView",
+"lineno": 10,
+"bases": "APIRootView",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:CircuitsRootView"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "ProviderViewSet",
+"lineno": 22,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:ProviderViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "CircuitTypeViewSet",
+"lineno": 32,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:CircuitTypeViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "CircuitViewSet",
+"lineno": 42,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:CircuitViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "CircuitTerminationViewSet",
+"lineno": 52,
+"bases": "PassThroughPortMixin,NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:CircuitTerminationViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "CircuitGroupViewSet",
+"lineno": 62,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:CircuitGroupViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentViewSet",
+"lineno": 72,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:CircuitGroupAssignmentViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "ProviderAccountViewSet",
+"lineno": 82,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:ProviderAccountViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "ProviderNetworkViewSet",
+"lineno": 92,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:ProviderNetworkViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "VirtualCircuitTypeViewSet",
+"lineno": 102,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:VirtualCircuitTypeViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "VirtualCircuitViewSet",
+"lineno": 112,
+"bases": "NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:VirtualCircuitViewSet"
+},
+{
+"module": "circuits.api.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationViewSet",
+"lineno": 122,
+"bases": "PassThroughPortMixin,NetBoxModelViewSet",
+"path": "netbox/circuits/api/views.py",
+"id": "symbols:circuits.api.views:VirtualCircuitTerminationViewSet"
+},
+{
+"module": "circuits.apps",
+"kind": "class",
+"name": "CircuitsConfig",
+"lineno": 4,
+"bases": "AppConfig",
+"path": "netbox/circuits/apps.py",
+"id": "symbols:circuits.apps:CircuitsConfig"
+},
+{
+"module": "circuits.choices",
+"kind": "class",
+"name": "CircuitStatusChoices",
+"lineno": 10,
+"bases": "ChoiceSet",
+"path": "netbox/circuits/choices.py",
+"id": "symbols:circuits.choices:CircuitStatusChoices"
+},
+{
+"module": "circuits.choices",
+"kind": "class",
+"name": "CircuitCommitRateChoices",
+"lineno": 30,
+"bases": "ChoiceSet",
+"path": "netbox/circuits/choices.py",
+"id": "symbols:circuits.choices:CircuitCommitRateChoices"
+},
+{
+"module": "circuits.choices",
+"kind": "class",
+"name": "CircuitTerminationSideChoices",
+"lineno": 52,
+"bases": "ChoiceSet",
+"path": "netbox/circuits/choices.py",
+"id": "symbols:circuits.choices:CircuitTerminationSideChoices"
+},
+{
+"module": "circuits.choices",
+"kind": "class",
+"name": "CircuitTerminationPortSpeedChoices",
+"lineno": 63,
+"bases": "ChoiceSet",
+"path": "netbox/circuits/choices.py",
+"id": "symbols:circuits.choices:CircuitTerminationPortSpeedChoices"
+},
+{
+"module": "circuits.choices",
+"kind": "class",
+"name": "CircuitPriorityChoices",
+"lineno": 81,
+"bases": "ChoiceSet",
+"path": "netbox/circuits/choices.py",
+"id": "symbols:circuits.choices:CircuitPriorityChoices"
+},
+{
+"module": "circuits.choices",
+"kind": "class",
+"name": "VirtualCircuitTerminationRoleChoices",
+"lineno": 101,
+"bases": "ChoiceSet",
+"path": "netbox/circuits/choices.py",
+"id": "symbols:circuits.choices:VirtualCircuitTerminationRoleChoices"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "ProviderFilterSet",
+"lineno": 32,
+"bases": "NetBoxModelFilterSet,ContactModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:ProviderFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "ProviderAccountFilterSet",
+"lineno": 98,
+"bases": "NetBoxModelFilterSet,ContactModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:ProviderAccountFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "ProviderNetworkFilterSet",
+"lineno": 125,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:ProviderNetworkFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "CircuitTypeFilterSet",
+"lineno": 152,
+"bases": "OrganizationalModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:CircuitTypeFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "CircuitFilterSet",
+"lineno": 159,
+"bases": "NetBoxModelFilterSet,TenancyFilterSet,ContactModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:CircuitFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "CircuitTerminationFilterSet",
+"lineno": 270,
+"bases": "NetBoxModelFilterSet,CabledObjectFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:CircuitTerminationFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "CircuitGroupFilterSet",
+"lineno": 365,
+"bases": "OrganizationalModelFilterSet,TenancyFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:CircuitGroupFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "CircuitGroupAssignmentFilterSet",
+"lineno": 372,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:CircuitGroupAssignmentFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "VirtualCircuitTypeFilterSet",
+"lineno": 471,
+"bases": "OrganizationalModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:VirtualCircuitTypeFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "VirtualCircuitFilterSet",
+"lineno": 478,
+"bases": "NetBoxModelFilterSet,TenancyFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:VirtualCircuitFilterSet"
+},
+{
+"module": "circuits.filtersets",
+"kind": "class",
+"name": "VirtualCircuitTerminationFilterSet",
+"lineno": 534,
+"bases": "NetBoxModelFilterSet",
+"path": "netbox/circuits/filtersets.py",
+"id": "symbols:circuits.filtersets:VirtualCircuitTerminationFilterSet"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "ProviderBulkEditForm",
+"lineno": 39,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:ProviderBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "ProviderAccountBulkEditForm",
+"lineno": 61,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:ProviderAccountBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "ProviderNetworkBulkEditForm",
+"lineno": 83,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:ProviderNetworkBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "CircuitTypeBulkEditForm",
+"lineno": 110,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:CircuitTypeBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "CircuitBulkEditForm",
+"lineno": 128,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:CircuitBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "CircuitTerminationBulkEditForm",
+"lineno": 205,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:CircuitTerminationBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "CircuitGroupBulkEditForm",
+"lineno": 264,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:CircuitGroupBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "CircuitGroupAssignmentBulkEditForm",
+"lineno": 282,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:CircuitGroupAssignmentBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "VirtualCircuitTypeBulkEditForm",
+"lineno": 301,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:VirtualCircuitTypeBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "VirtualCircuitBulkEditForm",
+"lineno": 319,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:VirtualCircuitBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_edit",
+"kind": "class",
+"name": "VirtualCircuitTerminationBulkEditForm",
+"lineno": 363,
+"bases": "NetBoxModelBulkEditForm",
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "symbols:circuits.forms.bulk_edit:VirtualCircuitTerminationBulkEditForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "ProviderImportForm",
+"lineno": 31,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:ProviderImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "ProviderAccountImportForm",
+"lineno": 41,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:ProviderAccountImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "ProviderNetworkImportForm",
+"lineno": 56,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:ProviderNetworkImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "CircuitTypeImportForm",
+"lineno": 71,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:CircuitTypeImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "CircuitImportForm",
+"lineno": 79,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:CircuitImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "BaseCircuitTerminationImportForm",
+"lineno": 126,
+"bases": "forms.ModelForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:BaseCircuitTerminationImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "CircuitTerminationImportRelatedForm",
+"lineno": 143,
+"bases": "BaseCircuitTerminationImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:CircuitTerminationImportRelatedForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "CircuitTerminationImportForm",
+"lineno": 155,
+"bases": "NetBoxModelImportForm,BaseCircuitTerminationImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:CircuitTerminationImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "CircuitGroupImportForm",
+"lineno": 168,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:CircuitGroupImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "CircuitGroupAssignmentImportForm",
+"lineno": 182,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:CircuitGroupAssignmentImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "VirtualCircuitTypeImportForm",
+"lineno": 198,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:VirtualCircuitTypeImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "VirtualCircuitImportForm",
+"lineno": 206,
+"bases": "NetBoxModelImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:VirtualCircuitImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "BaseVirtualCircuitTerminationImportForm",
+"lineno": 247,
+"bases": "forms.ModelForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:BaseVirtualCircuitTerminationImportForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "VirtualCircuitTerminationImportRelatedForm",
+"lineno": 265,
+"bases": "BaseVirtualCircuitTerminationImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:VirtualCircuitTerminationImportRelatedForm"
+},
+{
+"module": "circuits.forms.bulk_import",
+"kind": "class",
+"name": "VirtualCircuitTerminationImportForm",
+"lineno": 274,
+"bases": "NetBoxModelImportForm,BaseVirtualCircuitTerminationImportForm",
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "symbols:circuits.forms.bulk_import:VirtualCircuitTerminationImportForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "ProviderFilterForm",
+"lineno": 34,
+"bases": "ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:ProviderFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "ProviderAccountFilterForm",
+"lineno": 69,
+"bases": "ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:ProviderAccountFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "ProviderNetworkFilterForm",
+"lineno": 88,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:ProviderNetworkFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "CircuitTypeFilterForm",
+"lineno": 107,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:CircuitTypeFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "CircuitFilterForm",
+"lineno": 121,
+"bases": "TenancyFilterForm,ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:CircuitFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "CircuitTerminationFilterForm",
+"lineno": 220,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:CircuitTerminationFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "CircuitGroupFilterForm",
+"lineno": 274,
+"bases": "TenancyFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:CircuitGroupFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "CircuitGroupAssignmentFilterForm",
+"lineno": 283,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:CircuitGroupAssignmentFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "VirtualCircuitTypeFilterForm",
+"lineno": 312,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:VirtualCircuitTypeFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "VirtualCircuitFilterForm",
+"lineno": 326,
+"bases": "TenancyFilterForm,ContactModelFilterForm,NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:VirtualCircuitFilterForm"
+},
+{
+"module": "circuits.forms.filtersets",
+"kind": "class",
+"name": "VirtualCircuitTerminationFilterForm",
+"lineno": 369,
+"bases": "NetBoxModelFilterSetForm",
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "symbols:circuits.forms.filtersets:VirtualCircuitTerminationFilterForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "ProviderForm",
+"lineno": 39,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:ProviderForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "ProviderAccountForm",
+"lineno": 59,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:ProviderAccountForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "ProviderNetworkForm",
+"lineno": 75,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:ProviderNetworkForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "CircuitTypeForm",
+"lineno": 95,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:CircuitTypeForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "CircuitForm",
+"lineno": 109,
+"bases": "DistanceValidationMixin,TenancyForm,NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:CircuitForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "CircuitTerminationForm",
+"lineno": 161,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:CircuitTerminationForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "CircuitGroupForm",
+"lineno": 236,
+"bases": "TenancyForm,NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:CircuitGroupForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "CircuitGroupAssignmentForm",
+"lineno": 251,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:CircuitGroupAssignmentForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "VirtualCircuitTypeForm",
+"lineno": 310,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:VirtualCircuitTypeForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "VirtualCircuitForm",
+"lineno": 324,
+"bases": "TenancyForm,NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:VirtualCircuitForm"
+},
+{
+"module": "circuits.forms.model_forms",
+"kind": "class",
+"name": "VirtualCircuitTerminationForm",
+"lineno": 357,
+"bases": "NetBoxModelForm",
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "symbols:circuits.forms.model_forms:VirtualCircuitTerminationForm"
+},
+{
+"module": "circuits.graphql.filter_mixins",
+"kind": "class",
+"name": "BaseCircuitTypeFilterMixin",
+"lineno": 18,
+"bases": "OrganizationalModelFilterMixin",
+"path": "netbox/circuits/graphql/filter_mixins.py",
+"id": "symbols:circuits.graphql.filter_mixins:BaseCircuitTypeFilterMixin"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "CircuitTerminationFilter",
+"lineno": 45,
+"bases": "BaseObjectTypeFilterMixin,CustomFieldsFilterMixin,TagsFilterMixin,ChangeLogFilterMixin,CabledObjectModelFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:CircuitTerminationFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "CircuitFilter",
+"lineno": 91,
+"bases": "ContactFilterMixin,ImageAttachmentFilterMixin,DistanceFilterMixin,TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:CircuitFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "CircuitTypeFilter",
+"lineno": 125,
+"bases": "BaseCircuitTypeFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:CircuitTypeFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "CircuitGroupFilter",
+"lineno": 130,
+"bases": "TenancyFilterMixin,OrganizationalModelFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:CircuitGroupFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "CircuitGroupAssignmentFilter",
+"lineno": 135,
+"bases": "BaseObjectTypeFilterMixin,CustomFieldsFilterMixin,TagsFilterMixin,ChangeLogFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:CircuitGroupAssignmentFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "ProviderFilter",
+"lineno": 152,
+"bases": "ContactFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:ProviderFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "ProviderAccountFilter",
+"lineno": 162,
+"bases": "ContactFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:ProviderAccountFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "ProviderNetworkFilter",
+"lineno": 172,
+"bases": "PrimaryModelFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:ProviderNetworkFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "VirtualCircuitTypeFilter",
+"lineno": 182,
+"bases": "BaseCircuitTypeFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:VirtualCircuitTypeFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "VirtualCircuitFilter",
+"lineno": 187,
+"bases": "TenancyFilterMixin,PrimaryModelFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:VirtualCircuitFilter"
+},
+{
+"module": "circuits.graphql.filters",
+"kind": "class",
+"name": "VirtualCircuitTerminationFilter",
+"lineno": 210,
+"bases": "BaseObjectTypeFilterMixin,CustomFieldsFilterMixin,TagsFilterMixin,ChangeLogFilterMixin",
+"path": "netbox/circuits/graphql/filters.py",
+"id": "symbols:circuits.graphql.filters:VirtualCircuitTerminationFilter"
+},
+{
+"module": "circuits.graphql.schema",
+"kind": "class",
+"name": "CircuitsQuery",
+"lineno": 10,
+"bases": "",
+"path": "netbox/circuits/graphql/schema.py",
+"id": "symbols:circuits.graphql.schema:CircuitsQuery"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "ProviderType",
+"lineno": 38,
+"bases": "NetBoxObjectType,ContactsMixin",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:ProviderType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "ProviderAccountType",
+"lineno": 52,
+"bases": "ContactsMixin,NetBoxObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:ProviderAccountType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "ProviderNetworkType",
+"lineno": 64,
+"bases": "NetBoxObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:ProviderNetworkType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "CircuitTerminationType",
+"lineno": 76,
+"bases": "CustomFieldsMixin,TagsMixin,CabledObjectMixin,ObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:CircuitTerminationType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "CircuitTypeType",
+"lineno": 96,
+"bases": "OrganizationalObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:CircuitTypeType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "CircuitType",
+"lineno": 108,
+"bases": "NetBoxObjectType,ContactsMixin",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:CircuitType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "CircuitGroupType",
+"lineno": 125,
+"bases": "OrganizationalObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:CircuitGroupType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "CircuitGroupAssignmentType",
+"lineno": 135,
+"bases": "TagsMixin,BaseObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:CircuitGroupAssignmentType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "VirtualCircuitTypeType",
+"lineno": 152,
+"bases": "OrganizationalObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:VirtualCircuitTypeType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "VirtualCircuitTerminationType",
+"lineno": 164,
+"bases": "CustomFieldsMixin,TagsMixin,ObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:VirtualCircuitTerminationType"
+},
+{
+"module": "circuits.graphql.types",
+"kind": "class",
+"name": "VirtualCircuitType",
+"lineno": 181,
+"bases": "NetBoxObjectType",
+"path": "netbox/circuits/graphql/types.py",
+"id": "symbols:circuits.graphql.types:VirtualCircuitType"
+},
+{
+"module": "circuits.migrations.0001_squashed",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0001_squashed.py",
+"id": "symbols:circuits.migrations.0001_squashed:Migration"
+},
+{
+"module": "circuits.migrations.0002_squashed_0029",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0002_squashed_0029.py",
+"id": "symbols:circuits.migrations.0002_squashed_0029:Migration"
+},
+{
+"module": "circuits.migrations.0003_squashed_0037",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0003_squashed_0037.py",
+"id": "symbols:circuits.migrations.0003_squashed_0037:Migration"
+},
+{
+"module": "circuits.migrations.0038_squashed_0042",
+"kind": "class",
+"name": "Migration",
+"lineno": 8,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0038_squashed_0042.py",
+"id": "symbols:circuits.migrations.0038_squashed_0042:Migration"
+},
+{
+"module": "circuits.migrations.0043_circuittype_color",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0043_circuittype_color.py",
+"id": "symbols:circuits.migrations.0043_circuittype_color:Migration"
+},
+{
+"module": "circuits.migrations.0044_circuit_groups",
+"kind": "class",
+"name": "Migration",
+"lineno": 7,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0044_circuit_groups.py",
+"id": "symbols:circuits.migrations.0044_circuit_groups:Migration"
+},
+{
+"module": "circuits.migrations.0045_circuit_distance",
+"kind": "class",
+"name": "Migration",
+"lineno": 6,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0045_circuit_distance.py",
+"id": "symbols:circuits.migrations.0045_circuit_distance:Migration"
+},
+{
+"module": "circuits.migrations.0046_charfield_null_choices",
+"kind": "function",
+"name": "set_null_values",
+"lineno": 4,
+"bases": "",
+"path": "netbox/circuits/migrations/0046_charfield_null_choices.py",
+"id": "symbols:circuits.migrations.0046_charfield_null_choices:set_null_values"
+},
+{
+"module": "circuits.migrations.0046_charfield_null_choices",
+"kind": "class",
+"name": "Migration",
+"lineno": 18,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0046_charfield_null_choices.py",
+"id": "symbols:circuits.migrations.0046_charfield_null_choices:Migration"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"kind": "function",
+"name": "copy_site_assignments",
+"lineno": 6,
+"bases": "",
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"id": "symbols:circuits.migrations.0047_circuittermination__termination:copy_site_assignments"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"kind": "class",
+"name": "Migration",
+"lineno": 26,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"id": "symbols:circuits.migrations.0047_circuittermination__termination:Migration"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"kind": "function",
+"name": "oc_circuittermination_termination",
+"lineno": 55,
+"bases": "",
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"id": "symbols:circuits.migrations.0047_circuittermination__termination:oc_circuittermination_termination"
+},
+{
+"module": "circuits.migrations.0048_circuitterminations_cached_relations",
+"kind": "function",
+"name": "populate_denormalized_fields",
+"lineno": 5,
+"bases": "",
+"path": "netbox/circuits/migrations/0048_circuitterminations_cached_relations.py",
+"id": "symbols:circuits.migrations.0048_circuitterminations_cached_relations:populate_denormalized_fields"
+},
+{
+"module": "circuits.migrations.0048_circuitterminations_cached_relations",
+"kind": "class",
+"name": "Migration",
+"lineno": 26,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0048_circuitterminations_cached_relations.py",
+"id": "symbols:circuits.migrations.0048_circuitterminations_cached_relations:Migration"
+},
+{
+"module": "circuits.migrations.0048_circuitterminations_cached_relations",
+"kind": "function",
+"name": "oc_circuittermination_remove_fields",
+"lineno": 91,
+"bases": "",
+"path": "netbox/circuits/migrations/0048_circuitterminations_cached_relations.py",
+"id": "symbols:circuits.migrations.0048_circuitterminations_cached_relations:oc_circuittermination_remove_fields"
+},
+{
+"module": "circuits.migrations.0049_natural_ordering",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0049_natural_ordering.py",
+"id": "symbols:circuits.migrations.0049_natural_ordering:Migration"
+},
+{
+"module": "circuits.migrations.0050_virtual_circuits",
+"kind": "class",
+"name": "Migration",
+"lineno": 9,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0050_virtual_circuits.py",
+"id": "symbols:circuits.migrations.0050_virtual_circuits:Migration"
+},
+{
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"kind": "function",
+"name": "set_member_type",
+"lineno": 6,
+"bases": "",
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"id": "symbols:circuits.migrations.0051_virtualcircuit_group_assignment:set_member_type"
+},
+{
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"kind": "class",
+"name": "Migration",
+"lineno": 20,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"id": "symbols:circuits.migrations.0051_virtualcircuit_group_assignment:Migration"
+},
+{
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"kind": "function",
+"name": "oc_circuitgroupassignment_member",
+"lineno": 88,
+"bases": "",
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"id": "symbols:circuits.migrations.0051_virtualcircuit_group_assignment:oc_circuitgroupassignment_member"
+},
+{
+"module": "circuits.migrations.0052_extend_circuit_abs_distance_upper_limit",
+"kind": "class",
+"name": "Migration",
+"lineno": 4,
+"bases": "migrations.Migration",
+"path": "netbox/circuits/migrations/0052_extend_circuit_abs_distance_upper_limit.py",
+"id": "symbols:circuits.migrations.0052_extend_circuit_abs_distance_upper_limit:Migration"
+},
+{
+"module": "circuits.models.base",
+"kind": "class",
+"name": "BaseCircuitType",
+"lineno": 11,
+"bases": "OrganizationalModel",
+"path": "netbox/circuits/models/base.py",
+"id": "symbols:circuits.models.base:BaseCircuitType"
+},
+{
+"module": "circuits.models.circuits",
+"kind": "class",
+"name": "CircuitType",
+"lineno": 27,
+"bases": "BaseCircuitType",
+"path": "netbox/circuits/models/circuits.py",
+"id": "symbols:circuits.models.circuits:CircuitType"
+},
+{
+"module": "circuits.models.circuits",
+"kind": "class",
+"name": "Circuit",
+"lineno": 38,
+"bases": "ContactsMixin,ImageAttachmentsMixin,DistanceMixin,PrimaryModel",
+"path": "netbox/circuits/models/circuits.py",
+"id": "symbols:circuits.models.circuits:Circuit"
+},
+{
+"module": "circuits.models.circuits",
+"kind": "class",
+"name": "CircuitGroup",
+"lineno": 158,
+"bases": "OrganizationalModel",
+"path": "netbox/circuits/models/circuits.py",
+"id": "symbols:circuits.models.circuits:CircuitGroup"
+},
+{
+"module": "circuits.models.circuits",
+"kind": "class",
+"name": "CircuitGroupAssignment",
+"lineno": 179,
+"bases": "CustomFieldsMixin,ExportTemplatesMixin,TagsMixin,ChangeLoggedModel",
+"path": "netbox/circuits/models/circuits.py",
+"id": "symbols:circuits.models.circuits:CircuitGroupAssignment"
+},
+{
+"module": "circuits.models.circuits",
+"kind": "class",
+"name": "CircuitTermination",
+"lineno": 231,
+"bases": "CustomFieldsMixin,CustomLinksMixin,TagsMixin,ChangeLoggedModel,CabledObjectModel",
+"path": "netbox/circuits/models/circuits.py",
+"id": "symbols:circuits.models.circuits:CircuitTermination"
+},
+{
+"module": "circuits.models.providers",
+"kind": "class",
+"name": "Provider",
+"lineno": 15,
+"bases": "ContactsMixin,PrimaryModel",
+"path": "netbox/circuits/models/providers.py",
+"id": "symbols:circuits.models.providers:Provider"
+},
+{
+"module": "circuits.models.providers",
+"kind": "class",
+"name": "ProviderAccount",
+"lineno": 49,
+"bases": "ContactsMixin,PrimaryModel",
+"path": "netbox/circuits/models/providers.py",
+"id": "symbols:circuits.models.providers:ProviderAccount"
+},
+{
+"module": "circuits.models.providers",
+"kind": "class",
+"name": "ProviderNetwork",
+"lineno": 92,
+"bases": "PrimaryModel",
+"path": "netbox/circuits/models/providers.py",
+"id": "symbols:circuits.models.providers:ProviderNetwork"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"kind": "class",
+"name": "VirtualCircuitType",
+"lineno": 21,
+"bases": "BaseCircuitType",
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "symbols:circuits.models.virtual_circuits:VirtualCircuitType"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"kind": "class",
+"name": "VirtualCircuit",
+"lineno": 32,
+"bases": "PrimaryModel",
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "symbols:circuits.models.virtual_circuits:VirtualCircuit"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"kind": "class",
+"name": "VirtualCircuitTermination",
+"lineno": 121,
+"bases": "CustomFieldsMixin,CustomLinksMixin,TagsMixin,ChangeLoggedModel",
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "symbols:circuits.models.virtual_circuits:VirtualCircuitTermination"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "CircuitIndex",
+"lineno": 6,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:CircuitIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "CircuitGroupIndex",
+"lineno": 17,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:CircuitGroupIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "CircuitTerminationIndex",
+"lineno": 28,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:CircuitTerminationIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "CircuitTypeIndex",
+"lineno": 41,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:CircuitTypeIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "ProviderIndex",
+"lineno": 52,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:ProviderIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "ProviderAccountIndex",
+"lineno": 63,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:ProviderAccountIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "ProviderNetworkIndex",
+"lineno": 74,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:ProviderNetworkIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "VirtualCircuitIndex",
+"lineno": 86,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:VirtualCircuitIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "VirtualCircuitTerminationIndex",
+"lineno": 97,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:VirtualCircuitTerminationIndex"
+},
+{
+"module": "circuits.search",
+"kind": "class",
+"name": "VirtualCircuitTypeIndex",
+"lineno": 106,
+"bases": "SearchIndex",
+"path": "netbox/circuits/search.py",
+"id": "symbols:circuits.search:VirtualCircuitTypeIndex"
+},
+{
+"module": "circuits.signals",
+"kind": "function",
+"name": "update_circuit",
+"lineno": 9,
+"bases": "",
+"path": "netbox/circuits/signals.py",
+"id": "symbols:circuits.signals:update_circuit"
+},
+{
+"module": "circuits.signals",
+"kind": "function",
+"name": "rebuild_cablepaths",
+"lineno": 20,
+"bases": "",
+"path": "netbox/circuits/signals.py",
+"id": "symbols:circuits.signals:rebuild_cablepaths"
+},
+{
+"module": "circuits.tables.circuits",
+"kind": "class",
+"name": "CircuitTypeTable",
+"lineno": 27,
+"bases": "NetBoxTable",
+"path": "netbox/circuits/tables/circuits.py",
+"id": "symbols:circuits.tables.circuits:CircuitTypeTable"
+},
+{
+"module": "circuits.tables.circuits",
+"kind": "class",
+"name": "CircuitTable",
+"lineno": 51,
+"bases": "TenancyColumnsMixin,ContactsColumnMixin,NetBoxTable",
+"path": "netbox/circuits/tables/circuits.py",
+"id": "symbols:circuits.tables.circuits:CircuitTable"
+},
+{
+"module": "circuits.tables.circuits",
+"kind": "class",
+"name": "CircuitTerminationTable",
+"lineno": 105,
+"bases": "NetBoxTable",
+"path": "netbox/circuits/tables/circuits.py",
+"id": "symbols:circuits.tables.circuits:CircuitTerminationTable"
+},
+{
+"module": "circuits.tables.circuits",
+"kind": "class",
+"name": "CircuitGroupTable",
+"lineno": 166,
+"bases": "NetBoxTable",
+"path": "netbox/circuits/tables/circuits.py",
+"id": "symbols:circuits.tables.circuits:CircuitGroupTable"
+},
+{
+"module": "circuits.tables.circuits",
+"kind": "class",
+"name": "CircuitGroupAssignmentTable",
+"lineno": 189,
+"bases": "NetBoxTable",
+"path": "netbox/circuits/tables/circuits.py",
+"id": "symbols:circuits.tables.circuits:CircuitGroupAssignmentTable"
+},
+{
+"module": "circuits.tables.columns",
+"kind": "class",
+"name": "CommitRateColumn",
+"lineno": 8,
+"bases": "tables.TemplateColumn",
+"path": "netbox/circuits/tables/columns.py",
+"id": "symbols:circuits.tables.columns:CommitRateColumn"
+},
+{
+"module": "circuits.tables.providers",
+"kind": "class",
+"name": "ProviderTable",
+"lineno": 16,
+"bases": "ContactsColumnMixin,NetBoxTable",
+"path": "netbox/circuits/tables/providers.py",
+"id": "symbols:circuits.tables.providers:ProviderTable"
+},
+{
+"module": "circuits.tables.providers",
+"kind": "class",
+"name": "ProviderAccountTable",
+"lineno": 61,
+"bases": "ContactsColumnMixin,NetBoxTable",
+"path": "netbox/circuits/tables/providers.py",
+"id": "symbols:circuits.tables.providers:ProviderAccountTable"
+},
+{
+"module": "circuits.tables.providers",
+"kind": "class",
+"name": "ProviderNetworkTable",
+"lineno": 95,
+"bases": "NetBoxTable",
+"path": "netbox/circuits/tables/providers.py",
+"id": "symbols:circuits.tables.providers:ProviderNetworkTable"
+},
+{
+"module": "circuits.tables.virtual_circuits",
+"kind": "class",
+"name": "VirtualCircuitTypeTable",
+"lineno": 15,
+"bases": "NetBoxTable",
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"id": "symbols:circuits.tables.virtual_circuits:VirtualCircuitTypeTable"
+},
+{
+"module": "circuits.tables.virtual_circuits",
+"kind": "class",
+"name": "VirtualCircuitTable",
+"lineno": 39,
+"bases": "TenancyColumnsMixin,ContactsColumnMixin,NetBoxTable",
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"id": "symbols:circuits.tables.virtual_circuits:VirtualCircuitTable"
+},
+{
+"module": "circuits.tables.virtual_circuits",
+"kind": "class",
+"name": "VirtualCircuitTerminationTable",
+"lineno": 85,
+"bases": "NetBoxTable",
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"id": "symbols:circuits.tables.virtual_circuits:VirtualCircuitTerminationTable"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "AppTest",
+"lineno": 11,
+"bases": "APITestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:AppTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "ProviderTest",
+"lineno": 20,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:ProviderTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "CircuitTypeTest",
+"lineno": 62,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:CircuitTypeTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "CircuitTest",
+"lineno": 94,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:CircuitTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "CircuitTerminationTest",
+"lineno": 158,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:CircuitTerminationTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "CircuitGroupTest",
+"lineno": 220,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:CircuitGroupTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "ProviderAccountTest",
+"lineno": 252,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:ProviderAccountTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "CircuitGroupAssignmentTest",
+"lineno": 296,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:CircuitGroupAssignmentTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "ProviderNetworkTest",
+"lineno": 371,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:ProviderNetworkTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "VirtualCircuitTypeTest",
+"lineno": 412,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:VirtualCircuitTypeTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "VirtualCircuitTest",
+"lineno": 444,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:VirtualCircuitTest"
+},
+{
+"module": "circuits.tests.test_api",
+"kind": "class",
+"name": "VirtualCircuitTerminationTest",
+"lineno": 508,
+"bases": "APIViewTestCases.APIViewTestCase",
+"path": "netbox/circuits/tests/test_api.py",
+"id": "symbols:circuits.tests.test_api:VirtualCircuitTerminationTest"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "ProviderTestCase",
+"lineno": 16,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:ProviderTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "CircuitTypeTestCase",
+"lineno": 128,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:CircuitTypeTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "CircuitTestCase",
+"lineno": 158,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:CircuitTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "CircuitTerminationTestCase",
+"lineno": 433,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:CircuitTerminationTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "CircuitGroupTestCase",
+"lineno": 602,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:CircuitGroupTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "CircuitGroupAssignmentTestCase",
+"lineno": 660,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:CircuitGroupAssignmentTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "ProviderNetworkTestCase",
+"lineno": 781,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:ProviderNetworkTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "ProviderAccountTestCase",
+"lineno": 822,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:ProviderAccountTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "VirtualCircuitTypeTestCase",
+"lineno": 867,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:VirtualCircuitTypeTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "VirtualCircuitTestCase",
+"lineno": 897,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:VirtualCircuitTestCase"
+},
+{
+"module": "circuits.tests.test_filtersets",
+"kind": "class",
+"name": "VirtualCircuitTerminationTestCase",
+"lineno": 1033,
+"bases": "TestCase,ChangeLoggedFilterSetTests",
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "symbols:circuits.tests.test_filtersets:VirtualCircuitTerminationTestCase"
+},
+{
+"module": "circuits.tests.test_tables",
+"kind": "class",
+"name": "CircuitTerminationTableTest",
+"lineno": 8,
+"bases": "TestCase",
+"path": "netbox/circuits/tests/test_tables.py",
+"id": "symbols:circuits.tests.test_tables:CircuitTerminationTableTest"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "ProviderTestCase",
+"lineno": 18,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:ProviderTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "CircuitTypeTestCase",
+"lineno": 69,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:CircuitTypeTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "CircuitTestCase",
+"lineno": 111,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:CircuitTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "ProviderAccountTestCase",
+"lineno": 249,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:ProviderAccountTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "ProviderNetworkTestCase",
+"lineno": 300,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:ProviderNetworkTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "CircuitTerminationTestCase",
+"lineno": 351,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:CircuitTerminationTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "CircuitGroupTestCase",
+"lineno": 424,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:CircuitGroupTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "CircuitGroupAssignmentTestCase",
+"lineno": 465,
+"bases": "ViewTestCases.CreateObjectViewTestCase,ViewTestCases.EditObjectViewTestCase,ViewTestCases.DeleteObjectViewTestCase,ViewTestCases.ListObjectsViewTestCase,ViewTestCases.BulkEditObjectsViewTestCase,ViewT",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:CircuitGroupAssignmentTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "VirtualCircuitTypeTestCase",
+"lineno": 546,
+"bases": "ViewTestCases.OrganizationalObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:VirtualCircuitTypeTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "VirtualCircuitTestCase",
+"lineno": 587,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:VirtualCircuitTestCase"
+},
+{
+"module": "circuits.tests.test_views",
+"kind": "class",
+"name": "VirtualCircuitTerminationTestCase",
+"lineno": 751,
+"bases": "ViewTestCases.PrimaryObjectViewTestCase",
+"path": "netbox/circuits/tests/test_views.py",
+"id": "symbols:circuits.tests.test_views:VirtualCircuitTerminationTestCase"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderListView",
+"lineno": 21,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderView",
+"lineno": 33,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderEditView",
+"lineno": 56,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderDeleteView",
+"lineno": 62,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderBulkImportView",
+"lineno": 67,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderBulkEditView",
+"lineno": 73,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderBulkDeleteView",
+"lineno": 83,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderAccountListView",
+"lineno": 96,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderAccountListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderAccountView",
+"lineno": 106,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderAccountView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderAccountEditView",
+"lineno": 117,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderAccountEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderAccountDeleteView",
+"lineno": 123,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderAccountDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderAccountBulkImportView",
+"lineno": 128,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderAccountBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderAccountBulkEditView",
+"lineno": 135,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderAccountBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderAccountBulkDeleteView",
+"lineno": 145,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderAccountBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderNetworkListView",
+"lineno": 158,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderNetworkListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderNetworkView",
+"lineno": 166,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderNetworkView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderNetworkEditView",
+"lineno": 191,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderNetworkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderNetworkDeleteView",
+"lineno": 197,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderNetworkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderNetworkBulkImportView",
+"lineno": 202,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderNetworkBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderNetworkBulkEditView",
+"lineno": 208,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderNetworkBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "ProviderNetworkBulkDeleteView",
+"lineno": 216,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:ProviderNetworkBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTypeListView",
+"lineno": 227,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTypeListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTypeView",
+"lineno": 237,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTypeView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTypeEditView",
+"lineno": 248,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTypeEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTypeDeleteView",
+"lineno": 254,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTypeDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTypeBulkImportView",
+"lineno": 259,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTypeBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTypeBulkEditView",
+"lineno": 265,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTypeBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTypeBulkDeleteView",
+"lineno": 275,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTypeBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitListView",
+"lineno": 288,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitView",
+"lineno": 298,
+"bases": "generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitEditView",
+"lineno": 304,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitDeleteView",
+"lineno": 310,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitBulkImportView",
+"lineno": 315,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitBulkEditView",
+"lineno": 331,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitBulkDeleteView",
+"lineno": 341,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitSwapTerminations",
+"lineno": 349,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitSwapTerminations"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTerminationListView",
+"lineno": 430,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTerminationListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTerminationView",
+"lineno": 438,
+"bases": "generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTerminationView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTerminationEditView",
+"lineno": 444,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTerminationEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTerminationDeleteView",
+"lineno": 450,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTerminationDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTerminationBulkImportView",
+"lineno": 455,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTerminationBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTerminationBulkEditView",
+"lineno": 461,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTerminationBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitTerminationBulkDeleteView",
+"lineno": 469,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitTerminationBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupListView",
+"lineno": 484,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupView",
+"lineno": 494,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupEditView",
+"lineno": 505,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupDeleteView",
+"lineno": 511,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupBulkImportView",
+"lineno": 516,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupBulkEditView",
+"lineno": 522,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupBulkDeleteView",
+"lineno": 530,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentListView",
+"lineno": 541,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupAssignmentListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentView",
+"lineno": 549,
+"bases": "generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupAssignmentView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentEditView",
+"lineno": 555,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupAssignmentEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentDeleteView",
+"lineno": 561,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupAssignmentDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentBulkImportView",
+"lineno": 566,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupAssignmentBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentBulkEditView",
+"lineno": 572,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupAssignmentBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "CircuitGroupAssignmentBulkDeleteView",
+"lineno": 580,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:CircuitGroupAssignmentBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTypeListView",
+"lineno": 591,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTypeListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTypeView",
+"lineno": 601,
+"bases": "GetRelatedModelsMixin,generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTypeView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTypeEditView",
+"lineno": 612,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTypeEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTypeDeleteView",
+"lineno": 618,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTypeDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTypeBulkImportView",
+"lineno": 623,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTypeBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTypeBulkEditView",
+"lineno": 629,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTypeBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTypeBulkDeleteView",
+"lineno": 639,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTypeBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitListView",
+"lineno": 651,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitView",
+"lineno": 661,
+"bases": "generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitEditView",
+"lineno": 666,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitDeleteView",
+"lineno": 672,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitBulkImportView",
+"lineno": 676,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitBulkEditView",
+"lineno": 691,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitBulkDeleteView",
+"lineno": 700,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitBulkDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationListView",
+"lineno": 712,
+"bases": "generic.ObjectListView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTerminationListView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationView",
+"lineno": 720,
+"bases": "generic.ObjectView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTerminationView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationEditView",
+"lineno": 725,
+"bases": "generic.ObjectEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTerminationEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationDeleteView",
+"lineno": 731,
+"bases": "generic.ObjectDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTerminationDeleteView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationBulkImportView",
+"lineno": 735,
+"bases": "generic.BulkImportView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTerminationBulkImportView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationBulkEditView",
+"lineno": 740,
+"bases": "generic.BulkEditView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTerminationBulkEditView"
+},
+{
+"module": "circuits.views",
+"kind": "class",
+"name": "VirtualCircuitTerminationBulkDeleteView",
+"lineno": 747,
+"bases": "generic.BulkDeleteView",
+"path": "netbox/circuits/views.py",
+"id": "symbols:circuits.views:VirtualCircuitTerminationBulkDeleteView"
+}
+],
+"imports_out": [
+{
+"src": "circuits.api.serializers",
+"dst": "circuits.api.serializers_.circuits",
+"raw": "circuits.api.serializers_.circuits",
+"lineno": 2,
+"path": "netbox/circuits/api/serializers.py",
+"id": "imports:circuits.api.serializers->circuits.api.serializers_.circuits"
+},
+{
+"src": "circuits.api.serializers",
+"dst": "circuits.api.serializers_.providers",
+"raw": "circuits.api.serializers_.providers",
+"lineno": 1,
+"path": "netbox/circuits/api/serializers.py",
+"id": "imports:circuits.api.serializers->circuits.api.serializers_.providers"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "circuits.api.serializers_.providers",
+"raw": "circuits.api.serializers_.providers",
+"lineno": 18,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->circuits.api.serializers_.providers"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 5,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->circuits.choices"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "circuits.constants",
+"raw": "circuits.constants",
+"lineno": 6,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->circuits.constants"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 7,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->circuits.models"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "dcim.api.serializers_.cables",
+"raw": "dcim.api.serializers_.cables",
+"lineno": 12,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->dcim.api.serializers_.cables"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "dcim.api.serializers_.device_components",
+"raw": "dcim.api.serializers_.device_components",
+"lineno": 11,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->dcim.api.serializers_.device_components"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 13,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->netbox.api.fields"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 14,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->netbox.api.serializers"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 15,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->netbox.choices"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "tenancy.api.serializers_.tenants",
+"raw": "tenancy.api.serializers_.tenants",
+"lineno": 16,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->tenancy.api.serializers_.tenants"
+},
+{
+"src": "circuits.api.serializers_.circuits",
+"dst": "utilities.api",
+"raw": "utilities.api",
+"lineno": 17,
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"id": "imports:circuits.api.serializers_.circuits->utilities.api"
+},
+{
+"src": "circuits.api.serializers_.nested",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 1,
+"path": "netbox/circuits/api/serializers_/nested.py",
+"id": "imports:circuits.api.serializers_.nested->circuits.models"
+},
+{
+"src": "circuits.api.serializers_.nested",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 2,
+"path": "netbox/circuits/api/serializers_/nested.py",
+"id": "imports:circuits.api.serializers_.nested->netbox.api.serializers"
+},
+{
+"src": "circuits.api.serializers_.providers",
+"dst": "circuits.api.serializers_.nested",
+"raw": "circuits.api.serializers_.nested",
+"lineno": 8,
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "imports:circuits.api.serializers_.providers->circuits.api.serializers_.nested"
+},
+{
+"src": "circuits.api.serializers_.providers",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 3,
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "imports:circuits.api.serializers_.providers->circuits.models"
+},
+{
+"src": "circuits.api.serializers_.providers",
+"dst": "ipam.api.serializers_.asns",
+"raw": "ipam.api.serializers_.asns",
+"lineno": 4,
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "imports:circuits.api.serializers_.providers->ipam.api.serializers_.asns"
+},
+{
+"src": "circuits.api.serializers_.providers",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 5,
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "imports:circuits.api.serializers_.providers->ipam.models"
+},
+{
+"src": "circuits.api.serializers_.providers",
+"dst": "netbox.api.fields",
+"raw": "netbox.api.fields",
+"lineno": 6,
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "imports:circuits.api.serializers_.providers->netbox.api.fields"
+},
+{
+"src": "circuits.api.serializers_.providers",
+"dst": "netbox.api.serializers",
+"raw": "netbox.api.serializers",
+"lineno": 7,
+"path": "netbox/circuits/api/serializers_/providers.py",
+"id": "imports:circuits.api.serializers_.providers->netbox.api.serializers"
+},
+{
+"src": "circuits.api.urls",
+"dst": "circuits.api",
+"raw": "circuits.api",
+"lineno": 2,
+"path": "netbox/circuits/api/urls.py",
+"id": "imports:circuits.api.urls->circuits.api"
+},
+{
+"src": "circuits.api.urls",
+"dst": "netbox.api.routers",
+"raw": "netbox.api.routers",
+"lineno": 1,
+"path": "netbox/circuits/api/urls.py",
+"id": "imports:circuits.api.urls->netbox.api.routers"
+},
+{
+"src": "circuits.api.views",
+"dst": "circuits",
+"raw": "circuits",
+"lineno": 3,
+"path": "netbox/circuits/api/views.py",
+"id": "imports:circuits.api.views->circuits"
+},
+{
+"src": "circuits.api.views",
+"dst": "circuits.api",
+"raw": "circuits.api",
+"lineno": 7,
+"path": "netbox/circuits/api/views.py",
+"id": "imports:circuits.api.views->circuits.api"
+},
+{
+"src": "circuits.api.views",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 4,
+"path": "netbox/circuits/api/views.py",
+"id": "imports:circuits.api.views->circuits.models"
+},
+{
+"src": "circuits.api.views",
+"dst": "dcim.api.views",
+"raw": "dcim.api.views",
+"lineno": 5,
+"path": "netbox/circuits/api/views.py",
+"id": "imports:circuits.api.views->dcim.api.views"
+},
+{
+"src": "circuits.api.views",
+"dst": "netbox.api.viewsets",
+"raw": "netbox.api.viewsets",
+"lineno": 6,
+"path": "netbox/circuits/api/views.py",
+"id": "imports:circuits.api.views->netbox.api.viewsets"
+},
+{
+"src": "circuits.apps",
+"dst": "circuits",
+"raw": "circuits",
+"lineno": 10,
+"path": "netbox/circuits/apps.py",
+"id": "imports:circuits.apps->circuits"
+},
+{
+"src": "circuits.apps",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 9,
+"path": "netbox/circuits/apps.py",
+"id": "imports:circuits.apps->netbox.models.features"
+},
+{
+"src": "circuits.choices",
+"dst": "utilities.choices",
+"raw": "utilities.choices",
+"lineno": 3,
+"path": "netbox/circuits/choices.py",
+"id": "imports:circuits.choices->utilities.choices"
+},
+{
+"src": "circuits.filtersets",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 14,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->circuits.choices"
+},
+{
+"src": "circuits.filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 15,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->circuits.models"
+},
+{
+"src": "circuits.filtersets",
+"dst": "dcim.filtersets",
+"raw": "dcim.filtersets",
+"lineno": 6,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->dcim.filtersets"
+},
+{
+"src": "circuits.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 7,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->dcim.models"
+},
+{
+"src": "circuits.filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 8,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->ipam.models"
+},
+{
+"src": "circuits.filtersets",
+"dst": "netbox.filtersets",
+"raw": "netbox.filtersets",
+"lineno": 9,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->netbox.filtersets"
+},
+{
+"src": "circuits.filtersets",
+"dst": "tenancy.filtersets",
+"raw": "tenancy.filtersets",
+"lineno": 10,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->tenancy.filtersets"
+},
+{
+"src": "circuits.filtersets",
+"dst": "utilities.filters",
+"raw": "utilities.filters",
+"lineno": 11,
+"path": "netbox/circuits/filtersets.py",
+"id": "imports:circuits.filtersets->utilities.filters"
+},
+{
+"src": "circuits.forms",
+"dst": "circuits.forms.bulk_edit",
+"raw": "circuits.forms.bulk_edit",
+"lineno": 1,
+"path": "netbox/circuits/forms/__init__.py",
+"id": "imports:circuits.forms->circuits.forms.bulk_edit"
+},
+{
+"src": "circuits.forms",
+"dst": "circuits.forms.bulk_import",
+"raw": "circuits.forms.bulk_import",
+"lineno": 2,
+"path": "netbox/circuits/forms/__init__.py",
+"id": "imports:circuits.forms->circuits.forms.bulk_import"
+},
+{
+"src": "circuits.forms",
+"dst": "circuits.forms.filtersets",
+"raw": "circuits.forms.filtersets",
+"lineno": 3,
+"path": "netbox/circuits/forms/__init__.py",
+"id": "imports:circuits.forms->circuits.forms.filtersets"
+},
+{
+"src": "circuits.forms",
+"dst": "circuits.forms.model_forms",
+"raw": "circuits.forms.model_forms",
+"lineno": 4,
+"path": "netbox/circuits/forms/__init__.py",
+"id": "imports:circuits.forms->circuits.forms.model_forms"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 6,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->circuits.choices"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "circuits.constants",
+"raw": "circuits.constants",
+"lineno": 9,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->circuits.constants"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 10,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->circuits.models"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 11,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->dcim.models"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 12,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->ipam.models"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 13,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->netbox.choices"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 14,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->netbox.forms"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 15,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->tenancy.models"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 16,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->utilities.forms"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 17,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->utilities.forms.fields"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 20,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->utilities.forms.rendering"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 21,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->utilities.forms.widgets"
+},
+{
+"src": "circuits.forms.bulk_edit",
+"dst": "utilities.templatetags.builtins.filters",
+"raw": "utilities.templatetags.builtins.filters",
+"lineno": 22,
+"path": "netbox/circuits/forms/bulk_edit.py",
+"id": "imports:circuits.forms.bulk_edit->utilities.templatetags.builtins.filters"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 5,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->circuits.choices"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "circuits.constants",
+"raw": "circuits.constants",
+"lineno": 6,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->circuits.constants"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 7,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->circuits.models"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 8,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->dcim.models"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 9,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->netbox.choices"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 10,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->netbox.forms"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 11,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->tenancy.models"
+},
+{
+"src": "circuits.forms.bulk_import",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 12,
+"path": "netbox/circuits/forms/bulk_import.py",
+"id": "imports:circuits.forms.bulk_import->utilities.forms.fields"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 4,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->circuits.choices"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 8,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->circuits.models"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 9,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->dcim.models"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 10,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->ipam.models"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 11,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->netbox.choices"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 12,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->netbox.forms"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 13,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->tenancy.forms"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 14,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->utilities.forms"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 15,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->utilities.forms.fields"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 16,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->utilities.forms.rendering"
+},
+{
+"src": "circuits.forms.filtersets",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 17,
+"path": "netbox/circuits/forms/filtersets.py",
+"id": "imports:circuits.forms.filtersets->utilities.forms.widgets"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 6,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->circuits.choices"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "circuits.constants",
+"raw": "circuits.constants",
+"lineno": 9,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->circuits.constants"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 10,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->circuits.models"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 11,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->dcim.models"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 12,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->ipam.models"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "netbox.forms",
+"raw": "netbox.forms",
+"lineno": 13,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->netbox.forms"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "tenancy.forms",
+"raw": "tenancy.forms",
+"lineno": 14,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->tenancy.forms"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 15,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->utilities.forms"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "utilities.forms.fields",
+"raw": "utilities.forms.fields",
+"lineno": 16,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->utilities.forms.fields"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "utilities.forms.mixins",
+"raw": "utilities.forms.mixins",
+"lineno": 19,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->utilities.forms.mixins"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "utilities.forms.rendering",
+"raw": "utilities.forms.rendering",
+"lineno": 20,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->utilities.forms.rendering"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "utilities.forms.widgets",
+"raw": "utilities.forms.widgets",
+"lineno": 21,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->utilities.forms.widgets"
+},
+{
+"src": "circuits.forms.model_forms",
+"dst": "utilities.templatetags.builtins.filters",
+"raw": "utilities.templatetags.builtins.filters",
+"lineno": 22,
+"path": "netbox/circuits/forms/model_forms.py",
+"id": "imports:circuits.forms.model_forms->utilities.templatetags.builtins.filters"
+},
+{
+"src": "circuits.graphql.enums",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 3,
+"path": "netbox/circuits/graphql/enums.py",
+"id": "imports:circuits.graphql.enums->circuits.choices"
+},
+{
+"src": "circuits.graphql.filter_mixins",
+"dst": "netbox.graphql.enums",
+"raw": "netbox.graphql.enums",
+"lineno": 10,
+"path": "netbox/circuits/graphql/filter_mixins.py",
+"id": "imports:circuits.graphql.filter_mixins->netbox.graphql.enums"
+},
+{
+"src": "circuits.graphql.filter_mixins",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 7,
+"path": "netbox/circuits/graphql/filter_mixins.py",
+"id": "imports:circuits.graphql.filter_mixins->netbox.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "circuits",
+"raw": "circuits",
+"lineno": 9,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->circuits"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "circuits.graphql.enums",
+"raw": "circuits.graphql.enums",
+"lineno": 27,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->circuits.graphql.enums"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "circuits.graphql.filter_mixins",
+"raw": "circuits.graphql.filter_mixins",
+"lineno": 20,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->circuits.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "core.graphql.filter_mixins",
+"raw": "core.graphql.filter_mixins",
+"lineno": 10,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->core.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "core.graphql.filters",
+"raw": "core.graphql.filters",
+"lineno": 23,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->core.graphql.filters"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "dcim.graphql.filter_mixins",
+"raw": "dcim.graphql.filter_mixins",
+"lineno": 11,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->dcim.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "dcim.graphql.filters",
+"raw": "dcim.graphql.filters",
+"lineno": 24,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->dcim.graphql.filters"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "extras.graphql.filter_mixins",
+"raw": "extras.graphql.filter_mixins",
+"lineno": 12,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->extras.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "ipam.graphql.filters",
+"raw": "ipam.graphql.filters",
+"lineno": 25,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->ipam.graphql.filters"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "netbox.graphql.filter_lookups",
+"raw": "netbox.graphql.filter_lookups",
+"lineno": 26,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->netbox.graphql.filter_lookups"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "netbox.graphql.filter_mixins",
+"raw": "netbox.graphql.filter_mixins",
+"lineno": 13,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->netbox.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.filters",
+"dst": "tenancy.graphql.filter_mixins",
+"raw": "tenancy.graphql.filter_mixins",
+"lineno": 19,
+"path": "netbox/circuits/graphql/filters.py",
+"id": "imports:circuits.graphql.filters->tenancy.graphql.filter_mixins"
+},
+{
+"src": "circuits.graphql.schema",
+"dst": "circuits.graphql.types",
+"raw": "circuits.graphql.types",
+"lineno": 6,
+"path": "netbox/circuits/graphql/schema.py",
+"id": "imports:circuits.graphql.schema->circuits.graphql.types"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "circuits",
+"raw": "circuits",
+"lineno": 6,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->circuits"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "circuits.graphql.filters",
+"raw": "circuits.graphql.filters",
+"lineno": 11,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->circuits.graphql.filters"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "dcim.graphql.mixins",
+"raw": "dcim.graphql.mixins",
+"lineno": 7,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->dcim.graphql.mixins"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "dcim.graphql.types",
+"raw": "dcim.graphql.types",
+"lineno": 14,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->dcim.graphql.types"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "extras.graphql.mixins",
+"raw": "extras.graphql.mixins",
+"lineno": 8,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->extras.graphql.mixins"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "ipam.graphql.types",
+"raw": "ipam.graphql.types",
+"lineno": 15,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->ipam.graphql.types"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "netbox.graphql.types",
+"raw": "netbox.graphql.types",
+"lineno": 9,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->netbox.graphql.types"
+},
+{
+"src": "circuits.graphql.types",
+"dst": "tenancy.graphql.types",
+"raw": "tenancy.graphql.types",
+"lineno": 10,
+"path": "netbox/circuits/graphql/types.py",
+"id": "imports:circuits.graphql.types->tenancy.graphql.types"
+},
+{
+"src": "circuits.migrations.0001_squashed",
+"dst": "ipam.fields",
+"raw": "ipam.fields",
+"lineno": 1,
+"path": "netbox/circuits/migrations/0001_squashed.py",
+"id": "imports:circuits.migrations.0001_squashed->ipam.fields"
+},
+{
+"src": "circuits.migrations.0001_squashed",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 2,
+"path": "netbox/circuits/migrations/0001_squashed.py",
+"id": "imports:circuits.migrations.0001_squashed->utilities.json"
+},
+{
+"src": "circuits.migrations.0003_squashed_0037",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 4,
+"path": "netbox/circuits/migrations/0003_squashed_0037.py",
+"id": "imports:circuits.migrations.0003_squashed_0037->utilities.json"
+},
+{
+"src": "circuits.migrations.0038_squashed_0042",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 5,
+"path": "netbox/circuits/migrations/0038_squashed_0042.py",
+"id": "imports:circuits.migrations.0038_squashed_0042->utilities.json"
+},
+{
+"src": "circuits.migrations.0043_circuittype_color",
+"dst": "utilities.fields",
+"raw": "utilities.fields",
+"lineno": 4,
+"path": "netbox/circuits/migrations/0043_circuittype_color.py",
+"id": "imports:circuits.migrations.0043_circuittype_color->utilities.fields"
+},
+{
+"src": "circuits.migrations.0044_circuit_groups",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 3,
+"path": "netbox/circuits/migrations/0044_circuit_groups.py",
+"id": "imports:circuits.migrations.0044_circuit_groups->utilities.json"
+},
+{
+"src": "circuits.migrations.0050_virtual_circuits",
+"dst": "utilities.fields",
+"raw": "utilities.fields",
+"lineno": 5,
+"path": "netbox/circuits/migrations/0050_virtual_circuits.py",
+"id": "imports:circuits.migrations.0050_virtual_circuits->utilities.fields"
+},
+{
+"src": "circuits.migrations.0050_virtual_circuits",
+"dst": "utilities.json",
+"raw": "utilities.json",
+"lineno": 6,
+"path": "netbox/circuits/migrations/0050_virtual_circuits.py",
+"id": "imports:circuits.migrations.0050_virtual_circuits->utilities.json"
+},
+{
+"src": "circuits.models",
+"dst": "circuits.models.circuits",
+"raw": "circuits.models.circuits",
+"lineno": 1,
+"path": "netbox/circuits/models/__init__.py",
+"id": "imports:circuits.models->circuits.models.circuits"
+},
+{
+"src": "circuits.models",
+"dst": "circuits.models.providers",
+"raw": "circuits.models.providers",
+"lineno": 2,
+"path": "netbox/circuits/models/__init__.py",
+"id": "imports:circuits.models->circuits.models.providers"
+},
+{
+"src": "circuits.models",
+"dst": "circuits.models.virtual_circuits",
+"raw": "circuits.models.virtual_circuits",
+"lineno": 3,
+"path": "netbox/circuits/models/__init__.py",
+"id": "imports:circuits.models->circuits.models.virtual_circuits"
+},
+{
+"src": "circuits.models.base",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 3,
+"path": "netbox/circuits/models/base.py",
+"id": "imports:circuits.models.base->netbox.models"
+},
+{
+"src": "circuits.models.base",
+"dst": "utilities.fields",
+"raw": "utilities.fields",
+"lineno": 4,
+"path": "netbox/circuits/models/base.py",
+"id": "imports:circuits.models.base->utilities.fields"
+},
+{
+"src": "circuits.models.circuits",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 8,
+"path": "netbox/circuits/models/circuits.py",
+"id": "imports:circuits.models.circuits->circuits.choices"
+},
+{
+"src": "circuits.models.circuits",
+"dst": "circuits.constants",
+"raw": "circuits.constants",
+"lineno": 9,
+"path": "netbox/circuits/models/circuits.py",
+"id": "imports:circuits.models.circuits->circuits.constants"
+},
+{
+"src": "circuits.models.circuits",
+"dst": "circuits.models.base",
+"raw": "circuits.models.base",
+"lineno": 16,
+"path": "netbox/circuits/models/circuits.py",
+"id": "imports:circuits.models.circuits->circuits.models.base"
+},
+{
+"src": "circuits.models.circuits",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 10,
+"path": "netbox/circuits/models/circuits.py",
+"id": "imports:circuits.models.circuits->dcim.models"
+},
+{
+"src": "circuits.models.circuits",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 11,
+"path": "netbox/circuits/models/circuits.py",
+"id": "imports:circuits.models.circuits->netbox.models"
+},
+{
+"src": "circuits.models.circuits",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 13,
+"path": "netbox/circuits/models/circuits.py",
+"id": "imports:circuits.models.circuits->netbox.models.features"
+},
+{
+"src": "circuits.models.circuits",
+"dst": "netbox.models.mixins",
+"raw": "netbox.models.mixins",
+"lineno": 12,
+"path": "netbox/circuits/models/circuits.py",
+"id": "imports:circuits.models.circuits->netbox.models.mixins"
+},
+{
+"src": "circuits.models.providers",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 5,
+"path": "netbox/circuits/models/providers.py",
+"id": "imports:circuits.models.providers->netbox.models"
+},
+{
+"src": "circuits.models.providers",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 6,
+"path": "netbox/circuits/models/providers.py",
+"id": "imports:circuits.models.providers->netbox.models.features"
+},
+{
+"src": "circuits.models.virtual_circuits",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 9,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "imports:circuits.models.virtual_circuits->circuits.choices"
+},
+{
+"src": "circuits.models.virtual_circuits",
+"dst": "circuits.models.base",
+"raw": "circuits.models.base",
+"lineno": 12,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "imports:circuits.models.virtual_circuits->circuits.models.base"
+},
+{
+"src": "circuits.models.virtual_circuits",
+"dst": "netbox.models",
+"raw": "netbox.models",
+"lineno": 10,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "imports:circuits.models.virtual_circuits->netbox.models"
+},
+{
+"src": "circuits.models.virtual_circuits",
+"dst": "netbox.models.features",
+"raw": "netbox.models.features",
+"lineno": 11,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "imports:circuits.models.virtual_circuits->netbox.models.features"
+},
+{
+"src": "circuits.search",
+"dst": "circuits",
+"raw": "circuits",
+"lineno": 2,
+"path": "netbox/circuits/search.py",
+"id": "imports:circuits.search->circuits"
+},
+{
+"src": "circuits.search",
+"dst": "netbox.search",
+"raw": "netbox.search",
+"lineno": 1,
+"path": "netbox/circuits/search.py",
+"id": "imports:circuits.search->netbox.search"
+},
+{
+"src": "circuits.signals",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 5,
+"path": "netbox/circuits/signals.py",
+"id": "imports:circuits.signals->circuits.models"
+},
+{
+"src": "circuits.signals",
+"dst": "dcim.signals",
+"raw": "dcim.signals",
+"lineno": 4,
+"path": "netbox/circuits/signals.py",
+"id": "imports:circuits.signals->dcim.signals"
+},
+{
+"src": "circuits.tables",
+"dst": "circuits.tables.circuits",
+"raw": "circuits.tables.circuits",
+"lineno": 1,
+"path": "netbox/circuits/tables/__init__.py",
+"id": "imports:circuits.tables->circuits.tables.circuits"
+},
+{
+"src": "circuits.tables",
+"dst": "circuits.tables.columns",
+"raw": "circuits.tables.columns",
+"lineno": 2,
+"path": "netbox/circuits/tables/__init__.py",
+"id": "imports:circuits.tables->circuits.tables.columns"
+},
+{
+"src": "circuits.tables",
+"dst": "circuits.tables.providers",
+"raw": "circuits.tables.providers",
+"lineno": 3,
+"path": "netbox/circuits/tables/__init__.py",
+"id": "imports:circuits.tables->circuits.tables.providers"
+},
+{
+"src": "circuits.tables",
+"dst": "circuits.tables.virtual_circuits",
+"raw": "circuits.tables.virtual_circuits",
+"lineno": 4,
+"path": "netbox/circuits/tables/__init__.py",
+"id": "imports:circuits.tables->circuits.tables.virtual_circuits"
+},
+{
+"src": "circuits.tables.circuits",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 4,
+"path": "netbox/circuits/tables/circuits.py",
+"id": "imports:circuits.tables.circuits->circuits.models"
+},
+{
+"src": "circuits.tables.circuits",
+"dst": "circuits.tables.columns",
+"raw": "circuits.tables.columns",
+"lineno": 9,
+"path": "netbox/circuits/tables/circuits.py",
+"id": "imports:circuits.tables.circuits->circuits.tables.columns"
+},
+{
+"src": "circuits.tables.circuits",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 7,
+"path": "netbox/circuits/tables/circuits.py",
+"id": "imports:circuits.tables.circuits->netbox.tables"
+},
+{
+"src": "circuits.tables.circuits",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/circuits/tables/circuits.py",
+"id": "imports:circuits.tables.circuits->tenancy.tables"
+},
+{
+"src": "circuits.tables.providers",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 3,
+"path": "netbox/circuits/tables/providers.py",
+"id": "imports:circuits.tables.providers->circuits.models"
+},
+{
+"src": "circuits.tables.providers",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 7,
+"path": "netbox/circuits/tables/providers.py",
+"id": "imports:circuits.tables.providers->netbox.tables"
+},
+{
+"src": "circuits.tables.providers",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 5,
+"path": "netbox/circuits/tables/providers.py",
+"id": "imports:circuits.tables.providers->tenancy.tables"
+},
+{
+"src": "circuits.tables.virtual_circuits",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 4,
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"id": "imports:circuits.tables.virtual_circuits->circuits.models"
+},
+{
+"src": "circuits.tables.virtual_circuits",
+"dst": "netbox.tables",
+"raw": "netbox.tables",
+"lineno": 5,
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"id": "imports:circuits.tables.virtual_circuits->netbox.tables"
+},
+{
+"src": "circuits.tables.virtual_circuits",
+"dst": "tenancy.tables",
+"raw": "tenancy.tables",
+"lineno": 6,
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"id": "imports:circuits.tables.virtual_circuits->tenancy.tables"
+},
+{
+"src": "circuits.tests.test_api",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 3,
+"path": "netbox/circuits/tests/test_api.py",
+"id": "imports:circuits.tests.test_api->circuits.choices"
+},
+{
+"src": "circuits.tests.test_api",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 4,
+"path": "netbox/circuits/tests/test_api.py",
+"id": "imports:circuits.tests.test_api->circuits.models"
+},
+{
+"src": "circuits.tests.test_api",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 5,
+"path": "netbox/circuits/tests/test_api.py",
+"id": "imports:circuits.tests.test_api->dcim.choices"
+},
+{
+"src": "circuits.tests.test_api",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 6,
+"path": "netbox/circuits/tests/test_api.py",
+"id": "imports:circuits.tests.test_api->dcim.models"
+},
+{
+"src": "circuits.tests.test_api",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 7,
+"path": "netbox/circuits/tests/test_api.py",
+"id": "imports:circuits.tests.test_api->ipam.models"
+},
+{
+"src": "circuits.tests.test_api",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 8,
+"path": "netbox/circuits/tests/test_api.py",
+"id": "imports:circuits.tests.test_api->utilities.testing"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 3,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->circuits.choices"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "circuits.filtersets",
+"raw": "circuits.filtersets",
+"lineno": 4,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->circuits.filtersets"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 5,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->circuits.models"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 6,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->dcim.choices"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 7,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->dcim.models"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 10,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->ipam.models"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 11,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->netbox.choices"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "tenancy.models",
+"raw": "tenancy.models",
+"lineno": 12,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->tenancy.models"
+},
+{
+"src": "circuits.tests.test_filtersets",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 13,
+"path": "netbox/circuits/tests/test_filtersets.py",
+"id": "imports:circuits.tests.test_filtersets->utilities.testing"
+},
+{
+"src": "circuits.tests.test_tables",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 3,
+"path": "netbox/circuits/tests/test_tables.py",
+"id": "imports:circuits.tests.test_tables->circuits.models"
+},
+{
+"src": "circuits.tests.test_tables",
+"dst": "circuits.tables",
+"raw": "circuits.tables",
+"lineno": 4,
+"path": "netbox/circuits/tests/test_tables.py",
+"id": "imports:circuits.tests.test_tables->circuits.tables"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "circuits.choices",
+"raw": "circuits.choices",
+"lineno": 7,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->circuits.choices"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 8,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->circuits.models"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "core.models",
+"raw": "core.models",
+"lineno": 9,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->core.models"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "dcim.choices",
+"raw": "dcim.choices",
+"lineno": 10,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->dcim.choices"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "dcim.models",
+"raw": "dcim.models",
+"lineno": 11,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->dcim.models"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 12,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->ipam.models"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "netbox.choices",
+"raw": "netbox.choices",
+"lineno": 13,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->netbox.choices"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "users.models",
+"raw": "users.models",
+"lineno": 14,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->users.models"
+},
+{
+"src": "circuits.tests.test_views",
+"dst": "utilities.testing",
+"raw": "utilities.testing",
+"lineno": 15,
+"path": "netbox/circuits/tests/test_views.py",
+"id": "imports:circuits.tests.test_views->utilities.testing"
+},
+{
+"src": "circuits.urls",
+"dst": "circuits",
+"raw": "circuits",
+"lineno": 4,
+"path": "netbox/circuits/urls.py",
+"id": "imports:circuits.urls->circuits"
+},
+{
+"src": "circuits.urls",
+"dst": "utilities.urls",
+"raw": "utilities.urls",
+"lineno": 3,
+"path": "netbox/circuits/urls.py",
+"id": "imports:circuits.urls->utilities.urls"
+},
+{
+"src": "circuits.views",
+"dst": "circuits",
+"raw": "circuits",
+"lineno": 12,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->circuits"
+},
+{
+"src": "circuits.views",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 13,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->circuits.models"
+},
+{
+"src": "circuits.views",
+"dst": "dcim.views",
+"raw": "dcim.views",
+"lineno": 6,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->dcim.views"
+},
+{
+"src": "circuits.views",
+"dst": "ipam.models",
+"raw": "ipam.models",
+"lineno": 7,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->ipam.models"
+},
+{
+"src": "circuits.views",
+"dst": "netbox.views",
+"raw": "netbox.views",
+"lineno": 8,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->netbox.views"
+},
+{
+"src": "circuits.views",
+"dst": "utilities.forms",
+"raw": "utilities.forms",
+"lineno": 9,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->utilities.forms"
+},
+{
+"src": "circuits.views",
+"dst": "utilities.query",
+"raw": "utilities.query",
+"lineno": 10,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->utilities.query"
+},
+{
+"src": "circuits.views",
+"dst": "utilities.views",
+"raw": "utilities.views",
+"lineno": 11,
+"path": "netbox/circuits/views.py",
+"id": "imports:circuits.views->utilities.views"
+}
+],
+"imports_in": [
+{
+"src": "dcim.filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 7,
+"path": "netbox/dcim/filtersets.py",
+"id": "imports:dcim.filtersets->circuits.models"
+},
+{
+"src": "dcim.forms.connections",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 5,
+"path": "netbox/dcim/forms/connections.py",
+"id": "imports:dcim.forms.connections->circuits.models"
+},
+{
+"src": "dcim.graphql.gfk_mixins",
+"dst": "circuits.graphql.types",
+"raw": "circuits.graphql.types",
+"lineno": 1,
+"path": "netbox/dcim/graphql/gfk_mixins.py",
+"id": "imports:dcim.graphql.gfk_mixins->circuits.graphql.types"
+},
+{
+"src": "dcim.graphql.gfk_mixins",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 2,
+"path": "netbox/dcim/graphql/gfk_mixins.py",
+"id": "imports:dcim.graphql.gfk_mixins->circuits.models"
+},
+{
+"src": "dcim.graphql.types",
+"dst": "circuits.graphql.types",
+"raw": "circuits.graphql.types",
+"lineno": 22,
+"path": "netbox/dcim/graphql/types.py",
+"id": "imports:dcim.graphql.types->circuits.graphql.types"
+},
+{
+"src": "dcim.models.cables",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 529,
+"path": "netbox/dcim/models/cables.py",
+"id": "imports:dcim.models.cables->circuits.models"
+},
+{
+"src": "dcim.models.cables",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 806,
+"path": "netbox/dcim/models/cables.py",
+"id": "imports:dcim.models.cables->circuits.models"
+},
+{
+"src": "dcim.models.cables",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 826,
+"path": "netbox/dcim/models/cables.py",
+"id": "imports:dcim.models.cables->circuits.models"
+},
+{
+"src": "dcim.tests.test_cablepaths",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 3,
+"path": "netbox/dcim/tests/test_cablepaths.py",
+"id": "imports:dcim.tests.test_cablepaths->circuits.models"
+},
+{
+"src": "dcim.tests.test_filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 3,
+"path": "netbox/dcim/tests/test_filtersets.py",
+"id": "imports:dcim.tests.test_filtersets->circuits.models"
+},
+{
+"src": "dcim.tests.test_models",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 4,
+"path": "netbox/dcim/tests/test_models.py",
+"id": "imports:dcim.tests.test_models->circuits.models"
+},
+{
+"src": "dcim.views",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 14,
+"path": "netbox/dcim/views.py",
+"id": "imports:dcim.views->circuits.models"
+},
+{
+"src": "extras.tests.test_custom_validation",
+"dst": "circuits.api.serializers",
+"raw": "circuits.api.serializers",
+"lineno": 4,
+"path": "netbox/extras/tests/test_custom_validation.py",
+"id": "imports:extras.tests.test_custom_validation->circuits.api.serializers"
+},
+{
+"src": "extras.tests.test_custom_validation",
+"dst": "circuits.forms",
+"raw": "circuits.forms",
+"lineno": 5,
+"path": "netbox/extras/tests/test_custom_validation.py",
+"id": "imports:extras.tests.test_custom_validation->circuits.forms"
+},
+{
+"src": "extras.tests.test_custom_validation",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 6,
+"path": "netbox/extras/tests/test_custom_validation.py",
+"id": "imports:extras.tests.test_custom_validation->circuits.models"
+},
+{
+"src": "extras.tests.test_filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 7,
+"path": "netbox/extras/tests/test_filtersets.py",
+"id": "imports:extras.tests.test_filtersets->circuits.models"
+},
+{
+"src": "ipam.filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 12,
+"path": "netbox/ipam/filtersets.py",
+"id": "imports:ipam.filtersets->circuits.models"
+},
+{
+"src": "ipam.graphql.filters",
+"dst": "circuits.graphql.filters",
+"raw": "circuits.graphql.filters",
+"lineno": 23,
+"path": "netbox/ipam/graphql/filters.py",
+"id": "imports:ipam.graphql.filters->circuits.graphql.filters"
+},
+{
+"src": "ipam.graphql.types",
+"dst": "circuits.graphql.types",
+"raw": "circuits.graphql.types",
+"lineno": 6,
+"path": "netbox/ipam/graphql/types.py",
+"id": "imports:ipam.graphql.types->circuits.graphql.types"
+},
+{
+"src": "ipam.tests.test_filtersets",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 6,
+"path": "netbox/ipam/tests/test_filtersets.py",
+"id": "imports:ipam.tests.test_filtersets->circuits.models"
+},
+{
+"src": "ipam.views",
+"dst": "circuits.models",
+"raw": "circuits.models",
+"lineno": 8,
+"path": "netbox/ipam/views.py",
+"id": "imports:ipam.views->circuits.models"
+},
+{
+"src": "netbox.graphql.schema",
+"dst": "circuits.graphql.schema",
+"raw": "circuits.graphql.schema",
+"lineno": 7,
+"path": "netbox/netbox/graphql/schema.py",
+"id": "imports:netbox.graphql.schema->circuits.graphql.schema"
+},
+{
+"src": "tenancy.graphql.filters",
+"dst": "circuits.graphql.filters",
+"raw": "circuits.graphql.filters",
+"lineno": 20,
+"path": "netbox/tenancy/graphql/filters.py",
+"id": "imports:tenancy.graphql.filters->circuits.graphql.filters"
+},
+{
+"src": "tenancy.graphql.types",
+"dst": "circuits.graphql.types",
+"raw": "circuits.graphql.types",
+"lineno": 13,
+"path": "netbox/tenancy/graphql/types.py",
+"id": "imports:tenancy.graphql.types->circuits.graphql.types"
+}
+],
+"model_refs": [
+{
+"module": "circuits.migrations.0046_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.Circuit",
+"ref_app": "circuits",
+"ref_model": "Circuit",
+"cross_app": 0,
+"lineno": 8,
+"path": "netbox/circuits/migrations/0046_charfield_null_choices.py",
+"id": "model_refs:circuits.migrations.0046_charfield_null_choices:8"
+},
+{
+"module": "circuits.migrations.0046_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.CircuitGroupAssignment",
+"ref_app": "circuits",
+"ref_model": "CircuitGroupAssignment",
+"cross_app": 0,
+"lineno": 9,
+"path": "netbox/circuits/migrations/0046_charfield_null_choices.py",
+"id": "model_refs:circuits.migrations.0046_charfield_null_choices:9"
+},
+{
+"module": "circuits.migrations.0046_charfield_null_choices",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.CircuitTermination",
+"ref_app": "circuits",
+"ref_model": "CircuitTermination",
+"cross_app": 0,
+"lineno": 10,
+"path": "netbox/circuits/migrations/0046_charfield_null_choices.py",
+"id": "model_refs:circuits.migrations.0046_charfield_null_choices:10"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 10,
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"id": "model_refs:circuits.migrations.0047_circuittermination__termination:10"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.CircuitTermination",
+"ref_app": "circuits",
+"ref_model": "CircuitTermination",
+"cross_app": 0,
+"lineno": 11,
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"id": "model_refs:circuits.migrations.0047_circuittermination__termination:11"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.ProviderNetwork",
+"ref_app": "circuits",
+"ref_model": "ProviderNetwork",
+"cross_app": 0,
+"lineno": 12,
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"id": "model_refs:circuits.migrations.0047_circuittermination__termination:12"
+},
+{
+"module": "circuits.migrations.0047_circuittermination__termination",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.Site",
+"ref_app": "dcim",
+"ref_model": "Site",
+"cross_app": 1,
+"lineno": 13,
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"id": "model_refs:circuits.migrations.0047_circuittermination__termination:13"
+},
+{
+"module": "circuits.migrations.0048_circuitterminations_cached_relations",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.CircuitTermination",
+"ref_app": "circuits",
+"ref_model": "CircuitTermination",
+"cross_app": 0,
+"lineno": 9,
+"path": "netbox/circuits/migrations/0048_circuitterminations_cached_relations.py",
+"id": "model_refs:circuits.migrations.0048_circuitterminations_cached_relations:9"
+},
+{
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 10,
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"id": "model_refs:circuits.migrations.0051_virtualcircuit_group_assignment:10"
+},
+{
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.Circuit",
+"ref_app": "circuits",
+"ref_model": "Circuit",
+"cross_app": 0,
+"lineno": 11,
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"id": "model_refs:circuits.migrations.0051_virtualcircuit_group_assignment:11"
+},
+{
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.CircuitGroupAssignment",
+"ref_app": "circuits",
+"ref_model": "CircuitGroupAssignment",
+"cross_app": 0,
+"lineno": 12,
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"id": "model_refs:circuits.migrations.0051_virtualcircuit_group_assignment:12"
+},
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "provider",
+"kind": "ForeignKey",
+"raw": "circuits.Provider",
+"ref_app": "circuits",
+"ref_model": "Provider",
+"cross_app": 0,
+"lineno": 49,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:49"
+},
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "provider_account",
+"kind": "ForeignKey",
+"raw": "circuits.ProviderAccount",
+"ref_app": "circuits",
+"ref_model": "ProviderAccount",
+"cross_app": 0,
+"lineno": 54,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:54"
+},
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "type",
+"kind": "ForeignKey",
+"raw": "circuits.CircuitType",
+"ref_app": "circuits",
+"ref_model": "CircuitType",
+"cross_app": 0,
+"lineno": 61,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:61"
+},
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 72,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:72"
+},
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "termination_a",
+"kind": "ForeignKey",
+"raw": "circuits.CircuitTermination",
+"ref_app": "circuits",
+"ref_model": "CircuitTermination",
+"cross_app": 0,
+"lineno": 97,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:97"
+},
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "termination_z",
+"kind": "ForeignKey",
+"raw": "circuits.CircuitTermination",
+"ref_app": "circuits",
+"ref_model": "CircuitTermination",
+"cross_app": 0,
+"lineno": 105,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:105"
+},
+{
+"module": "circuits.models.circuits",
+"class": "Circuit",
+"field": "group_assignments",
+"kind": "GenericRelation",
+"raw": "circuits.CircuitGroupAssignment",
+"ref_app": "circuits",
+"ref_model": "CircuitGroupAssignment",
+"cross_app": 0,
+"lineno": 114,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:114"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitGroup",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 162,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:162"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitGroupAssignment",
+"field": "member_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 183,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:183"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitGroupAssignment",
+"field": "group",
+"kind": "ForeignKey",
+"raw": "circuits.CircuitGroup",
+"ref_app": "circuits",
+"ref_model": "CircuitGroup",
+"cross_app": 0,
+"lineno": 195,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:195"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitTermination",
+"field": "circuit",
+"kind": "ForeignKey",
+"raw": "circuits.Circuit",
+"ref_app": "circuits",
+"ref_model": "Circuit",
+"cross_app": 0,
+"lineno": 238,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:238"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitTermination",
+"field": "termination_type",
+"kind": "ForeignKey",
+"raw": "contenttypes.ContentType",
+"ref_app": "contenttypes",
+"ref_model": "ContentType",
+"cross_app": 1,
+"lineno": 248,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:248"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitTermination",
+"field": "_provider_network",
+"kind": "ForeignKey",
+"raw": "circuits.ProviderNetwork",
+"ref_app": "circuits",
+"ref_model": "ProviderNetwork",
+"cross_app": 0,
+"lineno": 294,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:294"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitTermination",
+"field": "_location",
+"kind": "ForeignKey",
+"raw": "dcim.Location",
+"ref_app": "dcim",
+"ref_model": "Location",
+"cross_app": 1,
+"lineno": 301,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:301"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitTermination",
+"field": "_site",
+"kind": "ForeignKey",
+"raw": "dcim.Site",
+"ref_app": "dcim",
+"ref_model": "Site",
+"cross_app": 1,
+"lineno": 308,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:308"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitTermination",
+"field": "_region",
+"kind": "ForeignKey",
+"raw": "dcim.Region",
+"ref_app": "dcim",
+"ref_model": "Region",
+"cross_app": 1,
+"lineno": 315,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:315"
+},
+{
+"module": "circuits.models.circuits",
+"class": "CircuitTermination",
+"field": "_site_group",
+"kind": "ForeignKey",
+"raw": "dcim.SiteGroup",
+"ref_app": "dcim",
+"ref_model": "SiteGroup",
+"cross_app": 1,
+"lineno": 322,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:322"
+},
+{
+"module": "circuits.models.circuits",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.region",
+"ref_app": "dcim",
+"ref_model": "region",
+"cross_app": 1,
+"lineno": 363,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:363"
+},
+{
+"module": "circuits.models.circuits",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.sitegroup",
+"ref_app": "dcim",
+"ref_model": "sitegroup",
+"cross_app": 1,
+"lineno": 365,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:365"
+},
+{
+"module": "circuits.models.circuits",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.site",
+"ref_app": "dcim",
+"ref_model": "site",
+"cross_app": 1,
+"lineno": 367,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:367"
+},
+{
+"module": "circuits.models.circuits",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "dcim.location",
+"ref_app": "dcim",
+"ref_model": "location",
+"cross_app": 1,
+"lineno": 371,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:371"
+},
+{
+"module": "circuits.models.circuits",
+"class": "",
+"field": "",
+"kind": "get_model",
+"raw": "circuits.providernetwork",
+"ref_app": "circuits",
+"ref_model": "providernetwork",
+"cross_app": 0,
+"lineno": 376,
+"path": "netbox/circuits/models/circuits.py",
+"id": "model_refs:circuits.models.circuits:376"
+},
+{
+"module": "circuits.models.providers",
+"class": "Provider",
+"field": "asns",
+"kind": "ManyToManyField",
+"raw": "ipam.ASN",
+"ref_app": "ipam",
+"ref_model": "ASN",
+"cross_app": 1,
+"lineno": 32,
+"path": "netbox/circuits/models/providers.py",
+"id": "model_refs:circuits.models.providers:32"
+},
+{
+"module": "circuits.models.providers",
+"class": "ProviderAccount",
+"field": "provider",
+"kind": "ForeignKey",
+"raw": "circuits.Provider",
+"ref_app": "circuits",
+"ref_model": "Provider",
+"cross_app": 0,
+"lineno": 53,
+"path": "netbox/circuits/models/providers.py",
+"id": "model_refs:circuits.models.providers:53"
+},
+{
+"module": "circuits.models.providers",
+"class": "ProviderNetwork",
+"field": "provider",
+"kind": "ForeignKey",
+"raw": "circuits.Provider",
+"ref_app": "circuits",
+"ref_model": "Provider",
+"cross_app": 0,
+"lineno": 102,
+"path": "netbox/circuits/models/providers.py",
+"id": "model_refs:circuits.models.providers:102"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuit",
+"field": "provider_network",
+"kind": "ForeignKey",
+"raw": "circuits.ProviderNetwork",
+"ref_app": "circuits",
+"ref_model": "ProviderNetwork",
+"cross_app": 0,
+"lineno": 41,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:41"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuit",
+"field": "provider_account",
+"kind": "ForeignKey",
+"raw": "circuits.ProviderAccount",
+"ref_app": "circuits",
+"ref_model": "ProviderAccount",
+"cross_app": 0,
+"lineno": 46,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:46"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuit",
+"field": "type",
+"kind": "ForeignKey",
+"raw": "circuits.VirtualCircuitType",
+"ref_app": "circuits",
+"ref_model": "VirtualCircuitType",
+"cross_app": 0,
+"lineno": 53,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:53"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuit",
+"field": "tenant",
+"kind": "ForeignKey",
+"raw": "tenancy.Tenant",
+"ref_app": "tenancy",
+"ref_model": "Tenant",
+"cross_app": 1,
+"lineno": 64,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:64"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuit",
+"field": "group_assignments",
+"kind": "GenericRelation",
+"raw": "circuits.CircuitGroupAssignment",
+"ref_app": "circuits",
+"ref_model": "CircuitGroupAssignment",
+"cross_app": 0,
+"lineno": 72,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:72"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuitTermination",
+"field": "virtual_circuit",
+"kind": "ForeignKey",
+"raw": "circuits.VirtualCircuit",
+"ref_app": "circuits",
+"ref_model": "VirtualCircuit",
+"cross_app": 0,
+"lineno": 127,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:127"
+},
+{
+"module": "circuits.models.virtual_circuits",
+"class": "VirtualCircuitTermination",
+"field": "interface",
+"kind": "OneToOneField",
+"raw": "dcim.Interface",
+"ref_app": "dcim",
+"ref_model": "Interface",
+"cross_app": 1,
+"lineno": 138,
+"path": "netbox/circuits/models/virtual_circuits.py",
+"id": "model_refs:circuits.models.virtual_circuits:138"
+}
+],
+"model_refs_in": [],
+"churn": [
+{
+"path": "netbox/circuits/views.py",
+"module": "circuits.views",
+"commits": 157,
+"authors": 12,
+"first_commit": "2016-03-01",
+"last_commit": "2025-06-25",
+"id": "churn:circuits.views"
+},
+{
+"path": "netbox/circuits/api/serializers.py",
+"module": "circuits.api.serializers",
+"commits": 89,
+"authors": 7,
+"first_commit": "2016-03-01",
+"last_commit": "2024-08-14",
+"id": "churn:circuits.api.serializers"
+},
+{
+"path": "netbox/circuits/api/views.py",
+"module": "circuits.api.views",
+"commits": 73,
+"authors": 6,
+"first_commit": "2016-03-01",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.api.views"
+},
+{
+"path": "netbox/circuits/tests/test_api.py",
+"module": "circuits.tests.test_api",
+"commits": 56,
+"authors": 4,
+"first_commit": "2017-03-16",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.tests.test_api"
+},
+{
+"path": "netbox/circuits/urls.py",
+"module": "circuits.urls",
+"commits": 49,
+"authors": 5,
+"first_commit": "2016-03-01",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.urls"
+},
+{
+"path": "netbox/circuits/filtersets.py",
+"module": "circuits.filtersets",
+"commits": 45,
+"authors": 10,
+"first_commit": "2021-04-29",
+"last_commit": "2025-03-06",
+"id": "churn:circuits.filtersets"
+},
+{
+"path": "netbox/circuits/forms/filtersets.py",
+"module": "circuits.forms.filtersets",
+"commits": 42,
+"authors": 10,
+"first_commit": "2021-09-27",
+"last_commit": "2025-03-06",
+"id": "churn:circuits.forms.filtersets"
+},
+{
+"path": "netbox/circuits/models/circuits.py",
+"module": "circuits.models.circuits",
+"commits": 41,
+"authors": 5,
+"first_commit": "2021-11-04",
+"last_commit": "2025-04-10",
+"id": "churn:circuits.models.circuits"
+},
+{
+"path": "netbox/circuits/tests/test_views.py",
+"module": "circuits.tests.test_views",
+"commits": 39,
+"authors": 4,
+"first_commit": "2019-02-15",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.tests.test_views"
+},
+{
+"path": "netbox/circuits/forms/bulk_edit.py",
+"module": "circuits.forms.bulk_edit",
+"commits": 33,
+"authors": 7,
+"first_commit": "2021-09-27",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.forms.bulk_edit"
+},
+{
+"path": "netbox/circuits/api/urls.py",
+"module": "circuits.api.urls",
+"commits": 29,
+"authors": 4,
+"first_commit": "2016-03-01",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.api.urls"
+},
+{
+"path": "netbox/circuits/forms/bulk_import.py",
+"module": "circuits.forms.bulk_import",
+"commits": 28,
+"authors": 7,
+"first_commit": "2021-09-27",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.forms.bulk_import"
+},
+{
+"path": "netbox/circuits/tests/test_filtersets.py",
+"module": "circuits.tests.test_filtersets",
+"commits": 27,
+"authors": 7,
+"first_commit": "2021-05-03",
+"last_commit": "2025-02-18",
+"id": "churn:circuits.tests.test_filtersets"
+},
+{
+"path": "netbox/circuits/tables/circuits.py",
+"module": "circuits.tables.circuits",
+"commits": 26,
+"authors": 7,
+"first_commit": "2022-03-03",
+"last_commit": "2025-06-04",
+"id": "churn:circuits.tables.circuits"
+},
+{
+"path": "netbox/circuits/forms/model_forms.py",
+"module": "circuits.forms.model_forms",
+"commits": 24,
+"authors": 6,
+"first_commit": "2022-10-25",
+"last_commit": "2025-05-19",
+"id": "churn:circuits.forms.model_forms"
+},
+{
+"path": "netbox/circuits/graphql/types.py",
+"module": "circuits.graphql.types",
+"commits": 20,
+"authors": 4,
+"first_commit": "2021-06-08",
+"last_commit": "2025-04-10",
+"id": "churn:circuits.graphql.types"
+},
+{
+"path": "netbox/circuits/models/providers.py",
+"module": "circuits.models.providers",
+"commits": 18,
+"authors": 4,
+"first_commit": "2021-11-04",
+"last_commit": "2024-11-15",
+"id": "churn:circuits.models.providers"
+},
+{
+"path": "netbox/circuits/choices.py",
+"module": "circuits.choices",
+"commits": 15,
+"authors": 4,
+"first_commit": "2019-11-07",
+"last_commit": "2024-11-19",
+"id": "churn:circuits.choices"
+},
+{
+"path": "netbox/circuits/tables/providers.py",
+"module": "circuits.tables.providers",
+"commits": 14,
+"authors": 6,
+"first_commit": "2022-03-03",
+"last_commit": "2025-02-28",
+"id": "churn:circuits.tables.providers"
+},
+{
+"path": "netbox/circuits/api/serializers_/circuits.py",
+"module": "circuits.api.serializers_.circuits",
+"commits": 13,
+"authors": 2,
+"first_commit": "2024-02-27",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.api.serializers_.circuits"
+},
+{
+"path": "netbox/circuits/search.py",
+"module": "circuits.search",
+"commits": 11,
+"authors": 7,
+"first_commit": "2022-10-10",
+"last_commit": "2025-01-29",
+"id": "churn:circuits.search"
+},
+{
+"path": "netbox/circuits/signals.py",
+"module": "circuits.signals",
+"commits": 11,
+"authors": 3,
+"first_commit": "2017-01-23",
+"last_commit": "2022-05-10",
+"id": "churn:circuits.signals"
+},
+{
+"path": "netbox/circuits/graphql/schema.py",
+"module": "circuits.graphql.schema",
+"commits": 10,
+"authors": 4,
+"first_commit": "2021-06-08",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.graphql.schema"
+},
+{
+"path": "netbox/circuits/graphql/filters.py",
+"module": "circuits.graphql.filters",
+"commits": 9,
+"authors": 2,
+"first_commit": "2024-03-22",
+"last_commit": "2025-05-14",
+"id": "churn:circuits.graphql.filters"
+},
+{
+"path": "netbox/circuits/constants.py",
+"module": "circuits.constants",
+"commits": 8,
+"authors": 2,
+"first_commit": "2017-06-16",
+"last_commit": "2025-01-03",
+"id": "churn:circuits.constants"
+},
+{
+"path": "netbox/circuits/apps.py",
+"module": "circuits.apps",
+"commits": 6,
+"authors": 2,
+"first_commit": "2017-01-23",
+"last_commit": "2024-10-10",
+"id": "churn:circuits.apps"
+},
+{
+"path": "netbox/circuits/migrations/0047_circuittermination__termination.py",
+"module": "circuits.migrations.0047_circuittermination__termination",
+"commits": 6,
+"authors": 2,
+"first_commit": "2024-10-31",
+"last_commit": "2025-06-05",
+"id": "churn:circuits.migrations.0047_circuittermination__termination"
+},
+{
+"path": "netbox/circuits/api/serializers_/providers.py",
+"module": "circuits.api.serializers_.providers",
+"commits": 5,
+"authors": 2,
+"first_commit": "2024-02-27",
+"last_commit": "2024-08-14",
+"id": "churn:circuits.api.serializers_.providers"
+},
+{
+"path": "netbox/circuits/migrations/0001_squashed.py",
+"module": "circuits.migrations.0001_squashed",
+"commits": 5,
+"authors": 3,
+"first_commit": "2021-07-09",
+"last_commit": "2024-11-21",
+"id": "churn:circuits.migrations.0001_squashed"
+},
+{
+"path": "netbox/circuits/migrations/0048_circuitterminations_cached_relations.py",
+"module": "circuits.migrations.0048_circuitterminations_cached_relations",
+"commits": 5,
+"authors": 2,
+"first_commit": "2024-10-31",
+"last_commit": "2025-06-05",
+"id": "churn:circuits.migrations.0048_circuitterminations_cached_relations"
+},
+{
+"path": "netbox/circuits/migrations/0051_virtualcircuit_group_assignment.py",
+"module": "circuits.migrations.0051_virtualcircuit_group_assignment",
+"commits": 4,
+"authors": 1,
+"first_commit": "2025-01-03",
+"last_commit": "2025-06-05",
+"id": "churn:circuits.migrations.0051_virtualcircuit_group_assignment"
+},
+{
+"path": "netbox/circuits/__init__.py",
+"module": "circuits",
+"commits": 3,
+"authors": 2,
+"first_commit": "2016-03-01",
+"last_commit": "2021-09-15",
+"id": "churn:circuits"
+},
+{
+"path": "netbox/circuits/migrations/0002_squashed_0029.py",
+"module": "circuits.migrations.0002_squashed_0029",
+"commits": 3,
+"authors": 3,
+"first_commit": "2021-07-09",
+"last_commit": "2025-03-07",
+"id": "churn:circuits.migrations.0002_squashed_0029"
+},
+{
+"path": "netbox/circuits/migrations/0038_squashed_0042.py",
+"module": "circuits.migrations.0038_squashed_0042",
+"commits": 3,
+"authors": 2,
+"first_commit": "2024-01-24",
+"last_commit": "2025-03-07",
+"id": "churn:circuits.migrations.0038_squashed_0042"
+},
+{
+"path": "netbox/circuits/migrations/0044_circuit_groups.py",
+"module": "circuits.migrations.0044_circuit_groups",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-07-30",
+"last_commit": "2024-11-21",
+"id": "churn:circuits.migrations.0044_circuit_groups"
+},
+{
+"path": "netbox/circuits/migrations/0046_charfield_null_choices.py",
+"module": "circuits.migrations.0046_charfield_null_choices",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-10-18",
+"last_commit": "2025-05-08",
+"id": "churn:circuits.migrations.0046_charfield_null_choices"
+},
+{
+"path": "netbox/circuits/migrations/0050_virtual_circuits.py",
+"module": "circuits.migrations.0050_virtual_circuits",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-11-19",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.migrations.0050_virtual_circuits"
+},
+{
+"path": "netbox/circuits/models/virtual_circuits.py",
+"module": "circuits.models.virtual_circuits",
+"commits": 3,
+"authors": 1,
+"first_commit": "2024-11-19",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.models.virtual_circuits"
+},
+{
+"path": "netbox/circuits/tables/virtual_circuits.py",
+"module": "circuits.tables.virtual_circuits",
+"commits": 3,
+"authors": 2,
+"first_commit": "2024-11-19",
+"last_commit": "2025-05-13",
+"id": "churn:circuits.tables.virtual_circuits"
+},
+{
+"path": "netbox/circuits/forms/__init__.py",
+"module": "circuits.forms",
+"commits": 2,
+"authors": 1,
+"first_commit": "2021-09-27",
+"last_commit": "2022-10-25",
+"id": "churn:circuits.forms"
+},
+{
+"path": "netbox/circuits/graphql/enums.py",
+"module": "circuits.graphql.enums",
+"commits": 2,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-04-17",
+"id": "churn:circuits.graphql.enums"
+},
+{
+"path": "netbox/circuits/migrations/0003_squashed_0037.py",
+"module": "circuits.migrations.0003_squashed_0037",
+"commits": 2,
+"authors": 1,
+"first_commit": "2024-01-24",
+"last_commit": "2024-11-21",
+"id": "churn:circuits.migrations.0003_squashed_0037"
+},
+{
+"path": "netbox/circuits/migrations/0043_circuittype_color.py",
+"module": "circuits.migrations.0043_circuittype_color",
+"commits": 2,
+"authors": 2,
+"first_commit": "2023-10-24",
+"last_commit": "2025-03-07",
+"id": "churn:circuits.migrations.0043_circuittype_color"
+},
+{
+"path": "netbox/circuits/migrations/0045_circuit_distance.py",
+"module": "circuits.migrations.0045_circuit_distance",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-10-10",
+"last_commit": "2024-11-21",
+"id": "churn:circuits.migrations.0045_circuit_distance"
+},
+{
+"path": "netbox/circuits/migrations/0049_natural_ordering.py",
+"module": "circuits.migrations.0049_natural_ordering",
+"commits": 2,
+"authors": 2,
+"first_commit": "2024-11-15",
+"last_commit": "2024-11-21",
+"id": "churn:circuits.migrations.0049_natural_ordering"
+},
+{
+"path": "netbox/circuits/models/__init__.py",
+"module": "circuits.models",
+"commits": 2,
+"authors": 2,
+"first_commit": "2021-11-04",
+"last_commit": "2024-11-19",
+"id": "churn:circuits.models"
+},
+{
+"path": "netbox/circuits/tables/__init__.py",
+"module": "circuits.tables",
+"commits": 2,
+"authors": 2,
+"first_commit": "2022-03-03",
+"last_commit": "2024-11-19",
+"id": "churn:circuits.tables"
+},
+{
+"path": "netbox/circuits/api/__init__.py",
+"module": "circuits.api",
+"commits": 1,
+"authors": 1,
+"first_commit": "2016-03-01",
+"last_commit": "2016-03-01",
+"id": "churn:circuits.api"
+},
+{
+"path": "netbox/circuits/api/serializers_/__init__.py",
+"module": "circuits.api.serializers_",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-02-27",
+"last_commit": "2024-02-27",
+"id": "churn:circuits.api.serializers_"
+},
+{
+"path": "netbox/circuits/api/serializers_/nested.py",
+"module": "circuits.api.serializers_.nested",
+"commits": 1,
+"authors": 1,
+"first_commit": "2024-08-14",
+"last_commit": "2024-08-14",
+"id": "churn:circuits.api.serializers_.nested"
+},
+{
+"path": "netbox/circuits/graphql/__init__.py",
+"module": "circuits.graphql",
+"commits": 1,
+"authors": 1,
+"first_commit": "2021-06-25",
+"last_commit": "2021-06-25",
+"id": "churn:circuits.graphql"
+},
+{
+"path": "netbox/circuits/graphql/filter_mixins.py",
+"module": "circuits.graphql.filter_mixins",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-03-07",
+"last_commit": "2025-03-07",
+"id": "churn:circuits.graphql.filter_mixins"
+},
+{
+"path": "netbox/circuits/migrations/0052_extend_circuit_abs_distance_upper_limit.py",
+"module": "circuits.migrations.0052_extend_circuit_abs_distance_upper_limit",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-05-19",
+"last_commit": "2025-05-19",
+"id": "churn:circuits.migrations.0052_extend_circuit_abs_distance_upper_limit"
+},
+{
+"path": "netbox/circuits/migrations/__init__.py",
+"module": "circuits.migrations",
+"commits": 1,
+"authors": 1,
+"first_commit": "2016-03-01",
+"last_commit": "2016-03-01",
+"id": "churn:circuits.migrations"
+},
+{
+"path": "netbox/circuits/models/base.py",
+"module": "circuits.models.base",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-01-06",
+"last_commit": "2025-01-06",
+"id": "churn:circuits.models.base"
+},
+{
+"path": "netbox/circuits/tables/columns.py",
+"module": "circuits.tables.columns",
+"commits": 1,
+"authors": 1,
+"first_commit": "2022-03-03",
+"last_commit": "2022-03-03",
+"id": "churn:circuits.tables.columns"
+},
+{
+"path": "netbox/circuits/tests/__init__.py",
+"module": "circuits.tests",
+"commits": 1,
+"authors": 1,
+"first_commit": "2017-03-16",
+"last_commit": "2017-03-16",
+"id": "churn:circuits.tests"
+},
+{
+"path": "netbox/circuits/tests/test_tables.py",
+"module": "circuits.tests.test_tables",
+"commits": 1,
+"authors": 1,
+"first_commit": "2025-06-04",
+"last_commit": "2025-06-04",
+"id": "churn:circuits.tests.test_tables"
+}
+],
+"entrypoints": [
+{
+"kind": "urls",
+"module": "circuits.api.urls",
+"detail": "",
+"path": "netbox/circuits/api/urls.py",
+"id": "entrypoints:circuits.api.urls"
+},
+{
+"kind": "api_views",
+"module": "circuits.api.views",
+"detail": "",
+"path": "netbox/circuits/api/views.py",
+"id": "entrypoints:circuits.api.views"
+},
+{
+"kind": "signals",
+"module": "circuits.signals",
+"detail": "",
+"path": "netbox/circuits/signals.py",
+"id": "entrypoints:circuits.signals"
+},
+{
+"kind": "urls",
+"module": "circuits.urls",
+"detail": "",
+"path": "netbox/circuits/urls.py",
+"id": "entrypoints:circuits.urls"
+}
+]
+}

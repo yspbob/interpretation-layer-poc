@@ -1,0 +1,343 @@
+# Fact-graph digest: subsystem `core` at T0 ea4c205
+
+Summary row [fg:subsystems:core]: {'subsystem': 'core', 'modules': 68, 'loc_code': 7152, 'loc_data': 0, 'test_modules': 6}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- core | netbox/core/__init__.py | 1 | 0 | 0 |  | 
+- core.api | netbox/core/api/__init__.py | 1 | 0 | 0 |  | 
+- core.api.schema | netbox/core/api/schema.py | 318 | 6 | 0 |  | 
+- core.api.serializers | netbox/core/api/serializers.py | 5 | 0 | 0 |  | 
+- core.api.serializers_ | netbox/core/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- core.api.serializers_.change_logging | netbox/core/api/serializers_/change_logging.py | 65 | 1 | 0 |  | 
+- core.api.serializers_.data | netbox/core/api/serializers_/data.py | 47 | 2 | 0 |  | 
+- core.api.serializers_.jobs | netbox/core/api/serializers_/jobs.py | 29 | 1 | 0 |  | 
+- core.api.serializers_.tasks | netbox/core/api/serializers_/tasks.py | 88 | 3 | 0 |  | 
+- core.api.urls | netbox/core/api/urls.py | 18 | 0 | 0 |  | 
+- core.api.views | netbox/core/api/views.py | 235 | 9 | 0 |  | 
+- core.apps | netbox/core/apps.py | 48 | 1 | 0 |  | 
+- core.checks | netbox/core/checks.py | 42 | 0 | 1 |  | 
+- core.choices | netbox/core/choices.py | 106 | 5 | 0 |  | 
+- core.constants | netbox/core/constants.py | 27 | 1 | 0 |  | 
+- core.data_backends | netbox/core/data_backends.py | 206 | 3 | 0 |  | 
+- core.events | netbox/core/events.py | 21 | 0 | 0 |  | 
+- core.exceptions | netbox/core/exceptions.py | 10 | 2 | 0 |  | 
+- core.filtersets | netbox/core/filtersets.py | 190 | 5 | 0 |  | 
+- core.forms | netbox/core/forms/__init__.py | 5 | 0 | 0 |  | 
+- core.forms.bulk_edit | netbox/core/forms/bulk_edit.py | 56 | 1 | 0 |  | 
+- core.forms.bulk_import | netbox/core/forms/bulk_import.py | 17 | 1 | 0 |  | 
+- core.forms.filtersets | netbox/core/forms/filtersets.py | 175 | 5 | 0 |  | 
+- core.forms.mixins | netbox/core/forms/mixins.py | 26 | 1 | 0 |  | 
+- core.forms.model_forms | netbox/core/forms/model_forms.py | 244 | 4 | 0 |  | 
+- core.graphql | netbox/core/graphql/__init__.py | 1 | 0 | 0 |  | 
+- core.graphql.filter_mixins | netbox/core/graphql/filter_mixins.py | 37 | 3 | 0 |  | 
+- core.graphql.filters | netbox/core/graphql/filters.py | 90 | 4 | 0 |  | 
+- core.graphql.mixins | netbox/core/graphql/mixins.py | 28 | 1 | 0 |  | 
+- core.graphql.schema | netbox/core/graphql/schema.py | 16 | 1 | 0 |  | 
+- core.graphql.types | netbox/core/graphql/types.py | 57 | 4 | 0 |  | 
+- core.jobs | netbox/core/jobs.py | 79 | 2 | 0 |  | 
+- core.management | netbox/core/management/__init__.py | 1 | 0 | 0 |  | 
+- core.management.commands | netbox/core/management/commands/__init__.py | 1 | 0 | 0 |  | 
+- core.management.commands.makemigrations | netbox/core/management/commands/makemigrations.py | 23 | 1 | 0 |  | 
+- core.management.commands.nbshell | netbox/core/management/commands/nbshell.py | 102 | 1 | 0 |  | 
+- core.management.commands.rqworker | netbox/core/management/commands/rqworker.py | 40 | 1 | 0 |  | 
+- core.management.commands.syncdatasource | netbox/core/management/commands/syncdatasource.py | 47 | 1 | 0 |  | 
+- core.migrations | netbox/core/migrations/__init__.py | 1 | 0 | 0 |  | 
+- core.migrations.0001_squashed_0005 | netbox/core/migrations/0001_squashed_0005.py | 210 | 1 | 0 |  | migration
+- core.migrations.0006_datasource_type_remove_choices | netbox/core/migrations/0006_datasource_type_remove_choices.py | 18 | 1 | 0 |  | migration
+- core.migrations.0007_job_add_error_field | netbox/core/migrations/0007_job_add_error_field.py | 18 | 1 | 0 |  | migration
+- core.migrations.0008_contenttype_proxy | netbox/core/migrations/0008_contenttype_proxy.py | 26 | 1 | 0 |  | migration
+- core.migrations.0009_configrevision | netbox/core/migrations/0009_configrevision.py | 31 | 1 | 0 |  | migration
+- core.migrations.0010_gfk_indexes | netbox/core/migrations/0010_gfk_indexes.py | 17 | 1 | 0 |  | migration
+- core.migrations.0011_move_objectchange | netbox/core/migrations/0011_move_objectchange.py | 79 | 1 | 0 |  | migration
+- core.migrations.0012_job_object_type_optional | netbox/core/migrations/0012_job_object_type_optional.py | 24 | 1 | 0 |  | migration
+- core.migrations.0013_job_data_encoder | netbox/core/migrations/0013_job_data_encoder.py | 18 | 1 | 0 |  | migration
+- core.migrations.0014_datasource_sync_interval | netbox/core/migrations/0014_datasource_sync_interval.py | 17 | 1 | 0 |  | migration
+- core.migrations.0015_remove_redundant_indexes | netbox/core/migrations/0015_remove_redundant_indexes.py | 24 | 1 | 0 |  | migration
+- core.models | netbox/core/models/__init__.py | 7 | 0 | 0 |  | 
+- core.models.change_logging | netbox/core/models/change_logging.py | 212 | 1 | 0 |  | 
+- core.models.config | netbox/core/models/config.py | 67 | 1 | 0 |  | 
+- core.models.contenttypes | netbox/core/models/contenttypes.py | 51 | 2 | 0 |  | 
+- core.models.data | netbox/core/models/data.py | 389 | 3 | 0 |  | 
+- core.models.files | netbox/core/models/files.py | 126 | 1 | 0 |  | 
+- core.models.jobs | netbox/core/models/jobs.py | 274 | 1 | 0 |  | 
+- core.plugins | netbox/core/plugins.py | 244 | 3 | 2 |  | 
+- core.querysets | netbox/core/querysets.py | 27 | 1 | 0 |  | 
+- core.search | netbox/core/search.py | 24 | 2 | 0 |  | 
+- core.signals | netbox/core/signals.py | 232 | 0 | 6 |  | 
+- core.tables | netbox/core/tables/__init__.py | 7 | 0 | 0 |  | 
+- core.tables.change_logging | netbox/core/tables/change_logging.py | 54 | 1 | 0 |  | 
+- core.tables.columns | netbox/core/tables/columns.py | 37 | 2 | 0 |  | 
+- core.tables.config | netbox/core/tables/config.py | 35 | 1 | 0 |  | 
+- core.tables.data | netbox/core/tables/data.py | 72 | 2 | 0 |  | 
+- core.tables.jobs | netbox/core/tables/jobs.py | 56 | 1 | 0 |  | 
+- core.tables.plugins | netbox/core/tables/plugins.py | 103 | 2 | 0 |  | 
+- core.tables.tasks | netbox/core/tables/tasks.py | 135 | 3 | 0 |  | 
+- core.tables.template_code | netbox/core/tables/template_code.py | 29 | 0 | 0 |  | 
+- core.tests | netbox/core/tests/__init__.py | 1 | 0 | 0 | test | 
+- core.tests.test_api | netbox/core/tests/test_api.py | 265 | 4 | 0 | test | 
+- core.tests.test_changelog | netbox/core/tests/test_changelog.py | 593 | 2 | 0 | test | 
+- core.tests.test_filtersets | netbox/core/tests/test_filtersets.py | 244 | 3 | 0 | test | 
+- core.tests.test_models | netbox/core/tests/test_models.py | 123 | 1 | 0 | test | 
+- core.tests.test_views | netbox/core/tests/test_views.py | 380 | 5 | 0 | test | 
+- core.urls | netbox/core/urls.py | 56 | 0 | 0 |  | 
+- core.utils | netbox/core/utils.py | 156 | 0 | 6 |  | 
+- core.views | netbox/core/views.py | 649 | 38 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'core': 105, 'netbox': 64, 'utilities': 45, 'users': 9, 'extras': 5, 'dcim': 5, 'ipam': 1}
+Inbound by source subsystem: {'extras': 63, 'netbox': 38, 'utilities': 13, 'users': 9, 'dcim': 8, 'tenancy': 6, 'ipam': 5, 'circuits': 3, 'vpn': 3, 'account': 2, 'virtualization': 1, 'wireless': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- core.api.schema -> netbox.api.fields [fg:imports:core.api.schema->netbox.api.fields]
+- core.api.schema -> netbox.api.serializers [fg:imports:core.api.schema->netbox.api.serializers]
+- core.api.serializers_.change_logging -> netbox.api.exceptions [fg:imports:core.api.serializers_.change_logging->netbox.api.exceptions]
+- core.api.serializers_.change_logging -> netbox.api.fields [fg:imports:core.api.serializers_.change_logging->netbox.api.fields]
+- core.api.serializers_.change_logging -> netbox.api.serializers [fg:imports:core.api.serializers_.change_logging->netbox.api.serializers]
+- core.api.serializers_.change_logging -> users.api.serializers_.users [fg:imports:core.api.serializers_.change_logging->users.api.serializers_.users]
+- core.api.serializers_.change_logging -> utilities.api [fg:imports:core.api.serializers_.change_logging->utilities.api]
+- core.api.serializers_.data -> netbox.api.fields [fg:imports:core.api.serializers_.data->netbox.api.fields]
+- core.api.serializers_.data -> netbox.api.serializers [fg:imports:core.api.serializers_.data->netbox.api.serializers]
+- core.api.serializers_.data -> netbox.utils [fg:imports:core.api.serializers_.data->netbox.utils]
+- core.api.serializers_.jobs -> netbox.api.fields [fg:imports:core.api.serializers_.jobs->netbox.api.fields]
+- core.api.serializers_.jobs -> netbox.api.serializers [fg:imports:core.api.serializers_.jobs->netbox.api.serializers]
+- core.api.serializers_.jobs -> users.api.serializers_.users [fg:imports:core.api.serializers_.jobs->users.api.serializers_.users]
+- core.api.urls -> netbox.api.routers [fg:imports:core.api.urls->netbox.api.routers]
+- core.api.views -> netbox.api.metadata [fg:imports:core.api.views->netbox.api.metadata]
+- core.api.views -> netbox.api.pagination [fg:imports:core.api.views->netbox.api.pagination]
+- core.api.views -> netbox.api.viewsets [fg:imports:core.api.views->netbox.api.viewsets]
+- core.apps -> netbox [fg:imports:core.apps->netbox]
+- core.apps -> netbox.events [fg:imports:core.apps->netbox.events]
+- core.apps -> netbox.models.features [fg:imports:core.apps->netbox.models.features]
+- core.apps -> utilities.migration [fg:imports:core.apps->utilities.migration]
+- core.choices -> utilities.choices [fg:imports:core.choices->utilities.choices]
+- core.data_backends -> netbox.data_backends [fg:imports:core.data_backends->netbox.data_backends]
+- core.data_backends -> netbox.utils [fg:imports:core.data_backends->netbox.utils]
+- core.data_backends -> utilities.constants [fg:imports:core.data_backends->utilities.constants]
+- core.data_backends -> utilities.proxy [fg:imports:core.data_backends->utilities.proxy]
+- core.data_backends -> utilities.socks [fg:imports:core.data_backends->utilities.socks]
+- core.filtersets -> netbox.filtersets [fg:imports:core.filtersets->netbox.filtersets]
+- core.filtersets -> netbox.utils [fg:imports:core.filtersets->netbox.utils]
+- core.filtersets -> users.models [fg:imports:core.filtersets->users.models]
+- core.filtersets -> utilities.filters [fg:imports:core.filtersets->utilities.filters]
+- core.forms.bulk_edit -> netbox.forms [fg:imports:core.forms.bulk_edit->netbox.forms]
+- core.forms.bulk_edit -> netbox.utils [fg:imports:core.forms.bulk_edit->netbox.utils]
+- core.forms.bulk_edit -> utilities.forms.fields [fg:imports:core.forms.bulk_edit->utilities.forms.fields]
+- core.forms.bulk_edit -> utilities.forms.rendering [fg:imports:core.forms.bulk_edit->utilities.forms.rendering]
+- core.forms.bulk_edit -> utilities.forms.widgets [fg:imports:core.forms.bulk_edit->utilities.forms.widgets]
+- core.forms.bulk_import -> netbox.forms [fg:imports:core.forms.bulk_import->netbox.forms]
+- core.forms.filtersets -> netbox.forms [fg:imports:core.forms.filtersets->netbox.forms]
+- core.forms.filtersets -> netbox.forms.mixins [fg:imports:core.forms.filtersets->netbox.forms.mixins]
+- core.forms.filtersets -> netbox.utils [fg:imports:core.forms.filtersets->netbox.utils]
+- core.forms.filtersets -> users.models [fg:imports:core.forms.filtersets->users.models]
+- core.forms.filtersets -> utilities.forms [fg:imports:core.forms.filtersets->utilities.forms]
+- core.forms.filtersets -> utilities.forms.fields [fg:imports:core.forms.filtersets->utilities.forms.fields]
+- core.forms.filtersets -> utilities.forms.rendering [fg:imports:core.forms.filtersets->utilities.forms.rendering]
+- core.forms.filtersets -> utilities.forms.widgets [fg:imports:core.forms.filtersets->utilities.forms.widgets]
+- core.forms.mixins -> utilities.forms.fields [fg:imports:core.forms.mixins->utilities.forms.fields]
+- core.forms.model_forms -> netbox.config [fg:imports:core.forms.model_forms->netbox.config]
+- core.forms.model_forms -> netbox.forms [fg:imports:core.forms.model_forms->netbox.forms]
+- core.forms.model_forms -> netbox.registry [fg:imports:core.forms.model_forms->netbox.registry]
+- core.forms.model_forms -> netbox.utils [fg:imports:core.forms.model_forms->netbox.utils]
+- core.forms.model_forms -> utilities.forms [fg:imports:core.forms.model_forms->utilities.forms]
+- core.forms.model_forms -> utilities.forms.fields [fg:imports:core.forms.model_forms->utilities.forms.fields]
+- core.forms.model_forms -> utilities.forms.rendering [fg:imports:core.forms.model_forms->utilities.forms.rendering]
+- core.forms.model_forms -> utilities.forms.widgets [fg:imports:core.forms.model_forms->utilities.forms.widgets]
+- core.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:core.graphql.filters->netbox.graphql.filter_lookups]
+- core.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:core.graphql.filters->netbox.graphql.filter_mixins]
+- core.graphql.filters -> users.graphql.filters [fg:imports:core.graphql.filters->users.graphql.filters]
+- core.graphql.mixins -> netbox [fg:imports:core.graphql.mixins->netbox]
+- core.graphql.types -> netbox.graphql.types [fg:imports:core.graphql.types->netbox.graphql.types]
+- core.jobs -> netbox.jobs [fg:imports:core.jobs->netbox.jobs]
+- core.jobs -> netbox.search.backends [fg:imports:core.jobs->netbox.search.backends]
+- core.jobs -> utilities.proxy [fg:imports:core.jobs->utilities.proxy]
+- core.management.commands.nbshell -> users.models [fg:imports:core.management.commands.nbshell->users.models]
+- core.management.commands.rqworker -> netbox.registry [fg:imports:core.management.commands.rqworker->netbox.registry]
+- core.migrations.0001_squashed_0005 -> utilities.json [fg:imports:core.migrations.0001_squashed_0005->utilities.json]
+- core.models.change_logging -> netbox.models.features [fg:imports:core.models.change_logging->netbox.models.features]
+- core.models.change_logging -> utilities.data [fg:imports:core.models.change_logging->utilities.data]
+- core.models.config -> utilities.querysets [fg:imports:core.models.config->utilities.querysets]
+- core.models.contenttypes -> netbox.registry [fg:imports:core.models.contenttypes->netbox.registry]
+- core.models.data -> netbox.constants [fg:imports:core.models.data->netbox.constants]
+- core.models.data -> netbox.models [fg:imports:core.models.data->netbox.models]
+- core.models.data -> netbox.models.features [fg:imports:core.models.data->netbox.models.features]
+- core.models.data -> netbox.registry [fg:imports:core.models.data->netbox.registry]
+- core.models.data -> utilities.querysets [fg:imports:core.models.data->utilities.querysets]
+- core.models.files -> extras.storage [fg:imports:core.models.files->extras.storage]
+- core.models.files -> netbox.models.features [fg:imports:core.models.files->netbox.models.features]
+- core.models.files -> utilities.querysets [fg:imports:core.models.files->utilities.querysets]
+- core.models.jobs -> utilities.querysets [fg:imports:core.models.jobs->utilities.querysets]
+- core.models.jobs -> utilities.rqworker [fg:imports:core.models.jobs->utilities.rqworker]
+- core.plugins -> netbox.plugins [fg:imports:core.plugins->netbox.plugins]
+- core.plugins -> netbox.registry [fg:imports:core.plugins->netbox.registry]
+- core.plugins -> utilities.datetime [fg:imports:core.plugins->utilities.datetime]
+- core.plugins -> utilities.proxy [fg:imports:core.plugins->utilities.proxy]
+- core.querysets -> utilities.querysets [fg:imports:core.querysets->utilities.querysets]
+- core.search -> netbox.search [fg:imports:core.search->netbox.search]
+- core.signals -> extras.events [fg:imports:core.signals->extras.events]
+- core.signals -> extras.utils [fg:imports:core.signals->extras.utils]
+- core.signals -> netbox.config [fg:imports:core.signals->netbox.config]
+- core.signals -> netbox.context [fg:imports:core.signals->netbox.context]
+- core.signals -> netbox.models.features [fg:imports:core.signals->netbox.models.features]
+- core.signals -> utilities.exceptions [fg:imports:core.signals->utilities.exceptions]
+- core.tables.change_logging -> netbox.tables [fg:imports:core.tables.change_logging->netbox.tables]
+- core.tables.columns -> netbox.registry [fg:imports:core.tables.columns->netbox.registry]
+- core.tables.config -> netbox.tables [fg:imports:core.tables.config->netbox.tables]
+- core.tables.data -> netbox.tables [fg:imports:core.tables.data->netbox.tables]
+- core.tables.jobs -> netbox.tables [fg:imports:core.tables.jobs->netbox.tables]
+- core.tables.plugins -> netbox.tables [fg:imports:core.tables.plugins->netbox.tables]
+- core.tables.tasks -> netbox.tables [fg:imports:core.tables.tasks->netbox.tables]
+- core.tests.test_api -> users.models [fg:imports:core.tests.test_api->users.models]
+- core.tests.test_api -> utilities.testing [fg:imports:core.tests.test_api->utilities.testing]
+- core.tests.test_api -> utilities.testing.utils [fg:imports:core.tests.test_api->utilities.testing.utils]
+- core.tests.test_changelog -> dcim.choices [fg:imports:core.tests.test_changelog->dcim.choices]
+- core.tests.test_changelog -> dcim.models [fg:imports:core.tests.test_changelog->dcim.models]
+- core.tests.test_changelog -> dcim.models [fg:imports:core.tests.test_changelog->dcim.models]
+- core.tests.test_changelog -> extras.choices [fg:imports:core.tests.test_changelog->extras.choices]
+- core.tests.test_changelog -> extras.models [fg:imports:core.tests.test_changelog->extras.models]
+- core.tests.test_changelog -> utilities.testing [fg:imports:core.tests.test_changelog->utilities.testing]
+- core.tests.test_changelog -> utilities.testing.utils [fg:imports:core.tests.test_changelog->utilities.testing.utils]
+- core.tests.test_changelog -> utilities.testing.views [fg:imports:core.tests.test_changelog->utilities.testing.views]
+- core.tests.test_filtersets -> dcim.models [fg:imports:core.tests.test_filtersets->dcim.models]
+- core.tests.test_filtersets -> ipam.models [fg:imports:core.tests.test_filtersets->ipam.models]
+- core.tests.test_filtersets -> users.models [fg:imports:core.tests.test_filtersets->users.models]
+- core.tests.test_filtersets -> utilities.testing [fg:imports:core.tests.test_filtersets->utilities.testing]
+- core.tests.test_models -> netbox.constants [fg:imports:core.tests.test_models->netbox.constants]
+- core.tests.test_views -> dcim.models [fg:imports:core.tests.test_views->dcim.models]
+- core.tests.test_views -> users.models [fg:imports:core.tests.test_views->users.models]
+- core.tests.test_views -> utilities.testing [fg:imports:core.tests.test_views->utilities.testing]
+- core.urls -> utilities.urls [fg:imports:core.urls->utilities.urls]
+- core.views -> netbox.config [fg:imports:core.views->netbox.config]
+- core.views -> netbox.registry [fg:imports:core.views->netbox.registry]
+- core.views -> netbox.views [fg:imports:core.views->netbox.views]
+- core.views -> netbox.views.generic.base [fg:imports:core.views->netbox.views.generic.base]
+- core.views -> netbox.views.generic.mixins [fg:imports:core.views->netbox.views.generic.mixins]
+- core.views -> utilities.data [fg:imports:core.views->utilities.data]
+- core.views -> utilities.forms [fg:imports:core.views->utilities.forms]
+- core.views -> utilities.htmx [fg:imports:core.views->utilities.htmx]
+- core.views -> utilities.json [fg:imports:core.views->utilities.json]
+- core.views -> utilities.query [fg:imports:core.views->utilities.query]
+- core.views -> utilities.views [fg:imports:core.views->utilities.views]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- core.models.change_logging | ObjectChange.changed_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:core.models.change_logging:56]
+- core.models.change_logging | ObjectChange.related_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:core.models.change_logging:66]
+- core.models.data | DataFile.source | ForeignKey | core.DataSource |  [fg:model_refs:core.models.data:276]
+- core.models.data | AutoSyncRecord.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:core.models.data:367]
+- core.models.jobs | Job.object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:core.models.jobs:31]
+
+## String references INTO this subsystem from others
+- extras.migrations.0108_convert_reports_to_scripts | . | get_model -> core.Job [fg:model_refs:extras.migrations.0108_convert_reports_to_scripts:6]
+- extras.migrations.0109_script_model | . | get_model -> core.Job [fg:model_refs:extras.migrations.0109_script_model:90]
+- extras.models.customfields | CustomField.object_types | ManyToManyField -> core.ObjectType [fg:model_refs:extras.models.customfields:74]
+- extras.models.customfields | CustomField.related_object_type | ForeignKey -> core.ObjectType [fg:model_refs:extras.models.customfields:86]
+- extras.models.models | EventRule.object_types | ManyToManyField -> core.ObjectType [fg:model_refs:extras.models.models:51]
+- extras.models.models | CustomLink.object_types | ManyToManyField -> core.ObjectType [fg:model_refs:extras.models.models:292]
+- extras.models.models | ExportTemplate.object_types | ManyToManyField -> core.ObjectType [fg:model_refs:extras.models.models:388]
+- extras.models.models | SavedFilter.object_types | ManyToManyField -> core.ObjectType [fg:model_refs:extras.models.models:453]
+- extras.models.models | TableConfig.object_type | ForeignKey -> core.ObjectType [fg:model_refs:extras.models.models:533]
+- extras.models.tags | Tag.object_types | ManyToManyField -> core.ObjectType [fg:model_refs:extras.models.tags:37]
+- netbox.models.features | JobsMixin.jobs | GenericRelation -> core.Job [fg:model_refs:netbox.models.features:429]
+- netbox.models.features | SyncedDataMixin.data_source | ForeignKey -> core.DataSource [fg:model_refs:netbox.models.features:487]
+- netbox.models.features | SyncedDataMixin.data_file | ForeignKey -> core.DataFile [fg:model_refs:netbox.models.features:495]
+- users.migrations.0009_update_group_perms | . | get_model -> core.ObjectType [fg:model_refs:users.migrations.0009_update_group_perms:5]
+- users.models.permissions | ObjectPermission.object_types | ManyToManyField -> core.ObjectType [fg:model_refs:users.models.permissions:31]
+- utilities.jinja2 | . | get_model -> core.DataFile [fg:model_refs:utilities.jinja2:23]
+
+## Churn (id = churn:<module>) — top 25 by commits
+- core.views | 53 commits | 9 authors | 2023-02-02 .. 2025-05-05 [fg:churn:core.views]
+- core.models.data | 36 commits | 6 authors | 2023-02-02 .. 2025-04-03 [fg:churn:core.models.data]
+- core.models.jobs | 29 commits | 8 authors | 2023-03-27 .. 2025-05-08 [fg:churn:core.models.jobs]
+- core.data_backends | 20 commits | 8 authors | 2023-02-02 .. 2025-03-04 [fg:churn:core.data_backends]
+- core.forms.model_forms | 19 commits | 4 authors | 2023-02-02 .. 2025-03-03 [fg:churn:core.forms.model_forms]
+- core.forms.filtersets | 17 commits | 3 authors | 2023-02-02 .. 2025-04-10 [fg:churn:core.forms.filtersets]
+- core.plugins | 16 commits | 5 authors | 2024-07-26 .. 2025-05-01 [fg:churn:core.plugins]
+- core.api.schema | 15 commits | 7 authors | 2023-03-30 .. 2025-03-05 [fg:churn:core.api.schema]
+- core.api.serializers | 14 commits | 3 authors | 2023-02-02 .. 2024-11-26 [fg:churn:core.api.serializers]
+- core.jobs | 12 commits | 3 authors | 2023-02-02 .. 2025-03-04 [fg:churn:core.jobs]
+- core.urls | 12 commits | 3 authors | 2023-02-02 .. 2024-11-21 [fg:churn:core.urls]
+- core.apps | 11 commits | 4 authors | 2023-02-02 .. 2025-04-10 [fg:churn:core.apps]
+- core.choices | 11 commits | 4 authors | 2023-02-02 .. 2025-02-13 [fg:churn:core.choices]
+- core.filtersets | 11 commits | 2 authors | 2023-02-02 .. 2025-03-03 [fg:churn:core.filtersets]
+- core.models.files | 11 commits | 4 authors | 2023-03-24 .. 2025-05-06 [fg:churn:core.models.files]
+- core.api.views | 10 commits | 5 authors | 2023-02-02 .. 2024-11-26 [fg:churn:core.api.views]
+- core.forms.bulk_edit | 10 commits | 5 authors | 2023-02-02 .. 2025-03-03 [fg:churn:core.forms.bulk_edit]
+- core.tables.plugins | 10 commits | 4 authors | 2024-01-19 .. 2025-05-01 [fg:churn:core.tables.plugins]
+- core.signals | 9 commits | 3 authors | 2023-02-02 .. 2025-06-13 [fg:churn:core.signals]
+- core.management.commands.nbshell | 8 commits | 3 authors | 2023-03-24 .. 2024-09-12 [fg:churn:core.management.commands.nbshell]
+- core.tests.test_filtersets | 8 commits | 2 authors | 2023-02-02 .. 2025-03-03 [fg:churn:core.tests.test_filtersets]
+- core.tests.test_views | 8 commits | 3 authors | 2023-02-02 .. 2025-05-21 [fg:churn:core.tests.test_views]
+- core.graphql.types | 6 commits | 2 authors | 2023-02-02 .. 2025-03-20 [fg:churn:core.graphql.types]
+- core.models | 6 commits | 2 authors | 2023-02-02 .. 2024-06-17 [fg:churn:core.models]
+- core.tables | 6 commits | 3 authors | 2023-02-02 .. 2024-06-17 [fg:churn:core.tables]
+
+## Entry points (id = entrypoints:<module>)
+- urls | core.api.urls | netbox/core/api/urls.py [fg:entrypoints:core.api.urls]
+- api_views | core.api.views | netbox/core/api/views.py [fg:entrypoints:core.api.views]
+- management_command | core.management.commands.makemigrations | netbox/core/management/commands/makemigrations.py [fg:entrypoints:core.management.commands.makemigrations]
+- management_command | core.management.commands.nbshell | netbox/core/management/commands/nbshell.py [fg:entrypoints:core.management.commands.nbshell]
+- management_command | core.management.commands.rqworker | netbox/core/management/commands/rqworker.py [fg:entrypoints:core.management.commands.rqworker]
+- management_command | core.management.commands.syncdatasource | netbox/core/management/commands/syncdatasource.py [fg:entrypoints:core.management.commands.syncdatasource]
+- signals | core.signals | netbox/core/signals.py [fg:entrypoints:core.signals]
+- urls | core.urls | netbox/core/urls.py [fg:entrypoints:core.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- core.api.schema: FixTimeZoneSerializerField, ChoiceFieldFix, NetBoxAutoSchema, FixSerializedPKRelatedField, FixIntegerRangeSerializerSchema, FixWritableNestedSerializerAllowPK
+- core.api.serializers_.change_logging: ObjectChangeSerializer
+- core.api.serializers_.data: DataSourceSerializer, DataFileSerializer
+- core.api.serializers_.jobs: JobSerializer
+- core.api.serializers_.tasks: BackgroundTaskSerializer, BackgroundQueueSerializer, BackgroundWorkerSerializer
+- core.api.views: CoreRootView, DataSourceViewSet, DataFileViewSet, JobViewSet, ObjectChangeViewSet, BaseRQViewSet, BackgroundQueueViewSet, BackgroundWorkerViewSet, BackgroundTaskViewSet
+- core.apps: CoreConfig
+- core.choices: DataSourceStatusChoices, ManagedFileRootPathChoices, JobStatusChoices, JobIntervalChoices, ObjectChangeActionChoices
+- core.constants: Status
+- core.data_backends: LocalBackend, GitBackend, S3Backend
+- core.exceptions: SyncError, IncompatiblePluginError
+- core.filtersets: DataSourceFilterSet, DataFileFilterSet, JobFilterSet, ObjectChangeFilterSet, ConfigRevisionFilterSet
+- core.forms.bulk_edit: DataSourceBulkEditForm
+- core.forms.bulk_import: DataSourceImportForm
+- core.forms.filtersets: DataSourceFilterForm, DataFileFilterForm, JobFilterForm, ObjectChangeFilterForm, ConfigRevisionFilterForm
+- core.forms.mixins: SyncedDataMixin
+- core.forms.model_forms: DataSourceForm, ManagedFileForm, ConfigFormMetaclass, ConfigRevisionForm
+- core.graphql.filter_mixins: BaseFilterMixin, BaseObjectTypeFilterMixin, ChangeLogFilterMixin
+- core.graphql.filters: DataFileFilter, DataSourceFilter, ObjectChangeFilter, ContentTypeFilter
+- core.graphql.mixins: ChangelogMixin
+- core.graphql.schema: CoreQuery
+- core.graphql.types: DataFileType, DataSourceType, ObjectChangeType, ContentType
+- core.jobs: SyncDataSourceJob, SystemHousekeepingJob
+- core.management.commands.makemigrations: Command
+- core.management.commands.nbshell: Command
+- core.management.commands.rqworker: Command
+- core.management.commands.syncdatasource: Command
+- core.migrations.0001_squashed_0005: Migration
+- core.migrations.0006_datasource_type_remove_choices: Migration
+- core.migrations.0007_job_add_error_field: Migration
+- core.migrations.0008_contenttype_proxy: Migration
+- core.migrations.0009_configrevision: Migration
+- core.migrations.0010_gfk_indexes: Migration
+- core.migrations.0011_move_objectchange: Migration
+- core.migrations.0012_job_object_type_optional: Migration
+- core.migrations.0013_job_data_encoder: Migration
+- core.migrations.0014_datasource_sync_interval: Migration
+- core.migrations.0015_remove_redundant_indexes: Migration
+- core.models.change_logging: ObjectChange
+- core.models.config: ConfigRevision
+- core.models.contenttypes: ObjectTypeManager, ObjectType
+- core.models.data: DataSource, DataFile, AutoSyncRecord
+- core.models.files: ManagedFile
+- core.models.jobs: Job
+- core.plugins: PluginAuthor, PluginVersion, Plugin
+- core.querysets: ObjectChangeQuerySet
+- core.search: DataSourceIndex, DataFileIndex
+- core.tables.change_logging: ObjectChangeTable
+- core.tables.columns: BackendTypeColumn, RQJobStatusColumn
+- core.tables.config: ConfigRevisionTable
+- core.tables.data: DataSourceTable, DataFileTable
+- core.tables.jobs: JobTable
+- core.tables.plugins: PluginVersionTable, CatalogPluginTable
+- core.tables.tasks: BackgroundQueueTable, BackgroundTaskTable, WorkerTable
+- core.tests.test_api: AppTest, DataSourceTest, DataFileTest, BackgroundTaskTestCase
+- core.tests.test_changelog: ChangeLogViewTest, ChangeLogAPITest
+- core.tests.test_filtersets: DataSourceTestCase, DataFileTestCase, ObjectChangeTestCase
+- core.tests.test_models: DataSourceChangeLoggingTestCase
+- core.tests.test_views: DataSourceTestCase, DataFileTestCase, ObjectChangeTestCase, BackgroundTaskTestCase, SystemTestCase
+- core.views: DataSourceListView, DataSourceView, DataSourceSyncView, DataSourceEditView, DataSourceDeleteView, DataSourceBulkImportView, DataSourceBulkEditView, DataSourceBulkDeleteView, DataFileListView, DataFileView, DataFileDeleteView, DataFileBulkDeleteView, JobListView, JobView, JobDeleteView, JobBulkDeleteView, ObjectChangeListView, ObjectChangeView, ConfigRevisionListView, ConfigRevisionView, ConfigRevisionEditView, ConfigRevisionDeleteView, ConfigRevisionBulkDeleteView, ConfigRevisionRestoreView, BaseRQView, BackgroundQueueListView, BackgroundTaskListView, BackgroundTaskView, BackgroundTaskDeleteView, BackgroundTaskRequeueView, BackgroundTaskEnqueueView, BackgroundTaskStopView, WorkerListView, WorkerView, SystemView, BasePluginView, PluginListView, PluginView

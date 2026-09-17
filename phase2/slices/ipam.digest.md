@@ -1,0 +1,469 @@
+# Fact-graph digest: subsystem `ipam` at T0 ea4c205
+
+Summary row [fg:subsystems:ipam]: {'subsystem': 'ipam', 'modules': 69, 'loc_code': 18159, 'loc_data': 0, 'test_modules': 7}
+
+## Modules (id = modules:<module>) — module | path | loc | classes | functions | test | migration
+- ipam | netbox/ipam/__init__.py | 1 | 0 | 0 |  | 
+- ipam.api | netbox/ipam/api/__init__.py | 1 | 0 | 0 |  | 
+- ipam.api.field_serializers | netbox/ipam/api/field_serializers.py | 50 | 2 | 0 |  | 
+- ipam.api.serializers | netbox/ipam/api/serializers.py | 8 | 0 | 0 |  | 
+- ipam.api.serializers_ | netbox/ipam/api/serializers_/__init__.py | 1 | 0 | 0 |  | 
+- ipam.api.serializers_.asns | netbox/ipam/api/serializers_/asns.py | 76 | 4 | 0 |  | 
+- ipam.api.serializers_.fhrpgroups | netbox/ipam/api/serializers_/fhrpgroups.py | 51 | 2 | 0 |  | 
+- ipam.api.serializers_.ip | netbox/ipam/api/serializers_/ip.py | 212 | 7 | 0 |  | 
+- ipam.api.serializers_.nested | netbox/ipam/api/serializers_/nested.py | 27 | 2 | 0 |  | 
+- ipam.api.serializers_.roles | netbox/ipam/api/serializers_/roles.py | 23 | 1 | 0 |  | 
+- ipam.api.serializers_.services | netbox/ipam/api/serializers_/services.py | 61 | 2 | 0 |  | 
+- ipam.api.serializers_.vlans | netbox/ipam/api/serializers_/vlans.py | 135 | 6 | 0 |  | 
+- ipam.api.serializers_.vrfs | netbox/ipam/api/serializers_/vrfs.py | 51 | 2 | 0 |  | 
+- ipam.api.urls | netbox/ipam/api/urls.py | 60 | 0 | 0 |  | 
+- ipam.api.views | netbox/ipam/api/views.py | 493 | 26 | 1 |  | 
+- ipam.apps | netbox/ipam/apps.py | 26 | 1 | 0 |  | 
+- ipam.choices | netbox/ipam/choices.py | 186 | 10 | 0 |  | 
+- ipam.constants | netbox/ipam/constants.py | 95 | 0 | 0 |  | 
+- ipam.fields | netbox/ipam/fields.py | 126 | 4 | 0 |  | 
+- ipam.filtersets | netbox/ipam/filtersets.py | 1276 | 19 | 0 |  | 
+- ipam.formfields | netbox/ipam/formfields.py | 62 | 2 | 0 |  | 
+- ipam.forms | netbox/ipam/forms/__init__.py | 6 | 0 | 0 |  | 
+- ipam.forms.bulk_create | netbox/ipam/forms/bulk_create.py | 15 | 1 | 0 |  | 
+- ipam.forms.bulk_edit | netbox/ipam/forms/bulk_edit.py | 601 | 17 | 0 |  | 
+- ipam.forms.bulk_import | netbox/ipam/forms/bulk_import.py | 645 | 17 | 0 |  | 
+- ipam.forms.filtersets | netbox/ipam/forms/filtersets.py | 639 | 17 | 0 |  | 
+- ipam.forms.model_forms | netbox/ipam/forms/model_forms.py | 881 | 21 | 0 |  | 
+- ipam.graphql | netbox/ipam/graphql/__init__.py | 1 | 0 | 0 |  | 
+- ipam.graphql.enums | netbox/ipam/graphql/enums.py | 28 | 0 | 0 |  | 
+- ipam.graphql.filter_mixins | netbox/ipam/graphql/filter_mixins.py | 26 | 1 | 0 |  | 
+- ipam.graphql.filters | netbox/ipam/graphql/filters.py | 356 | 18 | 0 |  | 
+- ipam.graphql.mixins | netbox/ipam/graphql/mixins.py | 19 | 2 | 0 |  | 
+- ipam.graphql.schema | netbox/ipam/graphql/schema.py | 64 | 1 | 0 |  | 
+- ipam.graphql.types | netbox/ipam/graphql/types.py | 359 | 20 | 0 |  | 
+- ipam.lookups | netbox/ipam/lookups.py | 183 | 19 | 0 |  | 
+- ipam.management | netbox/ipam/management/__init__.py | 1 | 0 | 0 |  | 
+- ipam.management.commands | netbox/ipam/management/commands/__init__.py | 1 | 0 | 0 |  | 
+- ipam.management.commands.rebuild_prefixes | netbox/ipam/management/commands/rebuild_prefixes.py | 28 | 1 | 0 |  | 
+- ipam.managers | netbox/ipam/managers.py | 18 | 1 | 0 |  | 
+- ipam.migrations | netbox/ipam/migrations/__init__.py | 1 | 0 | 0 |  | 
+- ipam.migrations.0001_squashed | netbox/ipam/migrations/0001_squashed.py | 317 | 1 | 0 |  | migration
+- ipam.migrations.0002_squashed_0046 | netbox/ipam/migrations/0002_squashed_0046.py | 233 | 1 | 0 |  | migration
+- ipam.migrations.0047_squashed_0053 | netbox/ipam/migrations/0047_squashed_0053.py | 208 | 1 | 0 |  | migration
+- ipam.migrations.0054_squashed_0067 | netbox/ipam/migrations/0054_squashed_0067.py | 489 | 1 | 0 |  | migration
+- ipam.migrations.0068_move_l2vpn | netbox/ipam/migrations/0068_move_l2vpn.py | 61 | 1 | 1 |  | migration
+- ipam.migrations.0069_gfk_indexes | netbox/ipam/migrations/0069_gfk_indexes.py | 27 | 1 | 0 |  | migration
+- ipam.migrations.0070_vlangroup_vlan_id_ranges | netbox/ipam/migrations/0070_vlangroup_vlan_id_ranges.py | 52 | 1 | 1 |  | migration
+- ipam.migrations.0071_prefix_scope | netbox/ipam/migrations/0071_prefix_scope.py | 65 | 1 | 2 |  | migration
+- ipam.migrations.0072_prefix_cached_relations | netbox/ipam/migrations/0072_prefix_cached_relations.py | 74 | 1 | 2 |  | migration
+- ipam.migrations.0073_charfield_null_choices | netbox/ipam/migrations/0073_charfield_null_choices.py | 34 | 1 | 1 |  | migration
+- ipam.migrations.0074_vlantranslationpolicy_vlantranslationrule | netbox/ipam/migrations/0074_vlantranslationpolicy_vlantranslationrule.py | 98 | 1 | 0 |  | migration
+- ipam.migrations.0075_vlan_qinq | netbox/ipam/migrations/0075_vlan_qinq.py | 36 | 1 | 0 |  | migration
+- ipam.migrations.0076_natural_ordering | netbox/ipam/migrations/0076_natural_ordering.py | 32 | 1 | 0 |  | migration
+- ipam.migrations.0077_vlangroup_tenant | netbox/ipam/migrations/0077_vlangroup_tenant.py | 27 | 1 | 0 |  | migration
+- ipam.migrations.0078_iprange_mark_utilized | netbox/ipam/migrations/0078_iprange_mark_utilized.py | 17 | 1 | 0 |  | migration
+- ipam.migrations.0079_add_service_fhrp_group_parent_gfk | netbox/ipam/migrations/0079_add_service_fhrp_group_parent_gfk.py | 30 | 1 | 0 |  | migration
+- ipam.migrations.0080_populate_service_parent | netbox/ipam/migrations/0080_populate_service_parent.py | 81 | 1 | 3 |  | migration
+- ipam.migrations.0081_remove_service_device_virtual_machine_add_parent_gfk_index | netbox/ipam/migrations/0081_remove_service_device_virtual_machine_add_parent_gfk_index.py | 52 | 1 | 1 |  | migration
+- ipam.models | netbox/ipam/models/__init__.py | 8 | 0 | 0 |  | 
+- ipam.models.asns | netbox/ipam/models/asns.py | 150 | 2 | 0 |  | 
+- ipam.models.fhrp | netbox/ipam/models/fhrp.py | 127 | 2 | 0 |  | 
+- ipam.models.ip | netbox/ipam/models/ip.py | 988 | 7 | 0 |  | 
+- ipam.models.services | netbox/ipam/models/services.py | 99 | 3 | 0 |  | 
+- ipam.models.vlans | netbox/ipam/models/vlans.py | 420 | 4 | 1 |  | 
+- ipam.models.vrfs | netbox/ipam/models/vrfs.py | 96 | 2 | 0 |  | 
+- ipam.querysets | netbox/ipam/querysets.py | 215 | 4 | 0 |  | 
+- ipam.search | netbox/ipam/search.py | 194 | 17 | 0 |  | 
+- ipam.signals | netbox/ipam/signals.py | 77 | 0 | 6 |  | 
+- ipam.tables | netbox/ipam/tables/__init__.py | 7 | 0 | 0 |  | 
+- ipam.tables.asn | netbox/ipam/tables/asn.py | 84 | 2 | 0 |  | 
+- ipam.tables.fhrp | netbox/ipam/tables/fhrp.py | 78 | 2 | 0 |  | 
+- ipam.tables.ip | netbox/ipam/tables/ip.py | 431 | 10 | 0 |  | 
+- ipam.tables.services | netbox/ipam/tables/services.py | 67 | 2 | 0 |  | 
+- ipam.tables.template_code | netbox/ipam/tables/template_code.py | 94 | 0 | 0 |  | 
+- ipam.tables.vlans | netbox/ipam/tables/vlans.py | 281 | 8 | 0 |  | 
+- ipam.tables.vrfs | netbox/ipam/tables/vrfs.py | 84 | 2 | 0 |  | 
+- ipam.tests | netbox/ipam/tests/__init__.py | 1 | 0 | 0 | test | 
+- ipam.tests.test_api | netbox/ipam/tests/test_api.py | 1244 | 19 | 0 | test | 
+- ipam.tests.test_filtersets | netbox/ipam/tests/test_filtersets.py | 2473 | 18 | 0 | test | 
+- ipam.tests.test_forms | netbox/ipam/tests/test_forms.py | 44 | 1 | 0 | test | 
+- ipam.tests.test_models | netbox/ipam/tests/test_models.py | 735 | 7 | 0 | test | 
+- ipam.tests.test_ordering | netbox/ipam/tests/test_ordering.py | 202 | 3 | 0 | test | 
+- ipam.tests.test_views | netbox/ipam/tests/test_views.py | 1211 | 17 | 0 | test | 
+- ipam.urls | netbox/ipam/urls.py | 63 | 0 | 0 |  | 
+- ipam.utils | netbox/ipam/utils.py | 261 | 1 | 6 |  | 
+- ipam.validators | netbox/ipam/validators.py | 36 | 2 | 1 |  | 
+- ipam.views | netbox/ipam/views.py | 1496 | 134 | 0 |  | 
+
+## Import edges (id = imports:<src>-><dst>; full rows in the slice file)
+Outbound by target subsystem: {'ipam': 145, 'netbox': 50, 'utilities': 42, 'dcim': 31, 'tenancy': 18, 'virtualization': 14, 'vpn': 7, 'circuits': 5, 'core': 5, 'extras': 1, 'wireless': 1, 'users': 1}
+Inbound by source subsystem: {'dcim': 27, 'virtualization': 20, 'vpn': 14, 'circuits': 13, 'wireless': 8, 'users': 6, 'extras': 5, 'utilities': 4, 'netbox': 2, 'tenancy': 2, 'core': 1}
+
+## Outbound imports to OTHER subsystems (src -> dst)
+- ipam.api.serializers_.asns -> netbox.api.fields [fg:imports:ipam.api.serializers_.asns->netbox.api.fields]
+- ipam.api.serializers_.asns -> netbox.api.serializers [fg:imports:ipam.api.serializers_.asns->netbox.api.serializers]
+- ipam.api.serializers_.asns -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.asns->tenancy.api.serializers_.tenants]
+- ipam.api.serializers_.fhrpgroups -> netbox.api.fields [fg:imports:ipam.api.serializers_.fhrpgroups->netbox.api.fields]
+- ipam.api.serializers_.fhrpgroups -> netbox.api.serializers [fg:imports:ipam.api.serializers_.fhrpgroups->netbox.api.serializers]
+- ipam.api.serializers_.fhrpgroups -> utilities.api [fg:imports:ipam.api.serializers_.fhrpgroups->utilities.api]
+- ipam.api.serializers_.ip -> dcim.constants [fg:imports:ipam.api.serializers_.ip->dcim.constants]
+- ipam.api.serializers_.ip -> netbox.api.fields [fg:imports:ipam.api.serializers_.ip->netbox.api.fields]
+- ipam.api.serializers_.ip -> netbox.api.serializers [fg:imports:ipam.api.serializers_.ip->netbox.api.serializers]
+- ipam.api.serializers_.ip -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.ip->tenancy.api.serializers_.tenants]
+- ipam.api.serializers_.ip -> utilities.api [fg:imports:ipam.api.serializers_.ip->utilities.api]
+- ipam.api.serializers_.nested -> netbox.api.serializers [fg:imports:ipam.api.serializers_.nested->netbox.api.serializers]
+- ipam.api.serializers_.roles -> netbox.api.fields [fg:imports:ipam.api.serializers_.roles->netbox.api.fields]
+- ipam.api.serializers_.roles -> netbox.api.serializers [fg:imports:ipam.api.serializers_.roles->netbox.api.serializers]
+- ipam.api.serializers_.services -> netbox.api.fields [fg:imports:ipam.api.serializers_.services->netbox.api.fields]
+- ipam.api.serializers_.services -> netbox.api.serializers [fg:imports:ipam.api.serializers_.services->netbox.api.serializers]
+- ipam.api.serializers_.services -> utilities.api [fg:imports:ipam.api.serializers_.services->utilities.api]
+- ipam.api.serializers_.vlans -> dcim.api.serializers_.sites [fg:imports:ipam.api.serializers_.vlans->dcim.api.serializers_.sites]
+- ipam.api.serializers_.vlans -> netbox.api.fields [fg:imports:ipam.api.serializers_.vlans->netbox.api.fields]
+- ipam.api.serializers_.vlans -> netbox.api.serializers [fg:imports:ipam.api.serializers_.vlans->netbox.api.serializers]
+- ipam.api.serializers_.vlans -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.vlans->tenancy.api.serializers_.tenants]
+- ipam.api.serializers_.vlans -> utilities.api [fg:imports:ipam.api.serializers_.vlans->utilities.api]
+- ipam.api.serializers_.vlans -> vpn.api.serializers_.l2vpn [fg:imports:ipam.api.serializers_.vlans->vpn.api.serializers_.l2vpn]
+- ipam.api.serializers_.vrfs -> netbox.api.fields [fg:imports:ipam.api.serializers_.vrfs->netbox.api.fields]
+- ipam.api.serializers_.vrfs -> netbox.api.serializers [fg:imports:ipam.api.serializers_.vrfs->netbox.api.serializers]
+- ipam.api.serializers_.vrfs -> tenancy.api.serializers_.tenants [fg:imports:ipam.api.serializers_.vrfs->tenancy.api.serializers_.tenants]
+- ipam.api.urls -> netbox.api.routers [fg:imports:ipam.api.urls->netbox.api.routers]
+- ipam.api.views -> dcim.models [fg:imports:ipam.api.views->dcim.models]
+- ipam.api.views -> netbox.api.viewsets [fg:imports:ipam.api.views->netbox.api.viewsets]
+- ipam.api.views -> netbox.api.viewsets.mixins [fg:imports:ipam.api.views->netbox.api.viewsets.mixins]
+- ipam.api.views -> netbox.config [fg:imports:ipam.api.views->netbox.config]
+- ipam.api.views -> netbox.constants [fg:imports:ipam.api.views->netbox.constants]
+- ipam.api.views -> utilities.api [fg:imports:ipam.api.views->utilities.api]
+- ipam.api.views -> virtualization.models [fg:imports:ipam.api.views->virtualization.models]
+- ipam.apps -> netbox [fg:imports:ipam.apps->netbox]
+- ipam.apps -> netbox.models.features [fg:imports:ipam.apps->netbox.models.features]
+- ipam.choices -> utilities.choices [fg:imports:ipam.choices->utilities.choices]
+- ipam.filtersets -> circuits.models [fg:imports:ipam.filtersets->circuits.models]
+- ipam.filtersets -> dcim.base_filtersets [fg:imports:ipam.filtersets->dcim.base_filtersets]
+- ipam.filtersets -> dcim.models [fg:imports:ipam.filtersets->dcim.models]
+- ipam.filtersets -> netbox.filtersets [fg:imports:ipam.filtersets->netbox.filtersets]
+- ipam.filtersets -> tenancy.filtersets [fg:imports:ipam.filtersets->tenancy.filtersets]
+- ipam.filtersets -> utilities.filters [fg:imports:ipam.filtersets->utilities.filters]
+- ipam.filtersets -> virtualization.models [fg:imports:ipam.filtersets->virtualization.models]
+- ipam.filtersets -> vpn.models [fg:imports:ipam.filtersets->vpn.models]
+- ipam.forms.bulk_create -> utilities.forms.fields [fg:imports:ipam.forms.bulk_create->utilities.forms.fields]
+- ipam.forms.bulk_edit -> dcim.forms.mixins [fg:imports:ipam.forms.bulk_edit->dcim.forms.mixins]
+- ipam.forms.bulk_edit -> dcim.models [fg:imports:ipam.forms.bulk_edit->dcim.models]
+- ipam.forms.bulk_edit -> netbox.forms [fg:imports:ipam.forms.bulk_edit->netbox.forms]
+- ipam.forms.bulk_edit -> tenancy.models [fg:imports:ipam.forms.bulk_edit->tenancy.models]
+- ipam.forms.bulk_edit -> utilities.forms [fg:imports:ipam.forms.bulk_edit->utilities.forms]
+- ipam.forms.bulk_edit -> utilities.forms.fields [fg:imports:ipam.forms.bulk_edit->utilities.forms.fields]
+- ipam.forms.bulk_edit -> utilities.forms.rendering [fg:imports:ipam.forms.bulk_edit->utilities.forms.rendering]
+- ipam.forms.bulk_edit -> utilities.forms.widgets [fg:imports:ipam.forms.bulk_edit->utilities.forms.widgets]
+- ipam.forms.bulk_edit -> utilities.templatetags.builtins.filters [fg:imports:ipam.forms.bulk_edit->utilities.templatetags.builtins.filters]
+- ipam.forms.bulk_import -> dcim.forms.mixins [fg:imports:ipam.forms.bulk_import->dcim.forms.mixins]
+- ipam.forms.bulk_import -> dcim.models [fg:imports:ipam.forms.bulk_import->dcim.models]
+- ipam.forms.bulk_import -> netbox.forms [fg:imports:ipam.forms.bulk_import->netbox.forms]
+- ipam.forms.bulk_import -> tenancy.models [fg:imports:ipam.forms.bulk_import->tenancy.models]
+- ipam.forms.bulk_import -> utilities.forms.fields [fg:imports:ipam.forms.bulk_import->utilities.forms.fields]
+- ipam.forms.bulk_import -> virtualization.models [fg:imports:ipam.forms.bulk_import->virtualization.models]
+- ipam.forms.filtersets -> dcim.models [fg:imports:ipam.forms.filtersets->dcim.models]
+- ipam.forms.filtersets -> netbox.forms [fg:imports:ipam.forms.filtersets->netbox.forms]
+- ipam.forms.filtersets -> tenancy.forms [fg:imports:ipam.forms.filtersets->tenancy.forms]
+- ipam.forms.filtersets -> utilities.forms [fg:imports:ipam.forms.filtersets->utilities.forms]
+- ipam.forms.filtersets -> utilities.forms.fields [fg:imports:ipam.forms.filtersets->utilities.forms.fields]
+- ipam.forms.filtersets -> utilities.forms.rendering [fg:imports:ipam.forms.filtersets->utilities.forms.rendering]
+- ipam.forms.filtersets -> virtualization.models [fg:imports:ipam.forms.filtersets->virtualization.models]
+- ipam.forms.filtersets -> vpn.models [fg:imports:ipam.forms.filtersets->vpn.models]
+- ipam.forms.model_forms -> dcim.forms.mixins [fg:imports:ipam.forms.model_forms->dcim.forms.mixins]
+- ipam.forms.model_forms -> dcim.models [fg:imports:ipam.forms.model_forms->dcim.models]
+- ipam.forms.model_forms -> netbox.forms [fg:imports:ipam.forms.model_forms->netbox.forms]
+- ipam.forms.model_forms -> tenancy.forms [fg:imports:ipam.forms.model_forms->tenancy.forms]
+- ipam.forms.model_forms -> utilities.exceptions [fg:imports:ipam.forms.model_forms->utilities.exceptions]
+- ipam.forms.model_forms -> utilities.forms [fg:imports:ipam.forms.model_forms->utilities.forms]
+- ipam.forms.model_forms -> utilities.forms.fields [fg:imports:ipam.forms.model_forms->utilities.forms.fields]
+- ipam.forms.model_forms -> utilities.forms.rendering [fg:imports:ipam.forms.model_forms->utilities.forms.rendering]
+- ipam.forms.model_forms -> utilities.forms.utils [fg:imports:ipam.forms.model_forms->utilities.forms.utils]
+- ipam.forms.model_forms -> utilities.forms.widgets [fg:imports:ipam.forms.model_forms->utilities.forms.widgets]
+- ipam.forms.model_forms -> utilities.templatetags.builtins.filters [fg:imports:ipam.forms.model_forms->utilities.templatetags.builtins.filters]
+- ipam.forms.model_forms -> virtualization.models [fg:imports:ipam.forms.model_forms->virtualization.models]
+- ipam.graphql.filter_mixins -> core.graphql.filter_mixins [fg:imports:ipam.graphql.filter_mixins->core.graphql.filter_mixins]
+- ipam.graphql.filter_mixins -> netbox.graphql.filter_lookups [fg:imports:ipam.graphql.filter_mixins->netbox.graphql.filter_lookups]
+- ipam.graphql.filters -> circuits.graphql.filters [fg:imports:ipam.graphql.filters->circuits.graphql.filters]
+- ipam.graphql.filters -> core.graphql.filter_mixins [fg:imports:ipam.graphql.filters->core.graphql.filter_mixins]
+- ipam.graphql.filters -> core.graphql.filters [fg:imports:ipam.graphql.filters->core.graphql.filters]
+- ipam.graphql.filters -> dcim.graphql.filter_mixins [fg:imports:ipam.graphql.filters->dcim.graphql.filter_mixins]
+- ipam.graphql.filters -> dcim.graphql.filters [fg:imports:ipam.graphql.filters->dcim.graphql.filters]
+- ipam.graphql.filters -> dcim.models [fg:imports:ipam.graphql.filters->dcim.models]
+- ipam.graphql.filters -> netbox.graphql.filter_lookups [fg:imports:ipam.graphql.filters->netbox.graphql.filter_lookups]
+- ipam.graphql.filters -> netbox.graphql.filter_mixins [fg:imports:ipam.graphql.filters->netbox.graphql.filter_mixins]
+- ipam.graphql.filters -> tenancy.graphql.filter_mixins [fg:imports:ipam.graphql.filters->tenancy.graphql.filter_mixins]
+- ipam.graphql.filters -> virtualization.models [fg:imports:ipam.graphql.filters->virtualization.models]
+- ipam.graphql.filters -> vpn.graphql.filters [fg:imports:ipam.graphql.filters->vpn.graphql.filters]
+- ipam.graphql.types -> circuits.graphql.types [fg:imports:ipam.graphql.types->circuits.graphql.types]
+- ipam.graphql.types -> dcim.graphql.types [fg:imports:ipam.graphql.types->dcim.graphql.types]
+- ipam.graphql.types -> dcim.graphql.types [fg:imports:ipam.graphql.types->dcim.graphql.types]
+- ipam.graphql.types -> extras.graphql.mixins [fg:imports:ipam.graphql.types->extras.graphql.mixins]
+- ipam.graphql.types -> netbox.graphql.scalars [fg:imports:ipam.graphql.types->netbox.graphql.scalars]
+- ipam.graphql.types -> netbox.graphql.types [fg:imports:ipam.graphql.types->netbox.graphql.types]
+- ipam.graphql.types -> tenancy.graphql.types [fg:imports:ipam.graphql.types->tenancy.graphql.types]
+- ipam.graphql.types -> virtualization.graphql.types [fg:imports:ipam.graphql.types->virtualization.graphql.types]
+- ipam.graphql.types -> vpn.graphql.types [fg:imports:ipam.graphql.types->vpn.graphql.types]
+- ipam.graphql.types -> wireless.graphql.types [fg:imports:ipam.graphql.types->wireless.graphql.types]
+- ipam.managers -> utilities.querysets [fg:imports:ipam.managers->utilities.querysets]
+- ipam.migrations.0001_squashed -> utilities.json [fg:imports:ipam.migrations.0001_squashed->utilities.json]
+- ipam.migrations.0047_squashed_0053 -> utilities.json [fg:imports:ipam.migrations.0047_squashed_0053->utilities.json]
+- ipam.migrations.0054_squashed_0067 -> utilities.json [fg:imports:ipam.migrations.0054_squashed_0067->utilities.json]
+- ipam.migrations.0074_vlantranslationpolicy_vlantranslationrule -> utilities.json [fg:imports:ipam.migrations.0074_vlantranslationpolicy_vlantranslationrule->utilities.json]
+- ipam.models.asns -> netbox.models [fg:imports:ipam.models.asns->netbox.models]
+- ipam.models.fhrp -> netbox.models [fg:imports:ipam.models.fhrp->netbox.models]
+- ipam.models.ip -> core.models [fg:imports:ipam.models.ip->core.models]
+- ipam.models.ip -> dcim.models.mixins [fg:imports:ipam.models.ip->dcim.models.mixins]
+- ipam.models.ip -> netbox.config [fg:imports:ipam.models.ip->netbox.config]
+- ipam.models.ip -> netbox.models [fg:imports:ipam.models.ip->netbox.models]
+- ipam.models.ip -> netbox.models.features [fg:imports:ipam.models.ip->netbox.models.features]
+- ipam.models.services -> netbox.models [fg:imports:ipam.models.services->netbox.models]
+- ipam.models.services -> netbox.models.features [fg:imports:ipam.models.services->netbox.models.features]
+- ipam.models.services -> utilities.data [fg:imports:ipam.models.services->utilities.data]
+- ipam.models.vlans -> dcim.models [fg:imports:ipam.models.vlans->dcim.models]
+- ipam.models.vlans -> netbox.models [fg:imports:ipam.models.vlans->netbox.models]
+- ipam.models.vlans -> utilities.data [fg:imports:ipam.models.vlans->utilities.data]
+- ipam.models.vlans -> virtualization.models [fg:imports:ipam.models.vlans->virtualization.models]
+- ipam.models.vrfs -> netbox.models [fg:imports:ipam.models.vrfs->netbox.models]
+- ipam.querysets -> utilities.query [fg:imports:ipam.querysets->utilities.query]
+- ipam.querysets -> utilities.querysets [fg:imports:ipam.querysets->utilities.querysets]
+- ipam.search -> netbox.search [fg:imports:ipam.search->netbox.search]
+- ipam.signals -> dcim.models [fg:imports:ipam.signals->dcim.models]
+- ipam.signals -> virtualization.models [fg:imports:ipam.signals->virtualization.models]
+- ipam.tables.asn -> netbox.tables [fg:imports:ipam.tables.asn->netbox.tables]
+- ipam.tables.asn -> tenancy.tables [fg:imports:ipam.tables.asn->tenancy.tables]
+- ipam.tables.fhrp -> netbox.tables [fg:imports:ipam.tables.fhrp->netbox.tables]
+- ipam.tables.ip -> netbox.tables [fg:imports:ipam.tables.ip->netbox.tables]
+- ipam.tables.ip -> tenancy.tables [fg:imports:ipam.tables.ip->tenancy.tables]
+- ipam.tables.services -> netbox.tables [fg:imports:ipam.tables.services->netbox.tables]
+- ipam.tables.vlans -> dcim.models [fg:imports:ipam.tables.vlans->dcim.models]
+- ipam.tables.vlans -> netbox.tables [fg:imports:ipam.tables.vlans->netbox.tables]
+- ipam.tables.vlans -> tenancy.tables [fg:imports:ipam.tables.vlans->tenancy.tables]
+- ipam.tables.vlans -> virtualization.models [fg:imports:ipam.tables.vlans->virtualization.models]
+- ipam.tables.vrfs -> netbox.tables [fg:imports:ipam.tables.vrfs->netbox.tables]
+- ipam.tables.vrfs -> tenancy.tables [fg:imports:ipam.tables.vrfs->tenancy.tables]
+- ipam.tests.test_api -> dcim.models [fg:imports:ipam.tests.test_api->dcim.models]
+- ipam.tests.test_api -> tenancy.models [fg:imports:ipam.tests.test_api->tenancy.models]
+- ipam.tests.test_api -> utilities.data [fg:imports:ipam.tests.test_api->utilities.data]
+- ipam.tests.test_api -> utilities.testing [fg:imports:ipam.tests.test_api->utilities.testing]
+- ipam.tests.test_filtersets -> circuits.models [fg:imports:ipam.tests.test_filtersets->circuits.models]
+- ipam.tests.test_filtersets -> dcim.choices [fg:imports:ipam.tests.test_filtersets->dcim.choices]
+- ipam.tests.test_filtersets -> dcim.models [fg:imports:ipam.tests.test_filtersets->dcim.models]
+- ipam.tests.test_filtersets -> tenancy.models [fg:imports:ipam.tests.test_filtersets->tenancy.models]
+- ipam.tests.test_filtersets -> utilities.testing [fg:imports:ipam.tests.test_filtersets->utilities.testing]
+- ipam.tests.test_filtersets -> virtualization.models [fg:imports:ipam.tests.test_filtersets->virtualization.models]
+- ipam.tests.test_filtersets -> vpn.choices [fg:imports:ipam.tests.test_filtersets->vpn.choices]
+- ipam.tests.test_filtersets -> vpn.models [fg:imports:ipam.tests.test_filtersets->vpn.models]
+- ipam.tests.test_forms -> dcim.models [fg:imports:ipam.tests.test_forms->dcim.models]
+- ipam.tests.test_models -> dcim.models [fg:imports:ipam.tests.test_models->dcim.models]
+- ipam.tests.test_models -> utilities.data [fg:imports:ipam.tests.test_models->utilities.data]
+- ipam.tests.test_views -> core.models [fg:imports:ipam.tests.test_views->core.models]
+- ipam.tests.test_views -> dcim.constants [fg:imports:ipam.tests.test_views->dcim.constants]
+- ipam.tests.test_views -> dcim.models [fg:imports:ipam.tests.test_views->dcim.models]
+- ipam.tests.test_views -> netbox.choices [fg:imports:ipam.tests.test_views->netbox.choices]
+- ipam.tests.test_views -> tenancy.models [fg:imports:ipam.tests.test_views->tenancy.models]
+- ipam.tests.test_views -> users.models [fg:imports:ipam.tests.test_views->users.models]
+- ipam.tests.test_views -> utilities.testing [fg:imports:ipam.tests.test_views->utilities.testing]
+- ipam.urls -> utilities.urls [fg:imports:ipam.urls->utilities.urls]
+- ipam.views -> circuits.models [fg:imports:ipam.views->circuits.models]
+- ipam.views -> dcim.filtersets [fg:imports:ipam.views->dcim.filtersets]
+- ipam.views -> dcim.forms [fg:imports:ipam.views->dcim.forms]
+- ipam.views -> dcim.models [fg:imports:ipam.views->dcim.models]
+- ipam.views -> netbox.views [fg:imports:ipam.views->netbox.views]
+- ipam.views -> utilities.query [fg:imports:ipam.views->utilities.query]
+- ipam.views -> utilities.tables [fg:imports:ipam.views->utilities.tables]
+- ipam.views -> utilities.views [fg:imports:ipam.views->utilities.views]
+- ipam.views -> virtualization.filtersets [fg:imports:ipam.views->virtualization.filtersets]
+- ipam.views -> virtualization.forms [fg:imports:ipam.views->virtualization.forms]
+- ipam.views -> virtualization.models [fg:imports:ipam.views->virtualization.models]
+
+## String references (id = model_refs:<module>:<lineno>) — module | class.field | kind | target | cross_app
+- ipam.migrations.0068_move_l2vpn | . | get_model | contenttypes.ContentType | cross [fg:model_refs:ipam.migrations.0068_move_l2vpn:5]
+- ipam.migrations.0070_vlangroup_vlan_id_ranges | . | get_model | ipam.VLANGroup |  [fg:model_refs:ipam.migrations.0070_vlangroup_vlan_id_ranges:13]
+- ipam.migrations.0071_prefix_scope | . | get_model | contenttypes.ContentType | cross [fg:model_refs:ipam.migrations.0071_prefix_scope:10]
+- ipam.migrations.0071_prefix_scope | . | get_model | ipam.Prefix |  [fg:model_refs:ipam.migrations.0071_prefix_scope:11]
+- ipam.migrations.0071_prefix_scope | . | get_model | dcim.Site | cross [fg:model_refs:ipam.migrations.0071_prefix_scope:12]
+- ipam.migrations.0072_prefix_cached_relations | . | get_model | ipam.Prefix |  [fg:model_refs:ipam.migrations.0072_prefix_cached_relations:9]
+- ipam.migrations.0073_charfield_null_choices | . | get_model | ipam.FHRPGroup |  [fg:model_refs:ipam.migrations.0073_charfield_null_choices:8]
+- ipam.migrations.0073_charfield_null_choices | . | get_model | ipam.IPAddress |  [fg:model_refs:ipam.migrations.0073_charfield_null_choices:9]
+- ipam.migrations.0080_populate_service_parent | . | get_model | ipam.Service |  [fg:model_refs:ipam.migrations.0080_populate_service_parent:7]
+- ipam.migrations.0080_populate_service_parent | . | get_model | contenttypes.ContentType | cross [fg:model_refs:ipam.migrations.0080_populate_service_parent:8]
+- ipam.migrations.0080_populate_service_parent | . | get_model | dcim.device | cross [fg:model_refs:ipam.migrations.0080_populate_service_parent:9]
+- ipam.migrations.0080_populate_service_parent | . | get_model | virtualization.virtualmachine | cross [fg:model_refs:ipam.migrations.0080_populate_service_parent:10]
+- ipam.migrations.0080_populate_service_parent | . | get_model | ipam.Service |  [fg:model_refs:ipam.migrations.0080_populate_service_parent:25]
+- ipam.migrations.0080_populate_service_parent | . | get_model | contenttypes.ContentType | cross [fg:model_refs:ipam.migrations.0080_populate_service_parent:26]
+- ipam.migrations.0080_populate_service_parent | . | get_model | dcim.device | cross [fg:model_refs:ipam.migrations.0080_populate_service_parent:27]
+- ipam.migrations.0080_populate_service_parent | . | get_model | virtualization.virtualmachine | cross [fg:model_refs:ipam.migrations.0080_populate_service_parent:28]
+- ipam.models.asns | ASNRange.rir | ForeignKey | ipam.RIR |  [fg:model_refs:ipam.models.asns:27]
+- ipam.models.asns | ASNRange.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.asns:39]
+- ipam.models.asns | ASN.rir | ForeignKey | ipam.RIR |  [fg:model_refs:ipam.models.asns:96]
+- ipam.models.asns | ASN.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.asns:108]
+- ipam.models.fhrp | FHRPGroup.ip_addresses | GenericRelation | ipam.IPAddress |  [fg:model_refs:ipam.models.fhrp:45]
+- ipam.models.fhrp | FHRPGroup.services | GenericRelation | ipam.Service |  [fg:model_refs:ipam.models.fhrp:51]
+- ipam.models.fhrp | FHRPGroupAssignment.interface_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:ipam.models.fhrp:82]
+- ipam.models.fhrp | FHRPGroupAssignment.group | ForeignKey | ipam.FHRPGroup |  [fg:model_refs:ipam.models.fhrp:91]
+- ipam.models.ip | Aggregate.rir | ForeignKey | ipam.RIR |  [fg:model_refs:ipam.models.ip:83]
+- ipam.models.ip | Aggregate.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.ip:90]
+- ipam.models.ip | Prefix.vrf | ForeignKey | ipam.VRF |  [fg:model_refs:ipam.models.ip:211]
+- ipam.models.ip | Prefix.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.ip:219]
+- ipam.models.ip | Prefix.vlan | ForeignKey | ipam.VLAN |  [fg:model_refs:ipam.models.ip:226]
+- ipam.models.ip | Prefix.role | ForeignKey | ipam.Role |  [fg:model_refs:ipam.models.ip:240]
+- ipam.models.ip | IPRange.vrf | ForeignKey | ipam.VRF |  [fg:model_refs:ipam.models.ip:495]
+- ipam.models.ip | IPRange.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.ip:503]
+- ipam.models.ip | IPRange.role | ForeignKey | ipam.Role |  [fg:model_refs:ipam.models.ip:517]
+- ipam.models.ip | IPAddress.vrf | ForeignKey | ipam.VRF |  [fg:model_refs:ipam.models.ip:724]
+- ipam.models.ip | IPAddress.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.ip:732]
+- ipam.models.ip | IPAddress.assigned_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:ipam.models.ip:754]
+- ipam.models.ip | IPAddress.nat_inside | ForeignKey | self |  [fg:model_refs:ipam.models.ip:769]
+- ipam.models.services | Service.parent_object_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:ipam.models.services:67]
+- ipam.models.services | Service.ipaddresses | ManyToManyField | ipam.IPAddress |  [fg:model_refs:ipam.models.services:82]
+- ipam.models.vlans | VLANGroup.scope_type | ForeignKey | contenttypes.ContentType | cross [fg:model_refs:ipam.models.vlans:46]
+- ipam.models.vlans | VLANGroup.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.vlans:65]
+- ipam.models.vlans | VLAN.site | ForeignKey | dcim.Site | cross [fg:model_refs:ipam.models.vlans:181]
+- ipam.models.vlans | VLAN.group | ForeignKey | ipam.VLANGroup |  [fg:model_refs:ipam.models.vlans:189]
+- ipam.models.vlans | VLAN.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.vlans:209]
+- ipam.models.vlans | VLAN.role | ForeignKey | ipam.Role |  [fg:model_refs:ipam.models.vlans:223]
+- ipam.models.vlans | VLAN.qinq_svlan | ForeignKey | self |  [fg:model_refs:ipam.models.vlans:231]
+- ipam.models.vlans | VLAN.l2vpn_terminations | GenericRelation | vpn.L2VPNTermination | cross [fg:model_refs:ipam.models.vlans:246]
+- ipam.models.vrfs | VRF.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.vrfs:32]
+- ipam.models.vrfs | VRF.import_targets | ManyToManyField | ipam.RouteTarget |  [fg:model_refs:ipam.models.vrfs:44]
+- ipam.models.vrfs | VRF.export_targets | ManyToManyField | ipam.RouteTarget |  [fg:model_refs:ipam.models.vrfs:49]
+- ipam.models.vrfs | RouteTarget.tenant | ForeignKey | tenancy.Tenant | cross [fg:model_refs:ipam.models.vrfs:81]
+
+## String references INTO this subsystem from others
+- circuits.models.providers | Provider.asns | ManyToManyField -> ipam.ASN [fg:model_refs:circuits.models.providers:32]
+- dcim.models.device_components | BaseInterface.untagged_vlan | ForeignKey -> ipam.VLAN [fg:model_refs:dcim.models.device_components:553]
+- dcim.models.device_components | BaseInterface.tagged_vlans | ManyToManyField -> ipam.VLAN [fg:model_refs:dcim.models.device_components:561]
+- dcim.models.device_components | BaseInterface.qinq_svlan | ForeignKey -> ipam.VLAN [fg:model_refs:dcim.models.device_components:567]
+- dcim.models.device_components | BaseInterface.vlan_translation_policy | ForeignKey -> ipam.VLANTranslationPolicy [fg:model_refs:dcim.models.device_components:575]
+- dcim.models.device_components | Interface.vrf | ForeignKey -> ipam.VRF [fg:model_refs:dcim.models.device_components:755]
+- dcim.models.device_components | Interface.ip_addresses | GenericRelation -> ipam.IPAddress [fg:model_refs:dcim.models.device_components:763]
+- dcim.models.device_components | Interface.fhrp_group_assignments | GenericRelation -> ipam.FHRPGroupAssignment [fg:model_refs:dcim.models.device_components:775]
+- dcim.models.devices | Device.primary_ip4 | OneToOneField -> ipam.IPAddress [fg:model_refs:dcim.models.devices:545]
+- dcim.models.devices | Device.primary_ip6 | OneToOneField -> ipam.IPAddress [fg:model_refs:dcim.models.devices:553]
+- dcim.models.devices | Device.oob_ip | OneToOneField -> ipam.IPAddress [fg:model_refs:dcim.models.devices:561]
+- dcim.models.devices | Device.services | GenericRelation -> ipam.Service [fg:model_refs:dcim.models.devices:612]
+- dcim.models.devices | VirtualDeviceContext.primary_ip4 | OneToOneField -> ipam.IPAddress [fg:model_refs:dcim.models.devices:1148]
+- dcim.models.devices | VirtualDeviceContext.primary_ip6 | OneToOneField -> ipam.IPAddress [fg:model_refs:dcim.models.devices:1156]
+- dcim.models.racks | Rack.vlan_groups | GenericRelation -> ipam.VLANGroup [fg:model_refs:dcim.models.racks:329]
+- dcim.models.sites | Region.prefixes | GenericRelation -> ipam.Prefix [fg:model_refs:dcim.models.sites:30]
+- dcim.models.sites | Region.vlan_groups | GenericRelation -> ipam.VLANGroup [fg:model_refs:dcim.models.sites:36]
+- dcim.models.sites | SiteGroup.prefixes | GenericRelation -> ipam.Prefix [fg:model_refs:dcim.models.sites:86]
+- dcim.models.sites | SiteGroup.vlan_groups | GenericRelation -> ipam.VLANGroup [fg:model_refs:dcim.models.sites:92]
+- dcim.models.sites | Site.asns | ManyToManyField -> ipam.ASN [fg:model_refs:dcim.models.sites:186]
+- dcim.models.sites | Site.prefixes | GenericRelation -> ipam.Prefix [fg:model_refs:dcim.models.sites:225]
+- dcim.models.sites | Site.vlan_groups | GenericRelation -> ipam.VLANGroup [fg:model_refs:dcim.models.sites:231]
+- dcim.models.sites | Location.prefixes | GenericRelation -> ipam.Prefix [fg:model_refs:dcim.models.sites:290]
+- dcim.models.sites | Location.vlan_groups | GenericRelation -> ipam.VLANGroup [fg:model_refs:dcim.models.sites:296]
+- virtualization.models.clusters | ClusterGroup.vlan_groups | GenericRelation -> ipam.VLANGroup [fg:model_refs:virtualization.models.clusters:34]
+- virtualization.models.clusters | Cluster.vlan_groups | GenericRelation -> ipam.VLANGroup [fg:model_refs:virtualization.models.clusters:84]
+- virtualization.models.virtualmachines | VirtualMachine.primary_ip4 | OneToOneField -> ipam.IPAddress [fg:model_refs:virtualization.models.virtualmachines:88]
+- virtualization.models.virtualmachines | VirtualMachine.primary_ip6 | OneToOneField -> ipam.IPAddress [fg:model_refs:virtualization.models.virtualmachines:96]
+- virtualization.models.virtualmachines | VirtualMachine.services | GenericRelation -> ipam.Service [fg:model_refs:virtualization.models.virtualmachines:129]
+- virtualization.models.virtualmachines | VMInterface.ip_addresses | GenericRelation -> ipam.IPAddress [fg:model_refs:virtualization.models.virtualmachines:324]
+- virtualization.models.virtualmachines | VMInterface.vrf | ForeignKey -> ipam.VRF [fg:model_refs:virtualization.models.virtualmachines:330]
+- virtualization.models.virtualmachines | VMInterface.fhrp_group_assignments | GenericRelation -> ipam.FHRPGroupAssignment [fg:model_refs:virtualization.models.virtualmachines:338]
+- vpn.models.l2vpn | L2VPN.import_targets | ManyToManyField -> ipam.RouteTarget [fg:model_refs:vpn.models.l2vpn:46]
+- vpn.models.l2vpn | L2VPN.export_targets | ManyToManyField -> ipam.RouteTarget [fg:model_refs:vpn.models.l2vpn:51]
+- vpn.models.tunnels | TunnelTermination.outside_ip | ForeignKey -> ipam.IPAddress [fg:model_refs:vpn.models.tunnels:127]
+- wireless.models | WirelessLAN.vlan | ForeignKey -> ipam.VLAN [fg:model_refs:wireless.models:97]
+
+## Churn (id = churn:<module>) — top 25 by commits
+- ipam.views | 401 commits | 26 authors | 2016-03-01 .. 2025-05-05 [fg:churn:ipam.views]
+- ipam.api.serializers | 155 commits | 9 authors | 2016-03-01 .. 2024-08-14 [fg:churn:ipam.api.serializers]
+- ipam.api.views | 144 commits | 13 authors | 2016-03-01 .. 2025-06-25 [fg:churn:ipam.api.views]
+- ipam.models.ip | 113 commits | 15 authors | 2021-02-24 .. 2025-04-09 [fg:churn:ipam.models.ip]
+- ipam.filtersets | 99 commits | 18 authors | 2021-04-29 .. 2025-06-09 [fg:churn:ipam.filtersets]
+- ipam.tests.test_api | 95 commits | 11 authors | 2017-03-17 .. 2025-05-27 [fg:churn:ipam.tests.test_api]
+- ipam.tests.test_views | 74 commits | 9 authors | 2019-02-15 .. 2025-06-24 [fg:churn:ipam.tests.test_views]
+- ipam.tables.ip | 69 commits | 16 authors | 2021-09-17 .. 2025-04-22 [fg:churn:ipam.tables.ip]
+- ipam.tests.test_filtersets | 67 commits | 14 authors | 2021-05-03 .. 2025-05-13 [fg:churn:ipam.tests.test_filtersets]
+- ipam.forms.model_forms | 66 commits | 15 authors | 2022-10-25 .. 2025-06-06 [fg:churn:ipam.forms.model_forms]
+- ipam.forms.filtersets | 65 commits | 15 authors | 2021-09-28 .. 2025-04-22 [fg:churn:ipam.forms.filtersets]
+- ipam.urls | 63 commits | 6 authors | 2016-03-01 .. 2024-11-20 [fg:churn:ipam.urls]
+- ipam.models.vlans | 59 commits | 7 authors | 2021-02-24 .. 2025-05-01 [fg:churn:ipam.models.vlans]
+- ipam.forms.bulk_import | 53 commits | 10 authors | 2021-09-28 .. 2025-06-24 [fg:churn:ipam.forms.bulk_import]
+- ipam.forms.bulk_edit | 47 commits | 9 authors | 2021-09-28 .. 2025-04-09 [fg:churn:ipam.forms.bulk_edit]
+- ipam.api.urls | 36 commits | 4 authors | 2016-03-01 .. 2024-10-30 [fg:churn:ipam.api.urls]
+- ipam.graphql.types | 34 commits | 8 authors | 2021-06-25 .. 2025-04-11 [fg:churn:ipam.graphql.types]
+- ipam.tables.vlans | 34 commits | 6 authors | 2021-09-17 .. 2025-02-25 [fg:churn:ipam.tables.vlans]
+- ipam.tests.test_models | 34 commits | 9 authors | 2017-01-16 .. 2025-05-01 [fg:churn:ipam.tests.test_models]
+- ipam.choices | 33 commits | 7 authors | 2019-11-27 .. 2024-11-26 [fg:churn:ipam.choices]
+- ipam.models.fhrp | 31 commits | 5 authors | 2021-11-01 .. 2025-04-11 [fg:churn:ipam.models.fhrp]
+- ipam.constants | 30 commits | 5 authors | 2017-06-16 .. 2025-04-11 [fg:churn:ipam.constants]
+- ipam.fields | 24 commits | 4 authors | 2016-03-01 .. 2024-10-28 [fg:churn:ipam.fields]
+- ipam.tables.fhrp | 23 commits | 6 authors | 2021-11-01 .. 2023-08-01 [fg:churn:ipam.tables.fhrp]
+- ipam.querysets | 20 commits | 7 authors | 2017-10-10 .. 2025-05-13 [fg:churn:ipam.querysets]
+
+## Entry points (id = entrypoints:<module>)
+- urls | ipam.api.urls | netbox/ipam/api/urls.py [fg:entrypoints:ipam.api.urls]
+- api_views | ipam.api.views | netbox/ipam/api/views.py [fg:entrypoints:ipam.api.views]
+- management_command | ipam.management.commands.rebuild_prefixes | netbox/ipam/management/commands/rebuild_prefixes.py [fg:entrypoints:ipam.management.commands.rebuild_prefixes]
+- signals | ipam.signals | netbox/ipam/signals.py [fg:entrypoints:ipam.signals]
+- urls | ipam.urls | netbox/ipam/urls.py [fg:entrypoints:ipam.urls]
+
+## Symbols: classes per module (id = symbols:<module>:<name>) — see the slice file for line numbers and bases
+- ipam.api.field_serializers: IPAddressField, IPNetworkField
+- ipam.api.serializers_.asns: RIRSerializer, ASNRangeSerializer, ASNSerializer, AvailableASNSerializer
+- ipam.api.serializers_.fhrpgroups: FHRPGroupSerializer, FHRPGroupAssignmentSerializer
+- ipam.api.serializers_.ip: AggregateSerializer, PrefixSerializer, PrefixLengthSerializer, AvailablePrefixSerializer, IPRangeSerializer, IPAddressSerializer, AvailableIPSerializer
+- ipam.api.serializers_.nested: NestedIPAddressSerializer, NestedVLANSerializer
+- ipam.api.serializers_.roles: RoleSerializer
+- ipam.api.serializers_.services: ServiceTemplateSerializer, ServiceSerializer
+- ipam.api.serializers_.vlans: VLANGroupSerializer, VLANSerializer, AvailableVLANSerializer, CreateAvailableVLANSerializer, VLANTranslationRuleSerializer, VLANTranslationPolicySerializer
+- ipam.api.serializers_.vrfs: RouteTargetSerializer, VRFSerializer
+- ipam.api.views: IPAMRootView, ASNRangeViewSet, ASNViewSet, VRFViewSet, RouteTargetViewSet, RIRViewSet, AggregateViewSet, RoleViewSet, PrefixViewSet, IPRangeViewSet, IPAddressViewSet, FHRPGroupViewSet, FHRPGroupAssignmentViewSet, VLANGroupViewSet, VLANViewSet, VLANTranslationPolicyViewSet, VLANTranslationRuleViewSet, ServiceTemplateViewSet, ServiceViewSet, AvailableObjectsView, AvailableASNsView, AvailablePrefixesView, AvailableIPAddressesView, PrefixAvailableIPAddressesView, IPRangeAvailableIPAddressesView, AvailableVLANsView
+- ipam.apps: IPAMConfig
+- ipam.choices: IPAddressFamilyChoices, PrefixStatusChoices, IPRangeStatusChoices, IPAddressStatusChoices, IPAddressRoleChoices, FHRPGroupProtocolChoices, FHRPGroupAuthTypeChoices, VLANStatusChoices, VLANQinQRoleChoices, ServiceProtocolChoices
+- ipam.fields: BaseIPField, IPNetworkField, IPAddressField, ASNField
+- ipam.filtersets: VRFFilterSet, RouteTargetFilterSet, RIRFilterSet, AggregateFilterSet, ASNRangeFilterSet, ASNFilterSet, RoleFilterSet, PrefixFilterSet, IPRangeFilterSet, IPAddressFilterSet, FHRPGroupFilterSet, FHRPGroupAssignmentFilterSet, VLANGroupFilterSet, VLANFilterSet, VLANTranslationPolicyFilterSet, VLANTranslationRuleFilterSet, ServiceTemplateFilterSet, ServiceFilterSet, PrimaryIPFilterSet
+- ipam.formfields: IPAddressFormField, IPNetworkFormField
+- ipam.forms.bulk_create: IPAddressBulkCreateForm
+- ipam.forms.bulk_edit: VRFBulkEditForm, RouteTargetBulkEditForm, RIRBulkEditForm, ASNRangeBulkEditForm, ASNBulkEditForm, AggregateBulkEditForm, RoleBulkEditForm, PrefixBulkEditForm, IPRangeBulkEditForm, IPAddressBulkEditForm, FHRPGroupBulkEditForm, VLANGroupBulkEditForm, VLANBulkEditForm, VLANTranslationPolicyBulkEditForm, VLANTranslationRuleBulkEditForm, ServiceTemplateBulkEditForm, ServiceBulkEditForm
+- ipam.forms.bulk_import: VRFImportForm, RouteTargetImportForm, RIRImportForm, AggregateImportForm, ASNRangeImportForm, ASNImportForm, RoleImportForm, PrefixImportForm, IPRangeImportForm, IPAddressImportForm, FHRPGroupImportForm, VLANGroupImportForm, VLANImportForm, VLANTranslationPolicyImportForm, VLANTranslationRuleImportForm, ServiceTemplateImportForm, ServiceImportForm
+- ipam.forms.filtersets: VRFFilterForm, RouteTargetFilterForm, RIRFilterForm, AggregateFilterForm, ASNRangeFilterForm, ASNFilterForm, RoleFilterForm, PrefixFilterForm, IPRangeFilterForm, IPAddressFilterForm, FHRPGroupFilterForm, VLANGroupFilterForm, VLANTranslationPolicyFilterForm, VLANTranslationRuleFilterForm, VLANFilterForm, ServiceTemplateFilterForm, ServiceFilterForm
+- ipam.forms.model_forms: VRFForm, RouteTargetForm, RIRForm, AggregateForm, ASNRangeForm, ASNForm, RoleForm, PrefixForm, IPRangeForm, IPAddressForm, IPAddressBulkAddForm, IPAddressAssignForm, FHRPGroupForm, FHRPGroupAssignmentForm, VLANGroupForm, VLANForm, VLANTranslationPolicyForm, VLANTranslationRuleForm, ServiceTemplateForm, ServiceForm, ServiceCreateForm
+- ipam.graphql.filter_mixins: ServiceBaseFilterMixin
+- ipam.graphql.filters: ASNFilter, ASNRangeFilter, AggregateFilter, FHRPGroupFilter, FHRPGroupAssignmentFilter, IPAddressFilter, IPRangeFilter, PrefixFilter, RIRFilter, RoleFilter, RouteTargetFilter, ServiceFilter, ServiceTemplateFilter, VLANFilter, VLANGroupFilter, VLANTranslationPolicyFilter, VLANTranslationRuleFilter, VRFFilter
+- ipam.graphql.mixins: IPAddressesMixin, VLANGroupsMixin
+- ipam.graphql.schema: IPAMQuery
+- ipam.graphql.types: IPAddressFamilyType, BaseIPAddressFamilyType, ASNType, ASNRangeType, AggregateType, FHRPGroupType, FHRPGroupAssignmentType, IPAddressType, IPRangeType, PrefixType, RIRType, RoleType, RouteTargetType, ServiceType, ServiceTemplateType, VLANType, VLANGroupType, VLANTranslationPolicyType, VLANTranslationRuleType, VRFType
+- ipam.lookups: NetFieldDecoratorMixin, IExact, EndsWith, IEndsWith, StartsWith, IStartsWith, Regex, IRegex, NetContainsOrEquals, NetContains, NetContained, NetContainedOrEqual, NetHost, NetIn, NetHostContained, NetFamily, NetMaskLength, Host, Inet
+- ipam.management.commands.rebuild_prefixes: Command
+- ipam.managers: IPAddressManager
+- ipam.migrations.0001_squashed: Migration
+- ipam.migrations.0002_squashed_0046: Migration
+- ipam.migrations.0047_squashed_0053: Migration
+- ipam.migrations.0054_squashed_0067: Migration
+- ipam.migrations.0068_move_l2vpn: Migration
+- ipam.migrations.0069_gfk_indexes: Migration
+- ipam.migrations.0070_vlangroup_vlan_id_ranges: Migration
+- ipam.migrations.0071_prefix_scope: Migration
+- ipam.migrations.0072_prefix_cached_relations: Migration
+- ipam.migrations.0073_charfield_null_choices: Migration
+- ipam.migrations.0074_vlantranslationpolicy_vlantranslationrule: Migration
+- ipam.migrations.0075_vlan_qinq: Migration
+- ipam.migrations.0076_natural_ordering: Migration
+- ipam.migrations.0077_vlangroup_tenant: Migration
+- ipam.migrations.0078_iprange_mark_utilized: Migration
+- ipam.migrations.0079_add_service_fhrp_group_parent_gfk: Migration
+- ipam.migrations.0080_populate_service_parent: Migration
+- ipam.migrations.0081_remove_service_device_virtual_machine_add_parent_gfk_index: Migration
+- ipam.models.asns: ASNRange, ASN
+- ipam.models.fhrp: FHRPGroup, FHRPGroupAssignment
+- ipam.models.ip: GetAvailablePrefixesMixin, RIR, Aggregate, Role, Prefix, IPRange, IPAddress
+- ipam.models.services: ServiceBase, ServiceTemplate, Service
+- ipam.models.vlans: VLANGroup, VLAN, VLANTranslationPolicy, VLANTranslationRule
+- ipam.models.vrfs: VRF, RouteTarget
+- ipam.querysets: ASNRangeQuerySet, PrefixQuerySet, VLANGroupQuerySet, VLANQuerySet
+- ipam.search: AggregateIndex, ASNIndex, ASNRangeIndex, FHRPGroupIndex, IPAddressIndex, IPRangeIndex, PrefixIndex, RIRIndex, RoleIndex, RouteTargetIndex, ServiceIndex, ServiceTemplateIndex, VLANIndex, VLANGroupIndex, VLANTranslationPolicyIndex, VLANTranslationRuleIndex, VRFIndex
+- ipam.tables.asn: ASNRangeTable, ASNTable
+- ipam.tables.fhrp: FHRPGroupTable, FHRPGroupAssignmentTable
+- ipam.tables.ip: RIRTable, AggregateTable, RoleTable, PrefixUtilizationColumn, PrefixTable, IPRangeTable, IPAddressTable, AnnotatedIPAddressTable, IPAddressAssignTable, AssignedIPAddressesTable
+- ipam.tables.services: ServiceTemplateTable, ServiceTable
+- ipam.tables.vlans: VLANGroupTable, VLANTable, VLANMembersTable, VLANDevicesTable, VLANVirtualMachinesTable, InterfaceVLANTable, VLANTranslationPolicyTable, VLANTranslationRuleTable
+- ipam.tables.vrfs: VRFTable, RouteTargetTable
+- ipam.tests.test_api: AppTest, ASNRangeTest, ASNTest, VRFTest, RouteTargetTest, RIRTest, AggregateTest, RoleTest, PrefixTest, IPRangeTest, IPAddressTest, FHRPGroupTest, FHRPGroupAssignmentTest, VLANGroupTest, VLANTest, VLANTranslationPolicyTest, VLANTranslationRuleTest, ServiceTemplateTest, ServiceTest
+- ipam.tests.test_filtersets: ASNRangeTestCase, ASNTestCase, VRFTestCase, RouteTargetTestCase, RIRTestCase, AggregateTestCase, RoleTestCase, PrefixTestCase, IPRangeTestCase, IPAddressTestCase, FHRPGroupTestCase, FHRPGroupAssignmentTestCase, VLANGroupTestCase, VLANTestCase, VLANTranslationPolicyTestCase, VLANTranslationRuleTestCase, ServiceTemplateTestCase, ServiceTestCase
+- ipam.tests.test_forms: PrefixFormTestCase
+- ipam.tests.test_models: TestAggregate, TestIPRange, TestPrefix, TestPrefixHierarchy, TestIPAddress, TestVLANGroup, TestVLAN
+- ipam.tests.test_ordering: OrderingTestBase, PrefixOrderingTestCase, IPAddressOrderingTestCase
+- ipam.tests.test_views: ASNRangeTestCase, ASNTestCase, VRFTestCase, RouteTargetTestCase, RIRTestCase, AggregateTestCase, RoleTestCase, PrefixTestCase, IPRangeTestCase, IPAddressTestCase, FHRPGroupTestCase, VLANGroupTestCase, VLANTestCase, VLANTranslationPolicyTestCase, VLANTranslationRuleTestCase, ServiceTemplateTestCase, ServiceTestCase
+- ipam.utils: AvailableIPSpace
+- ipam.validators: MaxPrefixLengthValidator, MinPrefixLengthValidator
+- ipam.views: VRFListView, VRFView, VRFEditView, VRFDeleteView, VRFBulkImportView, VRFBulkEditView, VRFBulkDeleteView, RouteTargetListView, RouteTargetView, RouteTargetEditView, RouteTargetDeleteView, RouteTargetBulkImportView, RouteTargetBulkEditView, RouteTargetBulkDeleteView, RIRListView, RIRView, RIREditView, RIRDeleteView, RIRBulkImportView, RIRBulkEditView, RIRBulkDeleteView, ASNRangeListView, ASNRangeView, ASNRangeASNsView, ASNRangeEditView, ASNRangeDeleteView, ASNRangeBulkImportView, ASNRangeBulkEditView, ASNRangeBulkDeleteView, ASNListView, ASNView, ASNEditView, ASNDeleteView, ASNBulkImportView, ASNBulkEditView, ASNBulkDeleteView, AggregateListView, AggregateView, AggregatePrefixesView, AggregateEditView, AggregateDeleteView, AggregateBulkImportView, AggregateBulkEditView, AggregateBulkDeleteView, RoleListView, RoleView, RoleEditView, RoleDeleteView, RoleBulkImportView, RoleBulkEditView, RoleBulkDeleteView, PrefixListView, PrefixView, PrefixPrefixesView, PrefixIPRangesView, PrefixIPAddressesView, PrefixEditView, PrefixDeleteView, PrefixBulkImportView, PrefixBulkEditView, PrefixBulkDeleteView, IPRangeListView, IPRangeView, IPRangeIPAddressesView, IPRangeEditView, IPRangeDeleteView, IPRangeBulkImportView, IPRangeBulkEditView, IPRangeBulkDeleteView, IPAddressListView, IPAddressView, IPAddressEditView, IPAddressAssignView, IPAddressDeleteView, IPAddressBulkCreateView, IPAddressBulkImportView, IPAddressBulkEditView, IPAddressBulkDeleteView, IPAddressRelatedIPsView, VLANGroupListView, VLANGroupView, VLANGroupEditView, VLANGroupDeleteView, VLANGroupBulkImportView, VLANGroupBulkEditView, VLANGroupBulkDeleteView, VLANGroupVLANsView, VLANTranslationPolicyListView, VLANTranslationPolicyView, VLANTranslationPolicyEditView, VLANTranslationPolicyDeleteView, VLANTranslationPolicyBulkImportView, VLANTranslationPolicyBulkEditView, VLANTranslationPolicyBulkDeleteView, VLANTranslationRuleListView, VLANTranslationRuleView, VLANTranslationRuleEditView, VLANTranslationRuleDeleteView, VLANTranslationRuleBulkImportView, VLANTranslationRuleBulkEditView, VLANTranslationRuleBulkDeleteView, FHRPGroupListView, FHRPGroupView, FHRPGroupEditView, FHRPGroupDeleteView, FHRPGroupBulkImportView, FHRPGroupBulkEditView, FHRPGroupBulkDeleteView, FHRPGroupAssignmentEditView, FHRPGroupAssignmentDeleteView, VLANListView, VLANView, VLANInterfacesView, VLANVMInterfacesView, VLANEditView, VLANDeleteView, VLANBulkImportView, VLANBulkEditView, VLANBulkDeleteView, ServiceTemplateListView, ServiceTemplateView, ServiceTemplateEditView, ServiceTemplateDeleteView, ServiceTemplateBulkImportView, ServiceTemplateBulkEditView, ServiceTemplateBulkDeleteView, ServiceListView, ServiceView, ServiceCreateView, ServiceEditView, ServiceDeleteView, ServiceBulkImportView, ServiceBulkEditView, ServiceBulkDeleteView
